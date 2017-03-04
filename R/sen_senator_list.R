@@ -112,6 +112,10 @@ sen_senator_list <- function(present = TRUE, start = NULL, end = NULL,
 
     req <- rmNullObs(request)
 
+    if(length(req) == 0){
+      return(message("Error: no data matches your request."))
+    }
+
     for(z in 1:length(req)){
       req[[z]][[3]] <- NULL
     }
