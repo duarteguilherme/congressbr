@@ -25,6 +25,9 @@ sen_parties <- function(ascii = TRUE){
   }
   return(x)
 }
+
+
+
 #' @importFrom httr GET
 #' @importFrom httr content
 #' @importFrom purrr map
