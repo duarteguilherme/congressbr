@@ -1,8 +1,8 @@
 Package: congressoBR
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Downloads, Unpacks and Tidies Legislative Data from the Brazilian Federal Senate and Chamber of Deputies
 Version: 0.1.0
-Author: Who wrote it
+Author: Robert Myles McDonnell and Guilherme Jardim Duarte
 Maintainer: The package maintainer <yourself@somewhere.net>
 Description: More about what it does (maybe more than one line)
     Use four spaces when indenting paragraphs within the Description.
