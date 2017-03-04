@@ -25,8 +25,8 @@
 cam_listaProposicoes <- function(sigla) {
 
   link <- "http://www.camara.leg.br/SitCamaraWS/Proposicoes.asmx/ListarProposicoes?" %p%
-    "sigla=" %>% sigla %>%
-    "&numero=" %>% numero %>%
+    "sigla=" %p% sigla %p%
+    "&numero=" %p% numero %p%
     "&ano=2011&datApresentacaoIni=14/11/2011&datApresentacaoFim=16/11/2011&parteNomeAutor=&idTipoAutor=&siglaPartidoAutor=&siglaUFAutor=&generoAutor=&codEstado=&codOrgaoEstado=&emTramitacao="
 
   return(link)
