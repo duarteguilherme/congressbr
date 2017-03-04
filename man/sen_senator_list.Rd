@@ -4,22 +4,31 @@
 \alias{sen_senator_list}
 \title{Downloads and tidies information on the Senators in the Federal Senate.}
 \usage{
-sen_senator_list(present, start, end, state, status, serving,
-  withdrawn = FALSE)
+sen_senator_list(present = TRUE, start = NULL, end = NULL, state = NULL,
+  status = NULL, serving = "yes", withdrawn = FALSE)
 }
 \arguments{
 \item{present}{\code{logical}. If TRUE, downloads data on the legislature
 currently sitting in the Federal Senate.}
 
-\item{start}{two-digit integer representing the legislature.}
+\item{start}{two-digit integer representing the first legislature of the
+time period requested.}
 
-\item{end}{two-digit integer representing the legislature.}
+\item{end}{two-digit integer representing the final legislature of the time
+period requested.}
 
 \item{state}{two-letter abbreviation of Brazilian state. A list of these is
 available with the function \code{UF()}.}
 
 \item{status}{\code{character}, either "T" or "S", representing
 \emph{titular} or \emph{suplente} (stand-in senator), respectively.}
+
+\item{serving}{is the Senator currently serving his/her mandate? Options are
+"yes" or "no". "no" returns information on senators who have been elected but
+who have not yet entered office.}
+
+\item{withdrawn}{\code{logical}. If TRUE, returns information on Senators who
+were elected but who are not serving (due to health reasons, for example).}
 }
 \value{
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
