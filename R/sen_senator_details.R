@@ -26,15 +26,21 @@ sen_senator_details <- function(code = 0){
     return(message("Error: 'code' must be an integer."))
   } else {
     request <- httr::GET(paste0(base_url, code))
-    request <- httr::content(request)
-    request <- request$DetalheParlamentar$Parlamentar
-    request$UrlGlossario <- NULL
-    req <- as.data.frame(t(as.data.frame(purrr::flatten(request))))
-    req$Variable <- row.names(req)
-    colnames(req)[1] <- "Value"
-    req <- dplyr::select(req, Variable, Value)
-    row.names(req) <- NULL
-    req <- dplyr::as_data_frame(req)
-    return(req)
   }
+  # status checks
+  if(request$status_code != 200){
+    return(message("Error: GET request failed"))
+  } else{
+    request <- httr::content(request, "parsed")
+  }
+
+  request <- request$DetalheParlamentar$Parlamentar
+  request$UrlGlossario <- NULL
+  req <- as.data.frame(t(as.data.frame(purrr::flatten(request))))
+  req$Variable <- row.names(req)
+  colnames(req)[1] <- "Value"
+  req <- dplyr::select(req, Variable, Value)
+  row.names(req) <- NULL
+  req <- dplyr::as_data_frame(req)
+  return(req)
 }

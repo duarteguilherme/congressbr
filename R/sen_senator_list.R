@@ -1,6 +1,6 @@
 #' @importFrom httr GET
 #' @importFrom httr content
-#' @import purrr
+#' @importFrom purrr map_df
 #' @importFrom dplyr as_data_frame
 #' @title Downloads and tidies information on the Senators in the Federal Senate.
 #' @param present \code{logical}. If TRUE, downloads data on the legislature
