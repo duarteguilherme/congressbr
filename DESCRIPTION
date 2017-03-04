@@ -1,4 +1,4 @@
-Package: congressoBR
+Package: congressbr
 Type: Package
 Title: Downloads, Unpacks and Tidies Legislative Data from the Brazilian Federal Senate and Chamber of Deputies
 Version: 0.1.0
