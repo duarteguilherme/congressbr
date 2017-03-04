@@ -3,7 +3,6 @@
 #' @importFrom lubridate parse_date_time
 #' @importFrom data.table rbindlist
 #' @importFrom dplyr as_data_frame
-#' @import util
 #' @title Downloads and tidies data on the agenda in the Federal Senate.
 #' @param initial_data (\code{character}) start date of the period requested.
 #' This parameter must be in the format YYYYMMDD (Year-Month-Day). A value for

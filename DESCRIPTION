@@ -13,6 +13,6 @@ Imports: dplyr (>= 0.5.0),
     xml2 (>= 1.1.1),
     httr(>= 1.2.1),
     lubridate (>= 1.6.0),
-    magrittr (>= 1.5)
+    magrittr (>= 1.5),
     data.table (>= 1.10.4)
 RoxygenNote: 6.0.1

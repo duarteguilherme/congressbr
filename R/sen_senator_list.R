@@ -2,7 +2,6 @@
 #' @importFrom httr content
 #' @import purrr
 #' @importFrom dplyr as_data_frame
-#' @import util
 #' @title Downloads and tidies information on the Senators in the Federal Senate.
 #' @param present \code{logical}. If TRUE, downloads data on the legislature
 #' currently sitting in the Federal Senate.
@@ -28,11 +27,6 @@
 sen_senator_list <- function(present = TRUE, start = NULL, end = NULL,
                              state = NULL, status = NULL, serving = "yes",
                              withdrawn = FALSE){
-
-  # start is the number of the legislature (53); end likewise
-  # serving is "S" (yes); "N", (nao). I think no refers to those elected who haven't entered yet (exercicio)
-  # status is "T" (titular); "S", suplente (participacao)
-  # legislatures: list of legis and number, with first available
 
   # base url
   base_url <- "http://legis.senado.gov.br/dadosabertos/senador/lista/"

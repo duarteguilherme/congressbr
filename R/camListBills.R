@@ -1,5 +1,4 @@
 #' @import xml2
-#' @import util
 #' @import lubridate
 #' @import magrittr
 #' @title Downloads and tidies data on the agenda in the Federal Senate.
