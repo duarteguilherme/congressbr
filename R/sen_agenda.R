@@ -1,19 +1,42 @@
-#' @import httr
-#' @import xml2
-#' @import lubridate
-#' @import data.table
+#' @importFrom httr GET
+#' @importFrom httr content
+#' @importFrom lubridate parse_date_time
+#' @importFrom data.table rbindlist
+#' @importFrom dplyr as_data_frame
+#' @import util
+#' @description
 #'
+#' @param initial_data (\code{character}) start date of the period requested.
+#' This parameter must be in the format YYYYMMDD (Year-Month-Day). A value for
+#' this parameter is necessary, all others are optional.
+#' @param end_data (\code{character}) final date for period requested. Format
+#' YYYYMMDD.
+#' @param house (\code{character}). The acronym for the legislative house
+#' for which results are requested. Options are SF (\emph{Senado Federal}, Federal Senate), CN (\emph{Congresso Nacional}, National Congress - joint meeting of the Senate and Chamber).
+#' @param colegiado To Do
+#' @param legislator To Do
+#' @param details (\code{logical}). If details is equal to TRUE, the data returned
+#' is an expanded dataset with additional details. This is not recommended unless
+#' necessary.
+#' @return a tibble, of classes "tbl_df", "tbl" and "data.frame".
+#' @note requesting data from a long period of time with \code{details = TRUE} will
+#' return a large object in terms of memory.
+#' @author Robert Myles McDonnell & Guilherme Jardim Duarte.
+#' @examples
+#' sen_agenda(initial_date = "20161105", end_date = "20161125")
 #'
-#'
+#' @export
+sen_agenda <- function(initial_date = NULL, end_date = NULL, house = NULL,
+                       colegiado = NULL, legislator = NULL, details = FALSE){
+
+  ## to do:
+  # what is colegiado?
+  # list of options for house (I think it's just SF and CN)
+  # colegiado
+  # legislator: available through Senador Service
+  # list the variables returned
 
 
-
-## to do:
-# what is colegiado?
-# list of options for house, colegiado and legislator
-
-sen_agenda <- function(initial_date = NULL, end_date = NULL, details = FALSE,
-                       house = NULL, colegiado = NULL, legislator = NULL){
 
   # 1: checks
   # details & legislator can't be used together
@@ -61,15 +84,6 @@ sen_agenda <- function(initial_date = NULL, end_date = NULL, details = FALSE,
 
   ## tidy
   request <- request$Reunioes$Reuniao
-  # helper function from Josh O'Brien from here:
-  #http://stackoverflow.com/questions/26539441/r-remove-null-elements-from-list-of-lists
-  is.NullOb <- function(x) is.null(x) | all(sapply(x, is.null))
-
-  ## Recursively step down into list, removing all such objects
-  rmNullObs <- function(x) {
-    x <- Filter(Negate(is.NullOb), x)
-    lapply(x, function(x) if (is.list(x)) rmNullObs(x) else x)
-  }
 
   req <- rmNullObs(request)
 
@@ -77,22 +91,10 @@ sen_agenda <- function(initial_date = NULL, end_date = NULL, details = FALSE,
     req[[z]] <- as.data.frame(req[[z]], stringsAsFactors = F)
   }
 
-  req2 <- data.table::rbindlist(req, fill=TRUE)
+  req <- data.table::rbindlist(req, fill=TRUE)
 
-  req2$Data <- gsub("/", "-", req2$Data)
-  req2$Data <- lubridate::parse_date_time(req2$Data, orders = "d!m!Y!")
-
-  return(req2)
+  req$Data <- gsub("/", "-", req$Data)
+  req$Data <- lubridate::parse_date_time(req$Data, orders = "d!m!Y!")
+  req <- dplyr::as_data_frame(req)
+  return(req)
   }
-
-X <- sen_agenda(initial_date = "20161105", end_date = "20161125")
-
-
-
-
-### agora, arrumar isso
-# what comes back with detalhes?
-y <- sen_agenda(initial_date = "20161105", end_date = "20161125", details = T)
-# first, it is 37 times bigger.
-listviewer::jsonedit(y)
-# list of 1, then 87, then 13. of the 13, it is "Partes" that is the big difference. It has one list of 9. This list of 9 has "Finalidade" which is a not-small character vector, Itens (a list), Evento (a list) and 4 other lists. one of them Anexo, is a list of lists.
