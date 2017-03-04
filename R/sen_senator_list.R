@@ -1,29 +1,33 @@
 #' @importFrom httr GET
 #' @importFrom httr content
-#' @importFrom lubridate parse_date_time
-#' @importFrom data.table rbindlist
+#' @import purrr
 #' @importFrom dplyr as_data_frame
 #' @import util
 #' @title Downloads and tidies information on the Senators in the Federal Senate.
 #' @param present \code{logical}. If TRUE, downloads data on the legislature
 #' currently sitting in the Federal Senate.
-#' @param start two-digit integer representing the legislature.
-#' @param end two-digit integer representing the legislature.
+#' @param start two-digit integer representing the first legislature of the
+#' time period requested.
+#' @param end two-digit integer representing the final legislature of the time
+#'  period requested.
 #' @param state two-letter abbreviation of Brazilian state. A list of these is
 #' available with the function \code{UF()}.
 #' @param status \code{character}, either "T" or "S", representing
 #' \emph{titular} or \emph{suplente} (stand-in senator), respectively.
-#' @param serving
-#' @param withdrawn
+#' @param serving is the Senator currently serving his/her mandate? Options are
+#'  "yes" or "no". "no" returns information on senators who have been elected but
+#'  who have not yet entered office.
+#' @param withdrawn \code{logical}. If TRUE, returns information on Senators who
+#' were elected but who are not serving (due to health reasons, for example).
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
-#' @note
 #' @author Robert Myles McDonnell & Guilherme Jardim Duarte.
 #' @examples
 #'
 #'
 #' @export
-sen_senator_list <- function(present, start, end, state,
-                     status, serving, withdrawn = FALSE){
+sen_senator_list <- function(present = TRUE, start = NULL, end = NULL,
+                             state = NULL, status = NULL, serving = "yes",
+                             withdrawn = FALSE){
 
   # start is the number of the legislature (53); end likewise
   # serving is "S" (yes); "N", (nao). I think no refers to those elected who haven't entered yet (exercicio)
@@ -99,33 +103,32 @@ sen_senator_list <- function(present, start, end, state,
     }
   }
 
-
   # status checks
   if(request$status_code != 200){
     return(message("Error: GET request failed"))
   } else{
     request <- httr::content(request, "parsed")
+    request <- request$ListaParlamentarEmExercicio$Parlamentares$Parlamentar
+
+    req <- rmNullObs(request)
+
+    for(z in 1:length(req)){
+      req[[z]][[3]] <- NULL
+    }
+
+    for(z in 1:length(req)){
+      req[[z]][["Mandato"]] <- as.data.frame(req[[z]][["Mandato"]],
+                                             stringsAsFactors = F)
+    }
+    parl <- purrr::map_df(req, "IdentificacaoParlamentar")
+    mand <- purrr::map_df(req, "Mandato")
+
+    req <- cbind(parl, mand)
+    if(length(grep("UfParlamentar", colnames(req))) > 1){
+      x <- grep("UfParlamentar", colnames(req))
+      req <- req[, -x[2]]
+    }
+    req <- dplyr::as_data_frame(req)
+    return(req)
   }
-
-
-
-
-  GET /senador/lista/tiposPronunciamento  ## ??? maybe do with list of UFs
-
-
 }
-
-#' @export
-sen_parties <- function(){
-  GET /senador/partidos
-}
-
-
-
-
-
-
-
-
-
-
