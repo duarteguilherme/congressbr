@@ -8,14 +8,18 @@
 #' @param active \code{character}. Possible values are "yes" or "no". If left
 #' blank, returns all the positions held by the Senator. If "yes", just active
 #' positions, if "no", finished positions.
+#' @param wide \code{logical}. Default is TRUE, which returns a dataframe of one
+#' row with details on the Senator. When FALSE, returns a two-column dataframe with
+#' the variables (column names when TRUE) in the first column and the values in the
+#' second.
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
-#' @author Robert Myles McDonnell & Guilherme Jardim Duarte.
+#' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
-#'
-#'
+#' romario <- sen_senator_positions(5322)
+#' head(romario)
 #'
 #' @export
-sen_senator_positions <- function(code = 0, active = "both"){
+sen_senator_positions <- function(code = 0, active = "both", wide = TRUE){
 
   base_url <- "http://legis.senado.gov.br/dadosabertos/senador/"
 
@@ -34,7 +38,7 @@ sen_senator_positions <- function(code = 0, active = "both"){
   } else if(active == "both"){
     request <- httr::GET(paste0(base_url, code, "/cargos"))
   } else if(!is.null(active) & active != "yes" & active != "no"){
-    return(message("Error: 'active' must be NULL, 'yes' or 'no'"))
+    return(message("Error: 'active' must be 'both', 'yes' or 'no'"))
   }
 
   # status checks
@@ -43,7 +47,7 @@ sen_senator_positions <- function(code = 0, active = "both"){
   } else{
     request <- httr::content(request, "parsed")
   }
-  if(length(request) < 4){
+  if(length(request$CargoParlamentar) < 4){
     return(message("Error: either this Senator has not held any congressional positions or the code you entered is incorrect."))
   }
 
@@ -54,15 +58,22 @@ sen_senator_positions <- function(code = 0, active = "both"){
 
     req_P <- dplyr::as_data_frame(req$IdentificacaoParlamentar)
 
-    ## to do: tidy Cargos
-
     req <- req$Cargos
-    req <- as.data.frame(t(as.data.frame(purrr::flatten(request))))
-    req$Variable <- row.names(req)
-    colnames(req)[1] <- "Value"
-    req <- dplyr::select(req, Variable, Value)
-    row.names(req) <- NULL
-    req <- dplyr::as_data_frame(req)
-    return(req)
+    for(i in 1:length(req$Cargo)){
+      names(req$Cargo)[i] <- paste0("Cargo_", i)
+    }
+    req <- as.data.frame(purrr::flatten(req))
+    req <- cbind(req_P, req)
+    if(wide == FALSE){
+      req <- as.data.frame(t(req))
+      req$Variable <- row.names(req)
+      colnames(req)[1] <- "Value"
+      req <- dplyr::select(req, Variable, Value)
+      row.names(req) <- NULL
+      req <- dplyr::as_data_frame(req)
+      return(req)
+    } else{
+      req <- dplyr::as_data_frame(req)
+      return(req)
+    }
 }
-
