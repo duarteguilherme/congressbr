@@ -27,11 +27,6 @@ sen_parties <- function(ascii = TRUE){
 }
 
 
-
-#' @importFrom httr GET
-#' @importFrom httr content
-#' @importFrom purrr map
-#' @importFrom dplyr as_data_frame
 #' @title Downloads and tidies information on the types of declarations senators
 #' can make in the Federal Senate.
 #' @param return \code{logical}. If TRUE, returns a data frame (tibble).
