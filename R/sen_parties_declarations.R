@@ -6,7 +6,7 @@
 #' @title Downloads and tidies information on the political parties in the
 #' Federal Senate.
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
-#' @author Robert Myles McDonnell & Guilherme Jardim Duarte.
+#' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @param ascii \code{logical}. TRUE by default, removes latin-1 characters
 #' from returned object.
 #' @usage
@@ -39,7 +39,7 @@ sen_parties <- function(ascii = TRUE){
 #' from returned object.
 #' @return The data frame is printed to the console. If \code{return = TRUE} is
 #' chosen, the data frame is printed to the console and also returned as an object.
-#' @author Robert Myles McDonnell & Guilherme Jardim Duarte.
+#' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @usage \code{sen_statement_list(return = TRUE, ascii = TRUE)}
 #' @examples
 #' st <- sen_statement_list(return = T)

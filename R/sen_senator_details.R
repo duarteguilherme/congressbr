@@ -19,7 +19,7 @@
 #' when this option is selected.
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 #' @seealso sen_senator_list
-#' @author Robert Myles McDonnell & Guilherme Jardim Duarte.
+#' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
 #' Acir_G <- sen_senator_details(code = 4981)
 #'

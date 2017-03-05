@@ -19,7 +19,7 @@
 #' @param withdrawn \code{logical}. If TRUE, returns information on Senators who
 #' were elected but who are not serving (due to health reasons, for example).
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
-#' @author Robert Myles McDonnell & Guilherme Jardim Duarte.
+#' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
 #'
 #'
