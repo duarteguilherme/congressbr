@@ -1,5 +1,6 @@
 #' @importFrom httr GET
 #' @importFrom httr content
+#' @importFrom purrr flatten
 #' @importFrom lubridate parse_date_time
 #' @importFrom data.table rbindlist
 #' @importFrom dplyr as_data_frame

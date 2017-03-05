@@ -1,4 +1,4 @@
-#' @title A list of state abbreviations for use with the functions of congressoBR.
+#' @title A list of state abbreviations for use with the functions of congressbr.
 #' @description This function prints out a character vector of Brazilian
 #' state abbreviations to the console.
 #' @author Robert Myles McDonnell & Guilherme Jardim Duarte.

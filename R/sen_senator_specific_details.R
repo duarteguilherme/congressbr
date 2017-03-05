@@ -14,7 +14,7 @@
 #'
 #'
 #'
-#@export
+#' @export
 sen_senator_positions <- function(code = 0, active = "both"){
 
   base_url <- "http://legis.senado.gov.br/dadosabertos/senador/"

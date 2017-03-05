@@ -1,6 +1,5 @@
-
 # helper function from Josh O'Brien from here:
-#http://stackoverflow.com/questions/26539441/r-remove-null-elements-from-list-of-lists
+# http://stackoverflow.com/questions/26539441/r-remove-null-elements-from-list-of-lists
 
 # removes NULL from deeply nested lists.
 is.NullOb <- function(x) is.null(x) | all(sapply(x, is.null))
@@ -14,5 +13,3 @@ rmNullObs <- function(x) {
 
 # Emulate '+' python function
 `%p%` <- function(e1,e2) return(paste0(e1,e2))
-
-
