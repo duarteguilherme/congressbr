@@ -22,12 +22,22 @@
 #' @author Robert Myles McDonnell & Guilherme Jardim Duarte.
 #' @examples
 #' sen_agenda(initial_date = "20161105", end_date = "20161125")
-cam_listaProposicoes <- function(sigla) {
-
-  link <- "http://www.camara.leg.br/SitCamaraWS/Proposicoes.asmx/ListarProposicoes?" %p%
-    "sigla=" %p% sigla %p%
-    "&numero=" %p% numero %p%
-    "&ano=2011&datApresentacaoIni=14/11/2011&datApresentacaoFim=16/11/2011&parteNomeAutor=&idTipoAutor=&siglaPartidoAutor=&siglaUFAutor=&generoAutor=&codEstado=&codOrgaoEstado=&emTramitacao="
+cam_bills <- function(type=""http://sao-paulo.estadao.com.br/noticias/geral,estudante-de-direito-e-presa-pichando-muro-na-regiao-central-de-sp,70001686946?3,number="",year, initial_date, final_date,) {
+  " This function lists every bill informations according to the parameters searched"
+  link <- "http://www.camara.leg.br/SitCamaraWS/Proposicoes.asmx/ListrProposicoes?" %p%
+    "sigla=" %p% type %p%
+    "&numero=" %p% number %p%
+    "&ano=" %p% year %p%
+    "&datApresentacaoIni=" %p% initial_date %p%
+    "&datApresentacaoFim=" %p% final_date %p%
+    "&parteNomeAutor=" %p% part_name_author %p%
+    "&idTipoAutor=" %p% id_type_author %p%
+    "&siglaPartidoAutor=" %p% abbreviation_party_author %p%
+    "&siglaUFAutor=" %p% abbreviation_st_author %p%
+    "&generoAutor=" %p% gender_author %p%
+    "&codEstado=" %p% cod_state %p%
+    "&codOrgaoEstado=" %p% cod_branch_state %p%
+    "&emTramitacao=" %p% still
 
   return(link)
 }
