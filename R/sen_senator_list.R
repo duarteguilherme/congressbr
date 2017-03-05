@@ -3,7 +3,7 @@
 #' @importFrom purrr map_df
 #' @importFrom dplyr as_data_frame
 #' @title Downloads and tidies information on the Senators in the Federal Senate.
-#' @param present \code{logical}. If TRUE, downloads data on the legislature
+#' @param present \code{logical}. If \code{TRUE}, downloads data on the legislature
 #' currently sitting in the Federal Senate.
 #' @param start two-digit integer representing the first legislature of the
 #' time period requested.
