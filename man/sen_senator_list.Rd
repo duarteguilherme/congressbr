@@ -8,7 +8,7 @@ sen_senator_list(present = TRUE, start = NULL, end = NULL, state = NULL,
   status = NULL, serving = "yes", withdrawn = FALSE)
 }
 \arguments{
-\item{present}{\code{logical}. If TRUE, downloads data on the legislature
+\item{present}{\code{logical}. If \code{TRUE}, downloads data on the legislature
 currently sitting in the Federal Senate.}
 
 \item{start}{two-digit integer representing the first legislature of the

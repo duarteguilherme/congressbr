@@ -15,7 +15,9 @@ this parameter is necessary, all others are optional.}
 YYYYMMDD.}
 
 \item{house}{(\code{character}). The acronym for the legislative house
-for which results are requested. Options are SF (\emph{Senado Federal}, Federal Senate) and CN (\emph{Congresso Nacional}, National Congress - joint meeting of the Senate and Chamber).}
+for which results are requested. Options are SF (\emph{Senado Federal}, Federal Senate)
+and CN (\emph{Congresso Nacional}, National Congress - joint meeting of
+the Senate and Chamber).}
 
 \item{colegiado}{To Do}
 

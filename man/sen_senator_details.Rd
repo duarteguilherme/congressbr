@@ -4,13 +4,22 @@
 \alias{sen_senator_details}
 \title{Downloads and tidies information on the Senators in the Federal Senate.}
 \usage{
-sen_senator_details(code = 0)
+sen_senator_details(code = 0, wide = TRUE, list = FALSE)
 }
 \arguments{
-\item{code}{(\code{integer}). This number represents the code of the senator
+\item{code}{\code{integer}. This number represents the code of the senator
 you wish to get information on. These codes can be extracted from the API
 using the \code{sen_senator_list()} function, where they will appear as the
 first column in the data frame returned, under the name 'CodigoParlamentar'.}
+
+\item{wide}{\code{logical}. Default is TRUE, which returns a one-row data
+frame. FALSE returns a two-column dataframe with the variables (column names
+when TRUE) in the first column and the values in the second. This may be
+useful in some cases because the wide dataframe can have many columns, as
+the API stores this information in \emph{very} deeply nested lists.}
+
+\item{list}{\code{logical}. If TRUE, returns the deeply nested list directly
+from the API.}
 }
 \value{
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.

@@ -2,7 +2,7 @@
 % Please edit documentation in R/UF.R
 \name{UF}
 \alias{UF}
-\title{A list of state abbreviations for use with the functions of congressoBR.}
+\title{A list of state abbreviations for use with the functions of congressbr.}
 \usage{
 UF()
 }
