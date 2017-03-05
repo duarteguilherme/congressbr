@@ -20,7 +20,7 @@
 #' @note Requesting data from a long period of time with \code{details = TRUE} will
 #' return a large object in terms of memory. It will also be rather unwieldy, with
 #' many columns.
-#' @author Robert Myles McDonnell & Guilherme Jardim Duarte.
+#' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
 #' sen_agenda(initial_date = "20161105", end_date = "20161125")
 cam_listaProposicoes <- function(sigla) {
