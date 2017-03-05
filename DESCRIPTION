@@ -2,8 +2,8 @@ Package: congressbr
 Type: Package
 Title: Downloads, Unpacks and Tidies Legislative Data from the Brazilian Federal Senate and Chamber of Deputies
 Version: 0.1.0
-Author: Robert Myles McDonnell and Guilherme Jardim Duarte
-Maintainer: The package maintainer <yourself@somewhere.net>
+Author: Robert Myles McDonnell, Guilherme Jardim Duarte and Danilo Freire
+Maintainer:
 Description:
 License: MIT + file LICENSE
 Encoding: UTF-8
