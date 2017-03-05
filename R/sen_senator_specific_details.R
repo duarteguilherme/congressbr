@@ -26,9 +26,9 @@ sen_senator_positions <- function(code = 0, active = "both", wide = TRUE){
   # param checks
 
   if(is.null(code)){
-    return(message("Error: 'code' is necessary."))
+    stop("'code' is necessary.")
   } else if(!is.null(code) & !is.numeric(code)){
-    return(message("Error: 'code' must be an integer."))
+    stop("'code' must be an integer.")
   }
 
   if(active == "yes"){
@@ -38,17 +38,17 @@ sen_senator_positions <- function(code = 0, active = "both", wide = TRUE){
   } else if(active == "both"){
     request <- httr::GET(paste0(base_url, code, "/cargos"))
   } else if(!is.null(active) & active != "yes" & active != "no"){
-    return(message("Error: 'active' must be 'both', 'yes' or 'no'"))
+    return(stop("'active' must be 'both', 'yes' or 'no'"))
   }
 
   # status checks
   if(request$status_code != 200){
-    return(message("Error: GET request failed"))
+    stop("GET request failed")
   } else{
     request <- httr::content(request, "parsed")
   }
   if(length(request$CargoParlamentar) < 4){
-    return(message("Error: either this Senator has not held any congressional positions or the code you entered is incorrect."))
+    stop("Either this Senator has not held any congressional positions or the code you entered is incorrect.")
   }
 
     request <- request$CargoParlamentar$Parlamentar

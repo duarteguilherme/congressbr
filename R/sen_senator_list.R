@@ -35,14 +35,14 @@ sen_senator_list <- function(present = TRUE, start = NULL, end = NULL,
   '%ni%' <- Negate('%in%')
   if(present == FALSE & withdrawn == FALSE & is.null(start) &
      is.null(end) & is.null(state) & is.null(status) & is.null(serving)){
-    return(message("Error: no valid parameters to function call."))
+    stop("No valid parameters to function call.")
   }
   if(!is.null(serving) & serving %ni% c("yes", "no")){
-    return(message("Error: 'serving' must be equal to either 'yes' or 'no'."))
+    stop("'serving' must be equal to either 'yes' or 'no'.")
   }
 
   if(length(start) > 2 | length(end) > 2){
-    return(message("Error: 'start' and/or 'end' must be two digit numbers"))
+    stop("'start' and/or 'end' must be two digit numbers")
   }
   if(present == TRUE & is.null(state) & is.null(status)){
     request <- httr::GET(paste0(base_url, "atual"))
@@ -51,7 +51,7 @@ sen_senator_list <- function(present = TRUE, start = NULL, end = NULL,
     request <- httr::GET(paste0(base_url, "atual?uf=", state))
   } else if(present == TRUE & is.null(state) & !is.null(status)){
     if(status %ni% c("T", "S")){
-      return(message("Error: status must be either 'T' or 'S'."))
+      stop("Status must be either 'T' or 'S'.")
     } else{
       status <- tolower(status)
       request <- httr::GET(paste0(base_url, "atual?participacao=", status))
@@ -99,7 +99,7 @@ sen_senator_list <- function(present = TRUE, start = NULL, end = NULL,
 
   # status checks
   if(request$status_code != 200){
-    return(message("Error: GET request failed"))
+    stop("GET request failed")
   } else{
     request <- httr::content(request, "parsed")
     request <- request$ListaParlamentarEmExercicio$Parlamentares$Parlamentar
@@ -107,7 +107,7 @@ sen_senator_list <- function(present = TRUE, start = NULL, end = NULL,
     req <- rmNullObs(request)
 
     if(length(req) == 0){
-      return(message("Error: no data matches your request."))
+      stop("No data matches your request.")
     }
 
     for(z in 1:length(req)){

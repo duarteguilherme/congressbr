@@ -28,27 +28,14 @@
 sen_agenda <- function(initial_date = NULL, end_date, house,
                        colegiado, legislator, details = FALSE){
 
-  ## to do:
-  # what is colegiado?
-  # list of options for house (I think it's just SF and CN)
-  # colegiado
-  # legislator: available through Senador Service
-  # list the variables returned
-
-
-
-  # 1: checks
-  # details & legislator can't be used together
-  # dates must be YYYYMMDD
-  # the only necessary argument is initial_date
+  # checks
   if(is.null(initial_date)){
-    return(message("Error: please choose a valid initial date. Format is YYYYMMDD."))
+    stop("Please choose a valid initial date. Format is YYYYMMDD.")
   }
   if(!is.null(details) & !is.null(legislator)){
-    return(message("Error: it is not possible to use the arguments 'details' and 'legislator together."))
+    stop("It is not possible to use the arguments 'details' and 'legislator together.")
   }
 
-  # 2:
   # request data
   base_url <- "http://legis.senado.gov.br/dadosabertos/agenda/"
 
@@ -76,7 +63,7 @@ sen_agenda <- function(initial_date = NULL, end_date, house,
   }
     # status checks
     if(request$status_code != 200){
-      return(message("Error: GET request failed"))
+      stop("GET request failed")
       } else{
       request <- httr::content(request, "parsed")
       }

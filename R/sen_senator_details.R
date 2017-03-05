@@ -22,21 +22,32 @@ sen_senator_details <- function(code = 0){
 
   # param checks
   if(is.null(code)){
-    return(message("Error: 'code' is necessary."))
+    return(message("'code' is necessary."))
   } else if(!is.null(code) & !is.numeric(code)){
-    return(message("Error: 'code' must be an integer."))
+    stop("'code' must be an integer.")
   } else {
     request <- httr::GET(paste0(base_url, code))
   }
   # status checks
   if(request$status_code != 200){
-    return(message("Error: GET request failed"))
+    stop("GET request failed")
   } else{
     request <- httr::content(request, "parsed")
   }
 
   request <- request$DetalheParlamentar$Parlamentar
   request$UrlGlossario <- NULL
+  req <- rmNullObs(request)
+  req_P <- dplyr::as_data_frame(req$IdentificacaoParlamentar)
+  req_D <- dplyr::as_data_frame(req$DadosBasicosParlamentar)
+  req_M <- as.data.frame(purrr::flatten(req$MandatoAtual))
+  req_F <- as.data.frame(purrr::flatten(req$FiliacaoAtual))
+  req_C <- as.data.frame(purrr::flatten(req$MembroAtualComissoes$Comissao))
+  req_L <- as.data.frame(purrr::flatten(req$LiderancasAtuais$Lideranca))
+  req_T <- as.data.frame(purrr::flatten(req$MateriasDeAutoriaTramitando$Materia))
+  req_R <- as.data.frame(purrr::flatten(req$RelatoriasAtuais$Relatoria))
+  req_S <- as.data.frame(purrr::flatten(req$OutrasInformacoes$Servico))
+
   req <- as.data.frame(t(as.data.frame(purrr::flatten(request))))
   req$Variable <- row.names(req)
   colnames(req)[1] <- "Value"
