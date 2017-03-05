@@ -2,7 +2,7 @@
 % Please edit documentation in R/sen_senator_details.R
 \name{sen_senator_details}
 \alias{sen_senator_details}
-\title{Downloads and tidies information on the Senators in the Federal Senate.}
+\title{Downloads and tidies information on the senators in the Federal Senate.}
 \usage{
 sen_senator_details(code = 0, wide = TRUE, list = FALSE)
 }
@@ -19,7 +19,8 @@ useful in some cases because the wide dataframe can have many columns, as
 the API stores this information in \emph{very} deeply nested lists.}
 
 \item{list}{\code{logical}. If TRUE, returns the deeply nested list directly
-from the API.}
+from the API. \code{wide} will be set to FALSE automatically
+when this option is selected.}
 }
 \value{
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
@@ -32,5 +33,5 @@ Acir_G <- sen_senator_details(code = 4981)
 sen_senator_list
 }
 \author{
-Robert Myles McDonnell & Guilherme Jardim Duarte.
+Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 }

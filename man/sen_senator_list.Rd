@@ -2,7 +2,7 @@
 % Please edit documentation in R/sen_senator_list.R
 \name{sen_senator_list}
 \alias{sen_senator_list}
-\title{Downloads and tidies information on the Senators in the Federal Senate.}
+\title{Downloads and tidies information on the senators in the Federal Senate.}
 \usage{
 sen_senator_list(present = TRUE, start = NULL, end = NULL, state = NULL,
   status = NULL, serving = "yes", withdrawn = FALSE)
@@ -27,7 +27,7 @@ available with the function \code{UF()}.}
 "yes" or "no". "no" returns information on senators who have been elected but
 who have not yet entered office.}
 
-\item{withdrawn}{\code{logical}. If TRUE, returns information on Senators who
+\item{withdrawn}{\code{logical}. If TRUE, returns information on senators who
 were elected but who are not serving (due to health reasons, for example).}
 }
 \value{
@@ -38,5 +38,5 @@ A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 
 }
 \author{
-Robert Myles McDonnell & Guilherme Jardim Duarte.
+Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 }

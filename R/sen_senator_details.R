@@ -4,7 +4,7 @@
 #' @importFrom lubridate parse_date_time
 #' @importFrom data.table rbindlist
 #' @importFrom dplyr as_data_frame
-#' @title Downloads and tidies information on the Senators in the Federal Senate.
+#' @title Downloads and tidies information on the senators in the Federal Senate.
 #' @param code \code{integer}. This number represents the code of the senator
 #' you wish to get information on. These codes can be extracted from the API
 #' using the \code{sen_senator_list()} function, where they will appear as the
@@ -55,7 +55,9 @@ sen_senator_details <- function(code = 0, wide = TRUE, list = FALSE){
   }
 
   if(wide == FALSE){
-    req <- as.data.frame(t(as.data.frame(purrr::flatten(request))))
+    req <- as.data.frame(t(as.data.frame(purrr::flatten(request),
+                                         stringsAsFactors = F)),
+                         stringsAsFactors = F)
     req$Variable <- row.names(req)
     colnames(req)[1] <- "Value"
     req <- dplyr::select(req, Variable, Value)
@@ -63,6 +65,7 @@ sen_senator_details <- function(code = 0, wide = TRUE, list = FALSE){
     req <- dplyr::as_data_frame(req)
     return(req)
   } else{
-    req <- as.data.frame(purrr::flatten(request))
+    req <- as.data.frame(purrr::flatten(request),
+                         stringsAsFactors = F)
   }
 }

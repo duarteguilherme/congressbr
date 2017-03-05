@@ -2,7 +2,7 @@
 #' @importFrom httr content
 #' @importFrom purrr map_df
 #' @importFrom dplyr as_data_frame
-#' @title Downloads and tidies information on the Senators in the Federal Senate.
+#' @title Downloads and tidies information on the senators in the Federal Senate.
 #' @param present \code{logical}. If \code{TRUE}, downloads data on the legislature
 #' currently sitting in the Federal Senate.
 #' @param start two-digit integer representing the first legislature of the
@@ -16,7 +16,7 @@
 #' @param serving is the Senator currently serving his/her mandate? Options are
 #'  "yes" or "no". "no" returns information on senators who have been elected but
 #'  who have not yet entered office.
-#' @param withdrawn \code{logical}. If TRUE, returns information on Senators who
+#' @param withdrawn \code{logical}. If TRUE, returns information on senators who
 #' were elected but who are not serving (due to health reasons, for example).
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
