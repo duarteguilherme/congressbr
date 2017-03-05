@@ -3,7 +3,6 @@
 #' @importFrom lubridate parse_date_time
 #' @importFrom data.table rbindlist
 #' @importFrom dplyr as_data_frame
-#' @import util
 #' @title Downloads and tidies data on the agenda in the Federal Senate.
 #' @param initial_data (\code{character}) start date of the period requested.
 #' This parameter must be in the format YYYYMMDD (Year-Month-Day). A value for
@@ -21,7 +20,7 @@
 #' @note Requesting data from a long period of time with \code{details = TRUE} will
 #' return a large object in terms of memory. It will also be rather unwieldy, with
 #' many columns.
-#' @author Robert Myles McDonnell & Guilherme Jardim Duarte.
+#' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
 #' sen_agenda(initial_date = "20161105", end_date = "20161125")
 #'
@@ -29,27 +28,14 @@
 sen_agenda <- function(initial_date = NULL, end_date, house,
                        colegiado, legislator, details = FALSE){
 
-  ## to do:
-  # what is colegiado?
-  # list of options for house (I think it's just SF and CN)
-  # colegiado
-  # legislator: available through Senador Service
-  # list the variables returned
-
-
-
-  # 1: checks
-  # details & legislator can't be used together
-  # dates must be YYYYMMDD
-  # the only necessary argument is initial_date
+  # checks
   if(is.null(initial_date)){
-    return(message("Error: please choose a valid initial date. Format is YYYYMMDD."))
+    stop("Please choose a valid initial date. Format is YYYYMMDD.")
   }
   if(!is.null(details) & !is.null(legislator)){
-    return(message("Error: it is not possible to use the arguments 'details' and 'legislator together."))
+    stop("It is not possible to use the arguments 'details' and 'legislator together.")
   }
 
-  # 2:
   # request data
   base_url <- "http://legis.senado.gov.br/dadosabertos/agenda/"
 
@@ -77,7 +63,7 @@ sen_agenda <- function(initial_date = NULL, end_date, house,
   }
     # status checks
     if(request$status_code != 200){
-      return(message("Error: GET request failed"))
+      stop("GET request failed")
       } else{
       request <- httr::content(request, "parsed")
       }

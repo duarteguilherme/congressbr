@@ -1,7 +1,7 @@
-#' @title A list of state abbreviations for use with the functions of congressoBR.
+#' @title A list of state abbreviations for use with the functions of congressbr.
 #' @description This function prints out a character vector of Brazilian
 #' state abbreviations to the console.
-#' @author Robert Myles McDonnell & Guilherme Jardim Duarte.
+#' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @note This is most useful if you already have an idea of what state you want
 #'  and its abbreviation. If not, to see the full dataset, use \code{data("statesBR")},
 #'  which has the abbreviation, "UF" (\emph{Unidade Federal}) and the full name of the

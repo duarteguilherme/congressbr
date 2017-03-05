@@ -1,5 +1,4 @@
 #' @import xml2
-#' @import util
 #' @import lubridate
 #' @import magrittr
 #' @title Downloads and tidies data on the agenda in the Federal Senate.
@@ -9,7 +8,9 @@
 #' @param end_data (\code{character}) final date for period requested. Format
 #' YYYYMMDD.
 #' @param house (\code{character}). The acronym for the legislative house
-#' for which results are requested. Options are SF (\emph{Senado Federal}, Federal Senate) and CN (\emph{Congresso Nacional}, National Congress - joint meeting of the Senate and Chamber).
+#' for which results are requested. Options are SF (\emph{Senado Federal}, Federal Senate)
+#' and CN (\emph{Congresso Nacional}, National Congress - joint meeting of
+#' the Senate and Chamber).
 #' @param colegiado To Do
 #' @param legislator To Do
 #' @param details (\code{logical}). If details is equal to TRUE, the data returned
