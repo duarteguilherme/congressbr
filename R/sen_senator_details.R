@@ -18,6 +18,7 @@
 #' from the API. \code{wide} will be set to FALSE automatically
 #' when this option is selected.
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
+#' If list == TRUE, a list.
 #' @seealso sen_senator_list
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
