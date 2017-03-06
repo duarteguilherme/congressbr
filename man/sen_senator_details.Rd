@@ -24,6 +24,7 @@ when this option is selected.}
 }
 \value{
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
+If list == TRUE, a list.
 }
 \examples{
 Acir_G <- sen_senator_details(code = 4981)
