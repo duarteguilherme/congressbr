@@ -14,7 +14,8 @@
 #' Federal Senate), CN (\emph{Congresso Nacional}, National Congress - joint
 #' meeting of the Senate and Chamber), and CA \code{Camara dos Deputados},
 #' Chamber of Deputies.
-#' @param colegiado To Do ****
+#' @param s_b \code{character}. Name of the commission or supervisory body. A
+#' data frame of these can be seen with \code{data("commissions")}.
 #' @param legislator \code{integer}. The numeric code given to each senator.
 #' A dataframe with these values is returned from the \code{sen_senator_list()}
 #' function.
@@ -28,10 +29,11 @@
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
 #' sen_agenda(initial_date = "20161105", end_date = "20161125")
-#' 4988
+#' sen_agenda(initial_date = "20161105", end_date = "20161125",
+#' legislator = 4988)
 #' @export
 sen_agenda <- function(initial_date = NULL, end_date = NULL,
-                       house = NULL, colegiado = NULL,
+                       house = NULL, s_b = NULL,
                        legislator = 0, details = FALSE){
   # checks
   if(is.null(initial_date)){
@@ -57,7 +59,7 @@ sen_agenda <- function(initial_date = NULL, end_date = NULL,
   # request data
   request <- base_url %p%
     "casa=" %p% house %p%
-    "&colegiado=" %p% colegiado %p%
+    "&colegiado=" %p% s_b %p%
     "&parlamentar=" %p% legislator
 
   request <- httr::GET(request)
