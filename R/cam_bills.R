@@ -1,6 +1,6 @@
-#' @import xml2
-#' @import lubridate
-#' @import magrittr
+#' @importFrom xml2 read_xml
+#' @importFrom tibble tibble
+#' @importFrom magrittr `%>%`
 #' @title Downloads and tidies data on the agenda in the Federal Senate.
 #' @param initial_data (\code{character}) start date of the period requested.
 #' This parameter must be in the format YYYYMMDD (Year-Month-Day). A value for
@@ -22,15 +22,20 @@
 #' many columns.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
-#' sen_agenda(initial_date = "20161105", end_date = "20161125")
-cam_bills <- function(type=""http://sao-paulo.estadao.com.br/noticias/geral,estudante-de-direito-e-presa-pichando-muro-na-regiao-central-de-sp,70001686946?3,number="",year, initial_date, final_date,) {
+#' cam_bills(initial_date = "11/01/2015", end_date = "11/01/2016", part_name_author="Oliveira")
+cam_bills <- function(type="",number="",year="", initial_date="", end_date="", part_name_author="", id_type_author="",
+                      abbreviation_party_author="", abbreviation_st_author="",gender_author="",
+                      cod_state="", cod_branch_state="", still="") {
   " This function lists every bill informations according to the parameters searched"
-  link <- "http://www.camara.leg.br/SitCamaraWS/Proposicoes.asmx/ListrProposicoes?" %p%
+  if ( part_name_author=="" & ( type=="" | year=="" )  ) {
+    stop("Lacking arguments. part_name_author or type and year are mandatory")
+  }
+  link <- "http://www.camara.leg.br/SitCamaraWS/Proposicoes.asmx/ListarProposicoes?" %p%
     "sigla=" %p% type %p%
     "&numero=" %p% number %p%
     "&ano=" %p% year %p%
     "&datApresentacaoIni=" %p% initial_date %p%
-    "&datApresentacaoFim=" %p% final_date %p%
+    "&datApresentacaoFim=" %p% end_date %p%
     "&parteNomeAutor=" %p% part_name_author %p%
     "&idTipoAutor=" %p% id_type_author %p%
     "&siglaPartidoAutor=" %p% abbreviation_party_author %p%
@@ -39,10 +44,31 @@ cam_bills <- function(type=""http://sao-paulo.estadao.com.br/noticias/geral,estu
     "&codEstado=" %p% cod_state %p%
     "&codOrgaoEstado=" %p% cod_branch_state %p%
     "&emTramitacao=" %p% still
+  data <- read_xml(link)
+  return(data)
+}
+extract_bill <- function(bill) {
+  return(
+    tibble(
+      id_bill = xml_text(xml_find_all(bill, "./id")),
+      name_bill = xml_text(xml_find_all(bill, "./nome")),
+      id_type = xml_text(xml_find_all(bill, "./tipoProposicao/id")),
+      abr_type = xml_text(xml_find_all(bill, "./tipoProposicao/sigla")),
+      name_type = xml_text(xml_find_all(bill, "./tipoProposicao/nome")),
+      id_branchn = xml_text(xml_find_all(bill, "./orgaoNumerador/id")),
+      abr_branchn = xml_text(xml_find_all(bill, "./orgaoNumerador/sigla")),
+      name_branchn = xml_text(xml_find_all(bill, "./orgaoNumerador/nome")),
+      date_presentation = xml_text(xml_find_all(bill, "./datApresentacao")),
+      txt_ementa = xml_text(xml_find_all(bill, "./txtEmenta")),
+      explanation_ementa = xml_text(xml_find_all(bill, "./txtExplicacaoEmenta")),
 
-  return(link)
+    )
+  )
 }
 
 
+data <- cam_bills(initial_date = "11/01/2015", end_date = "11/01/2016", part_name_author="Oliveira")
 
+dunha <- data %>%
+  xml_find_all('proposicao') %>%
 
