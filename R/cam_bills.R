@@ -1,7 +1,9 @@
 #' @importFrom xml2 read_xml
+#' @importFrom xml2 xml_find_all
+#' @importFrom purrr map_df
 #' @importFrom tibble tibble
 #' @importFrom magrittr `%>%`
-#' @title Downloads and tidies data on the agenda in the Federal Senate.
+#' @title Downloads and tidies data for lists of bills in Brazilian Chamber of Deputies
 #' @param initial_data (\code{character}) start date of the period requested.
 #' This parameter must be in the format YYYYMMDD (Year-Month-Day). A value for
 #' this parameter is necessary, all others are optional.
@@ -23,6 +25,8 @@
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
 #' cam_bills(initial_date = "11/01/2015", end_date = "11/01/2016", part_name_author="Oliveira")
+
+
 cam_bills <- function(type="",number="",year="", initial_date="", end_date="", part_name_author="", id_type_author="",
                       abbreviation_party_author="", abbreviation_st_author="",gender_author="",
                       cod_state="", cod_branch_state="", still="") {
@@ -44,9 +48,14 @@ cam_bills <- function(type="",number="",year="", initial_date="", end_date="", p
     "&codEstado=" %p% cod_state %p%
     "&codOrgaoEstado=" %p% cod_branch_state %p%
     "&emTramitacao=" %p% still
-  data <- read_xml(link)
+  print(link)
+  data <- read_xml(link) %>%
+    xml_find_all('proposicao') %>%
+    map_df(extract_bill)
   return(data)
 }
+
+
 extract_bill <- function(bill) {
   return(
     tibble(
@@ -61,14 +70,28 @@ extract_bill <- function(bill) {
       date_presentation = xml_text(xml_find_all(bill, "./datApresentacao")),
       txt_ementa = xml_text(xml_find_all(bill, "./txtEmenta")),
       explanation_ementa = xml_text(xml_find_all(bill, "./txtExplicacaoEmenta")),
-
+      cod_procedure = xml_text(xml_find_all(bill, "./regime/codRegime")),
+      txt_procedure = xml_text(xml_find_all(bill, "./regime/txtRegime")),
+      id_consideration = xml_text(xml_find_all(bill, "./apreciacao/id")),
+      txt_consideration = xml_text(xml_find_all(bill, "./apreciacao/txtApreciacao")),
+      author1_name = xml_text(xml_find_all(bill, "./autor1/txtNomeAutor")),
+      author1_id = xml_text(xml_find_all(bill, "./autor1/idecadastro")),
+      author1_codparty = xml_text(xml_find_all(bill, "./autor1/codPartido")),
+      author1_abrparty = xml_text(xml_find_all(bill, "./autor1/txtSiglaPartido")),
+      author1_abrstate = xml_text(xml_find_all(bill, "./autor1/txtSiglaUF")),
+      number_authors = xml_text(xml_find_all(bill, "./qtdAutores")),
+      last_action = xml_text(xml_find_all(bill, "./ultimoDespacho/datDespacho")),
+      txt_last_action = xml_text(xml_find_all(bill, "./ultimoDespacho/txtDespacho")),
+      id_situation = xml_text(xml_find_all(bill, "./situacao/id")),
+      desc_situation = xml_text(xml_find_all(bill, "./situacao/descricao")),
+      cod_branch_situation = xml_text(xml_find_all(bill, "./situacao/orgao/codOrgaoEstado")),
+      abr_branch_situation = xml_text(xml_find_all(bill, "./situacao/orgao/siglaOrgaoEstado")),
+      cod_main_bill = xml_text(xml_find_all(bill, "./situacao/principal/codProposicaoPrincipal")),
+      main_bill = xml_text(xml_find_all(bill, "./situacao/principal/proposicaoPrincipal")),
+      id_gender = xml_text(xml_find_all(bill, "./indGenero")),
+      num_branches_state = xml_text(xml_find_all(bill, "./qtdOrgaosComEstado"))
     )
   )
 }
 
-
-data <- cam_bills(initial_date = "11/01/2015", end_date = "11/01/2016", part_name_author="Oliveira")
-
-dunha <- data %>%
-  xml_find_all('proposicao') %>%
 
