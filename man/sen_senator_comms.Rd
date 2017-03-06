@@ -22,7 +22,7 @@ with the variables (column names when TRUE) in the first column and the values
 
 \item{commission}{\code{character}. Abbreviation of the name of the
 commission. A data frame of these (with the abbreviation and the full name)
-may be got with the \code{commissions} dataset (\code{data("commissions")}).}
+may be had with the \code{commissions} dataset: (\code{data("commissions")}).}
 
 \item{list}{\code{logical}. If TRUE, returns the deeply nested list object
 directly from the API. \code{wide} will be set to FALSE automatically
@@ -38,7 +38,7 @@ this function may have a very large number of columns. In this case, setting
 list to TRUE may be of more use.
 }
 \examples{
-sen_senator_comms(code = 3, commission = "CMA")
+val_cma <- sen_senator_comms(code = 3, commission = "CMA")
 }
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.

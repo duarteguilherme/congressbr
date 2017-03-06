@@ -4,16 +4,21 @@
 \alias{sen_agenda}
 \title{Downloads and tidies data on the agenda in the Federal Senate.}
 \usage{
-sen_agenda(initial_date = NULL, end_date, house, colegiado, legislator,
-  details = FALSE)
+sen_agenda(initial_date = NULL, end_date = NULL, house = NULL,
+  colegiado = NULL, legislator = 0, details = FALSE)
 }
 \arguments{
 \item{house}{(\code{character}). The acronym for the legislative house
-for which results are requested. Options are SF (\emph{Senado Federal}, Federal Senate) and CN (\emph{Congresso Nacional}, National Congress - joint meeting of the Senate and Chamber).}
+for which results are requested. Options are SF (\emph{Senado Federal},
+Federal Senate), CN (\emph{Congresso Nacional}, National Congress - joint
+meeting of the Senate and Chamber), and CA \code{Camara dos Deputados},
+Chamber of Deputies.}
 
-\item{colegiado}{To Do}
+\item{colegiado}{To Do ****}
 
-\item{legislator}{To Do}
+\item{legislator}{\code{integer}. The numeric code given to each senator.
+A dataframe with these values is returned from the \code{sen_senator_list()}
+function.}
 
 \item{details}{(\code{logical}). If details is equal to TRUE, the data returned
 is an expanded dataset with additional details. This is not recommended unless
@@ -36,7 +41,7 @@ many columns.
 }
 \examples{
 sen_agenda(initial_date = "20161105", end_date = "20161125")
-
+4988
 }
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.

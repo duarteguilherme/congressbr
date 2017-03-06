@@ -239,7 +239,7 @@ sen_senator_terms <- function(code = 0, wide = TRUE,
 #' If list == TRUE, a list.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
-#' sen_senator_comms(code = 3, commission = "CMA")
+#' val_cma <- sen_senator_comms(code = 3, commission = "CMA")
 #' @export
 sen_senator_comms <- function(code = 0, active = "both",
                               wide = TRUE, commission = NULL,
@@ -314,3 +314,48 @@ sen_senator_comms <- function(code = 0, active = "both",
     return(req)
   }
 }
+
+
+
+
+#' @title Return the votes a certain senator has cast.
+#' @param code \code{integer}. This number represents the code of the senator
+#' you wish to get information on. These codes can be extracted from the API
+#' using the \code{sen_senator_list()} function, where they will appear as the
+#' first column in the data frame returned, under the name 'CodigoParlamentar'.
+#' @param commission \code{character}. Abbreviation of the name of the
+#' commission. A data frame of these (with the abbreviation and the full name)
+#' may be had with the \code{commissions} dataset: (\code{data("commissions")}).
+#' @param wide \code{logical}. Default is TRUE, which returns a dataframe of one
+#' row with details on the senator. When FALSE, returns a two-column dataframe
+#' with the variables (column names when TRUE) in the first column and the values
+#'  in the second. This may be useful in some cases because the wide dataframe
+#'  can have many columns, as the API stores this information in \emph{very}
+#'  deeply nested lists.
+#' @param list \code{logical}. If TRUE, returns the deeply nested list object
+#' directly from the API. \code{wide} will be set to FALSE automatically
+#' when this option is selected.
+#' @note If list is FALSE and wide == TRUE, the data frame returned by
+#' this function may have a very large number of columns. In this case, setting
+#' list to TRUE may be of more use.
+#' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
+#' If list == TRUE, a list.
+#' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
+#' @examples
+#' val_cma <- sen_senator_comms(code = 3, commission = "CMA")
+#' @export
+#sen_senator_votes <- function(code = 0, active = "both",
+  #                             wide = TRUE, commission = NULL,
+  #                             list = FALSE){
+  # #base_url <- "http://legis.senado.gov.br/dadosabertos/senador/"
+
+
+  #request <- httr::GET(paste0(base_url, code, "/votacoes"))
+
+
+
+# ano
+# numero
+# sigla: vote type ("pls" etc, make function to display these)
+# tramitando: "S", "N"
+#/senador/{codigo}/
