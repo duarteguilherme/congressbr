@@ -65,11 +65,8 @@ sen_agenda <- function(initial_date = NULL, end_date = NULL,
   request <- httr::GET(request)
 
   # status checks
-  if(request$status_code != 200){
-    stop("GET request failed")
-    } else{
-    request <- httr::content(request, "parsed")
-    }
+  request <- status(request)
+
   if(is.null(request$Reunioes)){
     stop("No data matches your input.")
   }

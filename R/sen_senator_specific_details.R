@@ -55,11 +55,8 @@ sen_senator_positions <- function(code = 0, active = "both",
   }
 
   # status checks
-  if(request$status_code != 200){
-    stop("GET request failed")
-  } else{
-    request <- httr::content(request, "parsed")
-  }
+  request <- status(request)
+
   if(length(request$CargoParlamentar) < 4){
     stop("Either this Senator has not held any congressional positions or the code you entered is incorrect.")
   }

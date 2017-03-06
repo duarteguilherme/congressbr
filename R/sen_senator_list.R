@@ -98,35 +98,32 @@ sen_senator_list <- function(present = TRUE, start = NULL, end = NULL,
   }
 
   # status checks
-  if(request$status_code != 200){
-    stop("GET request failed")
-  } else{
-    request <- httr::content(request, "parsed")
-    request <- request$ListaParlamentarEmExercicio$Parlamentares$Parlamentar
+  request <- status(request)
 
-    req <- rmNullObs(request)
+  request <- request$ListaParlamentarEmExercicio$Parlamentares$Parlamentar
 
-    if(length(req) == 0){
-      stop("No data matches your request.")
-    }
+  req <- rmNullObs(request)
 
-    for(z in 1:length(req)){
-      req[[z]][[3]] <- NULL
-    }
-
-    for(z in 1:length(req)){
-      req[[z]][["Mandato"]] <- as.data.frame(req[[z]][["Mandato"]],
-                                             stringsAsFactors = F)
-    }
-    parl <- purrr::map_df(req, "IdentificacaoParlamentar")
-    mand <- purrr::map_df(req, "Mandato")
-
-    req <- cbind(parl, mand)
-    if(length(grep("UfParlamentar", colnames(req))) > 1){
-      x <- grep("UfParlamentar", colnames(req))
-      req <- req[, -x[2]]
-    }
-    req <- dplyr::as_data_frame(req)
-    return(req)
+  if(length(req) == 0){
+    stop("No data matches your request.")
   }
+
+  for(z in 1:length(req)){
+    req[[z]][[3]] <- NULL
+  }
+
+  for(z in 1:length(req)){
+    req[[z]][["Mandato"]] <- as.data.frame(req[[z]][["Mandato"]],
+                                           stringsAsFactors = F)
+  }
+  parl <- purrr::map_df(req, "IdentificacaoParlamentar")
+  mand <- purrr::map_df(req, "Mandato")
+
+  req <- cbind(parl, mand)
+  if(length(grep("UfParlamentar", colnames(req))) > 1){
+    x <- grep("UfParlamentar", colnames(req))
+    req <- req[, -x[2]]
+  }
+  req <- dplyr::as_data_frame(req)
+  return(req)
 }

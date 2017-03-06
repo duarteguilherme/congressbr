@@ -16,7 +16,7 @@
 #' @export
 sen_parties <- function(ascii = TRUE){
   x <- httr::GET("http://legis.senado.gov.br/dadosabertos/senador/partidos")
-  x <- httr::content(x, "parsed")
+  x <- status(x)
   x <- x$ListaPartidos$Partidos$Partido
   x <- purrr::map(x, dplyr::as_data_frame)
   x <- do.call(rbind, x)
@@ -41,7 +41,7 @@ sen_parties <- function(ascii = TRUE){
 #' @export
 sen_statement_list <- function(return = FALSE, ascii = TRUE){
   x <- httr::GET("http://legis.senado.gov.br/dadosabertos/senador/lista/tiposPronunciamento")
-  x <- httr::content(x, "parsed")
+  x <- status(x)
   x <- x$ListaTiposPronunciamento$TiposPronunciamento$TipoPronunciamento
   x <- purrr::map(x, dplyr::as_data_frame)
   x <- do.call(rbind, x)

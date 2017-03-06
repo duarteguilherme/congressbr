@@ -41,11 +41,7 @@ sen_senator_details <- function(code = 0, wide = TRUE, list = FALSE){
     request <- httr::GET(paste0(base_url, code))
   }
   # status checks
-  if(request$status_code != 200){
-    stop("GET request failed")
-  } else{
-    request <- httr::content(request, "parsed")
-  }
+  request <- status(request)
 
   request <- request$DetalheParlamentar$Parlamentar
   request$UrlGlossario <- NULL

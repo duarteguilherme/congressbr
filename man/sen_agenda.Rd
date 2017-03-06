@@ -5,7 +5,7 @@
 \title{Downloads and tidies data on the agenda in the Federal Senate.}
 \usage{
 sen_agenda(initial_date = NULL, end_date = NULL, house = NULL,
-  colegiado = NULL, legislator = 0, details = FALSE)
+  s_b = NULL, legislator = 0, details = FALSE)
 }
 \arguments{
 \item{house}{(\code{character}). The acronym for the legislative house
@@ -14,7 +14,8 @@ Federal Senate), CN (\emph{Congresso Nacional}, National Congress - joint
 meeting of the Senate and Chamber), and CA \code{Camara dos Deputados},
 Chamber of Deputies.}
 
-\item{colegiado}{To Do ****}
+\item{s_b}{\code{character}. Name of the commission or supervisory body. A
+data frame of these can be seen with \code{data("commissions")}.}
 
 \item{legislator}{\code{integer}. The numeric code given to each senator.
 A dataframe with these values is returned from the \code{sen_senator_list()}
@@ -41,7 +42,8 @@ many columns.
 }
 \examples{
 sen_agenda(initial_date = "20161105", end_date = "20161125")
-4988
+sen_agenda(initial_date = "20161105", end_date = "20161125",
+legislator = 4988)
 }
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
