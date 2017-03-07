@@ -22,7 +22,7 @@ with the variables (column names when TRUE) in the first column and the values
 
 \item{commission}{\code{character}. Abbreviation of the name of the
 commission. A data frame of these (with the abbreviation and the full name)
-may be got with the \code{commissions} dataset (\code{data("commissions")}).}
+may be had with the \code{commissions} dataset: (\code{data("commissions")}).}
 
 \item{list}{\code{logical}. If TRUE, returns the deeply nested list object
 directly from the API. \code{wide} will be set to FALSE automatically

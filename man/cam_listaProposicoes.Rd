@@ -39,5 +39,5 @@ many columns.
 sen_agenda(initial_date = "20161105", end_date = "20161125")
 }
 \author{
-Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
+Robert Myles McDonnell & Guilherme Jardim Duarte.
 }
