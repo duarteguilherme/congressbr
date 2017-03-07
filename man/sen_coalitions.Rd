@@ -28,7 +28,7 @@ with variables:
 }
 }
 \examples{
-cols <- sen_coalitions()
+coalitions <- sen_coalitions()
 }
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.

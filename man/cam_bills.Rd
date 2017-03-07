@@ -42,5 +42,5 @@ many columns.
 cam_bills(initial_date = "11/01/2015", end_date = "11/01/2016", part_name_author="Oliveira")
 }
 \author{
-Robert Myles McDonnell & Guilherme Jardim Duarte.
+Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 }

@@ -1,6 +1,5 @@
 #' @importFrom httr GET
 #' @importFrom httr content
-#' @importFrom lubridate parse_date_time
 #' @importFrom stringi stri_trans_general
 #' @importFrom data.table rbindlist
 #' @importFrom dplyr as_data_frame
@@ -42,8 +41,6 @@ sen_bill_sponsors <- function(ascii = TRUE){
 
   if(ascii == TRUE){
     result <- dplyr::data_frame(
-      request_date = lubridate::parse_date_time(req$X.versao,
-                                                orders = "d!m!Y! HMS"),
       sponsor_name = stringi::stri_trans_general(req$NomeAutor, "Latin-ASCII"),
       sponsor_code = req$CodigoParlamentar,
       title = req$Tratamento,
@@ -56,8 +53,6 @@ sen_bill_sponsors <- function(ascii = TRUE){
     return(result)
   } else {
     result <- dplyr::data_frame(
-      request_date = lubridate::parse_date_time(req$X.versao,
-                                                orders = "d!m!Y! HMS"),
       sponsor_name = req$NomeAutor,
       sponsor_code = req$CodigoParlamentar,
       title = req$Tratamento,
