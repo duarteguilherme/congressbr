@@ -3,6 +3,7 @@
 export(UF)
 export(sen_agenda)
 export(sen_bill_sponsors)
+export(sen_coalition_info)
 export(sen_coalitions)
 export(sen_parties)
 export(sen_senator_affiliations)

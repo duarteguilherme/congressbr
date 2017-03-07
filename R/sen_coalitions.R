@@ -86,17 +86,18 @@ sen_coalitions <- function(members =TRUE, ascii = TRUE){
     date_j <- purrr::flatten(date_j)
     date_j <- purrr::flatten(date_j)
     date_j <- purrr::map_if(date_j, is.null, ~NA)
-    parties$member_date_joined <- lubridate::parse_date_time(date_j,
-                                                             orders = "Ymd")
+    parties$member_date_joined <- suppressWarnings(
+      lubridate::parse_date_time(date_j, orders = "Ymd"))
 
     date_l <- purrr::at_depth(members, 3, "DataDesligamento")
     date_l <- purrr::flatten(date_l)
     date_l <- purrr::flatten(date_l)
     date_l <- purrr::map_if(date_l, is.null, ~NA)
-    parties$member_date_left <- lubridate::parse_date_time(date_l,
-                                                           orders = "Ymd")
+    parties$member_date_left <- suppressWarnings(
+      lubridate::parse_date_time(date_l, orders = "Ymd"))
 
-    bloco <- dplyr::full_join(bloc, parties)
+    bloco <- suppressMessages(dplyr::full_join(bloc, parties))
+
     if(ascii == FALSE){
       return(bloco)
     } else{
