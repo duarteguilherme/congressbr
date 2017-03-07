@@ -1,6 +1,7 @@
 #' @importFrom httr GET
 #' @importFrom httr content
 #' @importFrom purrr map_df
+#' @importFrom purrr compact
 #' @importFrom dplyr as_data_frame
 #' @title Downloads and tidies information on the senators in the Federal Senate.
 #' @param present \code{logical}. If \code{TRUE}, downloads data on the legislature
@@ -102,7 +103,7 @@ sen_senator_list <- function(present = TRUE, start = NULL, end = NULL,
 
   request <- request$ListaParlamentarEmExercicio$Parlamentares$Parlamentar
 
-  req <- rmNullObs(request)
+  req <- purrr::compact(request)
 
   if(length(req) == 0){
     stop("No data matches your request.")

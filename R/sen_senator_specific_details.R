@@ -64,7 +64,7 @@ sen_senator_positions <- function(code = 0, active = "both",
     request <- request$CargoParlamentar$Parlamentar
     request$UrlGlossario <- NULL
 
-    req <- rmNullObs(request)
+    req <- purrr::compact(request)
 
     if(list == TRUE){
       return(req)
@@ -129,7 +129,7 @@ sen_senator_affiliations <- function(code = 0, wide = TRUE,
   }
   request <- request$FiliacaoParlamentar$Parlamentar
   request$UrlGlossario <- NULL
-  req <- rmNullObs(request)
+  req <- purrr::compact(request)
   if(wide == TRUE){
     req <- as.data.frame(purrr::flatten(req),
                          stringsAsFactors = F)
@@ -190,7 +190,7 @@ sen_senator_terms <- function(code = 0, wide = TRUE,
   }
   request <- request$MandatoParlamentar$Parlamentar
   request$UrlGlossario <- NULL
-  req <- rmNullObs(request)
+  req <- purrr::compact(request)
   if(wide == TRUE){
     req <- as.data.frame(purrr::flatten(req),
                          stringsAsFactors = F)
@@ -290,7 +290,7 @@ sen_senator_comms <- function(code = 0, active = "both",
   }
   request <- request$MembroComissaoParlamentar$Parlamentar
   request$UrlGlossario <- NULL
-  req <- rmNullObs(request)
+  req <- purrr::compact(request)
 
   if(wide == TRUE){
     req <- as.data.frame(purrr::flatten(req),

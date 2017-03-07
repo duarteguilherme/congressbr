@@ -1,6 +1,7 @@
 #' @importFrom httr GET
 #' @importFrom httr content
 #' @importFrom purrr flatten
+#' @importFrom purrr compact
 #' @importFrom lubridate parse_date_time
 #' @importFrom data.table rbindlist
 #' @importFrom dplyr as_data_frame
@@ -45,7 +46,7 @@ sen_senator_details <- function(code = 0, wide = TRUE, list = FALSE){
 
   request <- request$DetalheParlamentar$Parlamentar
   request$UrlGlossario <- NULL
-  req <- rmNullObs(request)
+  req <- purrr::compact(request)
 
   if(list == TRUE){
     return(req)

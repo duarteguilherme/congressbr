@@ -31,7 +31,7 @@ sen_bill_sponsors <- function(ascii = TRUE){
   request <- status(request)
 
   request <- request$ListaAutores$Totais$Parlamentares
-  request <- rmNullObs(request)
+  request <- purrr::compact(request)
 
   for(z in 1:length(request)){
     request[[z]] <- as.data.frame(request[[z]], stringsAsFactors = F)
@@ -87,7 +87,7 @@ sen_sponsor_types <- function(ascii = TRUE){
   request <- status(request)
 
   request <- request$ListaTiposAutor$TiposAutor$TipoAutor
-  request <- rmNullObs(request)
+  request <- purrr::compact(request)
 
   for(z in 1:length(request)){
     request[[z]] <- as.data.frame(request[[z]], stringsAsFactors = F)

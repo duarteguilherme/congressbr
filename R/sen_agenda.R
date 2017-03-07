@@ -1,5 +1,6 @@
 #' @importFrom httr GET
 #' @importFrom httr content
+#' @importFrom purrr compact
 #' @importFrom lubridate parse_date_time
 #' @importFrom data.table rbindlist
 #' @importFrom dplyr as_data_frame
@@ -74,7 +75,7 @@ sen_agenda <- function(initial_date = NULL, end_date = NULL,
   ## tidy
   request <- request$Reunioes$Reuniao
 
-  req <- rmNullObs(request)
+  req <- purrr::compact(request)
 
   for(z in 1:length(req)){
     req[[z]] <- as.data.frame(req[[z]], stringsAsFactors = F)
