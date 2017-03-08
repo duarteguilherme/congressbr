@@ -3,6 +3,8 @@
 export(UF)
 export(sen_agenda)
 export(sen_bill_sponsors)
+export(sen_bills_timeframe)
+export(sen_budget)
 export(sen_coalition_info)
 export(sen_coalitions)
 export(sen_parties)
