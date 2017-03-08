@@ -12,3 +12,7 @@ status <- function(x){
     return(xx)
   }
 }
+
+# depth of list check
+depth <- function(x) ifelse(is.list(x), 1L + max(sapply(x, depth)), 0L)
+#(http://stackoverflow.com/questions/13432863/determine-level-of-nesting-in-r/13433689)
