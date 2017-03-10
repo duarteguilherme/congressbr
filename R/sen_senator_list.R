@@ -22,8 +22,9 @@
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
-#'
-#'
+#' all <- sen_senator_list()
+#' # Senators from Rio de Janeiro:
+#' rio <- sen_senator_list(state = "RJ")
 #' @export
 sen_senator_list <- function(present = TRUE, start = NULL, end = NULL,
                              state = NULL, status = NULL, serving = "yes",
