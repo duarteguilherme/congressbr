@@ -34,8 +34,9 @@ were elected but who are not serving (due to health reasons, for example).}
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 }
 \examples{
-
-
+all <- sen_senator_list()
+# Senators from Rio de Janeiro:
+rio <- sen_senator_list(state = "RJ")
 }
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
