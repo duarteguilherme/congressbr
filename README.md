@@ -16,3 +16,8 @@ devtools::install_github("RobertMyles/congressbr")
 ### function naming
 
 We follow [googlesheets](https://github.com/jennybc/googlesheets) in using a naming convention for functions that facilitates tab completion. All Senate-related functions start with `sen_` and all Chamber-related ones start with `cam_` ('Câmara').
+
+
+### Contribution
+
+If you want to help us, feel free to fork it. We've been using "Udacity Git Commit Message Style Guide" (https://udacity.github.io/git-styleguide/)
