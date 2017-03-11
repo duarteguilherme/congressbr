@@ -31,13 +31,15 @@ sen_parties <- function(ascii = TRUE){
 #' can make in the Federal Senate.
 #' @param ascii \code{logical}. TRUE by default, removes latin-1 characters
 #' from returned object.
-#' @return
+#' @param print \code{logical}. If TRUE (the default), prints the dataframe to
+#' the console.
+#' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @usage \code{sen_statement_list(return = TRUE, ascii = TRUE)}
 #' @examples
 #' st <- sen_statement_list()
 #' @export
-sen_statement_list <- function(ascii = TRUE){
+sen_statement_list <- function(ascii = TRUE, print = TRUE){
   x <- httr::GET("http://legis.senado.gov.br/dadosabertos/senador/lista/tiposPronunciamento")
   x <- status(x)
   x <- x$ListaTiposPronunciamento$TiposPronunciamento$TipoPronunciamento
@@ -47,8 +49,9 @@ sen_statement_list <- function(ascii = TRUE){
     x$Descricao <- stringi::stri_trans_general(x$Descricao, "Latin-ASCII")
   }
   colnames(x) <- c("Abbreviation", "Description")
-  head(x, n = 9L)
-
+  if(print == TRUE){
+    head(x, n = 9L)
+  }
   return(x)
 }
 
