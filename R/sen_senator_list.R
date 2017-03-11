@@ -1,8 +1,10 @@
 #' @importFrom httr GET
 #' @importFrom httr content
 #' @importFrom purrr map_df
+#' @importFrom purrr map
 #' @importFrom purrr compact
 #' @importFrom dplyr as_data_frame
+#' @importFrom dplyr bind_cols
 #' @title Downloads and tidies information on the senators in the Federal Senate.
 #' @param present \code{logical}. If \code{TRUE}, downloads data on the legislature
 #' currently sitting in the Federal Senate.
@@ -28,10 +30,91 @@
 #' @export
 sen_senator_list <- function(present = TRUE, start = NULL, end = NULL,
                              state = NULL, status = NULL, serving = "yes",
-                             withdrawn = FALSE){
+                             ascii = TRUE){
 
-  # base url
-  base_url <- "http://legis.senado.gov.br/dadosabertos/senador/lista/"
+  # checks:
+  # valid UF, valid serving, status, dates
+
+  if(present == TRUE){
+    present <- "atual?"
+  } else{
+    present <- "afastados"
+  }
+
+  base_url <- "http://legis.senado.gov.br/dadosabertos/senador/lista/" %p%
+    present
+
+
+
+  request <- httr::GET(base_url)
+  request <- status(request)
+
+  if(present == "afastados"){
+    request <- request$AfastamentoAtual$Parlamentares$Parlamentar
+  } else{
+    request <- request$ListaParlamentarEmExercicio$Parlamentares$Parlamentar
+  }
+
+  par <- purrr::map(request, "IdentificacaoParlamentar")
+
+  null <- NA_character_
+
+  parl <- dplyr::data_frame(
+    id = purrr::map_chr(par, "CodigoParlamentar", .null = null),
+    name_full = purrr::map_chr(par, "NomeCompletoParlamentar",
+                               .null = null),
+    name_senator = purrr::map_chr(par, "NomeParlamentar",
+                                  .null = null),
+    gender = purrr::map_chr(par, "SexoParlamentar",
+                            .null = null),
+    foto_url = purrr::map_chr(par, "UrlFotoParlamentar",
+                              .null = null),
+    page_url = purrr::map_chr(par, "UrlPaginaParlamentar",
+                              .null = null),
+    office_email = purrr::map_chr(par, "EmailParlamentar",
+                                  .null = null),
+    party_abbr = purrr::map_chr(par, "SiglaPartidoParlamentar",
+                                .null = null)
+  )
+
+
+  mand <- purrr::map(request, "Mandato")
+  prim <- purrr::map(mand, "PrimeiraLegislaturaDoMandato")
+  seg <- purrr::map(mand, "SegundaLegislaturaDoMandato")
+
+  mandate <- dplyr::data_frame(
+    id_mandate = purrr::map_chr(mand, "CodigoMandato", .null = null),
+    state = purrr::map_chr(mand, "UfParlamentar", .null = null),
+    status = purrr::map_chr(mand, "DescricaoParticipacao"),
+    num_legislature_first_term = purrr::map_chr(prim, "NumeroLegislatura",
+                                            .null = null),
+    first_term_start = suppressWarnings(
+      lubridate::parse_date_time(
+      purrr::map_chr(prim, "DataInicio", .null = null),
+      orders = "Ymd")),
+    first_term_end = suppressWarnings(
+      lubridate::parse_date_time(
+        purrr::map_chr(prim, "DataFim", .null = null),
+        orders = "Ymd")),
+    num_legislature_second_term = purrr::map_chr(seg, "NumeroLegislatura",
+                                                 .null = null),
+    second_term_start = suppressWarnings(
+      lubridate::parse_date_time(
+        purrr::map_chr(seg, "DataInicio", .null = null),
+        orders = "Ymd")),
+    second_term_end = suppressWarnings(
+      lubridate::parse_date_time(
+        purrr::map_chr(seg, "DataFim", .null = null),
+        orders = "Ymd")))
+
+  result <- dplyr::bind_cols(parl, mandate)
+
+
+
+  if(status %ni% c("T", "S")){
+    stop("Status must be either 'T' or 'S'.")
+  }
+
 
   # checks
   '%ni%' <- Negate('%in%')
@@ -99,10 +182,9 @@ sen_senator_list <- function(present = TRUE, start = NULL, end = NULL,
     }
   }
 
-  # status checks
-  request <- status(request)
 
-  request <- request$ListaParlamentarEmExercicio$Parlamentares$Parlamentar
+
+
 
   req <- purrr::compact(request)
 
