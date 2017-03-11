@@ -8,7 +8,9 @@
 #'  (\emph{Unidade Federal}) and the full name of the states.
 #' @export
 UF <- function(){
-  data("statesBR")
-  uf <- as.character(statesBR$UF)
+  uf <- c("AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES",
+          "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR",
+          "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC",
+          "SP", "SE")
   print(uf)
 }
