@@ -17,15 +17,9 @@ devtools::install_github("RobertMyles/congressbr")
 
 We follow [googlesheets](https://github.com/jennybc/googlesheets) in using a naming convention for functions that facilitates tab completion. All Senate-related functions start with `sen_` and all Chamber-related ones start with `cam_` ('Câmara').
 
-<<<<<<< HEAD
 
-### Contribution
-
-If you want to help us, feel free to fork it. We've been using "Udacity Git Commit Message Style Guide" (https://udacity.github.io/git-styleguide/)
-=======
 ### Contributions
 
 If you want to help us, feel free to fork the repo. We've been using the "Udacity Git Commit Message Style Guide" (<https://udacity.github.io/git-styleguide/>). There are a list of open [issues](https://github.com/RobertMyles/congressbr/issues), which is a good place to start.
 
 This package is under development and so contributions are welcome. The API of the Federal Senate is also under development, and so elements of this package may change.
->>>>>>> Rob
