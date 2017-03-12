@@ -72,3 +72,47 @@ UF <- function(){
           "SP", "SE")
   print(uf)
 }
+
+
+
+#' @title Downloads and tidies information on the types of bills that come to
+#' a vote in the Federal Senate.
+#' @param active. Possible values are \code{TRUE}, \code{FALSE}, or can be left as
+#' \code{NULL}, in which case both active and inactive bill types are returned.
+#' @param ascii \code{logical}. TRUE by default, removes latin-1 characters
+#' from returned object.
+#' @param print \code{logical}. If TRUE (the default), prints the dataframe to
+#' the console.
+#' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
+#' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
+#' @examples
+#' bills <- sen_bills_list(active = TRUE)
+#' @export
+sen_bills_list <- function(active = NULL, ascii = TRUE){
+
+  base_url <- "http://legis.senado.gov.br/dadosabertos/materia/tiposNorma"
+
+  if(!is.null(active)){
+    if(active == TRUE){
+      active <- "?indAtivos=S"
+    } else{
+      active <- "?indAtivos=N"
+    }
+    base_url <- base_url %p% active
+  }
+
+  request <- httr::GET(base_url)
+  request <- status(request)
+  request <- request$ListaTiposDocumento$TiposDocumento$TipoDocumento
+
+  bills <- dplyr::data_frame(
+    id = purrr::map_chr(request, "Codigo", .null = NA_character_),
+    bill_abbr = purrr::map_chr(request, "Sigla", .null = NA_character_),
+    bill_description = purrr::map_chr(request, "Descricao", .null = NA_character_)
+  )
+  if(ascii == TRUE){
+    bills$bill_description <- stringi::stri_trans_general(
+      bills$bill_description, "Latin-ASCII")
+  }
+  return(bills)
+}

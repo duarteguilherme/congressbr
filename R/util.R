@@ -9,6 +9,11 @@ status <- function(x){
     stop("GET request failed")
   } else{
     xx <- httr::content(x, "parsed")
+
+  }
+  if(is.null(xx)){
+    stop("No data matches your search.")
+  } else{
     return(xx)
   }
 }

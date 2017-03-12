@@ -1,90 +1,184 @@
 #' @importFrom httr GET
 #' @importFrom httr content
-#' @importFrom lubridate parse_date_time
-#' @importFrom stringi stri_trans_general
-#' @importFrom magrittr '%>%'
-#' @importFrom dplyr as_data_frame
-#' @importFrom dplyr full_join
-#' @importFrom dplyr mutate
 #' @importFrom purrr map
-#' @importFrom purrr map_if
 #' @importFrom purrr flatten
+#' @importFrom purrr discard
 #' @importFrom purrr map_chr
-#' @importFrom purrr at_depth
-#' @importFrom purrr compact
-#' @title Downloads and tidies data on the coalitions in the Federal Senate.
-#' @param members \code{logical}. If FALSE, returns only the first four columns
-#' of the data frame.
-#' @param ascii \code{logical}. If TRUE, names are converted to ascii format.
-#' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame},
-#' with variables:
-#' \itemize{
-#'  \item{\code{bloc_code: }}{unique code given to each coalition.}
-#'  \item{\code{bloc_name: }}{name of the coalition.}
-#'  \item{\code{bloc_label: }}{additional label for the coalition.}
-#'  \item{\code{date_created: }}{\code{POSIXct}, date the coalition was created.}
-#'  \item{\code{member_code: }}{party code.}
-#'  \item{\code{member_abbr: }}{party acronym.}
-#'  \item{\code{member_name: }}{party name.}
-#'  \item{\code{member_date_joined: }}{\code{POSIXct}, date when the party first joined the coalition.}
-#'  \item{\code{member_date_left:: }}{\code{POSIXct}, date when the party left the coalition.}
-#' }
+#' @importFrom dplyr data_frame
+#' @importFrom stringi stri_trans_general
+#' @importFrom lubridate parse_date_time
+#' @title Downloads and tidies information on the legislation in the Federal Senate.
+#' @param type \code{character}. The abbreviation of the vote type you're looking
+#' for. A full list of these can be obtained with the \code{sen_bill_list()}
+#' function.
+#' @param number. Two-letter abbreviation of Brazilian state. A list of these is
+#' available with the function \code{UF()}.
+#' @param year \code{integer}. Four-digit year, such as \code{2013}.
+#' @param ascii \code{logical}. If \code{TRUE}, strips Latin characters from
+#' strings.
+#' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
-#'
+#' pls_5_2010 <- sen_bills(type = "PLS", number = 5, year = 2010)
 #' @export
-sen_bills_timeframe <- function(code = 0, commission = NULL,
-                                legislator = NULL, type = NULL){
+sen_bills <- function(type = NULL, number = NULL, year = NULL,
+                      ascii = TRUE){
 
-  base_url <- "http://legis.senado.gov.br/dadosabertos/materia/lista/prazo/" %p%
-    code %p%
-    "?siglaComissao=" %p% commission %p%
-    "?parlamentar=" %p% legislator %p%
-    "?tipoMateria=" %p% type
+  if(is.null(type) | is.null(number) | is.null(year)){
+    stop("None of 'abbr', 'number' or 'year' may be NULL.")
+  }
+  Y <- Sys.Date()
+  Y <- lubridate::year(Y)
+  if(year > Y){
+    stop("Please enter a valid year.")
+  }
+  base_url <- "http://legis.senado.gov.br/dadosabertos/materia/" %p%
+  type %p% "/" %p% number %p% "/" %p% year
 
   request <- httr::GET(base_url)
-  # status checks
   request <- status(request)
 
-  #check exists!!!
-  request <- request$MateriasCumprindoPrazo$Materias$Materia
-
-  ids <- purrr::map_df(request, "IdentificacaoMateria")
-  #check cols!!!
-  colnames(ids) <- c("bill_code", "house_abbr", "house_name", "bill_type_abbr",
-                     "bill_type_name", "bill_number", "bill_year", "in_passage")
-
-
-  t_frames <- purrr::map(request, "Prazos")
-  names(t_frames) <- ids$bill_code
-  # variable to join with:
-  for(i in 1:length(t_frames)){
-    for(j in 1:length(t_frames[[i]])){
-      t_frames[[i]][[j]]$bill_code <- names(t_frames)[[i]]
-    }
+  request <- request$DetalheMateria$Materia
+  if(is.null(request)){
+    stop("No data matches your search")
   }
-  t_frames <- t_frames %>%
-    purrr::at_depth(2, purrr::flatten) %>%
-    purrr::flatten()
+  null <- NA_character_
+
+  disc <- function(x){
+    x <- as.character(x) %>% purrr::discard(is.na)
+    if(purrr::is_empty(x)){
+      x <- NA
+    }
+    return(x)
+  }
+
+  author <- request$Autoria
+  if(depth(author) > 3){
+    author <- request$Autoria$Autor
+  }
+  author_id <- purrr::flatten(author)
+  topic_s <- request$Assunto$AssuntoEspecifico
+  if(purrr::is_empty(topic_s)){
+    topic_s <- list(Codigo = NA, Descricao = "None")
+  }
+  topic_g <- request$Assunto$AssuntoGeral
+  if(purrr::is_empty(topic_g)){
+    topic_g <- list(Codigo = NA, Descricao = "None")
+  }
+  situation <- request$SituacaoAtual$Autuacoes$Autuacao
+
+  bills <- data.frame(
+  bill_id = purrr::map_chr(request, "CodigoMateria", .null = null) %>%
+   disc(),
+  bill_house = purrr::map_chr(request, "NomeCasaOrigem", .null = null) %>%
+    disc(),
+  bill_house_abbr = purrr::map_chr(request, "SiglaCasaOrigem",
+                                   .null = null) %>% disc(),
+  bill_house_initiated = purrr::map_chr(request, "NomeCasaIniciadora",
+                                        .null = null) %>% disc(),
+  bill_house_init_abbr = purrr::map_chr(request, "SiglaCasaIniciadora",
+                                        .null = null) %>% disc(),
+  bill_type = purrr::map_chr(request, "DescricaoSubtipoMateria",
+                             .null = null) %>% disc(),
+  bill_type_abbr = purrr::map_chr(request, "SiglaSubtipoMateria",
+                                  .null = null) %>% disc(),
+  bill_number = purrr::map_chr(request, "NumeroMateria", .null = null) %>%
+    disc(),
+  bill_year = purrr::map_chr(request, "AnoMateria", .null = null) %>% disc(),
+  bill_author = purrr::map_chr(author, "NomeAutor", .null = null) %>%
+    disc(),
+  bill_author_type = purrr::map_chr(author, "DescricaoTipoAutor",
+                                    .null = null) %>%  disc(),
+  bill_author_id = purrr::map_chr(author_id, "CodigoParlamentar",
+                                  .null = null) %>% disc(),
+  bill_author_gender = purrr::map_chr(author_id, "SexoParlamentar",
+                                      .null = null) %>%  disc(),
+  bill_author_party = purrr::map_chr(author_id, "SiglaPartidoParlamentar",
+                                     .null = null) %>%  disc(),
+  bill_author_state = purrr::map_chr(author, "UfAutor", .null = null) %>%
+    disc(),
+  bill_author_order = purrr::map_chr(author, "NumOrdemAutor",
+                                     .null = null) %>%  disc(),
+  bill_details_short = purrr::map_chr(request, "EmentaMateria",
+                                      .null = null) %>%  disc(),
+  bill_indexing = purrr::map_chr(request, "IndexacaoMateria",
+                                 .null = null) %>%  disc(),
+  bill_situation = purrr::map_chr(situation, "DescricaoSituacao",
+                                  .null = null) %>% disc(),
+  bill_situation_house = purrr::map_chr(situation, "NomeCasaLocal",
+                                        .null = null) %>%  disc(),
+  bill_situation_place = purrr::map_chr(situation, "NomeLocal",
+                                        .null = null) %>%  disc(),
+  stringsAsFactors = F)
 
 
+  # dates:
+  bill_date_presented = purrr::map_chr(request, "DataApresentacao",
+                                       .null = null) %>% disc()
+  bill_date_presented = suppressWarnings(lubridate::parse_date_time(
+    bill_date_presented, orders = "Ymd"))
+  if(purrr::is_empty(bill_date_presented)){
+    bill_date_presented <- NA_character_
+  }
+  bill_date_considered = purrr::map_chr(request, "DataLeitura",
+                                        .null = null) %>%  disc()
+  bill_date_considered = suppressWarnings(lubridate::parse_date_time(
+    bill_date_considered, orders = "Ymd"))
+  bill_situation_date = purrr::map_chr(situation, "DataSituacao",
+                                       .null = null) %>%  disc()
+  bill_situation_date = suppressWarnings(lubridate::parse_date_time(
+    bill_situation_date, orders = "Ymd"))
 
-  names(t_frames) <- NULL
+  #
+  bill_complementary = purrr::map_chr(request, "IndicadorComplementar",
+                                      .null = null) %>%  disc()
+  bill_complementary = ifelse(bill_complementary == "Sim", "Yes",
+                              ifelse(bill_complementary == "Não", "No", NA))
+  bill_in_passage = purrr::map_chr(request, "IndicadorTramitando",
+                                   .null = null) %>% disc()
+  bill_in_passage = ifelse(bill_in_passage == "Sim", "Yes",
+                           ifelse(bill_in_passage == "Não", "No", NA))
 
-  tf <- dplyr::data_frame(
-    bill_code = purrr::map_chr(t_frames, "bill_code"),
-    tf_code = purrr::map_chr(t_frames, "CodigoTipoPrazo"),
-    tf_description = purrr::map_chr(t_frames, "DescricaoTipoPrazo"),
-    tf_foundation = purrr::map_chr(t_frames, "DescricaoTipoFundamento"),
-    tf_start = lubridate::parse_date_time(
-      purrr::map_chr(t_frames, "DataInicioPrazo"), orders = "Ymd"),
-    tf_end = lubridate::parse_date_time(
-      purrr::map_chr(t_frames, "DataFimPrazo"), orders = "Ymd"),
-    tf_description = purrr::map_chr(t_frames, "DescricaoPrazo"),
-    tf_commission_code = purrr::map_chr(t_frames, "CodigoComissao"),
-    tf_commission_abbr = purrr::map_chr(t_frames, "SiglaComissao"),
-    tf_commission_name = purrr::map_chr(t_frames, "NomeComissao"),
-    tf_commission_house = purrr::map_chr(t_frames, "SiglaCasaComissao")
-  )
+  bill_details = purrr::map_chr(request, "ExplicacoesEmentaMateria",
+                                .null = null) %>% disc()
+  if(purrr::is_empty(bill_details)){
+    bill_details = purrr::map_chr(request, "ExplicacaoEmentaMateria",
+                                  .null = null) %>% disc()
+  }
+  if(purrr::is_empty(bill_details)){
+    bill_details = NA_character_
+  }
 
+  bills <- bills %>%
+    dplyr::mutate(
+      bill_date_presented = bill_date_presented,
+      bill_date_considered = bill_date_considered,
+      bill_in_passage = bill_in_passage,
+      bill_complementary = bill_complementary,
+      bill_details = bill_details,
+      bill_situation_date = bill_situation_date,
+      bill_topic_general = topic_g$Descricao,
+      bill_topic_general_id = topic_g$Codigo,
+      bill_topic_specific = topic_s$Descricao,
+      bill_topic_specific_id = topic_s$Codigo
+    )
+
+
+  if(ascii == TRUE){
+    bills <- bills %>%
+      dplyr::mutate(
+        bill_author = stringi::stri_trans_general(bill_author,
+                                                  "Latin-ASCII"),
+        bill_details_short = stringi::stri_trans_general(
+          bill_details_short, "Latin-ASCII"),
+        bill_details = stringi::stri_trans_general(bill_details,
+                                                   "Latin-ASCII"),
+        bill_indexing = stringi::stri_trans_general(
+          bill_indexing, "Latin-ASCII"),
+        bill_topic_general = stringi::stri_trans_general(
+          bill_topic_general, "Latin-ASCII"),
+        bill_topic_specific = stringi::stri_trans_general(
+          bill_topic_specific, "Latin-ASCII"))
+  }
+  return(bills)
 }
