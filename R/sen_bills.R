@@ -10,7 +10,7 @@
 #' @title Downloads and tidies information on the legislation in the Federal Senate.
 #' @param type \code{character}. The abbreviation of the vote type you're looking
 #' for. A full list of these can be obtained with the \code{sen_bill_list()}
-#' function.
+#' function. Other types can be seen with \code{sen_bills_subtypes()}.
 #' @param number. Two-letter abbreviation of Brazilian state. A list of these is
 #' available with the function \code{UF()}.
 #' @param year \code{integer}. Four-digit year, such as \code{2013}.
