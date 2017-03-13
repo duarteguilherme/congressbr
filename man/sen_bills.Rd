@@ -9,7 +9,7 @@ sen_bills(type = NULL, number = NULL, year = NULL, ascii = TRUE)
 \arguments{
 \item{type}{\code{character}. The abbreviation of the vote type you're looking
 for. A full list of these can be obtained with the \code{sen_bill_list()}
-function.}
+function. Other types can be seen with \code{sen_bills_subtypes()}.}
 
 \item{year}{\code{integer}. Four-digit year, such as \code{2013}.}
 
