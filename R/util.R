@@ -1,3 +1,4 @@
+#' @importFrom magrittr '%>%'
 
 # Emulate '+' python function
 `%p%` <- function(e1,e2) return(paste0(e1,e2))
