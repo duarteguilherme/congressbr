@@ -23,7 +23,7 @@ legislation on or after this time.}
 
 \item{passing}{is the bill currently under consideration in the Senate?
 Possible values are \code{NULL} (the default), "Yes" or "No". \code{NULL}
-returns the inforamtion obtained from "Yes" and "No".}
+returns the information obtained from "Yes" and "No".}
 }
 \value{
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.

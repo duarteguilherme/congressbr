@@ -4,9 +4,17 @@
 \alias{sen_bills}
 \title{Downloads and tidies information on the legislation in the Federal Senate.}
 \usage{
-sen_bills(type = NULL, number = NULL, year = NULL, ascii = TRUE)
+sen_bills(id = NULL, type = NULL, number = NULL, year = NULL,
+  ascii = TRUE)
 }
 \arguments{
+\item{id}{\code{integer}. This number is the id given to each bill in the
+Senate database. For example, running \code{sen_bills_current()} will return a
+ dataframe with the variable \code{bill_id} in the first column. These numbers
+ can be used as this id. If id is not \code{NULL} (the default), all other
+ parameters will be set to \code{NULL}, as 'id' cannot be used in conjunction
+ with the other parameters.}
+
 \item{type}{\code{character}. The abbreviation of the vote type you're looking
 for. A full list of these can be obtained with the \code{sen_bill_list()}
 function. Other types can be seen with \code{sen_bills_subtypes()}.}
@@ -24,6 +32,9 @@ A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 }
 \examples{
 pls_5_2010 <- sen_bills(type = "PLS", number = 5, year = 2010)
+
+# Get info on the first bill in the dataframe returned by \\code{sen_bills_current()}, which has an id of 25:
+sen25 <- sen_bills(id = 25)
 }
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.

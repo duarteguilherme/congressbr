@@ -228,7 +228,7 @@ sen_bills_passing <- function(year = NULL,  number = NULL,
 #' @param type type of legislation.
 #' @param passing is the bill currently under consideration in the Senate?
 #' Possible values are \code{NULL} (the default), "Yes" or "No". \code{NULL}
-#' returns the inforamtion obtained from "Yes" and "No".
+#' returns the information obtained from "Yes" and "No".
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
@@ -285,38 +285,3 @@ sen_bills_current <- function(year = NULL, date = NULL,
   )
   return(bills)
 }
-
-
-
-
-
-
-# GET /materia/{codigo}
-# GET /materia/completa/{codigo}
-# GET /materia/completa/{sigla}/...
-# GET /materia/emenda/{codigo}
-
-
-# GET /materia/situacaoatual/{co...
-#   GET /materia/situacaoatual/tra...
-#
-#   GET /materia/movimentacoes/{co...
-#     GET /materia/relatorias/{codig...
-#       GET /materia/emendas/{codigo}
-#       GET /materia/votacoes/{codigo}
-#       GET /materia/textos/{codigo}
-#       GET /materia/ordia/{codigo}
-#       GET /materia/atualizacoes/{cod...
-#
-#
-#         Aviso:
-#           Os serviços que compõem as informações detalhadas sobre matéria são:
-#           Detalhe da matéria: /materia/{codigo} ou
-#         /materia/{sigla}/{numero}/{ano}
-#         Movimentações: /materia/movimentacoes/{codigo}
-#         Textos: /materia/textos/{codigo}
-#         Relatorias: /materia/relatorias/{codigo}
-#         Emendas: /materia/emendas/{codigo}
-#         Votações: /materia/votacoes/{codigo}
-#         Atualizações: /materia/atualizacoes/{codigo}
-#
