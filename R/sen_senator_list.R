@@ -1,10 +1,145 @@
 #' @importFrom httr GET
 #' @importFrom httr content
 #' @importFrom purrr map_df
+#' @importFrom purrr map
+#' @importFrom purrr map_chr
 #' @importFrom dplyr as_data_frame
+#' @importFrom dplyr bind_cols
+#' @importFrom lubridate parse_date_time
 #' @title Downloads and tidies information on the senators in the Federal Senate.
 #' @param present \code{logical}. If \code{TRUE}, downloads data on the legislature
-#' currently sitting in the Federal Senate.
+#' currently sitting in the Federal Senate, otherwise returns information on
+#' senators who are currently absent.
+#' @param state. Two-letter abbreviation of Brazilian state. A list of these is
+#' available with the function \code{UF()}.
+#' @param status \code{character}, either "T" or "S", representing
+#' \emph{titular} or \emph{suplente} (stand-in senator), respectively.
+#' @param ascii \code{logical}. If \code{TRUE}, strips Latin characters from
+#' strings.
+#' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
+#' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
+#' @examples
+#' all <- sen_senator_list()
+#' @export
+sen_senator_list <- function(present = TRUE, state = NULL,
+                             status = NULL, ascii = TRUE){
+
+
+  base_url <- "http://legis.senado.gov.br/dadosabertos/senador/lista/"
+
+  if(present == TRUE){
+    present <- "atual?"
+    base_url <- base_url %p% present
+  } else{
+    present <- "afastados"
+    base_url <- base_url %p% present
+  }
+
+  if(!is.null(state)){
+    ufs <- c("AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES",
+             "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR",
+             "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC",
+             "SP", "SE")
+    if(state %ni% ufs){
+      stop("Please enter a valid state. A list can be obtained from 'UF()'.")
+    }
+    base_url <- base_url %p% "uf=" %p% state
+  }
+  if(!is.null(state) & !is.null(status)){
+    if(status %ni% c("T", "S")){
+      stop("Please enter a valid status argument, 'T' or 'S'.")
+    }
+    base_url <- base_url %p% "uf=" %p% state %p% "&participacao=" %p% status
+  }
+  if(is.null(state) & !is.null(status)){
+    base_url <- base_url %p% "participacao=" %p% status
+  }
+
+  request <- httr::GET(base_url)
+  request <- status(request)
+
+  if(present == "afastados"){
+    request <- request$AfastamentoAtual$Parlamentares$Parlamentar
+  } else{
+    request <- request$ListaParlamentarEmExercicio$Parlamentares$Parlamentar
+  }
+
+  par <- purrr::map(request, "IdentificacaoParlamentar")
+  null <- NA_character_
+
+  parl <- dplyr::data_frame(
+    id = purrr::map_chr(par, "CodigoParlamentar", .null = null),
+    name_full = purrr::map_chr(par, "NomeCompletoParlamentar",
+                               .null = null),
+    name_senator = purrr::map_chr(par, "NomeParlamentar",
+                                  .null = null),
+    gender = purrr::map_chr(par, "SexoParlamentar",
+                            .null = null),
+    foto_url = purrr::map_chr(par, "UrlFotoParlamentar",
+                              .null = null),
+    page_url = purrr::map_chr(par, "UrlPaginaParlamentar",
+                              .null = null),
+    office_email = purrr::map_chr(par, "EmailParlamentar",
+                                  .null = null),
+    party_abbr = purrr::map_chr(par, "SiglaPartidoParlamentar",
+                                .null = null)
+  )
+
+  mand <- purrr::map(request, "Mandato")
+  prim <- purrr::map(mand, "PrimeiraLegislaturaDoMandato")
+  seg <- purrr::map(mand, "SegundaLegislaturaDoMandato")
+
+  mandate <- dplyr::data_frame(
+    id_mandate = purrr::map_chr(mand, "CodigoMandato", .null = null),
+    state = purrr::map_chr(mand, "UfParlamentar", .null = null),
+    status = purrr::map_chr(mand, "DescricaoParticipacao"),
+    num_legislature_first_term = purrr::map_chr(prim, "NumeroLegislatura",
+                                                .null = null),
+    first_term_start = suppressWarnings(
+      lubridate::parse_date_time(
+        purrr::map_chr(prim, "DataInicio", .null = null),
+        orders = "Ymd")),
+    first_term_end = suppressWarnings(
+      lubridate::parse_date_time(
+        purrr::map_chr(prim, "DataFim", .null = null),
+        orders = "Ymd")),
+    num_legislature_second_term = purrr::map_chr(seg, "NumeroLegislatura",
+                                                 .null = null),
+    second_term_start = suppressWarnings(
+      lubridate::parse_date_time(
+        purrr::map_chr(seg, "DataInicio", .null = null),
+        orders = "Ymd")),
+    second_term_end = suppressWarnings(
+      lubridate::parse_date_time(
+        purrr::map_chr(seg, "DataFim", .null = null),
+        orders = "Ymd")))
+
+  result <- dplyr::bind_cols(parl, mandate)
+
+  if(ascii == TRUE){
+    result <- result %>%
+      mutate(name_full = stringi::stri_trans_general(name_full,
+                                                     "Latin-ASCII"),
+             name_senator = stringi::stri_trans_general(name_senator,
+                                                        "Latin-ASCII"))
+  }
+  return(result)
+}
+
+
+
+#' @importFrom httr GET
+#' @importFrom httr content
+#' @importFrom purrr map_df
+#' @importFrom purrr map
+#' @importFrom purrr map_chr
+#' @importFrom dplyr as_data_frame
+#' @importFrom dplyr bind_cols
+#' @importFrom lubridate parse_date_time
+#' @title Downloads and tidies information on the senators in the Federal Senate.
+#' @param present \code{logical}. If \code{TRUE}, downloads data on the legislature
+#' currently sitting in the Federal Senate, otherwise returns information on
+#' senators who are currently absent.
 #' @param start two-digit integer representing the first legislature of the
 #' time period requested.
 #' @param end two-digit integer representing the final legislature of the time
@@ -13,120 +148,114 @@
 #' available with the function \code{UF()}.
 #' @param status \code{character}, either "T" or "S", representing
 #' \emph{titular} or \emph{suplente} (stand-in senator), respectively.
-#' @param serving is the Senator currently serving his/her mandate? Options are
-#'  "yes" or "no". "no" returns information on senators who have been elected but
-#'  who have not yet entered office.
-#' @param withdrawn \code{logical}. If TRUE, returns information on senators who
-#' were elected but who are not serving (due to health reasons, for example).
+#' @param ascii \code{logical}. If \code{TRUE}, strips Latin characters from
+#' strings.
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
-#'
-#'
+#' all <- sen_senator_list()
 #' @export
-sen_senator_list <- function(present = TRUE, start = NULL, end = NULL,
-                             state = NULL, status = NULL, serving = "yes",
-                             withdrawn = FALSE){
+sen_senator_legis <- function(start = NULL, end = NULL,
+                              state = NULL, status = NULL,
+                              ascii = TRUE){
 
-  # base url
-  base_url <- "http://legis.senado.gov.br/dadosabertos/senador/lista/"
+  base_url <- "http://legis.senado.gov.br/dadosabertos/senador/lista/legislatura/"
 
-  # checks
-  '%ni%' <- Negate('%in%')
-  if(present == FALSE & withdrawn == FALSE & is.null(start) &
-     is.null(end) & is.null(state) & is.null(status) & is.null(serving)){
-    stop("No valid parameters to function call.")
+  # checks:
+  if(!is.null(state)){
+    ufs <- c("AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES",
+             "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR",
+             "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC",
+             "SP", "SE")
+    if(state %ni% ufs){
+      stop("Please enter a valid state. A list can be obtained from 'UF()'.")
+    }
   }
-  if(!is.null(serving) & serving %ni% c("yes", "no")){
-    stop("'serving' must be equal to either 'yes' or 'no'.")
-  }
-
-  if(length(start) > 2 | length(end) > 2){
-    stop("'start' and/or 'end' must be two digit numbers")
-  }
-  if(present == TRUE & is.null(state) & is.null(status)){
-    request <- httr::GET(paste0(base_url, "atual"))
-  } else if(present == TRUE & !is.null(state) & is.null(status)){
-    state <- tolower(state)
-    request <- httr::GET(paste0(base_url, "atual?uf=", state))
-  } else if(present == TRUE & is.null(state) & !is.null(status)){
+  if(!is.null(status)){
     if(status %ni% c("T", "S")){
-      stop("Status must be either 'T' or 'S'.")
-    } else{
-      status <- tolower(status)
-      request <- httr::GET(paste0(base_url, "atual?participacao=", status))
-      }
-  } else if(present == TRUE & !is.null(state) & !is.null(status)){
-    state <- tolower(state)
-    status <- tolower(status)
-    request <- httr::GET(paste0(base_url, "atual?uf=", state,
-                                "&participacao=", status))
-  } else if(withdrawn == TRUE){
-    if(is.null(state) & is.null(status) & present==F & is.null(start)
-       & is.null(end) & is.null(serving)){
-      request <- httr::GET(paste0(base_url, "afastados"))
-    }
-  } else if(!is.null(start)){
-    if(is.null(end) & is.null(state) & is.null(status) & is.null(serving)){
-      request <- httr::GET(paste0(base_url, "legislatura/", start))
-    } else if(!is.null(end) & is.null(state) & is.null(status) &
-              is.null(serving)){
-      request <- httr::GET(paste0(base_url, "legislatura/", start,
-                                  "/", end))
-    } else if(!is.null(end) & !is.null(state) & is.null(status) &
-              is.null(serving)){
-      state <- tolower(state)
-      request <- httr::GET(paste0(base_url, "legislatura/", start,
-                                  "/", end, "?uf=", state))
-    } else if(!is.null(end) & !is.null(state) & !is.null(status) &
-              is.null(serving)){
-      state <- tolower(state)
-      status <- tolower(status)
-      request <- httr::GET(paste0(base_url, "legislatura/", start,
-                                  "/", end, "?uf=", state,
-                                  "&participacao=", status))
-    } else if(!is.null(end) & !is.null(state) & !is.null(status) &
-              !is.null(serving)){
-      state <- tolower(state)
-      status <- tolower(status)
-      serving <- ifelse(serving == "yes", "S", "N")
-      request <- httr::GET(paste0(base_url, "legislatura/", start,
-                                  "/", end, "?uf=", state,
-                                  "&participacao=", status,
-                                  "&exercicio=", serving))
+      stop("Please enter a valid status argument, 'T' or 'S'.")
     }
   }
 
-  # status checks
-  if(request$status_code != 200){
-    stop("GET request failed")
-  } else{
-    request <- httr::content(request, "parsed")
-    request <- request$ListaParlamentarEmExercicio$Parlamentares$Parlamentar
-
-    req <- rmNullObs(request)
-
-    if(length(req) == 0){
-      stop("No data matches your request.")
-    }
-
-    for(z in 1:length(req)){
-      req[[z]][[3]] <- NULL
-    }
-
-    for(z in 1:length(req)){
-      req[[z]][["Mandato"]] <- as.data.frame(req[[z]][["Mandato"]],
-                                             stringsAsFactors = F)
-    }
-    parl <- purrr::map_df(req, "IdentificacaoParlamentar")
-    mand <- purrr::map_df(req, "Mandato")
-
-    req <- cbind(parl, mand)
-    if(length(grep("UfParlamentar", colnames(req))) > 1){
-      x <- grep("UfParlamentar", colnames(req))
-      req <- req[, -x[2]]
-    }
-    req <- dplyr::as_data_frame(req)
-    return(req)
+  if(nchar(start) > 2){
+    stop("'start' must be a two-digit number.")
+  } else if(nchar(end) > 2){
+    stop("'end' must be a two-digit number.")
+  } else if(is.null(start) & !is.null(end)){
+    stop("'end' cannot be used without 'start'.")
   }
+
+  # urls
+  if(!is.null(start) & is.null(end)){
+    base_url <- base_url %p% start %p% "?"
+  } else if(!is.null(start) & !is.null(end)){
+    base_url <- base_url %p% start %p% "/" %p% end %p% "?"
+  }
+
+  if(!is.null(state) & !is.null(status)){
+    base_url <- base_url %p% "uf=" %p% state %p% "&participacao=" %p%
+      status
+  } else if(!is.null(state) & is.null(status)){
+    base_url <- base_url %p% "uf=" %p% state
+  } else if(is.null(state) & !is.null(status)){
+    base_url <- base_url %p% "participacao=" %p% status
+  }
+
+  request <- httr::GET(base_url)
+  request <- status(request)
+  request <- request$ListaParlamentarLegislatura$Parlamentares$Parlamentar
+
+  par <- purrr::map(request, "IdentificacaoParlamentar")
+  null <- NA_character_
+
+  parl <- dplyr::data_frame(
+    id = purrr::map_chr(par, "CodigoParlamentar", .null = null),
+    name_full = purrr::map_chr(par, "NomeCompletoParlamentar",
+                               .null = null),
+    name_senator = purrr::map_chr(par, "NomeParlamentar",
+                                  .null = null),
+    gender = purrr::map_chr(par, "SexoParlamentar",
+                            .null = null),
+    foto_url = purrr::map_chr(par, "UrlFotoParlamentar",
+                              .null = null),
+    page_url = purrr::map_chr(par, "UrlPaginaParlamentar",
+                              .null = null),
+    office_email = purrr::map_chr(par, "EmailParlamentar",
+                                  .null = null),
+    party_abbr = purrr::map_chr(par, "SiglaPartidoParlamentar",
+                                .null = null)
+  )
+  mand <- purrr::map(request, "Mandatos")
+  mand <- purrr::map(mand, "Mandato")
+  prim <- purrr::map(mand, "PrimeiraLegislaturaDoMandato")
+  seg <- purrr::map(mand, "SegundaLegislaturaDoMandato")
+
+  mandate <- dplyr::data_frame(
+    id_mandate = purrr::map_chr(mand, "CodigoMandato", .null = null),
+    state = purrr::map_chr(mand, "UfParlamentar", .null = null),
+    status = purrr::map_chr(mand, "DescricaoParticipacao"),
+    num_legislature_first_term = purrr::map_chr(prim, "NumeroLegislatura",
+                                            .null = null),
+    first_term_start = suppressWarnings(
+      lubridate::parse_date_time(
+      purrr::map_chr(prim, "DataInicio", .null = null),
+      orders = "Ymd")),
+    first_term_end = suppressWarnings(
+      lubridate::parse_date_time(
+        purrr::map_chr(prim, "DataFim", .null = null),
+        orders = "Ymd")),
+    num_legislature_second_term = purrr::map_chr(seg, "NumeroLegislatura",
+                                                 .null = null),
+    second_term_start = suppressWarnings(
+      lubridate::parse_date_time(
+        purrr::map_chr(seg, "DataInicio", .null = null),
+        orders = "Ymd")),
+    second_term_end = suppressWarnings(
+      lubridate::parse_date_time(
+        purrr::map_chr(seg, "DataFim", .null = null),
+        orders = "Ymd")))
+
+  result <- dplyr::bind_cols(parl, mandate)
+
+  return(result)
 }

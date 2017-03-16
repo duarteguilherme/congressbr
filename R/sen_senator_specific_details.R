@@ -55,11 +55,8 @@ sen_senator_positions <- function(code = 0, active = "both",
   }
 
   # status checks
-  if(request$status_code != 200){
-    stop("GET request failed")
-  } else{
-    request <- httr::content(request, "parsed")
-  }
+  request <- status(request)
+
   if(length(request$CargoParlamentar) < 4){
     stop("Either this Senator has not held any congressional positions or the code you entered is incorrect.")
   }
@@ -67,7 +64,7 @@ sen_senator_positions <- function(code = 0, active = "both",
     request <- request$CargoParlamentar$Parlamentar
     request$UrlGlossario <- NULL
 
-    req <- rmNullObs(request)
+    req <- purrr::compact(request)
 
     if(list == TRUE){
       return(req)
@@ -132,7 +129,7 @@ sen_senator_affiliations <- function(code = 0, wide = TRUE,
   }
   request <- request$FiliacaoParlamentar$Parlamentar
   request$UrlGlossario <- NULL
-  req <- rmNullObs(request)
+  req <- purrr::compact(request)
   if(wide == TRUE){
     req <- as.data.frame(purrr::flatten(req),
                          stringsAsFactors = F)
@@ -193,7 +190,7 @@ sen_senator_terms <- function(code = 0, wide = TRUE,
   }
   request <- request$MandatoParlamentar$Parlamentar
   request$UrlGlossario <- NULL
-  req <- rmNullObs(request)
+  req <- purrr::compact(request)
   if(wide == TRUE){
     req <- as.data.frame(purrr::flatten(req),
                          stringsAsFactors = F)
@@ -221,7 +218,8 @@ sen_senator_terms <- function(code = 0, wide = TRUE,
 #' using the \code{sen_senator_list()} function, where they will appear as the
 #' first column in the data frame returned, under the name 'CodigoParlamentar'.
 #' @param commission \code{character}. Abbreviation of the name of the
-#' commission.
+#' commission. A data frame of these (with the abbreviation and the full name)
+#' may be had with the \code{commissions} dataset: (\code{data("commissions")}).
 #' @param wide \code{logical}. Default is TRUE, which returns a dataframe of one
 #' row with details on the senator. When FALSE, returns a two-column dataframe
 #' with the variables (column names when TRUE) in the first column and the values
@@ -231,11 +229,130 @@ sen_senator_terms <- function(code = 0, wide = TRUE,
 #' @param list \code{logical}. If TRUE, returns the deeply nested list object
 #' directly from the API. \code{wide} will be set to FALSE automatically
 #' when this option is selected.
+#' @note If list is FALSE and wide == TRUE, the data frame returned by
+#' this function may have a very large number of columns. In this case, setting
+#' list to TRUE may be of more use.
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
+#' If list == TRUE, a list.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
-#' lira <- sen_senator_
+#' val_cma <- sen_senator_comms(code = 3, commission = "CMA")
 #' @export
-#sen_senator_comms <- function()
+sen_senator_comms <- function(code = 0, active = "both",
+                              wide = TRUE, commission = NULL,
+                              list = FALSE){
+  base_url <- "http://legis.senado.gov.br/dadosabertos/senador/"
+
+  # param checks
+  if(is.null(code)){
+    stop("'code' is necessary.")
+  } else if(!is.null(code) & !is.numeric(code)){
+    stop("'code' must be an integer.")
+  }
+  if(wide == TRUE & list == TRUE){
+    wide <- FALSE
+  }
+
+  ## commissions
+  coms <- c("CAE", "CAS", "CCJ", "CE", "CMA", "CDH", "CRE", "CI", "CDR",
+            "CRA", "CCT", "CSF", "CTG", "CCAI", "CMCF", "MCPLP", "CMCVM",
+            "CMMC", "CMO", "FIPA", "SCPCE")
+  '%ni%' <- Negate('%in%')
+
+  if(is.null(commission)){
+    request <- httr::GET(paste0(base_url, code, "/comissoes"))
+    } else if(!is.null(commission)){
+    comm <- commission
+    if(comm %in% coms & active == "yes"){
+      comm <- tolower(comm)
+      request <- httr::GET(paste0(base_url, code,
+                                  "/comissoes?comissao=",
+                                  comm, "&indAtivos=s"))
+    } else if(comm %in% coms & active == "no"){
+      comm <- tolower(comm)
+      request <- httr::GET(paste0(base_url, code,
+                                  "/comissoes?comissao=",
+                                  comm, "&indAtivos=n"))
+    } else if(comm %in% coms & active == "both"){
+      comm <- tolower(comm)
+      request <- httr::GET(paste0(base_url, code,
+                                  "/comissoes?comissao=",
+                                  comm))
+    } else if(comm %ni% coms){
+      stop("Commission not found.")
+    }
+  }
+
+  if(request$status_code != 200){
+    stop("GET request failed")
+  } else{
+    request <- httr::content(request, "parsed")
+  }
+  request <- request$MembroComissaoParlamentar$Parlamentar
+  request$UrlGlossario <- NULL
+  req <- purrr::compact(request)
+
+  if(wide == TRUE){
+    req <- as.data.frame(purrr::flatten(req),
+                         stringsAsFactors = F)
+    req <- dplyr::as_data_frame(req)
+    return(req)
+  } else if(list == TRUE){
+    return(request)
+  } else{
+    req <- as.data.frame(t(as.data.frame(purrr::flatten(req),
+                                         stringsAsFactors = F)),
+                         stringsAsFactors = F)
+    req$Variable <- row.names(req)
+    colnames(req)[1] <- "Value"
+    req <- dplyr::select(req, Variable, Value)
+    row.names(req) <- NULL
+    req <- dplyr::as_data_frame(req)
+    return(req)
+  }
+}
 
 
+
+
+#' @title Return the votes a certain senator has cast.
+#' @param code \code{integer}. This number represents the code of the senator
+#' you wish to get information on. These codes can be extracted from the API
+#' using the \code{sen_senator_list()} function, where they will appear as the
+#' first column in the data frame returned, under the name 'CodigoParlamentar'.
+#' @param commission \code{character}. Abbreviation of the name of the
+#' commission. A data frame of these (with the abbreviation and the full name)
+#' may be had with the \code{commissions} dataset: (\code{data("commissions")}).
+#' @param wide \code{logical}. Default is TRUE, which returns a dataframe of one
+#' row with details on the senator. When FALSE, returns a two-column dataframe
+#' with the variables (column names when TRUE) in the first column and the values
+#'  in the second. This may be useful in some cases because the wide dataframe
+#'  can have many columns, as the API stores this information in \emph{very}
+#'  deeply nested lists.
+#' @param list \code{logical}. If TRUE, returns the deeply nested list object
+#' directly from the API. \code{wide} will be set to FALSE automatically
+#' when this option is selected.
+#' @note If list is FALSE and wide == TRUE, the data frame returned by
+#' this function may have a very large number of columns. In this case, setting
+#' list to TRUE may be of more use.
+#' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
+#' If list == TRUE, a list.
+#' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
+#' @examples
+#' val_cma <- sen_senator_comms(code = 3, commission = "CMA")
+#' @export
+#sen_senator_votes <- function(code = 0, active = "both",
+  #                             wide = TRUE, commission = NULL,
+  #                             list = FALSE){
+  # #base_url <- "http://legis.senado.gov.br/dadosabertos/senador/"
+
+
+  #request <- httr::GET(paste0(base_url, code, "/votacoes"))
+
+
+
+# ano
+# numero
+# sigla: vote type ("pls" etc, make function to display these)
+# tramitando: "S", "N"
+#/senador/{codigo}/

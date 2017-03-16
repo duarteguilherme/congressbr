@@ -1,6 +1,7 @@
 #' @importFrom httr GET
 #' @importFrom httr content
 #' @importFrom purrr flatten
+#' @importFrom purrr compact
 #' @importFrom lubridate parse_date_time
 #' @importFrom data.table rbindlist
 #' @importFrom dplyr as_data_frame
@@ -18,6 +19,7 @@
 #' from the API. \code{wide} will be set to FALSE automatically
 #' when this option is selected.
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
+#' If list == TRUE, a list.
 #' @seealso sen_senator_list
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
@@ -40,15 +42,11 @@ sen_senator_details <- function(code = 0, wide = TRUE, list = FALSE){
     request <- httr::GET(paste0(base_url, code))
   }
   # status checks
-  if(request$status_code != 200){
-    stop("GET request failed")
-  } else{
-    request <- httr::content(request, "parsed")
-  }
+  request <- status(request)
 
   request <- request$DetalheParlamentar$Parlamentar
   request$UrlGlossario <- NULL
-  req <- rmNullObs(request)
+  req <- purrr::compact(request)
 
   if(list == TRUE){
     return(req)
