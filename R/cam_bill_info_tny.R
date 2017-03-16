@@ -1,0 +1,54 @@
+#' @importFrom xml2 read_xml
+#' @importFrom xml2 xml_find_all
+#' @importFrom xml2 xml_attr
+#' @importFrom tibble tibble
+#' @importFrom magrittr `%>%`
+#' @title Downloads details of a specific bill by providing type, number and year
+#' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
+#' @note Requesting data from a long period of time with \code{details = TRUE} will
+#' return a large object in terms of memory. It will also be rather unwieldy, with
+#' many columns.
+#' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
+#' @examples
+#' cam_bill_info_tny(type="PL", number="3962", year="2008")
+
+
+cam_bill_info_tny <- function(type, number, year) {
+  if ( is.null(type) | is.null(number) | is.null(year) ) {
+    stop("Lacking arguments. type, number, and year are mandatory")
+  }
+  link <- "http://www.camara.leg.br/SitCamaraWS/Proposicoes.asmx/ObterProposicao?tipo=" %p%
+    type %p% "&numero=" %p% number %p% "&ano=" %p% year
+  data <- read_xml(link) %>%
+#    xml_find_all('proposicao') %>%
+    extract_bill_info
+  return(data)
+
+}
+
+extract_bill_info <- function(bill) {
+  return(
+    dplyr::tibble(
+      type_bill = xml_attr(xml_find_all(bill, "/proposicao"), "tipo"),
+      number_bill = xml_attr(xml_find_all(bill, "/proposicao"), "numero"),
+      year_bill = xml_attr(xml_find_all(bill, "/proposicao"), "ano"),
+      id_bill = xml_text(xml_find_all(bill, "idProposicao")),
+      name_bill = xml_text(xml_find_all(bill, "nomeProposicao")),
+      name_type = xml_text(xml_find_all(bill, "tipoProposicao")),
+      subject_bill = xml_text(xml_find_all(bill, "tema")),
+      txt_ementa = xml_text(xml_find_all(bill, "Ementa")),
+      explanation_ementa = xml_text(xml_find_all(bill, "ExplicacaoEmenta")),
+      name_author = xml_text(xml_find_all(bill, "Autor")),
+      id_author = xml_text(xml_find_all(bill, "ideCadastro")),
+      abrstate_author = xml_text(xml_find_all(bill, "ufAutor")),
+      party_author = xml_text(xml_find_all(bill, "partidoAutor")),
+      index_bill = xml_text(xml_find_all(bill, "Indexacao")),
+      date_presentation = xml_text(xml_find_all(bill, "DataApresentacao")),
+      link_complete = xml_text(xml_find_all(bill, "LinkInteiroTeor")),
+      desc_situation = xml_text(xml_find_all(bill, "Situacao")),
+      last_action_desc = xml_text(xml_find_all(bill, "UltimoDespacho")),
+      last_action_date = xml_attr(xml_find_all(bill, "UltimoDespacho"), "Data")
+
+    )
+  )
+}

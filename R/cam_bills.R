@@ -48,7 +48,6 @@ cam_bills <- function(type="",number="",year="", initial_date="", end_date="", p
     "&codEstado=" %p% cod_state %p%
     "&codOrgaoEstado=" %p% cod_branch_state %p%
     "&emTramitacao=" %p% still
-  print(link)
   data <- read_xml(link) %>%
     xml_find_all('proposicao') %>%
     map_df(extract_bill)
@@ -74,11 +73,11 @@ extract_bill <- function(bill) {
       txt_procedure = xml_text(xml_find_all(bill, "./regime/txtRegime")),
       id_consideration = xml_text(xml_find_all(bill, "./apreciacao/id")),
       txt_consideration = xml_text(xml_find_all(bill, "./apreciacao/txtApreciacao")),
-      author1_name = xml_text(xml_find_all(bill, "./autor1/txtNomeAutor")),
-      author1_id = xml_text(xml_find_all(bill, "./autor1/idecadastro")),
-      author1_codparty = xml_text(xml_find_all(bill, "./autor1/codPartido")),
-      author1_abrparty = xml_text(xml_find_all(bill, "./autor1/txtSiglaPartido")),
-      author1_abrstate = xml_text(xml_find_all(bill, "./autor1/txtSiglaUF")),
+      name_author1 = xml_text(xml_find_all(bill, "./autor1/txtNomeAutor")),
+      id_author1 = xml_text(xml_find_all(bill, "./autor1/idecadastro")),
+      codparty_author1 = xml_text(xml_find_all(bill, "./autor1/codPartido")),
+      abrparty_author1 = xml_text(xml_find_all(bill, "./autor1/txtSiglaPartido")),
+      abrstate_author1 = xml_text(xml_find_all(bill, "./autor1/txtSiglaUF")),
       number_authors = xml_text(xml_find_all(bill, "./qtdAutores")),
       last_action = xml_text(xml_find_all(bill, "./ultimoDespacho/datDespacho")),
       txt_last_action = xml_text(xml_find_all(bill, "./ultimoDespacho/txtDespacho")),
