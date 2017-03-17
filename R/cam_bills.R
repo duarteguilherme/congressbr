@@ -24,7 +24,7 @@
 #' many columns.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
-#' cam_bills(initial_date = "11/01/2015", end_date = "11/01/2016", part_name_author="Oliveira")
+#' cam_bills(type="", number="")
 #' @export
 
 

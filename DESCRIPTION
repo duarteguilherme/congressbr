@@ -15,5 +15,6 @@ Imports: dplyr (>= 0.5.0),
     lubridate (>= 1.6.0),
     magrittr (>= 1.5),
     data.table (>= 1.10.4),
-    stringi (>= 1.1.2)
+    stringi (>= 1.1.2),
+    tibble
 RoxygenNote: 6.0.1

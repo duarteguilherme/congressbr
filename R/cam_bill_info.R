@@ -10,7 +10,7 @@
 #' many columns.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
-#' cam_bill_info_tny(type="PL", number="3962", year="2008")
+#' cam_bill_info(type="PL", number="3962", year="2008")
 #' @export
 
 cam_bill_info <- function(id_bill) {
