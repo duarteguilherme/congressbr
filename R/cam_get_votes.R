@@ -4,6 +4,8 @@
 #' @importFrom tibble tibble
 #' @importFrom magrittr "%>%"
 #' @importFrom stringr str_trim
+#' @importFrom tidyr spread
+#' @importFrom dplyr bind_cols
 #' @title Downloads details of a specific bill by providing type, number and year
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 #' @note Requesting data from a long period of time with \code{details = TRUE} will

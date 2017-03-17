@@ -39,7 +39,7 @@ return a large object in terms of memory. It will also be rather unwieldy, with
 many columns.
 }
 \examples{
-cam_bills(type="", number="")
+cam_bills(type="PL", year=1998)
 }
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
