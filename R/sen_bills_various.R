@@ -553,7 +553,8 @@ sen_bills_situations <- function(ascii = TRUE){
 #' @title Downloads and tidies information on bills that have been recently
 #'  updated in the Federal Senate.
 #' @param update \code{character}. This is the type of update that can be applied
-#' to a bill. For a dataframe of these, use the \code{sen_bills_update_types()} function.
+#' to a bill. For a dataframe of these, use the \code{sen_bills_update_types()}
+#'  function, and the variable \code{update_name} that is returned.
 #' @param year \code{character}. Year of the bill, if a specific bill is
 #' requested. Format YYYY.
 #' @param id \code{integer}. This number is the id given to each bill in the
@@ -569,7 +570,11 @@ sen_bills_situations <- function(ascii = TRUE){
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
+#' # Bills from 2014 that have had a "despacho" update in the last 15 days:
+#' desp_2014 <- sen_bills_updates(update = "Despacho", year = 2014, days = 15)
 #'
+#' # PLS bills that have been updated in the last 10 days:
+#' pls <- sen_bills_updates(type = "PLS", days = 10)
 #' @export
 sen_bills_updates <- function(update = NULL, year = NULL,
                               number = NULL, type = NULL,
@@ -580,16 +585,65 @@ sen_bills_updates <- function(update = NULL, year = NULL,
     stop("30 is the maximum number of days allowed.")
   }
 
-  base_url <- "http://legis.senado.leg.br/dadosabertos/materia/atualizadas"
+  base_url <- "http://legis.senado.leg.br/dadosabertos/materia/atualizadas?"
+
+  if(!is.null(update)){
+    base_url <- base_url %p% "alteracao=" %p% update
+  }
+  if(!is.null(year)){
+    base_url <- base_url %p% "&ano=" %p% year
+  }
+  if(!is.null(number)){
+    base_url <- base_url %p% "&numero=" %p% number
+  }
+  if(!is.null(type)){
+    base_url <- base_url %p% "&sigla=" %p% type
+  }
+  if(days != 5){
+    base_url <- base_url %p% "&numdias=" %p% days
+  }
 
   request <- httr::GET(base_url)
   request <- status(request)
-  request <- request$ListaMateriasAtualizadas$Materias$Materia
+  if(depth(request) > 6){
+    request <- request$ListaMateriasAtualizadas$Materias$Materia
+  } else{
+    request <- request$ListaMateriasAtualizadas$Materias
+  }
+
+  N = NA_character_
 
   id <- purrr::map(request, "IdentificacaoMateria")
-  at <- purrr::map(request, "AtualizacoesRecentes")
+  dep <- function(x) depth(x) > 1
+  at <- purrr::map(request, "AtualizacoesRecentes") %>% purrr::flatten() %>%
+    purrr::map_if(dep, purrr::flatten) ## this just takes the first
+  ## out of a nested list for now
 
+  req <- tibble::tibble(
+    bill_id = purrr::map_chr(id, .null = N, "CodigoMateria"),
+    bill_number = purrr::map_chr(id, .null = N, "NumeroMateria"),
+    bill_year = purrr::map_chr(id, .null = N, "AnoMateria"),
+    bill_type = purrr::map_chr(id, .null = N, "SiglaSubtipoMateria"),
+    bill_house = purrr::map_chr(id, .null = N, "NomeCasaIdentificacaoMateria"),
+    bill_passing = purrr::map_chr(id, .null = N, "IndicadorTramitando"),
+    update_effect = purrr::map_chr(at, .null = N, "InformacaoAtualizada"),
+    update_date = purrr::map_chr(at, .null = N, "DataUltimaAtualizacao")
+  )
 
+  req <- req %>%
+    dplyr::mutate(
+      bill_passing = ifelse(bill_passing == "Sim", "Yes", "No"),
+      update_date = lubridate::parse_date_time(
+        update_date, "Ymd HMS")
+      )
+
+  if(ascii == TRUE){
+    req <- req %>%
+      dplyr::mutate(
+        bill_house = stringi::stri_trans_general(bill_house, "Latin-ASCII")
+      )
+  }
+  return(req)
 }
 
 
