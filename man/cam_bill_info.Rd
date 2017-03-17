@@ -15,7 +15,7 @@ return a large object in terms of memory. It will also be rather unwieldy, with
 many columns.
 }
 \examples{
-cam_bill_info(type="PL", number="3962", year="2008")
+cam_bill_info(14784)
 }
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.

@@ -10,15 +10,17 @@
 #' many columns.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
-#' cam_bill_info(type="PL", number="3962", year="2008")
+#' cam_bill_info(14784)
 #' @export
 
 cam_bill_info <- function(id_bill) {
   if ( is.null(id_bill) ) {
     stop("Lacking arguments. id_bill is mandatory")
   }
-  link <- "http://www.camara.leg.br/SitCamaraWS/Proposicoes.asmx/ObterProposicaoPorID?IdProp=354258" %p%
-    id_bill %>%
+  link <- "http://www.camara.leg.br/SitCamaraWS/Proposicoes.asmx/ObterProposicaoPorID?IdProp=" %p%
+    id_bill
+  print(link)
+  data <- read_xml(link) %>%
     extract_bill_info
   return(data)
 
