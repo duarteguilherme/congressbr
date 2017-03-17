@@ -10,7 +10,8 @@ sen_bills_updates(update = NULL, year = NULL, number = NULL,
 }
 \arguments{
 \item{update}{\code{character}. This is the type of update that can be applied
-to a bill. For a dataframe of these, use the \code{sen_bills_update_types()} function.}
+to a bill. For a dataframe of these, use the \code{sen_bills_update_types()}
+ function, and the variable \code{update_name} that is returned.}
 
 \item{year}{\code{character}. Year of the bill, if a specific bill is
 requested. Format YYYY.}
@@ -34,7 +35,7 @@ Senate database. For example, running \code{sen_bills_current()} will return a
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 }
 \examples{
-
+sen_bills_updates(update = "Despacho", year = 2014, days = 15)
 }
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.

@@ -4,7 +4,7 @@
 \alias{cam_plenary_bills}
 \title{This function lists every bill voted on in plenary.}
 \usage{
-cam_plenary_bills(type = "", year)
+cam_plenary_bills(year, type = "")
 }
 \arguments{
 \item{year}{(\code{integer}) start year of the period requested.}
