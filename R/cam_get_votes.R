@@ -2,7 +2,7 @@
 #' @importFrom xml2 xml_find_all
 #' @importFrom xml2 xml_attr
 #' @importFrom tibble tibble
-#' @importFrom magrittr `%>%`
+#' @importFrom magrittr '%>%'
 #' @importFrom stringr str_trim
 #' @title Downloads details of a specific bill by providing type, number and year
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
@@ -45,12 +45,12 @@ extract_bill_votes <- function(bill) {
   votes_bill <- bill %>%
     xml_find_all('.//Deputado') %>%
     map_df(extract_votes)
-  
+
   data_bill <- bind_cols(info_bill, orientation_bill) %>%
     cbind(votes_bill)
-  
+
   return(data_bill)
-    
+
 }
 
 
