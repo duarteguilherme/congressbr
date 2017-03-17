@@ -35,7 +35,7 @@ extract_plenary_bill <- function(bill) {
     dplyr::tibble(
       id_bill = xml_text(xml_find_all(bill, "./codProposicao")),
       name_bill = xml_text(xml_find_all(bill, "./nomeProposicao")),
-      date_voted = xml_text(xml_find_all(bill, "./dataProposicao"))
+      date_voted = xml_text(xml_find_all(bill, "./dataVotacao"))
     )
   )
 }
