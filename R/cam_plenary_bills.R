@@ -20,7 +20,7 @@ cam_plenary_bills <- function(type="", year) {
   }
   link <- "http://www.camara.leg.br/SitCamaraWS/Proposicoes.asmx/ListarProposicoesVotadasEmPlenario?" %p%
     "ano=" %p% year %p%
-    "&tipo=" %p% tipo
+    "&tipo=" %p% type
   data <- read_xml(link) %>%
     xml_find_all('proposicao') %>%
     map_df(extract_plenary_bill)
