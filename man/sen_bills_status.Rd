@@ -5,13 +5,16 @@
 \title{Downloads and tidies information on legislation from the current
 legislature of the Federal Senate.}
 \usage{
-sen_bills_status(id = NULL)
+sen_bills_status(id = NULL, ascii = TRUE)
 }
 \arguments{
 \item{id}{\code{integer}. This number is the id given to each bill in the
 Senate database. For example, running \code{sen_bills_current()} will return a
  dataframe with the variable \code{bill_id} in the first column. These numbers
  can be used as this id.}
+
+\item{ascii}{\code{logical}. If \code{TRUE}, strips Latin characters from
+strings.}
 }
 \value{
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.

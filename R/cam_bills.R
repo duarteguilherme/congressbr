@@ -2,7 +2,7 @@
 #' @importFrom xml2 xml_find_all
 #' @importFrom purrr map_df
 #' @importFrom tibble tibble
-#' @importFrom magrittr '%>%'
+#' @importFrom magrittr "%>%"
 #' @title Downloads and tidies data for lists of bills in Brazilian Chamber of Deputies
 #' @param initial_data (\code{character}) start date of the period requested.
 #' This parameter must be in the format YYYYMMDD (Year-Month-Day). A value for

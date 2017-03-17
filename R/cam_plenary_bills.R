@@ -2,7 +2,7 @@
 #' @importFrom xml2 xml_find_all
 #' @importFrom purrr map_df
 #' @importFrom tibble tibble
-#' @importFrom magrittr '%>%'
+#' @importFrom magrittr "%>%"
 #' @title This function lists every bill voted on in plenary.
 #' @param year (\code{integer}) start year of the period requested.
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.

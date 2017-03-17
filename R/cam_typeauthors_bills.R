@@ -3,7 +3,7 @@
 #' @importFrom xml2 xml_attr
 #' @importFrom purrr map_df
 #' @importFrom tibble tibble
-#' @importFrom magrittr `%>%`
+#' @importFrom magrittr "%>%"
 #' @title Downloads types of authors for bills
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 #' @note Requesting data from a long period of time with \code{details = TRUE} will
