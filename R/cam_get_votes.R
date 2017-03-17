@@ -12,7 +12,7 @@
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
 #' cam_get_votes(type="PL", number="1992", year="2007")
-
+#' @export
 
 
 cam_get_votes <- function(type, number, year) {
@@ -42,8 +42,15 @@ extract_bill_votes <- function(bill) {
     map_df(extract_orientation) %>%
     spread(sigla, orientacao )
 
-  data_bill <- cbind(info_bill, orientation_bill)
-
+  votes_bill <- bill %>%
+    xml_find_all('.//Deputado') %>%
+    map_df(extract_votes)
+  
+  data_bill <- bind_cols(info_bill, orientation_bill) %>%
+    cbind(votes_bill)
+  
+  return(data_bill)
+    
 }
 
 
@@ -55,3 +62,17 @@ extract_orientation <- function(votacao) {
     )
   )
 }
+
+
+extract_votes <- function(votes) {
+  return(
+    dplyr::tibble(
+      id_legislator =  xml_attr(votes, "ideCadastro"),
+      name_legislator =  xml_attr(votes, "Nome"),
+      uf_legislator = xml_attr(votes, "UF"),
+      party_legislator = xml_attr(votes, "Partido"),
+      vote =  str_trim(xml_attr(votes, "Voto"))
+    )
+  )
+}
+
