@@ -25,6 +25,7 @@
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
 #' cam_plenary_bills(year=2008)
+#' @export
 
 
 

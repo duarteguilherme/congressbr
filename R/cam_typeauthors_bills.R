@@ -11,7 +11,8 @@
 #' many columns.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
-#' cam_typeauthors_bills
+#' cam_typeauthors_bills()
+#' @export
 
 
 cam_typeauthors_bills <- function() {

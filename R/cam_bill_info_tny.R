@@ -11,6 +11,7 @@
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
 #' cam_bill_info_tny(type="PL", number="3962", year="2008")
+#' @export
 
 
 cam_bill_info_tny <- function(type, number, year) {

@@ -25,6 +25,7 @@
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
 #' cam_bills(initial_date = "11/01/2015", end_date = "11/01/2016", part_name_author="Oliveira")
+#' @export
 
 
 cam_bills <- function(type="",number="",year="", initial_date="", end_date="", part_name_author="", id_type_author="",
