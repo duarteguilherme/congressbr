@@ -4,13 +4,10 @@
 \alias{sen_bills_timeframe}
 \title{Downloads and tidies data on the coalitions in the Federal Senate.}
 \usage{
-sen_bills_timeframe(code = 0, commission = NULL, legislator = NULL,
+sen_bills_timeframe(code = NULL, commission = NULL, legislator = NULL,
   type = NULL)
 }
 \arguments{
-\item{members}{\code{logical}. If FALSE, returns only the first four columns
-of the data frame.}
-
 \item{ascii}{\code{logical}. If TRUE, names are converted to ascii format.}
 }
 \value{

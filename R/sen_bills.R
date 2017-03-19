@@ -59,14 +59,6 @@ sen_bills <- function(id = NULL, type = NULL,
   }
   null <- NA_character_
 
-  disc <- function(x){
-    x <- as.character(x) %>% purrr::discard(is.na)
-    if(purrr::is_empty(x)){
-      x <- NA
-    }
-    return(x)
-  }
-
   author <- request$Autoria
   if(depth(author) > 3){
     author <- request$Autoria$Autor

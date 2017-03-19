@@ -16,190 +16,190 @@
 #'  on party affiliation.
 #' @param mandates \code{logical}. If TRUE, the default, returns information on
 #' terms served by the senator.
-#' @param leaderships \code{logical}. If TRUE, returns information on leadership
-#' positions the senator has held.
 #' @param absences \code{logical}. If TRUE, returns information on leaves of
 #' absence taken by the senator.
 #' @param ascii \code{logical}. If TRUE, certain strings are converted to ascii
 #' format.
-#' @note Setting all parameters to TRUE will return a rather bloated data frame
-#' and is not recommended unless necessary.
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
+#' @note Setting \code{affiliations}, \code{mandates} and particularly
+#' \code{absences} to \code{TRUE} will result in a rather bloated data frame.
 #' @examples
-#' benedito <- sen_senator(3823)
+#' benedito <- sen_senator(id = 3823)
+#' aecio <- sen_senator(id = 391, absences = T)
+#' juc <- sen_senator(73)
 #' @export
-sen_senator <- function(code = 0, affiliations = TRUE,
-                        mandates = TRUE, leaderships = FALSE,
-                        absences = FALSE, ascii = TRUE){
+sen_senator <- function(id = NULL, affiliations = TRUE,
+                        mandates = TRUE, absences = FALSE,
+                        ascii = TRUE){
 
+  if(is.null(id)){
+    stop("Please choose a valid senator ID.")
+  }
   base_url <- "http://legis.senado.gov.br/dadosabertos/parlamentar/" %p%
-    code
+    id
 
   request <- httr::GET(base_url)
-  # status checks
   request <- status(request)
+  N <- NA_character_
 
+  dob <- purrr::map_chr(request, "dataNascimento", .null = N)
+  licenca <- purrr::map(request, "licencas", .null = N)
+  if(depth(licenca) > 3){
+    licenca <- licenca  %>% purrr::flatten() %>% purrr::flatten()
+  } else{
+    licenca <- purrr::flatten(licenca)
+  }
 
-  dob <- safe_map(request, "dataNascimento")
+  fili <- purrr::map(request, "filiacoes")
+  if(depth(fili) > 4){
+    fili <- fili %>% purrr::flatten() %>% purrr::flatten()
+  } else{
+    fili <- purrr::flatten(fili)
+  }
 
+  exer <- purrr::map(request, "exercicios") %>% purrr::flatten()
 
-  sen <- dplyr::data_frame(
-    id = purrr::map_chr(request, "idParlamentar"),
-    name_full = purrr::map_chr(request, "nomeCompleto"),
-    name_senator = purrr::map_chr(request, "nomeParlamentar"),
-    gender = safe_map(request, "sexoParlamentar"),
+  sen <- tibble::tibble(
+    id = purrr::map_chr(request, "idParlamentar", .null = N),
+    name_full = purrr::map_chr(request, "nomeCompleto", .null = N),
+    name_senator = purrr::map_chr(request, "nomeParlamentar", .null = N),
+    gender = purrr::map_chr(request, "sexoParlamentar", .null = N),
     date_of_birth = suppressWarnings(
       lubridate::parse_date_time(dob, orders = "Ymd")),
-    place_of_birth = safe_map(request, "nomeCidadeNatural"),
-    state_of_birth = safe_map(request, "siglaUfNatural"),
-    country_of_birth = safe_map(request, "DescricaoPaisNascimento"),
-    office_address = safe_map(request, "local"),
-    office_phone = safe_map(request, "fone"),
-    office_email = safe_map(request, "email"))
-
-
+    place_of_birth = purrr::map_chr(request, "nomeCidadeNatural",
+                                    .null = N),
+    state_of_birth = purrr::map_chr(request, "siglaUfNatural",
+                                    .null = N),
+    country_of_birth = purrr::map_chr(request, "DescricaoPaisNascimento",
+                                      .null = N),
+    office_address = purrr::map_chr(request, "local", .null = N),
+    office_phone = purrr::map_chr(request, "fone", .null = N),
+    office_email = purrr::map_chr(request, "email", .null = N)
+  )
 
   if(ascii == TRUE){
     sen <- sen %>%
       dplyr::mutate(
-        name_full = stringi::stri_trans_general(name_full, "Latin-ASCII"),
-        name_senator = stringi::stri_trans_general(name_senator,
-                                                   "Latin-ASCII"),
-        place_of_birth = stringi::stri_trans_general(place_of_birth,
-                                                     "Latin-ASCII"),
-        state_of_birth = stringi::stri_trans_general(state_of_birth,
-                                                     "Latin-ASCII"),
-        office_address = stringi::stri_trans_general(office_address,
-                                                     "Latin-ASCII"))
-  }
-
-  if(leaderships == TRUE){
-    # info on leadership positions:
-    if(!is.null(request$parlamentar$liderancas$lideranca)){
-
-      lid <- request$parlamentar$liderancas$lideranca
-      if(depth(lid) < 3){
-        lid <- request$parlamentar$liderancas
-      }
-      # uni <- purrr::map(lid, "unidadeLideranca") %>%
-      #   purrr::map_if(purrr::is_empty, ~ NA_character_)
-      ### NOTE: in future versions, we can utilise 'uni' perhaps.
-      ## need more info. What do the numeric codes represent?
-
-      start <- safe_map(lid, "dataDesignacao")
-      end <- safe_map(lid, "dataTermino")
-
-      lead <- dplyr::data_frame(
-        id = safe_map(lid, "idParlamentar"),
-        id_leadership = safe_map(lid, "idLideranca"),
-        house = safe_map(lid, "siglaCasa"),
-        leadership_type = safe_map(lid, "tipoLideranca"),
-        leadsership_date_assumed = suppressWarnings(
-          lubridate::parse_date_time(start, orders = "Ymd")),
-        leadership_date_terminated =  suppressWarnings(
-          lubridate::parse_date_time(end, orders = "Ymd")))
-    }
-    sen <- suppressMessages(dplyr::full_join(sen, lead))
+        name_full = stringi::stri_trans_general(
+          name_full, "Latin-ASCII"
+        ),
+        name_senator = stringi::stri_trans_general(
+          name_senator, "Latin-ASCII"
+        ),
+        place_of_birth = stringi::stri_trans_general(
+          place_of_birth, "Latin-ASCII"
+        ),
+        country_of_birth = stringi::stri_trans_general(
+          country_of_birth, "Latin-ASCII"
+        ),
+        office_address = stringi::stri_trans_general(
+          office_address, "Latin-ASCII"
+        )
+      )
   }
 
   if(affiliations == TRUE){
-    # info on party affiliation:
-    if(!is.null(request$parlamentar$filiacoes$filiacao)){
-      parties <- request$parlamentar$filiacoes$filiacao
+    party <- purrr::map(fili, "partido", .null = N)
 
-      if(depth(parties) == 3){
-        p <- purrr::map(parties, "partido")
-        desf <- safe_map(parties, "dataDesfiliacao")
-        join <- safe_map(parties, "dataFiliacao")
+    parties <- tibble::tibble(
+        id = purrr::map_chr(fili, "idParlamentar", .null = N),
+        affil_id = purrr::map_chr(fili, .null = N, "idFiliacao"),
+        affil_party_id = purrr::map_chr(fili, .null = N, "idPartido"),
+        affil_party = purrr::map_chr(party, .null = N, "siglaPartido"),
+        affil_party_name = purrr::map_chr(party, .null = N, "nomePartido"),
+        affil_party_date_created = purrr::map_chr(party, .null = N,
+                                                  "dataCriacao"),
+        affil_party_date_extinct = purrr::map_chr(party, .null = N,
+                                                  "dataExtincao")
+      )
+    parties <- parties %>%
+      dplyr::mutate(
+        affil_party_date_created = suppressWarnings(
+          lubridate::parse_date_time(
+          affil_party_date_created, "Ymd"
+        )),
+        affil_party_date_extinct = suppressWarnings(
+          lubridate::parse_date_time(
+            affil_party_date_extinct, "Ymd"
+          )
+        )
+      )
 
-        party <- dplyr::data_frame(
-          id = safe_map(parties, "idParlamentar"),
-          party_id = safe_map(parties, "idPartido"),
-          party_abbr = safe_map(p, "siglaPartido"),
-          party_name = safe_map(p, "nomePartido"),
-          party_date_joined = suppressWarnings(
-            lubridate::parse_date_time(join, orders = "Ymd")),
-          party_date_left = suppressWarnings(
-            lubridate::parse_date_time(desf, orders = "Ymd")))
-      } else{
-        parties <- request$parlamentar$filiacoes
-        names(parties) <- NULL
-        p <- purrr::map(parties, "partido")
-        desf <- safe_map(parties, "dataDesfiliacao")
-        join <- safe_map(parties, "dataFiliacao")
-
-        party <- dplyr::data_frame(
-          id = safe_map(parties, "idParlamentar"),
-          party_id = safe_map(parties, "idPartido"),
-          party_abbr = safe_map(p, "siglaPartido"),
-          party_name = safe_map(p, "nomePartido"),
-          party_date_joined = suppressWarnings(
-            lubridate::parse_date_time(join, orders = "Ymd")),
-          party_date_left = suppressWarnings(
-            lubridate::parse_date_time(desf, orders = "Ymd")))
-      }
-      if(ascii == TRUE){
-        party$party_name <- stringi::stri_trans_general(party$party_name,
-                                                        "Latin-ASCII")
-      }
-      sen <- suppressMessages(dplyr::full_join(sen, party))
+    if(ascii == TRUE){
+      parties <- parties %>%
+        dplyr::mutate(
+          affil_party_name = stringi::stri_trans_general(
+            affil_party_name, "Latin-ASCII"
+          )
+        )
     }
+    sen <- suppressMessages(dplyr::full_join(sen, parties))
   }
 
   if(mandates == TRUE){
-    # info on mandates:
-    if(!is.null(request$parlamentar$exercicios$exercicio)){
-      terms <- request$parlamentar$exercicios
-      if(depth(terms) == 3){
-        names(terms) <- NULL
-        mand <- purrr::map(terms, "mandato")
-        term <- dplyr::data_frame(
-          id = purrr::map_chr(terms, "idParlamentar"),
-          id_term = purrr::map_chr(terms, "idExercicio"),
-          id_titular = purrr::map_chr(mand, "idTitular"),
-          house = purrr::map_chr(mand, "siglaCasa"),
-          initial_legislature = purrr::map_chr(mand, "numeroLegislaturaInicio"),
-          end_legislature = safe_map(mand, "mumeroLegislaturaFim")
-        )
-      } else{
-        terms <-terms$exercicio
-        mand <- purrr::map(terms, "mandato")
-        term <- dplyr::data_frame(
-          id = purrr::map_chr(terms, "idParlamentar"),
-          mandate_id = purrr::map_chr(terms, "idExercicio"),
-          id_titular = safe_map(mand, "idTitular"),
-          mandate_house = purrr::map_chr(mand, "siglaCasa"),
-          mandate_initial_legislature = safe_map(mand,
-                                                       "numeroLegislaturaInicio"),
-          mandate_end_legislature = safe_map(mand,
-                                                   "mumeroLegislaturaFim")
-        )
-      }
+    if(depth(exer) > 3){
+      exer <- purrr::flatten(exer)
     }
-    sen <- suppressMessages(dplyr::left_join(sen, term))
-  }
+      mand <- exer %>% purrr::flatten()
 
+    ex <- tibble::tibble(
+      id = purrr::map_chr(exer, .null = N, "idParlamentar"),
+      mandate_id = purrr::map_chr(exer, .null = N, "idMandato"),
+      mandate_house = purrr::map_chr(mand, .null = N, "siglaCasa") %>% disc(),
+      mandate_state = purrr::map_chr(mand, .null = N, "siglaUf") %>% disc(),
+      mandate_start = purrr::map_chr(exer, .null = N, "dataInicio"),
+      mandate_end = purrr::map_chr(exer, .null = N, "dataFim")
+    )
+
+    ex <- ex %>%
+      dplyr::mutate(
+        mandate_start = suppressWarnings(
+          lubridate::parse_date_time(
+          mandate_start, "Ymd"
+        )),
+        mandate_end = suppressWarnings(
+          lubridate::parse_date_time(mandate_end, "Ymd")
+        )
+      )
+
+    sen <- suppressMessages(dplyr::full_join(sen, ex))
+  }
 
   if(absences == TRUE){
-    # info on leaves of absence:
-    if(!is.null(request$parlamentar$licencas$licenca)){
 
-      lic <- request$parlamentar$licencas$licenca
-
-      start <- safe_map(lic, "dataInicio")
-      leave <- safe_map(lic, "dataTermino")
-
-      lic <- dplyr::data_frame(
-        id = purrr::map_chr(lic, "idParlamentar"),
-        id_absence = safe_map(lic, "idLicenca"),
-        leave_start_date = suppressWarnings(
-          lubridate::parse_date_time(start, orders = "Ymd")),
-        leave_end_date = suppressWarnings(
-          lubridate::parse_date_time(leave, orders = "Ymd")))
+    ab <- tibble::tibble(
+      id = purrr::map_chr(licenca, .null = N, "idParlamentar"),
+      absence_id = purrr::map_chr(licenca, .null = N, "idLicenca"),
+      absence_start = purrr::map_chr(licenca, .null = N, "dataInicio"),
+      absence_end = purrr::map_chr(licenca, .null = N, "dataTermino"),
+      absence_description = purrr::map_chr(licenca, .null = N,
+                                           "descricaoFinalidade")
+    )
+    ab <- ab %>%
+      dplyr::mutate(
+        absence_start = suppressWarnings(
+          lubridate::parse_date_time(
+          absence_start, "Ymd"
+        )),
+        absence_end = suppressWarnings(
+          lubridate::parse_date_time(
+          absence_end, "Ymd"
+        ))
+      )
+    if(ascii == TRUE){
+      ab <- ab %>%
+        dplyr::mutate(
+          absence_description = stringi::stri_trans_general(
+            absence_description, "Latin-ASCII"
+          )
+        )
     }
-    sen <- suppressMessages(dplyr::left_join(sen, lic))
+
+    sen <- suppressMessages(dplyr::full_join(sen, ab))
   }
+  sen <- sen %>%
+    dplyr::filter(!is.na(id))
   return(sen)
 }
 

@@ -5,37 +5,36 @@
 \title{Downloads and tidies persnonal information on senators from the
 Federal Senate.}
 \usage{
-sen_senator(code = 0, affiliations = TRUE, mandates = TRUE,
-  leaderships = FALSE, absences = FALSE, ascii = TRUE)
+sen_senator(id = NULL, affiliations = TRUE, mandates = TRUE,
+  absences = FALSE, ascii = TRUE)
 }
 \arguments{
-\item{code}{\code{integer}. Unique code for a senator. A dataframe of these
-is available from \code{sen_senator_list()}.}
-
 \item{affiliations}{\code{logical}. If TRUE, the default, returns information
 on party affiliation.}
 
 \item{mandates}{\code{logical}. If TRUE, the default, returns information on
 terms served by the senator.}
 
-\item{leaderships}{\code{logical}. If TRUE, returns information on leadership
-positions the senator has held.}
-
 \item{absences}{\code{logical}. If TRUE, returns information on leaves of
 absence taken by the senator.}
 
 \item{ascii}{\code{logical}. If TRUE, certain strings are converted to ascii
 format.}
+
+\item{code}{\code{integer}. Unique code for a senator. A dataframe of these
+is available from \code{sen_senator_list()}.}
 }
 \value{
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 }
 \note{
-Setting all parameters to TRUE will return a rather bloated data frame
-and is not recommended unless necessary.
+Setting \code{affiliations}, \code{mandates} and particularly
+\code{absences} to \code{TRUE} will result in a rather bloated data frame.
 }
 \examples{
-benedito <- sen_senator(3823)
+benedito <- sen_senator(id = 3823)
+aecio <- sen_senator(id = 391, absences = T)
+juc <- sen_senator(73)
 }
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.

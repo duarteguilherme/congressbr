@@ -412,14 +412,6 @@ sen_bills_passage <- function(id = NULL, ascii = TRUE){
   request <- request$MovimentacaoMateria$Materia
   N = NA_character_
 
-  disc <- function(x){
-    x <- as.character(x) %>% purrr::discard(is.na)
-    if(purrr::is_empty(x)){
-      x <- NA
-    }
-    return(x)
-  }
-
   sit <- request$SituacaoAtual$Autuacoes$Autuacao
   tram <- request$Tramitacoes$Tramitacao %>% purrr::flatten()
   tram_o <- purrr::map(tram, "OrigemTramitacao") %>% purrr::flatten()
