@@ -5,7 +5,7 @@
 \title{Downloads and tidies data on the agenda in the Federal Senate.}
 \usage{
 sen_agenda(initial_date = NULL, end_date = NULL, house = NULL,
-  s_b = NULL, legislator = 0, details = FALSE)
+  supervisory = NULL, legislator = NULL, details = FALSE, ascii = TRUE)
 }
 \arguments{
 \item{house}{(\code{character}). The acronym for the legislative house
@@ -14,7 +14,7 @@ Federal Senate), CN (\emph{Congresso Nacional}, National Congress - joint
 meeting of the Senate and Chamber), and CA \code{Camara dos Deputados},
 Chamber of Deputies.}
 
-\item{s_b}{\code{character}. Name of the commission or supervisory body. A
+\item{supervisory}{\code{character}. Name of the commission or supervisory body. A
 data frame of these can be seen with \code{data("commissions")}.}
 
 \item{legislator}{\code{integer}. The numeric code given to each senator.

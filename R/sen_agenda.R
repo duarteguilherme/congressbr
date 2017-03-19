@@ -15,7 +15,7 @@
 #' Federal Senate), CN (\emph{Congresso Nacional}, National Congress - joint
 #' meeting of the Senate and Chamber), and CA \code{Camara dos Deputados},
 #' Chamber of Deputies.
-#' @param s_b \code{character}. Name of the commission or supervisory body. A
+#' @param supervisory \code{character}. Name of the commission or supervisory body. A
 #' data frame of these can be seen with \code{data("commissions")}.
 #' @param legislator \code{integer}. The numeric code given to each senator.
 #' A dataframe with these values is returned from the \code{sen_senator_list()}
@@ -34,57 +34,136 @@
 #' legislator = 4988)
 #' @export
 sen_agenda <- function(initial_date = NULL, end_date = NULL,
-                       house = NULL, s_b = NULL,
-                       legislator = 0, details = FALSE){
+                       house = NULL, supervisory = NULL,
+                       legislator = NULL, details = FALSE,
+                       ascii = TRUE){
   # checks
   if(is.null(initial_date)){
     stop("Please choose a valid initial date. Format is YYYYMMDD.")
   }
   if(details == TRUE & !is.null(legislator)){
-    warning("Using the arguments 'details' and 'legislator' together will return the same thing as when 'legislator' is not used.")
+    warning("Using the arguments 'details' and 'legislator' together will result in the latter being ignored.")
+    legislator <- NULL
   }
+
 
   base_url <- "http://legis.senado.gov.br/dadosabertos/agenda/" %p%
     initial_date
 
-  if(!is.null(end_date) & details == FALSE){
-    base_url <- paste0(base_url, "/", end_date, "?")
-  } else if(!is.null(end_date) & details == TRUE){
-    base_url <- paste0(base_url, "/", end_date, "/", "detalhe?")
-  } else if(is.null(end_date) & details == TRUE){
-    base_url <- paste0(base_url, "/", "detalhe?")
-  } else{
-    base_url <- paste0(base_url, "?")
+  if(is.null(end_date)){
+    if(details == FALSE){
+      initial_date <- initial_date %p% "?"
+      if(!is.null(house)){
+        base_url <- base_url %p% "&casa=" %p% house
+      }
+      if(!is.null(supervisory)){
+        base_url <- base_url %p% "&colegiado=" %p% supervisory
+      }
+      if(!is.null(legislator)){
+        base_url <- base_url %p% "&parlamentar=" %p% legislator
+      }
+    } else{
+      base_url <- base_url %p% "/detalhe?"
+      if(!is.null(house)){
+        base_url <- base_url %p% "&casa=" %p% house
+      }
+      if(!is.null(supervisory)){
+        base_url <- base_url %p% "&colegiado=" %p% supervisory
+      }
+    }
+  }else{
+    base_url <- "http://legis.senado.gov.br/dadosabertos/agenda/" %p%
+      initial_date %p% "/" %p% end_date
+
+    if(details == FALSE){
+      base_url <- base_url %p% "?"
+      if(!is.null(house)){
+        base_url <- base_url %p% "&casa=" %p% house
+      }
+      if(!is.null(supervisory)){
+        base_url <- base_url %p% "&colegiado=" %p% supervisory
+      }
+      if(!is.null(legislator)){
+        base_url <- base_url %p% "&parlamentar=" %p% legislator
+      }
+    } else{
+      base_url <- base_url %p% "/detalhe?"
+      if(!is.null(house)){
+        base_url <- base_url %p% "&casa=" %p% house
+      }
+      if(!is.null(supervisory)){
+        base_url <- base_url %p% "&colegiado=" %p% supervisory
+      }
+    }
   }
 
-  # request data
-  request <- base_url %p%
-    "casa=" %p% house %p%
-    "&colegiado=" %p% s_b %p%
-    "&parlamentar=" %p% legislator
-
-  request <- httr::GET(request)
-
-  # status checks
+  request <- httr::GET(base_url)
   request <- status(request)
-
-  if(is.null(request$Reunioes)){
-    stop("No data matches your input.")
-  }
-
-  ## tidy
   request <- request$Reunioes$Reuniao
+  N <- NA_character_
 
-  req <- purrr::compact(request)
-
-  for(z in 1:length(req)){
-    req[[z]] <- as.data.frame(req[[z]], stringsAsFactors = F)
+  if(!is.null(legislator)){
+    partic <- purrr::map(request, "ParticipacaoParlamentar", .null = N)
   }
 
-  req <- data.table::rbindlist(req, fill = TRUE)
+  comms <- purrr::map(request, "Comissoes", .null = N) %>%
+    purrr::flatten()
+  part <- purrr::map(request, "Partes", .null = N) %>% purrr::flatten()
 
-  req$Data <- gsub("/", "-", req$Data)
-  req$Data <- lubridate::parse_date_time(req$Data, orders = "d!m!Y!")
-  req <- dplyr::as_data_frame(req)
-  return(req)
+  agenda <- tibble::tibble(
+    agenda_id = purrr::map_chr(request, .null = N, "Codigo"),
+    agenda_title = purrr::map_chr(request, .null = N, "TituloDaReuniao"),
+    agenda_name = purrr::map_chr(part, .null = N, "NomeFantasia"),
+    agenda_type = purrr::map_chr(request, .null = N, "Tipo"),
+    agenda_date= purrr::map_chr(request, .null = N, "Data"),
+    agenda_time = purrr::map_chr(request, .null = N, "Hora"),
+    agenda_status = purrr::map_chr(request, .null = N, "Situacao"),
+    agenda_place = purrr::map_chr(request, .null = N, "Local"),
+    agenda_commission_house = purrr::map_chr(comms, .null = N, "Casa"),
+    agenda_commission_abbr = purrr::map_chr(comms, .null = N, "Sigla"),
+    agenda_commission_id = purrr::map_chr(comms, .null = N, "CodigoColegiado"),
+    agenda_commission_meeting_number = purrr::map_chr(comms, .null = N,
+                                                      "NumeroReuniao")
+    )
+
+  agenda <- agenda %>%
+    dplyr::mutate(agenda_date = lubridate::parse_date_time(
+      agenda_date, "dmY"
+    ))
+
+  if(!is.null(legislator)){
+    agenda <- agenda %>%
+      dplyr::mutate(
+        legislator_name = purrr::map_chr(partic, .null = N, "Nome"),
+        agenda_commission_member = purrr::map_chr(partic, .null = N,
+                                                  "IsMembroComissao"),
+        agenda_commission_relator = purrr::map_chr(partic, .null = N,
+                                                   "IsRelator")
+      )
   }
+
+
+  if(ascii == TRUE){
+    if(!is.null(legislator)){
+      agenda <- agenda %>%
+        dplyr::mutate(
+          legislator_name = stringi::stri_trans_general(legislator_name,
+                                                        "Latin-ASCII"),
+          agenda_commission_member = stringi::stri_trans_general(
+            agenda_commission_member, "Latin-ASCII"),
+          agenda_commission_relator = stringi::stri_trans_general(
+            agenda_commission_relator, "Latin-ASCII")
+        )
+    }
+    agenda <- agenda %>%
+      dplyr::mutate(
+        agenda_title = stringi::stri_trans_general(agenda_title, "Latin-ASCII"),
+        agenda_name = stringi::stri_trans_general(agenda_name, "Latin-ASCII"),
+        agenda_type = stringi::stri_trans_general(agenda_type, "Latin-ASCII"),
+        agenda_status = stringi::stri_trans_general(agenda_status,
+                                                    "Latin-ASCII"),
+        agenda_place = stringi::stri_trans_general(agenda_place, "Latin-ASCII")
+      )
+  }
+  return(agenda)
+}
