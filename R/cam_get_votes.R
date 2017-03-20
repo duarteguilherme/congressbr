@@ -4,8 +4,10 @@
 #' @importFrom tibble tibble
 #' @importFrom magrittr "%>%"
 #' @importFrom stringr str_trim
+#' @importFrom stringr str_detect
 #' @importFrom tidyr spread
 #' @importFrom dplyr bind_cols
+#' @importFrom httr GET
 #' @title Downloads votes of a specific bill by providing type, number and year. A bill can have more than one roll call,
 #' # and the API does not provide an id to identify them So we provide one (id_rollcall).
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
@@ -23,7 +25,21 @@ cam_get_votes <- function(type, number, year) {
   }
   link <- "http://www.camara.leg.br/SitCamaraWS/Proposicoes.asmx/ObterVotacaoProposicao?tipo=" %p%
     type %p% "&numero=" %p% number %p% "&ano=" %p% year
-  data <- read_xml(link) %>%
+  data <- tryCatch({read_xml(link)},
+                   error=function(x) {
+                     y <- GET(link)
+                     # Handling a specific error related to the API
+                     msg_erro <- "Esta proposicao eh acessoria, atrelada a outra principal, e nao foi possivel"
+                    if ( str_detect(rawToChar(y$content), msg_erro) ) {
+                      return("")
+                    }
+                     else {
+                       stop("HTTP error 500")
+                     }
+                  }
+  )
+  if ( data == "" ) return(NULL)
+  data <- data %>%
         xml_find_all('.//Votacao') %>%
     map_df(extract_bill_votes) %>%
     mutate(type = type, number = number, year=year) %>%
