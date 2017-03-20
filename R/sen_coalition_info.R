@@ -88,4 +88,4 @@ sen_coalition_info <- function(code = 0, ascii = TRUE){
                                                        "Latin-ASCII"))
     return(result)
   }
-  }
+}

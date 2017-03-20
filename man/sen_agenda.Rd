@@ -8,6 +8,13 @@ sen_agenda(initial_date = NULL, end_date = NULL, house = NULL,
   supervisory = NULL, legislator = NULL, details = FALSE, ascii = TRUE)
 }
 \arguments{
+\item{initial_date}{(\code{character}) start date of the period requested.
+This parameter must be in the format YYYYMMDD (Year-Month-Day). A value for
+this parameter is necessary, all others are optional.}
+
+\item{end_date}{(\code{character}) final date for period requested. Format
+YYYYMMDD.}
+
 \item{house}{(\code{character}). The acronym for the legislative house
 for which results are requested. Options are SF (\emph{Senado Federal},
 Federal Senate), CN (\emph{Congresso Nacional}, National Congress - joint
@@ -24,13 +31,6 @@ function.}
 \item{details}{(\code{logical}). If details is equal to TRUE, the data returned
 is an expanded dataset with additional details. This is not recommended unless
 necessary.}
-
-\item{initial_data}{(\code{character}) start date of the period requested.
-This parameter must be in the format YYYYMMDD (Year-Month-Day). A value for
-this parameter is necessary, all others are optional.}
-
-\item{end_data}{(\code{character}) final date for period requested. Format
-YYYYMMDD.}
 }
 \value{
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.

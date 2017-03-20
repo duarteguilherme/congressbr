@@ -14,13 +14,12 @@ to ascii format, stripping the latin characters from the names.}
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame},
 with variables:
 \itemize{
- \item{\code{request_date: }}{\code{POSIXct}, date and time the request was made.}
  \item{\code{sponsor_name: }}{identity of the bill sponsor.}
  \item{\code{sponsor_code: }}{code for senator bill sponsors.}
- \item{\code{title: }}{title of bill sponsor.}
- \item{\code{party: }}{party of bill sponsor.}
- \item{\code{state: }}{state of bill sponsor.}
- \item{\code{quantity: }}{quantity of bills sponsored by this sponsor.}
+ \item{\code{sponsor_title: }}{title of bill sponsor.}
+ \item{\code{sponsor_party: }}{party of bill sponsor.}
+ \item{\code{sponsor_state: }}{state of bill sponsor.}
+ \item{\code{quantity: }}{quantity of bills sponsored by this individual or entity.}
 }
 }
 \examples{

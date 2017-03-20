@@ -1,3 +1,12 @@
+#' Pipe operator
+#'
+#' @name %>%
+#' @rdname pipe
+#' @keywords internal
+#' @export
+#' @importFrom magrittr %>%
+#' @usage lhs \%>\% rhs
+NULL
 
 # Emulate '+' python function
 `%p%` <- function(e1,e2) return(paste0(e1,e2))

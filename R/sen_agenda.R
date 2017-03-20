@@ -5,10 +5,10 @@
 #' @importFrom data.table rbindlist
 #' @importFrom dplyr as_data_frame
 #' @title Downloads and tidies data on the agenda in the Federal Senate.
-#' @param initial_data (\code{character}) start date of the period requested.
+#' @param initial_date (\code{character}) start date of the period requested.
 #' This parameter must be in the format YYYYMMDD (Year-Month-Day). A value for
 #' this parameter is necessary, all others are optional.
-#' @param end_data (\code{character}) final date for period requested. Format
+#' @param end_date (\code{character}) final date for period requested. Format
 #' YYYYMMDD.
 #' @param house (\code{character}). The acronym for the legislative house
 #' for which results are requested. Options are SF (\emph{Senado Federal},

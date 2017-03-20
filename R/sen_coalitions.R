@@ -3,10 +3,9 @@
 #' @importFrom lubridate parse_date_time
 #' @importFrom stringi stri_trans_general
 #' @importFrom magrittr '%>%'
-#' @importFrom dplyr as_data_frame
+#' @importFrom tibble tibble
 #' @importFrom dplyr full_join
 #' @importFrom dplyr mutate
-#' @importFrom purrr map
 #' @importFrom purrr map_if
 #' @importFrom purrr flatten
 #' @importFrom purrr map_chr
@@ -23,90 +22,82 @@
 #'  \item{\code{bloc_name: }}{name of the coalition.}
 #'  \item{\code{bloc_label: }}{additional label for the coalition.}
 #'  \item{\code{date_created: }}{\code{POSIXct}, date the coalition was created.}
-#'  \item{\code{member_code: }}{party code.}
-#'  \item{\code{member_abbr: }}{party acronym.}
-#'  \item{\code{member_name: }}{party name.}
-#'  \item{\code{member_date_joined: }}{\code{POSIXct}, date when the party first joined the coalition.}
+#'  \item{\code{bloc_member_abbr: }}{party acronym.}
+#'  \item{\code{bloc_member_name: }}{party name.}
+#'  \item{\code{bloc_member_date_joined: }}{\code{POSIXct}, date when the party first joined the coalition.}
 #'  \item{\code{member_date_left:: }}{\code{POSIXct}, date when the party left the coalition.}
 #' }
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
 #' coalitions <- sen_coalitions()
+#' coalitions_detail <- sen_coalitions(members = TRUE)
 #' @export
-sen_coalitions <- function(members =TRUE, ascii = TRUE){
+sen_coalitions <- function(members = FALSE, ascii = TRUE){
 
   base_url <- "http://legis.senado.gov.br/dadosabertos/blocoParlamentar/lista"
 
   request <- httr::GET(base_url)
-  # status checks
   request <- status(request)
   request <- request$ListaBlocoParlamentar$Blocos$Bloco
+  N <- NA_character_
 
-  bloc <- dplyr::data_frame(
-    bloc_code = purrr::map_chr(request, "CodigoBloco"),
-    bloc_name = purrr::map_chr(request, "NomeBloco"),
-    bloc_label = purrr::map_chr(request, "NomeApelido"),
-    # bloc_abbr = purrr::map_chr(request, "SiglaBloco"),
-    # this just returns "Bloco", it's probably due to the
-    # API being in development. For future versions of this
-    # package.
-    date_created = lubridate::parse_date_time(
-      purrr::map_chr(request, "DataCriacao"), orders = "Ymd")
-  )
+  bloc <- tibble::tibble(
+    bloc_code = purrr::map_chr(request, "CodigoBloco", .null = N),
+    bloc_name = purrr::map_chr(request, "NomeBloco", .null = N),
+    bloc_label = purrr::map_chr(request, "NomeApelido", .null = N),
+    date_created = suppressWarnings(
+      lubridate::parse_date_time(
+      purrr::map_chr(request, "DataCriacao", .null = N),
+      orders = "Ymd"))
+    )
 
-  if(members == FALSE & ascii == FALSE){
-    return(bloc)
-  } else if(members == FALSE & ascii == TRUE){
-    bloc$bloc_name <- stringi::stri_trans_general(bloc$bloc_name,
-                                                  "Latin-ASCII")
-    return(bloc)
-  } else{
+  if(ascii == TRUE){
+    bloc <- bloc %>%
+      dplyr::mutate(
+        bloc_name = stringi::stri_trans_general(
+          bloc_name, "Latin-ASCII"),
+        bloc_label = stringi::stri_trans_general(
+          bloc_label, "Latin-ASCII")
+      )
+  }
+
+  # Get members:
+
+  if(members == TRUE){
+
     members <- purrr::at_depth(request, 1, "Membros")
     names(members) <- bloc$bloc_code
     members <- purrr::compact(members)
-    part <- purrr::at_depth(members, 1, "Membro")
-    part <- purrr::at_depth(part, 2, "Partido")
+    part <- purrr::at_depth(members, 1, "Membro") %>%
+      purrr::at_depth(2, "Partido")
     # variable to join with:
     for(i in 1:length(part)){
       for(j in 1:length(part[[i]])){
         part[[i]][[j]]$bloc_code <- names(part)[[i]]
       }
     }
-
     part <- purrr::flatten(part)
-
-    parties <- dplyr::data_frame(
+    parties <- tibble::tibble(
       bloc_code = purrr::map_chr(part, "bloc_code"),
-      member_code = purrr::map_chr(part, "CodigoPartido"),
-      member_abbr = purrr::map_chr(part, "SiglaPartido"),
-      member_name = purrr::map_chr(part, "NomePartido")
+      bloc_member_abbr = purrr::map_chr(part, "SiglaPartido"),
+      bloc_member_name = purrr::map_chr(part, "NomePartido")
     )
-
-    date_j <- purrr::at_depth(members, 3, "DataAdesao")
-    date_j <- purrr::flatten(date_j)
-    date_j <- purrr::flatten(date_j)
-    date_j <- purrr::map_if(date_j, is.null, ~NA)
-    parties$member_date_joined <- suppressWarnings(
-      lubridate::parse_date_time(date_j, orders = "Ymd"))
-
-    date_l <- purrr::at_depth(members, 3, "DataDesligamento")
-    date_l <- purrr::flatten(date_l)
-    date_l <- purrr::flatten(date_l)
-    date_l <- purrr::map_if(date_l, is.null, ~NA)
-    parties$member_date_left <- suppressWarnings(
-      lubridate::parse_date_time(date_l, orders = "Ymd"))
-
-    bloco <- suppressMessages(dplyr::full_join(bloc, parties))
-
-    if(ascii == FALSE){
-      return(bloco)
-    } else{
-      bloco <- bloco %>%
-        dplyr::mutate(bloc_name = stringi::stri_trans_general(bloc_name,
-                                                       "Latin-ASCII"),
-                      member_name = stringi::stri_trans_general(member_name,
-                                                         "Latin-ASCII"))
-      return(bloco)
+    date_j <- purrr::at_depth(members, 3, "DataAdesao") %>%
+      purrr::flatten() %>% purrr::flatten() %>%
+      purrr::map_if(is.null, ~NA)
+    parties$bloc_member_date_joined <- suppressWarnings(
+      lubridate::parse_date_time(date_j, orders = "Ymd")
+    )
+    if(ascii == TRUE){
+      parties <- parties %>%
+        dplyr::mutate(
+          bloc_member_name = stringi::stri_trans_general(
+            bloc_member_name, "Latin-ASCII"
+          )
+        )
     }
+
+    bloc <- suppressMessages(dplyr::full_join(bloc, parties))
   }
-  }
+  return(bloc)
+}

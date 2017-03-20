@@ -4,7 +4,7 @@
 \alias{sen_coalitions}
 \title{Downloads and tidies data on the coalitions in the Federal Senate.}
 \usage{
-sen_coalitions(members = TRUE, ascii = TRUE)
+sen_coalitions(members = FALSE, ascii = TRUE)
 }
 \arguments{
 \item{members}{\code{logical}. If FALSE, returns only the first four columns
@@ -20,15 +20,15 @@ with variables:
  \item{\code{bloc_name: }}{name of the coalition.}
  \item{\code{bloc_label: }}{additional label for the coalition.}
  \item{\code{date_created: }}{\code{POSIXct}, date the coalition was created.}
- \item{\code{member_code: }}{party code.}
- \item{\code{member_abbr: }}{party acronym.}
- \item{\code{member_name: }}{party name.}
- \item{\code{member_date_joined: }}{\code{POSIXct}, date when the party first joined the coalition.}
+ \item{\code{bloc_member_abbr: }}{party acronym.}
+ \item{\code{bloc_member_name: }}{party name.}
+ \item{\code{bloc_member_date_joined: }}{\code{POSIXct}, date when the party first joined the coalition.}
  \item{\code{member_date_left:: }}{\code{POSIXct}, date when the party left the coalition.}
 }
 }
 \examples{
 coalitions <- sen_coalitions()
+coalitions_detail <- sen_coalitions(members = TRUE)
 }
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
