@@ -6,7 +6,8 @@
 #' @importFrom stringr str_trim
 #' @importFrom tidyr spread
 #' @importFrom dplyr bind_cols
-#' @title Downloads details of a specific bill by providing type, number and year
+#' @title Downloads votes of a specific bill by providing type, number and year. A bill can have more than one roll call,
+#' # and the API does not provide an id to identify them So we provide one (id_rollcall).
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 #' @note Requesting data from a long period of time with \code{details = TRUE} will
 #' return a large object in terms of memory. It will also be rather unwieldy, with
@@ -15,9 +16,8 @@
 #' @examples
 #' cam_get_votes(type="PL", number="1992", year="2007")
 #' @export
-
-
 cam_get_votes <- function(type, number, year) {
+  queue <<- 1:100 # I implemented this queue in order to build ids for rollcalls
   if ( is.null(type) | is.null(number) | is.null(year) ) {
     stop("Lacking arguments. type, number, and year are mandatory")
   }
@@ -25,10 +25,14 @@ cam_get_votes <- function(type, number, year) {
     type %p% "&numero=" %p% number %p% "&ano=" %p% year
   data <- read_xml(link) %>%
         xml_find_all('.//Votacao') %>%
-    map_df(extract_bill_votes)
+    map_df(extract_bill_votes) %>%
+    mutate(type = type, number = number, year=year) %>%
+    mutate(id_rollcall = type %p% "-" %p% number %p% "-" %p% year %p% "-" %p% id_rollcall)
   return(data)
-
 }
+
+
+# I'm using this queue to create an id for each rollcall
 
 extract_bill_votes <- function(bill) {
   info_bill <-     dplyr::tibble(
@@ -36,9 +40,10 @@ extract_bill_votes <- function(bill) {
     date_decision = xml_attr(bill, "Data"),
     time_decision = xml_attr(bill, "Hora"),
     subject_vote = xml_attr(bill, "ObjVotacao"),
-    id_legislative_session = xml_attr(bill, "codSessao")
-
+    id_legislative_session = xml_attr(bill, "codSessao"),
+    id_rollcall = queue[1]
   )
+  queue <<- queue[-1]
   orientation_bill <- bill %>%
     xml_find_all('.//bancada') %>%
     map_df(extract_orientation) %>%

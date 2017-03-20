@@ -2,7 +2,8 @@
 % Please edit documentation in R/cam_get_votes.R
 \name{cam_get_votes}
 \alias{cam_get_votes}
-\title{Downloads details of a specific bill by providing type, number and year}
+\title{Downloads votes of a specific bill by providing type, number and year. A bill can have more than one roll call,
+# and the API does not provide an id to identify them So we provide one (id_rollcall).}
 \usage{
 cam_get_votes(type, number, year)
 }
