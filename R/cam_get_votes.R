@@ -44,17 +44,28 @@ extract_bill_votes <- function(bill) {
     id_rollcall = queue[1]
   )
   queue <<- queue[-1]
-  orientation_bill <- bill %>%
-    xml_find_all('.//bancada') %>%
+
+  # Checking Orientation
+  orientation <-  bill %>%
+    xml_find_all('.//bancada')
+  if(length(orientation) == 0) {
+    orientation_bill <- NULL
+    } else { # Filling orientation
+  orientation_bill <- orientation %>%
     map_df(extract_orientation) %>%
     spread(sigla, orientacao )
+    }
 
   votes_bill <- bill %>%
     xml_find_all('.//Deputado') %>%
     map_df(extract_votes)
 
-  data_bill <- bind_cols(info_bill, orientation_bill) %>%
-    cbind(votes_bill)
+  data_bill <- bind_cols(info_bill, orientation_bill)
+
+  if ( nrow(votes_bill) > 0 ) {
+    data_bill <- data_bill %>%
+      cbind(votes_bill)
+  }
 
   return(data_bill)
 
