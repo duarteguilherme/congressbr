@@ -334,6 +334,3 @@ sen_plenary_leaderships <- function(parties = TRUE, ascii = TRUE){
   }
 }
 
-
-
-
