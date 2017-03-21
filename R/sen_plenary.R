@@ -263,3 +263,77 @@ sen_plenary_agenda <- function(period = c("month", "day"),
 
 
 
+
+#' @title Returns information on leaderships in the Federal Senate.
+#' @param parties \code{logical}. Returns information on party leadership in
+#' the Senate when \code{TRUE}, otherwise returns information on coalitions.
+#' @param ascii \code{logical}. If \code{TRUE}, the default, strips Latin
+#' characters from the results.
+#' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
+#' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
+#' @examples
+#' party_leaders <- sen_plenary_leaderships()
+#' @export
+sen_plenary_leaderships <- function(parties = TRUE, ascii = TRUE){
+
+  base_url <- "http://legis.senado.gov.br/dadosabertos/plenario/lista/liderancas"
+  request <- httr::GET(base_url)
+  request <- status(request)
+  N <- NA_character_
+  request <- request$Liderancas$DadosLiderancas$Lideranca
+
+  if(parties == TRUE){
+    # annoying list, done in two stages:
+    parl <- purrr::map(request, "Parlamentares") %>% purrr::flatten()
+
+    parlam <- tibble::tibble(
+      party = purrr::map_chr(parl, .null = N, "SiglaPartido"),
+      leader_type = purrr::map_chr(parl, .null = N, "TipoLideranca"),
+      name = purrr::map_chr(parl, .null = N, "NomeParlamentar"),
+      id = purrr::map_chr(parl, .null = N, "CodigoParlamentar"),
+      state = purrr::map_chr(parl, .null = N, "SiglaUf")
+    ) %>%
+      dplyr::filter(!is.na(leader_type))
+
+    parl <- purrr::flatten(parl)
+
+    parlam2 <- tibble::tibble(
+      party = purrr::map_chr(parl, .null = N, "SiglaPartido"),
+      leader_type = purrr::map_chr(parl, .null = N, "TipoLideranca"),
+      name = purrr::map_chr(parl, .null = N, "NomeParlamentar"),
+      id = purrr::map_chr(parl, .null = N, "CodigoParlamentar"),
+      state = purrr::map_chr(parl, .null = N, "SiglaUf")
+    ) %>%
+      dplyr::filter(!is.na(leader_type))
+
+    Parl <- suppressMessages(dplyr::full_join(parlam, parlam2)) %>%
+      dplyr::arrange(party) %>% dplyr::distinct(.keep_all = TRUE)
+
+    if(ascii == TRUE){
+      Parl <- Parl %>%
+        dplyr::mutate(
+          leader_type = stringi::stri_trans_general(
+            leader_type, "Latin-ASCII"),
+          name = stringi::stri_trans_general(
+            name, "Latin-ASCII")
+        )
+    }
+    return(Parl)
+  } else{
+    leaders <- tibble::tibble(
+      unit_name = purrr::map_chr(request, .null = N, "NomeUnidLideranca"),
+      unit_type = purrr::map_chr(request, .null = N, "SiglaUnidLideranca"),
+      num_members = purrr::map_chr(request, .null = N, "Membros")
+    )
+    if(ascii == TRUE){
+      leaders <- leaders %>%
+        dplyr::mutate(unit_name = stringi::stri_trans_general(
+          unit_name, "Latin-ASCII"))
+    }
+    return(leaders)
+  }
+}
+
+
+
+
