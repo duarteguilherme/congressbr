@@ -31,14 +31,13 @@ cam_get_votes <- function(type, number, year) {
                      # Handling a specific error related to the API
                      msg_erro <- "Esta proposicao eh acessoria, atrelada a outra principal, e nao foi possivel"
                     if ( str_detect(rawToChar(y$content), msg_erro) ) {
-                      return("")
+                      stop("This is not a main bill. Download is not possible")
                     }
                      else {
                        stop("HTTP error 500")
                      }
                   }
   )
-  if ( data == "" ) return(NULL)
   data <- data %>%
         xml_find_all('.//Votacao') %>%
     map_df(extract_bill_votes) %>%
