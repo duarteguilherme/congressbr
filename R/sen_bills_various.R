@@ -2,7 +2,6 @@
 #' @importFrom httr content
 #' @importFrom purrr map_chr
 #' @importFrom dplyr mutate
-#' @importFrom dplyr data_frame
 #' @importFrom tibble tibble
 #' @importFrom stringi stri_trans_general
 #' @importFrom lubridate parse_date_time
@@ -34,7 +33,7 @@ sen_bills_subtypes <- function(active = NULL, ascii = TRUE){
   request <- status(request)
   subtypes <- request$ListaSubtiposMateria$SubtiposMateria$SubtipoMateria
 
-  subs <- dplyr::data_frame(
+  subs <- tibble::tibble(
     subtype_abbr = purrr::map_chr(subtypes, "SiglaMateria", .null = NA),
     subtype_description = purrr::map_chr(subtypes,
                                          "DescricaoSubtipoMateria", .null = NA),
@@ -69,7 +68,7 @@ sen_bills_limits <- function(ascii = TRUE){
   request <- status(request)
   request <- request$ListaTiposPrazo$TiposPrazo$TipoPrazo
 
-  lims <- dplyr::data_frame(
+  lims <- tibble::tibble(
     limit_code = purrr::map_chr(request, "CodigoTipoPrazo", .null = NA),
     limit_description = purrr::map_chr(request, "DescricaoTipoPrazo",
                                        .null = NA)
@@ -108,7 +107,7 @@ sen_bills_topics <- function(active = NULL, ascii = TRUE){
   request <- status(request)
   request <- request$ListaAssuntos$Assuntos$Assunto
 
-  themes <- dplyr::data_frame(
+  themes <- tibble::tibble(
     topic_code = purrr::map_chr(request, "Codigo"),
     topic_general = purrr::map_chr(request, "AssuntoGeral"),
     topic_specific = purrr::map_chr(request, "AssuntoEspecifico")
@@ -181,7 +180,7 @@ sen_bills_passing <- function(year = NULL,  number = NULL,
   request <- request$ListaMateriasTramitando$Materias$Materia
   request <- purrr::map(request, "IdentificacaoMateria")
 
-  pass <- dplyr::data_frame(
+  pass <- tibble::tibble(
     bill_id = purrr::map_chr(request, "CodigoMateria", .null = NA),
     bill_number = purrr::map_chr(request, "NumeroMateria", .null = NA),
     bill_year = purrr::map_chr(request, "AnoMateria", .null = NA),
@@ -253,7 +252,7 @@ sen_bills_current <- function(year = NULL, date = NULL,
   request <- request$ListaMateriasLegislaturaAtual$Materias$Materia
   request <- purrr::map(request, "IdentificacaoMateria")
 
-  bills <- dplyr::data_frame(
+  bills <- tibble::tibble(
     bill_id = purrr::map_chr(request, "CodigoMateria", .null = NA),
     bill_number = purrr::map_chr(request, "NumeroMateria", .null = NA),
     bill_year = purrr::map_chr(request, "AnoMateria", .null = NA),
@@ -293,7 +292,7 @@ sen_bills_status <- function(id = NULL, ascii = TRUE){
   Null <- NA_character_
   req <- request$Materia$Autuacoes
 
-  stat <- dplyr::data_frame(
+  stat <- tibble::tibble(
     bill_id = purrr::map_chr(request, "Codigo", .null = Null),
     bill_type = purrr::map_chr(request, "Subtipo", .null = Null),
     bill_number = purrr::map_chr(request, "Numero", .null = Null),

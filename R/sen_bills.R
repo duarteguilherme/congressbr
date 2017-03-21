@@ -4,7 +4,7 @@
 #' @importFrom purrr flatten
 #' @importFrom purrr discard
 #' @importFrom purrr map_chr
-#' @importFrom dplyr data_frame
+#' @importFrom tibble tibble
 #' @importFrom stringi stri_trans_general
 #' @importFrom lubridate parse_date_time
 #' @importFrom lubridate year
@@ -59,11 +59,14 @@ sen_bills <- function(id = NULL, type = NULL,
   }
   null <- NA_character_
 
-  author <- request$Autoria
-  if(depth(author) > 3){
-    author <- request$Autoria$Autor
+  # Bill Author:
+  author_id <- request$Autoria
+  if(depth(author_id) > 3){
+    author_id <- request$Autoria$Autor
   }
-  author_id <- purrr::flatten(author)
+  author_id <- purrr::flatten(author_id)
+
+  # Bill Topics:
   topic_s <- request$Assunto$AssuntoEspecifico
   if(purrr::is_empty(topic_s)){
     topic_s <- list(Codigo = NA, Descricao = "None")
@@ -72,68 +75,62 @@ sen_bills <- function(id = NULL, type = NULL,
   if(purrr::is_empty(topic_g)){
     topic_g <- list(Codigo = NA, Descricao = "None")
   }
+
+  # Bill Situation:
   situation <- request$SituacaoAtual$Autuacoes$Autuacao
 
-  bills <- data.frame(
-  bill_id = purrr::map_chr(request, "CodigoMateria", .null = null) %>%
-   disc(),
-  bill_house = purrr::map_chr(request, "NomeCasaOrigem", .null = null) %>%
-    disc(),
-  bill_house_abbr = purrr::map_chr(request, "SiglaCasaOrigem",
-                                   .null = null) %>% disc(),
-  bill_house_initiated = purrr::map_chr(request, "NomeCasaIniciadora",
-                                        .null = null) %>% disc(),
-  bill_house_init_abbr = purrr::map_chr(request, "SiglaCasaIniciadora",
-                                        .null = null) %>% disc(),
-  bill_type = purrr::map_chr(request, "DescricaoSubtipoMateria",
-                             .null = null) %>% disc(),
-  bill_type_abbr = purrr::map_chr(request, "SiglaSubtipoMateria",
-                                  .null = null) %>% disc(),
-  bill_number = purrr::map_chr(request, "NumeroMateria", .null = null) %>%
-    disc(),
-  bill_year = purrr::map_chr(request, "AnoMateria", .null = null) %>% disc(),
-  bill_author = purrr::map_chr(author, "NomeAutor", .null = null) %>%
-    disc(),
-  bill_author_type = purrr::map_chr(author, "DescricaoTipoAutor",
-                                    .null = null) %>%  disc(),
+  # bill ID:
+  id <- request$IdentificacaoMateria
+
+  bills <- tibble::tibble(
+  bill_id = request$IdentificacaoMateria$CodigoMateria,
+  bill_house = request$OrigemMateria$NomeCasaOrigem,
+  bill_house_abbr = request$OrigemMateria$SiglaCasaOrigem,
+  bill_origin = request$OrigemMateria$NomePoderOrigem,
+  bill_house_initiated = request$CasaIniciadoraNoLegislativo$NomeCasaIniciadora,
+  bill_house_init_abbr = request$CasaIniciadoraNoLegislativo$SiglaCasaIniciadora,
+  bill_type = request$IdentificacaoMateria$DescricaoSubtipoMateria,
+  bill_type_abbr = request$IdentificacaoMateria$SiglaSubtipoMateria,
+  bill_number = request$IdentificacaoMateria$NumeroMateria,
+  bill_year = request$IdentificacaoMateria$AnoMateria,
+  bill_author = purrr::map_chr(author_id, "NomeAutor", .null = null),
+  bill_author_type = purrr::map_chr(author_id, "DescricaoTipoAutor",
+                                    .null = null),
   bill_author_id = purrr::map_chr(author_id, "CodigoParlamentar",
-                                  .null = null) %>% disc(),
+                                  .null = null),
   bill_author_gender = purrr::map_chr(author_id, "SexoParlamentar",
-                                      .null = null) %>%  disc(),
+                                      .null = null),
   bill_author_party = purrr::map_chr(author_id, "SiglaPartidoParlamentar",
-                                     .null = null) %>%  disc(),
-  bill_author_state = purrr::map_chr(author, "UfAutor", .null = null) %>%
-    disc(),
-  bill_author_order = purrr::map_chr(author, "NumOrdemAutor",
-                                     .null = null) %>%  disc(),
-  bill_details_short = purrr::map_chr(request, "EmentaMateria",
-                                      .null = null) %>%  disc(),
-  bill_indexing = purrr::map_chr(request, "IndexacaoMateria",
-                                 .null = null) %>%  disc(),
+                                     .null = null),
+  bill_author_state = purrr::map_chr(author_id, "UfAutor", .null = null),
+  bill_author_order = purrr::map_chr(author_id, "NumOrdemAutor",
+                                     .null = null),
+  bill_details_short = request$DadosBasicosMateria$EmentaMateria,
+  bill_indexing = request$DadosBasicosMateria$IndexacaoMateria,
   bill_situation = purrr::map_chr(situation, "DescricaoSituacao",
                                   .null = null) %>% disc(),
   bill_situation_house = purrr::map_chr(situation, "NomeCasaLocal",
                                         .null = null) %>%  disc(),
   bill_situation_place = purrr::map_chr(situation, "NomeLocal",
-                                        .null = null) %>%  disc(),
-  stringsAsFactors = F)
+                                        .null = null) %>%  disc()
+  )
 
 
   # dates:
-  bill_date_presented = purrr::map_chr(request, "DataApresentacao",
-                                       .null = null) %>% disc()
-  bill_date_presented = suppressWarnings(lubridate::parse_date_time(
-    bill_date_presented, orders = "Ymd"))
+  bill_date_presented <- suppressWarnings(lubridate::parse_date_time(
+    request$DadosBasicosMateria$DataApresentacao, orders = "Ymd"))
   if(purrr::is_empty(bill_date_presented)){
     bill_date_presented <- NA_character_
   }
-  bill_date_considered = purrr::map_chr(request, "DataLeitura",
-                                        .null = null) %>%  disc()
-  bill_date_considered = suppressWarnings(lubridate::parse_date_time(
-    bill_date_considered, orders = "Ymd"))
-  bill_situation_date = purrr::map_chr(situation, "DataSituacao",
+  bill_date_considered <- suppressWarnings(lubridate::parse_date_time(
+    request$DadosBasicosMateria$DataLeitura, orders = "Ymd"))
+  if(purrr::is_empty(bill_date_considered)){
+    bill_date_considered <- NA_character_
+  }
+
+  bill_situation_date <- purrr::map_chr(situation, "DataSituacao",
                                        .null = null) %>%  disc()
-  bill_situation_date = suppressWarnings(lubridate::parse_date_time(
+  bill_situation_date <- suppressWarnings(lubridate::parse_date_time(
     bill_situation_date, orders = "Ymd"))
 
   #
