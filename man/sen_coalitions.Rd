@@ -23,7 +23,7 @@ with variables:
  \item{\code{bloc_member_abbr: }}{party acronym.}
  \item{\code{bloc_member_name: }}{party name.}
  \item{\code{bloc_member_date_joined: }}{\code{POSIXct}, date when the party first joined the coalition.}
- \item{\code{member_date_left:: }}{\code{POSIXct}, date when the party left the coalition.}
+ \item{\code{member_date_left: }}{\code{POSIXct}, date when the party left the coalition.}
 }
 }
 \examples{

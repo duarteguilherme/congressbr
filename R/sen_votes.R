@@ -44,7 +44,6 @@ sen_votes <- function(date = NULL, end_date = NULL,
     stop("Please enter a valid date. Format is YYYYMMDD.")
   }
 
-
   if(!is.null(end_date)){
     year_func2 <- gsub("[0-9]{4}$", "", end_date) %>% as.numeric()
     if(nchar(end_date) < 8 ||  year_func2 > year_now){
@@ -68,7 +67,10 @@ sen_votes <- function(date = NULL, end_date = NULL,
   request <- status(request)
   if(purrr::is_empty(request$ListaVotacoes$Votacoes)){
     stop("No data match your request.")
-  } else{
+  }
+  if(depth(request$ListaVotacoes$Votacoes$Votacao) == 4){
+    request <- request$ListaVotacoes$Votacoes
+  } else if(depth(request$ListaVotacoes$Votacoes$Votacao) >= 5){
     request <- request$ListaVotacoes$Votacoes$Votacao
   }
 
