@@ -41,7 +41,7 @@ cam_get_votes <- function(type, number, year) {
   data <- data %>%
         xml_find_all('.//Votacao') %>%
     map_df(extract_bill_votes) %>%
-    mutate(type = type, number = number, year=year) %>%
+    mutate(type_bill = type, number_bill = number, year_bill=year) %>%
     mutate(id_rollcall = type %p% "-" %p% number %p% "-" %p% year %p% "-" %p% id_rollcall)
   return(data)
 }
