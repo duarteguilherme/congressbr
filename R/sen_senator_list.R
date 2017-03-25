@@ -3,7 +3,7 @@
 #' @importFrom purrr map_df
 #' @importFrom purrr map
 #' @importFrom purrr map_chr
-#' @importFrom dplyr as_data_frame
+#' @importFrom tibble tibble
 #' @importFrom dplyr bind_cols
 #' @importFrom lubridate parse_date_time
 #' @title Downloads and tidies information on the senators in the Federal Senate.
@@ -20,6 +20,9 @@
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
 #' all <- sen_senator_list()
+#'
+#' # Who represents Rio de Janeiro?
+#' rj <- sen_senator_list(state = "RJ")
 #' @export
 sen_senator_list <- function(present = TRUE, state = NULL,
                              status = NULL, ascii = TRUE){
@@ -67,7 +70,7 @@ sen_senator_list <- function(present = TRUE, state = NULL,
   par <- purrr::map(request, "IdentificacaoParlamentar")
   null <- NA_character_
 
-  parl <- dplyr::data_frame(
+  parl <- tibble::tibble(
     id = purrr::map_chr(par, "CodigoParlamentar", .null = null),
     name_full = purrr::map_chr(par, "NomeCompletoParlamentar",
                                .null = null),
@@ -89,7 +92,7 @@ sen_senator_list <- function(present = TRUE, state = NULL,
   prim <- purrr::map(mand, "PrimeiraLegislaturaDoMandato")
   seg <- purrr::map(mand, "SegundaLegislaturaDoMandato")
 
-  mandate <- dplyr::data_frame(
+  mandate <- tibble::tibble(
     id_mandate = purrr::map_chr(mand, "CodigoMandato", .null = null),
     state = purrr::map_chr(mand, "UfParlamentar", .null = null),
     status = purrr::map_chr(mand, "DescricaoParticipacao"),
@@ -133,13 +136,10 @@ sen_senator_list <- function(present = TRUE, state = NULL,
 #' @importFrom purrr map_df
 #' @importFrom purrr map
 #' @importFrom purrr map_chr
-#' @importFrom dplyr as_data_frame
+#' @importFrom tibble tibble
 #' @importFrom dplyr bind_cols
 #' @importFrom lubridate parse_date_time
 #' @title Downloads and tidies information on the senators in the Federal Senate.
-#' @param present \code{logical}. If \code{TRUE}, downloads data on the legislature
-#' currently sitting in the Federal Senate, otherwise returns information on
-#' senators who are currently absent.
 #' @param start two-digit integer representing the first legislature of the
 #' time period requested.
 #' @param end two-digit integer representing the final legislature of the time
@@ -153,7 +153,7 @@ sen_senator_list <- function(present = TRUE, state = NULL,
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
-#' all <- sen_senator_list()
+#' all <- sen_senator_legis(start = 50)
 #' @export
 sen_senator_legis <- function(start = NULL, end = NULL,
                               state = NULL, status = NULL,
@@ -177,11 +177,17 @@ sen_senator_legis <- function(start = NULL, end = NULL,
     }
   }
 
-  if(nchar(start) > 2){
-    stop("'start' must be a two-digit number.")
-  } else if(nchar(end) > 2){
+  if(!is.null(start) ){
+    if(nchar(start) > 2){
+      stop("'start' must be a two-digit number.")
+    }
+  }
+  if(!is.null(end) ){
+   if(nchar(end) > 2){
     stop("'end' must be a two-digit number.")
-  } else if(is.null(start) & !is.null(end)){
+   }
+  }
+  if(is.null(start) & !is.null(end)){
     stop("'end' cannot be used without 'start'.")
   }
 
@@ -208,7 +214,7 @@ sen_senator_legis <- function(start = NULL, end = NULL,
   par <- purrr::map(request, "IdentificacaoParlamentar")
   null <- NA_character_
 
-  parl <- dplyr::data_frame(
+  parl <- tibble::tibble(
     id = purrr::map_chr(par, "CodigoParlamentar", .null = null),
     name_full = purrr::map_chr(par, "NomeCompletoParlamentar",
                                .null = null),
@@ -230,7 +236,7 @@ sen_senator_legis <- function(start = NULL, end = NULL,
   prim <- purrr::map(mand, "PrimeiraLegislaturaDoMandato")
   seg <- purrr::map(mand, "SegundaLegislaturaDoMandato")
 
-  mandate <- dplyr::data_frame(
+  mandate <- tibble::tibble(
     id_mandate = purrr::map_chr(mand, "CodigoMandato", .null = null),
     state = purrr::map_chr(mand, "UfParlamentar", .null = null),
     status = purrr::map_chr(mand, "DescricaoParticipacao"),
@@ -256,6 +262,14 @@ sen_senator_legis <- function(start = NULL, end = NULL,
         orders = "Ymd")))
 
   result <- dplyr::bind_cols(parl, mandate)
+
+  if(ascii == TRUE){
+    result <- result %>%
+      mutate(name_full = stringi::stri_trans_general(name_full,
+                                                     "Latin-ASCII"),
+             name_senator = stringi::stri_trans_general(name_senator,
+                                                        "Latin-ASCII"))
+  }
 
   return(result)
 }

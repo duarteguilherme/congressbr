@@ -26,6 +26,9 @@ A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 }
 \examples{
 all <- sen_senator_list()
+
+# Who represents Rio de Janeiro?
+rj <- sen_senator_list(state = "RJ")
 }
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.

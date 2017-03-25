@@ -22,16 +22,12 @@ available with the function \code{UF()}.}
 
 \item{ascii}{\code{logical}. If \code{TRUE}, strips Latin characters from
 strings.}
-
-\item{present}{\code{logical}. If \code{TRUE}, downloads data on the legislature
-currently sitting in the Federal Senate, otherwise returns information on
-senators who are currently absent.}
 }
 \value{
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 }
 \examples{
-all <- sen_senator_list()
+all <- sen_senator_legis(start = 50)
 }
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.

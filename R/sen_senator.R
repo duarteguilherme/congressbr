@@ -108,20 +108,20 @@ sen_senator <- function(id = NULL, affiliations = TRUE,
         affil_party_id = purrr::map_chr(fili, .null = N, "idPartido"),
         affil_party = purrr::map_chr(party, .null = N, "siglaPartido"),
         affil_party_name = purrr::map_chr(party, .null = N, "nomePartido"),
-        affil_party_date_created = purrr::map_chr(party, .null = N,
+        affil_party_date_joined = purrr::map_chr(party, .null = N,
                                                   "dataCriacao"),
-        affil_party_date_extinct = purrr::map_chr(party, .null = N,
+        affil_party_date_left = purrr::map_chr(party, .null = N,
                                                   "dataExtincao")
       )
     parties <- parties %>%
       dplyr::mutate(
-        affil_party_date_created = suppressWarnings(
+        affil_party_date_joined = suppressWarnings(
           lubridate::parse_date_time(
-          affil_party_date_created, "Ymd"
+          affil_party_date_joined, "Ymd"
         )),
-        affil_party_date_extinct = suppressWarnings(
+        affil_party_date_left = suppressWarnings(
           lubridate::parse_date_time(
-            affil_party_date_extinct, "Ymd"
+            affil_party_date_left, "Ymd"
           )
         )
       )

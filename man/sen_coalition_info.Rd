@@ -4,7 +4,7 @@
 \alias{sen_coalition_info}
 \title{Downloads and tidies data on specific coalitions in the Federal Senate.}
 \usage{
-sen_coalition_info(code = 0, ascii = TRUE)
+sen_coalition_info(code = NULL, ascii = TRUE)
 }
 \arguments{
 \item{code}{\code{integer}. If not known, these codes can be obtained from the

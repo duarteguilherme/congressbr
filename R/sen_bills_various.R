@@ -9,43 +9,46 @@
 #' @importFrom purrr discard
 #' @importFrom purrr is_empty
 #' @importFrom purrr flatten
-#' @title Downloads and tidies information on the subtypes of legislation in
+#' @title Downloads and tidies information on the types of legislation in
 #' the Federal Senate.
 #' @param active \code{character}. Options are "Yes", "No" or \code{NULL}, the
-#' default. "Yes" returns active subtypes, "No" returns inactive subtypes,
+#' default. "Yes" returns active types, "No" returns inactive types,
 #' while the default returns both.
 #' @param ascii \code{logical}. If \code{TRUE}, strips Latin characters from
 #' strings.
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
-#' sen_bills_subtypes()
+#' legis <- sen_bills_types()
 #' @export
-sen_bills_subtypes <- function(active = NULL, ascii = TRUE){
+sen_bills_types <- function(active = NULL, ascii = TRUE){
 
   base_url <- "http://legis.senado.gov.br/dadosabertos/materia/subtipos"
-  if(active == "Yes"){
-    base_url <- base_url %p% "?indAtivos=S"
-  } else if(active == "No"){
-    base_url <- base_url %p% "?indAtivos=N"
+  if(!is.null(active)){
+    if(active == "Yes"){
+      base_url <- base_url %p% "?indAtivos=S"
+    } else if(active == "No"){
+      base_url <- base_url %p% "?indAtivos=N"
+    }
   }
+
   request <- httr::GET(base_url)
   request <- status(request)
   subtypes <- request$ListaSubtiposMateria$SubtiposMateria$SubtipoMateria
 
   subs <- tibble::tibble(
-    subtype_abbr = purrr::map_chr(subtypes, "SiglaMateria", .null = NA),
-    subtype_description = purrr::map_chr(subtypes,
+    bill_type_abbr = purrr::map_chr(subtypes, "SiglaMateria", .null = NA),
+    bill_type_description = purrr::map_chr(subtypes,
                                          "DescricaoSubtipoMateria", .null = NA),
-    subtype_date_created = purrr::map_chr(subtypes, "DataCriacao", .null = NA)
+    bill_type_date_created = purrr::map_chr(subtypes, "DataCriacao", .null = NA)
     )
-  subs$subtype_date_created <- lubridate::parse_date_time(
-    subs$subtype_date_created, orders = "Ymd"
+  subs$bill_type_date_created <- lubridate::parse_date_time(
+    subs$bill_type_date_created, orders = "Ymd"
   )
   if(ascii == TRUE){
     subs <- subs %>%
-      dplyr::mutate(subtype_description = stringi::stri_trans_general(
-        subtype_description, "Latin-ASCII"
+      dplyr::mutate(bill_type_description = stringi::stri_trans_general(
+        bill_type_description, "Latin-ASCII"
       ))
   }
   return(subs)
@@ -60,7 +63,7 @@ sen_bills_subtypes <- function(active = NULL, ascii = TRUE){
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
-#' sen_bills_limits()
+#' lims <- sen_bills_limits()
 #' @export
 sen_bills_limits <- function(ascii = TRUE){
   base_url <- "http://legis.senado.gov.br/dadosabertos/materia/tiposPrazo"
@@ -93,16 +96,19 @@ sen_bills_limits <- function(ascii = TRUE){
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
-#' sen_bills_topics()
+#' top <- sen_bills_topics()
 #' @export
 sen_bills_topics <- function(active = NULL, ascii = TRUE){
 
   base_url <- "http://legis.senado.gov.br/dadosabertos/materia/assuntos"
-  if(active == "Yes"){
-    base_url <- base_url %p% "?indAtivos=S"
-  } else if(active == "No"){
-    base_url <- base_url %p% "?indAtivos=N"
+  if(!is.null(active)){
+    if(active == "Yes"){
+      base_url <- base_url %p% "?indAtivos=S"
+    } else if(active == "No"){
+      base_url <- base_url %p% "?indAtivos=N"
+    }
   }
+
   request <- httr::GET(base_url)
   request <- status(request)
   request <- request$ListaAssuntos$Assuntos$Assunto
@@ -561,10 +567,11 @@ sen_bills_situations <- function(ascii = TRUE){
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
-#' # Bills from 2014 that have had a "despacho" update in the last 15 days:
+#' # Bills from 2014 that have had a "despacho" update in the last 15 days, if
+#' they exist:
 #' desp_2014 <- sen_bills_updates(update = "Despacho", year = 2014, days = 15)
 #'
-#' # PLS bills that have been updated in the last 10 days:
+#' # PLS bills that have been updated in the last 10 days, if they exist:
 #' pls <- sen_bills_updates(type = "PLS", days = 10)
 #' @export
 sen_bills_updates <- function(update = NULL, year = NULL,
@@ -596,6 +603,9 @@ sen_bills_updates <- function(update = NULL, year = NULL,
 
   request <- httr::GET(base_url)
   request <- status(request)
+  if(purrr::is_empty(request$ListaMateriasAtualizadas$Materias)){
+    stop("No data match your request.")
+  }
   if(depth(request) > 6){
     request <- request$ListaMateriasAtualizadas$Materias$Materia
   } else{

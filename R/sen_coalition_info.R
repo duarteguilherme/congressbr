@@ -3,7 +3,7 @@
 #' @importFrom lubridate parse_date_time
 #' @importFrom stringi stri_trans_general
 #' @importFrom magrittr '%>%'
-#' @importFrom dplyr as_data_frame
+#' @importFrom tibble tibble
 #' @importFrom dplyr full_join
 #' @importFrom dplyr mutate
 #' @importFrom purrr map
@@ -31,9 +31,9 @@
 #' @examples
 #' moderador <- sen_coalition_info(code = 200)
 #' @export
-sen_coalition_info <- function(code = 0, ascii = TRUE){
+sen_coalition_info <- function(code = NULL, ascii = TRUE){
 
-  if(is.null(codigo)){
+  if(is.null(code)){
     stop("'code' is necessary.")
   }
 
@@ -41,12 +41,11 @@ sen_coalition_info <- function(code = 0, ascii = TRUE){
     code
 
   request <- httr::GET(url)
-  # status checks
   request <- status(request)
 
   blocos <- request$blocos$bloco
 
-  result <- dplyr::data_frame(
+  result <- tibble::tibble(
     bloc_code = blocos$idBloco,
     house = blocos$siglaBloco,
     bloc_name = blocos$nomeBloco,
@@ -56,7 +55,7 @@ sen_coalition_info <- function(code = 0, ascii = TRUE){
 
   compo <- blocos$composicaoBloco$composicao_bloco
 
-  comp <- dplyr::data_frame(
+  comp <- tibble::tibble(
     coalition_id = purrr::map_chr(compo, "@id"),
     bloc_code = purrr::map_chr(compo, "idBloco"),
     member_code = purrr::map_chr(compo, "idPartido"),
@@ -66,7 +65,7 @@ sen_coalition_info <- function(code = 0, ascii = TRUE){
 
   parties <- purrr::at_depth(compo, 1, "partido")
 
-  party <- dplyr::data_frame(
+  party <- tibble::tibble(
     member_code = purrr::map_chr(parties, "idPartido"),
     member_abbr = purrr::map_chr(parties, "siglaPartido"),
     member_name = purrr::map_chr(parties, "nomePartido"),
@@ -82,7 +81,7 @@ sen_coalition_info <- function(code = 0, ascii = TRUE){
     return(result)
   } else{
     result <- result %>%
-      mutate(bloc_name = stringi::stri_trans_general(bloc_name,
+      dplyr::mutate(bloc_name = stringi::stri_trans_general(bloc_name,
                                                      "Latin-ASCII"),
              member_name = stringi::stri_trans_general(member_name,
                                                        "Latin-ASCII"))
