@@ -10,9 +10,9 @@
 #' @param ascii \code{logical}. TRUE by default, removes latin-1 characters
 #' from returned object.
 #' @usage
-#' sen_parties(ascii = TRUE)
+#' sen_parties()
 #' @examples
-#' \code{party <- sen_parties(); head(party)}
+#' party <- sen_parties(); head(party)
 #' @export
 sen_parties <- function(ascii = TRUE){
   x <- httr::GET("http://legis.senado.gov.br/dadosabertos/senador/partidos")
@@ -23,6 +23,10 @@ sen_parties <- function(ascii = TRUE){
   if(ascii == TRUE){
     x$Nome <- stringi::stri_trans_general(x$Nome, "Latin-ASCII")
   }
+  colnames(x) <- c("party_id", "party_abbr", "party_name", "date_created")
+  x <- x %>%
+    dplyr::mutate(party_name = ifelse(party_name == "Sem Partido",
+                                      "Sem Partido (Independent)", party_name))
   return(x)
 }
 
@@ -64,6 +68,8 @@ sen_statement_list <- function(ascii = TRUE, print = TRUE){
 #'  and its abbreviation. If not, to see the full dataset, use
 #'  \code{data("statesBR")}, which has the abbreviation, "UF"
 #'  (\emph{Unidade Federal}) and the full name of the states.
+#' @examples
+#' UF()
 #' @export
 UF <- function(){
   uf <- c("AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES",

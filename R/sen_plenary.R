@@ -113,6 +113,9 @@ sen_plenary_result <- function(date = NULL, ascii = TRUE){
       )
   }
   result <- suppressMessages(dplyr::full_join(req, item))
+  result <- result %>%
+    dplyr::select(bill_id, bill, bill_type, bill_number,
+                  bill_year, dplyr::everything())
   return(result)
 }
 

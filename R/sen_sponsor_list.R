@@ -52,7 +52,8 @@ sen_bill_sponsors <- function(ascii = TRUE){
 
   result <- result %>%
     dplyr::mutate(sponsor_party = ifelse(sponsor_party == "S/Partido",
-                                          "Independent", sponsor_party))
+                                          "Independent", sponsor_party)) %>%
+    dplyr::filter(!is.na(sponsor_name))
 
     return(result)
 }

@@ -31,7 +31,7 @@
 #' # Some votes are secret:
 #' ssshhh <- sen_votes("20160301", binary = F)
 #'
-#' # All votes between two periods:
+#' # All votes between two periods (might take a little while):
 #' longer <- sen_votes(date = "20160301", end_date = "20160415")
 #' @export
 sen_votes <- function(date = NULL, end_date = NULL,

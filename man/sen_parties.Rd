@@ -5,7 +5,7 @@
 \title{Downloads and tidies information on the political parties in the
 Federal Senate.}
 \usage{
-sen_parties(ascii = TRUE)
+sen_parties()
 }
 \arguments{
 \item{ascii}{\code{logical}. TRUE by default, removes latin-1 characters
@@ -15,7 +15,7 @@ from returned object.}
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 }
 \examples{
-\\code{party <- sen_parties(); head(party)}
+party <- sen_parties(); head(party)
 }
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.

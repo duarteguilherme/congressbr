@@ -16,6 +16,9 @@ This is most useful if you already have an idea of what state you want
  \code{data("statesBR")}, which has the abbreviation, "UF"
  (\emph{Unidade Federal}) and the full name of the states.
 }
+\examples{
+UF()
+}
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 }
