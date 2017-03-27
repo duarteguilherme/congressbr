@@ -298,7 +298,7 @@ sen_senator_commissions <- function(code = 0, ascii = TRUE){
 #' # A titular senator, José Serra:
 #' Serra <- sen_senator_suplentes(code = 90)
 #'
-#' # Or one of his \emph{suplentes}:
+#' # Or one of his suplentes:
 #' suplente <- sen_senator_suplentes(code = 878)
 #'
 #' @export
@@ -396,8 +396,8 @@ sen_senator_suplentes <- function(code = 0, ascii = TRUE){
 
 
 
-#' @title Downloads and tidies information on titular senators and their
-#' \emph{suplentes} in the Federal Senate.
+#' @title Downloads and tidies information on senators' votes in the Federal
+#' Senate.
 #' @param code \code{integer}. This number represents the code/id of the senator
 #' you wish to get information on. These codes can be extracted from the API
 #' using the \code{sen_senator_list()} function, where they will appear as the
@@ -410,7 +410,7 @@ sen_senator_suplentes <- function(code = 0, ascii = TRUE){
 #' @examples
 #' ant <- sen_senator_votes(5529)
 #'
-#' # some have never voted, as they are \{suplentes}:
+#' # some have never voted, as they are suplentes:
 #' sen_senator_votes(898)
 #' @export
 sen_senator_votes <- function(code = 0, ascii = TRUE){
@@ -490,6 +490,112 @@ sen_senator_votes <- function(code = 0, ascii = TRUE){
         )
       )
   }
+
+  Vote <- Vote %>%
+    dplyr::mutate(
+      secret_vote = ifelse(secret_vote == "Sim", "Yes", "No"),
+      bill_result = ifelse(bill_result == "Aprovado", "Passed",
+                           ifelse(bill_result == "Rejeitado", "Rejected",
+                                  "No information"))
+    )
   return(Vote)
 }
 
+
+
+
+
+
+#' @title Downloads and tidies information on senators' mandates in the Federal
+#' Senate.
+#' @param code \code{integer}. This number represents the code/id of the senator
+#' you wish to get information on. These codes can be extracted from the API
+#' using the \code{sen_senator_list()} function, where they will appear as the
+#' first column in the data frame returned, under the name 'id'.
+#' @param ascii \code{logical}. If TRUE, certain strings are converted to ascii
+#' format.
+#' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
+#' @seealso \code{sen_senator_list()}
+#' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
+#' @examples
+#' terms <- sen_senator_mandates(code = 4763)
+#' terms <- sen_senator_mandates(code = 3398)
+#' @export
+sen_senator_mandates <- function(code = 0, ascii = TRUE){
+
+  url <- "http://legis.senado.leg.br/dadosabertos/senador/" %p%
+    code %p% "/mandatos"
+
+  req <- httr::GET(url)
+  req <- status(req)
+  N <- NA_character_
+
+  req <- req$MandatoParlamentar$Parlamentar
+  if(!purrr::is_empty(req$Mandatos$Mandato)){
+    if(depth(req$Mandatos) < 6){
+      mand <- req$Mandatos
+    } else{
+      mand <- req$Mandatos %>% purrr::flatten()
+    }
+    prim <- purrr::map(mand, .null = N, "PrimeiraLegislaturaDoMandato")
+    seg <- purrr::map(mand, .null = N, "SegundaLegislaturaDoMandato")
+
+    terms <- tibble::tibble(
+      senator_id = purrr::map_chr(req, .null = N, "CodigoParlamentar") %>%
+        disc(),
+      senator_name = purrr::map_chr(req, .null = N, "NomeParlamentar") %>%
+        disc(),
+      senator_party = purrr::map_chr(req, .null = N,
+                                     "SiglaPartidoParlamentar") %>% disc(),
+      senator_state = purrr::map_chr(req, .null = N, "UfParlamentar") %>%
+        disc(),
+      mandate_id = purrr::map_chr(mand, .null = N, "CodigoMandato"),
+      mandate_status = purrr::map_chr(mand, .null = N, "DescricaoParticipacao"),
+      mandate_state = purrr::map_chr(mand, .null = N, "UfParlamentar"),
+      legislature_initial = purrr::map_chr(prim, .null = N,
+                                           "NumeroLegislatura"),
+      legislature_initial_start_date = purrr::map_chr(prim, .null = N,
+                                                      "DataInicio"),
+      legislature_initial_end_date = purrr::map_chr(prim, .null = N,
+                                                    "DataFim"),
+      legislature_second = purrr::map_chr(seg, .null = N,
+                                          "NumeroLegislatura"),
+      legislature_second_initial_date = purrr::map_chr(seg, .null = N,
+                                                   "DataInicio"),
+      legislature_second_end_date = purrr::map_chr(seg, .null = N,
+                                                   "DataFim")
+    ) %>%
+      dplyr::mutate(
+        legislature_initial_start_date = lubridate::parse_date_time(
+          legislature_initial_start_date, "Ymd"
+        ),
+        legislature_initial_end_date = lubridate::parse_date_time(
+          legislature_initial_end_date, "Ymd"
+        ),
+        legislature_second_initial_date = suppressWarnings(
+          lubridate::parse_date_time(
+          legislature_second_initial_date, "Ymd"
+        )
+        ),
+        legislature_second_end_date = suppressWarnings(
+          lubridate::parse_date_time(
+          legislature_second_end_date, "Ymd"
+        )
+        )) %>%
+      dplyr::select_if(colSums(!is.na(.)) > 0)
+
+
+    return(terms)
+  } else{
+    terms <- tibble::tibble(
+      senator_id = purrr::map_chr(req, .null = N, "CodigoParlamentar") %>%
+        disc(),
+      senator_name = purrr::map_chr(req, .null = N, "NomeParlamentar") %>%
+        disc(),
+      senator_party = purrr::map_chr(req, .null = N,
+                                     "SiglaPartidoParlamentar") %>% disc(),
+      mandate_status = "Suplente"
+    )
+    return(terms)
+  }
+}

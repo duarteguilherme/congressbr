@@ -2,8 +2,8 @@
 % Please edit documentation in R/sen_senator_details.R
 \name{sen_senator_votes}
 \alias{sen_senator_votes}
-\title{Downloads and tidies information on titular senators and their
-\emph{suplentes} in the Federal Senate.}
+\title{Downloads and tidies information on senators' votes in the Federal
+Senate.}
 \usage{
 sen_senator_votes(code = 0, ascii = TRUE)
 }
@@ -22,7 +22,7 @@ A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 \examples{
 ant <- sen_senator_votes(5529)
 
-# some have never voted, as they are \\{suplentes}:
+# some have never voted, as they are suplentes:
 sen_senator_votes(898)
 }
 \seealso{
