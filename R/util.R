@@ -15,7 +15,7 @@ NULL
 # response status check
 status <- function(x){
   if(x$status_code != 200){
-    stop("GET request failed")
+    stop("GET request failed. Please check the validity of the information you requested.")
   } else{
     xx <- httr::content(x, "parsed")
 

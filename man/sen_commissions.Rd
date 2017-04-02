@@ -2,46 +2,36 @@
 % Please edit documentation in R/sen_commission_list.R
 \name{sen_commissions}
 \alias{sen_commissions}
-\alias{sen_commissions}
 \title{Information on commissions in the Federal Senate.}
 \usage{
-sen_commissions(type = c("permanent", "cpi", "temporary"), ascii = TRUE)
-
-sen_commissions(type = c("permanent", "cpi", "temporary"), ascii = TRUE)
+sen_commissions(active = c("Yes", "No"), ascii = TRUE)
 }
 \arguments{
-\item{ascii}{\code{logical}. If TRUE, certain strings are converted to ascii
-format.}
+\item{active}{\code{character}. Options are "Yes" or "No". If "Yes", returns
+only active commissions, otherwise all commissions.}
 
 \item{ascii}{\code{logical}. If TRUE, certain strings are converted to ascii
 format.}
 }
 \value{
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
-
-A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 }
 \details{
 Returns a data frame with the following variables:
 \itemize{
  \item{\code{commission_id: }}{unique code for each commission.}
- \item{\code{commission_abbr: }}{.}
- \item{\code{commission__name: }}{.}
-}
-
-Returns a data frame with the following variables:
-\itemize{
- \item{\code{commission_id: }}{unique code for each commission.}
- \item{\code{commission_abbr: }}{.}
- \item{\code{commission__name: }}{.}
+ \item{\code{commission_abbr: }}{Abbreviated name of the commission.}
+ \item{\code{commission_name: }}{Commission name.}
+ \item{\code{commission_purpose: }}{Objective of the commission.}
+ \item{\code{commission_initial_date: }}{Commission starting date.}
+ \item{\code{commission_public: }}{Whether the commission is public or not.}
+ \item{\code{commission_house: }}{Legislative house where the commission is based.}
+ \item{\code{commission_type: }}{Permanent, temporary, or a parliamentary inquiry.}
 }
 }
 \examples{
-jobs <- sen_commissions()
-jobs <- sen_commissions()
+comms <- sen_commissions()
 }
 \author{
-Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
-
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 }

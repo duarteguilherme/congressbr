@@ -218,3 +218,73 @@ sen_commissions_type <- function(type = c("permanent", "cpi", "temporary"),
 
 
 
+
+
+
+#' @title Information on the senators who serve on a certain commission in the
+#'  Federal Senate.
+#' @param code \code{character}. Character code (abbreviation) of the
+#' commission requested. A list of these may be obtained with \code{sen_commissions()}, although not all of the abbreviations in this data frame will return information.
+#' @param ascii \code{logical}. If TRUE, certain strings are converted to ascii
+#' format.
+#' @details Returns a data frame with the following variables:
+#' \itemize{
+#'  \item{\code{commission: }}{name of the commission.}
+#'  \item{\code{commission_abbr: }}{abbreviated name of the commission.}
+#'  \item{\code{senator_id: }}{unique code for each senator.}
+#'  \item{\code{senator_name}}
+#'  \item{\code{senator_party}}
+#'  \item{\code{senator_state}}
+#' }
+#' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
+#' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
+#' @examples
+#' # get info on the senators who serve on the CCJ commission:
+#' ccj <- sen_commissions_senators(code = "CCJ")
+#'
+#' @export
+sen_commissions_senators <- function(code = NULL, ascii = TRUE){
+
+  if(!is.null(code)){
+    code <- toupper(code)
+  }
+
+  url <- "http://legis.senado.gov.br/dadosabertos/materia/distribuicao/relatoria/" %p%
+    code
+
+  req <- httr::GET(url)
+  req <- status(req)
+  N <- NA_character_
+  req <- req$DistribuicaodeRelatoria$Totais$Parlamentares
+
+  com <- tibble::tibble(
+    commission = purrr::map_chr(req, .null = N, "Comissao"),
+    commission_abbr = purrr::map_chr(req, .null = N, "SiglaComissao"),
+    senator_id = purrr::map_chr(req, .null = N, "CodigoParlamentar"),
+    senator_name = purrr::map_chr(req, .null = N, "Parlamentar"),
+    senator_party = purrr::map_chr(req, .null = N, "Partido"),
+    senator_state = purrr::map_chr(req, .null = N, "Uf")
+  ) %>%
+    dplyr::mutate(
+      senator_name = gsub("Senador ", "", senator_name),
+      senator_name = gsub("Senadora ", "", senator_name)
+    )
+
+  if(ascii == TRUE){
+    com <- com %>%
+      dplyr::mutate(
+        commission = stringi::stri_trans_general(
+          commission, "Latin-ASCII"
+        ),
+        senator_name = stringi::stri_trans_general(
+          senator_name, "Latin-ASCII"
+      )
+      )
+    return(com)
+  } else{
+    return(com)
+  }
+}
+
+
+
