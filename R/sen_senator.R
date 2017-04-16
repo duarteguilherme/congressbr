@@ -26,7 +26,7 @@
 #' \code{absences} to \code{TRUE} will result in a rather bloated data frame.
 #' @examples
 #' benedito <- sen_senator(id = 3823)
-#' aecio <- sen_senator(id = 391, absences = T)
+#' aecio <- sen_senator(id = 391, absences = TRUE)
 #' juc <- sen_senator(73)
 #' @export
 sen_senator <- function(id = NULL, affiliations = TRUE,

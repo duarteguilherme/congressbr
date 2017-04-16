@@ -146,7 +146,7 @@ sen_votes <- function(date = NULL, end_date = NULL,
             vote_secret == "Yes" & senator_vote != "Votou", "Did not vote",
             ifelse(
               vote_secret == "No" & senator_vote == "Sim", 1,
-              ifelse(vote_secret == "No" & senator_vote == "Não", 0, NA)
+              ifelse(vote_secret == "No" & senator_vote == "N\u00a3o", 0, NA)
             ))))
   } else{
     Votes <- Votes %>%
@@ -158,9 +158,9 @@ sen_votes <- function(date = NULL, end_date = NULL,
             ifelse(
               vote_secret == "No" & senator_vote == "Sim", "Yes",
               ifelse(
-                vote_secret == "No" & senator_vote == "Não", "No",
+                vote_secret == "No" & senator_vote == "N\u00a3o", "No",
                 ifelse(
-                  vote_secret == "No" & senator_vote == "Abstenção",
+                  vote_secret == "No" & senator_vote == "Absten\u00a7\u00a3o",
                   "Abstained", "Other"))))))
   }
 

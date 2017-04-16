@@ -5,7 +5,7 @@
 \title{Downloads and tidies information on the political parties in the
 Federal Senate.}
 \usage{
-sen_parties()
+sen_parties(ascii = TRUE)
 }
 \arguments{
 \item{ascii}{\code{logical}. TRUE by default, removes latin-1 characters

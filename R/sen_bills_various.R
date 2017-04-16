@@ -314,7 +314,7 @@ sen_bills_status <- function(id = NULL, ascii = TRUE){
     dplyr::mutate(situation_date = lubridate::parse_date_time(
       situation_date, orders = "Ymd"),
      bill_in_passage = dplyr::case_when(
-        grepl("Nao|Não", stat$bill_in_passage) ~ "No",
+        grepl("Nao|N\u00a3o", stat$bill_in_passage) ~ "No",
         grepl("Sim", stat$bill_in_passage) ~ "Yes",
         TRUE ~ "Not recorded")
      )
@@ -568,11 +568,14 @@ sen_bills_situations <- function(ascii = TRUE){
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
 #' # Bills from 2014 that have had a "despacho" update in the last 15 days, if
-#' they exist:
+#' # they exist:
+#' \dontrun{
 #' desp_2014 <- sen_bills_updates(update = "Despacho", year = 2014, days = 15)
 #'
 #' # PLS bills that have been updated in the last 10 days, if they exist:
 #' pls <- sen_bills_updates(type = "PLS", days = 10)
+#' }
+
 #' @export
 sen_bills_updates <- function(update = NULL, year = NULL,
                               number = NULL, type = NULL,

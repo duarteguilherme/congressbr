@@ -43,7 +43,7 @@ sen_commission_positions <- function(active = c("Yes", "No"),
 
   jobs <- tibble::tibble(
     comm_position_id = purrr::map_chr(req, .null = N, "Codigo"),
-    comm_position = purrr::map_chr(req, .null = N, "Descrição"),
+    comm_position = purrr::map_chr(req, .null = N, "Descri\u00a7\u00a3o"),
     comm_position_active = purrr::map_chr(req, .null = N, "Ativo")
   )
 

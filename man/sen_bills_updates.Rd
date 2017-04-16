@@ -36,11 +36,13 @@ A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 }
 \examples{
 # Bills from 2014 that have had a "despacho" update in the last 15 days, if
-they exist:
+# they exist:
+\dontrun{
 desp_2014 <- sen_bills_updates(update = "Despacho", year = 2014, days = 15)
 
 # PLS bills that have been updated in the last 10 days, if they exist:
 pls <- sen_bills_updates(type = "PLS", days = 10)
+}
 }
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.

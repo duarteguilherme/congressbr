@@ -1,8 +1,6 @@
 
-[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/congressbr)](https://cran.r-project.org/package=congressbr) [![Travis-CI Build Status](https://travis-ci.org/RobertMyles/congressbr.svg?branch=master)](https://travis-ci.org/RobertMyles/congressbr)[![Coverage Status](https://img.shields.io/codecov/c/github/RobertMyles/congressbr/master.svg)](https://codecov.io/github/RobertMyles/congressbr?branch=master)
-
-congressbr
-----------
+[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/congressbr)](https://cran.r-project.org/package=congressbr) [![Travis-CI Build Status](https://travis-ci.org/RobertMyles/congressbr.svg?branch=master)](https://travis-ci.org/RobertMyles/congressbr) [![Coverage Status](https://img.shields.io/codecov/c/github/RobertMyles/congressbr/master.svg)](https://codecov.io/github/RobertMyles/congressbr?branch=master)
+"N0a3o" \#\# congressbr
 
 congressbr is a package for extracting data from the APIs of the Brazilian Federal Senate and Chamber of Deputies, respectively (and perhaps lower level congresses eventually, if we can).
 

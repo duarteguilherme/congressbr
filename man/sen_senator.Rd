@@ -33,7 +33,7 @@ Setting \code{affiliations}, \code{mandates} and particularly
 }
 \examples{
 benedito <- sen_senator(id = 3823)
-aecio <- sen_senator(id = 391, absences = T)
+aecio <- sen_senator(id = 391, absences = TRUE)
 juc <- sen_senator(73)
 }
 \author{

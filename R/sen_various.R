@@ -9,8 +9,6 @@
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @param ascii \code{logical}. TRUE by default, removes latin-1 characters
 #' from returned object.
-#' @usage
-#' sen_parties()
 #' @examples
 #' party <- sen_parties(); head(party)
 #' @export
@@ -39,7 +37,6 @@ sen_parties <- function(ascii = TRUE){
 #' the console.
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
-#' @usage \code{sen_statement_list(return = TRUE, ascii = TRUE)}
 #' @examples
 #' st <- sen_statement_list()
 #' @export

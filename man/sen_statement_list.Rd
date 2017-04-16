@@ -5,7 +5,7 @@
 \title{Downloads and tidies information on the types of declarations senators
 can make in the Federal Senate.}
 \usage{
-\code{sen_statement_list(return = TRUE, ascii = TRUE)}
+sen_statement_list(ascii = TRUE, print = TRUE)
 }
 \arguments{
 \item{ascii}{\code{logical}. TRUE by default, removes latin-1 characters

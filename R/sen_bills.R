@@ -137,11 +137,11 @@ sen_bills <- function(id = NULL, type = NULL,
   bill_complementary = purrr::map_chr(request, "IndicadorComplementar",
                                       .null = null) %>%  disc()
   bill_complementary = ifelse(bill_complementary == "Sim", "Yes",
-                              ifelse(bill_complementary == "Não", "No", NA))
+                              ifelse(bill_complementary == "N\u00a3o", "No", NA))
   bill_in_passage = purrr::map_chr(request, "IndicadorTramitando",
                                    .null = null) %>% disc()
   bill_in_passage = ifelse(bill_in_passage == "Sim", "Yes",
-                           ifelse(bill_in_passage == "Não", "No", NA))
+                           ifelse(bill_in_passage == "N\u00a3o", "No", NA))
 
   bill_details = purrr::map_chr(request, "ExplicacoesEmentaMateria",
                                 .null = null) %>% disc()
