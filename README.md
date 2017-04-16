@@ -1,14 +1,10 @@
 
-[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/congressbr)](https://cran.r-project.org/package=congressbr)
-
-[![Travis-CI Build Status](https://travis-ci.org/RobertMyles/congressbr.svg?branch=master)](https://travis-ci.org/RobertMyles/congressbr)
-
-[![Coverage Status](https://img.shields.io/codecov/c/github/RobertMyles/congressbr/master.svg)](https://codecov.io/github/RobertMyles/congressbr?branch=master)
+[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/congressbr)](https://cran.r-project.org/package=congressbr) [![Travis-CI Build Status](https://travis-ci.org/RobertMyles/congressbr.svg?branch=master)](https://travis-ci.org/RobertMyles/congressbr)[![Coverage Status](https://img.shields.io/codecov/c/github/RobertMyles/congressbr/master.svg)](https://codecov.io/github/RobertMyles/congressbr?branch=master)
 
 congressbr
 ----------
 
-congressbr is a package for extracting data from the APIs of the Brazilian Federal Senate and Chamber of Deputies, respectively (and perhaps lower level congresses if we can).
+congressbr is a package for extracting data from the APIs of the Brazilian Federal Senate and Chamber of Deputies, respectively (and perhaps lower level congresses eventually, if we can).
 
 ### installation
 
@@ -23,7 +19,9 @@ devtools::install_github("RobertMyles/congressbr")
 
 We follow [googlesheets](https://github.com/jennybc/googlesheets) in using a naming convention for functions that facilitates tab completion. All Senate-related functions start with `sen_` and all Chamber-related ones start with `cam_` ('Câmara').
 
-### Contributions
+### principal functions
+
+### contributions
 
 If you want to help us, feel free to fork the repo. We've been using the "Udacity Git Commit Message Style Guide" (<https://udacity.github.io/git-styleguide/>). There are a list of open [issues](https://github.com/RobertMyles/congressbr/issues), which is a good place to start.
 
