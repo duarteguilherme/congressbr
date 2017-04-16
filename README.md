@@ -1,4 +1,10 @@
 
+[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/congressbr)](https://cran.r-project.org/package=congressbr)
+
+[![Travis-CI Build Status](https://travis-ci.org/RobertMyles/congressbr.svg?branch=master)](https://travis-ci.org/RobertMyles/congressbr)
+
+[![Coverage Status](https://img.shields.io/codecov/c/github/RobertMyles/congressbr/master.svg)](https://codecov.io/github/RobertMyles/congressbr?branch=master)
+
 congressbr
 ----------
 
@@ -16,7 +22,6 @@ devtools::install_github("RobertMyles/congressbr")
 ### function naming
 
 We follow [googlesheets](https://github.com/jennybc/googlesheets) in using a naming convention for functions that facilitates tab completion. All Senate-related functions start with `sen_` and all Chamber-related ones start with `cam_` ('Câmara').
-
 
 ### Contributions
 

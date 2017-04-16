@@ -9,7 +9,7 @@ sen_commissions_senators(code = NULL, ascii = TRUE)
 }
 \arguments{
 \item{code}{\code{character}. Character code (abbreviation) of the
-commission requested. A list of these may be obtained with \code{sen_commissions()}.}
+commission requested. A list of these may be obtained with \code{sen_commissions()}, although not all of the abbreviations in this data frame will return information.}
 
 \item{ascii}{\code{logical}. If TRUE, certain strings are converted to ascii
 format.}
@@ -29,7 +29,9 @@ Returns a data frame with the following variables:
 }
 }
 \examples{
+# get info on the senators who serve on the CCJ commission:
 ccj <- sen_commissions_senators(code = "CCJ")
+
 }
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
