@@ -2,8 +2,7 @@
 % Please edit documentation in R/sen_plenary.R
 \name{sen_plenary_sessions}
 \alias{sen_plenary_sessions}
-\title{Returns results from the plenary in the Federal Senate for a
-specified date.}
+\title{Returns the types of sessions in the Federal Senate.}
 \usage{
 sen_plenary_sessions(active = c("Yes", "No"), ascii = TRUE)
 }

@@ -15,7 +15,7 @@ from returned object.}
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 }
 \examples{
-party <- sen_parties(); head(party)
+party <- sen_parties()
 }
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.

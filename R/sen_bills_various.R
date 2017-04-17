@@ -183,8 +183,13 @@ sen_bills_passing <- function(year = NULL,  number = NULL,
 
   request <- httr::GET(base_url)
   request <- status(request)
-  request <- request$ListaMateriasTramitando$Materias$Materia
-  request <- purrr::map(request, "IdentificacaoMateria")
+  if(purrr::is_empty(request$ListaMateriasTramitando$Materias$Materia)){
+    stop("No data match your query.")
+  } else{
+    request <- request$ListaMateriasTramitando$Materias$Materia
+    request <- purrr::map(request, "IdentificacaoMateria")
+  }
+
 
   pass <- tibble::tibble(
     bill_id = purrr::map_chr(request, "CodigoMateria", .null = NA),

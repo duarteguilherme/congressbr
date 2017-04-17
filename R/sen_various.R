@@ -10,7 +10,7 @@
 #' @param ascii \code{logical}. TRUE by default, removes latin-1 characters
 #' from returned object.
 #' @examples
-#' party <- sen_parties(); head(party)
+#' party <- sen_parties()
 #' @export
 sen_parties <- function(ascii = TRUE){
   x <- httr::GET("http://legis.senado.gov.br/dadosabertos/senador/partidos")
@@ -78,8 +78,7 @@ UF <- function(){
 
 
 
-#' @title Downloads and tidies information on the types of bills that come to
-#' a vote in the Federal Senate.
+#' @title Downloads and tidies information on the types of acts that can be formally made in Federal Senate.
 #' @param active. Possible values are \code{TRUE}, \code{FALSE}, or can be left as
 #' \code{NULL}, in which case both active and inactive bill types are returned.
 #' @param ascii \code{logical}. TRUE by default, removes latin-1 characters

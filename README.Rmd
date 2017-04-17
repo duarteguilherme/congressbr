@@ -31,6 +31,7 @@ We follow [googlesheets](https://github.com/jennybc/googlesheets) in using a nam
 
 ### principal functions  
 
+- `sen_votes()`: returns voting information from the Federal Senate. 
 
 
 ### contributions

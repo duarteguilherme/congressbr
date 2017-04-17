@@ -122,8 +122,7 @@ sen_plenary_result <- function(date = NULL, ascii = TRUE){
 
 
 
-#' @title Returns results from the plenary in the Federal Senate for a
-#' specified date.
+#' @title Returns the types of sessions in the Federal Senate.
 #' @param active . Default "Yes", which returns session types which are
 #' still used. Otherwise, returns all types of sessions.
 #' @param ascii \code{logical}. If \code{TRUE}, the default, strips Latin

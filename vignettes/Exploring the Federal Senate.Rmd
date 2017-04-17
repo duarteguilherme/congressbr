@@ -1,0 +1,82 @@
+---
+title: "Exploring the Brazilian Federal Senate"
+author: "Robert McDonnell"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Exploring the Brazilian Federal Senate}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+The API of the Brazilian Federal Senate can be explored with `congressbr` by searching for details on individual senators, commissions and votes, among other options.   
+
+`congressbr` can be installed by running: 
+```{r, eval = F}
+if(!require(devtools)){install.packages("devtools")}
+devtools::install_github("RobertMyles/congressbr")
+library(congressbr)
+```
+```{r, echo=F, message=F, warning=F}
+library(congressbr)
+```
+
+## Votes
+The voting behaviour of legislators is an area of great interest both inside and outside of academia. `congressbr` has the `sen_votes()` function, which returns a data frame of votes in the Senate. These are not necessarily *nominal* votes, as some may be secret votes. In this case, the API records whether the senator voted or not. The other variables in the data frame returned pertain to the time of the vote, its number, id, year, description and its result. Information on individual senators (their party, name, id, gender and state) is also returned. This function has an argument, `binary`, which if TRUE, transforms the recorded (nominal) votes from "Yes" to 1 and "No" to 0. This is handy if you want to use the [wnominate](https://cran.r-project.org/web/packages/wnominate/index.html), [pscl](https://cran.r-project.org/web/packages/pscl/index.html) or [MCMCpack](https://cran.r-project.org/web/packages/MCMCpack/index.html) functions to run ideal point analyses, for example.  
+
+```{r}
+sen_votes(date = "20160908")
+```
+
+For convenience, we have included a dataset of all nominal votes in the Federal Senate from 1991 to early 2017, which can be accessed with `data("senate_nominal_votes")`.  
+
+## Senator info  
+Information on individual senators can be had with `sen_senator_details()`. This function returns the senator's id, name, party and state, as well as information on his/her date of birth, place of birth, their mandates, and office information (email etc.). If the senator is a titular senator, information on his/her deputies (*suplentes*) is available with `sen_senator_suplentes()`. The senator's votes can be had with `sen_senator_votes()`, and their mandates with `sen_senator_mandates()`. Information on the commissions that the senator has served on is available with `sen_senator_commissions()`, and the bills that they sponsored or authored with `sen_senator_bills()`. For information on absences and party affiliations, use `sen_senator()`. All of these functions use the senator's id. A data frame of all of these is available from the function `sen_senator_list()`: 
+
+```{r}
+sen_senator_list()
+```
+
+## Commissions and coalitions 
+There are certain legislative coalitions in the Senate, all of whom have id numbers in the API database. These numbers can be accessed with `sen_coalitions()`, and further information on the coalition of interest can be had with `sen_coalition_info()`. For example, the *Bloco Moderador* (moderate bloc) has the id 200. We can obtain more detailed information on the coalition by using this id:  
+```{r}
+sen_coalition_info(code = 200)
+```
+
+A data frame of commissions (full name and abbreviation) can be obtained with `data("commissions")`. The `sen_commissions()` function returns a detailed dataframe of commissions, their ids, type, house and purpose. Commissions can be explored by `type` variable returned from this function. For example, the "cpi" type (*Comissão de Inquérito Parlamentar*, Parliamentary Inquiry Commission) can be used in the `sen_commissions_type()` function, which will return a data frame of commissions of the type specified. 
+Using the commission abbreviations, we can see which senators serve on the commission. One well-known commission is the Commission for the Constitution, Justice and Citizenship (*Constituicao, Justica e Cidadania*). Its abbreviation is "CCJ":
+
+```{r}
+sen_commissions_senators(code = "CCJ")
+```
+
+## General Information
+
+### Parties 
+
+A list of the parties who have held seats in the Senate can be had with `sen_parties()`:  
+```{r}
+sen_parties()
+```
+
+### States
+For some functions, there are options to narrow the search by focusing on certain states. If you are not familiar with all of the Brazilian states or with their commonly-used abbreviations, use the `UF()` function to print out a list of these abbreviations. For the full names of the states and their abbreviations, use `data("statesBR")`.  
+```{r}
+UF()
+```
+### Bill types 
+The Senate API can be queried by the type of bill. If you are not familiar with the types of bills that come to the Senate floor, use `sen_bills_types()`. Other similar functions, useful for getting to know the Senate, are  `sen_plenary_sessions()`, which returns data on the types of sessions held in the Senate, `sen_bills_topics()`, which returns a data frame with the topic labels for different subject categories.  
+
+The bill types can be used for other queries, such as for seeing what bills of a certain type are currently passing through the house. For example, we can see which MPVs (*medida provisória*; executive decree) were under consideration in the Senate in 2001:  
+```{r}
+sen_bills_passing(year = "2001", type = "MPV")
+```
+This function can also be used to get information for a single date. 
+
+`congressbr` also has functions for accessing budget information (`sen_budget()`), and the agenda in the Senate for a particular date, or range of dates:
+```{r}
+sen_agenda(initial_date = "20161105", end_date = "20161125")
+```
+
+
+

@@ -33,6 +33,9 @@ sen_budget <- function(ascii = TRUE){
     budget_type_abbr = purrr::map_chr(request, "SiglaTipoPlOrcamento"),
     budget_type_description = purrr::map_chr(request, "DescricaoTipoPlOrcamento")
   )
+  req <- req %>%
+    dplyr::mutate(active = ifelse(active == "Sim", "Yes", "No"))
+
   if(ascii == FALSE){
     return(req)
   } else{
@@ -40,8 +43,6 @@ sen_budget <- function(ascii = TRUE){
       dplyr::mutate(
         budget_sponsor = stringi::stri_trans_general(
           budget_sponsor, "Latin-ASCII"),
-        active = stringi::stri_trans_general(
-          active, "Latin-ASCII"),
         budget_type_description = stringi::stri_trans_general(
           budget_type_description, "Latin-ASCII")
         )
