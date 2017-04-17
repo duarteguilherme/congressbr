@@ -2,7 +2,6 @@
 #' @importFrom httr content
 #' @importFrom purrr compact
 #' @importFrom lubridate parse_date_time
-#' @importFrom data.table rbindlist
 #' @importFrom dplyr as_data_frame
 #' @title Downloads and tidies data on the agenda in the Federal Senate.
 #' @param initial_date (\code{character}) start date of the period requested.

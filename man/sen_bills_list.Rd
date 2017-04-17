@@ -2,8 +2,7 @@
 % Please edit documentation in R/sen_various.R
 \name{sen_bills_list}
 \alias{sen_bills_list}
-\title{Downloads and tidies information on the types of bills that come to
-a vote in the Federal Senate.}
+\title{Downloads and tidies information on the types of acts that can be formally made in Federal Senate.}
 \usage{
 sen_bills_list(active = NULL, ascii = TRUE)
 }
