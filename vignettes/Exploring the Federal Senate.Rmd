@@ -81,7 +81,7 @@ sen_agenda(initial_date = "20161105", end_date = "20161125")
 
 ### Examples
 
-`congressbr` can be used for various types of analysis, and as a quick example, let's explore the distribution of men and women currently sitting in the house. (This example makes use of the `ggplot2` package.)
+`congressbr` can be used for various types of analyses, and as a quick example, let's explore the distribution of men and women currently sitting in the house. (This example makes use of the `ggplot2` package.)
 
 ```{r, message = F, warning = F}
 library(ggplot2)
@@ -107,7 +107,7 @@ ggplot(all_sens, aes(x = status)) +
 
 Which states have the *suplentes*? 
 
-```{r}
+```{r, warning = F, message = F}
 library(dplyr)
 all_sens %>% filter(status != "Titular") %>% group_by(state) %>% 
   summarise(totals = n()) %>% arrange(desc(totals))

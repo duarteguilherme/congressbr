@@ -21,6 +21,9 @@ We follow [googlesheets](https://github.com/jennybc/googlesheets) in using a nam
 
 ### principal functions
 
+-   `sen_votes()`: returns voting information from the Federal Senate.
+-   `sen_bill_search()`: search for legislature in the Senate.
+
 ### contributions
 
 If you want to help us, feel free to fork the repo. We've been using the "Udacity Git Commit Message Style Guide" (<https://udacity.github.io/git-styleguide/>). There are a list of open [issues](https://github.com/RobertMyles/congressbr/issues), which is a good place to start.
