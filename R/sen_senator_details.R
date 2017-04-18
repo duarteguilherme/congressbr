@@ -7,8 +7,8 @@
 #' @importFrom dplyr distinct
 #' @title Downloads and tidies personal information on the senators in the
 #' Federal Senate.
-#' @param code \code{integer}. This number represents the code/id of the senator
-#' you wish to get information on. These codes can be extracted from the API
+#' @param id \code{integer}. This number represents the id of the senator
+#' you wish to get information on. These ids can be extracted from the API
 #' using the \code{sen_senator_list()} function, where they will appear as the
 #' first column in the data frame returned, under the name 'id'.
 #' @param ascii \code{logical}. If TRUE, certain strings are converted to ascii
@@ -17,22 +17,22 @@
 #' @seealso \code{sen_senator_list()}
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
-#' Acir_G <- sen_senator_details(code = 4981)
+#' Acir_G <- sen_senator_details(id = 4981)
 #'
 #' @export
-sen_senator_details <- function(code = 0, ascii = TRUE){
+sen_senator_details <- function(id = 0, ascii = TRUE){
 
-  base_url <- "http://legis.senado.gov.br/dadosabertos/senador/" %p% code
+  base_url <- "http://legis.senado.gov.br/dadosabertos/senador/" %p% id
 
-  if(is.null(code)){
-    stop("'code' is necessary.")
+  if(is.null(id)){
+    stop("'id' is necessary.")
   }
 
   request <- httr::GET(base_url)
   request <- status(request)
 
   if(purrr::is_empty(request$DetalheParlamentar$Parlamentar)){
-    stop("No data match your request. Have you checked 'code'?")
+    stop("No data match your request. Have you checked the 'id' argument?")
   }
   request <- request$DetalheParlamentar$Parlamentar
   N <- NA_character_
@@ -104,8 +104,8 @@ sen_senator_details <- function(code = 0, ascii = TRUE){
 
 #' @title Downloads and tidies information on bills that certain senators
 #' have sponsored/authored in the Federal Senate.
-#' @param code \code{integer}. This number represents the code/id of the senator
-#' you wish to get information on. These codes can be extracted from the API
+#' @param id \code{integer}. This number represents the id of the senator
+#' you wish to get information on. These ids can be extracted from the API
 #' using the \code{sen_senator_list()} function, where they will appear as the
 #' first column in the data frame returned, under the name 'id'.
 #' @param ascii \code{logical}. If TRUE, certain strings are converted to ascii
@@ -114,22 +114,22 @@ sen_senator_details <- function(code = 0, ascii = TRUE){
 #' @seealso \code{sen_senator_list()}
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
-#' Ataides <- sen_senator_bills(code = 5164)
+#' Ataides <- sen_senator_bills(id = 5164)
 #'
 #' @export
-sen_senator_bills <- function(code = 0, ascii = TRUE){
+sen_senator_bills <- function(id = 0, ascii = TRUE){
 
-  base_url <- "http://legis.senado.gov.br/dadosabertos/senador/" %p% code
+  base_url <- "http://legis.senado.gov.br/dadosabertos/senador/" %p% id
 
-  if(is.null(code)){
-    stop("'code' is necessary.")
+  if(is.null(id)){
+    stop("'id' is necessary.")
   }
 
   request <- httr::GET(base_url)
   request <- status(request)
 
   if(purrr::is_empty(request$DetalheParlamentar$Parlamentar)){
-    stop("No data match your request. Have you checked 'code'?")
+    stop("No data match your request. Have you checked the 'id' argument?")
   }
   request <- request$DetalheParlamentar$Parlamentar
   N <- NA_character_
@@ -183,8 +183,8 @@ sen_senator_bills <- function(code = 0, ascii = TRUE){
 
 #' @title Downloads and tidies information on the commissions on which
 #' senators have served or are serving in the Federal Senate.
-#' @param code \code{integer}. This number represents the code/id of the senator
-#' you wish to get information on. These codes can be extracted from the API
+#' @param id \code{integer}. This number represents the id of the senator
+#' you wish to get information on. These ids can be extracted from the API
 #' using the \code{sen_senator_list()} function, where they will appear as the
 #' first column in the data frame returned, under the name 'id'.
 #' @param ascii \code{logical}. If TRUE, certain strings are converted to ascii
@@ -193,22 +193,22 @@ sen_senator_bills <- function(code = 0, ascii = TRUE){
 #' @seealso \code{sen_senator_list()}
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
-#' Armando <- sen_senator_commissions(code = 715)
+#' Armando <- sen_senator_commissions(id = 715)
 #'
 #' @export
-sen_senator_commissions <- function(code = 0, ascii = TRUE){
+sen_senator_commissions <- function(id = 0, ascii = TRUE){
 
-  base_url <- "http://legis.senado.gov.br/dadosabertos/senador/" %p% code
+  base_url <- "http://legis.senado.gov.br/dadosabertos/senador/" %p% id
 
-  if(is.null(code)){
-    stop("'code' is necessary.")
+  if(is.null(id)){
+    stop("'id' is necessary.")
   }
 
   request <- httr::GET(base_url)
   request <- status(request)
 
   if(purrr::is_empty(request$DetalheParlamentar$Parlamentar)){
-    stop("No data match your request. Have you checked 'code'?")
+    stop("No data match your request. Have you checked the 'id' argument?")
   }
   request <- request$DetalheParlamentar$Parlamentar
   N <- NA_character_
@@ -285,8 +285,8 @@ sen_senator_commissions <- function(code = 0, ascii = TRUE){
 
 #' @title Downloads and tidies information on titular senators and their
 #' \emph{suplentes} in the Federal Senate.
-#' @param code \code{integer}. This number represents the code/id of the senator
-#' you wish to get information on. These codes can be extracted from the API
+#' @param id \code{integer}. This number represents the id of the senator
+#' you wish to get information on. These ids can be extracted from the API
 #' using the \code{sen_senator_list()} function, where they will appear as the
 #' first column in the data frame returned, under the name 'id'.
 #' @param ascii \code{logical}. If TRUE, certain strings are converted to ascii
@@ -296,24 +296,24 @@ sen_senator_commissions <- function(code = 0, ascii = TRUE){
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
 #' # A titular senator, José Serra:
-#' Serra <- sen_senator_suplentes(code = 90)
+#' Serra <- sen_senator_suplentes(id = 90)
 #'
 #' # Or one of his suplentes:
-#' suplente <- sen_senator_suplentes(code = 878)
+#' suplente <- sen_senator_suplentes(id = 878)
 #'
 #' @export
-sen_senator_suplentes <- function(code = 0, ascii = TRUE){
-  base_url <- "http://legis.senado.gov.br/dadosabertos/senador/" %p% code
+sen_senator_suplentes <- function(id = 0, ascii = TRUE){
+  base_url <- "http://legis.senado.gov.br/dadosabertos/senador/" %p% id
 
-  if(is.null(code)){
-    stop("'code' is necessary.")
+  if(is.null(id)){
+    stop("'id' is necessary.")
   }
 
   request <- httr::GET(base_url)
   request <- status(request)
 
   if(purrr::is_empty(request$DetalheParlamentar$Parlamentar)){
-    stop("No data match your request. Have you checked 'code'?")
+    stop("No data match your request. Have you checked the 'id' argument?")
   }
   request <- request$DetalheParlamentar$Parlamentar
   N <- NA_character_
@@ -398,8 +398,8 @@ sen_senator_suplentes <- function(code = 0, ascii = TRUE){
 
 #' @title Downloads and tidies information on senators' votes in the Federal
 #' Senate.
-#' @param code \code{integer}. This number represents the code/id of the senator
-#' you wish to get information on. These codes can be extracted from the API
+#' @param id \code{integer}. This number represents the id of the senator
+#' you wish to get information on. These ids can be extracted from the API
 #' using the \code{sen_senator_list()} function, where they will appear as the
 #' first column in the data frame returned, under the name 'id'.
 #' @param ascii \code{logical}. If TRUE, certain strings are converted to ascii
@@ -408,15 +408,15 @@ sen_senator_suplentes <- function(code = 0, ascii = TRUE){
 #' @seealso \code{sen_senator_list()}
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
-#' ant <- sen_senator_votes(5529)
+#' ant <- sen_senator_votes(id = 5529)
 #'
 #' # some have never voted, as they are suplentes:
 #' sen_senator_votes(898)
 #' @export
-sen_senator_votes <- function(code = 0, ascii = TRUE){
+sen_senator_votes <- function(id = 0, ascii = TRUE){
 
   base_url <- "http://legis.senado.leg.br/dadosabertos/senador/" %p%
-    code %p% "/votacoes"
+    id %p% "/votacoes"
 
   request <- httr::GET(base_url)
   request <- status(request)
@@ -508,8 +508,8 @@ sen_senator_votes <- function(code = 0, ascii = TRUE){
 
 #' @title Downloads and tidies information on senators' mandates in the Federal
 #' Senate.
-#' @param code \code{integer}. This number represents the code/id of the senator
-#' you wish to get information on. These codes can be extracted from the API
+#' @param id \code{integer}. This number represents the id of the senator
+#' you wish to get information on. These ids can be extracted from the API
 #' using the \code{sen_senator_list()} function, where they will appear as the
 #' first column in the data frame returned, under the name 'id'.
 #' @param ascii \code{logical}. If TRUE, certain strings are converted to ascii
@@ -518,13 +518,13 @@ sen_senator_votes <- function(code = 0, ascii = TRUE){
 #' @seealso \code{sen_senator_list()}
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
-#' terms <- sen_senator_mandates(code = 4763)
-#' terms <- sen_senator_mandates(code = 3398)
+#' terms <- sen_senator_mandates(id = 4763)
+#' terms <- sen_senator_mandates(id = 3398)
 #' @export
-sen_senator_mandates <- function(code = 0, ascii = TRUE){
+sen_senator_mandates <- function(id = 0, ascii = TRUE){
 
   url <- "http://legis.senado.leg.br/dadosabertos/senador/" %p%
-    code %p% "/mandatos"
+    id %p% "/mandatos"
 
   req <- httr::GET(url)
   req <- status(req)

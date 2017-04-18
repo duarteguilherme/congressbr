@@ -10,7 +10,7 @@
 #' @importFrom purrr is_empty
 #' @title Downloads and tidies persnonal information on senators from the
 #' Federal Senate.
-#' @param code \code{integer}. Unique code for a senator. A dataframe of these
+#' @param id \code{integer}. Unique id for a senator. A dataframe of these
 #' is available from \code{sen_senator_list()}.
 #' @param affiliations \code{logical}. If TRUE, the default, returns information
 #'  on party affiliation.

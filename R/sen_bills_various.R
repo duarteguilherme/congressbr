@@ -278,7 +278,7 @@ sen_bills_current <- function(year = NULL, date = NULL,
 
 #' @title Downloads and tidies information on legislation from the current
 #' legislature of the Federal Senate.
-#' @param id \code{integer}. This number is the id given to each bill in the
+#' @param bill_id \code{integer}. This number is the id given to each bill in the
 #' Senate database. For example, running \code{sen_bills_current()} will return a
 #'  dataframe with the variable \code{bill_id} in the first column. These numbers
 #'  can be used as this id.
@@ -287,15 +287,15 @@ sen_bills_current <- function(year = NULL, date = NULL,
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
-#' sen_bills_status(id = 80406)
+#' sen_bills_status(bill_id = 80406)
 #' @export
-sen_bills_status <- function(id = NULL, ascii = TRUE){
+sen_bills_status <- function(bill_id = NULL, ascii = TRUE){
 
-  if(is.null(id)){
-    stop("Please enter a value for 'id'.")
+  if(is.null(bill_id)){
+    stop("Please enter a value for 'bill_id'.")
   }
   base_url <- "http://legis.senado.gov.br/dadosabertos/materia/situacaoatual/" %p%
-    id
+    bill_id
 
   request <- httr::GET(base_url)
   request <- status(request)
@@ -398,7 +398,7 @@ sen_bills_locations <- function(active = NULL, ascii = TRUE){
 
 #' @title Downloads and tidies information on the possible locations a piece
 #' of legislation can currently be passing through.
-#' @param id \code{integer}. This number is the id given to each bill in the
+#' @param bill_id \code{integer}. This number is the id given to each bill in the
 #' Senate database. For example, running \code{sen_bills_current()} will return a
 #'  dataframe with the variable \code{bill_id} in the first column. These numbers
 #'  can be used as this id.
@@ -407,15 +407,15 @@ sen_bills_locations <- function(active = NULL, ascii = TRUE){
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
-#' sen_bills_passage(id = 9123)
+#' sen_bills_passage(bill_id = 9123)
 #' @export
-sen_bills_passage <- function(id = NULL, ascii = TRUE){
+sen_bills_passage <- function(bill_id = NULL, ascii = TRUE){
 
-  if(is.null(id)){
-    stop("Please enter an id number for the legislation.")
+  if(is.null(bill_id)){
+    stop("Please enter an bill_id number.")
   }
   base_url <- "http://legis.senado.leg.br/dadosabertos/materia/movimentacoes/" %p%
-    id
+    bill_id
 
   request <- httr::GET(base_url)
   request <- status(request)
@@ -559,10 +559,6 @@ sen_bills_situations <- function(ascii = TRUE){
 #'  function, and the variable \code{update_name} that is returned.
 #' @param year \code{character}. Year of the bill, if a specific bill is
 #' requested. Format YYYY.
-#' @param id \code{integer}. This number is the id given to each bill in the
-#' Senate database. For example, running \code{sen_bills_current()} will return a
-#'  dataframe with the variable \code{bill_id} in the first column. These numbers
-#'  can be used as this id.
 #' @param number bill number.
 #' @param type type of legislation.
 #' @param days \code{integer}. The number of days to consider when requesting

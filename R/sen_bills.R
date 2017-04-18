@@ -9,11 +9,11 @@
 #' @importFrom lubridate parse_date_time
 #' @importFrom lubridate year
 #' @title Downloads and tidies information on the legislation in the Federal Senate.
-#' @param id \code{integer}. This number is the id given to each bill in the
+#' @param bill_id \code{integer}. This number is the id given to each bill in the
 #' Senate database. For example, running \code{sen_bills_current()} will return a
 #'  dataframe with the variable \code{bill_id} in the first column. These numbers
 #'  can be used as this id. If id is not \code{NULL} (the default), all other
-#'  parameters will be set to \code{NULL}, as 'id' cannot be used in conjunction
+#'  parameters will be set to \code{NULL}, as 'bill_id' cannot be used in conjunction
 #'  with the other parameters.
 #' @param type \code{character}. The abbreviation of the vote type you're looking
 #' for. A full list of these can be obtained with the \code{sen_bill_list()}
@@ -29,15 +29,15 @@
 #' pls_5_2010 <- sen_bills(type = "PLS", number = 5, year = 2010)
 #'
 #' # Get info on the first bill in the dataframe returned by \code{sen_bills_current()}, which has an id of 25:
-#' sen25 <- sen_bills(id = 25)
+#' sen25 <- sen_bills(bill_id = 25)
 #' @export
-sen_bills <- function(id = NULL, type = NULL,
+sen_bills <- function(bill_id = NULL, type = NULL,
                       number = NULL, year = NULL,
                       ascii = TRUE){
 
-  if(!is.null(id)){
+  if(!is.null(bill_id)){
     type <- NULL; number <- NULL; year <- NULL
-    base_url <- "http://legis.senado.gov.br/dadosabertos/materia/" %p% id
+    base_url <- "http://legis.senado.gov.br/dadosabertos/materia/" %p% bill_id
   } else{
     base_url <- "http://legis.senado.gov.br/dadosabertos/materia/" %p%
       type %p% "/" %p% number %p% "/" %p% year
