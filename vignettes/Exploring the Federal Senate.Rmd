@@ -1,6 +1,6 @@
 ---
 title: "Exploring the Brazilian Federal Senate"
-author: "Robert McDonnell"
+author: "Robert McDonnell, Danilo Freire"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
@@ -79,4 +79,38 @@ sen_agenda(initial_date = "20161105", end_date = "20161125")
 ```
 
 
+### Examples
 
+`congressbr` can be used for various types of analysis, and as a quick example, let's explore the distribution of men and women currently sitting in the house. (This example makes use of the `ggplot2` package.)
+
+```{r, message = F, warning = F}
+library(ggplot2)
+all_sens <- sen_senator_list()
+
+ggplot(all_sens, aes(x = gender)) +
+  geom_bar(aes(fill = gender), colour = "white") +
+  theme_classic() +
+  scale_fill_manual(values = c("#45C74A", "#FFFF00"))
+```
+
+
+Looking at the distribution of Titular senators and deputies (*suplentes*) is also straightforward: 
+
+```{r}
+ggplot(all_sens, aes(x = status)) +
+  geom_bar(aes(fill = status), colour = "black") +
+  theme_classic() +
+  scale_fill_manual(values = c("#45C74A", "navy")) +
+  theme(legend.position = "none") +
+  coord_flip() 
+```
+
+Which states have the *suplentes*? 
+
+```{r}
+library(dplyr)
+all_sens %>% filter(status != "Titular") %>% group_by(state) %>% 
+  summarise(totals = n()) %>% arrange(desc(totals))
+```
+
+Mato Grosso, it seems, with 66% of their senators being stand-in *suplentes*. 
