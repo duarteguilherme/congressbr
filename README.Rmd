@@ -34,6 +34,9 @@ We follow [googlesheets](https://github.com/jennybc/googlesheets) in using a nam
 - `sen_votes()`: returns voting information from the Federal Senate. 
 - `sen_bill_search()`: search for legislature in the Senate.
 
+## Vignettes  
+
+You can learn more about the package with the vignettes. Run `vignette("Exploring the Brazilian Federal Senate")`  
 
 ### contributions
 
