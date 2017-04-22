@@ -3,7 +3,7 @@
 \name{sen_sponsor_types}
 \alias{sen_sponsor_types}
 \title{Downloads and tidies data on the types of bill sponsors in the
-Federal Senate.}
+Federal Senate}
 \usage{
 sen_sponsor_types(ascii = TRUE)
 }
@@ -18,6 +18,10 @@ with variables:
  \item{\code{sponsor_abbr: }}{Abbreviation of sponsor type name.}
  \item{\code{sponsor_name: }}{Sponsor type name.}
 }
+}
+\description{
+Downloads and tidies data on the types of bill sponsors in the
+Federal Senate.
 }
 \examples{
 types <- sen_sponsor_types()

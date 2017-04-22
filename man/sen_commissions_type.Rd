@@ -2,7 +2,7 @@
 % Please edit documentation in R/sen_commission_list.R
 \name{sen_commissions_type}
 \alias{sen_commissions_type}
-\title{Information on commissions in the Federal Senate, by commission type.}
+\title{Information on commissions in the Federal Senate, by commission type}
 \usage{
 sen_commissions_type(type = c("permanent", "cpi", "temporary"),
   ascii = TRUE)
@@ -15,6 +15,9 @@ format.}
 }
 \value{
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
+}
+\description{
+Information on commissions in the Federal Senate, by commission type.
 }
 \details{
 Returns a data frame with the following variables:

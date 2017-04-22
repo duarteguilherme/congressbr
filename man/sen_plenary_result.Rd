@@ -3,7 +3,7 @@
 \name{sen_plenary_result}
 \alias{sen_plenary_result}
 \title{Returns results from the plenary in the Federal Senate for a
-specified date.}
+specified date}
 \usage{
 sen_plenary_result(date = NULL, ascii = TRUE)
 }
@@ -15,6 +15,10 @@ characters from the results.}
 }
 \value{
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
+}
+\description{
+Returns results from the plenary in the Federal Senate for a
+specified date.
 }
 \examples{
 # get info for the 3rd of March 2016:

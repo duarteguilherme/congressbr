@@ -3,7 +3,7 @@
 \name{sen_commission_positions}
 \alias{sen_commission_positions}
 \title{Information on positions (jobs) that legislators may occupy
-in commissions in the Federal Senate.}
+in commissions in the Federal Senate}
 \usage{
 sen_commission_positions(active = c("Yes", "No"), ascii = TRUE)
 }
@@ -16,6 +16,10 @@ format.}
 }
 \value{
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
+}
+\description{
+Information on positions (jobs) that legislators may occupy
+in commissions in the Federal Senate.
 }
 \details{
 Returns a data frame with the following variables:

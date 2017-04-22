@@ -3,7 +3,7 @@
 \name{sen_bills_limits}
 \alias{sen_bills_limits}
 \title{Downloads and tidies information on the types of deadline and time
-limits for legislation in the Federal Senate.}
+limits for legislation in the Federal Senate}
 \usage{
 sen_bills_limits(ascii = TRUE)
 }
@@ -13,6 +13,10 @@ strings.}
 }
 \value{
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
+}
+\description{
+Downloads and tidies information on the types of deadline and time
+limits for legislation in the Federal Senate.
 }
 \examples{
 lims <- sen_bills_limits()

@@ -3,7 +3,8 @@
 #' @importFrom purrr compact
 #' @importFrom lubridate parse_date_time
 #' @importFrom dplyr as_data_frame
-#' @title Downloads and tidies data on the agenda in the Federal Senate.
+#' @title Downloads and tidies data on the agenda in the Federal Senate
+#' @description Downloads and tidies data on the agenda in the Federal Senate.
 #' @param initial_date (\code{character}) start date of the period requested.
 #' This parameter must be in the format YYYYMMDD (Year-Month-Day). A value for
 #' this parameter is necessary, all others are optional.

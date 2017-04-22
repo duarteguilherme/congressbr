@@ -10,6 +10,8 @@
 #' @importFrom stringi stri_trans_general
 #' @importFrom lubridate parse_date_time
 #' @title Returns voting information from the Senate floor for the date
+#' requested
+#' @description Returns voting information from the Senate floor for the date
 #' requested.
 #' @param date \code{character} or \code{integer}. Format YYYYMMDD.
 #' @param end_date \code{character} or \code{integer}. Format YYYYMMDD. If
@@ -29,7 +31,7 @@
 #' nominal_vote <- sen_votes(date = "20130516")
 #'
 #' # Some votes are secret:
-#' ssshhh <- sen_votes("20160301", binary = F)
+#' ssshhh <- sen_votes("20160301", binary = FALSE)
 #'
 #' # All votes between two periods (might take a little while):
 #' longer <- sen_votes(date = "20160301", end_date = "20160415")

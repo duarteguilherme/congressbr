@@ -3,12 +3,15 @@
 \name{sen_senator}
 \alias{sen_senator}
 \title{Downloads and tidies persnonal information on senators from the
-Federal Senate.}
+Federal Senate}
 \usage{
 sen_senator(id = NULL, affiliations = TRUE, mandates = TRUE,
   absences = FALSE, ascii = TRUE)
 }
 \arguments{
+\item{id}{\code{integer}. Unique id for a senator. A dataframe of these
+is available from \code{sen_senator_list()}.}
+
 \item{affiliations}{\code{logical}. If TRUE, the default, returns information
 on party affiliation.}
 
@@ -20,12 +23,13 @@ absence taken by the senator.}
 
 \item{ascii}{\code{logical}. If TRUE, certain strings are converted to ascii
 format.}
-
-\item{code}{\code{integer}. Unique code for a senator. A dataframe of these
-is available from \code{sen_senator_list()}.}
 }
 \value{
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
+}
+\description{
+Downloads and tidies persnonal information on senators from the
+Federal Senate.
 }
 \note{
 Setting \code{affiliations}, \code{mandates} and particularly

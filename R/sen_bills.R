@@ -8,7 +8,8 @@
 #' @importFrom stringi stri_trans_general
 #' @importFrom lubridate parse_date_time
 #' @importFrom lubridate year
-#' @title Downloads and tidies information on the legislation in the Federal Senate.
+#' @title Downloads and tidies information on the legislation in the Federal Senate
+#' @description Downloads and tidies information on the legislation in the Federal Senate.
 #' @param bill_id \code{integer}. This number is the id given to each bill in the
 #' Senate database. For example, running \code{sen_bills_current()} will return a
 #'  dataframe with the variable \code{bill_id} in the first column. These numbers
@@ -18,7 +19,7 @@
 #' @param type \code{character}. The abbreviation of the vote type you're looking
 #' for. A full list of these can be obtained with the \code{sen_bill_list()}
 #' function. Other types can be seen with \code{sen_bills_subtypes()}.
-#' @param number. Two-letter abbreviation of Brazilian state. A list of these is
+#' @param number . Two-letter abbreviation of Brazilian state. A list of these is
 #' available with the function \code{UF()}.
 #' @param year \code{integer}. Four-digit year, such as \code{2013}.
 #' @param ascii \code{logical}. If \code{TRUE}, strips Latin characters from
@@ -28,7 +29,8 @@
 #' @examples
 #' pls_5_2010 <- sen_bills(type = "PLS", number = 5, year = 2010)
 #'
-#' # Get info on the first bill in the dataframe returned by \code{sen_bills_current()}, which has an id of 25:
+#' # Get info on the first bill in the dataframe returned
+#' # by \code{sen_bills_current()}, which has an id of 25:
 #' sen25 <- sen_bills(bill_id = 25)
 #' @export
 sen_bills <- function(bill_id = NULL, type = NULL,

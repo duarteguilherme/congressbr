@@ -3,7 +3,7 @@
 \name{sen_bills_situations}
 \alias{sen_bills_situations}
 \title{Downloads and tidies information on the possible situations a bill
-can be in.}
+can be in}
 \usage{
 sen_bills_situations(ascii = TRUE)
 }
@@ -13,6 +13,10 @@ strings.}
 }
 \value{
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
+}
+\description{
+Downloads and tidies information on the possible situations a bill
+can be in.
 }
 \examples{
 sen_bills_situations()

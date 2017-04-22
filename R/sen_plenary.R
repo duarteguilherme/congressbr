@@ -8,6 +8,8 @@
 #' @importFrom stringi stri_trans_general
 #' @importFrom lubridate parse_date_time
 #' @title Returns results from the plenary in the Federal Senate for a
+#' specified date
+#' @description Returns results from the plenary in the Federal Senate for a
 #' specified date.
 #' @param date \code{character}. Format YYYYMMDD.
 #' @param ascii \code{logical}. If \code{TRUE}, the default, strips Latin
@@ -122,7 +124,8 @@ sen_plenary_result <- function(date = NULL, ascii = TRUE){
 
 
 
-#' @title Returns the types of sessions in the Federal Senate.
+#' @title Returns the types of sessions in the Federal Senate
+#' @description Returns the types of sessions in the Federal Senate.
 #' @param active . Default "Yes", which returns session types which are
 #' still used. Otherwise, returns all types of sessions.
 #' @param ascii \code{logical}. If \code{TRUE}, the default, strips Latin
@@ -171,6 +174,8 @@ sen_plenary_sessions <- function(active = c("Yes", "No"), ascii = TRUE){
 
 
 #' @title Returns results from the plenary in the Federal Senate for a
+#' specified date
+#' @description Returns results from the plenary in the Federal Senate for a
 #' specified date.
 #' @param period \code{character}. If "month" is selected, all information
 #' available from the date specified with \code{date} to the end of the month
@@ -266,7 +271,8 @@ sen_plenary_agenda <- function(period = c("month", "day"),
 
 
 
-#' @title Returns information on leaderships in the Federal Senate.
+#' @title Returns information on leaderships in the Federal Senate
+#' @description Returns information on leaderships in the Federal Senate.
 #' @param parties \code{logical}. Returns information on party leadership in
 #' the Senate when \code{TRUE}, otherwise returns information on coalitions.
 #' @param ascii \code{logical}. If \code{TRUE}, the default, strips Latin

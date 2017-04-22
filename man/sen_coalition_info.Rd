@@ -2,13 +2,13 @@
 % Please edit documentation in R/sen_coalition_info.R
 \name{sen_coalition_info}
 \alias{sen_coalition_info}
-\title{Downloads and tidies data on specific coalitions in the Federal Senate.}
+\title{Downloads and tidies data on specific coalitions in the Federal Senate}
 \usage{
 sen_coalition_info(code = NULL, ascii = TRUE)
 }
 \arguments{
-\item{code}{\code{integer}. If not known, these codes can be obtained from the
-\code{sen_coalitions()} function.}
+\item{code}{\code{integer}. Code of the coalition. If not known (the most likely
+case), these codes can be obtained from the \code{sen_coalitions()} function.}
 
 \item{ascii}{\code{logical}. If TRUE, names are converted to ascii format.}
 }
@@ -27,6 +27,9 @@ with variables:
  \item{\code{member_name: }}{party name.}
  \item{\code{member_date_created:: }}{\code{POSIXct}, date when the coalition was created.}
 }
+}
+\description{
+Downloads and tidies data on specific coalitions in the Federal Senate.
 }
 \examples{
 moderador <- sen_coalition_info(code = 200)

@@ -3,7 +3,7 @@
 \name{sen_bills_update_types}
 \alias{sen_bills_update_types}
 \title{Downloads and tidies information on the types of updates that can be
-applied to bills in the Federal Senate.}
+applied to bills in the Federal Senate}
 \usage{
 sen_bills_update_types()
 }
@@ -14,6 +14,10 @@ with variables:
  \item{\code{update_name: }}{the name in the database for the type of update.}
  \item{\code{update_effects: }}{the type of item that is affected by the update. "MovimentacaoMateria" refers to the passage of the bill; "DetalheMateria" refers to the details of the bill itself; "RelatoriaMateria" refers to reports on the bill; "VotacaoMateria" refers to votes on the bill.}
 }
+}
+\description{
+Downloads and tidies information on the types of updates that can be
+applied to bills in the Federal Senate.
 }
 \examples{
 sen_bills_update_types()

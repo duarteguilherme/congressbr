@@ -2,22 +2,24 @@
 % Please edit documentation in R/sen_various.R
 \name{sen_bills_list}
 \alias{sen_bills_list}
-\title{Downloads and tidies information on the types of acts that can be formally made in Federal Senate.}
+\title{Downloads and tidies information on the types of acts that can be
+formally made in the Federal Senate}
 \usage{
 sen_bills_list(active = NULL, ascii = TRUE)
 }
 \arguments{
-\item{ascii}{\code{logical}. TRUE by default, removes latin-1 characters
-from returned object.}
-
-\item{active.}{Possible values are \code{TRUE}, \code{FALSE}, or can be left as
+\item{active}{.Possible values are \code{TRUE}, \code{FALSE}, or can be left as
 \code{NULL}, in which case both active and inactive bill types are returned.}
 
-\item{print}{\code{logical}. If TRUE (the default), prints the dataframe to
-the console.}
+\item{ascii}{\code{logical}. TRUE by default, removes latin-1 characters
+from returned object.}
 }
 \value{
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
+}
+\description{
+Downloads and tidies information on the types of acts that
+can be formally made in the Federal Senate.
 }
 \examples{
 bills <- sen_bills_list(active = TRUE)

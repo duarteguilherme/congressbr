@@ -3,13 +3,13 @@
 \name{sen_senator_details}
 \alias{sen_senator_details}
 \title{Downloads and tidies personal information on the senators in the
-Federal Senate.}
+Federal Senate}
 \usage{
-sen_senator_details(code = 0, ascii = TRUE)
+sen_senator_details(id = 0, ascii = TRUE)
 }
 \arguments{
-\item{code}{\code{integer}. This number represents the code/id of the senator
-you wish to get information on. These codes can be extracted from the API
+\item{id}{\code{integer}. This number represents the id of the senator
+you wish to get information on. These ids can be extracted from the API
 using the \code{sen_senator_list()} function, where they will appear as the
 first column in the data frame returned, under the name 'id'.}
 
@@ -19,8 +19,12 @@ format.}
 \value{
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 }
+\description{
+Downloads and tidies personal information on the senators in the
+Federal Senate.
+}
 \examples{
-Acir_G <- sen_senator_details(code = 4981)
+Acir_G <- sen_senator_details(id = 4981)
 
 }
 \seealso{

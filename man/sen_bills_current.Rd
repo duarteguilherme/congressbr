@@ -3,7 +3,7 @@
 \name{sen_bills_current}
 \alias{sen_bills_current}
 \title{Downloads and tidies information on legislation from the current
-legislature of the Federal Senate.}
+legislature of the Federal Senate}
 \usage{
 sen_bills_current(year = NULL, date = NULL, time = NULL, number = NULL,
   type = NULL, passing = NULL)
@@ -27,6 +27,10 @@ returns the information obtained from "Yes" and "No".}
 }
 \value{
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
+}
+\description{
+Downloads and tidies information on legislation from the current
+legislature of the Federal Senate.
 }
 \examples{
 all <- sen_bills_current()

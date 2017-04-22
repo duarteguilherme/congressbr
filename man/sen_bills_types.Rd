@@ -3,7 +3,7 @@
 \name{sen_bills_types}
 \alias{sen_bills_types}
 \title{Downloads and tidies information on the types of legislation in
-the Federal Senate.}
+the Federal Senate}
 \usage{
 sen_bills_types(active = NULL, ascii = TRUE)
 }
@@ -17,6 +17,10 @@ strings.}
 }
 \value{
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
+}
+\description{
+Downloads and tidies information on the types of legislation in
+the Federal Senate.
 }
 \examples{
 legis <- sen_bills_types()

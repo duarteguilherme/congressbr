@@ -9,7 +9,8 @@
 #' @importFrom purrr map
 #' @importFrom purrr map_chr
 #' @importFrom purrr at_depth
-#' @title Downloads and tidies data on specific coalitions in the Federal Senate.
+#' @title Downloads and tidies data on specific coalitions in the Federal Senate
+#' @description Downloads and tidies data on specific coalitions in the Federal Senate.
 #' @param code \code{integer}. Code of the coalition. If not known (the most likely
 #' case), these codes can be obtained from the \code{sen_coalitions()} function.
 #' @param ascii \code{logical}. If TRUE, names are converted to ascii format.

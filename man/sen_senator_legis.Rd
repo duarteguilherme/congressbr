@@ -2,7 +2,7 @@
 % Please edit documentation in R/sen_senator_list.R
 \name{sen_senator_legis}
 \alias{sen_senator_legis}
-\title{Downloads and tidies information on the senators in the Federal Senate.}
+\title{Downloads and tidies information on the senators in the Federal Senate}
 \usage{
 sen_senator_legis(start = NULL, end = NULL, state = NULL, status = NULL,
   ascii = TRUE)
@@ -14,7 +14,7 @@ time period requested.}
 \item{end}{two-digit integer representing the final legislature of the time
 period requested.}
 
-\item{state}{two-letter abbreviation of Brazilian state. A list of these is
+\item{state}{\code{character}. Two-letter abbreviation of Brazilian state. A list of these is
 available with the function \code{UF()}.}
 
 \item{status}{\code{character}, either "T" or "S", representing
@@ -25,6 +25,9 @@ strings.}
 }
 \value{
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
+}
+\description{
+Downloads and tidies information on the senators in the Federal Senate.
 }
 \examples{
 all <- sen_senator_legis(start = 50)

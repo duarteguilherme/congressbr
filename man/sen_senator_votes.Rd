@@ -3,13 +3,13 @@
 \name{sen_senator_votes}
 \alias{sen_senator_votes}
 \title{Downloads and tidies information on senators' votes in the Federal
-Senate.}
+Senate}
 \usage{
-sen_senator_votes(code = 0, ascii = TRUE)
+sen_senator_votes(id = 0, ascii = TRUE)
 }
 \arguments{
-\item{code}{\code{integer}. This number represents the code/id of the senator
-you wish to get information on. These codes can be extracted from the API
+\item{id}{\code{integer}. This number represents the id of the senator
+you wish to get information on. These ids can be extracted from the API
 using the \code{sen_senator_list()} function, where they will appear as the
 first column in the data frame returned, under the name 'id'.}
 
@@ -19,11 +19,15 @@ format.}
 \value{
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 }
+\description{
+Downloads and tidies information on senators' votes in the Federal
+Senate.
+}
 \examples{
-ant <- sen_senator_votes(5529)
+ant <- sen_senator_votes(id = 5529)
 
 # some have never voted, as they are suplentes:
-sen_senator_votes(898)
+\dontrun{sen_senator_votes(898)}
 }
 \seealso{
 \code{sen_senator_list()}

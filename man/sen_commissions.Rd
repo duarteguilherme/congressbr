@@ -2,7 +2,7 @@
 % Please edit documentation in R/sen_commission_list.R
 \name{sen_commissions}
 \alias{sen_commissions}
-\title{Information on commissions in the Federal Senate.}
+\title{Information on commissions in the Federal Senate}
 \usage{
 sen_commissions(active = c("Yes", "No"), ascii = TRUE)
 }
@@ -15,6 +15,9 @@ format.}
 }
 \value{
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
+}
+\description{
+Information on commissions in the Federal Senate.
 }
 \details{
 Returns a data frame with the following variables:

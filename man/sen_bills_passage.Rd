@@ -3,12 +3,12 @@
 \name{sen_bills_passage}
 \alias{sen_bills_passage}
 \title{Downloads and tidies information on the possible locations a piece
-of legislation can currently be passing through.}
+of legislation can currently be passing through}
 \usage{
-sen_bills_passage(id = NULL, ascii = TRUE)
+sen_bills_passage(bill_id = NULL, ascii = TRUE)
 }
 \arguments{
-\item{id}{\code{integer}. This number is the id given to each bill in the
+\item{bill_id}{\code{integer}. This number is the id given to each bill in the
 Senate database. For example, running \code{sen_bills_current()} will return a
  dataframe with the variable \code{bill_id} in the first column. These numbers
  can be used as this id.}
@@ -19,8 +19,12 @@ strings.}
 \value{
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 }
+\description{
+Downloads and tidies information on the possible locations a piece
+of legislation can currently be passing through.
+}
 \examples{
-sen_bills_passage(id = 9123)
+sen_bills_passage(bill_id = 9123)
 }
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.

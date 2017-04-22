@@ -5,7 +5,8 @@
 #' @importFrom dplyr mutate
 #' @importFrom purrr map_chr
 #' @importFrom magrittr "%>%"
-#' @title Downloads and tidies data on the bill sponsors in the Federal Senate.
+#' @title Downloads and tidies data on the bill sponsors in the Federal Senate
+#' @description Downloads and tidies data on the bill sponsors in the Federal Senate.
 #' @param ascii (\code{logical}). If TRUE, bill sponsor names are converted
 #' to ascii format, stripping the latin characters from the names.
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame},
@@ -61,6 +62,8 @@ sen_bill_sponsors <- function(ascii = TRUE){
 
 
 #' @title Downloads and tidies data on the types of bill sponsors in the
+#' Federal Senate
+#' @description Downloads and tidies data on the types of bill sponsors in the
 #' Federal Senate.
 #' @param ascii (\code{logical}). If TRUE, bill sponsor names are converted
 #' to ascii format, stripping the latin characters from the names.

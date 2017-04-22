@@ -6,11 +6,12 @@
 #' @importFrom tibble tibble
 #' @importFrom dplyr bind_cols
 #' @importFrom lubridate parse_date_time
-#' @title Downloads and tidies information on the senators in the Federal Senate.
+#' @title Downloads and tidies information on the senators in the Federal Senate
+#' @description Downloads and tidies information on the senators in the Federal Senate.
 #' @param present \code{logical}. If \code{TRUE}, downloads data on the legislature
 #' currently sitting in the Federal Senate, otherwise returns information on
 #' senators who are currently absent.
-#' @param state. Two-letter abbreviation of Brazilian state. A list of these is
+#' @param state \code{character}. Two-letter abbreviation of Brazilian state. A list of these is
 #' available with the function \code{UF()}.
 #' @param status \code{character}, either "T" or "S", representing
 #' \emph{titular} or \emph{suplente} (stand-in senator), respectively.
@@ -139,12 +140,13 @@ sen_senator_list <- function(present = TRUE, state = NULL,
 #' @importFrom tibble tibble
 #' @importFrom dplyr bind_cols
 #' @importFrom lubridate parse_date_time
-#' @title Downloads and tidies information on the senators in the Federal Senate.
+#' @title Downloads and tidies information on the senators in the Federal Senate
+#' @description Downloads and tidies information on the senators in the Federal Senate.
 #' @param start two-digit integer representing the first legislature of the
 #' time period requested.
 #' @param end two-digit integer representing the final legislature of the time
 #'  period requested.
-#' @param state two-letter abbreviation of Brazilian state. A list of these is
+#' @param state \code{character}. Two-letter abbreviation of Brazilian state. A list of these is
 #' available with the function \code{UF()}.
 #' @param status \code{character}, either "T" or "S", representing
 #' \emph{titular} or \emph{suplente} (stand-in senator), respectively.

@@ -6,6 +6,8 @@
 #' @importFrom lubridate parse_date_time
 #' @importFrom dplyr distinct
 #' @title Downloads and tidies personal information on the senators in the
+#' Federal Senate
+#' @description Downloads and tidies personal information on the senators in the
 #' Federal Senate.
 #' @param id \code{integer}. This number represents the id of the senator
 #' you wish to get information on. These ids can be extracted from the API
@@ -103,6 +105,8 @@ sen_senator_details <- function(id = 0, ascii = TRUE){
 
 
 #' @title Downloads and tidies information on bills that certain senators
+#' have sponsored/authored in the Federal Senate
+#' @description Downloads and tidies information on bills that certain senators
 #' have sponsored/authored in the Federal Senate.
 #' @param id \code{integer}. This number represents the id of the senator
 #' you wish to get information on. These ids can be extracted from the API
@@ -182,6 +186,8 @@ sen_senator_bills <- function(id = 0, ascii = TRUE){
 
 
 #' @title Downloads and tidies information on the commissions on which
+#' senators have served or are serving in the Federal Senate
+#' @description Downloads and tidies information on the commissions on which
 #' senators have served or are serving in the Federal Senate.
 #' @param id \code{integer}. This number represents the id of the senator
 #' you wish to get information on. These ids can be extracted from the API
@@ -284,6 +290,8 @@ sen_senator_commissions <- function(id = 0, ascii = TRUE){
 
 
 #' @title Downloads and tidies information on titular senators and their
+#' \emph{suplentes} in the Federal Senate
+#' @description Downloads and tidies information on titular senators and their
 #' \emph{suplentes} in the Federal Senate.
 #' @param id \code{integer}. This number represents the id of the senator
 #' you wish to get information on. These ids can be extracted from the API
@@ -397,6 +405,8 @@ sen_senator_suplentes <- function(id = 0, ascii = TRUE){
 
 
 #' @title Downloads and tidies information on senators' votes in the Federal
+#' Senate
+#' @description Downloads and tidies information on senators' votes in the Federal
 #' Senate.
 #' @param id \code{integer}. This number represents the id of the senator
 #' you wish to get information on. These ids can be extracted from the API
@@ -411,7 +421,7 @@ sen_senator_suplentes <- function(id = 0, ascii = TRUE){
 #' ant <- sen_senator_votes(id = 5529)
 #'
 #' # some have never voted, as they are suplentes:
-#' sen_senator_votes(898)
+#' \dontrun{sen_senator_votes(898)}
 #' @export
 sen_senator_votes <- function(id = 0, ascii = TRUE){
 
@@ -507,6 +517,8 @@ sen_senator_votes <- function(id = 0, ascii = TRUE){
 
 
 #' @title Downloads and tidies information on senators' mandates in the Federal
+#' Senate
+#' @description Downloads and tidies information on senators' mandates in the Federal
 #' Senate.
 #' @param id \code{integer}. This number represents the id of the senator
 #' you wish to get information on. These ids can be extracted from the API

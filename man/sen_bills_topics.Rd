@@ -3,7 +3,7 @@
 \name{sen_bills_topics}
 \alias{sen_bills_topics}
 \title{Downloads and tidies information on the topics of legislation in
-the Federal Senate.}
+the Federal Senate}
 \usage{
 sen_bills_topics(active = NULL, ascii = TRUE)
 }
@@ -17,6 +17,10 @@ strings.}
 }
 \value{
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
+}
+\description{
+Downloads and tidies information on the topics of legislation in
+the Federal Senate.
 }
 \examples{
 top <- sen_bills_topics()

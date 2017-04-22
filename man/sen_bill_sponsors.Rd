@@ -2,7 +2,7 @@
 % Please edit documentation in R/sen_sponsor_list.R
 \name{sen_bill_sponsors}
 \alias{sen_bill_sponsors}
-\title{Downloads and tidies data on the bill sponsors in the Federal Senate.}
+\title{Downloads and tidies data on the bill sponsors in the Federal Senate}
 \usage{
 sen_bill_sponsors(ascii = TRUE)
 }
@@ -21,6 +21,9 @@ with variables:
  \item{\code{sponsor_state: }}{state of bill sponsor.}
  \item{\code{quantity: }}{quantity of bills sponsored by this individual or entity.}
 }
+}
+\description{
+Downloads and tidies data on the bill sponsors in the Federal Senate.
 }
 \examples{
 bills <- sen_bill_sponsors()

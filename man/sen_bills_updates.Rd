@@ -3,7 +3,7 @@
 \name{sen_bills_updates}
 \alias{sen_bills_updates}
 \title{Downloads and tidies information on bills that have been recently
- updated in the Federal Senate.}
+ updated in the Federal Senate}
 \usage{
 sen_bills_updates(update = NULL, year = NULL, number = NULL,
   type = NULL, days = 5, ascii = TRUE)
@@ -25,14 +25,13 @@ information on recent updates. The maximum is 30 and the default is 5.}
 
 \item{ascii}{\code{logical}. If \code{TRUE}, strips Latin characters from
 strings.}
-
-\item{id}{\code{integer}. This number is the id given to each bill in the
-Senate database. For example, running \code{sen_bills_current()} will return a
- dataframe with the variable \code{bill_id} in the first column. These numbers
- can be used as this id.}
 }
 \value{
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
+}
+\description{
+Downloads and tidies information on bills that have been recently
+ updated in the Federal Senate.
 }
 \examples{
 # Bills from 2014 that have had a "despacho" update in the last 15 days, if

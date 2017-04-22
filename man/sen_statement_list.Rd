@@ -3,7 +3,7 @@
 \name{sen_statement_list}
 \alias{sen_statement_list}
 \title{Downloads and tidies information on the types of declarations senators
-can make in the Federal Senate.}
+can make in the Federal Senate}
 \usage{
 sen_statement_list(ascii = TRUE, print = TRUE)
 }
@@ -16,6 +16,10 @@ the console.}
 }
 \value{
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
+}
+\description{
+Downloads and tidies information on the types of declarations senators
+can make in the Federal Senate.
 }
 \examples{
 st <- sen_statement_list()

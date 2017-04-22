@@ -9,6 +9,8 @@
 #' @importFrom tibble tibble
 #' @importFrom lubridate parse_date_time
 #' @title Information on positions (jobs) that legislators may occupy
+#' in commissions in the Federal Senate
+#' @description Information on positions (jobs) that legislators may occupy
 #' in commissions in the Federal Senate.
 #' @param active \code{character}. If "No", returns all positions, otherwise
 #' returns positions that are presently active.
@@ -70,7 +72,8 @@ sen_commission_positions <- function(active = c("Yes", "No"),
 
 
 
-#' @title Information on commissions in the Federal Senate.
+#' @title Information on commissions in the Federal Senate
+#' @description Information on commissions in the Federal Senate.
 #' @param active \code{character}. Options are "Yes" or "No". If "Yes", returns
 #' only active commissions, otherwise all commissions.
 #' @param ascii \code{logical}. If TRUE, certain strings are converted to ascii
@@ -144,7 +147,8 @@ sen_commissions <- function(active = c("Yes", "No"),
 
 
 
-#' @title Information on commissions in the Federal Senate, by commission type.
+#' @title Information on commissions in the Federal Senate, by commission type
+#' @description Information on commissions in the Federal Senate, by commission type.
 #' @param type \code{character}. Options are permanent, cpi and temporary.See details.
 #' @param ascii \code{logical}. If TRUE, certain strings are converted to ascii
 #' format.
@@ -222,6 +226,8 @@ sen_commissions_type <- function(type = c("permanent", "cpi", "temporary"),
 
 
 #' @title Information on the senators who serve on a certain commission in the
+#'  Federal Senate
+#' @description Information on the senators who serve on a certain commission in the
 #'  Federal Senate.
 #' @param code \code{character}. Character code (abbreviation) of the
 #' commission requested. A list of these may be obtained with \code{sen_commissions()}, although not all of the abbreviations in this data frame will return information.

@@ -2,7 +2,7 @@
 % Please edit documentation in R/sen_coalitions.R
 \name{sen_coalitions}
 \alias{sen_coalitions}
-\title{Downloads and tidies data on the coalitions in the Federal Senate.}
+\title{Downloads and tidies data on the coalitions in the Federal Senate}
 \usage{
 sen_coalitions(members = FALSE, ascii = TRUE)
 }
@@ -25,6 +25,9 @@ with variables:
  \item{\code{bloc_member_date_joined: }}{\code{POSIXct}, date when the party first joined the coalition.}
  \item{\code{member_date_left: }}{\code{POSIXct}, date when the party left the coalition.}
 }
+}
+\description{
+Downloads and tidies data on the coalitions in the Federal Senate.
 }
 \examples{
 coalitions <- sen_coalitions()

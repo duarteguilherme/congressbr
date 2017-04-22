@@ -11,7 +11,8 @@
 #' @importFrom purrr map_chr
 #' @importFrom purrr at_depth
 #' @importFrom purrr compact
-#' @title Downloads and tidies data on the coalitions in the Federal Senate.
+#' @title Downloads and tidies data on the coalitions in the Federal Senate
+#' @description Downloads and tidies data on the coalitions in the Federal Senate.
 #' @param members \code{logical}. If FALSE, returns only the first four columns
 #' of the data frame.
 #' @param ascii \code{logical}. If TRUE, names are converted to ascii format.

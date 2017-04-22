@@ -2,7 +2,7 @@
 % Please edit documentation in R/sen_bill_search.R
 \name{sen_bill_search}
 \alias{sen_bill_search}
-\title{Search for data on legislation in the Brazilian Federal Senate.}
+\title{Search for data on legislation in the Brazilian Federal Senate}
 \usage{
 sen_bill_search(year = "", year_law = "", topic_id = "",
   situation_id = "", date_presented_init = "", date_presented_end = "",
@@ -18,6 +18,9 @@ format.}
 }
 \value{
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
+}
+\description{
+Search for data on legislation in the Brazilian Federal Senate.
 }
 \examples{
 # search for legislation from 2014:

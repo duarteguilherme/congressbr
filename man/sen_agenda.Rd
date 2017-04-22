@@ -2,7 +2,7 @@
 % Please edit documentation in R/sen_agenda.R
 \name{sen_agenda}
 \alias{sen_agenda}
-\title{Downloads and tidies data on the agenda in the Federal Senate.}
+\title{Downloads and tidies data on the agenda in the Federal Senate}
 \usage{
 sen_agenda(initial_date = NULL, end_date = NULL, house = NULL,
   supervisory = NULL, legislator = NULL, details = FALSE, ascii = TRUE)
@@ -34,6 +34,9 @@ necessary.}
 }
 \value{
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
+}
+\description{
+Downloads and tidies data on the agenda in the Federal Senate.
 }
 \note{
 Requesting data from a long period of time with \code{details = TRUE} will

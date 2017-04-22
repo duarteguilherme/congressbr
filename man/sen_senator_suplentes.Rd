@@ -3,13 +3,13 @@
 \name{sen_senator_suplentes}
 \alias{sen_senator_suplentes}
 \title{Downloads and tidies information on titular senators and their
-\emph{suplentes} in the Federal Senate.}
+\emph{suplentes} in the Federal Senate}
 \usage{
-sen_senator_suplentes(code = 0, ascii = TRUE)
+sen_senator_suplentes(id = 0, ascii = TRUE)
 }
 \arguments{
-\item{code}{\code{integer}. This number represents the code/id of the senator
-you wish to get information on. These codes can be extracted from the API
+\item{id}{\code{integer}. This number represents the id of the senator
+you wish to get information on. These ids can be extracted from the API
 using the \code{sen_senator_list()} function, where they will appear as the
 first column in the data frame returned, under the name 'id'.}
 
@@ -19,12 +19,16 @@ format.}
 \value{
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 }
+\description{
+Downloads and tidies information on titular senators and their
+\emph{suplentes} in the Federal Senate.
+}
 \examples{
 # A titular senator, José Serra:
-Serra <- sen_senator_suplentes(code = 90)
+Serra <- sen_senator_suplentes(id = 90)
 
 # Or one of his suplentes:
-suplente <- sen_senator_suplentes(code = 878)
+suplente <- sen_senator_suplentes(id = 878)
 
 }
 \seealso{

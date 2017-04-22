@@ -8,7 +8,8 @@
 #' @importFrom purrr flatten
 #' @importFrom tibble tibble
 #' @importFrom lubridate parse_date_time
-#' @title Search for data on legislation in the Brazilian Federal Senate.
+#' @title Search for data on legislation in the Brazilian Federal Senate
+#' @description Search for data on legislation in the Brazilian Federal Senate.
 #' @param ascii \code{logical}. If TRUE, certain strings are converted to ascii
 #' format.
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.

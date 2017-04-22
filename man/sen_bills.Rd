@@ -2,39 +2,43 @@
 % Please edit documentation in R/sen_bills.R
 \name{sen_bills}
 \alias{sen_bills}
-\title{Downloads and tidies information on the legislation in the Federal Senate.}
+\title{Downloads and tidies information on the legislation in the Federal Senate}
 \usage{
-sen_bills(id = NULL, type = NULL, number = NULL, year = NULL,
+sen_bills(bill_id = NULL, type = NULL, number = NULL, year = NULL,
   ascii = TRUE)
 }
 \arguments{
-\item{id}{\code{integer}. This number is the id given to each bill in the
+\item{bill_id}{\code{integer}. This number is the id given to each bill in the
 Senate database. For example, running \code{sen_bills_current()} will return a
  dataframe with the variable \code{bill_id} in the first column. These numbers
  can be used as this id. If id is not \code{NULL} (the default), all other
- parameters will be set to \code{NULL}, as 'id' cannot be used in conjunction
+ parameters will be set to \code{NULL}, as 'bill_id' cannot be used in conjunction
  with the other parameters.}
 
 \item{type}{\code{character}. The abbreviation of the vote type you're looking
 for. A full list of these can be obtained with the \code{sen_bill_list()}
 function. Other types can be seen with \code{sen_bills_subtypes()}.}
 
+\item{number}{. Two-letter abbreviation of Brazilian state. A list of these is
+available with the function \code{UF()}.}
+
 \item{year}{\code{integer}. Four-digit year, such as \code{2013}.}
 
 \item{ascii}{\code{logical}. If \code{TRUE}, strips Latin characters from
 strings.}
-
-\item{number.}{Two-letter abbreviation of Brazilian state. A list of these is
-available with the function \code{UF()}.}
 }
 \value{
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 }
+\description{
+Downloads and tidies information on the legislation in the Federal Senate.
+}
 \examples{
 pls_5_2010 <- sen_bills(type = "PLS", number = 5, year = 2010)
 
-# Get info on the first bill in the dataframe returned by \\code{sen_bills_current()}, which has an id of 25:
-sen25 <- sen_bills(id = 25)
+# Get info on the first bill in the dataframe returned
+# by \\code{sen_bills_current()}, which has an id of 25:
+sen25 <- sen_bills(bill_id = 25)
 }
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.

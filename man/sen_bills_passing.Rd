@@ -3,7 +3,7 @@
 \name{sen_bills_passing}
 \alias{sen_bills_passing}
 \title{Downloads and tidies information on legislation that is under
-consideration in the Federal Senate.}
+consideration in the Federal Senate}
 \usage{
 sen_bills_passing(year = NULL, number = NULL, type = NULL, date = NULL,
   time = NULL)
@@ -23,6 +23,10 @@ legislation on or after this time.}
 }
 \value{
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
+}
+\description{
+Downloads and tidies information on legislation that is under
+consideration in the Federal Senate.
 }
 \examples{
 sen_bills_passing()

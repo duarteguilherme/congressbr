@@ -4,7 +4,8 @@
 #' @importFrom magrittr '%>%'
 #' @importFrom stringi stri_trans_general
 #' @importFrom purrr map_chr
-#' @title Downloads and tidies budget information from the Federal Senate.
+#' @title Downloads and tidies budget information from the Federal Senate
+#' @description Downloads and tidies budget information from the Federal Senate.
 #' @param ascii \code{logical}. If TRUE, certain strings are converted to ascii
 #' format.
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.

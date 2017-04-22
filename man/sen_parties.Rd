@@ -3,7 +3,7 @@
 \name{sen_parties}
 \alias{sen_parties}
 \title{Downloads and tidies information on the political parties in the
-Federal Senate.}
+Federal Senate}
 \usage{
 sen_parties(ascii = TRUE)
 }
@@ -13,6 +13,10 @@ from returned object.}
 }
 \value{
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
+}
+\description{
+Downloads and tidies information on the political parties in the
+Federal Senate.
 }
 \examples{
 party <- sen_parties()

@@ -3,8 +3,7 @@
 \name{sen_bills_locations}
 \alias{sen_bills_locations}
 \title{Downloads and tidies information on the possible locations a piece
-of legislation can currently be passing through.
-the Federal Senate.}
+of legislation can currently be passing through the Federal Senate}
 \usage{
 sen_bills_locations(active = NULL, ascii = TRUE)
 }
@@ -18,6 +17,10 @@ strings.}
 }
 \value{
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
+}
+\description{
+Downloads and tidies information on the possible locations a piece
+of legislation can currently be passing through the Federal Senate.
 }
 \examples{
 sen_bills_locations()

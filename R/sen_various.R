@@ -3,7 +3,10 @@
 #' @importFrom purrr map
 #' @importFrom dplyr as_data_frame
 #' @importFrom stringi stri_trans_general
+#' @importFrom utils head
 #' @title Downloads and tidies information on the political parties in the
+#' Federal Senate
+#' @description Downloads and tidies information on the political parties in the
 #' Federal Senate.
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
@@ -30,6 +33,8 @@ sen_parties <- function(ascii = TRUE){
 
 
 #' @title Downloads and tidies information on the types of declarations senators
+#' can make in the Federal Senate
+#' @description Downloads and tidies information on the types of declarations senators
 #' can make in the Federal Senate.
 #' @param ascii \code{logical}. TRUE by default, removes latin-1 characters
 #' from returned object.
@@ -51,7 +56,7 @@ sen_statement_list <- function(ascii = TRUE, print = TRUE){
   }
   colnames(x) <- c("Abbreviation", "Description")
   if(print == TRUE){
-    head(x, n = 9L)
+    utils::head(x, n = 9L)
   }
   return(x)
 }
@@ -78,13 +83,14 @@ UF <- function(){
 
 
 
-#' @title Downloads and tidies information on the types of acts that can be formally made in Federal Senate.
-#' @param active. Possible values are \code{TRUE}, \code{FALSE}, or can be left as
+#' @title Downloads and tidies information on the types of acts that can be
+#' formally made in the Federal Senate
+#' @description Downloads and tidies information on the types of acts that
+#' can be formally made in the Federal Senate.
+#' @param active .Possible values are \code{TRUE}, \code{FALSE}, or can be left as
 #' \code{NULL}, in which case both active and inactive bill types are returned.
 #' @param ascii \code{logical}. TRUE by default, removes latin-1 characters
 #' from returned object.
-#' @param print \code{logical}. If TRUE (the default), prints the dataframe to
-#' the console.
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples

@@ -2,7 +2,7 @@
 % Please edit documentation in R/sen_budget.R
 \name{sen_budget}
 \alias{sen_budget}
-\title{Downloads and tidies budget information from the Federal Senate.}
+\title{Downloads and tidies budget information from the Federal Senate}
 \usage{
 sen_budget(ascii = TRUE)
 }
@@ -12,6 +12,9 @@ format.}
 }
 \value{
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
+}
+\description{
+Downloads and tidies budget information from the Federal Senate.
 }
 \examples{
 bud <- sen_budget()

@@ -9,6 +9,8 @@
 #' @importFrom purrr map_if
 #' @importFrom purrr is_empty
 #' @title Downloads and tidies persnonal information on senators from the
+#' Federal Senate
+#' @description Downloads and tidies persnonal information on senators from the
 #' Federal Senate.
 #' @param id \code{integer}. Unique id for a senator. A dataframe of these
 #' is available from \code{sen_senator_list()}.

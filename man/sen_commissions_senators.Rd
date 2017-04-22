@@ -3,7 +3,7 @@
 \name{sen_commissions_senators}
 \alias{sen_commissions_senators}
 \title{Information on the senators who serve on a certain commission in the
- Federal Senate.}
+ Federal Senate}
 \usage{
 sen_commissions_senators(code = NULL, ascii = TRUE)
 }
@@ -16,6 +16,10 @@ format.}
 }
 \value{
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
+}
+\description{
+Information on the senators who serve on a certain commission in the
+ Federal Senate.
 }
 \details{
 Returns a data frame with the following variables:

@@ -3,7 +3,7 @@
 \name{sen_votes}
 \alias{sen_votes}
 \title{Returns voting information from the Senate floor for the date
-requested.}
+requested}
 \usage{
 sen_votes(date = NULL, end_date = NULL, binary = TRUE, ascii = TRUE)
 }
@@ -24,6 +24,10 @@ characters from the results.}
 \value{
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 }
+\description{
+Returns voting information from the Senate floor for the date
+requested.
+}
 \note{
 The maximum period allowed by the API is currently 60 days. If the
 period requested is larger than this, an error message is returned. For a full
@@ -33,7 +37,7 @@ set of votes for each legislature, see \code{data("senate_nominal_votes")}.
 nominal_vote <- sen_votes(date = "20130516")
 
 # Some votes are secret:
-ssshhh <- sen_votes("20160301", binary = F)
+ssshhh <- sen_votes("20160301", binary = FALSE)
 
 # All votes between two periods (might take a little while):
 longer <- sen_votes(date = "20160301", end_date = "20160415")

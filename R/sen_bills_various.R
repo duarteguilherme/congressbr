@@ -10,6 +10,8 @@
 #' @importFrom purrr is_empty
 #' @importFrom purrr flatten
 #' @title Downloads and tidies information on the types of legislation in
+#' the Federal Senate
+#' @description Downloads and tidies information on the types of legislation in
 #' the Federal Senate.
 #' @param active \code{character}. Options are "Yes", "No" or \code{NULL}, the
 #' default. "Yes" returns active types, "No" returns inactive types,
@@ -57,6 +59,8 @@ sen_bills_types <- function(active = NULL, ascii = TRUE){
 
 
 #' @title Downloads and tidies information on the types of deadline and time
+#' limits for legislation in the Federal Senate
+#' @description Downloads and tidies information on the types of deadline and time
 #' limits for legislation in the Federal Senate.
 #' @param ascii \code{logical}. If \code{TRUE}, strips Latin characters from
 #' strings.
@@ -87,6 +91,8 @@ sen_bills_limits <- function(ascii = TRUE){
 
 
 #' @title Downloads and tidies information on the topics of legislation in
+#' the Federal Senate
+#' @description Downloads and tidies information on the topics of legislation in
 #' the Federal Senate.
 #' @param active \code{character}. Options are "Yes", "No" or \code{NULL}, the
 #' default. "Yes" returns active subtypes, "No" returns inactive subtypes,
@@ -133,6 +139,8 @@ sen_bills_topics <- function(active = NULL, ascii = TRUE){
 
 
 #' @title Downloads and tidies information on legislation that is under
+#' consideration in the Federal Senate
+#' @description Downloads and tidies information on legislation that is under
 #' consideration in the Federal Senate.
 #' @param year Format YYYY. Returns legislation from this year.
 #' @param date date requested, format YYYYMMDD. Returns information on
@@ -204,6 +212,8 @@ sen_bills_passing <- function(year = NULL,  number = NULL,
 
 
 #' @title Downloads and tidies information on legislation from the current
+#' legislature of the Federal Senate
+#' @description Downloads and tidies information on legislation from the current
 #' legislature of the Federal Senate.
 #' @param year Format YYYY. Returns legislation from this year.
 #' @param date date requested, format YYYYMMDD. Returns information on
@@ -277,6 +287,8 @@ sen_bills_current <- function(year = NULL, date = NULL,
 
 
 #' @title Downloads and tidies information on legislation from the current
+#' legislature of the Federal Senate
+#' @description Downloads and tidies information on legislation from the current
 #' legislature of the Federal Senate.
 #' @param bill_id \code{integer}. This number is the id given to each bill in the
 #' Senate database. For example, running \code{sen_bills_current()} will return a
@@ -342,8 +354,9 @@ sen_bills_status <- function(bill_id = NULL, ascii = TRUE){
 
 
 #' @title Downloads and tidies information on the possible locations a piece
-#' of legislation can currently be passing through.
-#' the Federal Senate.
+#' of legislation can currently be passing through the Federal Senate
+#' @description Downloads and tidies information on the possible locations a piece
+#' of legislation can currently be passing through the Federal Senate.
 #' @param active \code{character}. Options are "Yes", "No" or \code{NULL}, the
 #' default. "Yes" returns active subtypes, "No" returns inactive subtypes,
 #' while the default returns both.
@@ -397,6 +410,8 @@ sen_bills_locations <- function(active = NULL, ascii = TRUE){
 
 
 #' @title Downloads and tidies information on the possible locations a piece
+#' of legislation can currently be passing through
+#' @description  Downloads and tidies information on the possible locations a piece
 #' of legislation can currently be passing through.
 #' @param bill_id \code{integer}. This number is the id given to each bill in the
 #' Senate database. For example, running \code{sen_bills_current()} will return a
@@ -517,6 +532,8 @@ sen_bills_passage <- function(bill_id = NULL, ascii = TRUE){
 
 
 #' @title Downloads and tidies information on the possible situations a bill
+#' can be in
+#' @description Downloads and tidies information on the possible situations a bill
 #' can be in.
 #' @param ascii \code{logical}. If \code{TRUE}, strips Latin characters from
 #' strings.
@@ -553,6 +570,8 @@ sen_bills_situations <- function(ascii = TRUE){
 
 
 #' @title Downloads and tidies information on bills that have been recently
+#'  updated in the Federal Senate
+#' @description Downloads and tidies information on bills that have been recently
 #'  updated in the Federal Senate.
 #' @param update \code{character}. This is the type of update that can be applied
 #' to a bill. For a dataframe of these, use the \code{sen_bills_update_types()}
@@ -655,6 +674,8 @@ sen_bills_updates <- function(update = NULL, year = NULL,
 
 
 #' @title Downloads and tidies information on the types of updates that can be
+#' applied to bills in the Federal Senate
+#' @description Downloads and tidies information on the types of updates that can be
 #' applied to bills in the Federal Senate.
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame},
 #' with variables:
