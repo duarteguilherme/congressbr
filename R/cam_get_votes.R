@@ -2,6 +2,7 @@
 #' @importFrom xml2 xml_find_all
 #' @importFrom xml2 xml_attr
 #' @importFrom tibble tibble
+#' @importFrom tibble as_tibble
 #' @importFrom magrittr "%>%"
 #' @importFrom stringr str_trim
 #' @importFrom stringr str_detect
@@ -43,7 +44,7 @@ cam_get_votes <- function(type, number, year) {
     map_df(extract_bill_votes) %>%
     mutate(type_bill = type, number_bill = number, year_bill=year) %>%
     mutate(id_rollcall = type %p% "-" %p% number %p% "-" %p% year %p% "-" %p% id_rollcall)
-  return(data)
+  return(as_tibble(data))
 }
 
 
