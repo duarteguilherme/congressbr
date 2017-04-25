@@ -1,6 +1,6 @@
 ---
 title: "Exploring the Brazilian Chamber of Deputies"
-author: "Robert McDonnell and Danilo Freire"
+author: "Robert McDonnell, Guilherme Duarte and Danilo Freire"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >

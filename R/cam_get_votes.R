@@ -114,7 +114,7 @@ extract_votes <- function(votes) {
       name_legislator =  xml_attr(votes, "Nome"),
       uf_legislator = xml_attr(votes, "UF"),
       party_legislator = xml_attr(votes, "Partido"),
-      vote =  str_trim(xml_attr(votes, "Voto"))
+      deputy_vote =  str_trim(xml_attr(votes, "Voto"))
     )
   )
 }
