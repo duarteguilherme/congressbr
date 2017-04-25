@@ -21,7 +21,7 @@ library(congressbr)
 library(congressbr)
 ```
 
-##Votes
+## Votes
 
 `congressbr` has a dedicated function that returns a dataset with information about votes of a specific bill in the _Câmara dos Deputados_, the `cham_get_votes()` function. As we mentioned in the [Senate vignette](senate.html), the votes returned by the API are not necessarily *nominal* votes. This is because some votes are secret, thus the API only informs us if the deputy voted or not. Users have to provide the type (`type =`), number (`number =`) and year (`year =`) of the bill in question. Unfortunately, a particular bill can have more than one roll call, and the API does not provide an id to identify them. So we have provided one, the variable `id_rollcall` in the data frame. For instance, we can retrieve information about the proposition 1992/2007 with:
 
@@ -33,7 +33,7 @@ The function returns many values that may be interesting to users, such as the s
 
 We can also get information about the legislator who proposed the bill, such as his or her name (`name_legislator`), the state that he or she represents (`uf_legislator`), and his or her party affiliation (`party_legislator`). Those variables are available for each voting stage of the bill. 
 
-##Bills
+## Bills
 
 We have included two functions that retrieve details about particular bills. The first of them is `cham_bill_info()` function. This function requires three parameters, the bill's type (`type =`), number (`number =`) and year (`year =`). To retrieve the above-mentioned proposal (_projeto de emenda constitucional_), the PEC 472/1997, you can type:
 
@@ -67,7 +67,7 @@ Finally, `congressbr` also features `cham_typeauthors_bills()`, a convenience fu
 cham_typeauthors_bills()
 ```
 
-##Examples
+## Examples
 
 In this brief example, we will examine how the parties orientated their deputies to vote in the law proposition 1992/2007, the same we have downloaded with the `cham_get_votes()` function. This example makes use of the `ggplot2` package.
 
