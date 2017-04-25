@@ -5,12 +5,14 @@
 \title{Create rollcall or matrix format data structures from voting records}
 \usage{
 vote_to_rollcall(votes = NULL, legislators = NULL, bills = NULL,
-  ideal = TRUE, Stan = FALSE, binary = FALSE)
+  ideal = TRUE, Stan = FALSE)
 }
 \arguments{
 \item{votes}{\code{integer}. The recorded nominal votes. Must be in the format
-1, 0, where 1 indicates a 'Yes' vote, 0 a 'No' vote. Missing values must be \code{NA}.
-All of the \code{votes}, \code{legislators} and \code{bills} parameters must be vectors.}
+1, 0, where 1 indicates a 'Yes' vote, 0 a 'No' vote. Missing values must be
+\code{NA}.
+All of the \code{votes}, \code{legislators} and \code{bills} parameters must
+be vectors.}
 
 \item{legislators}{. This may be a vector of legislator names or id numbers.}
 
@@ -20,16 +22,29 @@ All of the \code{votes}, \code{legislators} and \code{bills} parameters must be 
 pscl and/or wnominate. If FALSE, returns a matrix suitable for use with MCMCpack or
 the JAGS modelling language.}
 
-\item{Stan}{. If TRUE, returns a named list. This list contains 'data' (the rollcalls, stripped of NA),
-'j', the qunatity of legislators, 'k', the quantity of bills, and 'N', the total number of observations.}
-}
-\value{
-A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}, or a named list.
+\item{Stan}{. If TRUE, returns a named list. This list contains 'data'
+(the rollcalls, stripped of NA), 'j', the quantity of legislators, 'k',
+the quantity of bills, and 'N', the total number of observations.}
 }
 \description{
 Returns votes from the Senate or Chamber of Deputies in a format
 that can be easily used with other R packages (wnominate, pscl, MCMCpack) or
 with the modelling languages Stan and JAGS.
+}
+\note{
+\code{votes}, \code{legislators}, \code{bills}, \code{parties} and
+\code{states} should all 'line up' so to speak. The easiest way to do this is to
+take them from the same dataframe, simply selecting the appropriate column as
+the vector to be used.
+}
+\examples{
+# get votes:
+data(senate_nominal_votes)
+votes <- senate_nominal_votes \%>\%
+    dplyr::filter(vote_date >= "2005-03-01", vote_date <= "2007-12-15")
+rc <- vote_to_rollcall(votes$senator_vote,
+                       legislators = votes$senator_name,
+                       bills = votes$bill_id)
 }
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
