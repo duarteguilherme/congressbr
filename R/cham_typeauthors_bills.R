@@ -13,11 +13,11 @@
 #' many columns.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
-#' cam_typeauthors_bills()
+#' cham_typeauthors_bills()
 #' @export
 
 
-cam_typeauthors_bills <- function(ascii=T) {
+cham_typeauthors_bills <- function(ascii=T) {
   " This function lists types of author for bills"
   link <- "http://www.camara.leg.br/SitCamaraWS/Proposicoes.asmx/ListarTiposAutores"
   data <- read_xml(link) %>%

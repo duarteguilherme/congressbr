@@ -4,25 +4,26 @@
 #' @importFrom tibble tibble
 #' @importFrom dplyr mutate_if
 #' @importFrom magrittr "%>%"
-#' @title Downloads details of a specific bill by providing id of a bill
-#' @description Downloads details of a specific bill by providing id of a bill
+#' @title Downloads details of a specific bill by providing type, number and year
+#' @description Downloads details of a specific bill by providing type, number and year
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 #' @note Requesting data from a long period of time with \code{details = TRUE} will
 #' return a large object in terms of memory. It will also be rather unwieldy, with
 #' many columns.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
-#' cam_bill_info(14784)
+#' cham_bill_info(type = "PL", number = "3962", year = "2008")
 #' @export
 
-cam_bill_info <- function(id_bill, ascii=T) {
-  if ( is.null(id_bill) ) {
-    stop("Lacking arguments. id_bill is mandatory")
+
+cham_bill_info <- function(type, number, year, ascii=T) {
+  if ( is.null(type) | is.null(number) | is.null(year) ) {
+    stop("Lacking arguments. type, number, and year are mandatory")
   }
-  link <- "http://www.camara.leg.br/SitCamaraWS/Proposicoes.asmx/ObterProposicaoPorID?IdProp=" %p%
-    id_bill
-  print(link)
+  link <- "http://www.camara.leg.br/SitCamaraWS/Proposicoes.asmx/ObterProposicao?tipo=" %p%
+    type %p% "&numero=" %p% number %p% "&ano=" %p% year
   data <- read_xml(link) %>%
+#    xml_find_all('proposicao') %>%
     extract_bill_info
   if ( ascii==T ) {
     data <- data %>%

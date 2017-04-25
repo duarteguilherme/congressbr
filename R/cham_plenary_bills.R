@@ -14,9 +14,9 @@
 #' many columns.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
-#' cam_plenary_bills(year=2008)
+#' cham_plenary_bills(year = 2008)
 #' @export
-cam_plenary_bills <- function(year, type="", ascii=T) {
+cham_plenary_bills <- function(year, type="", ascii=T) {
   "This function lists every bill voted on in plenary."
   if ( is.null(year) )  {
     stop("Lacking arguments. year is mandatory")

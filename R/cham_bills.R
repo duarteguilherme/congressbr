@@ -26,11 +26,11 @@
 #' many columns.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
-#' cam_bills(type="PL", year=1998)
+#' cham_bills(type = "PL", year = 1998)
 #' @export
 
 
-cam_bills <- function(type="",number="",year="", initial_date="", end_date="", part_name_author="", id_type_author="",
+cham_bills <- function(type="",number="",year="", initial_date="", end_date="", part_name_author="", id_type_author="",
                       abbreviation_party_author="", abbreviation_st_author="",gender_author="",
                       cod_state="", cod_branch_state="", still="", ascii=T) {
   " This function lists every bill informations according to the parameters searched"

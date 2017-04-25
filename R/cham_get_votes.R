@@ -20,9 +20,9 @@
 #' many columns.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
-#' cam_get_votes(type="PL", number="1992", year="2007")
+#' cham_get_votes(type = "PL", number = "1992", year = "2007")
 #' @export
-cam_get_votes <- function(type, number, year, ascii=T) {
+cham_get_votes <- function(type, number, year, ascii=T) {
   queue <<- 1:100 # I implemented this queue in order to build ids for rollcalls
   if ( is.null(type) | is.null(number) | is.null(year) ) {
     stop("Lacking arguments. type, number, and year are mandatory")

@@ -9,7 +9,7 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-`congressbr` makes it easy to explore the API of the Brazilian _Câmara dos Deputados_, or the Chamber of Deputies. The package contains many functions that help scholars to download, standardise and tidy data from the _Câmara_ website. This vignette shows some examples.
+`congressbr` makes it easy to explore the API of the Brazilian Chamber of Deputies, or the _Câmara dos Deputados_. The package contains many functions that help scholars to download, standardise and tidy data from the _Câmara_ website. This vignette shows some examples.
 
 First, we need to install `congressbr`. You can install the package by running: 
 ```{r, eval = F}
@@ -17,16 +17,16 @@ if(!require(devtools)){install.packages("devtools")}
 devtools::install_github("RobertMyles/congressbr")
 library(congressbr)
 ```
-```{r, echo=F, message=F, warning=F}
+```{r, echo = F, message = F, warning = F}
 library(congressbr)
 ```
 
 ##Votes
 
-`congressbr` has a dedicated function that returns a dataset with information about votes of a specific bill in the _Câmara dos Deputados_, the `cam_get_votes()` function. As we mentioned in the [Senate vignette](senate.html), the votes returned by the API are not necessarily *nominal* votes. This is because some votes are secret, thus the API only informs us if the deputy voted or not. Users have to provide the type (`type =`), number (`number =`) and year (`year =`) of the bill in question. Unfortunately, a particular bill can have more than one roll call, and the API does not provide an id to identify them. So we have provided one, the variable `id_rollcall` in the data frame. For instance, we can retrieve information about the proposition 1992/2007 with:
+`congressbr` has a dedicated function that returns a dataset with information about votes of a specific bill in the _Câmara dos Deputados_, the `cham_get_votes()` function. As we mentioned in the [Senate vignette](senate.html), the votes returned by the API are not necessarily *nominal* votes. This is because some votes are secret, thus the API only informs us if the deputy voted or not. Users have to provide the type (`type =`), number (`number =`) and year (`year =`) of the bill in question. Unfortunately, a particular bill can have more than one roll call, and the API does not provide an id to identify them. So we have provided one, the variable `id_rollcall` in the data frame. For instance, we can retrieve information about the proposition 1992/2007 with:
 
 ```{r}
-cam_get_votes(type="PL", number="1992", year="2007")
+cham_get_votes(type = "PL", number = "1992", year = "2007")
 ```
 
 The function returns many values that may be interesting to users, such as the summary of the decision (`summary_decision`), the guidelines given by the government and the opposition to the members of their respective coalitions (`orient_GOV` and `orient_Minoria`) and what political parties suggested to their deputies. In the example above, we could see how the PSDB (`orient_PSDB`) and the PSOL (`orient_PSOL`) orientated their members. 
@@ -35,61 +35,60 @@ We can also get information about the legislator who proposed the bill, such as 
 
 ##Bills
 
-We have included two functions that retrieve details about particular bills. The first of them is `cam_bill_info()`; the function requires the id of the bill. As an example, we can download some information about a [proposal for constitutional amendment by Espiridião Amin](http://www.camara.gov.br/proposicoesWeb/fichadetramitacao?idProposicao=14784), which has the id 14784, using the code below:
-
-
-```{r}
-cam_bill_info(14784)
-```
-
-Another way of downloading the same information would be to use the `cam_bill_info_tny()` function. This function requires three parameters, the bill's type (`type =`), number (`number =`) and year (`year =`). To retrieve the above-mentioned proposal (_projeto de emenda constitucional_), the PEC 472/1997, you can type:
+We have included two functions that retrieve details about particular bills. The first of them is `cham_bill_info()` function. This function requires three parameters, the bill's type (`type =`), number (`number =`) and year (`year =`). To retrieve the above-mentioned proposal (_projeto de emenda constitucional_), the PEC 472/1997, you can type:
 
 ```{r}
-cam_bill_info_tny(type="PEC", number="472", year="1997")
+cham_bill_info(type = "PEC", number = "472", year = "1997")
 ```
 
 In another example, we can download data about the law proposition (_projeto de lei_) 3892/2008 with:
 
 ```{r}
-cam_bill_info_tny(type="PL", number="3962", year="2008")
+cham_bill_info(type = "PL", number = "3962", year = "2008")
 ```
 
-The functions return 19 variables, including the decision situation of the proposition (`desc_situation`), the full text in pdf (`link_complete`), and personal information about the author of the proposition (`name_author`, `abrstate_author`, and `party_author`).
+The function return 19 variables, including the decision situation of the proposition (`desc_situation`), the full text in pdf (`link_complete`), and personal information about the author of the proposition (`name_author`, `abrstate_author`, and `party_author`).
 
-Users can download all every bill voted on in plenary in a given calendar year with `cam_plenary_bills()`. The function has a single parameter, `year = `, and returns the id of the bill (`id_bill`), its name (`name_bill`), and the day on which it was voted (`date_voted`)
+Another way of downloading the same information would be to use `cham_bill_info_id()`. The function requires the id of the bill. As an example, we can download some information about a [proposal for constitutional amendment by Espiridião Amin](http://www.camara.gov.br/proposicoesWeb/fichadetramitacao?idProposicao=14784), which has the id 14784, using the code below:
 
 ```{r}
-cam_plenary_bills(year=2008)
+cham_bill_info_id(14784)
 ```
 
-Finally, `congressbr` also features `cam_typeauthors_bills()`, a convenience function that downloads the types of authors for bills.
+Users can download all every bill voted on in plenary in a given calendar year with `cham_plenary_bills()`. The function has a single parameter, `year = `, and returns the id of the bill (`id_bill`), its name (`name_bill`), and the day on which it was voted (`date_voted`)
 
 ```{r}
-cam_typeauthors_bills()
+cham_plenary_bills(year = 2008)
+```
+
+Finally, `congressbr` also features `cham_typeauthors_bills()`, a convenience function that downloads the types of authors for bills.
+
+```{r}
+cham_typeauthors_bills()
 ```
 
 ##Examples
 
-In this brief example, we will examine how the parties orientated their deputies to vote in the law proposition 1992/2007, the same we have downloaded with the `cam_get_votes()` function. This example makes use of the `ggplot2` package.
+In this brief example, we will examine how the parties orientated their deputies to vote in the law proposition 1992/2007, the same we have downloaded with the `cham_get_votes()` function. This example makes use of the `ggplot2` package.
 
 ```{r}
 if(!require(ggplot2)){install.packages("ggplot2")}
 library(ggplot2)
 
-party_orientation <- cam_get_votes(type="PL", number="1992", year="2007")
+party_orientation <- cham_get_votes(type = "PL", number = "1992", year = "2007")
 party_orientation <- as.data.frame(t(party_orientation[1, c(7, 10:22)])) # select only one row and the columns of interest; transpose data
 names(party_orientation)[1] <- "orientation"
 
 ggplot(party_orientation, aes(x = orientation)) +
   geom_bar(aes(fill = orientation), colour = "white") +
   theme_classic() + 
-  scale_fill_hue(l=40) + 
+  scale_fill_hue(l = 40) + 
   ggtitle("Party Orientation - PL 1992/2007") +
-  labs(x="Orientation", y="Count") + 
-  theme(legend.position="none")
+  labs(x = "Orientation", y = "Count") + 
+  theme(legend.position = "none")
 ```
 
-Similarly, we could also have used the `dplyr` package to see how many parties suggested their members to vote "yay" (_sim_), "nay" ("não"), or allowed deputies to decide their votes (_liberado_).
+Similarly, we could also have used the `dplyr` package to see how many parties suggested their members to vote "yay" (_sim_), "nay" (_não_), or allowed deputies to decide their votes (_liberado_).
 
 ```{r}
 if(!require(dplyr)){install.packages("dplyr")}
