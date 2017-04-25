@@ -136,19 +136,23 @@ sen_votes <- function(date = NULL, end_date = NULL,
         bill_description = stringi::stri_trans_general(
           bill_description, "Latin-ASCII"),
         senator_name = stringi::stri_trans_general(
-          senator_name, "Latin-ASCII")
+          senator_name, "Latin-ASCII"),
+        senator_vote = stringi::stri_trans_general(
+          senator_vote, "Latin-ASCII")
       )
   }
   if(binary == TRUE){
     Votes <- Votes %>%
       dplyr::mutate(
+        senator_vote = stringi::stri_trans_general(
+          senator_vote, "Latin-ASCII"),
         senator_vote = ifelse(
           vote_secret == "Yes" & senator_vote == "Votou", "Voted",
           ifelse(
             vote_secret == "Yes" & senator_vote != "Votou", "Did not vote",
             ifelse(
               vote_secret == "No" & senator_vote == "Sim", 1,
-              ifelse(vote_secret == "No" & senator_vote == "N\u00a3o", 0, NA)
+              ifelse(vote_secret == "No" & senator_vote == "Nao", 0, NA)
             ))))
   } else{
     Votes <- Votes %>%
@@ -160,9 +164,9 @@ sen_votes <- function(date = NULL, end_date = NULL,
             ifelse(
               vote_secret == "No" & senator_vote == "Sim", "Yes",
               ifelse(
-                vote_secret == "No" & senator_vote == "N\u00a3o", "No",
+                vote_secret == "No" & senator_vote == "Nao", "No",
                 ifelse(
-                  vote_secret == "No" & senator_vote == "Absten\u00a7\u00a3o",
+                  vote_secret == "No" & senator_vote == "Abstencao",
                   "Abstained", "Other"))))))
   }
 

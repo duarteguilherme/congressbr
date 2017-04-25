@@ -11,6 +11,7 @@
 #'  \item{\code{legislature: }}{legislature number.}
 #'  \item{\code{senator_id: }}{unique id of the senator.}
 #'  \item{\code{senator_name: }}{the senator's name.}
+#'  \item{\code{senator_vote: }}{vote cast. 1 = "yes"; 0 = "no", NA = other.}
 #'  \item{\code{senator_party: }}{political party the senator was in when the vote took place.}
 #'  \item{\code{senator_state: }}{state the senator represented when the vote took place.}
 #' }
