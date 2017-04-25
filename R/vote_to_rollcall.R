@@ -22,7 +22,7 @@ vote_to_rollcall <- function(votes = NULL, legislators = NULL, bills = NULL,
   if(is.null(votes) | is.null(legislators) | is.null(bills)){
     stop("'votes', 'bills' and 'legislators' must have values.")
   }
-  if(!is.vector(votes) | !is.vector(legislators) | !is.vectors(bills)){
+  if(!is.vector(votes) | !is.vector(legislators) | !is.vector(bills)){
     stop("'votes', 'bills' and 'legislators' must be vectors.")
   }
 
@@ -34,25 +34,28 @@ vote_to_rollcall <- function(votes = NULL, legislators = NULL, bills = NULL,
   row_names <- match(legislators, nameID)
   col_names <- match(bills, voteID)
 
-  for(i in 1:length(senator)){
+  for(i in 1:length(legislators)){
     rollCallMatrix[row_names[i], col_names[i]] <- votes[i]
   }
 
   rollCallMatrix <- matrix(as.numeric(unlist(rollCallMatrix)),
                            nrow = nrow(rollCallMatrix))
   dimnames(rollCallMatrix) <- list(unique(nameID), unique(voteID))
-
-  if(pscl == TRUE){
+  
+  if(ideal == FALSE & Stan == FALSE){
+    return(rollCallMatrix)
+  }
+  
+  
+  if(ideal == TRUE){
     if(Stan == TRUE){
       message("'Stan' and 'pscl' cannot both be TRUE. 'Stan' will be ignored.")
     }
     rollcalls <- pscl::rollcall(data = rollCallMatrix)
     return(rollcalls)
   }
-  if(pscl == FALSE & Stan == FALSE){
-    return(rollCallMatrix)
-  }
-  if(pscl == FALSE & Stan == TRUE){
+  
+  if(ideal == FALSE & Stan == TRUE){
     # deleting missing values
     abstain <- which(is.na(rollCallMatrix))
     rollcalls <- rollCallMatrix[-abstain]
