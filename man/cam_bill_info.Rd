@@ -4,10 +4,13 @@
 \alias{cam_bill_info}
 \title{Downloads details of a specific bill by providing id of a bill}
 \usage{
-cam_bill_info(id_bill)
+cam_bill_info(id_bill, ascii = T)
 }
 \value{
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
+}
+\description{
+Downloads details of a specific bill by providing id of a bill
 }
 \note{
 Requesting data from a long period of time with \code{details = TRUE} will

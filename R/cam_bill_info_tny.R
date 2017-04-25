@@ -2,8 +2,10 @@
 #' @importFrom xml2 xml_find_all
 #' @importFrom xml2 xml_attr
 #' @importFrom tibble tibble
+#' @importFrom dplyr mutate_if
 #' @importFrom magrittr "%>%"
 #' @title Downloads details of a specific bill by providing type, number and year
+#' @description Downloads details of a specific bill by providing type, number and year
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 #' @note Requesting data from a long period of time with \code{details = TRUE} will
 #' return a large object in terms of memory. It will also be rather unwieldy, with
@@ -14,7 +16,7 @@
 #' @export
 
 
-cam_bill_info_tny <- function(type, number, year) {
+cam_bill_info_tny <- function(type, number, year, ascii=T) {
   if ( is.null(type) | is.null(number) | is.null(year) ) {
     stop("Lacking arguments. type, number, and year are mandatory")
   }
@@ -23,6 +25,11 @@ cam_bill_info_tny <- function(type, number, year) {
   data <- read_xml(link) %>%
 #    xml_find_all('proposicao') %>%
     extract_bill_info
+  if ( ascii==T ) {
+    data <- data %>%
+      dplyr::mutate_if(is.character, function(x) stringi::stri_trans_general(x, "Latin-ASCII")
+      )
+  }
   return(data)
 
 }

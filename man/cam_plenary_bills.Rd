@@ -4,13 +4,16 @@
 \alias{cam_plenary_bills}
 \title{This function lists every bill voted on in plenary.}
 \usage{
-cam_plenary_bills(year, type = "")
+cam_plenary_bills(year, type = "", ascii = T)
 }
 \arguments{
 \item{year}{(\code{integer}) start year of the period requested.}
 }
 \value{
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
+}
+\description{
+This function lists every bill voted on in plenary.
 }
 \note{
 Requesting data from a long period of time with \code{details = TRUE} will

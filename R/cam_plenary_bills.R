@@ -6,6 +6,7 @@
 #' @importFrom tibble tibble
 #' @importFrom magrittr "%>%"
 #' @title This function lists every bill voted on in plenary.
+#' @description This function lists every bill voted on in plenary.
 #' @param year (\code{integer}) start year of the period requested.
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 #' @note Requesting data from a long period of time with \code{details = TRUE} will
@@ -15,7 +16,7 @@
 #' @examples
 #' cam_plenary_bills(year=2008)
 #' @export
-cam_plenary_bills <- function(year, type="") {
+cam_plenary_bills <- function(year, type="", ascii=T) {
   "This function lists every bill voted on in plenary."
   if ( is.null(year) )  {
     stop("Lacking arguments. year is mandatory")
@@ -26,6 +27,12 @@ cam_plenary_bills <- function(year, type="") {
   data <- read_xml(link) %>%
     xml_find_all('proposicao') %>%
     map_df(extract_plenary_bill)
+  if ( ascii==T ) {
+    data <- data %>%
+      dplyr::mutate_if(is.character, function(x) stringi::stri_trans_general(x, "Latin-ASCII")
+      )
+  }
+
   return(data)
 }
 

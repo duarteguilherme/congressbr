@@ -2,8 +2,10 @@
 #' @importFrom xml2 xml_find_all
 #' @importFrom purrr map_df
 #' @importFrom tibble tibble
+#' @importFrom dplyr mutate_if
 #' @importFrom magrittr "%>%"
 #' @title Downloads and tidies data for lists of bills in Brazilian Chamber of Deputies
+#' @description Downloads and tidies data for lists of bills in Brazilian Chamber of Deputies
 #' @param initial_data (\code{character}) start date of the period requested.
 #' This parameter must be in the format YYYYMMDD (Year-Month-Day). A value for
 #' this parameter is necessary, all others are optional.
@@ -30,7 +32,7 @@
 
 cam_bills <- function(type="",number="",year="", initial_date="", end_date="", part_name_author="", id_type_author="",
                       abbreviation_party_author="", abbreviation_st_author="",gender_author="",
-                      cod_state="", cod_branch_state="", still="") {
+                      cod_state="", cod_branch_state="", still="", ascii=T) {
   " This function lists every bill informations according to the parameters searched"
   if ( part_name_author=="" & ( type=="" | year=="" )  ) {
     stop("Lacking arguments. part_name_author or type and year are mandatory")
@@ -52,6 +54,12 @@ cam_bills <- function(type="",number="",year="", initial_date="", end_date="", p
   data <- read_xml(link) %>%
     xml_find_all('proposicao') %>%
     map_df(extract_bill)
+  if ( ascii==T ) {
+    data <- data %>%
+      dplyr::mutate_if(is.character, function(x) stringi::stri_trans_general(x, "Latin-ASCII")
+      )
+  }
+
   return(data)
 }
 

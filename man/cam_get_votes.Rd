@@ -5,10 +5,14 @@
 \title{Downloads votes of a specific bill by providing type, number and year. A bill can have more than one roll call,
 # and the API does not provide an id to identify them So we provide one (id_rollcall).}
 \usage{
-cam_get_votes(type, number, year)
+cam_get_votes(type, number, year, ascii = T)
 }
 \value{
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
+}
+\description{
+Downloads votes of a specific bill by providing type, number and year. A bill can have more than one roll call,
+# and the API does not provide an id to identify them So we provide one (id_rollcall).
 }
 \note{
 Requesting data from a long period of time with \code{details = TRUE} will

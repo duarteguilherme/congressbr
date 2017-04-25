@@ -4,10 +4,13 @@
 \alias{cam_typeauthors_bills}
 \title{Downloads types of authors for bills}
 \usage{
-cam_typeauthors_bills()
+cam_typeauthors_bills(ascii = T)
 }
 \value{
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
+}
+\description{
+Downloads types of authors for bills
 }
 \note{
 Requesting data from a long period of time with \code{details = TRUE} will

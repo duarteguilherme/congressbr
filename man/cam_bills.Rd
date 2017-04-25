@@ -7,7 +7,8 @@
 cam_bills(type = "", number = "", year = "", initial_date = "",
   end_date = "", part_name_author = "", id_type_author = "",
   abbreviation_party_author = "", abbreviation_st_author = "",
-  gender_author = "", cod_state = "", cod_branch_state = "", still = "")
+  gender_author = "", cod_state = "", cod_branch_state = "", still = "",
+  ascii = T)
 }
 \arguments{
 \item{initial_data}{(\code{character}) start date of the period requested.
@@ -32,6 +33,9 @@ necessary.}
 }
 \value{
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
+}
+\description{
+Downloads and tidies data for lists of bills in Brazilian Chamber of Deputies
 }
 \note{
 Requesting data from a long period of time with \code{details = TRUE} will

@@ -8,8 +8,11 @@
 #' @importFrom stringr str_detect
 #' @importFrom tidyr spread
 #' @importFrom dplyr bind_cols
+#' @importFrom dplyr mutate_if
 #' @importFrom httr GET
 #' @title Downloads votes of a specific bill by providing type, number and year. A bill can have more than one roll call,
+#' # and the API does not provide an id to identify them So we provide one (id_rollcall).
+#' @description Downloads votes of a specific bill by providing type, number and year. A bill can have more than one roll call,
 #' # and the API does not provide an id to identify them So we provide one (id_rollcall).
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 #' @note Requesting data from a long period of time with \code{details = TRUE} will
@@ -19,7 +22,7 @@
 #' @examples
 #' cam_get_votes(type="PL", number="1992", year="2007")
 #' @export
-cam_get_votes <- function(type, number, year) {
+cam_get_votes <- function(type, number, year, ascii=T) {
   queue <<- 1:100 # I implemented this queue in order to build ids for rollcalls
   if ( is.null(type) | is.null(number) | is.null(year) ) {
     stop("Lacking arguments. type, number, and year are mandatory")
@@ -44,7 +47,13 @@ cam_get_votes <- function(type, number, year) {
     map_df(extract_bill_votes) %>%
     mutate(type_bill = type, number_bill = number, year_bill=year) %>%
     mutate(id_rollcall = type %p% "-" %p% number %p% "-" %p% year %p% "-" %p% id_rollcall)
-  return(as_tibble(data))
+  data <- as_tibble(data)
+  if ( ascii==T ) {
+    data <- data %>%
+      dplyr::mutate_if(is.character, function(x) stringi::stri_trans_general(x, "Latin-ASCII")
+      )
+  }
+  return(data)
 }
 
 

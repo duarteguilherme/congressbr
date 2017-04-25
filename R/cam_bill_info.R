@@ -2,8 +2,10 @@
 #' @importFrom xml2 xml_find_all
 #' @importFrom xml2 xml_attr
 #' @importFrom tibble tibble
+#' @importFrom dplyr mutate_if
 #' @importFrom magrittr "%>%"
 #' @title Downloads details of a specific bill by providing id of a bill
+#' @description Downloads details of a specific bill by providing id of a bill
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 #' @note Requesting data from a long period of time with \code{details = TRUE} will
 #' return a large object in terms of memory. It will also be rather unwieldy, with
@@ -13,7 +15,7 @@
 #' cam_bill_info(14784)
 #' @export
 
-cam_bill_info <- function(id_bill) {
+cam_bill_info <- function(id_bill, ascii=T) {
   if ( is.null(id_bill) ) {
     stop("Lacking arguments. id_bill is mandatory")
   }
@@ -22,6 +24,11 @@ cam_bill_info <- function(id_bill) {
   print(link)
   data <- read_xml(link) %>%
     extract_bill_info
+  if ( ascii==T ) {
+    data <- data %>%
+      dplyr::mutate_if(is.character, function(x) stringi::stri_trans_general(x, "Latin-ASCII")
+      )
+  }
   return(data)
 
 }
