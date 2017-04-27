@@ -31,6 +31,9 @@ function.}
 \item{details}{(\code{logical}). If details is equal to TRUE, the data returned
 is an expanded dataset with additional details. This is not recommended unless
 necessary.}
+
+\item{ascii}{\code{logical}. If TRUE, certain strings are converted to ascii
+format.}
 }
 \value{
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.

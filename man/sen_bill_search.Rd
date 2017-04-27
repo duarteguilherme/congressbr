@@ -13,6 +13,48 @@ sen_bill_search(year = "", year_law = "", topic_id = "",
   ascii = TRUE)
 }
 \arguments{
+\item{year}{\code{integer}. Four-digit year, such as \code{2013}.}
+
+\item{year_law}{\code{integer}. Year of introduction of the law, such as \code{2013}.}
+
+\item{topic_id}{\code{}.}
+
+\item{situation_id}{\code{}.}
+
+\item{date_presented_init}{\code{}.}
+
+\item{date_presented_end}{\code{}.}
+
+\item{date_situation_init}{\code{}.}
+
+\item{date_situation_end}{\code{}.}
+
+\item{complementary}{\code{}.}
+
+\item{present}{\code{}.}
+
+\item{rapporteur}{\code{}.}
+
+\item{author}{\code{}.}
+
+\item{number}{\code{}.}
+
+\item{type}{\code{}.}
+
+\item{law_number}{\code{}.}
+
+\item{keyword}{\code{}.}
+
+\item{party_abbr_author}{\code{}.}
+
+\item{author_type}{\code{}.}
+
+\item{law_type}{\code{}.}
+
+\item{author_state}{\code{}.}
+
+\item{in_passage}{\code{}.}
+
 \item{ascii}{\code{logical}. If TRUE, certain strings are converted to ascii
 format.}
 }
