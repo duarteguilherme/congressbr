@@ -6,6 +6,10 @@
 \usage{
 cham_typeauthors_bills(ascii = T)
 }
+\arguments{
+\item{ascii}{\code{logical}. If TRUE, certain strings are converted to ascii
+format.}
+}
 \value{
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 }

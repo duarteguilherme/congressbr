@@ -3,16 +3,26 @@
 \name{cham_votes}
 \alias{cham_votes}
 \title{Downloads votes of a specific bill by providing type, number and year. A bill can have more than one roll call,
-# and the API does not provide an id to identify them So we provide one (id_rollcall).}
+# and the API does not provide an id to identify them So we provide one (rollcall_id).}
 \usage{
 cham_votes(type, number, year, ascii = T)
+}
+\arguments{
+\item{type}{\code{character}. The type of the bill. For example, "PL"}
+
+\item{number}{\code{integer}. The number of the bill}
+
+\item{year}{\code{integer}. The year of the bill.}
+
+\item{ascii}{\code{logical}. If TRUE, certain strings are converted to ascii
+format.}
 }
 \value{
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 }
 \description{
 Downloads votes of a specific bill by providing type, number and year. A bill can have more than one roll call,
-# and the API does not provide an id to identify them So we provide one (id_rollcall).
+# and the API does not provide an id to identify them So we provide one (rollcall_id).
 }
 \note{
 Requesting data from a long period of time with \code{details = TRUE} will

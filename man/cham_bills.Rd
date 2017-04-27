@@ -11,25 +11,37 @@ cham_bills(type = "", number = "", year = "", initial_date = "",
   ascii = T)
 }
 \arguments{
-\item{initial_data}{(\code{character}) start date of the period requested.
+\item{type}{\code{character}. The type of the bill. For example, "PL"}
+
+\item{number}{\code{integer}. The number of the bill}
+
+\item{year}{\code{integer}. The year of the bill.}
+
+\item{initial_date}{(\code{character}) start date of the period requested.
 This parameter must be in the format YYYYMMDD (Year-Month-Day). A value for
 this parameter is necessary, all others are optional.}
 
-\item{end_data}{(\code{character}) final date for period requested. Format
+\item{end_date}{(\code{character}) final date for period requested. Format
 YYYYMMDD.}
 
-\item{house}{(\code{character}). The acronym for the legislative house
-for which results are requested. Options are SF (\emph{Senado Federal}, Federal Senate)
-and CN (\emph{Congresso Nacional}, National Congress - joint meeting of
-the Senate and Chamber).}
+\item{part_name_author}{(\code{character}). Filter bills by a part of the author's name}
 
-\item{colegiado}{To Do}
+\item{id_type_author}{(\code{character}). Filter bills by type of a branch_author for the bill.}
 
-\item{legislator}{To Do}
+\item{abbreviation_party_author}{(\code{character}). Filter bills by the party of the author}
 
-\item{details}{(\code{logical}). If details is equal to TRUE, the data returned
-is an expanded dataset with additional details. This is not recommended unless
-necessary.}
+\item{abbreviation_st_author}{(\code{character}). Filter bills by the state of the author}
+
+\item{gender_author}{(\code{character}). If "M", bills proposed by male authors are filtered. If "F", female authors. If empty, every bill is included.}
+
+\item{cod_state}{(\code{integer}). Filter bills by a part of the author's name}
+
+\item{cod_branch_state}{(\code{integer}). Filter by the id of the branch regarding the bill.}
+
+\item{still}{(\code{integer}). If 1, only bills that are still being discussed are included. If 2, only ended bills. If empty, every bill is included.}
+
+\item{ascii}{\code{logical}. If TRUE, certain strings are converted to ascii
+format.}
 }
 \value{
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.

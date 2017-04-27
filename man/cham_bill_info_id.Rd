@@ -4,7 +4,13 @@
 \alias{cham_bill_info_id}
 \title{Downloads details of a specific bill by providing id of a bill}
 \usage{
-cham_bill_info_id(id_bill, ascii = T)
+cham_bill_info_id(bill_id, ascii = T)
+}
+\arguments{
+\item{bill_id}{\code{integer}. The id number of the bill.}
+
+\item{ascii}{\code{logical}. If TRUE, certain strings are converted to ascii
+format.}
 }
 \value{
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.

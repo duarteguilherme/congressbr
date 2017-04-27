@@ -7,6 +7,8 @@
 #' @importFrom magrittr "%>%"
 #' @title Downloads types of authors for bills
 #' @description Downloads types of authors for bills
+#' @param ascii \code{logical}. If TRUE, certain strings are converted to ascii
+#' format.
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 #' @note Requesting data from a long period of time with \code{details = TRUE} will
 #' return a large object in terms of memory. It will also be rather unwieldy, with
@@ -35,8 +37,8 @@ cham_typeauthors_bills <- function(ascii=T) {
 extract_types <- function(xml) {
   return(
     tibble(
-      id_type = xml_attr(xml, "id"),
-      desc_type = xml_attr(xml, "descricao" )
+      type_id = xml_attr(xml, "id"),
+      type_desc = xml_attr(xml, "descricao" )
     )
   )
 }

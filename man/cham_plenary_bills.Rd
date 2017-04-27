@@ -8,6 +8,11 @@ cham_plenary_bills(year, type = "", ascii = T)
 }
 \arguments{
 \item{year}{(\code{integer}) start year of the period requested.}
+
+\item{type}{\code{character}. The type of the bill. For example, "PL"}
+
+\item{ascii}{\code{logical}. If TRUE, certain strings are converted to ascii
+format.}
 }
 \value{
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.

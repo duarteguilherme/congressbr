@@ -11,9 +11,14 @@
 #' @importFrom dplyr mutate_if
 #' @importFrom httr GET
 #' @title Downloads votes of a specific bill by providing type, number and year. A bill can have more than one roll call,
-#' # and the API does not provide an id to identify them So we provide one (id_rollcall).
+#' # and the API does not provide an id to identify them So we provide one (rollcall_id).
 #' @description Downloads votes of a specific bill by providing type, number and year. A bill can have more than one roll call,
-#' # and the API does not provide an id to identify them So we provide one (id_rollcall).
+#' # and the API does not provide an id to identify them So we provide one (rollcall_id).
+#' @param type \code{character}. The type of the bill. For example, "PL"
+#' @param number \code{integer}. The number of the bill
+#' @param year \code{integer}. The year of the bill.
+#' @param ascii \code{logical}. If TRUE, certain strings are converted to ascii
+#' format.
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 #' @note Requesting data from a long period of time with \code{details = TRUE} will
 #' return a large object in terms of memory. It will also be rather unwieldy, with
@@ -46,7 +51,7 @@ cham_votes <- function(type, number, year, ascii=T) {
         xml_find_all('.//Votacao') %>%
     map_df(extract_bill_votes) %>%
     mutate(type_bill = type, number_bill = number, year_bill=year) %>%
-    mutate(id_rollcall = type %p% "-" %p% number %p% "-" %p% year %p% "-" %p% id_rollcall)
+    mutate(rollcall_id = type %p% "-" %p% number %p% "-" %p% year %p% "-" %p% rollcall_id)
   data <- as_tibble(data)
   if ( ascii==T ) {
     data <- data %>%
@@ -61,12 +66,12 @@ cham_votes <- function(type, number, year, ascii=T) {
 
 extract_bill_votes <- function(bill) {
   info_bill <-     dplyr::tibble(
-    summary_decision = xml_attr(bill, "Resumo"),
-    date_decision = xml_attr(bill, "Data"),
-    time_decision = xml_attr(bill, "Hora"),
-    subject_vote = xml_attr(bill, "ObjVotacao"),
-    id_legislative_session = xml_attr(bill, "codSessao"),
-    id_rollcall = queue[1]
+    decision_summary = xml_attr(bill, "Resumo"),
+    decision_date = xml_attr(bill, "Data"),
+    decision_time = xml_attr(bill, "Hora"),
+    rollcall_subject = xml_attr(bill, "ObjVotacao"),
+    session_id = xml_attr(bill, "codSessao"),
+    rollcall_id = queue[1]
   )
   queue <<- queue[-1]
 
@@ -100,7 +105,7 @@ extract_bill_votes <- function(bill) {
 extract_orientation <- function(votacao) {
   return(
     dplyr::tibble(
-      sigla="orient_" %p% gsub("[^a-zA-z]", "", xml_attr(votacao, "Sigla")),
+      sigla=gsub("[^a-zA-z]", "", xml_attr(votacao, "Sigla")) %p% "_orientation",
       orientacao=str_trim(xml_attr(votacao, "orientacao"))
     )
   )
@@ -110,11 +115,11 @@ extract_orientation <- function(votacao) {
 extract_votes <- function(votes) {
   return(
     dplyr::tibble(
-      id_legislator =  xml_attr(votes, "ideCadastro"),
-      name_legislator =  xml_attr(votes, "Nome"),
-      uf_legislator = xml_attr(votes, "UF"),
-      party_legislator = xml_attr(votes, "Partido"),
-      deputy_vote =  str_trim(xml_attr(votes, "Voto"))
+      legislator_id =  xml_attr(votes, "ideCadastro"),
+      legislator_name =  xml_attr(votes, "Nome"),
+      legislator_state = xml_attr(votes, "UF"),
+      legislator_party = xml_attr(votes, "Partido"),
+      legislator_vote =  str_trim(xml_attr(votes, "Voto"))
     )
   )
 }
