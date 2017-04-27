@@ -12,25 +12,30 @@
 #' @description Search for data on legislation in the Brazilian Federal Senate.
 #' @param year \code{integer}. Four-digit year, such as \code{2013}.
 #' @param year_law \code{integer}. Year of introduction of the law, such as \code{2013}.
-#' @param topic_id \code{}.
-#' @param situation_id \code{}.
-#' @param date_presented_init \code{}.
-#' @param date_presented_end \code{}.
-#' @param date_situation_init \code{}.
-#' @param date_situation_end \code{}.
-#' @param complementary \code{}.
-#' @param present \code{}.
-#' @param rapporteur \code{}.
-#' @param author \code{}.
-#' @param number \code{}.
-#' @param type \code{}.
-#' @param law_number \code{}.
-#' @param keyword \code{}.
-#' @param party_abbr_author \code{}.
-#' @param author_type \code{}.
-#' @param law_type \code{}.
-#' @param author_state \code{}.
-#' @param in_passage \code{}.
+#' @param topic_id \code{character}. For a data frame of topic ids and their meanings,
+#' use \code{sen_bills_topics()}.
+#' @param situation_id \code{character}.
+#' @param date_presented_init \code{character}. Date when the bill that you're
+#' searching for was first presented. In the format YYYYMMDD.
+#' @param date_presented_end \code{character}. See above.
+#' @param date_situation_init \code{character}. See above.
+#' @param date_situation_end \code{character}. See above.
+#' @param complementary \code{character}. Either blank, "Yes", or "No".
+#' @param present \code{character}. Either blank, "Yes", or "No"; an indicator for
+#' whether the bill is current or not.
+#' @param rapporteur \code{character}. Name of the rapporteur of the bill, if known.
+#' @param author \code{character}. Author/sponsor of the bill. For a list,
+#' use \code{sen_bill_sponsors()}.
+#' @param number \code{character}. Bill number, if known.
+#' @param type \code{character}. Bill type. For a data frame of possible bill
+#' types, run \code{sen_bills_types()}.
+#' @param law_number \code{character}. Number of the law resulting from the bill,
+#' if known.
+#' @param party_abbr_author \code{character}. The short text code for the party
+#' of the author of the bill. For a list of the parties, use \code{sen_parties()}.
+#' @param author_state \code{character}. The state of the senator. For a
+#' full list, see \code{UF()}.
+#' @param in_passage \code{character}. Either blank, "Yes", or "No".
 #' @param ascii \code{logical}. If TRUE, certain strings are converted to ascii
 #' format.
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
@@ -45,10 +50,24 @@ sen_bill_search <- function(year = "", year_law = "", topic_id = "",
                         date_situation_end = "", complementary = "",
                         present = "", rapporteur = "",
                         author = "", number = "", type = "",
-                        law_number = "", keyword = "",
-                        party_abbr_author = "", author_type = "",
-                        law_type = "", author_state = "",
-                        in_passage = "", ascii = TRUE){
+                        law_number = "", party_abbr_author = "",
+                        author_state = "", in_passage = "", ascii = TRUE){
+
+  if(in_passage == "Yes"){
+    in_passage <- "S"
+  } else if(in_passage == "No"){
+    in_passage <- "N"
+  }
+  if(complementary == "Yes"){
+    complementary <- "S"
+  } else if(complementary == "No"){
+    complementary <- "N"
+  }
+  if(present == "Yes"){
+    present <- "S"
+  } else if(present == "No"){
+    present <- "N"
+  }
 
   url <- "http://legis.senado.gov.br/dadosabertos/materia/pesquisa/lista?" %p%
     "ano=" %p% year %p%
@@ -65,7 +84,6 @@ sen_bill_search <- function(year = "", year_law = "", topic_id = "",
     "&nomeRelator=" %p% rapporteur %p%
     "&numero=" %p% number %p%
     "&numeroNorma=" %p% law_number %p%
-    "&palavraChave=" %p% keyword %p%
     "&sigla=" %p% type %p%
     "&siglaPartidoAutor=" %p% party_abbr_author %p%
     "&tipoAutor=" %p% author_type %p%

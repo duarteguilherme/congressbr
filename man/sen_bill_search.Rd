@@ -8,52 +8,53 @@ sen_bill_search(year = "", year_law = "", topic_id = "",
   situation_id = "", date_presented_init = "", date_presented_end = "",
   date_situation_init = "", date_situation_end = "", complementary = "",
   present = "", rapporteur = "", author = "", number = "", type = "",
-  law_number = "", keyword = "", party_abbr_author = "",
-  author_type = "", law_type = "", author_state = "", in_passage = "",
-  ascii = TRUE)
+  law_number = "", party_abbr_author = "", author_state = "",
+  in_passage = "", ascii = TRUE)
 }
 \arguments{
 \item{year}{\code{integer}. Four-digit year, such as \code{2013}.}
 
 \item{year_law}{\code{integer}. Year of introduction of the law, such as \code{2013}.}
 
-\item{topic_id}{\code{}.}
+\item{topic_id}{\code{character}. For a data frame of topic ids and their meanings,
+use \code{sen_bills_topics()}.}
 
-\item{situation_id}{\code{}.}
+\item{situation_id}{\code{character}.}
 
-\item{date_presented_init}{\code{}.}
+\item{date_presented_init}{\code{character}. Date when the bill that you're
+searching for was first presented. In the format YYYYMMDD.}
 
-\item{date_presented_end}{\code{}.}
+\item{date_presented_end}{\code{character}. See above.}
 
-\item{date_situation_init}{\code{}.}
+\item{date_situation_init}{\code{character}. See above.}
 
-\item{date_situation_end}{\code{}.}
+\item{date_situation_end}{\code{character}. See above.}
 
-\item{complementary}{\code{}.}
+\item{complementary}{\code{character}. Either blank, "Yes", or "No".}
 
-\item{present}{\code{}.}
+\item{present}{\code{character}. Either blank, "Yes", or "No"; an indicator for
+whether the bill is current or not.}
 
-\item{rapporteur}{\code{}.}
+\item{rapporteur}{\code{character}. Name of the rapporteur of the bill, if known.}
 
-\item{author}{\code{}.}
+\item{author}{\code{character}. Author/sponsor of the bill. For a list,
+use \code{sen_bill_sponsors()}.}
 
-\item{number}{\code{}.}
+\item{number}{\code{character}. Bill number, if known.}
 
-\item{type}{\code{}.}
+\item{type}{\code{character}. Bill type. For a data frame of possible bill
+types, run \code{sen_bills_types()}.}
 
-\item{law_number}{\code{}.}
+\item{law_number}{\code{character}. Number of the law resulting from the bill,
+if known.}
 
-\item{keyword}{\code{}.}
+\item{party_abbr_author}{\code{character}. The short text code for the party
+of the author of the bill. For a list of the parties, use \code{sen_parties()}.}
 
-\item{party_abbr_author}{\code{}.}
+\item{author_state}{\code{character}. The state of the senator. For a
+full list, see \code{UF()}.}
 
-\item{author_type}{\code{}.}
-
-\item{law_type}{\code{}.}
-
-\item{author_state}{\code{}.}
-
-\item{in_passage}{\code{}.}
+\item{in_passage}{\code{character}. Either blank, "Yes", or "No".}
 
 \item{ascii}{\code{logical}. If TRUE, certain strings are converted to ascii
 format.}
