@@ -10,15 +10,15 @@
 #' @importFrom dplyr bind_cols
 #' @importFrom dplyr mutate_if
 #' @importFrom httr GET
-#' @title Downloads votes of a specific bill by providing type, number and year. A bill can have more than one roll call,
-#' # and the API does not provide an id to identify them So we provide one (rollcall_id).
+#' @title Downloads votes of a specific bill by providing type, number and year
 #' @description Downloads votes of a specific bill by providing type, number and year. A bill can have more than one roll call,
-#' # and the API does not provide an id to identify them So we provide one (rollcall_id).
-#' @param type \code{character}. The type of the bill. For example, "PL"
-#' @param number \code{integer}. The number of the bill
+#' and the API does not provide an id to identify them So we provide one (rollcall_id).
+#' @param type \code{character}. The type of the bill. For example, "PL" for law proposal ("projeto de lei"),
+#'  "PEC" for constitutional ammendments ("projeto de emenda constitucional"), "PDC" for legislative decree ("decreto legislativo"),
+#'  and "PLP" for supplementary laws ("projeto de lei complementar).
+#' @param number \code{integer}. The number of the bill.
 #' @param year \code{integer}. The year of the bill.
-#' @param ascii \code{logical}. If TRUE, certain strings are converted to ascii
-#' format.
+#' @param ascii \code{logical}. If TRUE, certain strings are converted to ascii format.
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 #' @note Requesting data from a long period of time with \code{details = TRUE} will
 #' return a large object in terms of memory. It will also be rather unwieldy, with
@@ -27,7 +27,7 @@
 #' @examples
 #' cham_votes(type = "PL", number = "1992", year = "2007")
 #' @export
-cham_votes <- function(type, number, year, ascii=T) {
+cham_votes <- function(type, number, year, ascii = TRUE) {
   queue <<- 1:100 # I implemented this queue in order to build ids for rollcalls
   if ( is.null(type) | is.null(number) | is.null(year) ) {
     stop("Lacking arguments. type, number, and year are mandatory")
@@ -38,7 +38,7 @@ cham_votes <- function(type, number, year, ascii=T) {
                    error=function(x) {
                      y <- GET(link)
                      # Handling a specific error related to the API
-                     msg_erro <- "Esta proposicao eh acessoria, atrelada a outra principal, e nao foi possivel"
+                     msg_erro <- "Esta proposicao eh acessoria e nao foi possivel baixar seu conteudo"
                     if ( str_detect(rawToChar(y$content), msg_erro) ) {
                       stop("This is not a main bill. Download is not possible")
                     }
@@ -65,7 +65,7 @@ cham_votes <- function(type, number, year, ascii=T) {
 # I'm using this queue to create an id for each rollcall
 
 extract_bill_votes <- function(bill) {
-  info_bill <-     dplyr::tibble(
+  info_bill <-  dplyr::tibble(
     decision_summary = xml_attr(bill, "Resumo"),
     decision_date = xml_attr(bill, "Data"),
     decision_time = xml_attr(bill, "Hora"),
@@ -73,7 +73,7 @@ extract_bill_votes <- function(bill) {
     session_id = xml_attr(bill, "codSessao"),
     rollcall_id = queue[1]
   )
-  queue <<- queue[-1]
+  queue <- queue[-1]
 
   # Checking Orientation
   orientation <-  bill %>%
@@ -105,8 +105,8 @@ extract_bill_votes <- function(bill) {
 extract_orientation <- function(votacao) {
   return(
     dplyr::tibble(
-      sigla=gsub("[^a-zA-z]", "", xml_attr(votacao, "Sigla")) %p% "_orientation",
-      orientacao=str_trim(xml_attr(votacao, "orientacao"))
+      sigla = gsub("[^a-zA-z]", "", xml_attr(votacao, "Sigla")) %p% "_orientation",
+      orientacao = str_trim(xml_attr(votacao, "orientacao"))
     )
   )
 }
