@@ -13,7 +13,7 @@ The API of the Brazilian Federal Senate can be explored with `congressbr` by sea
 
 `congressbr` can be installed by running: 
 ```{r, eval = F}
-if(!require(devtools)){install.packages("devtools")}
+if(!require(devtools)){install.packages("devtools", repos = "http://cran.us.r-project.org")}
 devtools::install_github("RobertMyles/congressbr")
 library(congressbr)
 ```
@@ -95,7 +95,7 @@ sen_agenda(initial_date = "20161105", end_date = "20161125")
 `congressbr` can be used for various types of analyses. As a quick example, let's explore the distribution of men and women currently sitting in the house. (This example makes use of the `ggplot2` package.)
 
 ```{r, message = F, warning = F}
-if(!require(ggplot2)){install.packages("ggplot2")}
+if(!require(ggplot2)){install.packages("ggplot2", repos = "http://cran.us.r-project.org")}
 library(ggplot2)
 
 all_sens <- sen_senator_list()
@@ -121,7 +121,9 @@ ggplot(all_sens, aes(x = status)) +
 Which states have the most *suplentes*? 
 
 ```{r}
+if(!require(dplyr)){install.packages("dplyr", repos = "http://cran.us.r-project.org")}
 library(dplyr)
+
 all_sens %>% filter(status != "Titular") %>% group_by(state) %>% 
   summarise(totals = n()) %>% arrange(desc(totals))
 ```
