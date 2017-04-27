@@ -13,7 +13,7 @@ vignette: >
 
 First, we need to install `congressbr`. You can install the package by running: 
 ```{r, eval = F}
-if(!require(devtools)){install.packages("devtools")}
+if(!require(devtools)){install.packages("devtools", repos = "http://cran.us.r-project.org")}
 devtools::install_github("RobertMyles/congressbr")
 library(congressbr)
 ```
@@ -72,7 +72,7 @@ cham_typeauthors_bills()
 In this brief example, we will examine how the parties orientated their deputies to vote in the law proposition 1992/2007, the same we have downloaded with the `cham_votes()` function. This example makes use of the `ggplot2` package.
 
 ```{r}
-if(!require(ggplot2)){install.packages("ggplot2")}
+if(!require(ggplot2)){install.packages("ggplot2", repos = "http://cran.us.r-project.org")}
 library(ggplot2)
 
 party_orientation <- cham_votes(type = "PL", number = "1992", year = "2007")
@@ -91,7 +91,7 @@ ggplot(party_orientation, aes(x = orientation)) +
 Similarly, we could also have used the `dplyr` package to see how many parties suggested their members to vote "yay" (_sim_), "nay" (_não_), or allowed deputies to decide their votes (_liberado_).
 
 ```{r}
-if(!require(dplyr)){install.packages("dplyr")}
+if(!require(dplyr)){install.packages("dplyr", repos = "http://cran.us.r-project.org")}
 library(dplyr)
 
 party_orientation %>%
