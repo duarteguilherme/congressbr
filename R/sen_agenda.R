@@ -23,6 +23,8 @@
 #' @param details (\code{logical}). If details is equal to TRUE, the data returned
 #' is an expanded dataset with additional details. This is not recommended unless
 #' necessary.
+#' @param ascii \code{logical}. If TRUE, certain strings are converted to ascii
+#' format.
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 #' @note Requesting data from a long period of time with \code{details = TRUE} will
 #' return a large object in terms of memory. It will also be rather unwieldy, with

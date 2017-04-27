@@ -10,6 +10,27 @@
 #' @importFrom lubridate parse_date_time
 #' @title Search for data on legislation in the Brazilian Federal Senate
 #' @description Search for data on legislation in the Brazilian Federal Senate.
+#' @param year \code{integer}. Four-digit year, such as \code{2013}.
+#' @param year_law \code{integer}. Year of introduction of the law, such as \code{2013}.
+#' @param topic_id \code{}.
+#' @param situation_id \code{}.
+#' @param date_presented_init \code{}.
+#' @param date_presented_end \code{}.
+#' @param date_situation_init \code{}.
+#' @param date_situation_end \code{}.
+#' @param complementary \code{}.
+#' @param present \code{}.
+#' @param rapporteur \code{}.
+#' @param author \code{}.
+#' @param number \code{}.
+#' @param type \code{}.
+#' @param law_number \code{}.
+#' @param keyword \code{}.
+#' @param party_abbr_author \code{}.
+#' @param author_type \code{}.
+#' @param law_type \code{}.
+#' @param author_state \code{}.
+#' @param in_passage \code{}.
 #' @param ascii \code{logical}. If TRUE, certain strings are converted to ascii
 #' format.
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
