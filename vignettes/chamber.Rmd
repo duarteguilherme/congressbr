@@ -12,14 +12,12 @@ vignette: >
 `congressbr` makes it easy to explore the API of the Brazilian Chamber of Deputies, or the _Câmara dos Deputados_. The package contains many functions that help researchers to download, standardise and tidy data from the _Câmara_ website. This vignette shows some examples.
 
 First, we need to install `congressbr`. You can install the package by running: 
-```{r, eval = F}
+```{r, message = F, warning=F}
 if(!require(devtools)){install.packages("devtools", repos = "http://cran.us.r-project.org")}
 devtools::install_github("RobertMyles/congressbr")
 library(congressbr)
 ```
-```{r, echo = F, message = F, warning = F}
-library(congressbr)
-```
+
 
 ## Votes
 

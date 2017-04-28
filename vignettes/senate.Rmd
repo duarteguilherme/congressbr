@@ -12,14 +12,12 @@ vignette: >
 The API of the Brazilian Federal Senate can be explored with `congressbr` by searching for details on individual senators, commissions and votes, among other options.   
 
 `congressbr` can be installed by running: 
-```{r, eval = F}
+```{r, message = F, warning = F}
 if(!require(devtools)){install.packages("devtools", repos = "http://cran.us.r-project.org")}
 devtools::install_github("RobertMyles/congressbr")
 library(congressbr)
 ```
-```{r, echo = F, message = F, warning = F}
-library(congressbr)
-```
+
 
 ## Votes
 The voting behaviour of legislators is an area of great interest both inside and outside of academia. `congressbr` has the `sen_votes()` function, which returns a data frame of votes in the Senate. These are not necessarily *nominal* votes, as some may be secret votes. In this case, the API records whether the senator voted or not. The other variables in the data frame returned pertain to the time of the vote, its number, id, year, description and its result. Information on individual senators (their party, name, id, gender and state) is also returned. This function has an argument, `binary`, which if `TRUE`, transforms the recorded (nominal) votes from "Yes" to 1 and "No" to 0. This is handy if you want to use the [wnominate](https://cran.r-project.org/web/packages/wnominate/index.html), [pscl](https://cran.r-project.org/web/packages/pscl/index.html) or [MCMCpack](https://cran.r-project.org/web/packages/MCMCpack/index.html) functions to run ideal point analyses, for example. Please note that dates are in "`yyyymmdd`" format. 
