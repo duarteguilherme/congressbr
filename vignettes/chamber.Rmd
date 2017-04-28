@@ -9,7 +9,7 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-`congressbr` makes it easy to explore the API of the Brazilian Chamber of Deputies, or the _Câmara dos Deputados_. The package contains many functions that help scholars to download, standardise and tidy data from the _Câmara_ website. This vignette shows some examples.
+`congressbr` makes it easy to explore the API of the Brazilian Chamber of Deputies, or the _Câmara dos Deputados_. The package contains many functions that help researhcers to download, standardise and tidy data from the _Câmara_ website. This vignette shows some examples.
 
 First, we need to install `congressbr`. You can install the package by running: 
 ```{r, eval = F}
@@ -41,13 +41,13 @@ We have included two functions that retrieve details about particular bills. The
 cham_bill_info(type = "PEC", number = "472", year = "1997")
 ```
 
-In another example, we can download data about the law proposition (_projeto de lei_) 3892/2008 with:
+In another example, we can download data about the law proposition (*projeto de lei*) 3892/2008 with:
 
 ```{r}
 cham_bill_info(type = "PL", number = "3962", year = "2008")
 ```
 
-The function return 19 variables, including the decision situation of the proposition (`situation_desc`), the full text in pdf (`complete_link`), and personal information about the author of the proposition (`name_author`, `author_state`, and `author_party`).
+The function return 19 variables, including the decision situation of the proposition (`situation_desc`), the full text in pdf (`complete_link`), and personal information about the author of the proposition (`author_name`, `author_state`, and `author_party`).
 
 Another way of downloading the same information would be to use `cham_bill_info_id()`. The function requires the id of the bill. As an example, we can download some information about a [proposal for constitutional amendment by Espiridião Amin](http://www.camara.gov.br/proposicoesWeb/fichadetramitacao?idProposicao=14784), which has the id 14784, using the code below:
 
@@ -71,7 +71,7 @@ cham_typeauthors_bills()
 
 In this brief example, we will examine how the parties orientated their deputies to vote in the law proposition 1992/2007, the same we have downloaded with the `cham_votes()` function. This example makes use of the `ggplot2` package.
 
-```{r}
+```{r, message = F, warning = F}
 if(!require(ggplot2)){install.packages("ggplot2", repos = "http://cran.us.r-project.org")}
 library(ggplot2)
 
@@ -88,9 +88,9 @@ ggplot(party_orientation, aes(x = orientation)) +
   theme(legend.position = "none")
 ```
 
-Similarly, we could also have used the `dplyr` package to see how many parties suggested their members to vote "yay" (_sim_), "nay" (_não_), or allowed deputies to decide their votes (_liberado_).
+Similarly, we could also have used the `dplyr` package to see how many parties suggested their members to vote "yay" (*sim*), "nay" (*não*), or allowed deputies to decide their votes (*liberado*).
 
-```{r}
+```{r, message = F, warning = F}
 if(!require(dplyr)){install.packages("dplyr", repos = "http://cran.us.r-project.org")}
 library(dplyr)
 

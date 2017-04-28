@@ -109,7 +109,10 @@ ggplot(all_sens, aes(x = gender)) +
 
 Looking at the distribution of Titular senators and deputies (*suplentes*) is also straightforward: 
 
-```{r}
+```{r, echo=-1:-2, message = F, warning = F}
+if(!require(ggplot2)){install.packages("ggplot2", repos = "http://cran.us.r-project.org")}
+library(ggplot2)
+
 ggplot(all_sens, aes(x = status)) +
   geom_bar(aes(fill = status), colour = "black") +
   theme_classic() +
@@ -120,7 +123,7 @@ ggplot(all_sens, aes(x = status)) +
 
 Which states have the most *suplentes*? 
 
-```{r}
+```{r, message = F, warning = F}
 if(!require(dplyr)){install.packages("dplyr", repos = "http://cran.us.r-project.org")}
 library(dplyr)
 

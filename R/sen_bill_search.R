@@ -86,8 +86,6 @@ sen_bill_search <- function(year = "", year_law = "", topic_id = "",
     "&numeroNorma=" %p% law_number %p%
     "&sigla=" %p% type %p%
     "&siglaPartidoAutor=" %p% party_abbr_author %p%
-    "&tipoAutor=" %p% author_type %p%
-    "&tipoNorma=" %p% law_type %p%
     "&tramitando=" %p% in_passage %p%
     "&ufAutor=" %p% author_state
 
