@@ -9,7 +9,7 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-`congressbr` makes it easy to explore the API of the Brazilian Chamber of Deputies, or the _Câmara dos Deputados_. The package contains many functions that help researhcers to download, standardise and tidy data from the _Câmara_ website. This vignette shows some examples.
+`congressbr` makes it easy to explore the API of the Brazilian Chamber of Deputies, or the _Câmara dos Deputados_. The package contains many functions that help researchers to download, standardise and tidy data from the _Câmara_ website. This vignette shows some examples.
 
 First, we need to install `congressbr`. You can install the package by running: 
 ```{r, eval = F}
