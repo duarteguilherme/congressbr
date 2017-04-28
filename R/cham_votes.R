@@ -5,8 +5,10 @@
 #' @importFrom tibble as_tibble
 #' @importFrom magrittr "%>%"
 #' @importFrom stringr str_trim
+#' @importFrom stats rnorm
 #' @importFrom stringr str_detect
 #' @importFrom tidyr spread
+#' @importFrom tidyr unite
 #' @importFrom dplyr bind_cols
 #' @importFrom dplyr mutate_if
 #' @importFrom httr GET
@@ -28,7 +30,6 @@
 #' cham_votes(type = "PL", number = "1992", year = "2007")
 #' @export
 cham_votes <- function(type, number, year, ascii = TRUE) {
-  queue <<- 1:100 # I implemented this queue in order to build ids for rollcalls
   if ( is.null(type) | is.null(number) | is.null(year) ) {
     stop("Lacking arguments. type, number, and year are mandatory")
   }
@@ -49,10 +50,14 @@ cham_votes <- function(type, number, year, ascii = TRUE) {
   )
   data <- data %>%
         xml_find_all('.//Votacao') %>%
-    map_df(extract_bill_votes) %>%
-    mutate(type_bill = type, number_bill = number, year_bill=year) %>%
-    mutate(rollcall_id = type %p% "-" %p% number %p% "-" %p% year %p% "-" %p% rollcall_id)
+    map_df(extract_bill_votes, .id = "rollcall_id") %>%
+    mutate(type_bill = type, number_bill = number, year_bill=year)
+
+  data$rollcall_id <- data$type %p% "-" %p% data$number %p% "-" %p% data$year %p% "-" %p% data$rollcall_id
+
+
   data <- as_tibble(data)
+
   if ( ascii==T ) {
     data <- data %>%
       dplyr::mutate_if(is.character, function(x) stringi::stri_trans_general(x, "Latin-ASCII")
@@ -70,10 +75,8 @@ extract_bill_votes <- function(bill) {
     decision_date = xml_attr(bill, "Data"),
     decision_time = xml_attr(bill, "Hora"),
     rollcall_subject = xml_attr(bill, "ObjVotacao"),
-    session_id = xml_attr(bill, "codSessao"),
-    rollcall_id = queue[1]
-  )
-  queue <- queue[-1]
+    session_id = xml_attr(bill, "codSessao")
+    )
 
   # Checking Orientation
   orientation <-  bill %>%
