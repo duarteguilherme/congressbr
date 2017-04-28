@@ -12,10 +12,13 @@ vignette: >
 The API of the Brazilian Federal Senate can be explored with `congressbr` by searching for details on individual senators, commissions and votes, among other options.   
 
 `congressbr` can be installed by running: 
-```{r, message = F, warning = F}
+```{r, eval=F}
 if(!require(devtools)){install.packages("devtools", repos = "http://cran.us.r-project.org")}
-devtools::install_github("RobertMyles/congressbr")
+if(!require(ggplot2)){install.packages("ggplot2", repos = "http://cran.us.r-project.org")}
+```
+```{r, message = F, warning = F}
 library(congressbr)
+library(ggplot2)
 ```
 
 
@@ -90,11 +93,9 @@ sen_agenda(initial_date = "20161105", end_date = "20161125")
 
 ### Examples
 
-`congressbr` can be used for various types of analyses. As a quick example, let's explore the distribution of men and women currently sitting in the house. (This example makes use of the `ggplot2` package.)
+`congressbr` can be used for various types of analyses. As a quick example, let's explore the distribution of men and women currently sitting in the house. (This example makes use of the ggplot2 package.)
 
 ```{r, message = F, warning = F}
-if(!require(ggplot2)){install.packages("ggplot2", repos = "http://cran.us.r-project.org")}
-library(ggplot2)
 
 all_sens <- sen_senator_list()
 
@@ -108,9 +109,6 @@ ggplot(all_sens, aes(x = gender)) +
 Looking at the distribution of Titular senators and deputies (*suplentes*) is also straightforward: 
 
 ```{r, echo=-1:-2, message = F, warning = F}
-if(!require(ggplot2)){install.packages("ggplot2", repos = "http://cran.us.r-project.org")}
-library(ggplot2)
-
 ggplot(all_sens, aes(x = status)) +
   geom_bar(aes(fill = status), colour = "black") +
   theme_classic() +

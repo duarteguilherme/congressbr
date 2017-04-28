@@ -12,10 +12,14 @@ vignette: >
 `congressbr` makes it easy to explore the API of the Brazilian Chamber of Deputies, or the _Câmara dos Deputados_. The package contains many functions that help researchers to download, standardise and tidy data from the _Câmara_ website. This vignette shows some examples.
 
 First, we need to install `congressbr`. You can install the package by running: 
-```{r, message = F, warning=F}
+```{r, eval=F}
 if(!require(devtools)){install.packages("devtools", repos = "http://cran.us.r-project.org")}
-devtools::install_github("RobertMyles/congressbr")
+if(!require(ggplot2)){install.packages("ggplot2", repos = "http://cran.us.r-project.org")}
+```
+
+```{r, message = F, warning=F}
 library(congressbr)
+library(ggplot2)
 ```
 
 
@@ -67,11 +71,9 @@ cham_typeauthors_bills()
 
 ## Examples
 
-In this brief example, we will examine how the parties orientated their deputies to vote in the law proposition 1992/2007, the same we have downloaded with the `cham_votes()` function. This example makes use of the `ggplot2` package.
+In this brief example, we will examine how the parties orientated their deputies to vote in the law proposition 1992/2007, the same we have downloaded with the `cham_votes()` function. This example makes use of the ggplot2 package.
 
 ```{r, message = F, warning = F}
-if(!require(ggplot2)){install.packages("ggplot2", repos = "http://cran.us.r-project.org")}
-library(ggplot2)
 
 party_orientation <- cham_votes(type = "PL", number = "1992", year = "2007")
 party_orientation <- as.data.frame(t(party_orientation[1, c(7, 10:22)])) # select only one row and the columns of interest; transpose data
