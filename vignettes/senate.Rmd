@@ -95,27 +95,33 @@ sen_agenda(initial_date = "20161105", end_date = "20161125")
 
 `congressbr` can be used for various types of analyses. As a quick example, let's explore the distribution of men and women currently sitting in the house. (This example makes use of the ggplot2 package.)
 
-```{r, message = F, warning = F}
+```{r, message=FALSE, warning=FALSE, echo = FALSE}
+all_sens <- sen_senator_list()
+```
+```{r, message = F, warning = F, eval = F}
 
 all_sens <- sen_senator_list()
 
-ggplot(all_sens, aes(x = gender)) +
+ggplot2::ggplot(all_sens, aes(x = gender)) +
   geom_bar(aes(fill = gender), colour = "white") +
   theme_classic() +
   scale_fill_manual(values = c("#45C74A", "#FFFF00"))
 ```
 
+![](http://i.imgur.com/wlFuQQD.png)
 
 Looking at the distribution of Titular senators and deputies (*suplentes*) is also straightforward: 
 
-```{r, echo=-1:-2, message = F, warning = F}
-ggplot(all_sens, aes(x = status)) +
+```{r, echo=-1:-2, message = F, warning = F, eval = F}
+ggplot2::ggplot(all_sens, aes(x = status)) +
   geom_bar(aes(fill = status), colour = "black") +
   theme_classic() +
   scale_fill_manual(values = c("#45C74A", "navy")) +
   theme(legend.position = "none") +
   coord_flip() 
 ```
+
+![](http://i.imgur.com/62kCGCz.png)
 
 Which states have the most *suplentes*? 
 

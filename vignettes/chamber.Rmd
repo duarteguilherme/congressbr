@@ -79,7 +79,7 @@ party_orientation <- cham_votes(type = "PL", number = "1992", year = "2007")
 party_orientation <- as.data.frame(t(party_orientation[1, c(7, 10:22)])) # select only one row and the columns of interest; transpose data
 names(party_orientation)[1] <- "orientation"
 
-ggplot(party_orientation, aes(x = orientation)) +
+ggplot2::ggplot(party_orientation, aes(x = orientation)) +
   geom_bar(aes(fill = orientation), colour = "white") +
   theme_classic() + 
   scale_fill_hue(l = 40) + 
