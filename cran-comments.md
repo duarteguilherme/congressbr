@@ -5,19 +5,20 @@
 
 ## R CMD check results
 
-0 errors | 0 warnings | 1 note
+0 errors | 0 warnings | 0 note
 
 * This is a new release.
+* There is a 404 url in the README, but this is just the CRAN badge url.
+
+### From win-builder check:
+Possibly mis-spelled words in DESCRIPTION:
+  APIs (8:98)
+  - this is not misspelt
+
+The examples with CPU or elapsed time > 10s are due to the fact that these rely on downloading data from two APIs.
 
 ## Reverse dependencies
 
 This is a new release, so there are no reverse dependencies.
 
----
 
-* I have run R CMD check on the NUMBER downstream dependencies.
-  (Summary at ...). 
-  
-* FAILURE SUMMARY
-
-* All revdep maintainers were notified of the release on RELEASE DATE.
