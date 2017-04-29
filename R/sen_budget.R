@@ -11,7 +11,9 @@
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
+#' \dontrun{
 #' bud <- sen_budget()
+#' }
 #' @export
 sen_budget <- function(ascii = TRUE){
 

@@ -26,7 +26,9 @@ with variables:
 Downloads and tidies data on the bill sponsors in the Federal Senate.
 }
 \examples{
+\dontrun{
 bills <- sen_bill_sponsors()
+}
 }
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.

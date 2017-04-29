@@ -21,7 +21,9 @@
 #' }
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
+#' \dontrun{
 #' bills <- sen_bill_sponsors()
+#' }
 #' @export
 sen_bill_sponsors <- function(ascii = TRUE){
 

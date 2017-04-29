@@ -24,10 +24,12 @@ Downloads and tidies information on senators' votes in the Federal
 Senate.
 }
 \examples{
+\dontrun{
 ant <- sen_senator_votes(id = 5529)
 
 # some have never voted, as they are suplentes:
-\dontrun{sen_senator_votes(898)}
+sen_senator_votes(898)
+}
 }
 \seealso{
 \code{sen_senator_list()}

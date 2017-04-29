@@ -30,7 +30,9 @@
 #' many columns.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
+#' \dontrun{
 #' cham_bills(type = "PL", year = 1998)
+#' }
 #' @export
 
 
