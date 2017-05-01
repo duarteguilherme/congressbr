@@ -4,11 +4,17 @@
 congressbr
 ----------
 
-congressbr is a package for extracting data from the APIs of the Brazilian Federal Senate and Chamber of Deputies, respectively.
+congressbr is a package for extracting data from the APIs of the Brazilian Federal Senate and Chamber of Deputies, respectively. We would like to include lower-level houses in future, if possible.
 
 ### Installation
 
-As of yet, congressbr is not on CRAN. It can be installed with the devtools package:
+congressbr is on CRAN, and so can be installed with the following:
+
+``` r
+install.packages("congressbr")
+```
+
+Development versions can be installed with the devtools package:
 
 ``` r
 devtools::install_github("RobertMyles/congressbr")
