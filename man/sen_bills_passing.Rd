@@ -29,11 +29,13 @@ Downloads and tidies information on legislation that is under
 consideration in the Federal Senate.
 }
 \examples{
+\dontrun{
 sen_bills_passing()
 # All MPVs (provisional presidential decrees) in 2001:
 mpvs <- sen_bills_passing(year = "2001", type = "MPV")
 # Bills from a certain date:
 march01_2017 <- sen_bills_passing(date = 20170301)
+}
 }
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.

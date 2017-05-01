@@ -34,6 +34,7 @@ period requested is larger than this, an error message is returned. For a full
 set of votes for each legislature, see \code{data("senate_nominal_votes")}.
 }
 \examples{
+\dontrun{
 nominal_vote <- sen_votes(date = "20130516")
 
 # Some votes are secret:
@@ -41,6 +42,7 @@ ssshhh <- sen_votes("20160301", binary = FALSE)
 
 # All votes between two periods (might take a little while):
 longer <- sen_votes(date = "20160301", end_date = "20160415")
+}
 }
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.

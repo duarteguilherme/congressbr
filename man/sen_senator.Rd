@@ -36,9 +36,11 @@ Setting \code{affiliations}, \code{mandates} and particularly
 \code{absences} to \code{TRUE} will result in a rather bloated data frame.
 }
 \examples{
+\dontrun{
 benedito <- sen_senator(id = 3823)
 aecio <- sen_senator(id = 391, absences = TRUE)
 juc <- sen_senator(73)
+}
 }
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.

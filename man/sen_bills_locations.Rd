@@ -23,7 +23,9 @@ Downloads and tidies information on the possible locations a piece
 of legislation can currently be passing through the Federal Senate.
 }
 \examples{
+\dontrun{
 sen_bills_locations()
+}
 }
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.

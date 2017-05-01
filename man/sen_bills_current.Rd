@@ -33,8 +33,10 @@ Downloads and tidies information on legislation from the current
 legislature of the Federal Senate.
 }
 \examples{
+\dontrun{
 all <- sen_bills_current()
 plc_2015 <- sen_bills_current(year = 2015, type = "PLS")
+}
 }
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.

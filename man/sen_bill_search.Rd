@@ -67,7 +67,9 @@ Search for data on legislation in the Brazilian Federal Senate.
 }
 \examples{
 # search for legislation from 2014:
+\dontrun{
 two14 <- sen_bill_search(year = 2014)
+}
 }
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.

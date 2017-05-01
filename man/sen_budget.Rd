@@ -17,7 +17,9 @@ A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 Downloads and tidies budget information from the Federal Senate.
 }
 \examples{
+\dontrun{
 bud <- sen_budget()
+}
 }
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.

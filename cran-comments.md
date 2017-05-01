@@ -15,7 +15,7 @@ Possibly mis-spelled words in DESCRIPTION:
   APIs (8:98)
   - this is not misspelt
 
-The examples with CPU or elapsed time > 10s are due to the fact that these rely on downloading data from two APIs.
+The examples with CPU or elapsed time > 10s are due to the fact that these rely on downloading data from two APIs. We have reduced all examples to less than 5 seconds.
 
 ## Reverse dependencies
 

@@ -152,11 +152,13 @@ sen_bills_topics <- function(active = NULL, ascii = TRUE){
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
+#' \dontrun{
 #' sen_bills_passing()
 #' # All MPVs (provisional presidential decrees) in 2001:
 #' mpvs <- sen_bills_passing(year = "2001", type = "MPV")
 #' # Bills from a certain date:
 #' march01_2017 <- sen_bills_passing(date = 20170301)
+#' }
 #' @export
 sen_bills_passing <- function(year = NULL,  number = NULL,
                               type = NULL, date = NULL,
@@ -228,8 +230,10 @@ sen_bills_passing <- function(year = NULL,  number = NULL,
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
+#' \dontrun{
 #' all <- sen_bills_current()
 #' plc_2015 <- sen_bills_current(year = 2015, type = "PLS")
+#' }
 #' @export
 sen_bills_current <- function(year = NULL, date = NULL,
                               time = NULL, number = NULL,
@@ -365,7 +369,9 @@ sen_bills_status <- function(bill_id = NULL, ascii = TRUE){
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
+#' \dontrun{
 #' sen_bills_locations()
+#' }
 #' @export
 sen_bills_locations <- function(active = NULL, ascii = TRUE){
 
