@@ -25,9 +25,6 @@
 #' @param ascii \code{logical}. If TRUE, certain strings are converted to ascii
 #' format.
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
-#' @note Requesting data from a long period of time with \code{details = TRUE} will
-#' return a large object in terms of memory. It will also be rather unwieldy, with
-#' many columns.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
 #' \dontrun{
