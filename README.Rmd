@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 [![CRAN_Download_Badge](http://cranlogs.r-pkg.org/badges/congressbr)](https://CRAN.R-project.org/package=congressbr)
 [![CRAN_Download_Badge](http://cranlogs.r-pkg.org/badges/grand-total/congressbr)](https://CRAN.R-project.org/package=congressbr)  
 
-## congressbr
+## `r emo::ji("brazil")` congressbr
 
 congressbr is a package for extracting data from the APIs of the Brazilian Federal Senate and Chamber of Deputies, respectively. We would like to include lower-level houses in future, if possible.
 
