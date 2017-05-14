@@ -43,7 +43,8 @@ sen_commission_positions <- function(active = c("Yes", "No"),
   req <- req$ListaTiposCargo$Cargos$Cargo
   N <- NA_character_
 
-  jobs <- purrr::map_df(req, tibble::as_tibble)
+  jobs <- purrr::map_df(req, tibble::as_tibble) %>%
+    setNames(c('comm_position_id', 'comm_position', 'comm_position_active'))
 
   if(ascii == TRUE){
     jobs <- jobs %>%
