@@ -6,3 +6,4 @@
 ^README-.*\.png$
 ^R/devtools_stuff.R$
 ^codecov\.yml$
+^appveyor\.yml$
