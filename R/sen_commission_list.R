@@ -32,7 +32,7 @@ sen_commission_positions <- function(active = c("Yes", "No"),
 
 
   act <- match.arg(active)
-  if(act == "No"){
+  if(act == "No") {
     url <- "http://legis.senado.gov.br/dadosabertos/comissao/lista/tiposCargo?indAtivos=N"
   } else{
     url <- "http://legis.senado.gov.br/dadosabertos/comissao/lista/tiposCargo"
@@ -43,11 +43,7 @@ sen_commission_positions <- function(active = c("Yes", "No"),
   req <- req$ListaTiposCargo$Cargos$Cargo
   N <- NA_character_
 
-  jobs <- tibble::tibble(
-    comm_position_id = purrr::map_chr(req, .null = N, "Codigo"),
-    comm_position = purrr::map_chr(req, .null = N, "Descri\u00a7\u00a3o"),
-    comm_position_active = purrr::map_chr(req, .null = N, "Ativo")
-  )
+  jobs <- purrr::map_df(req, tibble::as_tibble)
 
   if(ascii == TRUE){
     jobs <- jobs %>%
