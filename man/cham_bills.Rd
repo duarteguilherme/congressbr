@@ -49,11 +49,6 @@ A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 \description{
 Downloads and tidies data for lists of bills in Brazilian Chamber of Deputies
 }
-\note{
-Requesting data from a long period of time with \code{details = TRUE} will
-return a large object in terms of memory. It will also be rather unwieldy, with
-many columns.
-}
 \examples{
 \dontrun{
 cham_bills(type = "PL", year = 1998)

@@ -22,11 +22,6 @@ A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 \description{
 Downloads details of a specific bill by providing type, number and year
 }
-\note{
-Requesting data from a long period of time with \code{details = TRUE} will
-return a large object in terms of memory. It will also be rather unwieldy, with
-many columns.
-}
 \examples{
 cham_bill_info(type = "PL", number = "3962", year = "2008")
 }
