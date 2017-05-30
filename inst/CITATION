@@ -1,0 +1,19 @@
+citHeader("To cite congressbr in publications use:")
+
+citEntry(entry = "Article",
+  title        = "{congressbr}: An R Package for Analysing Data from Brazil's Chamber of Deputies and Federal Senate",
+  author       = personList(as.person("Robert Myles McDonnell"),
+                   as.person("Guilherme Jardim Duarte"),
+		   as.person("Danilo Freire"),
+		   as.person("Julio Trecenti")),
+  journal      = "SocArXiv",
+  year         = "2017",
+  pages        = "1--11",
+  url          = "https://osf.io/n5jd8",
+
+  textVersion  =
+  paste("Robert Myles McDonnell, Guilherme Jardim Duarte, Danilo Freire, Julio Trecenti (2017).",
+        "congressbr: An R Package for Analysing Data from Brazil's Chamber of Deputies and Federal Senate.",
+        "SocArXiv, 1-11.",
+        "URL https://osf.io/n5jd8.")
+)
