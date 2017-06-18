@@ -5,7 +5,7 @@
 \alias{statesBR}
 \title{A dataframe of Brazilian states, by their \emph{sigla} (acronym) and full
 name.}
-\format{A data frame with 26 rows and 2 variables}
+\format{A data frame with 27 rows and 2 variables}
 \usage{
 statesBR
 }
