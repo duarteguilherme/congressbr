@@ -30,7 +30,9 @@ A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 Downloads and tidies information on the senators in the Federal Senate.
 }
 \examples{
+\dontrun{
 all <- sen_senator_legis(start = 50)
+}
 }
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.

@@ -28,10 +28,12 @@ A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 Downloads and tidies information on the senators in the Federal Senate.
 }
 \examples{
-all <- sen_senator_list()
+\dontrun{all <- sen_senator_list()}
 
 # Who represents Rio de Janeiro?
+\dontrun{
 rj <- sen_senator_list(state = "RJ")
+}
 }
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.

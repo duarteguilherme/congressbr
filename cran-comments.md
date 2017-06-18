@@ -1,3 +1,20 @@
+## Version 0.1.1 
+
+- Fixed a missing state in the data and three functions. 
+
+There is a message on the win build check:
+
+Found the following (possibly) invalid URLs:
+  URL: https://cran.r-project.org/web/packages/congressbr/congressbr.pdf
+    From: README.md
+    Status: 200
+    Message: OK
+    CRAN URL not in canonical form
+  The canonical URL of the CRAN page for a package is 
+    https://CRAN.R-project.org/package=pkgname
+
+However, this is just a link used in the README, it's not the main link for the package we're citing.  
+
 ## Test environments
 * local OS X install, R 3.3.2
 * ubuntu 12.04 (on travis-ci), R 3.3.2
