@@ -20,10 +20,12 @@
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
-#' all <- sen_senator_list()
+#' \dontrun{all <- sen_senator_list()}
 #'
 #' # Who represents Rio de Janeiro?
+#' \dontrun{
 #' rj <- sen_senator_list(state = "RJ")
+#' }
 #' @export
 sen_senator_list <- function(present = TRUE, state = NULL,
                              status = NULL, ascii = TRUE){
@@ -43,7 +45,7 @@ sen_senator_list <- function(present = TRUE, state = NULL,
     ufs <- c("AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES",
              "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR",
              "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC",
-             "SP", "SE")
+             "SP", "SE", "TO")
     if(state %ni% ufs){
       stop("Please enter a valid state. A list can be obtained from 'UF()'.")
     }
@@ -155,7 +157,9 @@ sen_senator_list <- function(present = TRUE, state = NULL,
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
+#' \dontrun{
 #' all <- sen_senator_legis(start = 50)
+#' }
 #' @export
 sen_senator_legis <- function(start = NULL, end = NULL,
                               state = NULL, status = NULL,
@@ -168,7 +172,7 @@ sen_senator_legis <- function(start = NULL, end = NULL,
     ufs <- c("AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES",
              "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR",
              "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC",
-             "SP", "SE")
+             "SP", "SE", "TO")
     if(state %ni% ufs){
       stop("Please enter a valid state. A list can be obtained from 'UF()'.")
     }

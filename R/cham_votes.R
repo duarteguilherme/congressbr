@@ -27,7 +27,7 @@
 #' many columns.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
-#' cham_votes(type = "PL", number = "1992", year = "2007")
+#' \dontrun{cham_votes(type = "PL", number = "1992", year = "2007")}
 #' @export
 cham_votes <- function(type, number, year, ascii = TRUE) {
   if ( is.null(type) | is.null(number) | is.null(year) ) {
