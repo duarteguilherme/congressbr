@@ -47,6 +47,35 @@ You can learn more about the package with the vignettes. Run `vignette("Explorin
 
 If you would like to get involved, feel free to fork the repo. We've been using the [Udacity Git Commit Message Style Guide](https://udacity.github.io/git-styleguide/) (well, not *always*). There are a list of open [issues](https://github.com/RobertMyles/congressbr/issues), which is a good place to start. The API of the Federal Senate is also under development, and so elements of this package may change. If you find any problems with the package, please open an issue and leave us a reproducible example and we'll get it fixed asap.
 
+### Citation
+
+If you use this package in academic work, it can be cited with:
+
+``` r
+
+citation("congressbr")
+```
+
+which will give you:
+
+    To cite package ‘congressbr’ in publications use:
+
+      Robert Myles McDonnell, Guilherme Jardim Duarte and Danilo Freire (2017). congressbr:
+      Downloads, Unpacks and Tidies Legislative Data from the Brazilian Federal Senate and
+      Chamber of Deputies. R package version 0.1.0.
+      https://CRAN.R-project.org/package=congressbr
+
+    A BibTeX entry for LaTeX users is
+
+      @Manual{,
+        title = {congressbr: Downloads, Unpacks and Tidies Legislative Data from the
+    Brazilian Federal Senate and Chamber of Deputies},
+        author = {Robert Myles McDonnell and Guilherme Jardim Duarte and Danilo Freire},
+        year = {2017},
+        note = {R package version 0.1.0},
+        url = {https://CRAN.R-project.org/package=congressbr},
+      }
+
 List of functions
 -----------------
 
