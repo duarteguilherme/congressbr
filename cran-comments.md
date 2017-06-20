@@ -1,19 +1,7 @@
 ## Version 0.1.1 
 
 - Fixed a missing state in the data and three functions. 
-
-There is a message on the win build check:
-
-Found the following (possibly) invalid URLs:
-  URL: https://cran.r-project.org/web/packages/congressbr/congressbr.pdf
-    From: README.md
-    Status: 200
-    Message: OK
-    CRAN URL not in canonical form
-  The canonical URL of the CRAN page for a package is 
-    https://CRAN.R-project.org/package=pkgname
-
-However, this is just a link used in the README, it's not the main link for the package we're citing.  
+- Fixed canonical url in README.
 
 ## Test environments
 * local OS X install, R 3.3.2
@@ -23,19 +11,4 @@ However, this is just a link used in the README, it's not the main link for the 
 ## R CMD check results
 
 0 errors | 0 warnings | 0 note
-
-* This is a new release.
-* There is a 404 url in the README, but this is just the CRAN badge url.
-
-### From win-builder check:
-Possibly mis-spelled words in DESCRIPTION:
-  APIs (8:98)
-  - this is not misspelt
-
-The examples with CPU or elapsed time > 10s are due to the fact that these rely on downloading data from two APIs. We have reduced all examples to less than 5 seconds.
-
-## Reverse dependencies
-
-This is a new release, so there are no reverse dependencies.
-
 

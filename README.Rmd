@@ -92,7 +92,7 @@ Brazilian Federal Senate and Chamber of Deputies},
 
 ## List of functions  
 
-For convenience, we list here the functions of the package. More details are available [here](https://cran.r-project.org/web/packages/congressbr/congressbr.pdf). 
+For convenience, we list here the functions of the package. More details are available [here](https://CRAN.R-project.org/package=congressbr). 
 
 - `cham_bills`: Downloads and tidies data for lists of bills in Brazilian Chamber of Deputies. 
 - `cham_bill_info`: Downloads details of a specific bill by providing type, number and year.  
