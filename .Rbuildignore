@@ -7,3 +7,4 @@
 ^R/devtools_stuff.R$
 ^codecov\.yml$
 ^appveyor\.yml$
+^docs$

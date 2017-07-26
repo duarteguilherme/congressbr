@@ -2,8 +2,11 @@ Package: congressbr
 Type: Package
 Title: Downloads, Unpacks and Tidies Legislative Data from the Brazilian Federal Senate and Chamber of Deputies
 Version: 0.1.1
-Author: Robert Myles McDonnell, Guilherme Jardim Duarte and Danilo Freire
-Maintainer: Robert Myles McDonnell <robertmylesmcdonnell@gmail.com>
+Authors@R: c(
+    person("Robert", "McDonnell", , "mcdonnell.robert5@gmail.com", c("aut", "cre")),
+    person("Guilherme", "Jardim Duarte", , "gjardimduarte@gmail.com", c("aut", "cre")),
+    person("Danilo", "Freire", , "danilofreire@gmail.com", c("aut", "cre"))
+    )
 Description: Downloads and tidies data from the Brazilian Federal Senate and Chamber of Deputies Application Programming Interfaces available at <http://legis.senado.gov.br/dadosabertos/> and <http://www.camara.leg.br/SitCamaraWS/> respectively.
 License: MIT + file LICENSE
 Encoding: UTF-8
