@@ -150,7 +150,7 @@ sen_bill_search <- function(year = "", year_law = "", topic_id = "",
                                                 "NomeCasaLocal")
   )
 
-  if(ascii == TRUE){
+  if(isTRUE(ascii)){
     votes <- votes %>%
       dplyr::mutate(
         bill_type = stringi::stri_trans_general(

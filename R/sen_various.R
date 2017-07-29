@@ -21,7 +21,7 @@ sen_parties <- function(ascii = TRUE){
   x <- x$ListaPartidos$Partidos$Partido
   x <- purrr::map(x, dplyr::as_data_frame)
   x <- do.call(rbind, x)
-  if(ascii == TRUE){
+  if(isTRUE(ascii)){
     x$Nome <- stringi::stri_trans_general(x$Nome, "Latin-ASCII")
   }
   colnames(x) <- c("party_id", "party_abbr", "party_name", "date_created")
@@ -51,11 +51,11 @@ sen_statement_list <- function(ascii = TRUE, print = TRUE){
   x <- x$ListaTiposPronunciamento$TiposPronunciamento$TipoPronunciamento
   x <- purrr::map(x, dplyr::as_data_frame)
   x <- do.call(rbind, x)
-  if(ascii == TRUE){
+  if(isTRUE(ascii)){
     x$Descricao <- stringi::stri_trans_general(x$Descricao, "Latin-ASCII")
   }
   colnames(x) <- c("Abbreviation", "Description")
-  if(print == TRUE){
+  if(isTRUE(print)){
     utils::head(x, n = 9L)
   }
   return(x)
@@ -101,7 +101,7 @@ sen_bills_list <- function(active = NULL, ascii = TRUE){
   base_url <- "http://legis.senado.gov.br/dadosabertos/materia/tiposNorma"
 
   if(!is.null(active)){
-    if(active == TRUE){
+    if(isTRUE(active)){
       active <- "?indAtivos=S"
     } else{
       active <- "?indAtivos=N"
@@ -118,7 +118,7 @@ sen_bills_list <- function(active = NULL, ascii = TRUE){
     bill_abbr = purrr::map_chr(request, "Sigla", .null = NA_character_),
     bill_description = purrr::map_chr(request, "Descricao", .null = NA_character_)
   )
-  if(ascii == TRUE){
+  if(isTRUE(ascii)){
     bills$bill_description <- stringi::stri_trans_general(
       bills$bill_description, "Latin-ASCII")
   }

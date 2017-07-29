@@ -39,7 +39,7 @@ sen_budget <- function(ascii = TRUE){
   req <- req %>%
     dplyr::mutate(active = ifelse(active == "Sim", "Yes", "No"))
 
-  if(ascii == FALSE){
+  if(!isTRUE(ascii)){
     return(req)
   } else{
     req <- req %>%

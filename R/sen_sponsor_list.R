@@ -45,7 +45,7 @@ sen_bill_sponsors <- function(ascii = TRUE){
   )
 
 
-  if(ascii == TRUE){
+  if(isTRUE(ascii)){
     result <- result %>%
       dplyr::mutate(
         sponsor_name = stringi::stri_trans_general(sponsor_name,
@@ -95,7 +95,7 @@ sen_sponsor_types <- function(ascii = TRUE){
                                   .null = NA_character_)
   )
 
-  if(ascii == TRUE){
+  if(isTRUE(ascii)){
     req <- req %>%
       dplyr::mutate(
         sponsor_abbr = stringi::stri_trans_general(sponsor_abbr,

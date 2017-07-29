@@ -46,7 +46,7 @@ sen_commission_positions <- function(active = c("Yes", "No"),
   jobs <- purrr::map_df(req, tibble::as_tibble) %>%
     stats::setNames(c('comm_position_id', 'comm_position', 'comm_position_active'))
 
-  if(ascii == TRUE){
+  if(isTRUE(ascii)){
     jobs <- jobs %>%
       dplyr::mutate(comm_position_active = ifelse(
         comm_position_active == "S", "Yes", "No"
@@ -123,7 +123,7 @@ sen_commissions <- function(active = c("Yes", "No"),
     commission_public = ifelse(commission_public == "S", "Yes", "No")
     )
 
-  if(ascii == TRUE){
+  if(isTRUE(ascii)){
     coms <- coms %>%
       dplyr::mutate(commission_type = stringi::stri_trans_general(
         commission_type, "Latin-ASCII"
@@ -201,7 +201,7 @@ sen_commissions_type <- function(type = c("permanent", "cpi", "temporary"),
       active = ifelse(active == "S", "Yes", "No")
     )
 
-  if(ascii == TRUE){
+  if(isTRUE(ascii)){
     comms <- comms %>%
       dplyr::mutate(
         commission_name = stringi::stri_trans_general(
@@ -273,7 +273,7 @@ sen_commissions_senators <- function(code = NULL, ascii = TRUE){
       senator_name = gsub("Senadora ", "", senator_name)
     )
 
-  if(ascii == TRUE){
+  if(isTRUE(ascii)){
     com <- com %>%
       dplyr::mutate(
         commission = stringi::stri_trans_general(

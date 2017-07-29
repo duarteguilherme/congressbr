@@ -132,7 +132,7 @@ sen_votes <- function(date = NULL, end_date = NULL,
       vote_secret = ifelse(vote_secret == "S", "Yes", "No")
     )
 
-  if(ascii == TRUE){
+  if(isTRUE(ascii)){
     Votes <- Votes %>%
       dplyr::mutate(
         bill_description = stringi::stri_trans_general(
@@ -143,7 +143,7 @@ sen_votes <- function(date = NULL, end_date = NULL,
           senator_vote, "Latin-ASCII")
       )
   }
-  if(binary == TRUE){
+  if(isTRUE(binary)){
     Votes <- Votes %>%
       dplyr::mutate(
         senator_vote = stringi::stri_trans_general(

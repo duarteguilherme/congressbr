@@ -78,7 +78,7 @@ sen_coalition_info <- function(code = NULL, ascii = TRUE){
 
   result <- suppressMessages(dplyr::full_join(result, cp))
 
-  if(ascii == FALSE){
+  if(!isTRUE(ascii)){
     return(result)
   } else{
     result <- result %>%

@@ -76,7 +76,7 @@ sen_plenary_result <- function(date = NULL, ascii = TRUE){
         session_date, "Ymd"
       )
     )
-  if(ascii == TRUE){
+  if(isTRUE(ascii)){
     req <- req %>%
       dplyr::mutate(
         session_type = stringi::stri_trans_general(
@@ -99,7 +99,7 @@ sen_plenary_result <- function(date = NULL, ascii = TRUE){
     bill_sponsor = purrr::map_chr(items, .null = N, "autorMateria")
   )
 
-  if(ascii == TRUE){
+  if(isTRUE(ascii)){
     item <- item %>%
       dplyr::mutate(
         bill = stringi::stri_trans_general(
@@ -158,7 +158,7 @@ sen_plenary_sessions <- function(active = c("Yes", "No"), ascii = TRUE){
                                          .null = N)
   )
 
-  if(ascii == TRUE){
+  if(isTRUE(ascii)){
     req <- req %>%
       dplyr::mutate(
         session_description = stringi::stri_trans_general(
@@ -238,7 +238,7 @@ sen_plenary_agenda <- function(period = c("month", "day"),
                                     "DescricaoTipoEvento"),
         event_description = purrr::map_chr(event, .null = N, "DescricaoEvento")
       )
-    if(ascii == TRUE){
+    if(isTRUE(ascii)){
       req <- req %>%
         dplyr::mutate(
           event_type = stringi::stri_trans_general(
@@ -256,7 +256,7 @@ sen_plenary_agenda <- function(period = c("month", "day"),
       )
     )
 
-  if(ascii == TRUE){
+  if(isTRUE(ascii)){
     req <- req %>%
       dplyr::mutate(
         session_number = stringi::stri_trans_general(
@@ -290,7 +290,7 @@ sen_plenary_leaderships <- function(parties = TRUE, ascii = TRUE){
   N <- NA_character_
   request <- request$Liderancas$DadosLiderancas$Lideranca
 
-  if(parties == TRUE){
+  if(isTRUE(parties)){
     # annoying list, done in two stages:
     parl <- purrr::map(request, "Parlamentares") %>% purrr::flatten()
 
@@ -317,7 +317,7 @@ sen_plenary_leaderships <- function(parties = TRUE, ascii = TRUE){
     Parl <- suppressMessages(dplyr::full_join(parlam, parlam2)) %>%
       dplyr::arrange(party) %>% dplyr::distinct(.keep_all = TRUE)
 
-    if(ascii == TRUE){
+    if(isTRUE(ascii)){
       Parl <- Parl %>%
         dplyr::mutate(
           leader_type = stringi::stri_trans_general(
@@ -333,7 +333,7 @@ sen_plenary_leaderships <- function(parties = TRUE, ascii = TRUE){
       unit_type = purrr::map_chr(request, .null = N, "SiglaUnidLideranca"),
       num_members = purrr::map_chr(request, .null = N, "Membros")
     )
-    if(ascii == TRUE){
+    if(isTRUE(ascii)){
       leaders <- leaders %>%
         dplyr::mutate(unit_name = stringi::stri_trans_general(
           unit_name, "Latin-ASCII"))

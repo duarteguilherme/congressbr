@@ -33,7 +33,7 @@ sen_senator_list <- function(present = TRUE, state = NULL,
 
   base_url <- "http://legis.senado.gov.br/dadosabertos/senador/lista/"
 
-  if(present == TRUE){
+  if(isTRUE(present)){
     present <- "atual?"
     base_url <- base_url %p% present
   } else{
@@ -122,7 +122,7 @@ sen_senator_list <- function(present = TRUE, state = NULL,
 
   result <- dplyr::bind_cols(parl, mandate)
 
-  if(ascii == TRUE){
+  if(isTRUE(ascii)){
     result <- result %>%
       mutate(name_full = stringi::stri_trans_general(name_full,
                                                      "Latin-ASCII"),
@@ -269,7 +269,7 @@ sen_senator_legis <- function(start = NULL, end = NULL,
 
   result <- dplyr::bind_cols(parl, mandate)
 
-  if(ascii == TRUE){
+  if(isTRUE(ascii)){
     result <- result %>%
       mutate(name_full = stringi::stri_trans_general(name_full,
                                                      "Latin-ASCII"),

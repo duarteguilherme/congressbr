@@ -82,7 +82,7 @@ sen_senator <- function(id = NULL, affiliations = TRUE,
     office_email = purrr::map_chr(request, "email", .null = N)
   )
 
-  if(ascii == TRUE){
+  if(isTRUE(ascii)){
     sen <- sen %>%
       dplyr::mutate(
         name_full = stringi::stri_trans_general(
@@ -103,7 +103,7 @@ sen_senator <- function(id = NULL, affiliations = TRUE,
       )
   }
 
-  if(affiliations == TRUE){
+  if(isTRUE(affiliations)){
     party <- purrr::map(fili, "partido", .null = N)
 
     parties <- tibble::tibble(
@@ -130,7 +130,7 @@ sen_senator <- function(id = NULL, affiliations = TRUE,
         )
       )
 
-    if(ascii == TRUE){
+    if(isTRUE(ascii)){
       parties <- parties %>%
         dplyr::mutate(
           affil_party_name = stringi::stri_trans_general(
@@ -141,7 +141,7 @@ sen_senator <- function(id = NULL, affiliations = TRUE,
     sen <- suppressMessages(dplyr::full_join(sen, parties))
   }
 
-  if(mandates == TRUE){
+  if(isTRUE(mandates)){
     if(depth(exer) > 3){
       exer <- purrr::flatten(exer)
     }
@@ -170,7 +170,7 @@ sen_senator <- function(id = NULL, affiliations = TRUE,
     sen <- suppressMessages(dplyr::full_join(sen, ex))
   }
 
-  if(absences == TRUE){
+  if(isTRUE(absences)){
 
     ab <- tibble::tibble(
       id = purrr::map_chr(licenca, .null = N, "idParlamentar"),
@@ -191,7 +191,7 @@ sen_senator <- function(id = NULL, affiliations = TRUE,
           absence_end, "Ymd"
         ))
       )
-    if(ascii == TRUE){
+    if(isTRUE(ascii)){
       ab <- ab %>%
         dplyr::mutate(
           absence_description = stringi::stri_trans_general(

@@ -77,7 +77,7 @@ sen_senator_details <- function(id = 0, ascii = TRUE){
       disc()
   ) %>% dplyr::distinct(.keep_all = TRUE)
 
-  if(ascii == TRUE){
+  if(isTRUE(ascii)){
     req <- req %>%
       dplyr::mutate(
         senator_name = stringi::stri_trans_general(
@@ -164,7 +164,7 @@ sen_senator_bills <- function(id = 0, ascii = TRUE){
       purrr::map_chr(.null = N, "EmentaMateria") %>% disc()
   ) %>% dplyr::distinct(.keep_all = TRUE)
 
-  if(ascii == TRUE){
+  if(isTRUE(ascii)){
     req <- req %>%
       dplyr::mutate(
         senator_name = stringi::stri_trans_general(
@@ -260,7 +260,7 @@ sen_senator_commissions <- function(id = 0, ascii = TRUE){
       disc()
   ) %>% dplyr::distinct(.keep_all = TRUE)
 
-  if(ascii == TRUE){
+  if(isTRUE(ascii)){
     req <- req %>%
       dplyr::mutate(
         senator_name = stringi::stri_trans_general(
@@ -351,7 +351,7 @@ sen_senator_suplentes <- function(id = 0, ascii = TRUE){
       senator_suplente_id = purrr::map_chr(sup, .null = N,
                                            "CodigoParlamentar")
     )
-    if(ascii == TRUE){
+    if(isTRUE(ascii)){
       sups <- sups %>%
         dplyr::mutate(
           senator_name = stringi::stri_trans_general(
@@ -382,7 +382,7 @@ sen_senator_suplentes <- function(id = 0, ascii = TRUE){
       senator_titular_name = titular$NomeParlamentar,
       senator_titular_id = titular$CodigoParlamentar
     )
-    if(ascii == TRUE){
+    if(isTRUE(ascii)){
       sups <- sups %>%
         dplyr::mutate(
           senator_name = stringi::stri_trans_general(
@@ -485,7 +485,7 @@ sen_senator_votes <- function(id = 0, ascii = TRUE){
         vote_date, "Ymd"
       )
     )
-  if(ascii == TRUE){
+  if(isTRUE(ascii)){
     Vote <- Vote %>%
       dplyr::mutate(
         secret_vote = stringi::stri_trans_general(

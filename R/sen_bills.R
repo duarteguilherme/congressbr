@@ -170,7 +170,7 @@ sen_bills <- function(bill_id = NULL, type = NULL,
     )
 
 
-  if(ascii == TRUE){
+  if(isTRUE(ascii)){
     bills <- bills %>%
       dplyr::mutate(
         bill_author = stringi::stri_trans_general(bill_author,

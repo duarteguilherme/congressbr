@@ -41,13 +41,13 @@ sen_bills_types <- function(active = NULL, ascii = TRUE){
   subs <- tibble::tibble(
     bill_type_abbr = purrr::map_chr(subtypes, "SiglaMateria", .null = NA),
     bill_type_description = purrr::map_chr(subtypes,
-                                         "DescricaoSubtipoMateria", .null = NA),
+                                           "DescricaoSubtipoMateria", .null = NA),
     bill_type_date_created = purrr::map_chr(subtypes, "DataCriacao", .null = NA)
-    )
+  )
   subs$bill_type_date_created <- lubridate::parse_date_time(
     subs$bill_type_date_created, orders = "Ymd"
   )
-  if(ascii == TRUE){
+  if(isTRUE(ascii)){
     subs <- subs %>%
       dplyr::mutate(bill_type_description = stringi::stri_trans_general(
         bill_type_description, "Latin-ASCII"
@@ -80,7 +80,7 @@ sen_bills_limits <- function(ascii = TRUE){
     limit_description = purrr::map_chr(request, "DescricaoTipoPrazo",
                                        .null = NA)
   )
-  if(ascii == TRUE){
+  if(isTRUE(ascii)){
     lims <- lims %>%
       dplyr::mutate(limit_description = stringi::stri_trans_general(
         limit_description, "Latin-ASCII"))
@@ -124,7 +124,7 @@ sen_bills_topics <- function(active = NULL, ascii = TRUE){
     topic_general = purrr::map_chr(request, "AssuntoGeral"),
     topic_specific = purrr::map_chr(request, "AssuntoEspecifico")
   )
-  if(ascii == TRUE){
+  if(isTRUE(ascii)){
     themes <- themes %>%
       dplyr::mutate(
         topic_general = stringi::stri_trans_general(
@@ -334,13 +334,13 @@ sen_bills_status <- function(bill_id = NULL, ascii = TRUE){
   stat <- stat %>%
     dplyr::mutate(situation_date = lubridate::parse_date_time(
       situation_date, orders = "Ymd"),
-     bill_in_passage = dplyr::case_when(
+      bill_in_passage = dplyr::case_when(
         grepl("Nao|N\u00a3o", stat$bill_in_passage) ~ "No",
         grepl("Sim", stat$bill_in_passage) ~ "Yes",
         TRUE ~ "Not recorded")
-     )
+    )
 
-  if(ascii == TRUE){
+  if(isTRUE(ascii)){
     stat <- stat %>%
       dplyr::mutate(
         bill_details = stringi::stri_trans_general(bill_details,
@@ -398,10 +398,10 @@ sen_bills_locations <- function(active = NULL, ascii = TRUE){
     dplyr::mutate(
       loc_date_created = lubridate::parse_date_time(
         loc_date_created, "Ymd")
-      ) %>%
+    ) %>%
     dplyr::filter(!is.na(loc_id))  ## last line returns NA for most fields
 
-  if(ascii == TRUE){
+  if(isTRUE(ascii)){
     req <- req %>%
       dplyr::mutate(
         loc_name = stringi::stri_trans_general(loc_name, "Latin-ASCII"),
@@ -455,7 +455,7 @@ sen_bills_passage <- function(bill_id = NULL, ascii = TRUE){
                                  "NumeroMateria") %>%
       disc(),
     bill_year = purrr::map_chr(request, .null = N,
-                                 "AnoMateria") %>%
+                               "AnoMateria") %>%
       disc(),
     bill_type_abbr = purrr::map_chr(request, .null = N,
                                     "SiglaSubtipoMateria") %>%
@@ -477,24 +477,24 @@ sen_bills_passage <- function(bill_id = NULL, ascii = TRUE){
     bill_situation_date = purrr::map_chr(sit, .null = N, "DataSituacao") %>%
       disc(),
     bill_location_id = purrr::map_chr(sit, .null = N,
-                                         "CodigoLocal") %>% disc(),
+                                      "CodigoLocal") %>% disc(),
     bill_location_type = purrr::map_chr(sit, .null = N,
-                                      "TipoLocal") %>% disc(),
+                                        "TipoLocal") %>% disc(),
     bill_location = purrr::map_chr(sit, .null = N, "NomeLocal") %>% disc(),
     bill_location_house = purrr::map_chr(sit, .null = N,
                                          "NomeCasaLocal") %>% disc(),
     bill_location_house_abbr = purrr::map_chr(sit, .null = N,
-                                         "SiglaCasaLocal") %>% disc(),
+                                              "SiglaCasaLocal") %>% disc(),
     bill_passage_id = purrr::map_chr(tram, .null = N, "CodigoTramitacao"),
     bill_passage_date = purrr::map_chr(tram, .null = N, "DataTramitacao"),
     bill_passage_text = purrr::map_chr(tram, .null = N, "TextoTramitacao"),
     bill_passage_origin = purrr::map_chr(tram_o, .null = N, "NomeCasaLocal"),
     bill_passage_orig_location = purrr::map_chr(tram_o, .null = N,
-                                                  "NomeLocal"),
+                                                "NomeLocal"),
     bill_passage_destination = purrr::map_chr(tram_d, .null = N,
                                               "NomeCasaLocal"),
     bill_passage_dest_location = purrr::map_chr(tram_d, .null = N,
-                                                  "NomeLocal")
+                                                "NomeLocal")
   )
 
   req <- req %>%
@@ -505,7 +505,7 @@ sen_bills_passage <- function(bill_id = NULL, ascii = TRUE){
         bill_passage_date, "Ymd")
     )
 
-  if(ascii == TRUE){
+  if(isTRUE(ascii)){
     req <- req %>%
       dplyr::mutate(
         bill_type = stringi::stri_trans_general(bill_type, "Latin-ASCII"),
@@ -528,7 +528,7 @@ sen_bills_passage <- function(bill_id = NULL, ascii = TRUE){
           bill_passage_destination, "Latin-ASCII"),
         bill_passage_dest_location = stringi::stri_trans_general(
           bill_passage_dest_location, "Latin-ASCII")
-        )
+      )
   }
   return(req)
 }
@@ -555,7 +555,7 @@ sen_bills_situations <- function(ascii = TRUE){
   request <- httr::GET(base_url)
   request <- status(request)
   request <- request$ListaSituacoes$Situacoes$Situacao
-  N = NA_character_
+  N <- NA_character_
 
   sit <- tibble::tibble(
     sit_id = purrr::map_chr(request, "Codigo", .null = N),
@@ -563,7 +563,7 @@ sen_bills_situations <- function(ascii = TRUE){
     sit_description = purrr::map_chr(request, "Descricao", .null = N)
   )
 
-  if(ascii == TRUE){
+  if(isTRUE(ascii)){
     sit <- sit %>%
       dplyr::mutate(sit_description = stringi::stri_trans_general(
         sit_description, "Latin-ASCII"
@@ -665,9 +665,9 @@ sen_bills_updates <- function(update = NULL, year = NULL,
       bill_passing = ifelse(bill_passing == "Sim", "Yes", "No"),
       update_date = lubridate::parse_date_time(
         update_date, "Ymd HMS")
-      )
+    )
 
-  if(ascii == TRUE){
+  if(isTRUE(ascii)){
     req <- req %>%
       dplyr::mutate(
         bill_house = stringi::stri_trans_general(bill_house, "Latin-ASCII")

@@ -56,13 +56,13 @@ vote_to_rollcall <- function(votes = NULL, legislators = NULL, bills = NULL,
                            nrow = nrow(rollCallMatrix))
   dimnames(rollCallMatrix) <- list(unique(nameID), unique(voteID))
 
-  if(ideal == FALSE & Stan == FALSE){
+  if(!isTRUE(ideal) & !isTRUE(Stan)){
     return(rollCallMatrix)
   }
 
 
-  if(ideal == TRUE){
-    if(Stan == TRUE){
+  if(isTRUE(ideal)){
+    if(isTRUE(Stan)){
       message("'Stan' and 'pscl' cannot both be TRUE. 'Stan' will be ignored.")
     }
     names <- unlist(dimnames(rollCallMatrix)[1])
@@ -73,7 +73,7 @@ vote_to_rollcall <- function(votes = NULL, legislators = NULL, bills = NULL,
     return(rollcalls)
   }
 
-  if(ideal == FALSE & Stan == TRUE){
+  if(!isTRUE(ideal) & isTRUE(Stan)){
 
     abstain <- which(is.na(rollCallMatrix))
     rollcalls <- rollCallMatrix[-abstain]

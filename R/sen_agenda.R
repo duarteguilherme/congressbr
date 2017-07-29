@@ -45,7 +45,7 @@ sen_agenda <- function(initial_date = NULL, end_date = NULL,
   if(is.null(initial_date)){
     stop("Please choose a valid initial date. Format is YYYYMMDD.")
   }
-  if(details == TRUE & !is.null(legislator)){
+  if(isTRUE(details) & !is.null(legislator)){
     warning("Using the arguments 'details' and 'legislator' together will result in the latter being ignored.")
     legislator <- NULL
   }
@@ -55,7 +55,7 @@ sen_agenda <- function(initial_date = NULL, end_date = NULL,
     initial_date
 
   if(is.null(end_date)){
-    if(details == FALSE){
+    if(!isTRUE(details)){
       initial_date <- initial_date %p% "?"
       if(!is.null(house)){
         base_url <- base_url %p% "&casa=" %p% house
@@ -79,7 +79,7 @@ sen_agenda <- function(initial_date = NULL, end_date = NULL,
     base_url <- "http://legis.senado.gov.br/dadosabertos/agenda/" %p%
       initial_date %p% "/" %p% end_date
 
-    if(details == FALSE){
+    if(!isTRUE(details)){
       base_url <- base_url %p% "?"
       if(!is.null(house)){
         base_url <- base_url %p% "&casa=" %p% house
@@ -147,7 +147,7 @@ sen_agenda <- function(initial_date = NULL, end_date = NULL,
   }
 
 
-  if(ascii == TRUE){
+  if(isTRUE(ascii)){
     if(!is.null(legislator)){
       agenda <- agenda %>%
         dplyr::mutate(

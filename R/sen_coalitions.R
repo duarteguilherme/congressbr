@@ -52,7 +52,7 @@ sen_coalitions <- function(members = FALSE, ascii = TRUE){
       orders = "Ymd"))
     )
 
-  if(ascii == TRUE){
+  if(isTRUE(ascii)){
     bloc <- bloc %>%
       dplyr::mutate(
         bloc_name = stringi::stri_trans_general(
@@ -64,7 +64,7 @@ sen_coalitions <- function(members = FALSE, ascii = TRUE){
 
   # Get members:
 
-  if(members == TRUE){
+  if(isTRUE(members)){
 
     members <- purrr::at_depth(request, 1, "Membros")
     names(members) <- bloc$bloc_code
@@ -89,7 +89,7 @@ sen_coalitions <- function(members = FALSE, ascii = TRUE){
     parties$bloc_member_date_joined <- suppressWarnings(
       lubridate::parse_date_time(date_j, orders = "Ymd")
     )
-    if(ascii == TRUE){
+    if(isTRUE(ascii)){
       parties <- parties %>%
         dplyr::mutate(
           bloc_member_name = stringi::stri_trans_general(
