@@ -5,7 +5,8 @@ Version: 0.1.1
 Authors@R: c(
     person("Robert", "McDonnell", , "mcdonnell.robert5@gmail.com", c("aut", "cre")),
     person("Guilherme", "Jardim Duarte", , "gjardimduarte@gmail.com", c("aut")),
-    person("Danilo", "Freire", , "danilofreire@gmail.com", c("aut"))
+    person("Danilo", "Freire", , "danilofreire@gmail.com", c("aut")),
+    person("Julio", "Trecenti", "aut")
     )
 Description: Downloads and tidies data from the Brazilian Federal Senate and Chamber of Deputies Application Programming Interfaces available at <http://legis.senado.gov.br/dadosabertos/> and <http://www.camara.leg.br/SitCamaraWS/> respectively.
 License: MIT + file LICENSE

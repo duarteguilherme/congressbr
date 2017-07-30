@@ -4,3 +4,4 @@
 .Ruserdata
 R/devtools_stuff.R
 inst/doc
+.DS_Store
