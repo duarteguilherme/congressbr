@@ -28,3 +28,4 @@ legis <- sen_bills_types()
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 }
+

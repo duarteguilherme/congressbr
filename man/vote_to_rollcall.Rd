@@ -49,3 +49,4 @@ rc <- vote_to_rollcall(votes$senator_vote,
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 }
+

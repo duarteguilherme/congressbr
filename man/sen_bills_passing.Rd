@@ -40,3 +40,4 @@ march01_2017 <- sen_bills_passing(date = 20170301)
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 }
+

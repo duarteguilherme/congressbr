@@ -27,3 +27,4 @@ bills <- sen_bills_list(active = TRUE)
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 }
+

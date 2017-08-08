@@ -29,3 +29,4 @@ sen_bills_passage(bill_id = 9123)
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 }
+

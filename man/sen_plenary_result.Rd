@@ -31,3 +31,4 @@ y <- sen_plenary_result(date = "19910105")
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 }
+

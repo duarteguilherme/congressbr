@@ -30,3 +30,4 @@ These data can easily be grouped by legislature if so desired, using the
 \code{legislature} variable.
 }
 \keyword{datasets}
+

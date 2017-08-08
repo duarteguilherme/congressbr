@@ -197,8 +197,13 @@ sen_bills_passing <- function(year = NULL,  number = NULL,
     stop("No data match your query.")
   } else{
     request <- request$ListaMateriasTramitando$Materias$Materia
-    request <- purrr::map(request, "IdentificacaoMateria")
   }
+    xd <- depth(request)
+    if(xd < 3){
+      request <- list(request$IdentificacaoMateria)
+    }else{
+      request <- purrr::map(request, "IdentificacaoMateria")
+    }
 
 
   pass <- tibble::tibble(
@@ -487,15 +492,18 @@ sen_bills_passage <- function(bill_id = NULL, ascii = TRUE){
                                               "SiglaCasaLocal") %>% disc(),
     bill_passage_id = purrr::map_chr(tram, .null = N, "CodigoTramitacao"),
     bill_passage_date = purrr::map_chr(tram, .null = N, "DataTramitacao"),
-    bill_passage_text = purrr::map_chr(tram, .null = N, "TextoTramitacao"),
-    bill_passage_origin = purrr::map_chr(tram_o, .null = N, "NomeCasaLocal"),
-    bill_passage_orig_location = purrr::map_chr(tram_o, .null = N,
-                                                "NomeLocal"),
-    bill_passage_destination = purrr::map_chr(tram_d, .null = N,
-                                              "NomeCasaLocal"),
-    bill_passage_dest_location = purrr::map_chr(tram_d, .null = N,
-                                                "NomeLocal")
-  )
+    bill_passage_text = purrr::map_chr(tram, .null = N, "TextoTramitacao"))
+
+    if(identical(length(tram), length(tram_d))){
+      req <- req %>%
+        dplyr::mutate(bill_passage_origin = purrr::map_chr(tram_o, .null = N, "NomeCasaLocal"),
+                      bill_passage_orig_location = purrr::map_chr(tram_o, .null = N,
+                                                                  "NomeLocal"),
+                      bill_passage_destination = purrr::map_chr(tram_d, .null = N,
+                                                                "NomeCasaLocal"),
+                      bill_passage_dest_location = purrr::map_chr(tram_d, .null = N,
+                                                                  "NomeLocal"))
+    }
 
   req <- req %>%
     dplyr::mutate(
@@ -519,16 +527,19 @@ sen_bills_passage <- function(bill_id = NULL, ascii = TRUE){
         bill_location_house = stringi::stri_trans_general(
           bill_location_house, "Latin-ASCII"),
         bill_passage_text = stringi::stri_trans_general(
-          bill_passage_text, "Latin-ASCII"),
-        bill_passage_origin = stringi::stri_trans_general(
+          bill_passage_text, "Latin-ASCII"))
+
+    if(identical(length(tram), length(tram_d))){
+      req <- req %>%
+        dplyr::mutate(bill_passage_origin = stringi::stri_trans_general(
           bill_passage_origin, "Latin-ASCII"),
-        bill_passage_orig_location = stringi::stri_trans_general(
-          bill_passage_orig_location, "Latin-ASCII"),
-        bill_passage_destination = stringi::stri_trans_general(
-          bill_passage_destination, "Latin-ASCII"),
-        bill_passage_dest_location = stringi::stri_trans_general(
-          bill_passage_dest_location, "Latin-ASCII")
-      )
+          bill_passage_orig_location = stringi::stri_trans_general(
+            bill_passage_orig_location, "Latin-ASCII"),
+          bill_passage_destination = stringi::stri_trans_general(
+            bill_passage_destination, "Latin-ASCII"),
+          bill_passage_dest_location = stringi::stri_trans_general(
+            bill_passage_dest_location, "Latin-ASCII"))
+    }
   }
   return(req)
 }

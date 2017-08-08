@@ -27,9 +27,10 @@ Senate.
 terms <- sen_senator_mandates(id = 4763)
 terms <- sen_senator_mandates(id = 3398)
 }
-\seealso{
-\code{sen_senator_list()}
-}
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 }
+\seealso{
+\code{sen_senator_list()}
+}
+

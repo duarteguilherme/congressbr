@@ -27,9 +27,10 @@ have sponsored/authored in the Federal Senate.
 Ataides <- sen_senator_bills(id = 5164)
 
 }
-\seealso{
-\code{sen_senator_list()}
-}
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 }
+\seealso{
+\code{sen_senator_list()}
+}
+

@@ -15,12 +15,12 @@
 #'  dataframe with the variable \code{bill_id} in the first column. These numbers
 #'  can be used as this id. If id is not \code{NULL} (the default), all other
 #'  parameters will be set to \code{NULL}, as 'bill_id' cannot be used in conjunction
-#'  with the other parameters.
+#'  with the other parameters. If any one of the other parameters are used (without using bill_id),
+#'  all three need to be used.
 #' @param type \code{character}. The abbreviation of the vote type you're looking
 #' for. A full list of these can be obtained with the \code{sen_bill_list()}
 #' function. Other types can be seen with \code{sen_bills_subtypes()}.
-#' @param number . Two-letter abbreviation of Brazilian state. A list of these is
-#' available with the function \code{UF()}.
+#' @param number . Bill number. Simple integer, like \code{2}, which will be bill number 00002.
 #' @param year \code{integer}. Four-digit year, such as \code{2013}.
 #' @param ascii \code{logical}. If \code{TRUE}, strips Latin characters from
 #' strings.
@@ -59,7 +59,6 @@ sen_bills <- function(bill_id = NULL, type = NULL,
   if(is.null(request)){
     stop("No data matches your search")
   }
-  null <- NA_character_
 
   # Bill Author:
   author_id <- request$Autoria
@@ -84,37 +83,40 @@ sen_bills <- function(bill_id = NULL, type = NULL,
   # bill ID:
   id <- request$IdentificacaoMateria
 
+  nulo <- NA_character_
+
+
   bills <- tibble::tibble(
-  bill_id = request$IdentificacaoMateria$CodigoMateria,
-  bill_house = request$OrigemMateria$NomeCasaOrigem,
-  bill_house_abbr = request$OrigemMateria$SiglaCasaOrigem,
-  bill_origin = request$OrigemMateria$NomePoderOrigem,
-  bill_house_initiated = request$CasaIniciadoraNoLegislativo$NomeCasaIniciadora,
-  bill_house_init_abbr = request$CasaIniciadoraNoLegislativo$SiglaCasaIniciadora,
-  bill_type = request$IdentificacaoMateria$DescricaoSubtipoMateria,
-  bill_type_abbr = request$IdentificacaoMateria$SiglaSubtipoMateria,
-  bill_number = request$IdentificacaoMateria$NumeroMateria,
-  bill_year = request$IdentificacaoMateria$AnoMateria,
-  bill_author = purrr::map_chr(author_id, "NomeAutor", .null = null),
+  bill_id = purrr::map_chr(request, .null = nulo, "CodigoMateria") %>% disc(),
+  bill_house = purrr::map_chr(request, .null = nulo, "NomeCasaOrigem") %>% disc(),
+  bill_house_abbr = purrr::map_chr(request, .null = nulo, "SiglaCasaOrigem") %>% disc(),
+  bill_origin = purrr::map_chr(request$OrigemMateria, .null = nulo, "NomePoderOrigem") %>% disc(),
+  bill_house_initiated = purrr::map_chr(request, .null = nulo, "NomeCasaIniciadora") %>% disc(),
+  bill_house_init_abbr = purrr::map_chr(request, .null = nulo, "SiglaCasaIniciadora") %>% disc(),
+  bill_type = purrr::map_chr(request, .null = nulo, "DescricaoSubtipoMateria") %>% disc(),
+  bill_type_abbr = purrr::map_chr(request, .null = nulo, "SiglaSubtipoMateria") %>% disc(),
+  bill_number = purrr::map_chr(request, .null = nulo, "NumeroMateria") %>% disc(),
+  bill_year = purrr::map_chr(request, .null = nulo, "AnoMateria") %>% disc(),
+  bill_author = purrr::map_chr(author_id, "NomeAutor", .null = nulo),
   bill_author_type = purrr::map_chr(author_id, "DescricaoTipoAutor",
-                                    .null = null),
+                                    .null = nulo),
   bill_author_id = purrr::map_chr(author_id, "CodigoParlamentar",
-                                  .null = null),
+                                  .null = nulo),
   bill_author_gender = purrr::map_chr(author_id, "SexoParlamentar",
-                                      .null = null),
+                                      .null = nulo),
   bill_author_party = purrr::map_chr(author_id, "SiglaPartidoParlamentar",
-                                     .null = null),
-  bill_author_state = purrr::map_chr(author_id, "UfAutor", .null = null),
+                                     .null = nulo),
+  bill_author_state = purrr::map_chr(author_id, "UfAutor", .null = nulo),
   bill_author_order = purrr::map_chr(author_id, "NumOrdemAutor",
-                                     .null = null),
+                                     .null = nulo),
   bill_details_short = request$DadosBasicosMateria$EmentaMateria,
   bill_indexing = request$DadosBasicosMateria$IndexacaoMateria,
   bill_situation = purrr::map_chr(situation, "DescricaoSituacao",
-                                  .null = null) %>% disc(),
+                                  .null = nulo) %>% disc(),
   bill_situation_house = purrr::map_chr(situation, "NomeCasaLocal",
-                                        .null = null) %>%  disc(),
+                                        .null = nulo) %>%  disc(),
   bill_situation_place = purrr::map_chr(situation, "NomeLocal",
-                                        .null = null) %>%  disc()
+                                        .null = nulo) %>%  disc()
   )
 
 
@@ -131,25 +133,25 @@ sen_bills <- function(bill_id = NULL, type = NULL,
   }
 
   bill_situation_date <- purrr::map_chr(situation, "DataSituacao",
-                                       .null = null) %>%  disc()
+                                       .null = nulo) %>%  disc()
   bill_situation_date <- suppressWarnings(lubridate::parse_date_time(
     bill_situation_date, orders = "Ymd"))
 
   #
   bill_complementary = purrr::map_chr(request, "IndicadorComplementar",
-                                      .null = null) %>%  disc()
+                                      .null = nulo) %>%  disc()
   bill_complementary = ifelse(bill_complementary == "Sim", "Yes",
                               ifelse(bill_complementary == "N\u00a3o", "No", NA))
   bill_in_passage = purrr::map_chr(request, "IndicadorTramitando",
-                                   .null = null) %>% disc()
+                                   .null = nulo) %>% disc()
   bill_in_passage = ifelse(bill_in_passage == "Sim", "Yes",
                            ifelse(bill_in_passage == "N\u00a3o", "No", NA))
 
   bill_details = purrr::map_chr(request, "ExplicacoesEmentaMateria",
-                                .null = null) %>% disc()
+                                .null = nulo) %>% disc()
   if(purrr::is_empty(bill_details)){
     bill_details = purrr::map_chr(request, "ExplicacaoEmentaMateria",
-                                  .null = null) %>% disc()
+                                  .null = nulo) %>% disc()
   }
   if(purrr::is_empty(bill_details)){
     bill_details = NA_character_

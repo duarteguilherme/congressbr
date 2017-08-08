@@ -35,3 +35,4 @@ cpi <- sen_commissions_type(type = "cpi")
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 }
+

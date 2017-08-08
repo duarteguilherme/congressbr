@@ -25,3 +25,4 @@ sessions <- sen_plenary_sessions()
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 }
+

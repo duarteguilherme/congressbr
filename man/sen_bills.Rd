@@ -13,14 +13,14 @@ Senate database. For example, running \code{sen_bills_current()} will return a
  dataframe with the variable \code{bill_id} in the first column. These numbers
  can be used as this id. If id is not \code{NULL} (the default), all other
  parameters will be set to \code{NULL}, as 'bill_id' cannot be used in conjunction
- with the other parameters.}
+ with the other parameters. If any one of the other parameters are used (without using bill_id),
+ all three need to be used.}
 
 \item{type}{\code{character}. The abbreviation of the vote type you're looking
 for. A full list of these can be obtained with the \code{sen_bill_list()}
 function. Other types can be seen with \code{sen_bills_subtypes()}.}
 
-\item{number}{. Two-letter abbreviation of Brazilian state. A list of these is
-available with the function \code{UF()}.}
+\item{number}{. Bill number. Simple integer, like \code{2}, which will be bill number 00002.}
 
 \item{year}{\code{integer}. Four-digit year, such as \code{2013}.}
 
@@ -43,3 +43,4 @@ sen25 <- sen_bills(bill_id = 25)
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 }
+

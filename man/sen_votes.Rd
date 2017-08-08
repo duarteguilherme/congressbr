@@ -47,3 +47,4 @@ longer <- sen_votes(date = "20160301", end_date = "20160415")
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 }
+

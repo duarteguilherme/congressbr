@@ -93,6 +93,9 @@ sen_bill_search <- function(year = "", year_law = "", topic_id = "",
 
   req <- httr::GET(url)
   req <- status(req)
+  if(is.null(req$PesquisaBasicaMateria$Materias$Materia)){
+    stop("No data match your search")
+  }
   req <- req$PesquisaBasicaMateria$Materias$Materia
   N <- NA_character_
 

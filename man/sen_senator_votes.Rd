@@ -31,9 +31,10 @@ ant <- sen_senator_votes(id = 5529)
 sen_senator_votes(898)
 }
 }
-\seealso{
-\code{sen_senator_list()}
-}
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 }
+\seealso{
+\code{sen_senator_list()}
+}
+

@@ -38,3 +38,4 @@ rj <- sen_senator_list(state = "RJ")
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 }
+

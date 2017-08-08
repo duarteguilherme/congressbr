@@ -38,3 +38,4 @@ comms <- sen_commissions()
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 }
+

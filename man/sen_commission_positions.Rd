@@ -35,3 +35,4 @@ jobs <- sen_commission_positions(active = "No")
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 }
+

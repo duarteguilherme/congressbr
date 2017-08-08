@@ -46,3 +46,4 @@ pls <- sen_bills_updates(type = "PLS", days = 10)
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 }
+
