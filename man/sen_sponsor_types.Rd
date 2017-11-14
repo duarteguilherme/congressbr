@@ -29,4 +29,3 @@ types <- sen_sponsor_types()
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 }
-

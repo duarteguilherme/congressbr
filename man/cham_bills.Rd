@@ -57,4 +57,3 @@ cham_bills(type = "PL", year = 1998)
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 }
-

@@ -30,7 +30,7 @@ Imports:
     stringr (>= 1.1.0),
     tibble (>= 1.2),
     pscl (>= 1.4.9)
-RoxygenNote: 5.0.1
+RoxygenNote: 6.0.1
 Suggests:
     covr,
     knitr,

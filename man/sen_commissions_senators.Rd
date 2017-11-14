@@ -40,4 +40,3 @@ ccj <- sen_commissions_senators(code = "CCJ")
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 }
-

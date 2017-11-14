@@ -41,4 +41,3 @@ plc_2015 <- sen_bills_current(year = 2015, type = "PLS")
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 }
-

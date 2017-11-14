@@ -28,4 +28,3 @@ cham_bill_info(type = "PL", number = "3962", year = "2008")
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 }
-

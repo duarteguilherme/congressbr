@@ -33,4 +33,3 @@ bills <- sen_bill_sponsors()
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 }
-

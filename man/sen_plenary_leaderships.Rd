@@ -25,4 +25,3 @@ party_leaders <- sen_plenary_leaderships()
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 }
-

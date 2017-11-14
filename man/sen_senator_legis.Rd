@@ -37,4 +37,3 @@ all <- sen_senator_legis(start = 50)
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 }
-

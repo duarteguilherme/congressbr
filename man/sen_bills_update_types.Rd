@@ -25,4 +25,3 @@ sen_bills_update_types()
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 }
-

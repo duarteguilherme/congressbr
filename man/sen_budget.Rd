@@ -24,4 +24,3 @@ bud <- sen_budget()
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 }
-

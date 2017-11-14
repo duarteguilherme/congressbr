@@ -56,4 +56,3 @@ legislator = 4988)
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 }
-

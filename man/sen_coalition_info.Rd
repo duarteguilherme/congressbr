@@ -37,4 +37,3 @@ moderador <- sen_coalition_info(code = 200)
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 }
-

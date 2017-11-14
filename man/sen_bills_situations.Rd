@@ -24,4 +24,3 @@ sen_bills_situations()
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 }
-

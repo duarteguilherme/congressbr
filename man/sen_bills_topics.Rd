@@ -28,4 +28,3 @@ top <- sen_bills_topics()
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 }
-

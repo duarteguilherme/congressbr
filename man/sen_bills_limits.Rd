@@ -24,4 +24,3 @@ lims <- sen_bills_limits()
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 }
-

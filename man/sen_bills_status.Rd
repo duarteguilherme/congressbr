@@ -29,4 +29,3 @@ sen_bills_status(bill_id = 80406)
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 }
-

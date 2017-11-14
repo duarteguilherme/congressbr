@@ -43,4 +43,3 @@ sen25 <- sen_bills(bill_id = 25)
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 }
-

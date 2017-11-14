@@ -34,4 +34,3 @@ sessions <- sen_plenary_agenda(period = "day", date = "20160401")
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 }
-

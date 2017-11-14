@@ -27,4 +27,3 @@ cham_typeauthors_bills()
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 }
-

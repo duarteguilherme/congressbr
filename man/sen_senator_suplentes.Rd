@@ -31,10 +31,9 @@ Serra <- sen_senator_suplentes(id = 90)
 suplente <- sen_senator_suplentes(id = 878)
 
 }
-\author{
-Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
-}
 \seealso{
 \code{sen_senator_list()}
 }
-
+\author{
+Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
+}

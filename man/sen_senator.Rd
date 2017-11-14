@@ -45,4 +45,3 @@ juc <- sen_senator(73)
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 }
-

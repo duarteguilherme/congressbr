@@ -27,10 +27,9 @@ senators have served or are serving in the Federal Senate.
 Armando <- sen_senator_commissions(id = 715)
 
 }
-\author{
-Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
-}
 \seealso{
 \code{sen_senator_list()}
 }
-
+\author{
+Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
+}

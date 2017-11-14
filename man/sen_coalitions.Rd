@@ -36,4 +36,3 @@ coalitions_detail <- sen_coalitions(members = TRUE)
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 }
-
