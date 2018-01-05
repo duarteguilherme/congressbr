@@ -116,14 +116,14 @@ extract_orientation <- function(votacao) {
 
 
 extract_votes <- function(votes) {
-  return(
-    dplyr::tibble(
+    DF <- dplyr::tibble(
       legislator_id =  xml_attr(votes, "ideCadastro"),
       legislator_name =  xml_attr(votes, "Nome"),
       legislator_state = xml_attr(votes, "UF"),
-      legislator_party = xml_attr(votes, "Partido"),
+      legislator_party = str_trim(xml_attr(votes, "Partido")),
       legislator_vote =  str_trim(xml_attr(votes, "Voto"))
-    )
-  )
+    ) %>%
+      dplyr::mutate(legislator_vote = ifelse(legislator_vote == "-", NA, legislator_vote))
+    return(DF)
 }
 
