@@ -84,6 +84,6 @@ if(getRversion() >= "2.15.1")  utils::globalVariables(
     "agenda_name", "agenda_type", "agenda_status", "agenda_place",
     "absence_description", "sen_bills_list", 'type', 'number', 'year',
     'initial_date', 'end_date', 'part_name_author', 'id_type_author',
-    'abbreviation_party_author', 'abbreviation_st_author',
+    'abbreviation_party_author', 'abbreviation_st_author', 'legislator_vote',
     "bill_details"))
 

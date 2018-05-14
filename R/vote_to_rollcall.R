@@ -15,8 +15,8 @@
 #' the JAGS modelling language.
 #' @examples
 #' # get votes:
-#' data(senate_nominal_votes)
-#' votes <- senate_nominal_votes %>%
+#' data(sen_nominal_votes)
+#' votes <- sen_nominal_votes %>%
 #'     dplyr::filter(vote_date >= "2005-03-01", vote_date <= "2007-12-15")
 #' rc <- vote_to_rollcall(votes$senator_vote,
 #'                        legislators = votes$senator_name,

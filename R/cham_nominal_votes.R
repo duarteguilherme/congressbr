@@ -17,5 +17,5 @@
 #' }
 #'
 #' @format A data frame with 60691 rows and 8 variables
-"chamber_nominal_votes"
-#> [1] "chamber_nominal_votes"
+"cham_nominal_votes"
+#> [1] "cham_nominal_votes"

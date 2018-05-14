@@ -2,7 +2,7 @@ Package: congressbr
 Type: Package
 Title: Downloads, Unpacks and Tidies Legislative Data from the Brazilian Federal
     Senate and Chamber of Deputies
-Version: 0.1.1
+Version: 0.1.2
 Authors@R: c(
     person(given = "Robert", family = "McDonnell", email = "mcdonnell.robert5@gmail.com", role = c("aut", "cre")),
     person(given = "Guilherme", family = "Jardim Duarte", email = "gjardimduarte@gmail.com", role = "aut"),
