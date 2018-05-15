@@ -12,11 +12,19 @@ vignette: >
 The API of the Brazilian Federal Senate can be explored with `congressbr` by searching for details on individual senators, commissions and votes, among other options.   
 
 `congressbr` can be installed by running: 
-```{r, eval=F}
+```{r, eval=F, echo=FALSE}
 if(!require(devtools)){install.packages("devtools", repos = "http://cran.us.r-project.org")}
 if(!require(ggplot2)){install.packages("ggplot2", repos = "http://cran.us.r-project.org")}
 ```
-```{r, message = F, warning = F}
+```{r eval = FALSE}
+install.packages("congressbr")
+```
+
+And then loaded with:
+```{r eval=FALSE}
+library(congressbr)
+```
+```{r, message = F, warning = F, echo=FALSE}
 library(congressbr)
 library(ggplot2)
 ```
@@ -49,7 +57,7 @@ sen_senator_bills(id = "3398")
 ## Commissions and coalitions 
 There are certain legislative coalitions in the Senate, all of whom have unique id numbers in the API database. These numbers can be accessed with `sen_coalitions()`. Further information on the coalition of interest can be had with `sen_coalition_info()`. For example, the *Bloco Moderador* (moderate bloc) has the id 200. We can obtain more detailed information on the coalition by using this id with the `code` option:  
 
-```{r}
+```{r message = FALSE, warning=FALSE}
 sen_coalition_info(code = 200)
 ```
 
@@ -99,10 +107,10 @@ sen_agenda(initial_date = "20161105", end_date = "20161125")
 all_sens <- sen_senator_list()
 ```
 ```{r, message = F, warning = F, eval = F}
-
+library(ggplot2)
 all_sens <- sen_senator_list()
 
-ggplot2::ggplot(all_sens, aes(x = gender)) +
+ggplot(all_sens, aes(x = gender)) +
   geom_bar(aes(fill = gender), colour = "white") +
   theme_classic() +
   scale_fill_manual(values = c("#45C74A", "#FFFF00"))
@@ -113,7 +121,7 @@ ggplot2::ggplot(all_sens, aes(x = gender)) +
 Looking at the distribution of Titular senators and deputies (*suplentes*) is also straightforward: 
 
 ```{r, echo=-1:-2, message = F, warning = F, eval = F}
-ggplot2::ggplot(all_sens, aes(x = status)) +
+ggplot(all_sens, aes(x = status)) +
   geom_bar(aes(fill = status), colour = "black") +
   theme_classic() +
   scale_fill_manual(values = c("#45C74A", "navy")) +
