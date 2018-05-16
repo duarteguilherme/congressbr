@@ -64,6 +64,9 @@ Deputies.
     in the Senate between 1991 and early 2017 (the Senate API only
     allows requests for a maximum period of 60 days).
 
+  - `data("cham_nominal_votes")` is a dataframe of nominal votes in the
+    Chamber of Deputies from 1991 to 2017.
+
 ### Contributions
 
 If you would like to get involved, feel free to fork the repo. We’ve

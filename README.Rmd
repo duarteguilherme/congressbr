@@ -54,6 +54,8 @@ You can learn more about the package with the vignettes. Run `vignette("Explorin
 
 - `data("sen_nominal_votes")` is a dataframe of all the nominal votes in the Senate between 1991 and early 2017 (the Senate API only allows requests for a maximum period of 60 days).
 
+- `data("cham_nominal_votes")` is a dataframe of nominal votes in the Chamber of Deputies from 1991 to 2017.  
+
 ### Contributions
 
 If you would like to get involved, feel free to fork the repo. We've been using the [Udacity Git Commit Message Style Guide](https://udacity.github.io/git-styleguide/) (well, not *always*). There are a list of open [issues](https://github.com/RobertMyles/congressbr/issues), which is a good place to start. The API of the Federal Senate is also under development, and so elements of this package may change. If you find any problems with the package, please open an issue and leave us a reproducible example and we'll get it fixed asap. 
