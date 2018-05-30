@@ -4,9 +4,9 @@
 #' @importFrom tibble tibble
 #' @importFrom tibble as_tibble
 #' @importFrom magrittr "%>%"
-#' @importFrom stringr str_trim
 #' @importFrom stats rnorm
 #' @importFrom stringr str_detect
+#' @importFrom stringr str_trim
 #' @importFrom tidyr spread
 #' @importFrom tidyr unite
 #' @importFrom dplyr bind_cols
@@ -35,6 +35,7 @@ cham_votes <- function(type, number, year, ascii = TRUE) {
   }
   link <- "http://www.camara.leg.br/SitCamaraWS/Proposicoes.asmx/ObterVotacaoProposicao?tipo=" %p%
     type %p% "&numero=" %p% number %p% "&ano=" %p% year
+  print(link)
   data <- tryCatch({read_xml(link)},
                    error=function(x) {
                      y <- GET(link)
@@ -63,6 +64,8 @@ cham_votes <- function(type, number, year, ascii = TRUE) {
       dplyr::mutate_if(is.character, function(x) stringi::stri_trans_general(x, "Latin-ASCII")
       )
   }
+
+  data <- mutate(data, legislator_party = str_trim(legislator_party) )
   return(data)
 }
 
