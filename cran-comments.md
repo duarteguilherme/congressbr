@@ -1,3 +1,15 @@
+## Version 0.1.3
+
+- Small fix to strip out unnecessary whitespace in dataframes returned.
+
+## R CMD check results
+
+0 errors | 0 warnings | 0 note
+
+## Version 0.1.2
+
+- New dataset included. 
+
 ## Version 0.1.1 
 
 - Fixed a missing state in the data and three functions. 
