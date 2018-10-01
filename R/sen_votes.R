@@ -242,6 +242,15 @@ sen_votes_year <- function(year = NULL,
       Votes <- dplyr::bind_rows(Votes, extract_rollcall_data(rollcalls[[i]]))
   }
 
+
+  Votes <- Votes %>%
+    dplyr::mutate(
+      vote_date = lubridate::parse_date_time(
+        vote_date, "Ymd"),
+      vote_round = as.numeric(vote_round),
+      vote_secret = ifelse(vote_secret == "S", "Yes", "No")
+    )
+
   if(isTRUE(ascii)){
     Votes <- Votes %>%
       dplyr::mutate(
