@@ -5,8 +5,8 @@
 \title{Downloads and tidies information on legislation that is under
 consideration in the Federal Senate}
 \usage{
-sen_bills_passing(year = NULL, number = NULL, type = NULL, date = NULL,
-  time = NULL)
+sen_bills_passing(year = NULL, number = NULL, type = NULL,
+  date = NULL, time = NULL)
 }
 \arguments{
 \item{year}{Format YYYY. Returns legislation from this year.}

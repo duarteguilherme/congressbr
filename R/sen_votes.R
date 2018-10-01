@@ -105,6 +105,7 @@ sen_votes <- function(date = NULL, end_date = NULL,
     bill_type = purrr::map_chr(request, .null = N, "SiglaMateria"),
     bill_year = purrr::map_chr(request, .null = N, "AnoMateria"),
     bill_description = purrr::map_chr(request, .null = N, "DescricaoVotacao"),
+    rollcall_id = purrr::map_chr(request, .null = N, "CodigoSessaoVotacao"),
     vote_result = purrr::map_chr(request, .null = N, "Resultado"),
     vote_secret = purrr::map_chr(request, .null = N, "Secreta")
   )
@@ -177,3 +178,146 @@ sen_votes <- function(date = NULL, end_date = NULL,
 
 
 
+
+
+#' @importFrom httr GET
+#' @importFrom httr content
+#' @importFrom xml2 read_xml
+#' @importFrom xml2 xml_find_all
+#' @importFrom xml2 xml_attr
+#' @importFrom dplyr full_join
+#' @importFrom dplyr mutate
+#' @importFrom dplyr bind_rows
+#' @importFrom progress progress_bar
+#' @importFrom tibble tibble
+#' @importFrom glue glue
+#' @importFrom purrr map
+#' @importFrom purrr flatten
+#' @importFrom purrr map_chr
+#' @importFrom purrr is_empty
+#' @importFrom stringi stri_trans_general
+#' @importFrom lubridate parse_date_time
+#' @title Returns voting information from the Senate floor for the year
+#' requested
+#' @description Returns voting information from the Senate floor for the year
+#' requested.
+#' @param year \code{character} or \code{integer}. Format YYYY
+#' @param binary \code{logical}. If \code{TRUE}, the default, transforms
+#' votes into \code{1} for "yes", \code{0}, for "no" and \code{NA} for everything
+#' else. If \code{FALSE}, returns a character vector of vote decisions.
+#' @param ascii \code{logical}. If \code{TRUE}, the default, strips Latin
+#' characters from the results.
+#' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
+#' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
+#' @examples
+#' \dontrun{
+#' nominal_vote <- sen_votes_year(date = "2013")
+#'
+#' # Some votes are secret:
+#' ssshhh <- sen_votes_year("2016", binary = FALSE)
+#'
+#' @export
+sen_votes_year <- function(year = NULL,
+                      binary = TRUE, ascii = TRUE){
+
+  if(is.null(year) || nchar(year) < 4 ){
+    stop("Please enter a valid date. Format is YYYY.")
+  }
+
+  base_url <- glue::glue("http://legis.senado.leg.br/dadosabertos/dados/ListaVotacoes{year}.xml")
+
+
+  request <- httr::GET(base_url)
+  request <- status2(request)
+
+  rollcalls <- xml2::xml_find_first(request, 'Votacoes')
+  rollcalls <- xml2::xml_find_all(rollcalls,'Votacao')
+
+  Votes <- NULL
+  pb <- progress::progress_bar$new(total = length(rollcalls))
+  cat("Parsing Data... \n\n")
+  for (i in 1:length(rollcalls)) {
+      pb$tick()
+
+      Votes <- dplyr::bind_rows(Votes, extract_rollcall_data(rollcalls[[i]]))
+  }
+
+  if(isTRUE(ascii)){
+    Votes <- Votes %>%
+      dplyr::mutate(
+        bill_description = stringi::stri_trans_general(
+          bill_description, "Latin-ASCII"),
+        senator_name = stringi::stri_trans_general(
+          senator_name, "Latin-ASCII"),
+        senator_vote = stringi::stri_trans_general(
+          senator_vote, "Latin-ASCII")
+      )
+  }
+  if(isTRUE(binary)){
+    Votes <- Votes %>%
+      dplyr::mutate(
+        senator_vote = stringi::stri_trans_general(
+          senator_vote, "Latin-ASCII"),
+        senator_vote = ifelse(
+          vote_secret == "Yes" & senator_vote == "Votou", "Voted",
+          ifelse(
+            vote_secret == "Yes" & senator_vote != "Votou", "Did not vote",
+            ifelse(
+              vote_secret == "No" & senator_vote == "Sim", 1,
+              ifelse(vote_secret == "No" & senator_vote == "Nao", 0, NA)
+            ))))
+  } else{
+    Votes <- Votes %>%
+      dplyr::mutate(
+        senator_vote = ifelse(
+          vote_secret == "Yes" & senator_vote == "Votou", "Voted",
+          ifelse(
+            vote_secret == "Yes" & senator_vote != "Votou", "Did not vote",
+            ifelse(
+              vote_secret == "No" & senator_vote == "Sim", "Yes",
+              ifelse(
+                vote_secret == "No" & senator_vote == "Nao", "No",
+                ifelse(
+                  vote_secret == "No" & senator_vote == "Abstencao",
+                  "Abstained", "Other"))))))
+  }
+
+  return(Votes)
+}
+
+
+extract_rollcall_data <- function(x) {
+  bill <- tibble::tibble(
+    vote_date = xml2::xml_text(xml2::xml_find_first(x, "DataSessao")),
+    vote_time = xml2::xml_text(xml2::xml_find_first(x, "HoraInicio")),
+    vote_round = xml2::xml_text(xml2::xml_find_first(x, "SequencialSessao")),
+    bill_id = xml2::xml_text(xml2::xml_find_first(x, "CodigoMateria")),
+    bill_number = xml2::xml_text(xml2::xml_find_first(x, "NumeroMateria")),
+    bill_type = xml2::xml_text(xml2::xml_find_first(x, "SiglaMateria")),
+    bill_year = xml2::xml_text(xml2::xml_find_first(x, "AnoMateria")),
+    bill_description = xml2::xml_text(xml2::xml_find_first(x, "DescricaoVotacao")),
+    rollcall_id = xml2::xml_text(xml2::xml_find_first(x, "CodigoSessaoVotacao")),
+    vote_result = xml2::xml_text(xml2::xml_find_first(x, "Resultado")),
+    vote_secret = xml2::xml_text(xml2::xml_find_first(x, "Secreta"))
+  )
+  votes <- xml2::xml_find_first(x, "Votos")
+  if ( purrr::is_empty(votes) ) return(bill)
+  votes <- xml2::xml_find_all(votes, "VotoParlamentar")
+  votes_data <- dplyr::bind_rows(purrr::map(votes, extract_votes))
+
+  cbind(bill, votes_data)
+
+}
+
+
+extract_votes <- function(x) {
+  vote <- tibble::tibble(
+    senator_id = xml2::xml_text(xml2::xml_find_first(x, "CodigoParlamentar")),
+    senator_name = xml2::xml_text(xml2::xml_find_first(x, "NomeParlamentar")),
+    senator_vote = xml2::xml_text(xml2::xml_find_first(x, "Voto")),
+    senator_gender = xml2::xml_text(xml2::xml_find_first(x, "SexoParlamentar")),
+    senator_party = xml2::xml_text(xml2::xml_find_first(x, "SiglaPartido")),
+    senator_state = xml2::xml_text(xml2::xml_find_first(x, "SiglaUF"))
+  )
+  vote
+}

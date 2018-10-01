@@ -38,10 +38,10 @@ cham_votes <- function(type, number, year, ascii = TRUE) {
   print(link)
   data <- tryCatch({read_xml(link)},
                    error=function(x) {
-                     y <- GET(link)
+                     y <- httr::GET(link)
                      # Handling a specific error related to the API
                      msg_erro <- "Esta proposicao eh acessoria e nao foi possivel baixar seu conteudo"
-                    if ( str_detect(rawToChar(y$content), msg_erro) ) {
+                    if ( stringr::str_detect(rawToChar(y$content), msg_erro) ) {
                       stop("This is not a main bill. Download is not possible")
                     }
                      else {

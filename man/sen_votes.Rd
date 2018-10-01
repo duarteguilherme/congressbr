@@ -5,7 +5,8 @@
 \title{Returns voting information from the Senate floor for the date
 requested}
 \usage{
-sen_votes(date = NULL, end_date = NULL, binary = TRUE, ascii = TRUE)
+sen_votes(date = NULL, end_date = NULL, binary = TRUE,
+  ascii = TRUE)
 }
 \arguments{
 \item{date}{\code{character} or \code{integer}. Format YYYYMMDD.}

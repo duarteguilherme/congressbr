@@ -17,7 +17,21 @@ status <- function(x){
   if(x$status_code != 200){
     stop("GET request failed. Please check the validity of the information you requested.")
   } else{
-    xx <- httr::content(x, "parsed")
+    xx <- httr::content(x, as = "parsed")
+
+  }
+  if(is.null(xx)){
+    stop("No data matches your search.")
+  } else{
+    return(xx)
+  }
+}
+
+status2 <- function(x){
+  if(x$status_code != 200){
+    stop("GET request failed. Please check the validity of the information you requested.")
+  } else{
+    xx <- httr::content(x, as = "parsed", encoding = "latin1")
 
   }
   if(is.null(xx)){
