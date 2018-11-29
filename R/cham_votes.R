@@ -51,7 +51,7 @@ cham_votes <- function(type, number, year, ascii = TRUE) {
   )
   data <- data %>%
         xml_find_all('.//Votacao') %>%
-    map_df(extract_bill_votes, .id = "rollcall_id") %>%
+    map_df(cham_extract_bill_votes, .id = "rollcall_id") %>%
     mutate(type_bill = type, number_bill = number, year_bill=year)
 
   data$rollcall_id <- data$type %p% "-" %p% data$number %p% "-" %p% data$year %p% "-" %p% data$rollcall_id
@@ -72,7 +72,7 @@ cham_votes <- function(type, number, year, ascii = TRUE) {
 
 # I'm using this queue to create an id for each rollcall
 
-extract_bill_votes <- function(bill) {
+cham_extract_bill_votes <- function(bill) {
   info_bill <-  dplyr::tibble(
     decision_summary = xml_attr(bill, "Resumo"),
     decision_date = xml_attr(bill, "Data"),
@@ -94,7 +94,7 @@ extract_bill_votes <- function(bill) {
 
   votes_bill <- bill %>%
     xml_find_all('.//Deputado') %>%
-    map_df(extract_votes)
+    map_df(cham_extract_votes)
 
   data_bill <- bind_cols(info_bill, orientation_bill)
 
@@ -118,7 +118,7 @@ extract_orientation <- function(votacao) {
 }
 
 
-extract_votes <- function(votes) {
+cham_extract_votes <- function(votes) {
     DF <- dplyr::tibble(
       legislator_id =  xml_attr(votes, "ideCadastro"),
       legislator_name =  xml_attr(votes, "Nome"),
