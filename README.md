@@ -1,5 +1,5 @@
 
-[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/congressbr)](https://cran.r-project.org/package=congressbr)
+<!--[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/congressbr)](https://cran.r-project.org/package=congressbr)-->
 [![Travis-CI Build
 Status](https://travis-ci.org/RobertMyles/congressbr.svg?branch=master)](https://travis-ci.org/RobertMyles/congressbr)
 [![AppVeyor Build
@@ -15,11 +15,7 @@ like to include lower-level houses in future, if possible.
 
 ### Installation
 
-congressbr is on CRAN, and so can be installed with the following:
-
-``` r
-install.packages("congressbr")
-```
+congressbr is not currently on CRAN, as the Chamber of Deputies API is under development and constantly changing. We are working on getting the package back to CRAN. 
 
 Development versions can be installed with the devtools package:
 
