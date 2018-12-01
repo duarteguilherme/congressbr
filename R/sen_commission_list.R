@@ -160,7 +160,7 @@ sen_commissions <- function(active = c("Yes", "No"),
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
-#' cpi <- sen_commissions_type(type = "cpi")
+#' cpi <- sen_commissions_type(type = "permanent")
 #' @export
 sen_commissions_type <- function(type = c("permanent", "cpi", "temporary"),
                             ascii = TRUE){

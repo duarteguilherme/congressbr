@@ -26,7 +26,7 @@ cham_bill_info_id <- function(bill_id, ascii=T) {
   }
   link <- "http://www.camara.leg.br/SitCamaraWS/Proposicoes.asmx/ObterProposicaoPorID?IdProp=" %p%
     bill_id
-  print(link)
+
   data <- read_xml(link) %>%
     extract_bill_info
   if ( ascii==T ) {

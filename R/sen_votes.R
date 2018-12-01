@@ -29,7 +29,7 @@
 #' set of votes for each legislature, see \code{data("senate_nominal_votes")}.
 #' @examples
 #' \dontrun{
-#' nominal_vote <- sen_votes(date = "20130516")
+#' en_votes(date = "20130516")
 #'
 #' # Some votes are secret:
 #' ssshhh <- sen_votes("20160301", binary = FALSE)
@@ -211,10 +211,8 @@ sen_votes <- function(date = NULL, end_date = NULL,
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
 #' \dontrun{
-#' nominal_vote <- sen_votes_year(date = "2013")
-#'
-#' # Some votes are secret:
-#' ssshhh <- sen_votes_year("2016", binary = FALSE)
+#' sen_votes_year(date = "2013")
+#' }
 #'
 #' @export
 sen_votes_year <- function(year = NULL,

@@ -110,7 +110,7 @@ sen_bills <- function(bill_id = NULL, type = NULL,
   bill_author_order = purrr::map_chr(author_id, "NumOrdemAutor",
                                      .null = nulo),
   bill_details_short = request$DadosBasicosMateria$EmentaMateria,
-  bill_indexing = request$DadosBasicosMateria$IndexacaoMateria,
+  #bill_indexing = request$DadosBasicosMateria$IndexacaoMateria,
   bill_situation = purrr::map_chr(situation, "DescricaoSituacao",
                                   .null = nulo) %>% disc(),
   bill_situation_house = purrr::map_chr(situation, "NomeCasaLocal",
@@ -181,8 +181,8 @@ sen_bills <- function(bill_id = NULL, type = NULL,
           bill_details_short, "Latin-ASCII"),
         bill_details = stringi::stri_trans_general(bill_details,
                                                    "Latin-ASCII"),
-        bill_indexing = stringi::stri_trans_general(
-          bill_indexing, "Latin-ASCII"),
+        # bill_indexing = stringi::stri_trans_general(
+        #   bill_indexing, "Latin-ASCII"),
         bill_topic_general = stringi::stri_trans_general(
           bill_topic_general, "Latin-ASCII"),
         bill_topic_specific = stringi::stri_trans_general(

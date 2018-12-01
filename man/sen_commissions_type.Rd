@@ -30,7 +30,7 @@ Returns a data frame with the following variables:
 }
 }
 \examples{
-cpi <- sen_commissions_type(type = "cpi")
+cpi <- sen_commissions_type(type = "permanent")
 }
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.

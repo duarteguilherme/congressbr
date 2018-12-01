@@ -1,3 +1,12 @@
+## Version 0.1.5
+
+- Small fixes; fixed error in example.
+
+## R CMD check results 
+
+0 errors | 0 warnings | 0 notes 
+
+
 ## Version 0.1.4
 
 - New function added to return Senate data by year.

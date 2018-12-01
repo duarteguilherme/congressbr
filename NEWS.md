@@ -1,3 +1,8 @@
+# congressbr 0.1.5
+
+- Fixed conflict between cham_votes and sen_votes functions.
+- Fixed error in sen_bills.
+
 # congressbr 0.1.4
 
 - Added a new function that returns Senate data by year, with a progress bar.

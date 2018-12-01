@@ -24,6 +24,12 @@ A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 Returns voting information from the Senate floor for the year
 requested.
 }
+\examples{
+\dontrun{
+sen_votes_year(date = "2013")
+}
+
+}
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 }

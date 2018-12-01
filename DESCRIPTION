@@ -2,7 +2,7 @@ Package: congressbr
 Type: Package
 Title: Downloads, Unpacks and Tidies Legislative Data from the Brazilian Federal
     Senate and Chamber of Deputies
-Version: 0.1.4
+Version: 0.1.5
 Authors@R: c(
     person(given = "Robert", family = "McDonnell", email = "mcdonnell.robert5@gmail.com", role = c("aut", "cre")),
     person(given = "Guilherme", family = "Jardim Duarte", email = "gjardimduarte@gmail.com", role = "aut"),
@@ -16,9 +16,9 @@ Description: Downloads and tidies data from the Brazilian Federal Senate and
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-Depends:
+Depends: 
     R (>= 3.0)
-Imports:
+Imports: 
     dplyr (>= 0.5.0),
     purrr (>= 0.2.2),
     xml2 (>= 1.0.0),
@@ -32,11 +32,11 @@ Imports:
     pscl (>= 1.4.9),
     glue (>= 0.0.1),
     progress (>= 0.0.1)
-RoxygenNote: 6.1.0
-Suggests:
-    covr,
-    knitr,
-    rmarkdown,
+RoxygenNote: 6.1.1
+Suggests: 
+    devtools,
     ggplot2,
-    devtools
+    httptest,
+    knitr,
+    rmarkdown
 VignetteBuilder: knitr

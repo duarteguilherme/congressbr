@@ -79,7 +79,7 @@ if(getRversion() >= "2.15.1")  utils::globalVariables(
     'session_date', 'agenda_commission_member', 'agenda_date', 'legislator_name',
     'agenda_commission_member', "bill_house", "bill_id", "bill_in_passage",
     "bill_indexing", "bill_location", "bill_location_house", "bill_number",
-    "bill_passage_date",
+    "bill_passage_date", "vote_round",
     "bill_passage_dest_location", "bill_passage_destination",
     "bill_passage_orig_location",
     "bill_passage_origin", "bill_passage_text", "bill_passing", "bill_report",

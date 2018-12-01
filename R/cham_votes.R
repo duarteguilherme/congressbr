@@ -35,7 +35,7 @@ cham_votes <- function(type, number, year, ascii = TRUE) {
   }
   link <- "http://www.camara.leg.br/SitCamaraWS/Proposicoes.asmx/ObterVotacaoProposicao?tipo=" %p%
     type %p% "&numero=" %p% number %p% "&ano=" %p% year
-  print(link)
+
   data <- tryCatch({read_xml(link)},
                    error=function(x) {
                      y <- httr::GET(link)
@@ -70,7 +70,7 @@ cham_votes <- function(type, number, year, ascii = TRUE) {
 }
 
 
-# I'm using this queue to create an id for each rollcall
+# create an id for each rollcall
 
 cham_extract_bill_votes <- function(bill) {
   info_bill <-  dplyr::tibble(
