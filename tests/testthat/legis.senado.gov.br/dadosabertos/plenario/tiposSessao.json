@@ -1,0 +1,169 @@
+{
+    "ListaTiposSessao": {
+        "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+        "@xsi:noNamespaceSchemaLocation": "http://legis.senado.leg.br/dadosabertos/dados/ListaTiposSessaov2.xsd",
+        "Metadados": {
+            "Versao": "02/12/2018 10:08:54",
+            "VersaoServico": "2",
+            "DescricaoDataSet": "Lista os tipos de sessão, ativos ou não. Por default, apenas os ativos. Para listar todos, acrescente o parâmetro opcional \"indAtivos=N\"."
+        },
+        "TiposSessao": {
+            "TipoSessao": [
+                {
+                    "Codigo": "11",
+                    "SiglaCasa": "CD",
+                    "TipoSessao": "DOR",
+                    "Descricao": "Sessão Deliberativa Ordinária",
+                    "DataInicio": "1995-08-10"
+                },
+                {
+                    "Codigo": "5",
+                    "SiglaCasa": "CN",
+                    "TipoSessao": "CNJ",
+                    "Descricao": "Sessão Conjunta",
+                    "DataInicio": "1900-01-01"
+                },
+                {
+                    "Codigo": "3",
+                    "SiglaCasa": "CN",
+                    "TipoSessao": "ESP",
+                    "Descricao": "Sessão Especial",
+                    "DataInicio": "1900-01-01"
+                },
+                {
+                    "Codigo": "25",
+                    "SiglaCasa": "CN",
+                    "TipoSessao": "PRE",
+                    "Descricao": "Sessão de Premiações e Condecorações",
+                    "DataInicio": "2010-01-01"
+                },
+                {
+                    "Codigo": "6",
+                    "SiglaCasa": "CN",
+                    "TipoSessao": "RCR",
+                    "Descricao": "Reunião de Comissão Representativa",
+                    "DataInicio": "1901-01-01"
+                },
+                {
+                    "Codigo": "2",
+                    "SiglaCasa": "CN",
+                    "TipoSessao": "REU",
+                    "Descricao": "Reunião",
+                    "DataInicio": "1900-01-01"
+                },
+                {
+                    "Codigo": "4",
+                    "SiglaCasa": "CN",
+                    "TipoSessao": "SOL",
+                    "Descricao": "Sessão Solene",
+                    "DataInicio": "1900-01-01"
+                },
+                {
+                    "Codigo": "16",
+                    "SiglaCasa": "CN",
+                    "TipoSessao": "SPR",
+                    "Descricao": "Sessão Preparatória",
+                    "DataInicio": "2001-02-01"
+                },
+                {
+                    "Codigo": "14",
+                    "SiglaCasa": "SF",
+                    "TipoSessao": "DEX",
+                    "Descricao": "Sessão Deliberativa Extraordinária",
+                    "DataInicio": "1995-08-10"
+                },
+                {
+                    "Codigo": "12",
+                    "SiglaCasa": "SF",
+                    "TipoSessao": "DOR",
+                    "Descricao": "Sessão Deliberativa Ordinária",
+                    "DataInicio": "1995-08-10"
+                },
+                {
+                    "Codigo": "9",
+                    "SiglaCasa": "SF",
+                    "TipoSessao": "ESP",
+                    "Descricao": "Sessão Especial",
+                    "DataInicio": "1990-01-01"
+                },
+                {
+                    "Codigo": "13",
+                    "SiglaCasa": "SF",
+                    "TipoSessao": "NDL",
+                    "Descricao": "Sessão Não Deliberativa",
+                    "DataInicio": "1995-08-10"
+                },
+                {
+                    "Codigo": "200",
+                    "SiglaCasa": "SF",
+                    "TipoSessao": "NH ",
+                    "Descricao": "Não haverá sessão",
+                    "DataInicio": "2016-05-04"
+                },
+                {
+                    "Codigo": "41",
+                    "SiglaCasa": "SF",
+                    "TipoSessao": "PJS",
+                    "Descricao": "Programa Senado Jovem Brasileiro",
+                    "DataInicio": "2012-10-08"
+                },
+                {
+                    "Codigo": "23",
+                    "SiglaCasa": "SF",
+                    "TipoSessao": "PRE",
+                    "Descricao": "Sessão de Premiações e Condecorações",
+                    "DataInicio": "2010-01-01"
+                },
+                {
+                    "Codigo": "15",
+                    "SiglaCasa": "SF",
+                    "TipoSessao": "REP",
+                    "Descricao": "Reunião Preparatória",
+                    "DataInicio": "2001-02-01"
+                },
+                {
+                    "Codigo": "161",
+                    "SiglaCasa": "SF",
+                    "TipoSessao": "RPL",
+                    "Descricao": "Reunião do Parlatino - Parlamento Latino Americano",
+                    "DataInicio": "2015-08-18"
+                },
+                {
+                    "Codigo": "202",
+                    "SiglaCasa": "SF",
+                    "TipoSessao": "RPR",
+                    "Descricao": "Reunião Preparatória",
+                    "DataInicio": "2017-01-12"
+                },
+                {
+                    "Codigo": "10",
+                    "SiglaCasa": "SF",
+                    "TipoSessao": "RSF",
+                    "Descricao": "Reunião ",
+                    "DataInicio": "1995-08-10"
+                },
+                {
+                    "Codigo": "201",
+                    "SiglaCasa": "SF",
+                    "TipoSessao": "SA ",
+                    "Descricao": "Solenidade",
+                    "DataInicio": "2016-11-10"
+                },
+                {
+                    "Codigo": "180",
+                    "SiglaCasa": "SF",
+                    "TipoSessao": "SSL",
+                    "Descricao": "Sessão Solene",
+                    "DataInicio": "2016-03-11"
+                },
+                {
+                    "Codigo": "61",
+                    "SiglaCasa": "SF",
+                    "TipoSessao": "TEM",
+                    "Descricao": "Sessão de Debates Temáticos",
+                    "DataInicio": "2013-03-08"
+                }
+            ]
+        }
+    }
+}

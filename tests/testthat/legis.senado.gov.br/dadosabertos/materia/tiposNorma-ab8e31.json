@@ -1,0 +1,1067 @@
+{
+    "ListaTiposDocumento": {
+        "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+        "@xsi:noNamespaceSchemaLocation": "http://legis.senado.leg.br/dadosabertos/dados/ListaTiposDocumentov3.xsd",
+        "Metadados": {
+            "Versao": "02/12/2018 09:17:53",
+            "VersaoServico": "3",
+            "DataVersaoServico": "2017-02-01",
+            "DescricaoDataSet": "Retorna os tipos de normas jurídicas, ativos ou não."
+        },
+        "TiposDocumento": {
+            "TipoDocumento": [
+                {
+                    "Codigo": "18",
+                    "Sigla": "ACD",
+                    "IRI": "http://www.lexml.gov.br/sigen#AtoDoPresidenteDaCamaraDosDeputados",
+                    "Descricao": "Ato do Presidente da Câmara dos Deputados",
+                    "Instanciavel": "1",
+                    "CodigoPai": "412"
+                },
+                {
+                    "Codigo": "23",
+                    "Sigla": "ACP",
+                    "IRI": "http://www.lexml.gov.br/sigen#AtoComplementar",
+                    "Descricao": "Ato Complementar",
+                    "Instanciavel": "1",
+                    "CodigoPai": "412"
+                },
+                {
+                    "Codigo": "277",
+                    "Sigla": "ACR",
+                    "IRI": "http://www.lexml.gov.br/sigen#AtoDoComandoSupremoDaRevolucao",
+                    "Descricao": "Ato do Comando Supremo da Revolução",
+                    "Instanciavel": "1",
+                    "CodigoPai": "412"
+                },
+                {
+                    "Codigo": "267",
+                    "Sigla": "ACV",
+                    "IRI": "http://www.lexml.gov.br/sigen#AtoConvocatorio",
+                    "Descricao": "Ato Convocatório",
+                    "Instanciavel": "0",
+                    "CodigoPai": "412"
+                },
+                {
+                    "Codigo": "106",
+                    "Sigla": "ACV-n",
+                    "IRI": "http://www.lexml.gov.br/sigen#AtoConvocatorioNumerado",
+                    "Descricao": "Ato Convocatório Numerado",
+                    "Instanciavel": "1",
+                    "CodigoPai": "267"
+                },
+                {
+                    "Codigo": "430",
+                    "Sigla": "ACV-sn",
+                    "IRI": "http://www.lexml.gov.br/sigen#AtoConvocatorioNaoNumerado",
+                    "Descricao": "Ato Convocatório não Numerado",
+                    "Instanciavel": "1",
+                    "CodigoPai": "267"
+                },
+                {
+                    "Codigo": "388",
+                    "Sigla": "ADC",
+                    "IRI": "http://www.lexml.gov.br/sigen#AtoDeclaratorio",
+                    "Descricao": "Ato Declaratório",
+                    "Instanciavel": "1",
+                    "CodigoPai": "412"
+                },
+                {
+                    "Codigo": "627",
+                    "Sigla": "ADC-n",
+                    "IRI": "http://www.lexml.gov.br/sigen#AtoDeclaratorioNumerado",
+                    "Descricao": "Ato Declaratório Numerado",
+                    "Instanciavel": "1",
+                    "CodigoPai": "388"
+                },
+                {
+                    "Codigo": "457",
+                    "Sigla": "ADC-sn",
+                    "IRI": "http://www.lexml.gov.br/sigen#AtoDeclaratorioNaoNumerado",
+                    "Descricao": "Ato Declaratório não Numerado",
+                    "Instanciavel": "1",
+                    "CodigoPai": "388"
+                },
+                {
+                    "Codigo": "688",
+                    "Sigla": "ADCT",
+                    "IRI": "http://www.lexml.gov.br/sigen#AtoDasDisposicoesConstituconaisTransitorias",
+                    "Descricao": "Ato das Disposições Constitucionais Transitórias",
+                    "Instanciavel": "1",
+                    "CodigoPai": "734"
+                },
+                {
+                    "Codigo": "164",
+                    "Sigla": "ADCon",
+                    "IRI": "http://www.lexml.gov.br/sigen#AcordaoDaAcaoDeclaratoriaDeConstitucionalidade",
+                    "Descricao": "Acórdão da Ação Declaratória de Constitucionalidade",
+                    "Instanciavel": "1",
+                    "CodigoPai": "434"
+                },
+                {
+                    "Codigo": "848",
+                    "Sigla": "ADI",
+                    "IRI": "http://www.lexml.gov.br/sigen#AcordaoDaAcaoDiretaDeInconstitucionalidade",
+                    "Descricao": "Acórdão da Ação Direta de Inconstitucionalidade",
+                    "Instanciavel": "1",
+                    "CodigoPai": "434"
+                },
+                {
+                    "Codigo": "17760941",
+                    "Sigla": "ADO",
+                    "IRI": "http://www.lexml.gov.br/sigen#AcordaoDaAcaoDiretaDeInconstitucionalidadePorOmissao",
+                    "Descricao": "Acórdão da Ação Direta de Inconstitucionalidade por Omissão",
+                    "Instanciavel": "1",
+                    "CodigoPai": "434"
+                },
+                {
+                    "Codigo": "479",
+                    "Sigla": "ADPF",
+                    "IRI": "http://www.lexml.gov.br/sigen#AcordaoDaArguicaoDeDescumprimentoDePreceitoFundamental",
+                    "Descricao": "Acórdão da Arguição de Descumprimento de Preceito Fundamental",
+                    "Instanciavel": "1",
+                    "CodigoPai": "434"
+                },
+                {
+                    "Codigo": "201",
+                    "Sigla": "ADT",
+                    "IRI": "http://www.lexml.gov.br/sigen#AditamentoAoAtoConvocatorio",
+                    "Descricao": "Aditamento ao Ato Convocatório",
+                    "Instanciavel": "1",
+                    "CodigoPai": "412"
+                },
+                {
+                    "Codigo": "17708700",
+                    "Sigla": "AIEMC",
+                    "IRI": "http://www.lexml.gov.br/sigen#AtoInternacionalComForcaDeEmendaConstitucional",
+                    "Descricao": "Ato Internacional com Força de Emenda Constitucional",
+                    "Instanciavel": "1",
+                    "CodigoPai": "734"
+                },
+                {
+                    "Codigo": "17708700",
+                    "Sigla": "AIEMC",
+                    "IRI": "http://www.lexml.gov.br/sigen#AtoInternacionalComForcaDeEmendaConstitucional",
+                    "Descricao": "Ato Internacional com Força de Emenda Constitucional",
+                    "Instanciavel": "1",
+                    "CodigoPai": "17708694"
+                },
+                {
+                    "Codigo": "17708699",
+                    "Sigla": "AILEI",
+                    "IRI": "http://www.lexml.gov.br/sigen#AtoInternacionalComForcaDeLei",
+                    "Descricao": "Ato Internacional com Força de Lei",
+                    "Instanciavel": "1",
+                    "CodigoPai": "677"
+                },
+                {
+                    "Codigo": "17708699",
+                    "Sigla": "AILEI",
+                    "IRI": "http://www.lexml.gov.br/sigen#AtoInternacionalComForcaDeLei",
+                    "Descricao": "Ato Internacional com Força de Lei",
+                    "Instanciavel": "1",
+                    "CodigoPai": "17708694"
+                },
+                {
+                    "Codigo": "871",
+                    "Sigla": "AIT",
+                    "IRI": "http://www.lexml.gov.br/sigen#AtoInstitucional",
+                    "Descricao": "Ato Institucional",
+                    "Instanciavel": "1",
+                    "CodigoPai": "412"
+                },
+                {
+                    "Codigo": "144",
+                    "Sigla": "ALV",
+                    "IRI": "http://www.lexml.gov.br/sigen#Alvara",
+                    "Descricao": "Alvará",
+                    "Instanciavel": "1",
+                    "CodigoPai": "8"
+                },
+                {
+                    "Codigo": "844",
+                    "Sigla": "AMA",
+                    "IRI": "http://www.lexml.gov.br/sigen#AtoDaMesaDaAssembleiaNacionalConstituinte",
+                    "Descricao": "Ato da Mesa da Assembléia Nacional Constituinte",
+                    "Instanciavel": "1",
+                    "CodigoPai": "412"
+                },
+                {
+                    "Codigo": "257",
+                    "Sigla": "AMC",
+                    "IRI": "http://www.lexml.gov.br/sigen#AtoDaMesaDoCongressoNacional",
+                    "Descricao": "Ato da Mesa Diretora do Congresso Nacional",
+                    "Instanciavel": "0",
+                    "CodigoPai": "412"
+                },
+                {
+                    "Codigo": "833",
+                    "Sigla": "AMC-n",
+                    "IRI": "http://www.lexml.gov.br/sigen#AtoDaMesaDoCongressoNacionalNumerado",
+                    "Descricao": "Ato da Mesa Diretora do Congresso Nacional Numerado",
+                    "Instanciavel": "1",
+                    "CodigoPai": "257"
+                },
+                {
+                    "Codigo": "806",
+                    "Sigla": "AMC-sn",
+                    "IRI": "http://www.lexml.gov.br/sigen#AtoDaMesaDoCongressoNacionalNaoNumerado",
+                    "Descricao": "Ato da Mesa Diretora do Congresso Nacional não Numerado",
+                    "Instanciavel": "1",
+                    "CodigoPai": "257"
+                },
+                {
+                    "Codigo": "253",
+                    "Sigla": "AMS",
+                    "IRI": "http://www.lexml.gov.br/sigen#AtoDaMesaDoSenadoFederal",
+                    "Descricao": "Ato da Mesa do Senado Federal",
+                    "Instanciavel": "1",
+                    "CodigoPai": "412"
+                },
+                {
+                    "Codigo": "725",
+                    "Sigla": "APN",
+                    "IRI": "http://www.lexml.gov.br/sigen#AtoDoPresidenteDoCongressoNacional",
+                    "Descricao": "Ato do Presidente do Congresso Nacional",
+                    "Instanciavel": "0",
+                    "CodigoPai": "412"
+                },
+                {
+                    "Codigo": "555",
+                    "Sigla": "APN-n",
+                    "IRI": "http://www.lexml.gov.br/sigen#AtoDoPresidenteDoCongressoNacionalNumerado",
+                    "Descricao": "Ato do Presidente do Congresso Nacional Numerado",
+                    "Instanciavel": "1",
+                    "CodigoPai": "725"
+                },
+                {
+                    "Codigo": "564",
+                    "Sigla": "APN-sn",
+                    "IRI": "http://www.lexml.gov.br/sigen#AtoDoPresidenteDoCongressoNacionalNaoNumerado",
+                    "Descricao": "Ato do Presidente do Congresso Nacional não Numerado",
+                    "Instanciavel": "1",
+                    "CodigoPai": "725"
+                },
+                {
+                    "Codigo": "212",
+                    "Sigla": "ASF",
+                    "IRI": "http://www.lexml.gov.br/sigen#AtoDoPresidenteDoSenadoFederal",
+                    "Descricao": "Ato do Presidente do Senado Federal",
+                    "Instanciavel": "0",
+                    "CodigoPai": "412"
+                },
+                {
+                    "Codigo": "691",
+                    "Sigla": "ASF-n",
+                    "IRI": "http://www.lexml.gov.br/sigen#AtoDoPresidenteDoSenadoFederalNumerado",
+                    "Descricao": "Ato do Presidente do Senado Federal Numerado",
+                    "Instanciavel": "1",
+                    "CodigoPai": "212"
+                },
+                {
+                    "Codigo": "57",
+                    "Sigla": "ASF-sn",
+                    "IRI": "http://www.lexml.gov.br/sigen#AtoDoPresidenteDoSenadoFederalNaoNumerado",
+                    "Descricao": "Ato do Presidente do Senado Federal não Numerado",
+                    "Instanciavel": "1",
+                    "CodigoPai": "212"
+                },
+                {
+                    "Codigo": "17708694",
+                    "Sigla": "ATI",
+                    "IRI": "http://www.lexml.gov.br/sigen#AtoInternacional",
+                    "Descricao": "Ato Internacional",
+                    "Instanciavel": "0",
+                    "CodigoPai": "104"
+                },
+                {
+                    "Codigo": "861",
+                    "Sigla": "AVG",
+                    "IRI": "http://www.lexml.gov.br/sigen#AtoDoVicePresidenteDoCongressoNacional",
+                    "Descricao": "Ato do Vice-Presidente do Congresso Nacional",
+                    "Instanciavel": "1",
+                    "CodigoPai": "412"
+                },
+                {
+                    "Codigo": "613",
+                    "Sigla": "AVS",
+                    "IRI": "http://www.lexml.gov.br/sigen#Aviso",
+                    "Descricao": "Aviso",
+                    "Instanciavel": "1",
+                    "CodigoPai": "27459940"
+                },
+                {
+                    "Codigo": "454",
+                    "Sigla": "CAI",
+                    "IRI": "http://www.lexml.gov.br/sigen#CartaImperial",
+                    "Descricao": "Carta Imperial",
+                    "Instanciavel": "1",
+                    "CodigoPai": "8"
+                },
+                {
+                    "Codigo": "618",
+                    "Sigla": "CDL",
+                    "IRI": "http://www.lexml.gov.br/sigen#CartaDeLei",
+                    "Descricao": "Carta de Lei",
+                    "Instanciavel": "0",
+                    "CodigoPai": "8"
+                },
+                {
+                    "Codigo": "493",
+                    "Sigla": "CDL-n",
+                    "IRI": "http://www.lexml.gov.br/sigen#CartaDeLeiNumerada",
+                    "Descricao": "Carta de Lei Numerada",
+                    "Instanciavel": "1",
+                    "CodigoPai": "618"
+                },
+                {
+                    "Codigo": "114",
+                    "Sigla": "CDL-sn",
+                    "IRI": "http://www.lexml.gov.br/sigen#CartaDeLeiNaoNumerada",
+                    "Descricao": "Carta de Lei não Numerada",
+                    "Instanciavel": "1",
+                    "CodigoPai": "618"
+                },
+                {
+                    "Codigo": "881",
+                    "Sigla": "CON",
+                    "IRI": "http://www.lexml.gov.br/sigen#ConstituicaoFederal",
+                    "Descricao": "Constituição Federal",
+                    "Instanciavel": "0",
+                    "CodigoPai": "734"
+                },
+                {
+                    "Codigo": "800",
+                    "Sigla": "CON-nv",
+                    "IRI": "http://www.lexml.gov.br/sigen#ConstituicaoFederalAnterior",
+                    "Descricao": "Constituição Federal Anterior",
+                    "Instanciavel": "1",
+                    "CodigoPai": "881"
+                },
+                {
+                    "Codigo": "51",
+                    "Sigla": "CON-v",
+                    "IRI": "http://www.lexml.gov.br/sigen#ConstituicaoFederalVigente",
+                    "Descricao": "Constituição Federal Vigente",
+                    "Instanciavel": "1",
+                    "CodigoPai": "881"
+                },
+                {
+                    "Codigo": "139",
+                    "Sigla": "CRE",
+                    "IRI": "http://www.lexml.gov.br/sigen#CartaRegia",
+                    "Descricao": "Carta Régia",
+                    "Instanciavel": "1",
+                    "CodigoPai": "8"
+                },
+                {
+                    "Codigo": "119",
+                    "Sigla": "CRT",
+                    "IRI": "http://www.lexml.gov.br/sigen#CartaDeRatificacao",
+                    "Descricao": "Carta de Ratificação",
+                    "Instanciavel": "1",
+                    "CodigoPai": "8"
+                },
+                {
+                    "Codigo": "831",
+                    "Sigla": "CTP",
+                    "IRI": "http://www.lexml.gov.br/sigen#CartaPatente",
+                    "Descricao": "Carta Patente",
+                    "Instanciavel": "1",
+                    "CodigoPai": "8"
+                },
+                {
+                    "Codigo": "49",
+                    "Sigla": "CVC",
+                    "IRI": "http://www.lexml.gov.br/sigen#Convencao",
+                    "Descricao": "Convenção",
+                    "Instanciavel": "1",
+                    "CodigoPai": "8"
+                },
+                {
+                    "Codigo": "637",
+                    "Sigla": "DCM",
+                    "IRI": "http://www.lexml.gov.br/sigen#DecretoDoConselhoDeMInistro",
+                    "Descricao": "Decreto do Conselho de MInistro",
+                    "Instanciavel": "1",
+                    "CodigoPai": "759"
+                },
+                {
+                    "Codigo": "226",
+                    "Sigla": "DEC",
+                    "IRI": "http://www.lexml.gov.br/sigen#Decreto",
+                    "Descricao": "Decreto",
+                    "Instanciavel": "0",
+                    "CodigoPai": "759"
+                },
+                {
+                    "Codigo": "738",
+                    "Sigla": "DEC-cl",
+                    "IRI": "http://www.lexml.gov.br/sigen#DecretoComLetra",
+                    "Descricao": "Decreto com Letra",
+                    "Instanciavel": "1",
+                    "CodigoPai": "226"
+                },
+                {
+                    "Codigo": "836",
+                    "Sigla": "DEC-n",
+                    "IRI": "http://www.lexml.gov.br/sigen#DecretoNumerado",
+                    "Descricao": "Decreto Numerado",
+                    "Instanciavel": "1",
+                    "CodigoPai": "226"
+                },
+                {
+                    "Codigo": "61",
+                    "Sigla": "DEC-sn",
+                    "IRI": "http://www.lexml.gov.br/sigen#DecretoNaoNumerado",
+                    "Descricao": "Decreto não Numerado",
+                    "Instanciavel": "1",
+                    "CodigoPai": "226"
+                },
+                {
+                    "Codigo": "12",
+                    "Sigla": "DEL",
+                    "IRI": "http://www.lexml.gov.br/sigen#DecretoLei",
+                    "Descricao": "Decreto-Lei",
+                    "Instanciavel": "1",
+                    "CodigoPai": "677"
+                },
+                {
+                    "Codigo": "27473790",
+                    "Sigla": "DEL-mpv",
+                    "IRI": "http://www.lexml.gov.br/sigen#DecretoLeiConvertidoEmMPV",
+                    "Descricao": "Decreto-Lei convertido em MPV",
+                    "Instanciavel": "1",
+                    "CodigoPai": "12"
+                },
+                {
+                    "Codigo": "157",
+                    "Sigla": "DER",
+                    "IRI": "http://www.lexml.gov.br/sigen#DecretoReservado",
+                    "Descricao": "Decreto Reservado",
+                    "Instanciavel": "1",
+                    "CodigoPai": "759"
+                },
+                {
+                    "Codigo": "675",
+                    "Sigla": "DLG",
+                    "IRI": "http://www.lexml.gov.br/sigen#DecretoLegislativo",
+                    "Descricao": "Decreto Legislativo",
+                    "Instanciavel": "1",
+                    "CodigoPai": "677"
+                },
+                {
+                    "Codigo": "154",
+                    "Sigla": "DLN",
+                    "IRI": "http://www.lexml.gov.br/sigen#DecretoLegislativoDoCongressoNacional",
+                    "Descricao": "Decreto Legislativo do Congresso Nacional",
+                    "Instanciavel": "1",
+                    "CodigoPai": "759"
+                },
+                {
+                    "Codigo": "525",
+                    "Sigla": "DPL",
+                    "IRI": "http://www.lexml.gov.br/sigen#DecretoDoPoderLegislativo",
+                    "Descricao": "Decreto do Poder Legislativo",
+                    "Instanciavel": "0",
+                    "CodigoPai": "759"
+                },
+                {
+                    "Codigo": "171",
+                    "Sigla": "DPL-n",
+                    "IRI": "http://www.lexml.gov.br/sigen#DecretoDoPoderLegislativoNumerado",
+                    "Descricao": "Decreto do Poder Legislativo Numerado",
+                    "Instanciavel": "1",
+                    "CodigoPai": "525"
+                },
+                {
+                    "Codigo": "478",
+                    "Sigla": "DPL-sn",
+                    "IRI": "http://www.lexml.gov.br/sigen#DecretoDoPoderLegislativoNaoNumerado",
+                    "Descricao": "Decreto do Poder Legislativo não Numerado",
+                    "Instanciavel": "1",
+                    "CodigoPai": "525"
+                },
+                {
+                    "Codigo": "559",
+                    "Sigla": "EDT",
+                    "IRI": "http://www.lexml.gov.br/sigen#Edital",
+                    "Descricao": "Edital",
+                    "Instanciavel": "1",
+                    "CodigoPai": "8"
+                },
+                {
+                    "Codigo": "427",
+                    "Sigla": "EMC",
+                    "IRI": "http://www.lexml.gov.br/sigen#EmendaConstitucional",
+                    "Descricao": "Emenda Constitucional",
+                    "Instanciavel": "0",
+                    "CodigoPai": "734"
+                },
+                {
+                    "Codigo": "860",
+                    "Sigla": "EMC-n",
+                    "IRI": "http://www.lexml.gov.br/sigen#EmendaConstitucionalNumerada",
+                    "Descricao": "Emenda Constitucional Numerada",
+                    "Instanciavel": "1",
+                    "CodigoPai": "427"
+                },
+                {
+                    "Codigo": "472",
+                    "Sigla": "EMC-sn",
+                    "IRI": "http://www.lexml.gov.br/sigen#EmendaConstitucionalNaoNumerada",
+                    "Descricao": "Emenda Constitucional não Numerada",
+                    "Instanciavel": "1",
+                    "CodigoPai": "427"
+                },
+                {
+                    "Codigo": "787",
+                    "Sigla": "EMR",
+                    "IRI": "http://www.lexml.gov.br/sigen#EmendaConstitucionalDeRevisao",
+                    "Descricao": "Emenda Constitucional de Revisão",
+                    "Instanciavel": "1",
+                    "CodigoPai": "734"
+                },
+                {
+                    "Codigo": "835",
+                    "Sigla": "EXA",
+                    "IRI": "http://www.lexml.gov.br/sigen#ExcertoDeAta",
+                    "Descricao": "Excerto de Ata",
+                    "Instanciavel": "1",
+                    "CodigoPai": "58"
+                },
+                {
+                    "Codigo": "4",
+                    "Sigla": "LCP",
+                    "IRI": "http://www.lexml.gov.br/sigen#LeiComplementar",
+                    "Descricao": "Lei Complementar",
+                    "Instanciavel": "1",
+                    "CodigoPai": "677"
+                },
+                {
+                    "Codigo": "353",
+                    "Sigla": "LCT",
+                    "IRI": "http://www.lexml.gov.br/sigen#LeiConstitucional",
+                    "Descricao": "Lei Constitucional",
+                    "Instanciavel": "1",
+                    "CodigoPai": "677"
+                },
+                {
+                    "Codigo": "17684236",
+                    "Sigla": "LDF",
+                    "IRI": "http://www.lexml.gov.br/sigen#LeiDoDistritoFederal",
+                    "Descricao": "Lei do Distrito Federal",
+                    "Instanciavel": "1",
+                    "CodigoPai": "17684231"
+                },
+                {
+                    "Codigo": "385",
+                    "Sigla": "LDL",
+                    "IRI": "http://www.lexml.gov.br/sigen#LeiDelegada",
+                    "Descricao": "Lei Delegada",
+                    "Instanciavel": "1",
+                    "CodigoPai": "677"
+                },
+                {
+                    "Codigo": "712",
+                    "Sigla": "LEI",
+                    "IRI": "http://www.lexml.gov.br/sigen#Lei",
+                    "Descricao": "Lei",
+                    "Instanciavel": "0",
+                    "CodigoPai": "677"
+                },
+                {
+                    "Codigo": "426",
+                    "Sigla": "LEI-n",
+                    "IRI": "http://www.lexml.gov.br/sigen#LeiNumerada",
+                    "Descricao": "Lei Numerada",
+                    "Instanciavel": "1",
+                    "CodigoPai": "712"
+                },
+                {
+                    "Codigo": "269",
+                    "Sigla": "LEI-sn",
+                    "IRI": "http://www.lexml.gov.br/sigen#LeiNaoNumerada",
+                    "Descricao": "Lei não Numerada",
+                    "Instanciavel": "1",
+                    "CodigoPai": "712"
+                },
+                {
+                    "Codigo": "452",
+                    "Sigla": "MAN",
+                    "IRI": "http://www.lexml.gov.br/sigen#Manifesto",
+                    "Descricao": "Manifesto",
+                    "Instanciavel": "1",
+                    "CodigoPai": "8"
+                },
+                {
+                    "Codigo": "11",
+                    "Sigla": "MPV",
+                    "IRI": "http://www.lexml.gov.br/sigen#MedidaProvisoria",
+                    "Descricao": "Medida Provisória",
+                    "Instanciavel": "0",
+                    "CodigoPai": "677"
+                },
+                {
+                    "Codigo": "11",
+                    "Sigla": "MPV",
+                    "IRI": "http://www.lexml.gov.br/sigen#MedidaProvisoria",
+                    "Descricao": "Medida Provisória",
+                    "Instanciavel": "0",
+                    "CodigoPai": "27459933"
+                },
+                {
+                    "Codigo": "875",
+                    "Sigla": "MPV-cs",
+                    "IRI": "http://www.lexml.gov.br/sigen#MedidaProvisoriaComSequencial",
+                    "Descricao": "Medida Provisória com Sequencial",
+                    "Instanciavel": "1",
+                    "CodigoPai": "11"
+                },
+                {
+                    "Codigo": "511",
+                    "Sigla": "MPV-ss",
+                    "IRI": "http://www.lexml.gov.br/sigen#MedidaProvisoriaSemSequencial",
+                    "Descricao": "Medida Provisória sem Sequencial",
+                    "Instanciavel": "1",
+                    "CodigoPai": "11"
+                },
+                {
+                    "Codigo": "484",
+                    "Sigla": "MSG",
+                    "IRI": "http://www.lexml.gov.br/sigen#MensagemDeRejeicaoDeMedidaProvisoria",
+                    "Descricao": "Mensagem de Rejeição de Medida Provisória",
+                    "Instanciavel": "1",
+                    "CodigoPai": "58"
+                },
+                {
+                    "Codigo": "48",
+                    "Sigla": "MSR",
+                    "IRI": "http://www.lexml.gov.br/sigen#MensagemDaRegencia",
+                    "Descricao": "Mensagem da Regência",
+                    "Instanciavel": "1",
+                    "CodigoPai": "839"
+                },
+                {
+                    "Codigo": "215",
+                    "Sigla": "MSV",
+                    "IRI": "http://www.lexml.gov.br/sigen#MensagemDeVeto",
+                    "Descricao": "Mensagem de Veto",
+                    "Instanciavel": "0",
+                    "CodigoPai": "58"
+                },
+                {
+                    "Codigo": "99",
+                    "Sigla": "MSVP",
+                    "IRI": "http://www.lexml.gov.br/sigen#MensagemDeVetoParcial",
+                    "Descricao": "Mensagem de Veto Parcial",
+                    "Instanciavel": "1",
+                    "CodigoPai": "215"
+                },
+                {
+                    "Codigo": "650",
+                    "Sigla": "MSVT",
+                    "IRI": "http://www.lexml.gov.br/sigen#MensagemDeVetoTotal",
+                    "Descricao": "Mensagem de Veto Total",
+                    "Instanciavel": "1",
+                    "CodigoPai": "215"
+                },
+                {
+                    "Codigo": "280",
+                    "Sigla": "OFI",
+                    "IRI": "http://www.lexml.gov.br/sigen#Oficio",
+                    "Descricao": "Ofício",
+                    "Instanciavel": "1",
+                    "CodigoPai": "27459940"
+                },
+                {
+                    "Codigo": "368",
+                    "Sigla": "PARN",
+                    "IRI": "http://www.lexml.gov.br/sigen#ParecerNormativo",
+                    "Descricao": "Parecer Normativo",
+                    "Instanciavel": "1",
+                    "CodigoPai": "759"
+                },
+                {
+                    "Codigo": "357",
+                    "Sigla": "PRL",
+                    "IRI": "http://www.lexml.gov.br/sigen#Proclamacao",
+                    "Descricao": "Proclamação",
+                    "Instanciavel": "1",
+                    "CodigoPai": "839"
+                },
+                {
+                    "Codigo": "30184677",
+                    "Sigla": "PRT",
+                    "IRI": "http://www.lexml.gov.br/sigen#PortariaReal",
+                    "Descricao": "Portaria Real",
+                    "Instanciavel": "1",
+                    "CodigoPai": "8"
+                },
+                {
+                    "Codigo": "56",
+                    "Sigla": "PRV",
+                    "IRI": "http://www.lexml.gov.br/sigen#Provisao",
+                    "Descricao": "Provisão",
+                    "Instanciavel": "1",
+                    "CodigoPai": "8"
+                },
+                {
+                    "Codigo": "142",
+                    "Sigla": "RAC",
+                    "IRI": "http://www.lexml.gov.br/sigen#RegimentoInternoDaAssembleiaConstituinte",
+                    "Descricao": "Regimento Interno da Assembleia Constituinte",
+                    "Instanciavel": "1",
+                    "CodigoPai": "441"
+                },
+                {
+                    "Codigo": "762",
+                    "Sigla": "RCA",
+                    "IRI": "http://www.lexml.gov.br/sigen#Reclamacao",
+                    "Descricao": "Reclamação",
+                    "Instanciavel": "1",
+                    "CodigoPai": "839"
+                },
+                {
+                    "Codigo": "468",
+                    "Sigla": "RCD",
+                    "IRI": "http://www.lexml.gov.br/sigen#ResolucaoDaCamaraDosDeputados",
+                    "Descricao": "Resolução da Câmara dos Deputados",
+                    "Instanciavel": "1",
+                    "CodigoPai": "441"
+                },
+                {
+                    "Codigo": "85",
+                    "Sigla": "RCN",
+                    "IRI": "http://www.lexml.gov.br/sigen#ResolucaoDoCongressoNacional",
+                    "Descricao": "Resolução do Congresso Nacional",
+                    "Instanciavel": "1",
+                    "CodigoPai": "441"
+                },
+                {
+                    "Codigo": "354",
+                    "Sigla": "REG",
+                    "IRI": "http://www.lexml.gov.br/sigen#Regulamento",
+                    "Descricao": "Regulamento",
+                    "Instanciavel": "0",
+                    "CodigoPai": "8"
+                },
+                {
+                    "Codigo": "851",
+                    "Sigla": "REG-n",
+                    "IRI": "http://www.lexml.gov.br/sigen#RegulamentoNumerado",
+                    "Descricao": "Regulamento Numerado",
+                    "Instanciavel": "1",
+                    "CodigoPai": "354"
+                },
+                {
+                    "Codigo": "560",
+                    "Sigla": "REG-sn",
+                    "IRI": "http://www.lexml.gov.br/sigen#RegulamentoNaoNumerado",
+                    "Descricao": "Regulamento não Numerado",
+                    "Instanciavel": "1",
+                    "CodigoPai": "354"
+                },
+                {
+                    "Codigo": "27459938",
+                    "Sigla": "REQ",
+                    "IRI": "http://www.lexml.gov.br/sigen#RequerimentoDoConselhoDeProcuradores",
+                    "Descricao": "Requerimento do Conselho dos Procuradores",
+                    "Instanciavel": "1",
+                    "CodigoPai": "839"
+                },
+                {
+                    "Codigo": "199",
+                    "Sigla": "REQ",
+                    "IRI": "http://www.lexml.gov.br/sigen#Requerimento",
+                    "Descricao": "Requerimento",
+                    "Instanciavel": "1",
+                    "CodigoPai": "27459931"
+                },
+                {
+                    "Codigo": "521",
+                    "Sigla": "RRC",
+                    "IRI": "http://www.lexml.gov.br/sigen#ResolucaoDaRevisaoConstitucional",
+                    "Descricao": "Resolução da Revisão Constitucional",
+                    "Instanciavel": "1",
+                    "CodigoPai": "441"
+                },
+                {
+                    "Codigo": "798",
+                    "Sigla": "RSF",
+                    "IRI": "http://www.lexml.gov.br/sigen#ResolucaoDoSenadoFederal",
+                    "Descricao": "Resolução do Senado Federal",
+                    "Instanciavel": "1",
+                    "CodigoPai": "441"
+                },
+                {
+                    "Codigo": "395",
+                    "Sigla": "RSP",
+                    "IRI": "http://www.lexml.gov.br/sigen#Resposta",
+                    "Descricao": "Resposta",
+                    "Instanciavel": "1",
+                    "CodigoPai": "839"
+                },
+                {
+                    "Codigo": "7",
+                    "Sigla": "VER",
+                    "IRI": "http://www.lexml.gov.br/sigen#Vereacao",
+                    "Descricao": "Vereação",
+                    "Instanciavel": "1",
+                    "CodigoPai": "839"
+                },
+                {
+                    "Codigo": "434",
+                    "IRI": "http://www.lexml.gov.br/sigen#Acordao",
+                    "Descricao": "Acórdão",
+                    "Instanciavel": "0",
+                    "CodigoPai": "58"
+                },
+                {
+                    "Codigo": "27481057",
+                    "IRI": "http://www.lexml.gov.br/sigen#Emenda",
+                    "Descricao": "Emenda",
+                    "Instanciavel": "1",
+                    "CodigoPai": "27481060"
+                },
+                {
+                    "Codigo": "58",
+                    "IRI": "http://www.lexml.gov.br/sigen#Documento",
+                    "Descricao": "Documento",
+                    "Instanciavel": "0"
+                },
+                {
+                    "Codigo": "104",
+                    "IRI": "http://www.lexml.gov.br/sigen#NormaNoTodo",
+                    "Descricao": "Norma no Todo",
+                    "Instanciavel": "0",
+                    "CodigoPai": "58"
+                },
+                {
+                    "Codigo": "839",
+                    "IRI": "http://www.lexml.gov.br/sigen#DocumentoAntigo",
+                    "Descricao": "Documento Antigo",
+                    "Instanciavel": "0",
+                    "CodigoPai": "58"
+                },
+                {
+                    "Codigo": "27459936",
+                    "IRI": "http://www.lexml.gov.br/sigen#OficioReal",
+                    "Descricao": "Ofício Real",
+                    "Instanciavel": "1",
+                    "CodigoPai": "839"
+                },
+                {
+                    "Codigo": "27459930",
+                    "IRI": "http://www.lexml.gov.br/sigen#ProjetoDeLei",
+                    "Descricao": "Projeto de Lei",
+                    "Instanciavel": "1",
+                    "CodigoPai": "27459933"
+                },
+                {
+                    "Codigo": "27459942",
+                    "IRI": "http://www.lexml.gov.br/sigen#DocumentoLegislativoDeNormaDeEfeitoConcreto",
+                    "Descricao": "Documento Legislativo de Norma de Efeito Concreto",
+                    "Instanciavel": "1",
+                    "CodigoPai": "27459939"
+                },
+                {
+                    "Codigo": "27459941",
+                    "IRI": "http://www.lexml.gov.br/sigen#ProjetoDeDecretoLegislativo",
+                    "Descricao": "Projeto de Decreto Legislativo",
+                    "Instanciavel": "1",
+                    "CodigoPai": "27459942"
+                },
+                {
+                    "Codigo": "30184679",
+                    "IRI": "http://www.lexml.gov.br/sigen#DocumentoDeAtoAdministrativo",
+                    "Descricao": "Documento de Ato Administrativo",
+                    "Instanciavel": "1",
+                    "CodigoPai": "27459943"
+                },
+                {
+                    "Codigo": "412",
+                    "IRI": "http://www.lexml.gov.br/sigen#Ato",
+                    "Descricao": "Ato",
+                    "Instanciavel": "0",
+                    "CodigoPai": "759"
+                },
+                {
+                    "Codigo": "17684231",
+                    "IRI": "http://www.lexml.gov.br/sigen#NormaDistrital",
+                    "Descricao": "Norma Distrital",
+                    "Instanciavel": "0",
+                    "CodigoPai": "104"
+                },
+                {
+                    "Codigo": "27459931",
+                    "IRI": "http://www.lexml.gov.br/sigen#DocumentoLegislativoEmSentidoEstrito",
+                    "Descricao": "Documento Legislativo em Sentido Estrito",
+                    "Instanciavel": "1",
+                    "CodigoPai": "27459943"
+                },
+                {
+                    "Codigo": "27459935",
+                    "IRI": "http://www.lexml.gov.br/sigen#Denuncia",
+                    "Descricao": "Denúncia",
+                    "Instanciavel": "1",
+                    "CodigoPai": "27459931"
+                },
+                {
+                    "Codigo": "27459932",
+                    "IRI": "http://www.lexml.gov.br/sigen#Mensagem",
+                    "Descricao": "Mensagem",
+                    "Instanciavel": "1",
+                    "CodigoPai": "27459940"
+                },
+                {
+                    "Codigo": "30184680",
+                    "IRI": "http://www.lexml.gov.br/sigen#AtoAdministrativo",
+                    "Descricao": "Ato Administrativo",
+                    "Instanciavel": "1",
+                    "CodigoPai": "30184679"
+                },
+                {
+                    "Codigo": "677",
+                    "IRI": "http://www.lexml.gov.br/sigen#NormaPrimaria",
+                    "Descricao": "Norma Primária",
+                    "Instanciavel": "0",
+                    "CodigoPai": "104"
+                },
+                {
+                    "Codigo": "27459944",
+                    "IRI": "http://www.lexml.gov.br/sigen#PropostaDeFiscalizacaoEControle",
+                    "Descricao": "Proposta de Fiscalização e Controle",
+                    "Instanciavel": "1",
+                    "CodigoPai": "27459931"
+                },
+                {
+                    "Codigo": "27481059",
+                    "IRI": "http://www.lexml.gov.br/sigen#Indicacao",
+                    "Descricao": "Indicação",
+                    "Instanciavel": "1",
+                    "CodigoPai": "27459931"
+                },
+                {
+                    "Codigo": "27459939",
+                    "IRI": "http://www.lexml.gov.br/sigen#DocumentoLegislativoDeNorma",
+                    "Descricao": "Documento Legislativo de Norma",
+                    "Instanciavel": "1",
+                    "CodigoPai": "27459943"
+                },
+                {
+                    "Codigo": "759",
+                    "IRI": "http://www.lexml.gov.br/sigen#NormaSecundaria",
+                    "Descricao": "Norma Secundária",
+                    "Instanciavel": "0",
+                    "CodigoPai": "104"
+                },
+                {
+                    "Codigo": "27459928",
+                    "IRI": "http://www.lexml.gov.br/sigen#Peticao",
+                    "Descricao": "Petição",
+                    "Instanciavel": "1",
+                    "CodigoPai": "27459931"
+                },
+                {
+                    "Codigo": "27481060",
+                    "IRI": "http://www.lexml.gov.br/sigen#DocumentoLegislativoDeNormaAcessoria",
+                    "Descricao": "Documento Legislativo de Norma Acessória",
+                    "Instanciavel": "0",
+                    "CodigoPai": "27459939"
+                },
+                {
+                    "Codigo": "27481058",
+                    "IRI": "http://www.lexml.gov.br/sigen#ProjetoDeLeiDeConversao",
+                    "Descricao": "Projeto de Lei de Conversão",
+                    "Instanciavel": "1",
+                    "CodigoPai": "27481060"
+                },
+                {
+                    "Codigo": "27459940",
+                    "IRI": "http://www.lexml.gov.br/sigen#Correspondencia",
+                    "Descricao": "Correspondência",
+                    "Instanciavel": "1",
+                    "CodigoPai": "27459943"
+                },
+                {
+                    "Codigo": "27459934",
+                    "IRI": "http://www.lexml.gov.br/sigen#AvisoReal",
+                    "Descricao": "Aviso Real",
+                    "Instanciavel": "1",
+                    "CodigoPai": "8"
+                },
+                {
+                    "Codigo": "27481066",
+                    "IRI": "http://www.lexml.gov.br/sigen#Sugestao",
+                    "Descricao": "Sugestão",
+                    "Instanciavel": "1",
+                    "CodigoPai": "27459943"
+                },
+                {
+                    "Codigo": "441",
+                    "IRI": "http://www.lexml.gov.br/sigen#Resolucao",
+                    "Descricao": "Resolução",
+                    "Instanciavel": "0",
+                    "CodigoPai": "677"
+                },
+                {
+                    "Codigo": "27459943",
+                    "IRI": "http://www.lexml.gov.br/sigen#DocumentoLegislativo",
+                    "Descricao": "Documento Legislativo",
+                    "Instanciavel": "1",
+                    "CodigoPai": "58"
+                },
+                {
+                    "Codigo": "27459937",
+                    "IRI": "http://www.lexml.gov.br/sigen#PropostaDeEmendaAConstituicao",
+                    "Descricao": "Proposta de Emenda à Constituição",
+                    "Instanciavel": "1",
+                    "CodigoPai": "27459933"
+                },
+                {
+                    "Codigo": "222",
+                    "IRI": "http://www.lexml.gov.br/sigen#Portaria",
+                    "Descricao": "Portaria",
+                    "Instanciavel": "1",
+                    "CodigoPai": "30184679"
+                },
+                {
+                    "Codigo": "8",
+                    "IRI": "http://www.lexml.gov.br/sigen#NormaAntiga",
+                    "Descricao": "Norma Antiga",
+                    "Instanciavel": "0",
+                    "CodigoPai": "104"
+                },
+                {
+                    "Codigo": "734",
+                    "IRI": "http://www.lexml.gov.br/sigen#NormaConstitucional",
+                    "Descricao": "Norma Constitucional",
+                    "Instanciavel": "0",
+                    "CodigoPai": "104"
+                },
+                {
+                    "Codigo": "27459933",
+                    "IRI": "http://www.lexml.gov.br/sigen#DocumentoLegislativoDeNormaGeral",
+                    "Descricao": "Documento Legislativo de Norma Geral",
+                    "Instanciavel": "1",
+                    "CodigoPai": "27459939"
+                },
+                {
+                    "Codigo": "27459929",
+                    "IRI": "http://www.lexml.gov.br/sigen#ProjetoDeResolucao",
+                    "Descricao": "Projeto de Resolução",
+                    "Instanciavel": "1",
+                    "CodigoPai": "27459942"
+                },
+                {
+                    "Codigo": "27481061",
+                    "IRI": "http://www.lexml.gov.br/sigen#Memorando",
+                    "Descricao": "Memorando",
+                    "Instanciavel": "1",
+                    "CodigoPai": "27459940"
+                }
+            ]
+        }
+    }
+}

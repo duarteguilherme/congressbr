@@ -1,0 +1,51 @@
+{
+    "ListaTiposPronunciamento": {
+        "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+        "@xsi:noNamespaceSchemaLocation": "http://legis.senado.leg.br/dadosabertos/dados/ListaTiposPronunciamentov2.xsd",
+        "Metadados": {
+            "Versao": "02/12/2018 10:09:00",
+            "VersaoServico": "2",
+            "DescricaoDataSet": "Lista os tipos de pronunciamento."
+        },
+        "TiposPronunciamento": {
+            "TipoPronunciamento": [
+                {
+                    "Sigla": "CIN",
+                    "Descricao": "Comunicação Inadiável"
+                },
+                {
+                    "Sigla": "DIS",
+                    "Descricao": "Pronunciamento"
+                },
+                {
+                    "Sigla": "DSS",
+                    "Descricao": "Discussão"
+                },
+                {
+                    "Sigla": "ENC",
+                    "Descricao": "Encaminhamento de Votação"
+                },
+                {
+                    "Sigla": "EXP",
+                    "Descricao": "Explicação Pessoal"
+                },
+                {
+                    "Sigla": "FAL",
+                    "Descricao": "Fala"
+                },
+                {
+                    "Sigla": "LID",
+                    "Descricao": "Líder"
+                },
+                {
+                    "Sigla": "POR",
+                    "Descricao": "Pela Ordem"
+                },
+                {
+                    "Sigla": "QUE",
+                    "Descricao": "Questão de Ordem"
+                }
+            ]
+        }
+    }
+}

@@ -6,12 +6,11 @@
 #' @importFrom magrittr "%>%"
 #' @title Downloads and tidies data for lists of bills in Brazilian Chamber of Deputies
 #' @description Downloads and tidies data for lists of bills in Brazilian Chamber of Deputies
-#' @param type \code{character}. The type of the bill. For example, "PL"
+#' @param type \code{character}. The type of the bill. For example, "PL".
 #' @param number \code{integer}. The number of the bill
 #' @param year \code{integer}. The year of the bill.
 #' @param initial_date (\code{character}) start date of the period requested.
-#' This parameter must be in the format YYYYMMDD (Year-Month-Day). A value for
-#' this parameter is necessary, all others are optional.
+#' This parameter must be in the format YYYY-MM-DD (Year-Month-Day).
 #' @param end_date (\code{character}) final date for period requested. Format
 #' YYYYMMDD.
 #' @param part_name_author (\code{character}). Filter bills by a part of the author's name
@@ -28,7 +27,7 @@
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
 #' \dontrun{
-#' cham_bills(type = "PL", year = 1998)
+#' cham_bills(type = "PL", year = 2011, number = 2718, initial_date="2011-16-11")
 #' }
 #' @export
 
@@ -36,7 +35,7 @@
 cham_bills <- function(type="",number="",year="", initial_date="", end_date="", part_name_author="", id_type_author="",
                       abbreviation_party_author="", abbreviation_st_author="",gender_author="",
                       cod_state="", cod_branch_state="", still="", ascii=T) {
-  " This function lists every bill informations according to the parameters searched"
+  "This function lists information on the bills requested according to the parameters searched."
   if ( part_name_author=="" & ( type=="" | year=="" )  ) {
     stop("Lacking arguments. part_name_author or type and year are mandatory")
   }
@@ -75,9 +74,9 @@ extract_bill <- function(bill) {
       type_id = xml_text(xml_find_all(bill, "./tipoProposicao/id")),
       type_abr = xml_text(xml_find_all(bill, "./tipoProposicao/sigla")),
       type_name = xml_text(xml_find_all(bill, "./tipoProposicao/nome")),
-      branchn_id = xml_text(xml_find_all(bill, "./orgaoNumerador/id")),
-      branchn_abr = xml_text(xml_find_all(bill, "./orgaoNumerador/sigla")),
-      branchn_name = xml_text(xml_find_all(bill, "./orgaoNumerador/nome")),
+      branch_id = xml_text(xml_find_all(bill, "./orgaoNumerador/id")),
+      branch_abr = xml_text(xml_find_all(bill, "./orgaoNumerador/sigla")),
+      branch_name = xml_text(xml_find_all(bill, "./orgaoNumerador/nome")),
       presentation_date = xml_text(xml_find_all(bill, "./datApresentacao")),
       ementa_txt = xml_text(xml_find_all(bill, "./txtEmenta")),
       ementa_explanation = xml_text(xml_find_all(bill, "./txtExplicacaoEmenta")),

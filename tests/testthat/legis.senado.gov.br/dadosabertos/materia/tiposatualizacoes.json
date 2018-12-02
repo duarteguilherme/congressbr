@@ -1,0 +1,43 @@
+{
+    "ListaTiposAtualizacao": {
+        "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+        "@xsi:noNamespaceSchemaLocation": "http://legis.senado.leg.br/dadosabertos/dados/ListaTiposAtualizacaov4.xsd",
+        "Metadados": {
+            "Versao": "02/12/2018 09:58:17",
+            "VersaoServico": "4",
+            "DescricaoDataSet": "Lista os tipos de atualização que uma matéria pode sofrer"
+        },
+        "TiposAtualizacao": {
+            "Atualizacao": [
+                {
+                    "InformacaoAtualizada": "CalendarioTramitacao",
+                    "NomeServicoAfetado": "MovimentacaoMateria"
+                },
+                {
+                    "InformacaoAtualizada": "Materia",
+                    "NomeServicoAfetado": "DetalheMateria"
+                },
+                {
+                    "InformacaoAtualizada": "MateriasAnexadas",
+                    "NomeServicoAfetado": "DetalheMateria"
+                },
+                {
+                    "InformacaoAtualizada": "Processado",
+                    "NomeServicoAfetado": "DetalheMateria"
+                },
+                {
+                    "InformacaoAtualizada": "Relatoria",
+                    "NomeServicoAfetado": "RelatoriaMateria"
+                },
+                {
+                    "InformacaoAtualizada": "Tramitacao-Situacao",
+                    "NomeServicoAfetado": "MovimentacaoMateria"
+                },
+                {
+                    "InformacaoAtualizada": "Votacao",
+                    "NomeServicoAfetado": "VotacaoMateria"
+                }
+            ]
+        }
+    }
+}

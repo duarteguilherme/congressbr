@@ -1,0 +1,1787 @@
+{
+    "Liderancas": {
+        "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+        "@xsi:noNamespaceSchemaLocation": "http://legis.senado.gov.br/dadosabertos/dados/Liderancasv2.xsd",
+        "Metadados": {
+            "Versao": "02/12/2018 10:08:56",
+            "VersaoServico": "2",
+            "DescricaoDataSet": "Lideranças do Senado \n\nDescrição:\nContém informações sobre a composição das Lideranças do Senado, como os partidos que as compões, os parlamentares e suas respectivas funções nas lideranças (líder, vice-líder, etc.).\n\nCategoria:\nParlamentares\n\nPeriodicidade de atualização:\nDe 3 em 3 horas no horário comercial\n"
+        },
+        "DadosLiderancas": {
+            "Lideranca": [
+                {
+                    "Prioridade": "5",
+                    "NomeUnidLideranca": "Bloco da Maioria",
+                    "SiglaUnidLideranca": "Maioria",
+                    "TipoUnidLideranca": "B",
+                    "CodigoUnidPartd": "164",
+                    "Membros": "19",
+                    "Parlamentares": {
+                        "Parlamentar": {
+                            "TipoLideranca": "Líder",
+                            "NomeParlamentar": "Simone Tebet",
+                            "CodigoParlamentar": "5527",
+                            "CodigoPartido": "33",
+                            "SiglaPartido": "MDB",
+                            "SiglaUf": "MS",
+                            "Observacoes": "141,162"
+                        }
+                    },
+                    "Partidos": {
+                        "Partido": [
+                            {
+                                "CodigoUnidLideranca": "33",
+                                "NomeUnidLideranca": "Movimento Democrático Brasileiro",
+                                "SiglaUnidLideranca": "MDB",
+                                "TipoUnidLideranca": "P",
+                                "NomeApelidoBloco": "Maioria",
+                                "Membros": "18",
+                                "Parlamentares": {
+                                    "Parlamentar": [
+                                        {
+                                            "TipoLideranca": "Líder",
+                                            "NomeParlamentar": "Simone Tebet",
+                                            "CodigoParlamentar": "5527",
+                                            "CodigoPartido": "33",
+                                            "SiglaPartido": "MDB",
+                                            "SiglaUf": "MS",
+                                            "Observacoes": "141,162"
+                                        },
+                                        {
+                                            "TipoLideranca": "Vice-líder",
+                                            "NomeParlamentar": "Valdir Raupp",
+                                            "CodigoParlamentar": "3372",
+                                            "CodigoPartido": "33",
+                                            "SiglaPartido": "MDB",
+                                            "SiglaUf": "RO",
+                                            "Observacoes": "142"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "CodigoUnidLideranca": "562",
+                                "NomeUnidLideranca": "Partido Republicano da Ordem Social",
+                                "SiglaUnidLideranca": "PROS",
+                                "TipoUnidLideranca": "P",
+                                "NomeApelidoBloco": "Maioria",
+                                "Membros": "1",
+                                "Parlamentares": {
+                                    "Parlamentar": {
+                                        "TipoLideranca": "Líder",
+                                        "NomeParlamentar": "Hélio José",
+                                        "CodigoParlamentar": "5100",
+                                        "CodigoPartido": "562",
+                                        "SiglaPartido": "PROS",
+                                        "SiglaUf": "DF",
+                                        "Observacoes": "42,48,86,155"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "NumeroLinha": "1",
+                    "NumeroColuna": "1"
+                },
+                {
+                    "Prioridade": "5",
+                    "NomeUnidLideranca": "Bloco Social Democrata",
+                    "SiglaUnidLideranca": "Bloco",
+                    "TipoUnidLideranca": "B",
+                    "CodigoUnidPartd": "588",
+                    "Membros": "17",
+                    "Parlamentares": {
+                        "Parlamentar": [
+                            {
+                                "TipoLideranca": "Líder",
+                                "NomeParlamentar": "Eduardo Amorim",
+                                "CodigoParlamentar": "4721",
+                                "CodigoPartido": "66",
+                                "SiglaPartido": "PSDB",
+                                "SiglaUf": "SE",
+                                "Observacoes": "70,103,140"
+                            },
+                            {
+                                "TipoLideranca": "Vice-líder",
+                                "NomeParlamentar": "Davi Alcolumbre",
+                                "CodigoParlamentar": "3830",
+                                "CodigoPartido": "554",
+                                "SiglaPartido": "DEM",
+                                "SiglaUf": "AP",
+                                "Observacoes": "74,87,132,150"
+                            },
+                            {
+                                "TipoLideranca": "Vice-líder",
+                                "NomeParlamentar": "Ataídes Oliveira",
+                                "CodigoParlamentar": "5164",
+                                "CodigoPartido": "66",
+                                "SiglaPartido": "PSDB",
+                                "SiglaUf": "TO",
+                                "Observacoes": "75"
+                            }
+                        ]
+                    },
+                    "Partidos": {
+                        "Partido": [
+                            {
+                                "CodigoUnidLideranca": "66",
+                                "NomeUnidLideranca": "Partido da Social Democracia Brasileira",
+                                "SiglaUnidLideranca": "PSDB",
+                                "TipoUnidLideranca": "P",
+                                "NomeApelidoBloco": "Social Democracia",
+                                "Membros": "12",
+                                "Parlamentares": {
+                                    "Parlamentar": [
+                                        {
+                                            "TipoLideranca": "Líder",
+                                            "NomeParlamentar": "Paulo Bauer",
+                                            "CodigoParlamentar": "3741",
+                                            "CodigoPartido": "66",
+                                            "SiglaPartido": "PSDB",
+                                            "SiglaUf": "SC",
+                                            "Observacoes": "100"
+                                        },
+                                        {
+                                            "TipoLideranca": "Vice-líder",
+                                            "NomeParlamentar": "Ricardo Ferraço",
+                                            "CodigoParlamentar": "635",
+                                            "CodigoPartido": "66",
+                                            "SiglaPartido": "PSDB",
+                                            "SiglaUf": "ES",
+                                            "Observacoes": "78,85,112,160"
+                                        },
+                                        {
+                                            "TipoLideranca": "Vice-líder",
+                                            "NomeParlamentar": "Roberto Rocha",
+                                            "CodigoParlamentar": "677",
+                                            "CodigoPartido": "66",
+                                            "SiglaPartido": "PSDB",
+                                            "SiglaUf": "MA",
+                                            "Observacoes": "37,54,110,158,159"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "CodigoUnidLideranca": "554",
+                                "NomeUnidLideranca": "Democratas",
+                                "SiglaUnidLideranca": "DEM",
+                                "TipoUnidLideranca": "P",
+                                "NomeApelidoBloco": "Social Democracia",
+                                "Membros": "5",
+                                "Parlamentares": {
+                                    "Parlamentar": [
+                                        {
+                                            "TipoLideranca": "Líder",
+                                            "NomeParlamentar": "Ronaldo Caiado",
+                                            "CodigoParlamentar": "456",
+                                            "CodigoPartido": "554",
+                                            "SiglaPartido": "DEM",
+                                            "SiglaUf": "GO",
+                                            "Observacoes": "104"
+                                        },
+                                        {
+                                            "TipoLideranca": "Vice-líder",
+                                            "NomeParlamentar": "José Agripino",
+                                            "CodigoParlamentar": "40",
+                                            "CodigoPartido": "554",
+                                            "SiglaPartido": "DEM",
+                                            "SiglaUf": "RN",
+                                            "Observacoes": "32,51"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "NumeroLinha": "1",
+                    "NumeroColuna": "2"
+                },
+                {
+                    "Prioridade": "5",
+                    "NomeUnidLideranca": "Bloco Parlamentar Democracia e Cidadania",
+                    "SiglaUnidLideranca": "Bloco",
+                    "TipoUnidLideranca": "B",
+                    "CodigoUnidPartd": "713",
+                    "Membros": "12",
+                    "Parlamentares": {
+                        "Parlamentar": [
+                            {
+                                "TipoLideranca": "Líder",
+                                "NomeParlamentar": "João Capiberibe",
+                                "CodigoParlamentar": "3394",
+                                "CodigoPartido": "63",
+                                "SiglaPartido": "PSB",
+                                "SiglaUf": "AP",
+                                "Observacoes": "1,11,113,153,154"
+                            },
+                            {
+                                "TipoLideranca": "Vice-líder",
+                                "NomeParlamentar": "Randolfe Rodrigues",
+                                "CodigoParlamentar": "5012",
+                                "CodigoPartido": "565",
+                                "SiglaPartido": "REDE",
+                                "SiglaUf": "AP",
+                                "Observacoes": "20,23,91,157"
+                            },
+                            {
+                                "TipoLideranca": "Vice-líder",
+                                "NomeParlamentar": "Vanessa Grazziotin",
+                                "CodigoParlamentar": "558",
+                                "CodigoPartido": "86",
+                                "SiglaPartido": "PCdoB",
+                                "SiglaUf": "AM",
+                                "Observacoes": "17,22,156"
+                            }
+                        ]
+                    },
+                    "Partidos": {
+                        "Partido": [
+                            {
+                                "CodigoUnidLideranca": "63",
+                                "NomeUnidLideranca": "Partido Socialista Brasileiro",
+                                "SiglaUnidLideranca": "PSB",
+                                "TipoUnidLideranca": "P",
+                                "NomeApelidoBloco": "Bloco PSB, PCdoB, REDE, PPS, PODE",
+                                "Membros": "4",
+                                "Parlamentares": {
+                                    "Parlamentar": [
+                                        {
+                                            "TipoLideranca": "Líder",
+                                            "NomeParlamentar": "Antonio Carlos Valadares",
+                                            "CodigoParlamentar": "3",
+                                            "CodigoPartido": "63",
+                                            "SiglaPartido": "PSB",
+                                            "SiglaUf": "SE",
+                                            "Observacoes": "52,71,145,164"
+                                        },
+                                        {
+                                            "TipoLideranca": "Vice-líder",
+                                            "NomeParlamentar": "Lídice da Mata",
+                                            "CodigoParlamentar": "4575",
+                                            "CodigoPartido": "63",
+                                            "SiglaPartido": "PSB",
+                                            "SiglaUf": "BA",
+                                            "Observacoes": "13,19,146,166"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "CodigoUnidLideranca": "86",
+                                "NomeUnidLideranca": "Partido Comunista do Brasil",
+                                "SiglaUnidLideranca": "PCdoB",
+                                "TipoUnidLideranca": "P",
+                                "NomeApelidoBloco": "Bloco PSB, PCdoB, REDE, PPS, PODE",
+                                "Membros": "1",
+                                "Parlamentares": {
+                                    "Parlamentar": {
+                                        "TipoLideranca": "Líder",
+                                        "NomeParlamentar": "Vanessa Grazziotin",
+                                        "CodigoParlamentar": "558",
+                                        "CodigoPartido": "86",
+                                        "SiglaPartido": "PCdoB",
+                                        "SiglaUf": "AM",
+                                        "Observacoes": "17,22,156"
+                                    }
+                                }
+                            },
+                            {
+                                "CodigoUnidLideranca": "565",
+                                "NomeUnidLideranca": "Rede Sustentabilidade",
+                                "SiglaUnidLideranca": "REDE",
+                                "TipoUnidLideranca": "P",
+                                "NomeApelidoBloco": "Bloco PSB, PCdoB, REDE, PPS, PODE",
+                                "Membros": "1",
+                                "Parlamentares": {
+                                    "Parlamentar": {
+                                        "TipoLideranca": "Líder",
+                                        "NomeParlamentar": "Randolfe Rodrigues",
+                                        "CodigoParlamentar": "5012",
+                                        "CodigoPartido": "565",
+                                        "SiglaPartido": "REDE",
+                                        "SiglaUf": "AP",
+                                        "Observacoes": "20,23,91,157"
+                                    }
+                                }
+                            },
+                            {
+                                "CodigoUnidLideranca": "41",
+                                "NomeUnidLideranca": "Partido Popular Socialista",
+                                "SiglaUnidLideranca": "PPS",
+                                "TipoUnidLideranca": "P",
+                                "NomeApelidoBloco": "Bloco PSB, PCdoB, REDE, PPS, PODE",
+                                "Membros": "1",
+                                "Parlamentares": {
+                                    "Parlamentar": {
+                                        "TipoLideranca": "Líder",
+                                        "NomeParlamentar": "Cristovam Buarque",
+                                        "CodigoParlamentar": "3398",
+                                        "CodigoPartido": "41",
+                                        "SiglaPartido": "PPS",
+                                        "SiglaUf": "DF",
+                                        "Observacoes": "64"
+                                    }
+                                }
+                            },
+                            {
+                                "CodigoUnidLideranca": "577",
+                                "NomeUnidLideranca": "Podemos",
+                                "SiglaUnidLideranca": "PODE",
+                                "TipoUnidLideranca": "P",
+                                "NomeApelidoBloco": "Bloco PSB, PCdoB, REDE, PPS, PODE",
+                                "Membros": "5",
+                                "Parlamentares": {
+                                    "Parlamentar": [
+                                        {
+                                            "TipoLideranca": "Líder",
+                                            "NomeParlamentar": "Alvaro Dias",
+                                            "CodigoParlamentar": "945",
+                                            "CodigoPartido": "577",
+                                            "SiglaPartido": "PODE",
+                                            "SiglaUf": "PR",
+                                            "Observacoes": "16,65,137"
+                                        },
+                                        {
+                                            "TipoLideranca": "Vice-líder",
+                                            "NomeParlamentar": "Romário",
+                                            "CodigoParlamentar": "5322",
+                                            "CodigoPartido": "577",
+                                            "SiglaPartido": "PODE",
+                                            "SiglaUf": "RJ",
+                                            "Observacoes": "136,152"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "CodigoUnidLideranca": "91",
+                                "NomeUnidLideranca": "Partido Verde",
+                                "SiglaUnidLideranca": "PV",
+                                "TipoUnidLideranca": "P",
+                                "NomeApelidoBloco": "Bloco PSB, PCdoB, REDE, PPS, PODE",
+                                "Membros": "0"
+                            }
+                        ]
+                    },
+                    "NumeroLinha": "2",
+                    "NumeroColuna": "2"
+                },
+                {
+                    "Prioridade": "5",
+                    "NomeUnidLideranca": "Bloco Parlamentar da Resistência Democrática",
+                    "SiglaUnidLideranca": "Bloco",
+                    "TipoUnidLideranca": "B",
+                    "CodigoUnidPartd": "590",
+                    "Membros": "11",
+                    "Parlamentares": {
+                        "Parlamentar": [
+                            {
+                                "TipoLideranca": "Líder",
+                                "NomeParlamentar": "Lindbergh Farias",
+                                "CodigoParlamentar": "3695",
+                                "CodigoPartido": "71",
+                                "SiglaPartido": "PT",
+                                "SiglaUf": "RJ",
+                                "Observacoes": "28,59,62,89,125,134,135"
+                            },
+                            {
+                                "TipoLideranca": "Vice-líder",
+                                "NomeParlamentar": "Acir Gurgacz",
+                                "CodigoParlamentar": "4981",
+                                "CodigoPartido": "20",
+                                "SiglaPartido": "PDT",
+                                "SiglaUf": "RO",
+                                "Observacoes": "8,26,116"
+                            },
+                            {
+                                "TipoLideranca": "Vice-líder",
+                                "NomeParlamentar": "Regina Sousa",
+                                "CodigoParlamentar": "5182",
+                                "CodigoPartido": "71",
+                                "SiglaPartido": "PT",
+                                "SiglaUf": "PI",
+                                "Observacoes": "34"
+                            }
+                        ]
+                    },
+                    "Partidos": {
+                        "Partido": [
+                            {
+                                "CodigoUnidLideranca": "71",
+                                "NomeUnidLideranca": "Partido dos Trabalhadores",
+                                "SiglaUnidLideranca": "PT",
+                                "TipoUnidLideranca": "P",
+                                "NomeApelidoBloco": "Bloco PT/PDT",
+                                "Membros": "9",
+                                "Parlamentares": {
+                                    "Parlamentar": [
+                                        {
+                                            "TipoLideranca": "Líder",
+                                            "NomeParlamentar": "Lindbergh Farias",
+                                            "CodigoParlamentar": "3695",
+                                            "CodigoPartido": "71",
+                                            "SiglaPartido": "PT",
+                                            "SiglaUf": "RJ",
+                                            "Observacoes": "28,59,62,89,125,134,135"
+                                        },
+                                        {
+                                            "TipoLideranca": "Vice-líder",
+                                            "NomeParlamentar": "Paulo Rocha",
+                                            "CodigoParlamentar": "374",
+                                            "CodigoPartido": "71",
+                                            "SiglaPartido": "PT",
+                                            "SiglaUf": "PA",
+                                            "Observacoes": "25,41,55,63,126"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "CodigoUnidLideranca": "20",
+                                "NomeUnidLideranca": "Partido Democrático Trabalhista",
+                                "SiglaUnidLideranca": "PDT",
+                                "TipoUnidLideranca": "P",
+                                "NomeApelidoBloco": "Bloco PT/PDT",
+                                "Membros": "2",
+                                "Parlamentares": {
+                                    "Parlamentar": [
+                                        {
+                                            "TipoLideranca": "Líder",
+                                            "NomeParlamentar": "Acir Gurgacz",
+                                            "CodigoParlamentar": "4981",
+                                            "CodigoPartido": "20",
+                                            "SiglaPartido": "PDT",
+                                            "SiglaUf": "RO",
+                                            "Observacoes": "8,26,116"
+                                        },
+                                        {
+                                            "TipoLideranca": "Vice-líder",
+                                            "NomeParlamentar": "Ângela Portela",
+                                            "CodigoParlamentar": "4697",
+                                            "CodigoPartido": "20",
+                                            "SiglaPartido": "PDT",
+                                            "SiglaUf": "RR",
+                                            "Observacoes": "139,163"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "NumeroLinha": "2",
+                    "NumeroColuna": "1"
+                },
+                {
+                    "Prioridade": "5",
+                    "NomeUnidLideranca": "Bloco Parlamentar Democracia Progressista",
+                    "SiglaUnidLideranca": "Bloco",
+                    "TipoUnidLideranca": "B",
+                    "CodigoUnidPartd": "623",
+                    "Membros": "10",
+                    "Parlamentares": {
+                        "Parlamentar": [
+                            {
+                                "TipoLideranca": "Líder",
+                                "NomeParlamentar": "Ciro Nogueira",
+                                "CodigoParlamentar": "739",
+                                "CodigoPartido": "418",
+                                "SiglaPartido": "PP",
+                                "SiglaUf": "PI",
+                                "Observacoes": "165"
+                            },
+                            {
+                                "TipoLideranca": "Vice-líder",
+                                "NomeParlamentar": "Otto Alencar",
+                                "CodigoParlamentar": "5523",
+                                "CodigoPartido": "557",
+                                "SiglaPartido": "PSD",
+                                "SiglaUf": "BA",
+                                "Observacoes": "49"
+                            }
+                        ]
+                    },
+                    "Partidos": {
+                        "Partido": [
+                            {
+                                "CodigoUnidLideranca": "418",
+                                "NomeUnidLideranca": "Partido Progressista",
+                                "SiglaUnidLideranca": "PP",
+                                "TipoUnidLideranca": "P",
+                                "NomeApelidoBloco": "Bloco PP/PSD",
+                                "Membros": "5",
+                                "Parlamentares": {
+                                    "Parlamentar": {
+                                        "TipoLideranca": "Líder",
+                                        "NomeParlamentar": "Benedito de Lira",
+                                        "CodigoParlamentar": "3823",
+                                        "CodigoPartido": "418",
+                                        "SiglaPartido": "PP",
+                                        "SiglaUf": "AL",
+                                        "Observacoes": "106,169"
+                                    }
+                                }
+                            },
+                            {
+                                "CodigoUnidLideranca": "557",
+                                "NomeUnidLideranca": "Partido Social Democrático",
+                                "SiglaUnidLideranca": "PSD",
+                                "TipoUnidLideranca": "P",
+                                "NomeApelidoBloco": "Bloco PP/PSD",
+                                "Membros": "5",
+                                "Parlamentares": {
+                                    "Parlamentar": [
+                                        {
+                                            "TipoLideranca": "Líder",
+                                            "NomeParlamentar": "Omar Aziz",
+                                            "CodigoParlamentar": "5525",
+                                            "CodigoPartido": "557",
+                                            "SiglaPartido": "PSD",
+                                            "SiglaUf": "AM",
+                                            "Observacoes": "45,101"
+                                        },
+                                        {
+                                            "TipoLideranca": "Vice-líder",
+                                            "NomeParlamentar": "Lasier Martins",
+                                            "CodigoParlamentar": "5533",
+                                            "CodigoPartido": "557",
+                                            "SiglaPartido": "PSD",
+                                            "SiglaUf": "RS",
+                                            "Observacoes": "94,96,117"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "NumeroLinha": "1",
+                    "NumeroColuna": "3"
+                },
+                {
+                    "Prioridade": "5",
+                    "NomeUnidLideranca": "Bloco Moderador",
+                    "SiglaUnidLideranca": "Bloco",
+                    "TipoUnidLideranca": "B",
+                    "CodigoUnidPartd": "586",
+                    "Membros": "9",
+                    "Parlamentares": {
+                        "Parlamentar": {
+                            "TipoLideranca": "Líder",
+                            "NomeParlamentar": "Wellington Fagundes",
+                            "CodigoParlamentar": "1173",
+                            "CodigoPartido": "523",
+                            "SiglaPartido": "PR",
+                            "SiglaUf": "MT",
+                            "Observacoes": "43,46,109"
+                        }
+                    },
+                    "Partidos": {
+                        "Partido": [
+                            {
+                                "CodigoUnidLideranca": "72",
+                                "NomeUnidLideranca": "Partido Trabalhista Brasileiro",
+                                "SiglaUnidLideranca": "PTB",
+                                "TipoUnidLideranca": "P",
+                                "NomeApelidoBloco": "Bloco PTB, PR, PSC, PRB",
+                                "Membros": "2",
+                                "Parlamentares": {
+                                    "Parlamentar": {
+                                        "TipoLideranca": "Líder",
+                                        "NomeParlamentar": "Armando Monteiro",
+                                        "CodigoParlamentar": "715",
+                                        "CodigoPartido": "72",
+                                        "SiglaPartido": "PTB",
+                                        "SiglaUf": "PE",
+                                        "Observacoes": "97"
+                                    }
+                                }
+                            },
+                            {
+                                "CodigoUnidLideranca": "523",
+                                "NomeUnidLideranca": "Partido da República",
+                                "SiglaUnidLideranca": "PR",
+                                "TipoUnidLideranca": "P",
+                                "NomeApelidoBloco": "Bloco PTB, PR, PSC, PRB",
+                                "Membros": "4",
+                                "Parlamentares": {
+                                    "Parlamentar": [
+                                        {
+                                            "TipoLideranca": "Líder",
+                                            "NomeParlamentar": "Vicentinho Alves",
+                                            "CodigoParlamentar": "4763",
+                                            "CodigoPartido": "523",
+                                            "SiglaPartido": "PR",
+                                            "SiglaUf": "TO",
+                                            "Observacoes": "105"
+                                        },
+                                        {
+                                            "TipoLideranca": "Vice-líder",
+                                            "NomeParlamentar": "Magno Malta",
+                                            "CodigoParlamentar": "631",
+                                            "CodigoPartido": "523",
+                                            "SiglaPartido": "PR",
+                                            "SiglaUf": "ES",
+                                            "Observacoes": "108"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "CodigoUnidLideranca": "521",
+                                "NomeUnidLideranca": "Partido Republicano Brasileiro",
+                                "SiglaUnidLideranca": "PRB",
+                                "TipoUnidLideranca": "P",
+                                "NomeApelidoBloco": "Bloco PTB, PR, PSC, PRB",
+                                "Membros": "2",
+                                "Parlamentares": {
+                                    "Parlamentar": {
+                                        "TipoLideranca": "Líder",
+                                        "NomeParlamentar": "Eduardo Lopes",
+                                        "CodigoParlamentar": "4767",
+                                        "CodigoPartido": "521",
+                                        "SiglaPartido": "PRB",
+                                        "SiglaUf": "RJ",
+                                        "Observacoes": "81,95"
+                                    }
+                                }
+                            },
+                            {
+                                "CodigoUnidLideranca": "556",
+                                "NomeUnidLideranca": "Partido Trabalhista Cristão",
+                                "SiglaUnidLideranca": "PTC",
+                                "TipoUnidLideranca": "P",
+                                "NomeApelidoBloco": "Bloco PTB, PR, PSC, PRB",
+                                "Membros": "1",
+                                "Parlamentares": {
+                                    "Parlamentar": {
+                                        "TipoLideranca": "Líder",
+                                        "NomeParlamentar": "Fernando Collor",
+                                        "CodigoParlamentar": "4525",
+                                        "CodigoPartido": "556",
+                                        "SiglaPartido": "PTC",
+                                        "SiglaUf": "AL",
+                                        "Observacoes": "5,6,67,69"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "NumeroLinha": "2",
+                    "NumeroColuna": "3"
+                },
+                {
+                    "Prioridade": "5",
+                    "NomeUnidLideranca": "Minoria",
+                    "SiglaUnidLideranca": "Bloco",
+                    "TipoUnidLideranca": "B",
+                    "CodigoUnidPartd": "640",
+                    "Membros": "1",
+                    "Parlamentares": {
+                        "Parlamentar": {
+                            "TipoLideranca": "Líder",
+                            "NomeParlamentar": "Humberto Costa",
+                            "CodigoParlamentar": "5008",
+                            "CodigoPartido": "71",
+                            "SiglaPartido": "PT",
+                            "SiglaUf": "PE",
+                            "Observacoes": "15,21,50,53,79,90,114"
+                        }
+                    },
+                    "NumeroLinha": "3",
+                    "NumeroColuna": "2"
+                },
+                {
+                    "Prioridade": "9",
+                    "NomeUnidLideranca": "LIDERANÇA DO GOVERNO",
+                    "SiglaUnidLideranca": "Governo",
+                    "TipoUnidLideranca": "G",
+                    "CodigoUnidPartd": "0",
+                    "Parlamentares": {
+                        "Parlamentar": [
+                            {
+                                "TipoLideranca": "Líder",
+                                "NomeParlamentar": "Romero Jucá",
+                                "CodigoParlamentar": "73",
+                                "CodigoPartido": "33",
+                                "SiglaPartido": "MDB",
+                                "SiglaUf": "RR",
+                                "Observacoes": "119,170"
+                            },
+                            {
+                                "TipoLideranca": "Vice-líder",
+                                "NomeParlamentar": "Fernando Bezerra Coelho",
+                                "CodigoParlamentar": "5540",
+                                "CodigoPartido": "33",
+                                "SiglaPartido": "MDB",
+                                "SiglaUf": "PE",
+                                "Observacoes": "102,130,144"
+                            },
+                            {
+                                "TipoLideranca": "Vice-líder",
+                                "NomeParlamentar": "Davi Alcolumbre",
+                                "CodigoParlamentar": "3830",
+                                "CodigoPartido": "554",
+                                "SiglaPartido": "DEM",
+                                "SiglaUf": "AP",
+                                "Observacoes": "74,87,132,150"
+                            },
+                            {
+                                "TipoLideranca": "Vice-líder",
+                                "NomeParlamentar": "Flexa Ribeiro",
+                                "CodigoParlamentar": "3634",
+                                "CodigoPartido": "66",
+                                "SiglaPartido": "PSDB",
+                                "SiglaUf": "PA",
+                                "Observacoes": "129,149"
+                            },
+                            {
+                                "TipoLideranca": "Vice-líder",
+                                "NomeParlamentar": "Sérgio Petecão",
+                                "CodigoParlamentar": "4560",
+                                "CodigoPartido": "557",
+                                "SiglaPartido": "PSD",
+                                "SiglaUf": "AC",
+                                "Observacoes": "10,128,148"
+                            },
+                            {
+                                "TipoLideranca": "Vice-líder",
+                                "NomeParlamentar": "Wilder Morais",
+                                "CodigoParlamentar": "5070",
+                                "CodigoPartido": "554",
+                                "SiglaPartido": "DEM",
+                                "SiglaUf": "GO",
+                                "Observacoes": "39,122,133,147"
+                            }
+                        ]
+                    },
+                    "NumeroLinha": "3",
+                    "NumeroColuna": "1"
+                }
+            ]
+        },
+        "ObservacoesLiderancas": {
+            "Observacao": [
+                {
+                    "Linha": "1",
+                    "CodigoParlamentar": "3394",
+                    "TextoObservacao": "Em 01.02.2015, o Senador João Capiberibe foi designado líder do PSB (Of. 8/2015-GLPSB)",
+                    "DataInicio": "2015-02-01"
+                },
+                {
+                    "Linha": "2",
+                    "CodigoParlamentar": "3366",
+                    "TextoObservacao": "Em 01.02.2015, o Senador Marcelo Crivella foi designado líder do PRB (Of. 2/2015-BLUFOR).",
+                    "DataInicio": "2015-02-01"
+                },
+                {
+                    "Linha": "3",
+                    "CodigoParlamentar": "3366",
+                    "TextoObservacao": "Em 01.02.2015, o Senador Marcelo Crivella foi designado 3º vice-líder do Bloco Parlamentar União e Força (Of. 001/2015-BLUFOR).",
+                    "DataInicio": "2015-02-01"
+                },
+                {
+                    "Linha": "4",
+                    "CodigoParlamentar": "111",
+                    "TextoObservacao": "Em 01.02.2015, o senador Blairo Maggi foi designado 1º vice-líder do Bloco Parlamentar União e Força (Of. 001/2015-BLUFOR).",
+                    "DataInicio": "2015-02-01"
+                },
+                {
+                    "Linha": "5",
+                    "CodigoParlamentar": "4525",
+                    "TextoObservacao": "Em 01.02.2015, o Senador Fernando Collor foi designado líder do Bloco Parlamentar União e Força (Of. 001/2015-BLUFOR).",
+                    "DataInicio": "2015-02-01"
+                },
+                {
+                    "Linha": "6",
+                    "CodigoParlamentar": "4525",
+                    "TextoObservacao": "Em 01.02.2015, o Senador Fernando Collor foi designado líder do PTB (Of. 1/2015-GLPTB).",
+                    "DataInicio": "2015-02-01"
+                },
+                {
+                    "Linha": "7",
+                    "CodigoParlamentar": "5535",
+                    "TextoObservacao": "Em 01.02.2015, o Senador Telmário Mota foi designado vice-líder do PDT (Of. 1/2015-GLPDT).",
+                    "DataInicio": "2015-02-01"
+                },
+                {
+                    "Linha": "8",
+                    "CodigoParlamentar": "4981",
+                    "TextoObservacao": "Em 01.02.2015, o Senador Acir Gurgacz foi designado líder do PDT (Of. 1/2015-GLPDT).",
+                    "DataInicio": "2015-02-01"
+                },
+                {
+                    "Linha": "9",
+                    "CodigoParlamentar": "5197",
+                    "TextoObservacao": "Em 03.02.2015, o Senador Cássio Cunha Lima foi designado líder do PSDB (Of. s/n GLPSDB).",
+                    "DataInicio": "2015-02-03"
+                },
+                {
+                    "Linha": "10",
+                    "CodigoParlamentar": "4560",
+                    "TextoObservacao": "Em 03.02.2015, o Senador Sérgio Petecão foi designado vice-líder do PSD (Of. 002/2015-GLPSD).",
+                    "DataInicio": "2015-02-03"
+                },
+                {
+                    "Linha": "11",
+                    "CodigoParlamentar": "3394",
+                    "TextoObservacao": "Em 03.02.2015, o Senador João Capiberibe foi designado 3º vice-líder do Bloco Parlamentar Democracia Participativa (Of. s/n/2015-Bloco Parlamentar Democracia Participativa).",
+                    "DataInicio": "2015-02-03"
+                },
+                {
+                    "Linha": "12",
+                    "CodigoParlamentar": "5112",
+                    "TextoObservacao": "Em 03.02.2015, o Senador José Medeiros foi designado 2º vice-líder do Bloco Parlamentar Democracia Participativa (Of. s/n/2015-Bloco Parlamentar Democracia Participativa).",
+                    "DataInicio": "2015-02-03"
+                },
+                {
+                    "Linha": "13",
+                    "CodigoParlamentar": "4575",
+                    "TextoObservacao": "Em 03.02.2015, a Senadora Lídice da Mata foi designada líder do Bloco Parlamentar Democracia Participativa (Of. s/n/2015-Bloco Parlamentar Democracia Participativa).",
+                    "DataInicio": "2015-02-03"
+                },
+                {
+                    "Linha": "14",
+                    "CodigoParlamentar": "5112",
+                    "TextoObservacao": "Em 03.02.2015, o Senador José Medeiros foi designado líder do PPS (Of.18/2015-GSJMEDEI).",
+                    "DataInicio": "2015-02-03"
+                },
+                {
+                    "Linha": "15",
+                    "CodigoParlamentar": "5008",
+                    "TextoObservacao": "Em 04.02.2015, o Senador Humberto Costa foi designado líder do PT (Of. 2/2015-GLDPT).",
+                    "DataInicio": "2015-02-04"
+                },
+                {
+                    "Linha": "16",
+                    "CodigoParlamentar": "945",
+                    "TextoObservacao": "Em 04.02.2015, o Senador Alvaro Dias foi designado líder do Bloco Parlamentar da Oposição (expediente s/n).",
+                    "DataInicio": "2015-02-04"
+                },
+                {
+                    "Linha": "17",
+                    "CodigoParlamentar": "558",
+                    "TextoObservacao": "Em 04.02.2015, a Senadora Vanessa Grazziotin foi designada líder do PCdoB (Of. 1/2015-GLPCdoB).",
+                    "DataInicio": "2015-02-04"
+                },
+                {
+                    "Linha": "18",
+                    "CodigoParlamentar": "5112",
+                    "TextoObservacao": "Em 24.02.2015, o Senador José Medeiros foi designado 1º vice-líder do Bloco Parlamentar Socialismo e Democracia (Of. 01/2015-BSD).",
+                    "DataInicio": "2015-02-24"
+                },
+                {
+                    "Linha": "19",
+                    "CodigoParlamentar": "4575",
+                    "TextoObservacao": "Em 24.02.2015, a Senadora Lídice da Mata foi designada líder do Bloco Parlamentar Socialismo e Democracia (Of. 01/2015-BSD);",
+                    "DataInicio": "2015-02-24"
+                },
+                {
+                    "Linha": "20",
+                    "CodigoParlamentar": "5012",
+                    "TextoObservacao": "Em 24.02.2015, o Senador Randolfe Rodrigues foi designado 3º vice-líder do Bloco Parlamentar Socialismo e Democracia (Of. 01/2015-BSD).",
+                    "DataInicio": "2015-02-24"
+                },
+                {
+                    "Linha": "21",
+                    "CodigoParlamentar": "5008",
+                    "TextoObservacao": "Em 24.02.2015, o Senador Humberto Costa foi designado líder do Bloco de Apoio ao Governo (Of. 02/2015-GLDBAG).",
+                    "DataInicio": "2015-02-24"
+                },
+                {
+                    "Linha": "22",
+                    "CodigoParlamentar": "558",
+                    "TextoObservacao": "Em 24.02.2015, a Senadora Vanessa Grazziotin foi designada 2ª vice-líder do Bloco Parlamentar Socialismo e Democracia (Of. 01/2015-BSD).",
+                    "DataInicio": "2015-02-24"
+                },
+                {
+                    "Linha": "23",
+                    "CodigoParlamentar": "5012",
+                    "TextoObservacao": "Em 29.09.2015, o Senador Randolfe Rodrigues foi designado líder da REDE (Of. 67/2015/GSRROD).",
+                    "DataInicio": "2015-02-28"
+                },
+                {
+                    "Linha": "24",
+                    "CodigoParlamentar": "615",
+                    "TextoObservacao": "Em 03.03.2015, o Senador José Pimentel foi designado vice-líder do Bloco de Apoio ao Governo (Of. 014-2015/GLDBAG).",
+                    "DataInicio": "2015-03-03"
+                },
+                {
+                    "Linha": "25",
+                    "CodigoParlamentar": "374",
+                    "TextoObservacao": "Em 03.03.2015, o Senador Paulo Rocha foi designado 1º vice-líder do PT (Of. 3/2015-GLPDT).",
+                    "DataInicio": "2015-03-03"
+                },
+                {
+                    "Linha": "26",
+                    "CodigoParlamentar": "4981",
+                    "TextoObservacao": "Em 03.03.2015, o Senador Acir Gurgacz foi designado vice-líder do Bloco de Apoio ao Governo (Of. 014-2015/GLDBAG).",
+                    "DataInicio": "2015-03-03"
+                },
+                {
+                    "Linha": "27",
+                    "CodigoParlamentar": "3713",
+                    "TextoObservacao": "Em 03.03.2015, a Senadora Fátima Bezerra foi designada 4ª vice-líder do PT (Of. 3/2015-GLPDT).",
+                    "DataInicio": "2015-03-03"
+                },
+                {
+                    "Linha": "28",
+                    "CodigoParlamentar": "3695",
+                    "TextoObservacao": "Em 03.03.2015, o Senador Lindbergh Farias foi designado 3º vice-líder do PT (Of. 3/2015-GLPDT).",
+                    "DataInicio": "2015-03-03"
+                },
+                {
+                    "Linha": "29",
+                    "CodigoParlamentar": "5535",
+                    "TextoObservacao": "Em 03.03.2015, o Senador Telmário Mota foi designado vice-líder do Bloco de Apoio ao Governo (Of. 014-2015/GLDBAG).",
+                    "DataInicio": "2015-03-03"
+                },
+                {
+                    "Linha": "30",
+                    "CodigoParlamentar": "604",
+                    "TextoObservacao": "Em 03.03.2015, o Senador Walter Pinheiro foi designado vice-líder do Bloco de Apoio ao Governo (Of. 014-2015/GLDBAG).",
+                    "DataInicio": "2015-03-03"
+                },
+                {
+                    "Linha": "31",
+                    "CodigoParlamentar": "604",
+                    "TextoObservacao": "Em 03.03.2015, o Senador Walter Pinheiro foi designado 2º vice-líder do PT (Of. 3/2015-GLPDT).",
+                    "DataInicio": "2015-03-03"
+                },
+                {
+                    "Linha": "32",
+                    "CodigoParlamentar": "40",
+                    "TextoObservacao": "Em 04.03.2015, o Senador José Agripino foi designado vice-líder do DEM (Of. 007/2015-GLDEM).",
+                    "DataInicio": "2015-03-04"
+                },
+                {
+                    "Linha": "33",
+                    "CodigoParlamentar": "846",
+                    "TextoObservacao": "Em 06.03.2015, o Senador Aloysio Nunes Ferreira foi designado 2º vice-líder do PSDB (Of. 52/2015-GLPSDB).",
+                    "DataInicio": "2015-03-06"
+                },
+                {
+                    "Linha": "34",
+                    "CodigoParlamentar": "5182",
+                    "TextoObservacao": "Em 17.03.2015, a Senadora Regina Souza foi desiganda 5ª Vice-Líder do Bloco de Apoio ao Governo (Of. 32/2015-GLDBAG).",
+                    "DataInicio": "2015-03-17"
+                },
+                {
+                    "Linha": "35",
+                    "CodigoParlamentar": "604",
+                    "TextoObservacao": "Em 17.03.2015, o Senador Walter Pinheiro foi desigando 3º Vice-Líder do Bloco de Apoio ao Governo, em substituição ao Senador Telmário Mota (Of. 32/2015-GLDBAG).",
+                    "DataInicio": "2015-03-17"
+                },
+                {
+                    "Linha": "36",
+                    "CodigoParlamentar": "5535",
+                    "TextoObservacao": "Em 17.03.2015, o Senador Telmário Mota foi desigando 4º Vice-Líder do Bloco de Apoio ao Governo, em substituição ao Senador José Pimentel (Of. 32/2015-GLDBAG).",
+                    "DataInicio": "2015-03-17"
+                },
+                {
+                    "Linha": "37",
+                    "CodigoParlamentar": "677",
+                    "TextoObservacao": "Em 25.03.2015, o Senador Roberto Rocha foi designado Vice-Líder do PSB (Of. 30/2015-GLPSB)",
+                    "DataInicio": "2015-03-25"
+                },
+                {
+                    "Linha": "38",
+                    "CodigoParlamentar": "5529",
+                    "TextoObservacao": "Em 07.04.2015, o Senador Antonio Anastasia foi designado terceiro Vice-Líder do Bloco Parlamentar da Oposição (Of. s/n/2015-Bloco Parlamentar da Oposição).",
+                    "DataInicio": "2015-04-07"
+                },
+                {
+                    "Linha": "39",
+                    "CodigoParlamentar": "5070",
+                    "TextoObservacao": "Em 07.04.2015, o Senador Wilder Morais foi designado segundo Vice-Líder do Bloco Parlamentar da Oposição (Of. s/n/2015-Bloco Parlamentar da Oposição).",
+                    "DataInicio": "2015-04-07"
+                },
+                {
+                    "Linha": "40",
+                    "CodigoParlamentar": "3360",
+                    "TextoObservacao": "Em 28.04.2015, o Senador Delcídio do Amaral foi designado Líder do Governo (Msg. 120/2015).",
+                    "DataInicio": "2015-04-28"
+                },
+                {
+                    "Linha": "41",
+                    "CodigoParlamentar": "374",
+                    "TextoObservacao": "Em 25.08.2015, o Senador Paulo Rocha foi designado 2º vice-líder do Governo (Mem. 42/2015-GLDGOV).",
+                    "DataInicio": "2015-08-25"
+                },
+                {
+                    "Linha": "42",
+                    "CodigoParlamentar": "5100",
+                    "TextoObservacao": "Em 25.08.2015, o Senador Hélio José foi designado 1º vice-líder do Governo (Mem. 42/2015-GLDGOV).",
+                    "DataInicio": "2015-08-25"
+                },
+                {
+                    "Linha": "43",
+                    "CodigoParlamentar": "1173",
+                    "TextoObservacao": "Em 25.08.2015, o Senador Wellington Fagundes foi designado 3º vice-líder do Governo (Mem. 42/2015-GLDGOV).",
+                    "DataInicio": "2015-08-25"
+                },
+                {
+                    "Linha": "44",
+                    "CodigoParlamentar": "5535",
+                    "TextoObservacao": "Em 09.09.2015, o Senador Telmário Mota foi designado 4º vice-líder do Governo (Mem. 46/2015-GLDGOV).",
+                    "DataInicio": "2015-09-09"
+                },
+                {
+                    "Linha": "45",
+                    "CodigoParlamentar": "5525",
+                    "TextoObservacao": "Em 03.11.2015, o Senador Omar Aziz foi designado líder do Bloco Parlamentar Democracia Progressista (of. 1/2015).",
+                    "DataInicio": "2015-11-03"
+                },
+                {
+                    "Linha": "46",
+                    "CodigoParlamentar": "1173",
+                    "TextoObservacao": "Em 19.11.2015, o Senador Wellington Fagundes foi designado líder do PR (Ofício s/n - GABLIDPR).",
+                    "DataInicio": "2015-11-19"
+                },
+                {
+                    "Linha": "47",
+                    "CodigoParlamentar": "5197",
+                    "TextoObservacao": "Em 08.12.2015, o Senador Cássio Cunha Lima foi reconduzido líder do PSDB para o exercício de 2016 (Of. s/n GLPSDB).",
+                    "DataInicio": "2015-12-08"
+                },
+                {
+                    "Linha": "48",
+                    "CodigoParlamentar": "5100",
+                    "TextoObservacao": "Em 10.12.2015, o Senador Hélio José foi designado líder do PMB (Mem. 12-193/2015-GSHJOSE).",
+                    "DataInicio": "2015-12-10"
+                },
+                {
+                    "Linha": "49",
+                    "CodigoParlamentar": "5523",
+                    "TextoObservacao": "Em 16.12.2015, o Senador Otto Alencar foi designado 2º vice-líder do Bloco Parlamentar Democracia Progressista (Of. 003/2015).",
+                    "DataInicio": "2015-12-16"
+                },
+                {
+                    "Linha": "50",
+                    "CodigoParlamentar": "5008",
+                    "TextoObservacao": "Em 03.02.2016, o Senador Humberto Costa foi reconduzido à liderança do PT (Of. 1/2016-GLDPT).",
+                    "DataInicio": "2016-02-03"
+                },
+                {
+                    "Linha": "51",
+                    "CodigoParlamentar": "40",
+                    "TextoObservacao": "Em 16.02.2016, o Senador José Agripino foi designado líder do Bloco Parlamentar da Oposição (Of. s/n).",
+                    "DataInicio": "2016-02-16"
+                },
+                {
+                    "Linha": "52",
+                    "CodigoParlamentar": "3",
+                    "TextoObservacao": "Em 16.02.2016, o Senador Antonio Carlos Valadares foi designado Líder do PSB, conforme Of. nº 1/2016-GLPSB, em substituição ao Senador João Capiberibe.",
+                    "DataInicio": "2016-02-16"
+                },
+                {
+                    "Linha": "53",
+                    "CodigoParlamentar": "5008",
+                    "TextoObservacao": "Em 24.02.2016, o Senador Humberto Costa foi designado Líder do Governo (MSG nº 49/2016).",
+                    "DataInicio": "2016-02-24"
+                },
+                {
+                    "Linha": "54",
+                    "CodigoParlamentar": "677",
+                    "TextoObservacao": "Em 01.03.2016, o Senador Roberto Rocha foi designado Vice-Líder do PSB (Of. 2/2016-GLPSB)",
+                    "DataInicio": "2016-03-01"
+                },
+                {
+                    "Linha": "55",
+                    "CodigoParlamentar": "374",
+                    "TextoObservacao": "Em 02.03.2016, o Senador Paulo Rocha foi designado líder do PT, deixando de ocupar a vaga de 1º Vice-líder (Of. 3/2016-GLDPT)",
+                    "DataInicio": "2016-03-02"
+                },
+                {
+                    "Linha": "56",
+                    "CodigoParlamentar": "5006",
+                    "TextoObservacao": "Em 08.03.2016, a Senadora Gleisi Hoffmann foi designada 2ª vice-líder do PT (Of. 4/2016-GLDPT).",
+                    "DataInicio": "2016-03-08"
+                },
+                {
+                    "Linha": "57",
+                    "CodigoParlamentar": "5006",
+                    "TextoObservacao": "Em 08.03.2016, a Senadora Gleisi Hoffmann foi designada 4ª vice-líder do Bloco de Apoio ao Governo (Of. 17/2016-GLDBAG).",
+                    "DataInicio": "2016-03-08"
+                },
+                {
+                    "Linha": "58",
+                    "CodigoParlamentar": "5535",
+                    "TextoObservacao": "Em 08.03.2016, o Senador Telmário Mota foi designado 3º vice-líder do Bloco de Apoio ao Governo (Of. 17/2016-GLDBAG).",
+                    "DataInicio": "2016-03-08"
+                },
+                {
+                    "Linha": "59",
+                    "CodigoParlamentar": "3695",
+                    "TextoObservacao": "Em 08.03.2016, o Senador Lindbergh Farias foi designado 2º vice-líder do Bloco de Apoio ao Governo (Of. 17/2016-GLDBAG).",
+                    "DataInicio": "2016-03-08"
+                },
+                {
+                    "Linha": "60",
+                    "CodigoParlamentar": "5637",
+                    "TextoObservacao": "Em 08.03.2016, o Senador Donizeti Nogueira foi designado 4º vice-líder do PT (Of. 4/2016-GLDPT).",
+                    "DataInicio": "2016-03-08"
+                },
+                {
+                    "Linha": "61",
+                    "CodigoParlamentar": "3713",
+                    "TextoObservacao": "Em 08.03.2016, a Senadora Fátima Bezerra foi designada 3º vice-líder do PT (Of. 4/2016-GLDPT).",
+                    "DataInicio": "2016-03-08"
+                },
+                {
+                    "Linha": "62",
+                    "CodigoParlamentar": "3695",
+                    "TextoObservacao": "Em 08.03.2016, o Senador Lindbergh Farias foi designado 1º vice-líder do PT (Of. 4/2016-GLDPT).",
+                    "DataInicio": "2016-03-08"
+                },
+                {
+                    "Linha": "63",
+                    "CodigoParlamentar": "374",
+                    "TextoObservacao": "Em 08.03.2016, o Senador Paulo Rocha foi designado líder do Bloco de Apoio ao Governo, em substituição ao Senador Humberto Costa (Of. 16/2016-GLDBAG)",
+                    "DataInicio": "2016-03-08"
+                },
+                {
+                    "Linha": "64",
+                    "CodigoParlamentar": "3398",
+                    "TextoObservacao": "Em 17.03.2016, o Senador Cristovam Buarque foi designado líder do PPS (Of. 3-009/2016-GSCB).",
+                    "DataInicio": "2016-03-17"
+                },
+                {
+                    "Linha": "65",
+                    "CodigoParlamentar": "945",
+                    "TextoObservacao": "Em 02.02.2016, o Senador Alvaro Dias foi designado líder do Partido Verde (Memo 008/16-SEN ).",
+                    "DataInicio": "2016-03-22"
+                },
+                {
+                    "Linha": "66",
+                    "CodigoParlamentar": "5006",
+                    "TextoObservacao": "Em 22.03.2016, a Senadora Gleisi Hoffmann foi designada 2ª vice-líder do Governo, em substituição ao Senador Paulo Rocha (Memo. 8/2016-GLDGOV).",
+                    "DataInicio": "2016-03-22"
+                },
+                {
+                    "Linha": "67",
+                    "CodigoParlamentar": "4525",
+                    "TextoObservacao": "Em 30.03.2016, o Senador Fernando Collor foi designado líder do PTC (Of. 1/2016-LIDPTC).",
+                    "DataInicio": "2016-03-30"
+                },
+                {
+                    "Linha": "68",
+                    "CodigoParlamentar": "5531",
+                    "TextoObservacao": "Em 05.04.2016, o Senador Elmano Férrer foi designado Líder do PTB (Of. Nº 001/2016-LIDPTB)",
+                    "DataInicio": "2016-04-05"
+                },
+                {
+                    "Linha": "69",
+                    "CodigoParlamentar": "4525",
+                    "TextoObservacao": "Em 06.04.2016, o Senador Fernando Collor foi designado líder do Bloco Parlamentar União e Força (Of. nº 9/2016-BLUFOR)",
+                    "DataInicio": "2016-04-06"
+                },
+                {
+                    "Linha": "70",
+                    "CodigoParlamentar": "4721",
+                    "TextoObservacao": "Em 06.04.2016, o Senador Eduardo Amorim foi designado 3º vice-líder do Bloco Parlamentar União e Força (Of. nº 9/2016-BLUFOR)",
+                    "DataInicio": "2016-04-06"
+                },
+                {
+                    "Linha": "71",
+                    "CodigoParlamentar": "3",
+                    "TextoObservacao": "Em 06.04.2016, o Senador Antonio Carlos Valadares foi designado Vice-Líder do Bloco Socialismo e Democracia, conforme Memo. nº 14/2016-BLSDEM.",
+                    "DataInicio": "2016-04-06"
+                },
+                {
+                    "Linha": "72",
+                    "CodigoParlamentar": "5531",
+                    "TextoObservacao": "Em 06.04.2016, o Senador Elmano Férrer foi designado 2º vice-líder do Bloco Parlamentar União e Força (Of. nº 9/2016-BLUFOR)",
+                    "DataInicio": "2016-04-06"
+                },
+                {
+                    "Linha": "73",
+                    "CodigoParlamentar": "5144",
+                    "TextoObservacao": "Em 03.05.2016, o Senador Zeze Perrella é designado vice-líder do PTB (Of. nº 2/2016-LIDPTB).",
+                    "DataInicio": "2016-05-03"
+                },
+                {
+                    "Linha": "74",
+                    "CodigoParlamentar": "3830",
+                    "TextoObservacao": "Em 05.05.2016, o Senador Davi Alcolumbre foi designado 2º vice-líder do Bloco Parlamentar da Oposição (Of. s/n/2016-Bloco Parlamentar da Oposição).",
+                    "DataInicio": "2016-05-05"
+                },
+                {
+                    "Linha": "75",
+                    "CodigoParlamentar": "5164",
+                    "TextoObservacao": "Em 05.05.2016, o Senador Ataídes Oliveira foi designado 3º vice-líder do Bloco Parlamentar da Oposição (Of. s/n/2016-Bloco Parlamentar da Oposição).",
+                    "DataInicio": "2016-05-05"
+                },
+                {
+                    "Linha": "76",
+                    "CodigoParlamentar": "2331",
+                    "TextoObservacao": "Em 05.05.2016, a Senadora Rose de Freita foi designada 2ª vice-líder do PMDB (Of. 62/2016-GLPMDB).",
+                    "DataInicio": "2016-05-05"
+                },
+                {
+                    "Linha": "77",
+                    "CodigoParlamentar": "1176",
+                    "TextoObservacao": "Em 05.05.2016, o Senador Waldemir Moka foi designado 1º vice-líder do PMDB (Of. 62/2016-GLPMDB).",
+                    "DataInicio": "2016-05-05"
+                },
+                {
+                    "Linha": "78",
+                    "CodigoParlamentar": "635",
+                    "TextoObservacao": "Em 05.05.2016, o Senador Ricardo Ferraço foi designado 1º vice-líder do Bloco Parlamentar da Oposição (Of. s/n/2016-Bloco Parlamentar da Oposição).",
+                    "DataInicio": "2016-05-05"
+                },
+                {
+                    "Linha": "79",
+                    "CodigoParlamentar": "5008",
+                    "TextoObservacao": "Em 12.05.2016, o Senador Humberto Costa deixou de ser líder do governo (Mensagem nº 253/2016 e Memorando nº 104/2016-GSHCST)",
+                    "DataInicio": "2016-05-12"
+                },
+                {
+                    "Linha": "80",
+                    "CodigoParlamentar": "846",
+                    "TextoObservacao": "Em 01.06.2016, o Senador Aloysio Nunes Ferreira foi designado Líder do Governo (Mensagem 306/2016).",
+                    "DataInicio": "2016-06-01"
+                },
+                {
+                    "Linha": "81",
+                    "CodigoParlamentar": "4767",
+                    "TextoObservacao": "Em 06.06.2016, o Senador Eduardo Lopes é designado Líder do PRB (Memo. nº 1/2016-GSEL).",
+                    "DataInicio": "2016-06-06"
+                },
+                {
+                    "Linha": "82",
+                    "CodigoParlamentar": "878",
+                    "TextoObservacao": "Em 08.06.2016, o Senador José Aníbal foi designado 2º vice-lider do PSDB, em substituição ao Senador Aloysio Nunes Ferreira. (Of. 35/2016-GLPSDB).",
+                    "DataInicio": "2016-06-08"
+                },
+                {
+                    "Linha": "83",
+                    "CodigoParlamentar": "5006",
+                    "TextoObservacao": "Em 10.06.2016, a Senadora Gleisi Hoffmann deixa de compor a 2ª vice -liderança do Governo (Of. 49/2016-GLDBAG).",
+                    "DataInicio": "2016-06-10"
+                },
+                {
+                    "Linha": "84",
+                    "CodigoParlamentar": "5535",
+                    "TextoObservacao": "Em 10.06.2016, o Senador Telmário Mota deixa de compor a 4ª vice - liderança do Governo (Of. 49/2016-GLDBAG).",
+                    "DataInicio": "2016-06-10"
+                },
+                {
+                    "Linha": "85",
+                    "CodigoParlamentar": "635",
+                    "TextoObservacao": "Em 14.06.2016, o Senador Ricardo Ferraço foi designado 5º vice-líder do Governo (Memo 17/2016-GLDGOV).",
+                    "DataInicio": "2016-06-14"
+                },
+                {
+                    "Linha": "86",
+                    "CodigoParlamentar": "5100",
+                    "TextoObservacao": "Em 14.06.2016, o Senador Hélio José foi designado 4º vice-líder do Governo (Memo 17/2016-GLDGOV).",
+                    "DataInicio": "2016-06-14"
+                },
+                {
+                    "Linha": "87",
+                    "CodigoParlamentar": "3830",
+                    "TextoObservacao": "Em 14.06.2016, o Senador Davi Alcolumbre foi designado 3º vice-líder do Governo (Memo 17/2016-GLDGOV).",
+                    "DataInicio": "2016-06-14"
+                },
+                {
+                    "Linha": "88",
+                    "CodigoParlamentar": "5112",
+                    "TextoObservacao": "Em 14.06.2016, o Senador José Medeiros foi designado 2º vice-líder do Governo (Memo 17/2016-GLDGOV).",
+                    "DataInicio": "2016-06-14"
+                },
+                {
+                    "Linha": "89",
+                    "CodigoParlamentar": "3695",
+                    "TextoObservacao": "Em 22.06.2016, o Senador Lindbergh Farias foi designado líder da Minoria (Of. 13/2016-GLDPT).",
+                    "DataInicio": "2016-06-22"
+                },
+                {
+                    "Linha": "90",
+                    "CodigoParlamentar": "5008",
+                    "TextoObservacao": "Em 08.08.2016, o Senador Humberto Costa foi designado Líder do PT e do Bloco Parlamentar da Resistência Democrática (Ofícios nº 14/2016-GLDPT e nº 77/2016-GLPRD).",
+                    "DataInicio": "2016-08-08"
+                },
+                {
+                    "Linha": "91",
+                    "CodigoParlamentar": "5012",
+                    "TextoObservacao": "Em 24.08.2016, o Senador Randolfe Rodrigues foi designado líder do Bloco Parlamentar Socialismo e Democracia (Memo. 53/2016-GLBSD).",
+                    "DataInicio": "2016-08-24"
+                },
+                {
+                    "Linha": "92",
+                    "CodigoParlamentar": "3366",
+                    "TextoObservacao": "Em 01.10.2016, o Senador Marcelo Crivella reassume a liderança do partido (Memo nº 42/2016-GSMC).",
+                    "DataInicio": "2016-10-01"
+                },
+                {
+                    "Linha": "93",
+                    "CodigoParlamentar": "3713",
+                    "TextoObservacao": "Em 29.11.2016, a Senadora Fátima Bezerra foi designada 3º vice-líder do Partido dos Trabalhadores (Of. 19/2016-GLDPT).",
+                    "DataInicio": "2016-11-29"
+                },
+                {
+                    "Linha": "94",
+                    "CodigoParlamentar": "5533",
+                    "TextoObservacao": "Em 16.02.2016, o Senador Lasier Martins foi designado líder do PDT (Memo. 59-GSTMOTA).",
+                    "DataInicio": "2016-12-13"
+                },
+                {
+                    "Linha": "95",
+                    "CodigoParlamentar": "4767",
+                    "TextoObservacao": "Em 02.01.2017, o Senador Eduardo Lopes é designado Líder do PRB (Memo. nº 1/2017-GSELOP).",
+                    "DataInicio": "2017-01-02"
+                },
+                {
+                    "Linha": "96",
+                    "CodigoParlamentar": "5533",
+                    "TextoObservacao": "Em 31.01.2017, o Senador Lasier Martins deixou a liderança do PDT, em virtude de sua desfiliação do partido.",
+                    "DataInicio": "2017-01-31"
+                },
+                {
+                    "Linha": "97",
+                    "CodigoParlamentar": "715",
+                    "TextoObservacao": "Em 31.01.2017, o Senador Armando Monteiro foi designado líder do PTB (Comunicação s/n-2017)",
+                    "DataInicio": "2017-01-31"
+                },
+                {
+                    "Linha": "98",
+                    "CodigoParlamentar": "5531",
+                    "TextoObservacao": "Em 31.01.2017, o Senador Elmano Férrer deixou a vice-liderança do PTB, em virtude de sua desfiliação do partido.",
+                    "DataInicio": "2017-01-31"
+                },
+                {
+                    "Linha": "99",
+                    "CodigoParlamentar": "5535",
+                    "TextoObservacao": "Em 31.01.2017, o Senador Telmário Mota deixou a vice-liderança do Bloco Parlamentar da Resistência Democrática e a vice-liderança do PDT e , em virtude de sua desfiliação do partido.",
+                    "DataInicio": "2017-02-01"
+                },
+                {
+                    "Linha": "100",
+                    "CodigoParlamentar": "3741",
+                    "TextoObservacao": "Em 01.02.2017, o Senador Paulo Bauer foi designado líder do PSDB (Comunicação s/n-2017)",
+                    "DataInicio": "2017-02-01"
+                },
+                {
+                    "Linha": "101",
+                    "CodigoParlamentar": "5525",
+                    "TextoObservacao": "Em 01.02.2017, o Senador Omar Aziz foi designado líder do PSD (Memo. nº 1/2017-GLPSD)",
+                    "DataInicio": "2017-02-01"
+                },
+                {
+                    "Linha": "102",
+                    "CodigoParlamentar": "5540",
+                    "TextoObservacao": "Em 01.02.2017, o Senador Fernando Bezerra Coelho foi designado líder do PSB (Of. GLPSB nº 1/2017)",
+                    "DataInicio": "2017-02-01"
+                },
+                {
+                    "Linha": "103",
+                    "CodigoParlamentar": "4721",
+                    "TextoObservacao": "Em 31.01.2017, o Senador Eduardo Amorim deixou a vice-liderança do Bloco Moderador e a liderança do PSC, em virtude de sua desfiliação do partido.",
+                    "DataInicio": "2017-02-01"
+                },
+                {
+                    "Linha": "104",
+                    "CodigoParlamentar": "456",
+                    "TextoObservacao": "Em 01.02.2017, o Senador Ronaldo Caiado foi designado líder do DEM (Of. 01/2017-GLDEM).",
+                    "DataInicio": "2017-02-01"
+                },
+                {
+                    "Linha": "105",
+                    "CodigoParlamentar": "4763",
+                    "TextoObservacao": "Em 01.02.2017, o Senador Vicentinho Alves foi designado líder do PR (Of. sn/2017-GLPR).",
+                    "DataInicio": "2017-02-01"
+                },
+                {
+                    "Linha": "106",
+                    "CodigoParlamentar": "3823",
+                    "TextoObservacao": "Em 01.02.2017, o Senador Benedito de Lira foi designado líder do PP (Of. 01/2017-GLDPP).",
+                    "DataInicio": "2017-02-01"
+                },
+                {
+                    "Linha": "107",
+                    "CodigoParlamentar": "70",
+                    "TextoObservacao": "Em 01.02.2017, o Senador Renan Calheiros foi designado líder do PMDB (Of. GLPMDB nº 11/2017)",
+                    "DataInicio": "2017-02-01"
+                },
+                {
+                    "Linha": "108",
+                    "CodigoParlamentar": "631",
+                    "TextoObservacao": "Em 03.02.2017, o Senador Magno Malta é designado vice-líder do PR (Of. de indicação s/nº-2017)",
+                    "DataInicio": "2017-02-03"
+                },
+                {
+                    "Linha": "109",
+                    "CodigoParlamentar": "1173",
+                    "TextoObservacao": "Em 03.02.2017, o Senador Wellington Fagundes foi designado líder do Bloco Moderador (Of. 1/2017-BLUMOD)",
+                    "DataInicio": "2017-02-03"
+                },
+                {
+                    "Linha": "110",
+                    "CodigoParlamentar": "677",
+                    "TextoObservacao": "Em 06.02.2017, o Senador Roberto Rocha foi designado 1º Vice-Líder do PSB (Of. 2/2017-GLPSB)",
+                    "DataInicio": "2017-02-06"
+                },
+                {
+                    "Linha": "111",
+                    "CodigoParlamentar": "5116",
+                    "TextoObservacao": "Em 06.02.2017, o Senador Pedro Chaves foi designado líder do PSC (Of. 11/2017-GSPCHAV).",
+                    "DataInicio": "2017-02-06"
+                },
+                {
+                    "Linha": "112",
+                    "CodigoParlamentar": "635",
+                    "TextoObservacao": "Em 07.02.2017, o Senador Ricardo Ferraço foi designado Vice-Líder do PSDB (Ofício 42/2017-GLPSDB)",
+                    "DataInicio": "2017-02-07"
+                },
+                {
+                    "Linha": "113",
+                    "CodigoParlamentar": "3394",
+                    "TextoObservacao": "Em 08.02.2017, o Senador João Capiberibe foi designado líder do Bloco Socialismo e Democracia (Memo 2/2017-GLBSD)",
+                    "DataInicio": "2017-02-08"
+                },
+                {
+                    "Linha": "114",
+                    "CodigoParlamentar": "5008",
+                    "TextoObservacao": "Em 08.02.2017, o Senador Humberto Costa foi designado Líder da Minoria (Ofício 2/2017-GLDPT)",
+                    "DataInicio": "2017-02-08"
+                },
+                {
+                    "Linha": "115",
+                    "CodigoParlamentar": "5006",
+                    "TextoObservacao": "Em 08.02.2017, a Senadora Gleisi Hoffmann foi indicada líder do PT (Of. 1/2017-GLDPT).",
+                    "DataInicio": "2017-02-08"
+                },
+                {
+                    "Linha": "116",
+                    "CodigoParlamentar": "4981",
+                    "TextoObservacao": "Em 09.02.2017, o Senador Acir Gurgacz foi designado líder do PDT (Of. 4/2017-GLPDT).",
+                    "DataInicio": "2017-02-09"
+                },
+                {
+                    "Linha": "117",
+                    "CodigoParlamentar": "5533",
+                    "TextoObservacao": "Em 22.02.2017, o Senador Lasier Martins foi designado Vice-líder do PSD (Memo. 3/2017-GLPSD).",
+                    "DataInicio": "2017-02-22"
+                },
+                {
+                    "Linha": "118",
+                    "CodigoParlamentar": "878",
+                    "TextoObservacao": "Em 23.02.2017, o Senador José Aníbal deixou de ocupar o cargo de 2º vice-líder do PSDB, em função do retorno ao mandato do Senador titular, José Serra.",
+                    "DataInicio": "2017-02-23"
+                },
+                {
+                    "Linha": "119",
+                    "CodigoParlamentar": "73",
+                    "TextoObservacao": "Em 07.03.2017, o Senador Romero Jucá foi indicado Líder do Governo (Mensagem. 57/2017-PR).",
+                    "DataInicio": "2017-03-07"
+                },
+                {
+                    "Linha": "120",
+                    "CodigoParlamentar": "846",
+                    "TextoObservacao": "Em 07.03.2017, o Senador Aloysio Nunes Ferreira afastou-se do exercício para exercer cargo no Poder Executivo (Memo 60/2017-SANF).",
+                    "DataInicio": "2017-03-07"
+                },
+                {
+                    "Linha": "121",
+                    "CodigoParlamentar": "5006",
+                    "TextoObservacao": "Em 09.03.2017, a Senadora Gleisi Hoffmann foi indicada líder do Bloco Resistência Democrática (Of. 1/2017-BLPRD).",
+                    "DataInicio": "2017-03-09"
+                },
+                {
+                    "Linha": "122",
+                    "CodigoParlamentar": "5070",
+                    "TextoObservacao": "Em 14.03.2017, o Senador Wilder de Morais foi designado líder do Bloco Parlamentar Democracia Progressista (Memo 17/2017-GLDPRO)",
+                    "DataInicio": "2017-03-14"
+                },
+                {
+                    "Linha": "123",
+                    "CodigoParlamentar": "70",
+                    "TextoObservacao": "Em 22.03.2017, o Senador Renan Calheiros foi designado líder da Maioria (Of. GLPMDB nº 71/2017)",
+                    "DataInicio": "2017-03-22"
+                },
+                {
+                    "Linha": "124",
+                    "CodigoParlamentar": "1249",
+                    "TextoObservacao": "Em 24.03.2017, a Senadora Kátia Abreu foi designada 1ª Vice-Líder do PMDB (Of. GLPMDB nº 74/2017)",
+                    "DataInicio": "2017-03-24"
+                },
+                {
+                    "Linha": "125",
+                    "CodigoParlamentar": "3695",
+                    "TextoObservacao": "Em 19.04.2017, o Senador Lindbergh Farias foi designado 2º vice-líder do PT (Of. 13/2017-GLDPT).",
+                    "DataInicio": "2017-04-19"
+                },
+                {
+                    "Linha": "126",
+                    "CodigoParlamentar": "374",
+                    "TextoObservacao": "Em 19.04.2017, o Senador Paulo Rocha foi designado 1º vice-líder do PT (Of. 13/2017-GLDPT).",
+                    "DataInicio": "2017-04-19"
+                },
+                {
+                    "Linha": "127",
+                    "CodigoParlamentar": "5535",
+                    "TextoObservacao": "Em 28.04.2017, o Senador Telmário Mota foi desigando 1º Vice-Líder do Bloco Moderador (Of. 61/2017-BLOMOD).",
+                    "DataInicio": "2017-04-28"
+                },
+                {
+                    "Linha": "128",
+                    "CodigoParlamentar": "4560",
+                    "TextoObservacao": "Em 08.05.2017, o Senador Sérgio Petecão foi designado 6º Vice-Líder do Governo (Of. 13/2017-GLDGOV).",
+                    "DataInicio": "2017-05-08"
+                },
+                {
+                    "Linha": "129",
+                    "CodigoParlamentar": "3634",
+                    "TextoObservacao": "Em 08.05.2017, o Senador Flexa Ribeiro foi designado 5º Vice-Líder do Governo (Of. 13/2017-GLDGOV).",
+                    "DataInicio": "2017-05-08"
+                },
+                {
+                    "Linha": "130",
+                    "CodigoParlamentar": "5540",
+                    "TextoObservacao": "Em 08.05.2017, o Senador Fernando Bezerra Coelho foi designado 1º vice-líder do Governo (Memo. 13/2016-GLDGOV).",
+                    "DataInicio": "2017-05-08"
+                },
+                {
+                    "Linha": "131",
+                    "CodigoParlamentar": "5112",
+                    "TextoObservacao": "Em 08.05.2017, o Senador José Medeiros foi designado 2º vice-líder do Governo (Memo 13/2016-GLDGOV).",
+                    "DataInicio": "2017-05-08"
+                },
+                {
+                    "Linha": "132",
+                    "CodigoParlamentar": "3830",
+                    "TextoObservacao": "Em 08.05.2017, o Senador Davi Alcolumbre foi designado 3º vice-líder do Governo (Memo 13/2016-GLDGOV).",
+                    "DataInicio": "2017-05-08"
+                },
+                {
+                    "Linha": "133",
+                    "CodigoParlamentar": "5070",
+                    "TextoObservacao": "Em 08.05.2017, o Senador Wilder Morais foi designado 4º Vice-Líder do Governo (Of. 13/2017-GLDGOV).",
+                    "DataInicio": "2017-05-08"
+                },
+                {
+                    "Linha": "134",
+                    "CodigoParlamentar": "3695",
+                    "TextoObservacao": "Em 08.06.2017, o Senador Lindbergh Farias foi designado líder do PT (Of. 17/2017-GLDPT).",
+                    "DataInicio": "2017-06-08"
+                },
+                {
+                    "Linha": "135",
+                    "CodigoParlamentar": "3695",
+                    "TextoObservacao": "Em 19.06.2017, o Senador Lindbergh Farias foi designado líder do Bloco Resistência Democrática (Of. 78/2017-GLDPRD).",
+                    "DataInicio": "2017-06-19"
+                },
+                {
+                    "Linha": "136",
+                    "CodigoParlamentar": "5322",
+                    "TextoObservacao": "Em 04.07.2017, o Senador Romario foi designado vice-líder do Podemos (Memo nº 8/2017)",
+                    "DataInicio": "2017-07-04"
+                },
+                {
+                    "Linha": "137",
+                    "CodigoParlamentar": "945",
+                    "TextoObservacao": "Em 04.07.2017, o Senador Alvaro Dias foi designado líder do Podemos (Memo nº 8/2017)",
+                    "DataInicio": "2017-07-04"
+                },
+                {
+                    "Linha": "138",
+                    "CodigoParlamentar": "2207",
+                    "TextoObservacao": "Em 05.07.2017, o Senador Raimundo Lira foi designado líder do PMDB e da Maioria (Of. 39 e 40/2017-GLPMDB).",
+                    "DataInicio": "2017-07-05"
+                },
+                {
+                    "Linha": "139",
+                    "CodigoParlamentar": "4697",
+                    "TextoObservacao": "Em 11.07.2017, a Senadora Ângela Portela foi designada líder temporária do PDT no período de 11 a 14 de julho de 2017. (Memo nº 36/2017).",
+                    "DataInicio": "2017-07-11"
+                },
+                {
+                    "Linha": "140",
+                    "CodigoParlamentar": "4721",
+                    "TextoObservacao": "Em 02.08.2017, o Senador Eduardo Amorim foi designado líder do Bloco Social Democrata (Of. s/n).",
+                    "DataInicio": "2017-08-02"
+                },
+                {
+                    "Linha": "141",
+                    "CodigoParlamentar": "5527",
+                    "TextoObservacao": "Em 16.08.2017, a Senadora Simone Tebet foi designada 2ª Vice-Líder do PMDB (Of. GLPMDB nº 172/2017).",
+                    "DataInicio": "2017-08-16"
+                },
+                {
+                    "Linha": "142",
+                    "CodigoParlamentar": "3372",
+                    "TextoObservacao": "Em 16.08.2017, o Senador Valdir Raupp foi designado 1º Vice-Líder do PMDB (Of. GLPMDB nº 172/2017)",
+                    "DataInicio": "2017-08-16"
+                },
+                {
+                    "Linha": "143",
+                    "CodigoParlamentar": "5112",
+                    "TextoObservacao": "Em 23.08.2017, o Senador José Medeiros foi designado vice-líder do Podemos (Memo nº 12/2017).",
+                    "DataInicio": "2017-08-23"
+                },
+                {
+                    "Linha": "144",
+                    "CodigoParlamentar": "5540",
+                    "TextoObservacao": "Em 05.09.2017, o Senador Fernando Bezerra Coelho deixou a liderança do PSB em virtude da sua desfiliação do Partido (Memo 67/17-GSFERCOE).",
+                    "DataInicio": "2017-09-05"
+                },
+                {
+                    "Linha": "145",
+                    "CodigoParlamentar": "3",
+                    "TextoObservacao": "Em 12.09.2017, o Senador Antonio Carlos Valadares foi designado vice-líder do Partido Socialista Brasileiro (Of. nº 82/2017-BLSDEM).",
+                    "DataInicio": "2017-09-12"
+                },
+                {
+                    "Linha": "146",
+                    "CodigoParlamentar": "4575",
+                    "TextoObservacao": "Em 12.09.2017, a Senadora Lídice da Mata foi designada líder do Partido Socialista Brasileiro (Of. nº 82/2017-BLSDEM).",
+                    "DataInicio": "2017-09-12"
+                },
+                {
+                    "Linha": "147",
+                    "CodigoParlamentar": "5070",
+                    "TextoObservacao": "Em 13.09.2017, o Senador Wilder Morais foi designado 6º Vice-Líder do Governo (Of. 28/2017-GLDGOV).",
+                    "DataInicio": "2017-09-13"
+                },
+                {
+                    "Linha": "148",
+                    "CodigoParlamentar": "4560",
+                    "TextoObservacao": "Em 13.09.2017, o Senador Sérgio Petecão foi designado 5º Vice-Líder do Governo (Of. 28/2017-GLDGOV).",
+                    "DataInicio": "2017-09-13"
+                },
+                {
+                    "Linha": "149",
+                    "CodigoParlamentar": "3634",
+                    "TextoObservacao": "Em 13.09.2017, o Senador Flexa Ribeiro foi designado 3º Vice-Líder do Governo (Of. 28/2017-GLDGOV).",
+                    "DataInicio": "2017-09-13"
+                },
+                {
+                    "Linha": "150",
+                    "CodigoParlamentar": "3830",
+                    "TextoObservacao": "Em 13.09.2017, o Senador Davi Alcolumbre foi designado 2º vice-líder do Governo (Memo 28/2017-GLDGOV).",
+                    "DataInicio": "2017-09-13"
+                },
+                {
+                    "Linha": "151",
+                    "CodigoParlamentar": "5112",
+                    "TextoObservacao": "Em 13.09.2017, o Senador José Medeiros foi designado 4º vice-líder do Governo (Memo 28/2017-GLDGOV).",
+                    "DataInicio": "2017-09-13"
+                },
+                {
+                    "Linha": "152",
+                    "CodigoParlamentar": "5322",
+                    "TextoObservacao": "Em 21.09.2017, o Senador Romário foi designado vice-líder do Podemos (Of. nº 1/2017)",
+                    "DataInicio": "2017-09-21"
+                },
+                {
+                    "Linha": "153",
+                    "CodigoParlamentar": "3394",
+                    "TextoObservacao": "Em 27.09.2017, o Senador João Capiberibe foi designado líder do Bloco Democracia e Cidadania (Memo 86/2017-BLSDEM)",
+                    "DataInicio": "2017-09-27"
+                },
+                {
+                    "Linha": "154",
+                    "CodigoParlamentar": "3394",
+                    "TextoObservacao": "Em 28.09.2017, o Senador João Capiberibe foi designado líder do Bloco Parlamentar Democracia e Cidadania (Memo 86/2017-BLSDEM)",
+                    "DataInicio": "2017-09-28"
+                },
+                {
+                    "Linha": "155",
+                    "CodigoParlamentar": "5100",
+                    "TextoObservacao": "Em 11.10.2017, o Senador Hélio José foi designado líder do PROS (Of. 315/2017-GSHJOSE).",
+                    "DataInicio": "2017-10-11"
+                },
+                {
+                    "Linha": "156",
+                    "CodigoParlamentar": "558",
+                    "TextoObservacao": "Em 31.10.2017, a Senadora Vanessa Grazziotin foi designada 2ª vice-líder do Bloco Parlamentar Democracia e Cidadania (Memo. 8/2017-GLBPDC).",
+                    "DataInicio": "2017-10-31"
+                },
+                {
+                    "Linha": "157",
+                    "CodigoParlamentar": "5012",
+                    "TextoObservacao": "Em 31.10.2017, o Senador Randolfe Rodrigues foi designado 1º vice-líder do Bloco Parlamentar Democracia e Cidadania (Memo. 8/2017-GLBPDC).",
+                    "DataInicio": "2017-10-31"
+                },
+                {
+                    "Linha": "158",
+                    "CodigoParlamentar": "677",
+                    "TextoObservacao": "Em 23.11.2017, o Senador Roberto Rocha foi designado 1º Vice-Líder do PSDB (Of. 235/2017-GLPSDB)",
+                    "DataInicio": "2017-11-23"
+                },
+                {
+                    "Linha": "159",
+                    "CodigoParlamentar": "677",
+                    "TextoObservacao": "Em 13.03.2018, o Senador Roberto Rocha foi designado 2º vice-líder do PSDB (Of. 24/2018-GLPSDB).",
+                    "DataInicio": "2018-03-13"
+                },
+                {
+                    "Linha": "160",
+                    "CodigoParlamentar": "635",
+                    "TextoObservacao": "Em 13.03.2018, o Senador Ricardo Ferraço foi designado 1º vice-líder do PSDB (Of. 24/2018-GLPSDB).",
+                    "DataInicio": "2018-03-13"
+                },
+                {
+                    "Linha": "161",
+                    "CodigoParlamentar": "5112",
+                    "TextoObservacao": "Em 14.03.2018, o Senador José Medeiros renunciou à 2ª vice-líderença do Governo (Of. 63/2018-GSJMEDEI).",
+                    "DataInicio": "2018-03-14"
+                },
+                {
+                    "Linha": "162",
+                    "CodigoParlamentar": "5527",
+                    "TextoObservacao": "Em 04.04.2018, a Senadora Simone Tebet foi designada líder do PMDB e da Maioria (Of. nº 40/2018-GLPMDB)",
+                    "DataInicio": "2018-04-04"
+                },
+                {
+                    "Linha": "163",
+                    "CodigoParlamentar": "4697",
+                    "TextoObservacao": "Em 04.04.2018, a Senadora Ângela Portela foi designada vice-líder do PDT (Memo nº 1/2018-GLDPDT).",
+                    "DataInicio": "2018-04-04"
+                },
+                {
+                    "Linha": "164",
+                    "CodigoParlamentar": "3",
+                    "TextoObservacao": "Em 04.04.2018, o Senador Antonio Carlos Valadares foi designado líder do PSB (Of. nº 9/2018-GLPSB).",
+                    "DataInicio": "2018-04-04"
+                },
+                {
+                    "Linha": "165",
+                    "CodigoParlamentar": "739",
+                    "TextoObservacao": "Em 10.04.2018, o Senador Ciro Nogueira foi indicado líder do Bloco Democracia Progressista (Of. S/N/2018-Bl.DPROG)",
+                    "DataInicio": "2018-04-10"
+                },
+                {
+                    "Linha": "166",
+                    "CodigoParlamentar": "4575",
+                    "TextoObservacao": "Em 09.05.2018, a Senadora Lídice da Mata foi designada vice-líder do PSB (Memo nº 17/2018-GLDPSB).",
+                    "DataInicio": "2018-05-09"
+                },
+                {
+                    "Linha": "167",
+                    "CodigoParlamentar": "5621",
+                    "TextoObservacao": "Em 06.06.2018, o Senador Rudson Leite foi designado líder do PV (Memo. 1/2018-GRSLEITE).",
+                    "DataInicio": "2018-06-06"
+                },
+                {
+                    "Linha": "168",
+                    "CodigoParlamentar": "4988",
+                    "TextoObservacao": "Em 25.07.2018, a Senadora Ana Amélia foi designada líder do PP (Of. 046/2018-GLDPP).",
+                    "DataInicio": "2018-07-25"
+                },
+                {
+                    "Linha": "169",
+                    "CodigoParlamentar": "3823",
+                    "TextoObservacao": "Em 14.11.2018, o Senador Benedito de Lira foi designado líder do PP (Of. 74/2018-GLDPP).",
+                    "DataInicio": "2018-11-14"
+                },
+                {
+                    "Linha": "170",
+                    "CodigoParlamentar": "73",
+                    "TextoObservacao": "Em 28.11.2018, o Senador Romero Jucá foi indicado Líder do Governo (Mensagem. 601/2018-PR).",
+                    "DataInicio": "2018-11-28"
+                }
+            ]
+        }
+    }
+}

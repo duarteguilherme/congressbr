@@ -1,0 +1,1069 @@
+{
+    "ListaLocais": {
+        "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+        "@xsi:noNamespaceSchemaLocation": "http://legis.senado.leg.br/dadosabertos/dados/ListaLocaisv5.xsd",
+        "Metadados": {
+            "Versao": "02/12/2018 08:59:07",
+            "VersaoServico": "5",
+            "DataVersaoServico": "2017-03-08",
+            "DescricaoDataSet": "Lista os locais aonde uma matéria pode estar"
+        },
+        "Locais": {
+            "Local": [
+                {
+                    "CodigoLocal": "3",
+                    "SiglaLocal": "ADVOSF",
+                    "NomeLocal": "Advocacia do Senado Federal",
+                    "TipoLocal": "A",
+                    "DescricaoTipoLocal": "Unidade Administrativa",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "1900-01-01"
+                },
+                {
+                    "CodigoLocal": "434",
+                    "SiglaLocal": "ATRSGM",
+                    "NomeLocal": "Assessoria Técnica",
+                    "TipoLocal": "A",
+                    "DescricaoTipoLocal": "Unidade Administrativa",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2016-01-04"
+                },
+                {
+                    "CodigoLocal": "38",
+                    "SiglaLocal": "CAE",
+                    "NomeLocal": "Comissão de Assuntos Econômicos",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "1900-01-01"
+                },
+                {
+                    "CodigoLocal": "1313",
+                    "SiglaLocal": "CAEAM",
+                    "NomeLocal": "Subcomissão Permanente - Assuntos Municipais",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2005-03-08"
+                },
+                {
+                    "CodigoLocal": "1660",
+                    "SiglaLocal": "CAEECON",
+                    "NomeLocal": "Subcomissão Permanente para tratar dos Temas Estruturais e de Longo Prazo da Economia Brasileira",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2013-03-12"
+                },
+                {
+                    "CodigoLocal": "1563",
+                    "SiglaLocal": "CAEMPEEI",
+                    "NomeLocal": "Subcomissão Permanente das Micro e Pequenas Empresas e do Empreendedor Individual",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2011-04-12"
+                },
+                {
+                    "CodigoLocal": "1561",
+                    "SiglaLocal": "CAESTN",
+                    "NomeLocal": "Subcomissão Permanente de Avaliação do Sistema Tributário Nacional",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2011-04-05"
+                },
+                {
+                    "CodigoLocal": "40",
+                    "SiglaLocal": "CAS",
+                    "NomeLocal": "Comissão de Assuntos Sociais",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "1900-01-01"
+                },
+                {
+                    "CodigoLocal": "449",
+                    "SiglaLocal": "CCAI",
+                    "NomeLocal": "Comissão Mista de Controle das Atividades de Inteligência",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "CN",
+                    "NomeCasaLocal": "Congresso Nacional",
+                    "DataCriacaoLocal": "1999-12-07"
+                },
+                {
+                    "CodigoLocal": "2147",
+                    "SiglaLocal": "CCC",
+                    "NomeLocal": "Comissão Temporária para Reforma do Código Comercial (Art. 374-RISF)",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2017-11-26"
+                },
+                {
+                    "CodigoLocal": "34",
+                    "SiglaLocal": "CCJ",
+                    "NomeLocal": "Comissão de Constituição, Justiça e Cidadania",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "1900-01-01"
+                },
+                {
+                    "CodigoLocal": "914",
+                    "SiglaLocal": "CCJSSP",
+                    "NomeLocal": "Subcomissão Permanente de Segurança Pública",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2003-03-19"
+                },
+                {
+                    "CodigoLocal": "767",
+                    "SiglaLocal": "CCS",
+                    "NomeLocal": "Conselho de Comunicação Social",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "CN",
+                    "NomeCasaLocal": "Congresso Nacional",
+                    "DataCriacaoLocal": "1991-12-30"
+                },
+                {
+                    "CodigoLocal": "1363",
+                    "SiglaLocal": "CCT",
+                    "NomeLocal": "Comissão de Ciência, Tecnologia, Inovação, Comunicação e Informática",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2007-02-07"
+                },
+                {
+                    "CodigoLocal": "336",
+                    "SiglaLocal": "CD",
+                    "NomeLocal": "Câmara dos Deputados",
+                    "TipoLocal": "A",
+                    "DescricaoTipoLocal": "Unidade Administrativa",
+                    "SiglaCasaLocal": "CD",
+                    "NomeCasaLocal": "Câmara dos Deputados",
+                    "DataCriacaoLocal": "1900-01-01"
+                },
+                {
+                    "CodigoLocal": "770",
+                    "SiglaLocal": "CDBL",
+                    "NomeLocal": "Conselho do Diploma Bertha Lutz",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2001-03-16"
+                },
+                {
+                    "CodigoLocal": "834",
+                    "SiglaLocal": "CDH",
+                    "NomeLocal": "Comissão de Direitos Humanos e Legislação Participativa",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2002-12-13"
+                },
+                {
+                    "CodigoLocal": "1540",
+                    "SiglaLocal": "CDHC",
+                    "NomeLocal": "Conselho da Comenda de Direitos Humanos Dom Hélder Câmara",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2010-05-26"
+                },
+                {
+                    "CodigoLocal": "2015",
+                    "SiglaLocal": "CDIR",
+                    "NomeLocal": "COMISSÃO DIRETORA DO SENADO FEDERAL",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "1900-01-01"
+                },
+                {
+                    "CodigoLocal": "1306",
+                    "SiglaLocal": "CDR",
+                    "NomeLocal": "Comissão de Desenvolvimento Regional e Turismo",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2005-02-18"
+                },
+                {
+                    "CodigoLocal": "47",
+                    "SiglaLocal": "CE",
+                    "NomeLocal": "Comissão de Educação, Cultura e Esporte",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "1900-01-01"
+                },
+                {
+                    "CodigoLocal": "2031",
+                    "SiglaLocal": "CEAERO",
+                    "NomeLocal": "COMISSÃO ESPECIAL DESTINADA A EXAMINAR O PLS 258, DE 2016",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2016-06-22"
+                },
+                {
+                    "CodigoLocal": "1714",
+                    "SiglaLocal": "CECODELEI",
+                    "NomeLocal": "COMISSÃO DE JURISTAS RESPONSÁVEL PELA ELABORAÇÃO DE ANTEPROJETO DE CÓDIGO ELEITORAL",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2010-06-08"
+                },
+                {
+                    "CodigoLocal": "445",
+                    "SiglaLocal": "CEDP",
+                    "NomeLocal": "Conselho de Ética e Decoro Parlamentar",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "1993-03-17"
+                },
+                {
+                    "CodigoLocal": "2166",
+                    "SiglaLocal": "CEINT",
+                    "NomeLocal": "Comissão Externa de Fiscalização da Intervenção Federal no Rio de Janeiro",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2018-02-21"
+                },
+                {
+                    "CodigoLocal": "2061",
+                    "SiglaLocal": "CEOI",
+                    "NomeLocal": "Comissão Especial das Obras Inacabadas - 2016",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2016-08-16"
+                },
+                {
+                    "CodigoLocal": "59",
+                    "SiglaLocal": "CI",
+                    "NomeLocal": "Comissão de Serviços de Infraestrutura",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "1900-01-01"
+                },
+                {
+                    "CodigoLocal": "2192",
+                    "SiglaLocal": "CICLCC",
+                    "NomeLocal": "Comenda de Incentivo à Cultura Luís da Câmara Cascudo",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2018-05-29"
+                },
+                {
+                    "CodigoLocal": "1955",
+                    "SiglaLocal": "CJD",
+                    "NomeLocal": "Comissão de Juristas da Desburocratização - 2015",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2015-08-19"
+                },
+                {
+                    "CodigoLocal": "50",
+                    "SiglaLocal": "CMA",
+                    "NomeLocal": "Comissão de Meio Ambiente",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "1900-01-01"
+                },
+                {
+                    "CodigoLocal": "1774",
+                    "SiglaLocal": "CMCVM",
+                    "NomeLocal": "Comissão Permanente Mista de Combate à Violência contra a Mulher",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "CN",
+                    "NomeCasaLocal": "Congresso Nacional",
+                    "DataCriacaoLocal": "2014-01-17"
+                },
+                {
+                    "CodigoLocal": "1450",
+                    "SiglaLocal": "CMMC",
+                    "NomeLocal": "Comissão Mista Permanente sobre Mudanças Climáticas",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "CN",
+                    "NomeCasaLocal": "Congresso Nacional",
+                    "DataCriacaoLocal": "2008-12-30"
+                },
+                {
+                    "CodigoLocal": "2134",
+                    "SiglaLocal": "CMMPV 798/2017",
+                    "NomeLocal": "Comissão Mista da Medida Provisória nº 798, de 2017",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "CN",
+                    "NomeCasaLocal": "Congresso Nacional",
+                    "DataCriacaoLocal": "2017-08-31"
+                },
+                {
+                    "CodigoLocal": "2184",
+                    "SiglaLocal": "CMMPV 834/2018",
+                    "NomeLocal": "Comissão Mista da Medida Provisória nº 834, de 2018",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "CN",
+                    "NomeCasaLocal": "Congresso Nacional",
+                    "DataCriacaoLocal": "2018-05-30"
+                },
+                {
+                    "CodigoLocal": "2185",
+                    "SiglaLocal": "CMMPV 835/2018",
+                    "NomeLocal": "Comissão Mista da Medida Provisória nº 835, de 2018",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "CN",
+                    "NomeCasaLocal": "Congresso Nacional",
+                    "DataCriacaoLocal": "2018-05-30"
+                },
+                {
+                    "CodigoLocal": "2186",
+                    "SiglaLocal": "CMMPV 836/2018",
+                    "NomeLocal": "Comissão Mista da Medida Provisória nº 836, de 2018",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "CN",
+                    "NomeCasaLocal": "Congresso Nacional",
+                    "DataCriacaoLocal": "2018-06-01"
+                },
+                {
+                    "CodigoLocal": "2188",
+                    "SiglaLocal": "CMMPV 838/2018",
+                    "NomeLocal": "Comissão Mista da Medida Provisória nº 838, de 2018",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "CN",
+                    "NomeCasaLocal": "Congresso Nacional",
+                    "DataCriacaoLocal": "2018-06-01"
+                },
+                {
+                    "CodigoLocal": "2190",
+                    "SiglaLocal": "CMMPV 840/2018",
+                    "NomeLocal": "Comissão Mista da Medida Provisória nº 840, de 2018",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "CN",
+                    "NomeCasaLocal": "Congresso Nacional",
+                    "DataCriacaoLocal": "2018-06-06"
+                },
+                {
+                    "CodigoLocal": "2191",
+                    "SiglaLocal": "CMMPV 841/2018",
+                    "NomeLocal": "Comissão Mista da Medida Provisória nº 841 de 2018",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "CN",
+                    "NomeCasaLocal": "Congresso Nacional",
+                    "DataCriacaoLocal": "2018-06-12"
+                },
+                {
+                    "CodigoLocal": "2195",
+                    "SiglaLocal": "CMMPV 842/2018",
+                    "NomeLocal": "Comissão Mista da Medida Provisória nº 842 de 2018",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "CN",
+                    "NomeCasaLocal": "Congresso Nacional",
+                    "DataCriacaoLocal": "2018-06-25"
+                },
+                {
+                    "CodigoLocal": "2196",
+                    "SiglaLocal": "CMMPV 843/2018",
+                    "NomeLocal": "Comissão Mista da Medida Provisória nº 843 de 2018",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "CN",
+                    "NomeCasaLocal": "Congresso Nacional",
+                    "DataCriacaoLocal": "2018-07-09"
+                },
+                {
+                    "CodigoLocal": "2197",
+                    "SiglaLocal": "CMMPV 844/2018",
+                    "NomeLocal": "Comissão Mista da Medida Provisória nº 844 de 2018",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "CN",
+                    "NomeCasaLocal": "Congresso Nacional",
+                    "DataCriacaoLocal": "2018-07-09"
+                },
+                {
+                    "CodigoLocal": "2204",
+                    "SiglaLocal": "CMMPV 845/2018",
+                    "NomeLocal": "Comissão Mista da Medida Provisória nº 845, de 2018",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "CN",
+                    "NomeCasaLocal": "Congresso Nacional",
+                    "DataCriacaoLocal": "2018-08-01"
+                },
+                {
+                    "CodigoLocal": "2205",
+                    "SiglaLocal": "CMMPV 846/2018",
+                    "NomeLocal": "Comissão Mista da Medida Provisória nº 846, de 2018.",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "CN",
+                    "NomeCasaLocal": "Congresso Nacional",
+                    "DataCriacaoLocal": "2018-08-01"
+                },
+                {
+                    "CodigoLocal": "2206",
+                    "SiglaLocal": "CMMPV 847/2018",
+                    "NomeLocal": "Comissão Mista da Medida Provisória nº 847, de 2018.",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "CN",
+                    "NomeCasaLocal": "Congresso Nacional",
+                    "DataCriacaoLocal": "2018-08-01"
+                },
+                {
+                    "CodigoLocal": "2207",
+                    "SiglaLocal": "CMMPV 848/2018",
+                    "NomeLocal": "Comissão Mista da Medida Provisória nº 848, de 2018.",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "CN",
+                    "NomeCasaLocal": "Congresso Nacional",
+                    "DataCriacaoLocal": "2018-08-17"
+                },
+                {
+                    "CodigoLocal": "2208",
+                    "SiglaLocal": "CMMPV 849/2018",
+                    "NomeLocal": "Comissão Mista da Medida Provisória nº 849, de 2018.",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "CN",
+                    "NomeCasaLocal": "Congresso Nacional",
+                    "DataCriacaoLocal": "2018-09-03"
+                },
+                {
+                    "CodigoLocal": "2209",
+                    "SiglaLocal": "CMMPV 850/2018",
+                    "NomeLocal": "Comissão Mista da Medida Provisória nº 850, de 2018.",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "CN",
+                    "NomeCasaLocal": "Congresso Nacional",
+                    "DataCriacaoLocal": "2018-09-11"
+                },
+                {
+                    "CodigoLocal": "2210",
+                    "SiglaLocal": "CMMPV 851/2018",
+                    "NomeLocal": "Comissão Mista da Medida Provisória nº 851, de 2018.",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "CN",
+                    "NomeCasaLocal": "Congresso Nacional",
+                    "DataCriacaoLocal": "2018-09-11"
+                },
+                {
+                    "CodigoLocal": "2211",
+                    "SiglaLocal": "CMMPV 852/2018",
+                    "NomeLocal": "Comissão Mista da Medida Provisória nº 852, de 2018.",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "CN",
+                    "NomeCasaLocal": "Congresso Nacional",
+                    "DataCriacaoLocal": "2018-09-24"
+                },
+                {
+                    "CodigoLocal": "2212",
+                    "SiglaLocal": "CMMPV 853/2018",
+                    "NomeLocal": "Comissão Mista da Medida Provisória nº 853, de 2018.",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "CN",
+                    "NomeCasaLocal": "Congresso Nacional",
+                    "DataCriacaoLocal": "2018-09-26"
+                },
+                {
+                    "CodigoLocal": "2213",
+                    "SiglaLocal": "CMMPV 854/2018",
+                    "NomeLocal": "Comissão Mista da Medida Provisória nº 854, de 2018.",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "CN",
+                    "NomeCasaLocal": "Congresso Nacional",
+                    "DataCriacaoLocal": "2018-10-04"
+                },
+                {
+                    "CodigoLocal": "2224",
+                    "SiglaLocal": "CMMPV 855/2018",
+                    "NomeLocal": "Comissão Mista da Medida Provisória nº 855, de 2018.",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "CN",
+                    "NomeCasaLocal": "Congresso Nacional",
+                    "DataCriacaoLocal": "2018-11-14"
+                },
+                {
+                    "CodigoLocal": "2225",
+                    "SiglaLocal": "CMMPV 856/2018",
+                    "NomeLocal": "Comissão Mista da Medida Provisória nº 856, de 2018",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "CN",
+                    "NomeCasaLocal": "Congresso Nacional",
+                    "DataCriacaoLocal": "2018-11-14"
+                },
+                {
+                    "CodigoLocal": "2226",
+                    "SiglaLocal": "CMMPV 858/2018",
+                    "NomeLocal": "Comissão Mista da Medida Provisória nº 858, de 2018.",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "CN",
+                    "NomeCasaLocal": "Congresso Nacional",
+                    "DataCriacaoLocal": "2018-11-26"
+                },
+                {
+                    "CodigoLocal": "2227",
+                    "SiglaLocal": "CMMPV 859/2018",
+                    "NomeLocal": "Comissão Mista da Medida Provisória nº 859, de 2018.",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "CN",
+                    "NomeCasaLocal": "Congresso Nacional",
+                    "DataCriacaoLocal": "2018-11-27"
+                },
+                {
+                    "CodigoLocal": "1664",
+                    "SiglaLocal": "CMO",
+                    "NomeLocal": "Comissão Mista de Planos, Orçamentos Públicos e Fiscalização",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "CN",
+                    "NomeCasaLocal": "Congresso Nacional",
+                    "DataCriacaoLocal": "2006-12-26"
+                },
+                {
+                    "CodigoLocal": "315",
+                    "SiglaLocal": "CMO",
+                    "NomeLocal": "Comissão Mista de Planos, Orçamentos Públicos e Fiscalização",
+                    "TipoLocal": "A",
+                    "DescricaoTipoLocal": "Unidade Administrativa",
+                    "SiglaCasaLocal": "CN",
+                    "NomeCasaLocal": "Congresso Nacional",
+                    "DataCriacaoLocal": "2001-10-04"
+                },
+                {
+                    "CodigoLocal": "1018",
+                    "SiglaLocal": "COALSGM",
+                    "NomeLocal": "Coordenação de Apoio Logístico",
+                    "TipoLocal": "A",
+                    "DescricaoTipoLocal": "Unidade Administrativa",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2014-07-08"
+                },
+                {
+                    "CodigoLocal": "559",
+                    "SiglaLocal": "COAME",
+                    "NomeLocal": "Coordenação de Apoio à Mesa",
+                    "TipoLocal": "A",
+                    "DescricaoTipoLocal": "Unidade Administrativa",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2016-01-04"
+                },
+                {
+                    "CodigoLocal": "438",
+                    "SiglaLocal": "COARQ",
+                    "NomeLocal": "Coordenação de Arquivo",
+                    "TipoLocal": "A",
+                    "DescricaoTipoLocal": "Unidade Administrativa",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2016-01-04"
+                },
+                {
+                    "CodigoLocal": "561",
+                    "SiglaLocal": "COCETI",
+                    "NomeLocal": "Coordenação de Comissões Especiais, Temporárias e Parlamentares de Inquérito",
+                    "TipoLocal": "A",
+                    "DescricaoTipoLocal": "Unidade Administrativa",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2016-01-04"
+                },
+                {
+                    "CodigoLocal": "554",
+                    "SiglaLocal": "COCM",
+                    "NomeLocal": "Coordenação de Comissões Mistas",
+                    "TipoLocal": "A",
+                    "DescricaoTipoLocal": "Unidade Administrativa",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2016-01-04"
+                },
+                {
+                    "CodigoLocal": "445",
+                    "SiglaLocal": "COMDIR",
+                    "NomeLocal": "Comissão Diretora",
+                    "TipoLocal": "A",
+                    "DescricaoTipoLocal": "Unidade Administrativa",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2016-01-04"
+                },
+                {
+                    "CodigoLocal": "110",
+                    "SiglaLocal": "CONLEG",
+                    "NomeLocal": "Consultoria Legislativa",
+                    "TipoLocal": "A",
+                    "DescricaoTipoLocal": "Unidade Administrativa",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "1900-01-01"
+                },
+                {
+                    "CodigoLocal": "271",
+                    "SiglaLocal": "CONORF",
+                    "NomeLocal": "Consultoria de Orçamentos, Fiscalização e Controle",
+                    "TipoLocal": "A",
+                    "DescricaoTipoLocal": "Unidade Administrativa",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2001-01-01"
+                },
+                {
+                    "CodigoLocal": "1019",
+                    "SiglaLocal": "CORELE",
+                    "NomeLocal": "Coordenação de Redação Legislativa",
+                    "TipoLocal": "A",
+                    "DescricaoTipoLocal": "Unidade Administrativa",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2017-02-01"
+                },
+                {
+                    "CodigoLocal": "446",
+                    "SiglaLocal": "CORREG",
+                    "NomeLocal": "Corregedoria Parlamentar",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "1993-03-17"
+                },
+                {
+                    "CodigoLocal": "210",
+                    "SiglaLocal": "CPCMER",
+                    "NomeLocal": "Comissão Parlamentar Conjunta do Mercosul",
+                    "TipoLocal": "A",
+                    "DescricaoTipoLocal": "Unidade Administrativa",
+                    "SiglaCasaLocal": "CN",
+                    "NomeCasaLocal": "Congresso Nacional",
+                    "DataCriacaoLocal": "1996-11-21"
+                },
+                {
+                    "CodigoLocal": "1916",
+                    "SiglaLocal": "CPCMS",
+                    "NomeLocal": "Representação Brasileira no Parlamento do Mercosul",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "CN",
+                    "NomeCasaLocal": "Congresso Nacional",
+                    "DataCriacaoLocal": "2015-02-02"
+                },
+                {
+                    "CodigoLocal": "2102",
+                    "SiglaLocal": "CPIMT",
+                    "NomeLocal": "CPI dos Maus-tratos - 2017",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2017-04-25"
+                },
+                {
+                    "CodigoLocal": "1307",
+                    "SiglaLocal": "CRA",
+                    "NomeLocal": "Comissão de Agricultura e Reforma Agrária",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2005-02-22"
+                },
+                {
+                    "CodigoLocal": "54",
+                    "SiglaLocal": "CRE",
+                    "NomeLocal": "Comissão de Relações Exteriores e Defesa Nacional",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "1900-01-01"
+                },
+                {
+                    "CodigoLocal": "1750",
+                    "SiglaLocal": "CSAN",
+                    "NomeLocal": "Conselho da Comenda Senador Abdias Nascimento",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2013-11-22"
+                },
+                {
+                    "CodigoLocal": "1716",
+                    "SiglaLocal": "CSF",
+                    "NomeLocal": "Comissão Senado do Futuro",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2013-08-27"
+                },
+                {
+                    "CodigoLocal": "1956",
+                    "SiglaLocal": "CTFC",
+                    "NomeLocal": "Comissão de Transparência, Governança, Fiscalização e Controle e Defesa do Consumidor",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2015-09-02"
+                },
+                {
+                    "CodigoLocal": "2162",
+                    "SiglaLocal": "CTPAR",
+                    "NomeLocal": "Comissão Externa para investigar empresas brasileiras no Paraguai",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2018-02-08"
+                },
+                {
+                    "CodigoLocal": "133",
+                    "SiglaLocal": "DGER",
+                    "NomeLocal": "Diretoria-Geral",
+                    "TipoLocal": "A",
+                    "DescricaoTipoLocal": "Unidade Administrativa",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "1900-01-01"
+                },
+                {
+                    "CodigoLocal": "1969",
+                    "SiglaLocal": "MESA",
+                    "NomeLocal": "MESA DIRETORA DA CÂMARA DOS DEPUTADOS",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "CD",
+                    "NomeCasaLocal": "Câmara dos Deputados",
+                    "DataCriacaoLocal": "1900-01-01"
+                },
+                {
+                    "CodigoLocal": "1616",
+                    "SiglaLocal": "MESA",
+                    "NomeLocal": "MESA DIRETORA DO CONGRESSO NACIONAL",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "CN",
+                    "NomeCasaLocal": "Congresso Nacional",
+                    "DataCriacaoLocal": "1900-01-01"
+                },
+                {
+                    "CodigoLocal": "1546",
+                    "SiglaLocal": "PJS",
+                    "NomeLocal": "Conselho do Projeto Jovem Senador",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2010-08-12"
+                },
+                {
+                    "CodigoLocal": "1999",
+                    "SiglaLocal": "PLEN",
+                    "NomeLocal": "Plenário do Congresso Nacional",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "CN",
+                    "NomeCasaLocal": "Congresso Nacional",
+                    "DataCriacaoLocal": "2015-12-23"
+                },
+                {
+                    "CodigoLocal": "1998",
+                    "SiglaLocal": "PLEN",
+                    "NomeLocal": "Plenário do Senado Federal",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2015-12-23"
+                },
+                {
+                    "CodigoLocal": "437",
+                    "SiglaLocal": "PRSECR",
+                    "NomeLocal": "Primeira Secretaria",
+                    "TipoLocal": "A",
+                    "DescricaoTipoLocal": "Unidade Administrativa",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2016-01-04"
+                },
+                {
+                    "CodigoLocal": "560",
+                    "SiglaLocal": "RPBMER",
+                    "NomeLocal": "Representação Brasileira No Parlamento do Mercosul",
+                    "TipoLocal": "A",
+                    "DescricaoTipoLocal": "Unidade Administrativa",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2016-01-04"
+                },
+                {
+                    "CodigoLocal": "544",
+                    "SiglaLocal": "SACAE",
+                    "NomeLocal": "Secretaria de Apoio à Comissão de Assuntos Econômicos",
+                    "TipoLocal": "A",
+                    "DescricaoTipoLocal": "Unidade Administrativa",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2016-01-04"
+                },
+                {
+                    "CodigoLocal": "545",
+                    "SiglaLocal": "SACAS",
+                    "NomeLocal": "Secretaria de Apoio à Comissão de Assuntos Sociais",
+                    "TipoLocal": "A",
+                    "DescricaoTipoLocal": "Unidade Administrativa",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2016-01-04"
+                },
+                {
+                    "CodigoLocal": "547",
+                    "SiglaLocal": "SACCJ",
+                    "NomeLocal": "Secretaria de Apoio à Comissão de Constituição, Justiça e Cidadania",
+                    "TipoLocal": "A",
+                    "DescricaoTipoLocal": "Unidade Administrativa",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2016-01-04"
+                },
+                {
+                    "CodigoLocal": "548",
+                    "SiglaLocal": "SACCT",
+                    "NomeLocal": "Secretaria de Apoio à Comissão de Ciência, Tecnologia, Inovação, Comunicação e Informática",
+                    "TipoLocal": "A",
+                    "DescricaoTipoLocal": "Unidade Administrativa",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2016-01-04"
+                },
+                {
+                    "CodigoLocal": "549",
+                    "SiglaLocal": "SACDH",
+                    "NomeLocal": "Secretaria de Apoio à Comissão de Direitos Humanos e Legislação Participativa",
+                    "TipoLocal": "A",
+                    "DescricaoTipoLocal": "Unidade Administrativa",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2016-01-04"
+                },
+                {
+                    "CodigoLocal": "550",
+                    "SiglaLocal": "SACDR",
+                    "NomeLocal": "Secretaria de Apoio à Comissão de Desenvolvimento Regional e Turismo",
+                    "TipoLocal": "A",
+                    "DescricaoTipoLocal": "Unidade Administrativa",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2016-01-04"
+                },
+                {
+                    "CodigoLocal": "551",
+                    "SiglaLocal": "SACE",
+                    "NomeLocal": "Secretaria de Apoio à Comissão de Educação, Cultura e Esporte",
+                    "TipoLocal": "A",
+                    "DescricaoTipoLocal": "Unidade Administrativa",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2016-01-04"
+                },
+                {
+                    "CodigoLocal": "552",
+                    "SiglaLocal": "SACIFR",
+                    "NomeLocal": "Secretaria de Apoio à Comissão de Serviços de Infraestrutura",
+                    "TipoLocal": "A",
+                    "DescricaoTipoLocal": "Unidade Administrativa",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2016-01-04"
+                },
+                {
+                    "CodigoLocal": "553",
+                    "SiglaLocal": "SACMA",
+                    "NomeLocal": "Secretaria de Apoio à Comissão de Meio Ambiente",
+                    "TipoLocal": "A",
+                    "DescricaoTipoLocal": "Unidade Administrativa",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2016-01-04"
+                },
+                {
+                    "CodigoLocal": "556",
+                    "SiglaLocal": "SACRA",
+                    "NomeLocal": "Secretaria de Apoio à Comissão de Agricultura e Reforma Agrária",
+                    "TipoLocal": "A",
+                    "DescricaoTipoLocal": "Unidade Administrativa",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2016-01-04"
+                },
+                {
+                    "CodigoLocal": "557",
+                    "SiglaLocal": "SACRE",
+                    "NomeLocal": "Secretaria de Apoio à Comissão de Relações Exteriores e Defesa Nacional",
+                    "TipoLocal": "A",
+                    "DescricaoTipoLocal": "Unidade Administrativa",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2016-01-04"
+                },
+                {
+                    "CodigoLocal": "1023",
+                    "SiglaLocal": "SACTFC",
+                    "NomeLocal": "Secretaria de Apoio à Comissão de Transparência, Governança, Fiscalização e Controle e Defesa do Consumidor",
+                    "TipoLocal": "A",
+                    "DescricaoTipoLocal": "Unidade Administrativa",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2017-04-05"
+                },
+                {
+                    "CodigoLocal": "439",
+                    "SiglaLocal": "SAOP",
+                    "NomeLocal": "Secretaria de Apoio a Órgãos do Parlamento",
+                    "TipoLocal": "A",
+                    "DescricaoTipoLocal": "Unidade Administrativa",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2016-01-04"
+                },
+                {
+                    "CodigoLocal": "444",
+                    "SiglaLocal": "SCOM",
+                    "NomeLocal": "Secretaria de Comissões",
+                    "TipoLocal": "A",
+                    "DescricaoTipoLocal": "Unidade Administrativa",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2016-01-04"
+                },
+                {
+                    "CodigoLocal": "543",
+                    "SiglaLocal": "SEADI",
+                    "NomeLocal": "Secretaria de Atas e Diários",
+                    "TipoLocal": "A",
+                    "DescricaoTipoLocal": "Unidade Administrativa",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2016-01-04"
+                },
+                {
+                    "CodigoLocal": "236",
+                    "SiglaLocal": "SESINO",
+                    "NomeLocal": "Serviço de Sinopse",
+                    "TipoLocal": "A",
+                    "DescricaoTipoLocal": "Unidade Administrativa",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "1970-01-01"
+                },
+                {
+                    "CodigoLocal": "440",
+                    "SiglaLocal": "SEXPE",
+                    "NomeLocal": "Secretaria de Expediente",
+                    "TipoLocal": "A",
+                    "DescricaoTipoLocal": "Unidade Administrativa",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2016-01-04"
+                },
+                {
+                    "CodigoLocal": "176",
+                    "SiglaLocal": "SGM",
+                    "NomeLocal": "Secretaria Geral da Mesa",
+                    "TipoLocal": "A",
+                    "DescricaoTipoLocal": "Unidade Administrativa",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "1900-01-01"
+                },
+                {
+                    "CodigoLocal": "442",
+                    "SiglaLocal": "SLCN",
+                    "NomeLocal": "Secretaria Legislativa do Congresso Nacional",
+                    "TipoLocal": "A",
+                    "DescricaoTipoLocal": "Unidade Administrativa",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2016-01-04"
+                },
+                {
+                    "CodigoLocal": "443",
+                    "SiglaLocal": "SLSF",
+                    "NomeLocal": "Secretaria Legislativa do Senado Federal",
+                    "TipoLocal": "A",
+                    "DescricaoTipoLocal": "Unidade Administrativa",
+                    "SiglaCasaLocal": "SF",
+                    "NomeCasaLocal": "Senado Federal",
+                    "DataCriacaoLocal": "2016-01-04"
+                },
+                {
+                    "DescricaoTipoLocal": "Colegiado"
+                }
+            ]
+        }
+    }
+}

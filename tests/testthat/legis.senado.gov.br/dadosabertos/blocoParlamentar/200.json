@@ -1,0 +1,296 @@
+{
+    "blocos": {
+        "bloco": {
+            "@id": "200",
+            "idBloco": "200",
+            "siglaCasa": "SF",
+            "siglaBloco": "Bloco",
+            "nomeBloco": "Bloco Moderador",
+            "nomeApelidoBloco": "Bloco PTB, PR, PSC, PRB",
+            "dataCriacao": "01/02/2015",
+            "composicaoBloco": {
+                "composicao_bloco": [
+                    {
+                        "@id": "497",
+                        "idBloco": "200",
+                        "idPartido": "556",
+                        "partido": {
+                            "idPartido": "556",
+                            "siglaPartido": "PTC",
+                            "nomePartido": "Partido Trabalhista Cristão",
+                            "dataCriacao": "08/06/2001",
+                            "indicadorPartidoMate": "S",
+                            "observacao": "conforme Res-TSE nº 20.796, de 8/6/2001"
+                        },
+                        "dataAdesao": "06/04/2016",
+                        "idComposicaoBloco": "497",
+                        "sequenciaOrdemDia": "5"
+                    },
+                    {
+                        "@id": "389",
+                        "idBloco": "200",
+                        "idPartido": "72",
+                        "partido": {
+                            "idPartido": "72",
+                            "siglaPartido": "PTB",
+                            "nomePartido": "Partido Trabalhista Brasileiro",
+                            "dataCriacao": "01/01/1980",
+                            "indicadorPartidoMate": "S",
+                            "observacao": "FGV.  PTB da Ivete Vargas."
+                        },
+                        "dataAdesao": "01/02/2015",
+                        "idComposicaoBloco": "389",
+                        "sequenciaOrdemDia": "1"
+                    },
+                    {
+                        "@id": "390",
+                        "idBloco": "200",
+                        "idPartido": "88",
+                        "partido": {
+                            "idPartido": "88",
+                            "siglaPartido": "PSC",
+                            "nomePartido": "Partido Social Cristão",
+                            "dataCriacao": "01/07/1985",
+                            "indicadorPartidoMate": "S",
+                            "observacao": "FGV"
+                        },
+                        "dataAdesao": "01/02/2015",
+                        "dataDesligamento": "10/04/2018",
+                        "idComposicaoBloco": "390",
+                        "sequenciaOrdemDia": "3"
+                    },
+                    {
+                        "@id": "391",
+                        "idBloco": "200",
+                        "idPartido": "523",
+                        "partido": {
+                            "idPartido": "523",
+                            "siglaPartido": "PR",
+                            "nomePartido": "Partido da República",
+                            "dataCriacao": "26/12/2006",
+                            "indicadorPartidoMate": "S"
+                        },
+                        "dataAdesao": "02/02/2015",
+                        "idComposicaoBloco": "391",
+                        "sequenciaOrdemDia": "2"
+                    },
+                    {
+                        "@id": "392",
+                        "idBloco": "200",
+                        "idPartido": "521",
+                        "partido": {
+                            "idPartido": "521",
+                            "siglaPartido": "PRB",
+                            "nomePartido": "Partido Republicano Brasileiro",
+                            "dataCriacao": "04/04/2006",
+                            "indicadorPartidoMate": "S",
+                            "observacao": "Nova denominação do Partido Municipalista Renovador (PMR), a patir de 04.04.2006."
+                        },
+                        "dataAdesao": "02/02/2015",
+                        "idComposicaoBloco": "392",
+                        "sequenciaOrdemDia": "4"
+                    }
+                ]
+            },
+            "unidadesLiderancaBloco": {
+                "unidadeLideranca": {
+                    "@id": "586",
+                    "idUnidadeLideranca": "586",
+                    "idBloco": "200",
+                    "sequenciaOrdem": "99",
+                    "liderancas": {
+                        "lideranca": [
+                            {
+                                "@id": "5084",
+                                "idLideranca": "5084",
+                                "idUnidadePartidaria": "586",
+                                "siglaCasa": "SF",
+                                "tipoUnidLideranca": "B",
+                                "codigoUnidLideranca": "200",
+                                "tipoLideranca": "L",
+                                "idParlamentar": "4525",
+                                "parlamentar": {
+                                    "idParlamentar": "4525",
+                                    "nomeCompleto": "Fernando Affonso Collor de Mello",
+                                    "nomeParlamentar": "Fernando Collor",
+                                    "sexoParlamentar": "M",
+                                    "dataNascimento": "1949-08-12",
+                                    "nomeCidadeNatural": "Rio de Janeiro",
+                                    "siglaUfNatural": "RJ"
+                                },
+                                "dataDesignacao": "02/02/2015",
+                                "dataTermino": "27/03/2016"
+                            },
+                            {
+                                "@id": "5085",
+                                "idLideranca": "5085",
+                                "idUnidadePartidaria": "586",
+                                "siglaCasa": "SF",
+                                "tipoUnidLideranca": "B",
+                                "codigoUnidLideranca": "200",
+                                "tipoLideranca": "V",
+                                "numeroOrdemViceLider": "1",
+                                "idParlamentar": "111",
+                                "parlamentar": {
+                                    "idParlamentar": "111",
+                                    "nomeCompleto": "Blairo Borges Maggi",
+                                    "nomeParlamentar": "Blairo Maggi",
+                                    "sexoParlamentar": "M",
+                                    "dataNascimento": "1956-05-29",
+                                    "nomeCidadeNatural": "Torres",
+                                    "siglaUfNatural": "RS"
+                                },
+                                "dataDesignacao": "02/02/2015",
+                                "dataTermino": "05/04/2016"
+                            },
+                            {
+                                "@id": "5086",
+                                "idLideranca": "5086",
+                                "idUnidadePartidaria": "586",
+                                "siglaCasa": "SF",
+                                "tipoUnidLideranca": "B",
+                                "codigoUnidLideranca": "200",
+                                "tipoLideranca": "V",
+                                "numeroOrdemViceLider": "3",
+                                "idParlamentar": "4721",
+                                "parlamentar": {
+                                    "idParlamentar": "4721",
+                                    "idDeputado": "4452",
+                                    "nomeCompleto": "Eduardo Alves do Amorim",
+                                    "nomeParlamentar": "Eduardo Amorim",
+                                    "sexoParlamentar": "M",
+                                    "dataNascimento": "1963-05-17",
+                                    "nomeCidadeNatural": "Itabaiana",
+                                    "siglaUfNatural": "SE"
+                                },
+                                "dataDesignacao": "02/02/2015",
+                                "dataTermino": "31/01/2017"
+                            },
+                            {
+                                "@id": "6668",
+                                "idLideranca": "6668",
+                                "idUnidadePartidaria": "586",
+                                "siglaCasa": "SF",
+                                "tipoUnidLideranca": "B",
+                                "codigoUnidLideranca": "200",
+                                "tipoLideranca": "L",
+                                "idParlamentar": "4525",
+                                "parlamentar": {
+                                    "idParlamentar": "4525",
+                                    "nomeCompleto": "Fernando Affonso Collor de Mello",
+                                    "nomeParlamentar": "Fernando Collor",
+                                    "sexoParlamentar": "M",
+                                    "dataNascimento": "1949-08-12",
+                                    "nomeCidadeNatural": "Rio de Janeiro",
+                                    "siglaUfNatural": "RJ"
+                                },
+                                "dataDesignacao": "06/04/2016",
+                                "dataTermino": "02/02/2017"
+                            },
+                            {
+                                "@id": "6669",
+                                "idLideranca": "6669",
+                                "idUnidadePartidaria": "586",
+                                "siglaCasa": "SF",
+                                "tipoUnidLideranca": "B",
+                                "codigoUnidLideranca": "200",
+                                "tipoLideranca": "V",
+                                "numeroOrdemViceLider": "1",
+                                "idParlamentar": "1173",
+                                "parlamentar": {
+                                    "idParlamentar": "1173",
+                                    "idDeputado": "73653",
+                                    "nomeCompleto": "Wellington Antonio Fagundes",
+                                    "nomeParlamentar": "Wellington Fagundes",
+                                    "sexoParlamentar": "M",
+                                    "dataNascimento": "1957-06-01",
+                                    "nomeCidadeNatural": "Rondonópolis",
+                                    "siglaUfNatural": "MT",
+                                    "enderecoOrigem": "AV  Rubens Mendonça nº 2368 Ed. Top Tower 5º andar sala 506 bairro jardim Aclimaçao",
+                                    "nomeCidadeOrigem": "Cuiabá",
+                                    "siglaUfOrigem": "MT"
+                                },
+                                "dataDesignacao": "06/04/2016",
+                                "dataTermino": "02/02/2017"
+                            },
+                            {
+                                "@id": "6670",
+                                "idLideranca": "6670",
+                                "idUnidadePartidaria": "586",
+                                "siglaCasa": "SF",
+                                "tipoUnidLideranca": "B",
+                                "codigoUnidLideranca": "200",
+                                "tipoLideranca": "V",
+                                "numeroOrdemViceLider": "2",
+                                "idParlamentar": "5531",
+                                "parlamentar": {
+                                    "idParlamentar": "5531",
+                                    "nomeCompleto": "Elmano Férrer de Almeida",
+                                    "nomeParlamentar": "Elmano Férrer",
+                                    "sexoParlamentar": "M",
+                                    "dataNascimento": "1942-08-01",
+                                    "nomeCidadeNatural": "Lavras da Mangabeira",
+                                    "siglaUfNatural": "CE",
+                                    "enderecoOrigem": "Avenida Dom Severino nº 1323 Edifício Santa Fé Térreo B Bairro Fátima",
+                                    "nomeCidadeOrigem": "Teresina",
+                                    "siglaUfOrigem": "PI"
+                                },
+                                "dataDesignacao": "06/04/2016",
+                                "dataTermino": "30/01/2017"
+                            },
+                            {
+                                "@id": "7194",
+                                "idLideranca": "7194",
+                                "idUnidadePartidaria": "586",
+                                "siglaCasa": "SF",
+                                "tipoUnidLideranca": "B",
+                                "codigoUnidLideranca": "200",
+                                "tipoLideranca": "L",
+                                "idParlamentar": "1173",
+                                "parlamentar": {
+                                    "idParlamentar": "1173",
+                                    "idDeputado": "73653",
+                                    "nomeCompleto": "Wellington Antonio Fagundes",
+                                    "nomeParlamentar": "Wellington Fagundes",
+                                    "sexoParlamentar": "M",
+                                    "dataNascimento": "1957-06-01",
+                                    "nomeCidadeNatural": "Rondonópolis",
+                                    "siglaUfNatural": "MT",
+                                    "enderecoOrigem": "AV  Rubens Mendonça nº 2368 Ed. Top Tower 5º andar sala 506 bairro jardim Aclimaçao",
+                                    "nomeCidadeOrigem": "Cuiabá",
+                                    "siglaUfOrigem": "MT"
+                                },
+                                "dataDesignacao": "03/02/2017"
+                            },
+                            {
+                                "@id": "7584",
+                                "idLideranca": "7584",
+                                "idUnidadePartidaria": "586",
+                                "siglaCasa": "SF",
+                                "tipoUnidLideranca": "B",
+                                "codigoUnidLideranca": "200",
+                                "tipoLideranca": "V",
+                                "numeroOrdemViceLider": "1",
+                                "idParlamentar": "5535",
+                                "parlamentar": {
+                                    "idParlamentar": "5535",
+                                    "nomeCompleto": "Telmário Mota de Oliveira",
+                                    "nomeParlamentar": "Telmário Mota",
+                                    "sexoParlamentar": "M",
+                                    "dataNascimento": "1958-02-15",
+                                    "nomeCidadeNatural": "Normandia",
+                                    "siglaUfNatural": "RR",
+                                    "enderecoOrigem": "Rua Zacarias Mendes Ribeiro, nº 1137 – Bairro Paraviana.",
+                                    "nomeCidadeOrigem": "BOA VISTA",
+                                    "siglaUfOrigem": "RR"
+                                },
+                                "dataDesignacao": "28/04/2017",
+                                "dataTermino": "28/05/2018"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

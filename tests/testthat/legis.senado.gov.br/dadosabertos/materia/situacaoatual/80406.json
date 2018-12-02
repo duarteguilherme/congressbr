@@ -1,0 +1,41 @@
+{
+    "SituacaoAtualMateria": {
+        "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+        "@xsi:noNamespaceSchemaLocation": "http://legis.senado.leg.br/dadosabertos/dados/SituacaoAtualMateriav2.xsd",
+        "Metadados": {
+            "Versao": "02/12/2018 09:58:13",
+            "VersaoServico": "2",
+            "DescricaoDataSet": "Traz a situação e a localização atuais de uma ou mais matérias"
+        },
+        "Materias": {
+            "Materia": {
+                "Codigo": "80406",
+                "Subtipo": "AVS",
+                "Numero": "00005",
+                "Ano": "2007",
+                "DescricaoIdentificacaoMateria": "AVS 5/2007",
+                "Ementa": "Encaminha ao Senado Federal, cópia do Acórdão nº 297 de 2007 - TCU (Plenário), bem como do Relatório e Voto que o fundamentaram, para consolidar as atividades de Acompanhamento do Projeto de Integração do Rio São Francisco com as Bacias Hidrográficas do Nordeste Setentrional TC 004.375/2005-7.",
+                "Tramitando": "Nao",
+                "Autuacoes": {
+                    "Autuacao": {
+                        "Autuacao": "1",
+                        "CodigoTramitacaoSituacao": "2217049",
+                        "DataSituacao": "2014-12-24",
+                        "DataPublicacaoSituacao": "2014-12-24",
+                        "CodigoSituacao": "107",
+                        "SiglaSituacao": "CONHECIDA",
+                        "DescricaoSituacao": "CONHECIDA.",
+                        "CodigoTramitacaoLocal": "2217244",
+                        "DataLocal": "2014-12-26",
+                        "DataPublicacaoLocal": "2014-12-26",
+                        "CodigoLocal": "354",
+                        "TipoLocal": "A",
+                        "SiglaLocal": "SARQ",
+                        "NomeLocal": "Secretaria de Arquivo"
+                    }
+                },
+                "href": "http://legis.senado.leg.br/dadosabertos/materia/80406?v=5"
+            }
+        }
+    }
+}

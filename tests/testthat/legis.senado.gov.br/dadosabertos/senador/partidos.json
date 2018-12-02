@@ -1,0 +1,309 @@
+{
+    "ListaPartidos": {
+        "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+        "@xsi:noNamespaceSchemaLocation": "http://legis.senado.leg.br/dadosabertos/dados/ListaPartidosv2.xsd",
+        "Metadados": {
+            "Versao": "02/12/2018 10:08:59",
+            "VersaoServico": "2",
+            "DescricaoDataSet": "Lista os partidos, ativos ou não. Por default, apenas os ativos. Para listar todos, acrescente o parâmetro opcional \"indAtivos=N\"."
+        },
+        "Partidos": {
+            "Partido": [
+                {
+                    "Codigo": "578",
+                    "Sigla": "AVANTE",
+                    "Nome": "AVANTE",
+                    "DataCriacao": "2017-09-12"
+                },
+                {
+                    "Codigo": "581",
+                    "Sigla": "DC",
+                    "Nome": "Democracia Cristã",
+                    "DataCriacao": "2015-01-01"
+                },
+                {
+                    "Codigo": "554",
+                    "Sigla": "DEM",
+                    "Nome": "Democratas",
+                    "DataCriacao": "2007-03-28"
+                },
+                {
+                    "Codigo": "33",
+                    "Sigla": "MDB",
+                    "Nome": "Movimento Democrático Brasileiro",
+                    "DataCriacao": "1980-01-01"
+                },
+                {
+                    "Codigo": "566",
+                    "Sigla": "NOVO",
+                    "Nome": "Partido Novo",
+                    "DataCriacao": "2015-09-15"
+                },
+                {
+                    "Codigo": "142",
+                    "Sigla": "PAN",
+                    "Nome": "Partido dos Aposentados da Nação",
+                    "DataCriacao": "1998-02-19"
+                },
+                {
+                    "Codigo": "579",
+                    "Sigla": "PATRI",
+                    "Nome": "Patriota",
+                    "DataCriacao": "2018-04-26"
+                },
+                {
+                    "Codigo": "94",
+                    "Sigla": "PCB",
+                    "Nome": "Partido Comunista Brasileiro",
+                    "DataCriacao": "1922-03-25"
+                },
+                {
+                    "Codigo": "144",
+                    "Sigla": "PCN",
+                    "Nome": "Partido Comunitário  Nacional",
+                    "DataCriacao": "1985-07-01"
+                },
+                {
+                    "Codigo": "145",
+                    "Sigla": "PCO",
+                    "Nome": "Partido da Causa Operária",
+                    "DataCriacao": "1997-09-30"
+                },
+                {
+                    "Codigo": "86",
+                    "Sigla": "PCdoB",
+                    "Nome": "Partido Comunista do Brasil",
+                    "DataCriacao": "1962-02-01"
+                },
+                {
+                    "Codigo": "20",
+                    "Sigla": "PDT",
+                    "Nome": "Partido Democrático Trabalhista",
+                    "DataCriacao": "1980-09-16"
+                },
+                {
+                    "Codigo": "559",
+                    "Sigla": "PEN",
+                    "Nome": "Partido Ecológico Nacional",
+                    "DataCriacao": "2012-06-19"
+                },
+                {
+                    "Codigo": "146",
+                    "Sigla": "PF",
+                    "Nome": "Partido Federalista",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "147",
+                    "Sigla": "PGT",
+                    "Nome": "Partido Geral dos Trabalhadores",
+                    "DataCriacao": "1999-09-02"
+                },
+                {
+                    "Codigo": "148",
+                    "Sigla": "PHDBS",
+                    "Nome": "Partido Humanista Democrático Brasil Solidariedade",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "149",
+                    "Sigla": "PHS",
+                    "Nome": "Partido Humanista da Solidariedade",
+                    "DataCriacao": "1997-03-20"
+                },
+                {
+                    "Codigo": "567",
+                    "Sigla": "PMB",
+                    "Nome": "Partido da Mulher Brasileira",
+                    "DataCriacao": "2015-09-29"
+                },
+                {
+                    "Codigo": "90",
+                    "Sigla": "PMN",
+                    "Nome": "Partido da Mobilização Nacional",
+                    "DataCriacao": "1984-04-21"
+                },
+                {
+                    "Codigo": "519",
+                    "Sigla": "PMR",
+                    "Nome": "Partido Municipalista Renovador",
+                    "DataCriacao": "2005-08-25"
+                },
+                {
+                    "Codigo": "150",
+                    "Sigla": "PNC",
+                    "Nome": "Partido Nacional do Consumidor",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "577",
+                    "Sigla": "PODE",
+                    "Nome": "Podemos",
+                    "DataCriacao": "2017-05-16"
+                },
+                {
+                    "Codigo": "418",
+                    "Sigla": "PP",
+                    "Nome": "Partido Progressista",
+                    "DataCriacao": "2003-02-26"
+                },
+                {
+                    "Codigo": "560",
+                    "Sigla": "PPL",
+                    "Nome": "Partido Pátria Livre",
+                    "DataCriacao": "2012-10-17"
+                },
+                {
+                    "Codigo": "41",
+                    "Sigla": "PPS",
+                    "Nome": "Partido Popular Socialista",
+                    "DataCriacao": "1992-01-01"
+                },
+                {
+                    "Codigo": "523",
+                    "Sigla": "PR",
+                    "Nome": "Partido da República",
+                    "DataCriacao": "2006-12-26"
+                },
+                {
+                    "Codigo": "521",
+                    "Sigla": "PRB",
+                    "Nome": "Partido Republicano Brasileiro",
+                    "DataCriacao": "2006-04-04"
+                },
+                {
+                    "Codigo": "152",
+                    "Sigla": "PRONA",
+                    "Nome": "Partido de Reedificação da Ordem Nacional",
+                    "DataCriacao": "1989-06-20"
+                },
+                {
+                    "Codigo": "562",
+                    "Sigla": "PROS",
+                    "Nome": "Partido Republicano da Ordem Social",
+                    "DataCriacao": "2013-09-24"
+                },
+                {
+                    "Codigo": "93",
+                    "Sigla": "PRP",
+                    "Nome": "Partido Republicano Progressista",
+                    "DataCriacao": "1988-06-01"
+                },
+                {
+                    "Codigo": "154",
+                    "Sigla": "PRTB",
+                    "Nome": "Partido Renovador Trabalhista Brasileiro",
+                    "DataCriacao": "1997-02-18"
+                },
+                {
+                    "Codigo": "155",
+                    "Sigla": "PRVP",
+                    "Nome": "Partido de Representação da Vontade Popular",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "63",
+                    "Sigla": "PSB",
+                    "Nome": "Partido Socialista Brasileiro",
+                    "DataCriacao": "1985-07-01"
+                },
+                {
+                    "Codigo": "88",
+                    "Sigla": "PSC",
+                    "Nome": "Partido Social Cristão",
+                    "DataCriacao": "1985-07-01"
+                },
+                {
+                    "Codigo": "557",
+                    "Sigla": "PSD",
+                    "Nome": "Partido Social Democrático",
+                    "DataCriacao": "2011-10-19"
+                },
+                {
+                    "Codigo": "66",
+                    "Sigla": "PSDB",
+                    "Nome": "Partido da Social Democracia Brasileira",
+                    "DataCriacao": "1988-06-01"
+                },
+                {
+                    "Codigo": "156",
+                    "Sigla": "PSDC",
+                    "Nome": "Partido Social Democrata Cristão",
+                    "DataCriacao": "1997-08-05"
+                },
+                {
+                    "Codigo": "85",
+                    "Sigla": "PSL",
+                    "Nome": "Partido Social Liberal",
+                    "DataCriacao": "1995-12-15"
+                },
+                {
+                    "Codigo": "458",
+                    "Sigla": "PSOL",
+                    "Nome": "Partido Socialismo e Liberdade",
+                    "DataCriacao": "2004-08-04"
+                },
+                {
+                    "Codigo": "87",
+                    "Sigla": "PSTU",
+                    "Nome": "Partido Socialista dos Trabalhadores Unificado",
+                    "DataCriacao": "1994-06-01"
+                },
+                {
+                    "Codigo": "71",
+                    "Sigla": "PT",
+                    "Nome": "Partido dos Trabalhadores",
+                    "DataCriacao": "1980-02-10"
+                },
+                {
+                    "Codigo": "72",
+                    "Sigla": "PTB",
+                    "Nome": "Partido Trabalhista Brasileiro",
+                    "DataCriacao": "1980-01-01"
+                },
+                {
+                    "Codigo": "556",
+                    "Sigla": "PTC",
+                    "Nome": "Partido Trabalhista Cristão",
+                    "DataCriacao": "2001-06-08"
+                },
+                {
+                    "Codigo": "162",
+                    "Sigla": "PTRB",
+                    "Nome": "Partido Trabalhista Renovador Brasileiro",
+                    "DataCriacao": "1993-11-11"
+                },
+                {
+                    "Codigo": "159",
+                    "Sigla": "PTdoB",
+                    "Nome": "Partido Trabalhista do Brasil",
+                    "DataCriacao": "1989-11-01"
+                },
+                {
+                    "Codigo": "91",
+                    "Sigla": "PV",
+                    "Nome": "Partido Verde",
+                    "DataCriacao": "1987-01-18"
+                },
+                {
+                    "Codigo": "565",
+                    "Sigla": "REDE",
+                    "Nome": "Rede Sustentabilidade",
+                    "DataCriacao": "2015-09-22"
+                },
+                {
+                    "Codigo": "163",
+                    "Sigla": "S/Partido",
+                    "Nome": "Sem Partido",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "561",
+                    "Sigla": "SD",
+                    "Nome": "Solidariedade",
+                    "DataCriacao": "2013-09-24"
+                }
+            ]
+        }
+    }
+}

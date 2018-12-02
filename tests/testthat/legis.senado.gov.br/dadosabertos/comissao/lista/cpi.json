@@ -1,0 +1,93 @@
+{
+    "ListaBasicaComissoes": {
+        "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+        "@xsi:noNamespaceSchemaLocation": "http://legis.senado.gov.br/dadosabertos/dados/ListaBasicaComissoesv1.xsd",
+        "Metadados": {
+            "Versao": "02/12/2018 10:08:52",
+            "VersaoServico": "1",
+            "DescricaoDataSet": "Lista das Comissões Permanentes do Senado Federal\n\nParâmetros : COD_COLEGIADO, [SGL_COLEGIADO], [COD_TIPO_COLEGIADO]\n"
+        },
+        "colegiado": {
+            "colegiados": {
+                "colegiado": [
+                    {
+                        "@id": "2102",
+                        "CodigoColegiado": "2102",
+                        "NomeColegiado": "CPI dos Maus-tratos - 2017",
+                        "SiglaColegiado": "CPIMT",
+                        "DescricaoSubtitulo": "Requerimento nº 277, de 2017",
+                        "IndicadorDistrPartidaria": "S",
+                        "TextoFinalidade": "Investigar as irregularidades e os crimes relacionados aos maus-tratos em crianças e adolescentes no país.",
+                        "DataInicio": "2017-04-25",
+                        "CodigoTipoColegiado": "22",
+                        "tipocolegiado": {
+                            "CodigoTipoColegiado": "22",
+                            "DescricaoTipoColegiado": "Comissão Parlamentar de Inquérito",
+                            "SiglaTipoColegiado": "CPI",
+                            "SiglaCasa": "SF",
+                            "IndicadorAtivo": "S",
+                            "CodigoNaturezaColegiado": "2"
+                        }
+                    },
+                    {
+                        "@id": "2180",
+                        "CodigoColegiado": "2180",
+                        "NomeColegiado": "CPI da Eletrobras",
+                        "SiglaColegiado": "CPIELETRO",
+                        "DescricaoSubtitulo": "Requerimento nº 316, de 2018",
+                        "IndicadorDistrPartidaria": "S",
+                        "TextoFinalidade": "Apurar e analisar possíveis irregularidades envolvendo o processo de privatização das Centrais Elétricas do Brasil (Eletrobras).",
+                        "DataInicio": "2018-05-23",
+                        "CodigoTipoColegiado": "22",
+                        "tipocolegiado": {
+                            "CodigoTipoColegiado": "22",
+                            "DescricaoTipoColegiado": "Comissão Parlamentar de Inquérito",
+                            "SiglaTipoColegiado": "CPI",
+                            "SiglaCasa": "SF",
+                            "IndicadorAtivo": "S",
+                            "CodigoNaturezaColegiado": "2"
+                        }
+                    },
+                    {
+                        "@id": "2203",
+                        "CodigoColegiado": "2203",
+                        "NomeColegiado": "CPI dos Planos de Saúde",
+                        "SiglaColegiado": "CPIPS",
+                        "DescricaoSubtitulo": "Requerimento nº 415, de 2018",
+                        "IndicadorDistrPartidaria": "S",
+                        "TextoFinalidade": "Investigar os elevados reajustes dos preços dos planos de saúde em valores muito superiores aos índices oficiais de inflação.",
+                        "DataInicio": "2018-07-11",
+                        "CodigoTipoColegiado": "22",
+                        "tipocolegiado": {
+                            "CodigoTipoColegiado": "22",
+                            "DescricaoTipoColegiado": "Comissão Parlamentar de Inquérito",
+                            "SiglaTipoColegiado": "CPI",
+                            "SiglaCasa": "SF",
+                            "IndicadorAtivo": "S",
+                            "CodigoNaturezaColegiado": "2"
+                        }
+                    },
+                    {
+                        "@id": "2139",
+                        "CodigoColegiado": "2139",
+                        "NomeColegiado": "CPI  dos Supersalários",
+                        "SiglaColegiado": "CPISALARIOS",
+                        "DescricaoSubtitulo": "Requerimento nº 815, de 2017",
+                        "IndicadorDistrPartidaria": "S",
+                        "TextoFinalidade": "Investigar os pagamentos de remuneração a servidores e empregados públicos em desacordo com o teto constitucional, bem como estudar possibilidades de restituição desses valores ao erário pelos beneficiários.",
+                        "DataInicio": "2017-09-27",
+                        "CodigoTipoColegiado": "22",
+                        "tipocolegiado": {
+                            "CodigoTipoColegiado": "22",
+                            "DescricaoTipoColegiado": "Comissão Parlamentar de Inquérito",
+                            "SiglaTipoColegiado": "CPI",
+                            "SiglaCasa": "SF",
+                            "IndicadorAtivo": "S",
+                            "CodigoNaturezaColegiado": "2"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

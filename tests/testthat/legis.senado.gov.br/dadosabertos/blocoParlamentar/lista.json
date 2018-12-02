@@ -1,0 +1,287 @@
+{
+    "ListaBlocoParlamentar": {
+        "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+        "@xsi:noNamespaceSchemaLocation": "http://legis.senado.leg.br/dadosabertos/dados/ListaBlocoParlamentarv4.xsd",
+        "Metadados": {
+            "Versao": "02/12/2018 10:08:50",
+            "VersaoServico": "4"
+        },
+        "Blocos": {
+            "Bloco": [
+                {
+                    "CodigoBloco": "200",
+                    "NomeBloco": "Bloco Moderador",
+                    "NomeApelido": "Bloco PTB, PR, PSC, PRB",
+                    "SiglaBloco": "Bloco",
+                    "DataCriacao": "2015-02-01",
+                    "Membros": {
+                        "Membro": [
+                            {
+                                "Partido": {
+                                    "CodigoPartido": "556",
+                                    "SiglaPartido": "PTC",
+                                    "NomePartido": "Partido Trabalhista Cristão"
+                                },
+                                "DataAdesao": "2016-04-06"
+                            },
+                            {
+                                "Partido": {
+                                    "CodigoPartido": "523",
+                                    "SiglaPartido": "PR",
+                                    "NomePartido": "Partido da República"
+                                },
+                                "DataAdesao": "2015-02-02"
+                            },
+                            {
+                                "Partido": {
+                                    "CodigoPartido": "521",
+                                    "SiglaPartido": "PRB",
+                                    "NomePartido": "Partido Republicano Brasileiro"
+                                },
+                                "DataAdesao": "2015-02-02"
+                            },
+                            {
+                                "Partido": {
+                                    "CodigoPartido": "88",
+                                    "SiglaPartido": "PSC",
+                                    "NomePartido": "Partido Social Cristão"
+                                },
+                                "DataAdesao": "2015-02-01",
+                                "DataDesligamento": "2018-04-10"
+                            },
+                            {
+                                "Partido": {
+                                    "CodigoPartido": "72",
+                                    "SiglaPartido": "PTB",
+                                    "NomePartido": "Partido Trabalhista Brasileiro"
+                                },
+                                "DataAdesao": "2015-02-01"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "CodigoBloco": "218",
+                    "NomeBloco": "Bloco Parlamentar Democracia Progressista",
+                    "NomeApelido": "Bloco PP/PSD",
+                    "SiglaBloco": "Bloco",
+                    "DataCriacao": "2015-10-15",
+                    "Membros": {
+                        "Membro": [
+                            {
+                                "Partido": {
+                                    "CodigoPartido": "418",
+                                    "SiglaPartido": "PP",
+                                    "NomePartido": "Partido Progressista"
+                                },
+                                "DataAdesao": "2015-10-15"
+                            },
+                            {
+                                "Partido": {
+                                    "CodigoPartido": "557",
+                                    "SiglaPartido": "PSD",
+                                    "NomePartido": "Partido Social Democrático"
+                                },
+                                "DataAdesao": "2015-10-15"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "CodigoBloco": "250",
+                    "NomeBloco": "Bloco Parlamentar Democracia e Cidadania",
+                    "NomeApelido": "Bloco PSB, PCdoB, REDE, PPS, PODE",
+                    "SiglaBloco": "Bloco",
+                    "DataCriacao": "2017-09-27",
+                    "Membros": {
+                        "Membro": [
+                            {
+                                "Partido": {
+                                    "CodigoPartido": "91",
+                                    "SiglaPartido": "PV",
+                                    "NomePartido": "Partido Verde"
+                                },
+                                "DataAdesao": "2018-06-06"
+                            },
+                            {
+                                "Partido": {
+                                    "CodigoPartido": "577",
+                                    "SiglaPartido": "PODE",
+                                    "NomePartido": "Podemos"
+                                },
+                                "DataAdesao": "2017-09-27"
+                            },
+                            {
+                                "Partido": {
+                                    "CodigoPartido": "41",
+                                    "SiglaPartido": "PPS",
+                                    "NomePartido": "Partido Popular Socialista"
+                                },
+                                "DataAdesao": "2017-09-27"
+                            },
+                            {
+                                "Partido": {
+                                    "CodigoPartido": "63",
+                                    "SiglaPartido": "PSB",
+                                    "NomePartido": "Partido Socialista Brasileiro"
+                                },
+                                "DataAdesao": "2017-09-27"
+                            },
+                            {
+                                "Partido": {
+                                    "CodigoPartido": "86",
+                                    "SiglaPartido": "PCdoB",
+                                    "NomePartido": "Partido Comunista do Brasil"
+                                },
+                                "DataAdesao": "2017-09-27"
+                            },
+                            {
+                                "Partido": {
+                                    "CodigoPartido": "565",
+                                    "SiglaPartido": "REDE",
+                                    "NomePartido": "Rede Sustentabilidade"
+                                },
+                                "DataAdesao": "2017-09-27"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "CodigoBloco": "208",
+                    "NomeBloco": "Bloco Parlamentar da Resistência Democrática",
+                    "NomeApelido": "Bloco PT/PDT",
+                    "SiglaBloco": "Bloco",
+                    "DataCriacao": "2015-02-24",
+                    "Membros": {
+                        "Membro": [
+                            {
+                                "Partido": {
+                                    "CodigoPartido": "418",
+                                    "SiglaPartido": "PP",
+                                    "NomePartido": "Partido Progressista"
+                                },
+                                "DataAdesao": "2015-03-04",
+                                "DataDesligamento": "2015-10-14"
+                            },
+                            {
+                                "Partido": {
+                                    "CodigoPartido": "20",
+                                    "SiglaPartido": "PDT",
+                                    "NomePartido": "Partido Democrático Trabalhista"
+                                },
+                                "DataAdesao": "2015-02-24"
+                            },
+                            {
+                                "Partido": {
+                                    "CodigoPartido": "71",
+                                    "SiglaPartido": "PT",
+                                    "NomePartido": "Partido dos Trabalhadores"
+                                },
+                                "DataAdesao": "2015-02-24"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "CodigoBloco": "203",
+                    "NomeBloco": "Bloco Social Democrata",
+                    "NomeApelido": "Social Democracia",
+                    "SiglaBloco": "Bloco",
+                    "DataCriacao": "2015-02-04",
+                    "Membros": {
+                        "Membro": [
+                            {
+                                "Partido": {
+                                    "CodigoPartido": "91",
+                                    "SiglaPartido": "PV",
+                                    "NomePartido": "Partido Verde"
+                                },
+                                "DataAdesao": "2016-02-16",
+                                "DataDesligamento": "2017-06-30"
+                            },
+                            {
+                                "Partido": {
+                                    "CodigoPartido": "554",
+                                    "SiglaPartido": "DEM",
+                                    "NomePartido": "Democratas"
+                                },
+                                "DataAdesao": "2015-02-04"
+                            },
+                            {
+                                "Partido": {
+                                    "CodigoPartido": "66",
+                                    "SiglaPartido": "PSDB",
+                                    "NomePartido": "Partido da Social Democracia Brasileira"
+                                },
+                                "DataAdesao": "2015-02-04"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "CodigoBloco": "244",
+                    "NomeBloco": "Bloco da Maioria",
+                    "NomeApelido": "Maioria",
+                    "SiglaBloco": "Maioria",
+                    "DataCriacao": "2017-03-21",
+                    "Membros": {
+                        "Membro": [
+                            {
+                                "Partido": {
+                                    "CodigoPartido": "562",
+                                    "SiglaPartido": "PROS",
+                                    "NomePartido": "Partido Republicano da Ordem Social"
+                                },
+                                "DataAdesao": "2018-04-11"
+                            },
+                            {
+                                "Partido": {
+                                    "CodigoPartido": "33",
+                                    "SiglaPartido": "MDB",
+                                    "NomePartido": "Movimento Democrático Brasileiro"
+                                },
+                                "DataAdesao": "2018-04-11"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "CodigoBloco": "206",
+                    "NomeBloco": "Maioria",
+                    "NomeApelido": "Maioria",
+                    "SiglaBloco": "Bloco",
+                    "DataCriacao": "2015-02-10",
+                    "Membros": {
+                        "Membro": [
+                            {
+                                "Partido": {
+                                    "CodigoPartido": "33",
+                                    "SiglaPartido": "MDB",
+                                    "NomePartido": "Movimento Democrático Brasileiro"
+                                },
+                                "DataAdesao": "2015-02-10",
+                                "DataDesligamento": "2015-10-14"
+                            },
+                            {
+                                "Partido": {
+                                    "CodigoPartido": "557",
+                                    "SiglaPartido": "PSD",
+                                    "NomePartido": "Partido Social Democrático"
+                                },
+                                "DataAdesao": "2015-02-10",
+                                "DataDesligamento": "2015-10-14"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "CodigoBloco": "230",
+                    "NomeBloco": "Minoria",
+                    "NomeApelido": "Minoria",
+                    "SiglaBloco": "Bloco",
+                    "DataCriacao": "2016-06-20"
+                }
+            ]
+        }
+    }
+}

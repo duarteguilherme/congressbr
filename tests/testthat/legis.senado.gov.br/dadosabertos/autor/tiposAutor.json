@@ -1,0 +1,310 @@
+{
+    "ListaTiposAutor": {
+        "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+        "@xsi:noNamespaceSchemaLocation": "http://legis.senado.leg.br/dadosabertos/dados/ListaTiposAutorv6.xsd",
+        "Metadados": {
+            "Versao": "02/12/2018 10:09:00",
+            "VersaoServico": "6",
+            "DataVersaoServico": "2018-06-19"
+        },
+        "TiposAutor": {
+            "TipoAutor": [
+                {
+                    "SiglaTipo": "AGENCIA_REGULADORA",
+                    "Descricao": "Agência Reguladora",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "ASSEMBLEIAS_LEGISLATIVAS",
+                    "Descricao": "Assembleias Legislativas",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "AUTARQUIA_FEDERAL",
+                    "Descricao": "Autarquia Federal",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "SiglaTipo": "AUTORIA_MULTIPLA",
+                    "Descricao": "Autoria Múltipla",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "AUTORIDADE_CONSTITUCIONAL",
+                    "Descricao": "Autoridade Constitucional",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "NAO_CAT_AUTORIDADE",
+                    "Descricao": "Autoridade.",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "BNDES",
+                    "Descricao": "BNDES - Banco Nacional do Desenvolvimento Econômico e Social",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "SiglaTipo": "BANCO_CENTRAL",
+                    "Descricao": "Banco Central do Brasil",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "BANCO_ESTATAL",
+                    "Descricao": "Banco estatal",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "CIDADAO",
+                    "Descricao": "Cidadão",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "COLEGIADO",
+                    "Descricao": "Colegiado Legislativo",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "COMISSAO",
+                    "Descricao": "Comissão",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "CMO",
+                    "Descricao": "Comissão Mista Permanente de Planos, orçamentos Públicos e Fiscalização - CMO",
+                    "DataCriacao": "1988-01-01"
+                },
+                {
+                    "SiglaTipo": "COMISSAO_CAMARA",
+                    "Descricao": "Comissão da Câmara dos Deputados",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "COMISSAO_CONGRESSO",
+                    "Descricao": "Comissão do Congresso Nacional",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "COMISSAO_SENADO",
+                    "Descricao": "Comissão do Senado Federal",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "COMISSAO_SENADO_CAMARA",
+                    "Descricao": "Comissão do Senado e Comissão da Câmara",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "COMISSAO_SENADO_SENADOR",
+                    "Descricao": "Comissão do Senado e Senador",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "COMITE_CMO",
+                    "Descricao": "Comitê Permanente da CMO",
+                    "DataCriacao": "1988-01-01"
+                },
+                {
+                    "SiglaTipo": "CONGRESSO",
+                    "Descricao": "Congresso Nacional",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "CONSELHO_NACIONAL",
+                    "Descricao": "Conselho Nacional",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "CCS",
+                    "Descricao": "Conselho de Comunicação Social",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "CONSORCIO_PUBLICO",
+                    "Descricao": "Consórcio público",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "SiglaTipo": "CONTROLADOR_GERAL",
+                    "Descricao": "Controlador Geral da União",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "CAMARA_MUNICIPAL",
+                    "Descricao": "Câmara Municipal",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "CAMARA",
+                    "Descricao": "Câmara dos Deputados",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "DEFENSOR_GERAL",
+                    "Descricao": "Defensor-Geral da República",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "DEPUTADO",
+                    "Descricao": "Deputado",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "ENTE_JURIDICO",
+                    "Descricao": "Ente Jurídico",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "GOVERNADOR",
+                    "Descricao": "Governador",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "INICIATIVA_POPULAR",
+                    "Descricao": "Iniciativa Popular",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "LIDER",
+                    "Descricao": "Líder",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "MESAS_SF_CD",
+                    "Descricao": "Mesas do Senado Federal e da Câmara dos Deputados",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "MINISTERIO",
+                    "Descricao": "Ministério ",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "MINISTERIO_PUBLICO_UNIAO",
+                    "Descricao": "Ministério Público da União",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "PARLAMENTAR",
+                    "Descricao": "Parlamentar",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "PARTIDO_POLITICO",
+                    "Descricao": "Partido político",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "JUDICIARIO",
+                    "Descricao": "Poder Judiciário",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "PRESIDENTE_CD",
+                    "Descricao": "Presidente da Câmara dos Deputados",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "PRESIDENTE_MESA_CN",
+                    "Descricao": "Presidente da Mesa do Congresso Nacional",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "PRESIDENTE_REPUBLICA",
+                    "Descricao": "Presidente da República",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "PRESIDENTE_COMISSAO",
+                    "Descricao": "Presidente de Comissão",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "PRESIDENTE_CN",
+                    "Descricao": "Presidente do Congresso Nacional",
+                    "DataCriacao": "2017-01-01"
+                },
+                {
+                    "SiglaTipo": "PRESIDENTE_CEDP",
+                    "Descricao": "Presidente do Conselho de Ética e Decoro Parlamentar",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "PRESIDENTE_SF",
+                    "Descricao": "Presidente do Senado Federal",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "PRIMEIRO_SEC_CN",
+                    "Descricao": "Primeiro-Secretário do Congresso Nacional",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "PRIMEIRO_SEC_SF",
+                    "Descricao": "Primeiro-Secretário do Senado Federal",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "PROCURADOR_GERAL",
+                    "Descricao": "Procurador Geral da República",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "SENADO_JOVEM",
+                    "Descricao": "Programa Jovem Senador",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "E_CIDADANIA",
+                    "Descricao": "Programa e-Cidadania",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "SGM_SF",
+                    "Descricao": "Secretaria-Geral da Mesa do Senado Federal",
+                    "DataCriacao": "2017-10-03"
+                },
+                {
+                    "SiglaTipo": "SENADO",
+                    "Descricao": "Senado Federal",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "SENADOR",
+                    "Descricao": "Senador",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "SENADOR_LIDER",
+                    "Descricao": "Senador e Líder",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "SENADOR_PARTIDO",
+                    "Descricao": "Senador e Partido Político",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "SUPREMO_TRIBUNAL",
+                    "Descricao": "Supremo Tribunal Federal",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "TRIBUNAL_SUPERIOR",
+                    "Descricao": "Tribunal Superior",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "TRIBUNAL_CONTAS_UNIAO",
+                    "Descricao": "Tribunal de Contas da União",
+                    "DataCriacao": "2016-08-30"
+                },
+                {
+                    "SiglaTipo": "TRIBUNAL_VINCULADO_UNIAO",
+                    "Descricao": "Tribunal vinculado à União",
+                    "DataCriacao": "2016-08-30"
+                }
+            ]
+        }
+    }
+}

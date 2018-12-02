@@ -1,0 +1,645 @@
+{
+    "ListaSubtiposMateria": {
+        "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+        "@xsi:noNamespaceSchemaLocation": "http://legis.senado.leg.br/dadosabertos/dados/ListaSubtiposMateriav2.xsd",
+        "Metadados": {
+            "Versao": "02/12/2018 09:57:56",
+            "VersaoServico": "2",
+            "DescricaoDataSet": "Lista os subipos de matéria, ativos ou não (o que pode ser visto pela data de extinção do subtipo)."
+        },
+        "SubtiposMateria": {
+            "SubtipoMateria": [
+                {
+                    "SiglaMateria": "ACE",
+                    "DescricaoSubtipoMateria": "AVISO DA COMISSÃO DE EDUCAÇÃO",
+                    "DataCriacao": "2017-02-01",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "AFC",
+                    "DescricaoSubtipoMateria": "AVISO DA COMISSÃO DE TRANSPARÊNCIA, GOVERNANÇA, FISCALIZAÇÃO E CONTROLE E DEFESA DO CONSUMIDOR",
+                    "DataCriacao": "2017-02-01",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "AFS",
+                    "DescricaoSubtipoMateria": "AFASTAMENTO DO EXERCÍCIO DO MANDATO",
+                    "DataCriacao": "2008-01-01",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "AMA",
+                    "DescricaoSubtipoMateria": "AVISO DA COMISSÃO DE MEIO AMBIENTE, DEFESA DO CONS. E FISC. E CONTROLE",
+                    "DataCriacao": "2012-02-13",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "ATC",
+                    "DescricaoSubtipoMateria": "ATO CONVOCATÓRIO",
+                    "DataCriacao": "2003-12-15",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "ATD",
+                    "DescricaoSubtipoMateria": "ATO DA COMISSÃO DIRETORA",
+                    "DataCriacao": "2015-08-18",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "ATM",
+                    "DescricaoSubtipoMateria": "ATO DO PRESIDENTE DA MESA DO CONGRESSO NACIONAL",
+                    "DataCriacao": "2007-11-01",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "ATN",
+                    "DescricaoSubtipoMateria": "ATO CONJUNTO DOS PRESIDENTES DO SENADO E DA CÂMARA",
+                    "DataCriacao": "2003-01-01",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "ATS",
+                    "DescricaoSubtipoMateria": "ATO DO PRESIDENTE DO SENADO FEDERAL",
+                    "DataCriacao": "2005-01-03",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "AV.",
+                    "DescricaoSubtipoMateria": "AVISO",
+                    "DataCriacao": "1900-01-01",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "AVE",
+                    "DescricaoSubtipoMateria": "AVISO DA COMISSÃO DE ASSUNTOS ECONÔMICOS",
+                    "DataCriacao": "2015-03-18",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "AVN",
+                    "DescricaoSubtipoMateria": "AVISO (CN)",
+                    "DataCriacao": "2000-05-11",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "AVS",
+                    "DescricaoSubtipoMateria": " AVISO",
+                    "DataCriacao": "1999-08-11",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "CCC",
+                    "DescricaoSubtipoMateria": "CONSULTA DO CONSELHO DE COMUNICAÇÃO SOCIAL",
+                    "DataCriacao": "2004-08-04",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "CCN",
+                    "DescricaoSubtipoMateria": "CONSULTA DO CONGRESSO NACIONAL",
+                    "DataCriacao": "2005-01-01",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "CON",
+                    "DescricaoSubtipoMateria": "CONSULTA (SF)",
+                    "DataCriacao": "1900-01-01",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "COP",
+                    "DescricaoSubtipoMateria": "CORREGEDORIA PARLAMENTAR (SF)",
+                    "DataCriacao": "1970-01-01",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "DAS",
+                    "DescricaoSubtipoMateria": "DENÚNCIA DA COMISSÃO DE ASSUNTOS SOCIAIS",
+                    "DataCriacao": "1997-11-11",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "DCR",
+                    "DescricaoSubtipoMateria": "DIVERSOS COMISSÃO REPRESENTATIVA",
+                    "DataCriacao": "1999-07-26",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "DEN",
+                    "DescricaoSubtipoMateria": "DENÚNCIA",
+                    "DataCriacao": "1946-01-01",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "DIV",
+                    "DescricaoSubtipoMateria": "DIVERSOS",
+                    "DataCriacao": "1946-01-01",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "DVN",
+                    "DescricaoSubtipoMateria": "DIVERSOS (CN)",
+                    "DataCriacao": "1970-01-01",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "ECD",
+                    "DescricaoSubtipoMateria": "EMENDA(S) DA CÂMARA DOS DEPUTADOS A PROJETO DE LEI DO SENADO",
+                    "DataCriacao": "1988-10-05",
+                    "IndicadorProposicao": "S"
+                },
+                {
+                    "SiglaMateria": "EDS",
+                    "DescricaoSubtipoMateria": "EMENDA(S) DA CÂMARA DOS DEPUTADOS A PROJETO DE DECRETO LEGISLATIVO",
+                    "DataCriacao": "2011-05-11",
+                    "IndicadorProposicao": "S"
+                },
+                {
+                    "SiglaMateria": "ESC",
+                    "DescricaoSubtipoMateria": "ESTUDO DO CONSELHO DE COMUNICAÇÃO SOCIAL",
+                    "DataCriacao": "2004-08-04",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "GTJ",
+                    "DescricaoSubtipoMateria": "GRUPO DE TRABALHO",
+                    "DataCriacao": "2007-01-01",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "INS",
+                    "DescricaoSubtipoMateria": "INDICAÇÃO",
+                    "DataCriacao": "1900-01-01",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "MCN",
+                    "DescricaoSubtipoMateria": "MENSAGEM (CN)",
+                    "DataCriacao": "1900-01-01",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "MCR",
+                    "DescricaoSubtipoMateria": "MENSAGEM DA COMISSÃO REPRESENTATIVA DO CONGRESSO NACIONAL",
+                    "DataCriacao": "2010-01-21",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "MOS",
+                    "DescricaoSubtipoMateria": "MOÇÃO DO SENADO FEDERAL",
+                    "DataCriacao": "2001-09-18",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "MPV",
+                    "DescricaoSubtipoMateria": "MEDIDA PROVISÓRIA",
+                    "DataCriacao": "1900-01-01",
+                    "IndicadorProposicao": "S"
+                },
+                {
+                    "SiglaMateria": "MSC",
+                    "DescricaoSubtipoMateria": "MENSAGEM (CD)",
+                    "DataCriacao": "1900-01-01",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "MSF",
+                    "DescricaoSubtipoMateria": "MENSAGEM (SF)",
+                    "DataCriacao": "1900-01-01",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "MSG",
+                    "DescricaoSubtipoMateria": "MENSAGEM",
+                    "DataCriacao": "1900-01-01",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "OCS",
+                    "DescricaoSubtipoMateria": "OFÍCIO DA COMISSÃO DE ASSUNTOS SOCIAIS",
+                    "DataCriacao": "2012-04-10",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "OF",
+                    "DescricaoSubtipoMateria": "OFICIO SF (INTERNO)",
+                    "DataCriacao": "1900-01-01",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "OF.",
+                    "DescricaoSubtipoMateria": "OFICIO (EXTERNO)",
+                    "DataCriacao": "1900-01-01",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "OFE",
+                    "DescricaoSubtipoMateria": "OFICIO DA COMISSÃO DE ASSUNTOS ECONÔMICOS",
+                    "DataCriacao": "2002-10-01",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "OFJ",
+                    "DescricaoSubtipoMateria": "OFÍCIO DA COMISSÃO DE CONSTITUIÇÃO, JUSTIÇA E CIDADANIA",
+                    "DataCriacao": "2002-10-01",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "OFN",
+                    "DescricaoSubtipoMateria": "OFICIO (CN)",
+                    "DataCriacao": "1970-01-01",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "OFS",
+                    "DescricaoSubtipoMateria": "OFICIO \"S\"",
+                    "DataCriacao": "1900-01-01",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "OFTFC",
+                    "DescricaoSubtipoMateria": "OFÍCIO DA COMISSÃO DE TRANSPARÊNCIA, GOVERNANÇA, FISCALIZAÇÃO E CONTROLE E DEFESA DO CONSUMIDOR",
+                    "DataCriacao": "2017-02-01",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "P.S",
+                    "DescricaoSubtipoMateria": "PARECER (SF)",
+                    "DataCriacao": "1900-01-01",
+                    "IndicadorProposicao": "S"
+                },
+                {
+                    "SiglaMateria": "PCE",
+                    "DescricaoSubtipoMateria": "PETIÇÃO DO CONSELHO DE ÉTICA E DECORO PARLAMENTAR (SF)",
+                    "DataCriacao": "2006-04-01",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "PCJ",
+                    "DescricaoSubtipoMateria": "PETIÇÃO COMISSÃO DE CONSTITUIÇÃO, JUSTIÇA E CIDADANIA",
+                    "DataCriacao": "2007-01-01",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "PCS",
+                    "DescricaoSubtipoMateria": "PARECER DO CONSELHO DE COMUNICAÇÃO  SOCIAL",
+                    "DataCriacao": "2012-09-11",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "PDC",
+                    "DescricaoSubtipoMateria": "PROJETO DE DECRETO LEGISLATIVO (CD)",
+                    "DataCriacao": "1900-01-01",
+                    "IndicadorProposicao": "S"
+                },
+                {
+                    "SiglaMateria": "PDH",
+                    "DescricaoSubtipoMateria": "PETIÇÃO DA COMISSÃO DE DIREITOS HUMANOS E LEGISLAÇÃO PARTICIPATIVA",
+                    "DataCriacao": "2007-03-26",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "PDN",
+                    "DescricaoSubtipoMateria": "PROJETO DE DECRETO LEGISLATIVO (CN)",
+                    "DataCriacao": "1900-01-01",
+                    "IndicadorProposicao": "S"
+                },
+                {
+                    "SiglaMateria": "PDR",
+                    "DescricaoSubtipoMateria": "PROJETO DE DECRETO LEGISLATIVO (CR - CN)",
+                    "DataCriacao": "2001-01-16",
+                    "IndicadorProposicao": "S"
+                },
+                {
+                    "SiglaMateria": "PDS",
+                    "DescricaoSubtipoMateria": "PROJETO DE DECRETO LEGISLATIVO (SF)",
+                    "DataCriacao": "1900-01-01",
+                    "IndicadorProposicao": "S"
+                },
+                {
+                    "SiglaMateria": "PEC",
+                    "DescricaoSubtipoMateria": "PROPOSTA DE EMENDA À CONSTITUIÇÃO",
+                    "DataCriacao": "1900-01-01",
+                    "IndicadorProposicao": "S"
+                },
+                {
+                    "SiglaMateria": "PET",
+                    "DescricaoSubtipoMateria": "PETIÇÃO (SF)",
+                    "DataCriacao": "1940-08-14",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "PFS",
+                    "DescricaoSubtipoMateria": "PROPOSTA DE FISCALIZAÇÃO E CONTROLE",
+                    "DataCriacao": "1900-01-01",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "PL.",
+                    "DescricaoSubtipoMateria": "PROJETO DE LEI (CD)",
+                    "DataCriacao": "1900-01-01",
+                    "IndicadorProposicao": "S"
+                },
+                {
+                    "SiglaMateria": "PLC",
+                    "DescricaoSubtipoMateria": "PROJETO DE LEI DA CÂMARA",
+                    "DataCriacao": "1900-01-01",
+                    "IndicadorProposicao": "S"
+                },
+                {
+                    "SiglaMateria": "PLN",
+                    "DescricaoSubtipoMateria": "PROJETO DE LEI DO CONGRESSO NACIONAL",
+                    "DataCriacao": "1900-01-01",
+                    "IndicadorProposicao": "S"
+                },
+                {
+                    "SiglaMateria": "PLP",
+                    "DescricaoSubtipoMateria": "PROJETO LEI COMPLEMENTAR (CD)",
+                    "DataCriacao": "1900-01-01",
+                    "IndicadorProposicao": "S"
+                },
+                {
+                    "SiglaMateria": "PLS",
+                    "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                    "DataCriacao": "1900-01-01",
+                    "IndicadorProposicao": "S"
+                },
+                {
+                    "SiglaMateria": "PLV",
+                    "DescricaoSubtipoMateria": "PROJETO DE LEI DE CONVERSÃO (CN)",
+                    "DataCriacao": "1900-01-01",
+                    "IndicadorProposicao": "S"
+                },
+                {
+                    "SiglaMateria": "POR",
+                    "DescricaoSubtipoMateria": "PORTARIA",
+                    "DataCriacao": "2005-08-16",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "PRM",
+                    "DescricaoSubtipoMateria": "PREMIAÇÃO",
+                    "DataCriacao": "2017-02-01",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "PRN",
+                    "DescricaoSubtipoMateria": "PROJETO DE RESOLUÇÃO DO CONGRESSO NACIONAL",
+                    "DataCriacao": "1900-01-01",
+                    "IndicadorProposicao": "S"
+                },
+                {
+                    "SiglaMateria": "PRS",
+                    "DescricaoSubtipoMateria": "PROJETO DE RESOLUÇÃO DO SENADO",
+                    "DataCriacao": "1900-01-01",
+                    "IndicadorProposicao": "S"
+                },
+                {
+                    "SiglaMateria": "PTN",
+                    "DescricaoSubtipoMateria": "PETIÇÃO (CN)",
+                    "DataCriacao": "2001-12-05",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "QCN",
+                    "DescricaoSubtipoMateria": "QUESTÃO DE ORDEM DO CONGRESSO NACIONAL",
+                    "DataCriacao": "2000-01-26",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "QED",
+                    "DescricaoSubtipoMateria": "QUESTÃO DE ORDEM DO CONSELHO DE ÉTICA",
+                    "DataCriacao": "2001-09-24",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "QSF",
+                    "DescricaoSubtipoMateria": "QUESTÃO DE ORDEM DO SENADO FEDERAL",
+                    "DataCriacao": "2000-01-26",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "R.C",
+                    "DescricaoSubtipoMateria": "RECURSO (CONGRESSO NACIONAL)",
+                    "DataCriacao": "1900-01-01",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "R.S",
+                    "DescricaoSubtipoMateria": "RECURSO (SF)",
+                    "DataCriacao": "1900-01-01",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "RAE",
+                    "DescricaoSubtipoMateria": "REPRESENTAÇÃO DA COMISSÃO DE ASSUNTOS ECONÔMICOS",
+                    "DataCriacao": "2002-03-13",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "RAI",
+                    "DescricaoSubtipoMateria": "REQUERIMENTO DA COMISSÃO DE ATIVIDADES DE INTELIGÊNCIA",
+                    "DataCriacao": "2000-11-21",
+                    "IndicadorProposicao": "S"
+                },
+                {
+                    "SiglaMateria": "RAS",
+                    "DescricaoSubtipoMateria": "REQUERIMENTO DA COMISSÃO DE ASSUNTOS SOCIAIS",
+                    "DataCriacao": "2003-03-13",
+                    "IndicadorProposicao": "S"
+                },
+                {
+                    "SiglaMateria": "RCE",
+                    "DescricaoSubtipoMateria": "REQUERIMENTO DA COMISSÃO DE EDUCAÇÃO",
+                    "DataCriacao": "2001-08-29",
+                    "IndicadorProposicao": "S"
+                },
+                {
+                    "SiglaMateria": "RCJ",
+                    "DescricaoSubtipoMateria": "REPRESENTAÇÃO COMISSÃO CONSTITUIÇÃO E JUSTIÇA",
+                    "DataCriacao": "2002-05-08",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "RCS",
+                    "DescricaoSubtipoMateria": "REQUERIMENTO DO CONSELHO DE COMUNICAÇÃO SOCIAL",
+                    "DataCriacao": "2001-07-11",
+                    "IndicadorProposicao": "S"
+                },
+                {
+                    "SiglaMateria": "RCT",
+                    "DescricaoSubtipoMateria": "REQUERIMENTO DA COMISSÃO DE CIÊNCIA, TEC., INOV., COM. E INFORMÁTICA",
+                    "DataCriacao": "2007-04-04",
+                    "IndicadorProposicao": "S"
+                },
+                {
+                    "SiglaMateria": "RDH",
+                    "DescricaoSubtipoMateria": "REQUERIMENTO COMISSÃO DE DIREITOS HUMANOS E LEGISLAÇÃO PARTICIPATIVA",
+                    "DataCriacao": "2005-03-10",
+                    "IndicadorProposicao": "S"
+                },
+                {
+                    "SiglaMateria": "RDR",
+                    "DescricaoSubtipoMateria": "REQUERIMENTO DA COMISSÃO DE DESENVOLVIMENTO REGIONAL E TURISMO",
+                    "DataCriacao": "2009-03-30",
+                    "IndicadorProposicao": "S"
+                },
+                {
+                    "SiglaMateria": "RED",
+                    "DescricaoSubtipoMateria": "REQUERIMENTO DO CONSELHO DE ÉTICA E DECORO PARLAMENTAR",
+                    "DataCriacao": "2000-12-12",
+                    "IndicadorProposicao": "S"
+                },
+                {
+                    "SiglaMateria": "REN",
+                    "DescricaoSubtipoMateria": "RENÚNCIA",
+                    "DataCriacao": "2000-12-14",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "REP",
+                    "DescricaoSubtipoMateria": "REPRESENTAÇÃO",
+                    "DataCriacao": "1900-01-01",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "RFF",
+                    "DescricaoSubtipoMateria": "REQUERIMENTO DA COMISSÃO SENADO DO FUTURO",
+                    "DataCriacao": "2013-10-01",
+                    "IndicadorProposicao": "S"
+                },
+                {
+                    "SiglaMateria": "RMA",
+                    "DescricaoSubtipoMateria": "REQUERIMENTO DA COMISSÃO DE MEIO AMBIENTE",
+                    "DataCriacao": "2005-02-23",
+                    "IndicadorProposicao": "S"
+                },
+                {
+                    "SiglaMateria": "RMC",
+                    "DescricaoSubtipoMateria": "REQ. COMISSÃO MISTA PERMANENTE SOBRE MUDANÇAS CLIMÁTICAS",
+                    "DataCriacao": "2009-04-07",
+                    "IndicadorProposicao": "S"
+                },
+                {
+                    "SiglaMateria": "RPF",
+                    "DescricaoSubtipoMateria": "REQUERIMENTO DA COMISSÃO PARA O APRIMORAMENTO DO PACTO FEDERATIVO",
+                    "DataCriacao": "2016-02-02",
+                    "IndicadorProposicao": "S"
+                },
+                {
+                    "SiglaMateria": "RQD",
+                    "DescricaoSubtipoMateria": "REQUERIMENTO DA COMISSÃO DIRETORA",
+                    "DataCriacao": "2016-01-01",
+                    "IndicadorProposicao": "S"
+                },
+                {
+                    "SiglaMateria": "RQE",
+                    "DescricaoSubtipoMateria": "REQUERIMENTO DA COMISSÃO DE ASSUNTOS ECONÔMICOS",
+                    "DataCriacao": "2000-10-04",
+                    "IndicadorProposicao": "S"
+                },
+                {
+                    "SiglaMateria": "RQI",
+                    "DescricaoSubtipoMateria": "REQUERIMENTO DA COMISSÃO DE SERVIÇOS DE INFRAESTRUTURA",
+                    "DataCriacao": "2000-11-07",
+                    "IndicadorProposicao": "S"
+                },
+                {
+                    "SiglaMateria": "RQJ",
+                    "DescricaoSubtipoMateria": "REQUERIMENTO  DA COMISSÃO DE CONSTITUIÇÃO, JUSTIÇA E CIDADANIA",
+                    "DataCriacao": "1999-12-15",
+                    "IndicadorProposicao": "S"
+                },
+                {
+                    "SiglaMateria": "RQM",
+                    "DescricaoSubtipoMateria": "REQUERIMENTO DA MESA DO SENADO",
+                    "DataCriacao": "1900-01-01",
+                    "IndicadorProposicao": "S"
+                },
+                {
+                    "SiglaMateria": "RQN",
+                    "DescricaoSubtipoMateria": "REQUERIMENTO (CN)",
+                    "DataCriacao": "1900-01-01",
+                    "IndicadorProposicao": "S"
+                },
+                {
+                    "SiglaMateria": "RQR",
+                    "DescricaoSubtipoMateria": "REQUERIMENTO DA COMISSÃO REPRESENTATIVA",
+                    "DataCriacao": "1900-01-01",
+                    "IndicadorProposicao": "S"
+                },
+                {
+                    "SiglaMateria": "RQS",
+                    "DescricaoSubtipoMateria": "REQUERIMENTO",
+                    "DataCriacao": "1900-01-01",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "RRA",
+                    "DescricaoSubtipoMateria": "REQUERIMENTO DA COMISSÃO DE AGRICULTURA E REFORMA AGRÁRIA",
+                    "DataCriacao": "2007-01-01",
+                    "IndicadorProposicao": "S"
+                },
+                {
+                    "SiglaMateria": "RRC",
+                    "DescricaoSubtipoMateria": "RECOMENDAÇÃO DO CONSELHO DE COMUNICAÇÃO SOCIAL",
+                    "DataCriacao": "2004-08-04",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "RRE",
+                    "DescricaoSubtipoMateria": "REQUERIMENTO DA COMISSÃO DE RELAÇÕES EXTERIORES E DEFESA NACIONAL",
+                    "DataCriacao": "2001-10-03",
+                    "IndicadorProposicao": "S"
+                },
+                {
+                    "SiglaMateria": "RTG",
+                    "DescricaoSubtipoMateria": "REQUERIMENTO DA COMISSÃO DE TRANSPARÊNCIA, GOVERNANÇA, FISCALIZAÇÃO E CONTROLE E DEFESA DO CONSUMIDOR",
+                    "DataCriacao": "2015-09-22",
+                    "IndicadorProposicao": "S"
+                },
+                {
+                    "SiglaMateria": "RVM",
+                    "DescricaoSubtipoMateria": "REQUERIMENTO DA COMISSÃO MISTA DE COMBATE À VIOLÊNCIA CONTRA A MULHER",
+                    "DataCriacao": "2015-03-23",
+                    "IndicadorProposicao": "S"
+                },
+                {
+                    "SiglaMateria": "SCD",
+                    "DescricaoSubtipoMateria": "SUBSTITUTIVO DA CÂMARA DOS DEPUTADOS A PROJETO DE LEI DO SENADO",
+                    "DataCriacao": "1999-02-16",
+                    "IndicadorProposicao": "S"
+                },
+                {
+                    "SiglaMateria": "SDS",
+                    "DescricaoSubtipoMateria": "SUBSTITUTIVO DA CÂMARA DOS DEPUTADOS A PROJETO DE DECRETO LEGISLATIVO",
+                    "DataCriacao": "2011-05-11",
+                    "IndicadorProposicao": "S"
+                },
+                {
+                    "SiglaMateria": "SIN",
+                    "DescricaoSubtipoMateria": "SINDICÂNCIA",
+                    "DataCriacao": "1900-01-01",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "SOL",
+                    "DescricaoSubtipoMateria": "SOLENIDADE DE ENTREGA DAS PROPOSTAS DE REFORMAS CONSTITUCIONAIS",
+                    "DataCriacao": "2003-01-01",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "SUG",
+                    "DescricaoSubtipoMateria": "SUGESTÃO",
+                    "DataCriacao": "1900-01-01",
+                    "IndicadorProposicao": "N"
+                },
+                {
+                    "SiglaMateria": "VET",
+                    "DescricaoSubtipoMateria": "VETO",
+                    "DataCriacao": "1901-01-01",
+                    "IndicadorProposicao": "S"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,4032 @@
+{
+    "Reunioes": {
+        "Metadados": {
+            "Versao": "2018-12-02T10:08:05.666",
+            "VersaoServico": "1.23.2.17",
+            "DataVersaoServico": "2018-09-05T21:57:12Z"
+        },
+        "Reuniao": [
+            {
+                "Codigo": "5551",
+                "TituloDaReuniao": "CCS, às 09h, 15ª, Reunião",
+                "Tipo": "Reunião",
+                "Data": "07/11/2016",
+                "Hora": "09:00",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 3",
+                "CodigoDoLocalDaReuniao": "2",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "767",
+                        "NumeroReuniao": "15",
+                        "Sigla": "CCS",
+                        "Nome": "Conselho de Comunicação Social",
+                        "Casa": "CN",
+                        "CodigoTipoColegiado": "107",
+                        "NomeTipoColegiado": "Conselho",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7184",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "4",
+                        "Tipo": "Reunião de Trabalho",
+                        "NomeFantasia": "Reunião de Trabalho",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "afa52167-4000-4459-a5f3-3d53c8ae8e40",
+                "IdDaUltimaPublicacaoResultado": "4bcb4dfe-d43b-41a5-b9a5-d3290ae4e623",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5537",
+                "TituloDaReuniao": "CDH, às 10h, 94ª, Extraordinária",
+                "Tipo": "Extraordinária",
+                "Data": "07/11/2016",
+                "Hora": "10:00",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Nilo Coelho, Plenário nº 6",
+                "CodigoDoLocalDaReuniao": "3",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "834",
+                        "NumeroReuniao": "94",
+                        "Sigla": "CDH",
+                        "Nome": "Comissão de Direitos Humanos e Legislação Participativa",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7168",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "1",
+                        "Tipo": "Audiência Pública Interativa",
+                        "NomeFantasia": "Audiência Pública Interativa",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "e4e7c7aa-185f-497d-a3b0-9d7bfdc2749c",
+                "IdDaUltimaPublicacaoResultado": "d07b313c-b948-4f76-8af8-406b52484c88",
+                "IdDaUltimaPublicacaoAta": "17e12717-d141-4c08-9d72-704891a8ffb1",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5553",
+                "TituloDaReuniao": "CCS, às 14h, 16ª, Reunião",
+                "Tipo": "Reunião",
+                "Data": "07/11/2016",
+                "Hora": "14:00",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 3",
+                "CodigoDoLocalDaReuniao": "2",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "767",
+                        "NumeroReuniao": "16",
+                        "Sigla": "CCS",
+                        "Nome": "Conselho de Comunicação Social",
+                        "Casa": "CN",
+                        "CodigoTipoColegiado": "107",
+                        "NomeTipoColegiado": "Conselho",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7186",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "4",
+                        "Tipo": "Reunião de Trabalho",
+                        "NomeFantasia": "Reunião de Trabalho",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "1092aaac-6cf5-4c8d-959f-391b058fd694",
+                "IdDaUltimaPublicacaoResultado": "8a5d5e91-79fb-40a1-b9cc-fc7626c61395",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5576",
+                "TituloDaReuniao": "CJD, às 14h:30, 17ª, Reunião",
+                "Tipo": "Reunião",
+                "Data": "07/11/2016",
+                "Hora": "14:30",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 19",
+                "CodigoDoLocalDaReuniao": "8",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "1955",
+                        "NumeroReuniao": "17",
+                        "Sigla": "CJD",
+                        "Nome": "Comissão de Juristas da Desburocratização",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "24",
+                        "NomeTipoColegiado": "Comissão Temporária Interna",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7213",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "1",
+                        "Tipo": "Audiência Pública Interativa",
+                        "NomeFantasia": "Audiência Pública Interativa",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "f6d800f6-c0c7-48fb-bcfc-349cbf666bc9",
+                "IdDaUltimaPublicacaoResultado": "b1192217-66b8-4237-b01f-917eb8630f51",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5591",
+                "TituloDaReuniao": "CDH, às 15h, 95ª, Extraordinária",
+                "Tipo": "Extraordinária",
+                "Data": "07/11/2016",
+                "Hora": "15:00",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Nilo Coelho, Plenário nº 6",
+                "CodigoDoLocalDaReuniao": "3",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "834",
+                        "NumeroReuniao": "95",
+                        "Sigla": "CDH",
+                        "Nome": "Comissão de Direitos Humanos e Legislação Participativa",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7231",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "1",
+                        "Tipo": "Audiência Pública Interativa",
+                        "NomeFantasia": "Audiência Pública",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "d4fd883d-1e67-42a8-a5e2-269a3038b3f2",
+                "IdDaUltimaPublicacaoResultado": "5dfb6fee-5705-4b00-a7a9-da435e1e0be2",
+                "IdDaUltimaPublicacaoAta": "f062c1e0-ee78-4ba0-9f0b-4fd6541aafe1",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5563",
+                "TituloDaReuniao": "CCT, às 08h:45, 33ª, Extraordinária",
+                "Tipo": "Extraordinária",
+                "Data": "08/11/2016",
+                "Hora": "08:45",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 9",
+                "CodigoDoLocalDaReuniao": "5",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "1363",
+                        "NumeroReuniao": "33",
+                        "Sigla": "CCT",
+                        "Nome": "Comissão de Ciência, Tecnologia, Inovação, Comunicação e Informática",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7198",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "1",
+                        "Tipo": "Audiência Pública Interativa",
+                        "NomeFantasia": "Audiência Pública Interativa",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "2f56584a-d3db-444e-b1c0-4fa62d2de61c",
+                "IdDaUltimaPublicacaoResultado": "89f49491-e0c9-4d8b-8eac-419d5fafbd7b",
+                "IdDaUltimaPublicacaoAta": "6fca2c90-932d-4b5e-acb2-aecc8de6944e",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5535",
+                "TituloDaReuniao": "CDH, às 09h, 96ª, Extraordinária",
+                "Tipo": "Extraordinária",
+                "Data": "08/11/2016",
+                "Hora": "09:00",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Nilo Coelho, Plenário nº 6",
+                "CodigoDoLocalDaReuniao": "3",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "834",
+                        "NumeroReuniao": "96",
+                        "Sigla": "CDH",
+                        "Nome": "Comissão de Direitos Humanos e Legislação Participativa",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7166",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "1",
+                        "Tipo": "Audiência Pública Interativa",
+                        "NomeFantasia": "Audiência Pública Interativa",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "4da02c20-80cd-49c9-b37f-9fd17c996031",
+                "IdDaUltimaPublicacaoResultado": "852f65b0-dd51-49ee-a65a-e8a70db61710",
+                "IdDaUltimaPublicacaoAta": "75a48b73-f6b2-40b2-83f9-a6abe3c9f073",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5578",
+                "TituloDaReuniao": "CMA, às 09h:30, 19ª, Extraordinária",
+                "Tipo": "Extraordinária",
+                "Data": "08/11/2016",
+                "Hora": "09:30",
+                "Situacao": "Cancelada",
+                "Local": "Anexo II, Ala Senador Nilo Coelho, Plenário nº 2",
+                "CodigoDoLocalDaReuniao": "1",
+                "ExisteItemTerminativo": "Sim",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "50",
+                        "NumeroReuniao": "19",
+                        "Sigla": "CMA",
+                        "Nome": "Comissão de Meio Ambiente, Defesa do Consumidor e Fiscalização e Controle",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7215",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "2",
+                        "Tipo": "Deliberativa",
+                        "NomeFantasia": "Deliberativa",
+                        "ExisteItemTerminativo": "Sim"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Não",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "7d37f37e-2e6a-4b01-baff-c123355e5a15",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5598",
+                "TituloDaReuniao": "CCJ,CAE, às 10h, 7ª, Conjunta",
+                "Tipo": "Conjunta",
+                "NumeroConjunta": "7",
+                "Data": "08/11/2016",
+                "Hora": "10:00",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 3",
+                "CodigoDoLocalDaReuniao": "2",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": [
+                        {
+                            "CodigoColegiado": "34",
+                            "NumeroReuniao": "38",
+                            "Sigla": "CCJ",
+                            "Nome": "Comissão de Constituição, Justiça e Cidadania",
+                            "Casa": "SF",
+                            "CodigoTipoColegiado": "21",
+                            "NomeTipoColegiado": "Comissão Permanente",
+                            "ComissaoSuperior": null
+                        },
+                        {
+                            "CodigoColegiado": "38",
+                            "NumeroReuniao": "36",
+                            "Sigla": "CAE",
+                            "Nome": "Comissão de Assuntos Econômicos",
+                            "Casa": "SF",
+                            "CodigoTipoColegiado": "21",
+                            "NomeTipoColegiado": "Comissão Permanente",
+                            "ComissaoSuperior": null
+                        }
+                    ]
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7238",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "1",
+                        "Tipo": "Audiência Pública Interativa",
+                        "NomeFantasia": "Audiência Pública Interativa",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "b1bd5262-93aa-4db1-98db-1b5f46dcd6e9",
+                "IdDaUltimaPublicacaoResultado": "cf1ef4e7-6d5b-44a2-b6c1-9f9c8a0dbcb0",
+                "IdDaUltimaPublicacaoAta": "5535351c-3339-424f-8311-a765e10c22f2",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5581",
+                "TituloDaReuniao": "CTG, às 11h, 15ª, Extraordinária",
+                "Tipo": "Extraordinária",
+                "Data": "08/11/2016",
+                "Hora": "11:00",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 9",
+                "CodigoDoLocalDaReuniao": "5",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "1956",
+                        "NumeroReuniao": "15",
+                        "Sigla": "CTG",
+                        "Nome": "Comissão de Transparência e Governança Pública",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": [
+                        {
+                            "Codigo": "7219",
+                            "NumOrdem": "1",
+                            "CodigoTipo": "1",
+                            "Tipo": "Audiência Pública Interativa",
+                            "NomeFantasia": "Audiência Pública Interativa",
+                            "ExisteItemTerminativo": "Não"
+                        },
+                        {
+                            "Codigo": "7220",
+                            "NumOrdem": "2",
+                            "CodigoTipo": "2",
+                            "Tipo": "Deliberativa",
+                            "NomeFantasia": "Deliberativa",
+                            "ExisteItemTerminativo": "Não"
+                        }
+                    ]
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "f63d00eb-6ef1-40ec-a1f9-cdab6919878a",
+                "IdDaUltimaPublicacaoResultado": "f338473d-8ded-4ac4-ae55-63dba4ebf742",
+                "IdDaUltimaPublicacaoAta": "6811b1ef-9b3a-4f88-ad23-091859e2abc1",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5582",
+                "TituloDaReuniao": "CEOI, às 11h, 1ª, Reunião",
+                "Tipo": "Reunião",
+                "Data": "08/11/2016",
+                "Hora": "11:00",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 13",
+                "CodigoDoLocalDaReuniao": "6",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "2061",
+                        "NumeroReuniao": "1",
+                        "Sigla": "CEOI",
+                        "Nome": "Comissão Especial das Obras Inacabadas",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "24",
+                        "NomeTipoColegiado": "Comissão Temporária Interna",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7222",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "6",
+                        "Tipo": "Instalação e Eleição",
+                        "NomeFantasia": "Instalação e Eleição",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "80064492-352b-47ed-abe3-ea5e420c0927",
+                "IdDaUltimaPublicacaoResultado": "ecd056ba-e62c-453e-ae4b-73709c5fa609",
+                "IdDaUltimaPublicacaoAta": "801b52f3-19f7-43ae-92ff-771cb2764eb9",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5594",
+                "TituloDaReuniao": "CMMPV 741/2016, às 11h:30, 2ª, Reunião",
+                "Tipo": "Reunião",
+                "Data": "08/11/2016",
+                "Hora": "11:30",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 19",
+                "CodigoDoLocalDaReuniao": "8",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "2039",
+                        "NumeroReuniao": "2",
+                        "Sigla": "CMMPV 741/2016",
+                        "Nome": "Comissão Mista da Medida Provisória nº 741, de 2016",
+                        "Casa": "CN",
+                        "CodigoTipoColegiado": "42",
+                        "NomeTipoColegiado": "Comissão de Medida Provisória",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7234",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "2",
+                        "Tipo": "Deliberativa",
+                        "NomeFantasia": "Deliberativa",
+                        "ExisteItemTerminativo": "Não",
+                        "Finalidade": "Apreciação de Relatório."
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "a747abbf-be20-4308-bdd9-cc6c5015b5bb",
+                "IdDaUltimaPublicacaoResultado": "b0ac2a73-7b92-4579-8f01-3902598bf9b0",
+                "IdDaUltimaPublicacaoAta": "4868dea0-32f2-4d4d-8699-fd1c9185ef0f",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5577",
+                "TituloDaReuniao": "CE, às 11h:45, 44ª, Extraordinária",
+                "Tipo": "Extraordinária",
+                "Data": "08/11/2016",
+                "Hora": "11:45",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 15",
+                "CodigoDoLocalDaReuniao": "7",
+                "ExisteItemTerminativo": "Sim",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "47",
+                        "NumeroReuniao": "44",
+                        "Sigla": "CE",
+                        "Nome": "Comissão de Educação, Cultura e Esporte",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7214",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "2",
+                        "Tipo": "Deliberativa",
+                        "NomeFantasia": "Deliberativa",
+                        "ExisteItemTerminativo": "Sim"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "b3404619-4991-4c44-a983-e3c842672b03",
+                "IdDaUltimaPublicacaoResultado": "0bc71278-59a3-4c06-8a0f-db67bc44f218",
+                "IdDaUltimaPublicacaoAta": "cb4fafb4-9bac-4830-af49-306d3c42a6b6",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5559",
+                "TituloDaReuniao": "CRE, às 14h:30, 29ª, Extraordinária",
+                "Tipo": "Extraordinária",
+                "Data": "08/11/2016",
+                "Hora": "14:30",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 19",
+                "CodigoDoLocalDaReuniao": "8",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "54",
+                        "NumeroReuniao": "29",
+                        "Sigla": "CRE",
+                        "Nome": "Comissão de Relações Exteriores e Defesa Nacional",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": [
+                        {
+                            "Codigo": "7193",
+                            "NumOrdem": "1",
+                            "CodigoTipo": "2",
+                            "Tipo": "Deliberativa",
+                            "NomeFantasia": "Sabatina",
+                            "ExisteItemTerminativo": "Não",
+                            "Finalidade": "Indicação para cargo de chefe de missão dimplomática"
+                        },
+                        {
+                            "Codigo": "7194",
+                            "NumOrdem": "2",
+                            "CodigoTipo": "2",
+                            "Tipo": "Deliberativa",
+                            "NomeFantasia": "Deliberativa - Leitura de Relatórios",
+                            "ExisteItemTerminativo": "Não"
+                        }
+                    ]
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "41d56718-6f89-4bf6-8511-7a9f9b259409",
+                "IdDaUltimaPublicacaoResultado": "dddc03e7-62b6-4cda-be0f-837119062e29",
+                "IdDaUltimaPublicacaoAta": "6bfd0abb-f9c9-4de7-9560-5d9c3137d892",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5580",
+                "TituloDaReuniao": "CMMC, às 14h:30, 11ª, Reunião",
+                "Tipo": "Reunião",
+                "Data": "08/11/2016",
+                "Hora": "14:30",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 9",
+                "CodigoDoLocalDaReuniao": "5",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "1450",
+                        "NumeroReuniao": "11",
+                        "Sigla": "CMMC",
+                        "Nome": "Comissão Mista Permanente sobre Mudanças Climáticas",
+                        "Casa": "CN",
+                        "CodigoTipoColegiado": "41",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7218",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "1",
+                        "Tipo": "Audiência Pública Interativa",
+                        "NomeFantasia": "Audiência Pública Interativa",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "06acd0c8-3f2b-4d6d-85e4-f22ef6a5a1d1",
+                "IdDaUltimaPublicacaoResultado": "bfa35dc7-9447-461c-a1d4-5ca5c56fd888",
+                "IdDaUltimaPublicacaoAta": "5fb82a16-adb3-4acb-9716-32f3927b202c",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5588",
+                "TituloDaReuniao": "CMMPV 746/2016, às 14h:30, 4ª, Reunião",
+                "Tipo": "Reunião",
+                "Data": "08/11/2016",
+                "Hora": "14:30",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Nilo Coelho, Plenário nº 6",
+                "CodigoDoLocalDaReuniao": "3",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "2065",
+                        "NumeroReuniao": "4",
+                        "Sigla": "CMMPV 746/2016",
+                        "Nome": "Comissão Mista da Medida Provisória nº 746, de 2016.",
+                        "Casa": "CN",
+                        "CodigoTipoColegiado": "42",
+                        "NomeTipoColegiado": "Comissão de Medida Provisória",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7228",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "1",
+                        "Tipo": "Audiência Pública Interativa",
+                        "NomeFantasia": "Audiência Pública Interativa",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "af9a8076-405c-4edf-8222-c31d70f94552",
+                "IdDaUltimaPublicacaoResultado": "12dac7b3-6953-46b8-980c-42a7930ef47e",
+                "IdDaUltimaPublicacaoAta": "93966e4a-a09d-4b51-b886-daa9fec58bc1",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5574",
+                "TituloDaReuniao": "CDR, às 09h, 20ª, Extraordinária",
+                "Tipo": "Extraordinária",
+                "Data": "09/11/2016",
+                "Hora": "09:00",
+                "Situacao": "Cancelada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 15",
+                "CodigoDoLocalDaReuniao": "7",
+                "ExisteItemTerminativo": "Sim",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "1306",
+                        "NumeroReuniao": "20",
+                        "Sigla": "CDR",
+                        "Nome": "Comissão de Desenvolvimento Regional e Turismo",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7210",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "2",
+                        "Tipo": "Deliberativa",
+                        "NomeFantasia": "Deliberativa",
+                        "ExisteItemTerminativo": "Sim",
+                        "Finalidade": "Deliberação de requerimentos, ofício \"S\" e projetos de lei."
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Não",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "9fce8c81-a4f9-4fe1-8324-54e5ed57f4a7",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5595",
+                "TituloDaReuniao": "CAS, às 09h, 31ª, Extraordinária",
+                "Tipo": "Extraordinária",
+                "Data": "09/11/2016",
+                "Hora": "09:00",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 9",
+                "CodigoDoLocalDaReuniao": "5",
+                "ExisteItemTerminativo": "Sim",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "40",
+                        "NumeroReuniao": "31",
+                        "Sigla": "CAS",
+                        "Nome": "Comissão de Assuntos Sociais",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7235",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "2",
+                        "Tipo": "Deliberativa",
+                        "NomeFantasia": "Deliberativa",
+                        "ExisteItemTerminativo": "Sim"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "cc0780b4-2020-44f7-b8f0-497caf98edc1",
+                "IdDaUltimaPublicacaoResultado": "63941367-7476-4519-b20d-c46eeb108228",
+                "IdDaUltimaPublicacaoAta": "6eff4d36-7699-45d0-a9b6-e2d6657945a9",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5593",
+                "TituloDaReuniao": "CMCVM, às 10h, 6ª, Reunião",
+                "Tipo": "Reunião",
+                "Data": "09/11/2016",
+                "Hora": "10:00",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Nilo Coelho, Plenário nº 6",
+                "CodigoDoLocalDaReuniao": "3",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "1774",
+                        "NumeroReuniao": "6",
+                        "Sigla": "CMCVM",
+                        "Nome": "Comissão Permanente Mista de Combate à Violência contra a Mulher",
+                        "Casa": "CN",
+                        "CodigoTipoColegiado": "41",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": [
+                        {
+                            "Codigo": "7233",
+                            "NumOrdem": "1",
+                            "CodigoTipo": "1",
+                            "Tipo": "Audiência Pública Interativa",
+                            "NomeFantasia": "Audiência Pública Interativa",
+                            "ExisteItemTerminativo": "Não"
+                        },
+                        {
+                            "Codigo": "7239",
+                            "NumOrdem": "2",
+                            "CodigoTipo": "2",
+                            "Tipo": "Deliberativa",
+                            "NomeFantasia": "Deliberativa",
+                            "ExisteItemTerminativo": "Não",
+                            "Finalidade": "Apreciação de Requerimentos"
+                        }
+                    ]
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "406ec5d2-6682-4b96-9943-16ff0bc2a47a",
+                "IdDaUltimaPublicacaoResultado": "dc17b75c-bb03-4be4-af27-786a86ed3782",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5596",
+                "TituloDaReuniao": "CCJ, às 10h, 39ª, Ordinária",
+                "Tipo": "Ordinária",
+                "Data": "09/11/2016",
+                "Hora": "10:00",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Nilo Coelho, Plenário nº 2",
+                "CodigoDoLocalDaReuniao": "1",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "34",
+                        "NumeroReuniao": "39",
+                        "Sigla": "CCJ",
+                        "Nome": "Comissão de Constituição, Justiça e Cidadania",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7236",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "2",
+                        "Tipo": "Deliberativa",
+                        "NomeFantasia": "Deliberativa",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "e9735d6b-d36c-4aff-800e-db852080418f",
+                "IdDaUltimaPublicacaoResultado": "91b96851-5a53-4aba-9bc4-b7acced808dd",
+                "IdDaUltimaPublicacaoAta": "b663f2e4-5f70-4eba-acd7-bd6acb685898",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5592",
+                "TituloDaReuniao": "CE, às 11h, 45ª, Extraordinária",
+                "Tipo": "Extraordinária",
+                "Data": "09/11/2016",
+                "Hora": "11:00",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 19",
+                "CodigoDoLocalDaReuniao": "8",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "47",
+                        "NumeroReuniao": "45",
+                        "Sigla": "CE",
+                        "Nome": "Comissão de Educação, Cultura e Esporte",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7232",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "1",
+                        "Tipo": "Audiência Pública Interativa",
+                        "NomeFantasia": "Audiência Pública Interativa",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "a659c1c2-a8f2-4e6d-a5ac-c26ddc77fd86",
+                "IdDaUltimaPublicacaoResultado": "52813f0b-faa0-4396-b8cb-f4f264feffa8",
+                "IdDaUltimaPublicacaoAta": "3a06c533-9c73-4762-b749-dcc1cff852fb",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5536",
+                "TituloDaReuniao": "CDH, às 11h:30, 97ª, Extraordinária",
+                "Tipo": "Extraordinária",
+                "Data": "09/11/2016",
+                "Hora": "11:30",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Nilo Coelho, Plenário nº 2",
+                "CodigoDoLocalDaReuniao": "1",
+                "ExisteItemTerminativo": "Sim",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "834",
+                        "NumeroReuniao": "97",
+                        "Sigla": "CDH",
+                        "Nome": "Comissão de Direitos Humanos e Legislação Participativa",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7167",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "2",
+                        "Tipo": "Deliberativa",
+                        "NomeFantasia": "Deliberativa",
+                        "ExisteItemTerminativo": "Sim"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "5513303e-f751-4d5c-bd11-7516a1ca93a4",
+                "IdDaUltimaPublicacaoResultado": "2e1e49b4-328a-4a74-a1e7-d15f096f9542",
+                "IdDaUltimaPublicacaoAta": "4941ef3e-66be-4662-94d8-e10fac85abb5",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5590",
+                "TituloDaReuniao": "CMMPV 746/2016, às 14h:30, 5ª, Reunião",
+                "Tipo": "Reunião",
+                "Data": "09/11/2016",
+                "Hora": "14:30",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Nilo Coelho, Plenário nº 6",
+                "CodigoDoLocalDaReuniao": "3",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "2065",
+                        "NumeroReuniao": "5",
+                        "Sigla": "CMMPV 746/2016",
+                        "Nome": "Comissão Mista da Medida Provisória nº 746, de 2016.",
+                        "Casa": "CN",
+                        "CodigoTipoColegiado": "42",
+                        "NomeTipoColegiado": "Comissão de Medida Provisória",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7230",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "1",
+                        "Tipo": "Audiência Pública Interativa",
+                        "NomeFantasia": "Audiência Pública Interativa",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "618e818d-8d6b-4b0b-8798-fe32b22dafec",
+                "IdDaUltimaPublicacaoResultado": "3010d839-5bc1-49da-807a-1a2e0f806369",
+                "IdDaUltimaPublicacaoAta": "54354396-2c8b-46f2-aedc-ea0b5ccef27b",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5600",
+                "TituloDaReuniao": "CEDN, às 14h:30, 8ª, Ordinária",
+                "Tipo": "Ordinária",
+                "Data": "09/11/2016",
+                "Hora": "14:30",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 9",
+                "CodigoDoLocalDaReuniao": "5",
+                "ExisteItemTerminativo": "Sim",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "2034",
+                        "NumeroReuniao": "8",
+                        "Sigla": "CEDN",
+                        "Nome": "Comissão Especial do Desenvolvimento Nacional",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "24",
+                        "NomeTipoColegiado": "Comissão Temporária Interna",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7241",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "2",
+                        "Tipo": "Deliberativa",
+                        "NomeFantasia": "Deliberativa",
+                        "ExisteItemTerminativo": "Sim"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "d07c0493-45e5-4064-b9be-e98839e6c9b9",
+                "IdDaUltimaPublicacaoResultado": "b776fb18-6bb0-4f3e-bc56-7c048c7a0ae3",
+                "IdDaUltimaPublicacaoAta": "a7204a58-38fb-4b90-96d9-1c2d33479bd6",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5601",
+                "TituloDaReuniao": "CMMPV 748/2016, às 14h:30, 1ª, Reunião",
+                "Tipo": "Reunião",
+                "Data": "09/11/2016",
+                "Hora": "14:30",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 15",
+                "CodigoDoLocalDaReuniao": "7",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "2067",
+                        "NumeroReuniao": "1",
+                        "Sigla": "CMMPV 748/2016",
+                        "Nome": "Comissão Mista da Medida Provisória nº 748, de 2016",
+                        "Casa": "CN",
+                        "CodigoTipoColegiado": "42",
+                        "NomeTipoColegiado": "Comissão de Medida Provisória",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7242",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "6",
+                        "Tipo": "Instalação e Eleição",
+                        "NomeFantasia": "Instalação e Eleição",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "e08cba59-2f93-4438-a87c-13b778e60e8f",
+                "IdDaUltimaPublicacaoResultado": "8e1867b2-03c8-419e-99ed-8a47528933d9",
+                "IdDaUltimaPublicacaoAta": "748798ab-1290-435f-9ce1-6776b1e573e0",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5599",
+                "TituloDaReuniao": "CDH, às 15h, 25ª, Outros eventos",
+                "Tipo": "Outros eventos",
+                "Data": "09/11/2016",
+                "Hora": "15:00",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 9, Senado Federal",
+                "CodigoDoLocalDaReuniao": "999",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "834",
+                        "NumeroReuniao": "25",
+                        "Sigla": "CDH",
+                        "Nome": "Comissão de Direitos Humanos e Legislação Participativa",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7240",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "8",
+                        "Tipo": "Outros Eventos",
+                        "NomeFantasia": "Previdência Social",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "e580a389-6a5e-4efa-a3f3-f1afd61c13ab",
+                "IdDaUltimaPublicacaoResultado": "16c69214-9ae1-4bfb-b90c-600515baa54b",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5602",
+                "TituloDaReuniao": "CMMPV 749/2016, às 15h, 1ª, Reunião",
+                "Tipo": "Reunião",
+                "Data": "09/11/2016",
+                "Hora": "15:00",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 15",
+                "CodigoDoLocalDaReuniao": "7",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "2068",
+                        "NumeroReuniao": "1",
+                        "Sigla": "CMMPV 749/2016",
+                        "Nome": "Comissão Mista da Medida Provisória nº 749, de 2016",
+                        "Casa": "CN",
+                        "CodigoTipoColegiado": "42",
+                        "NomeTipoColegiado": "Comissão de Medida Provisória",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7243",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "6",
+                        "Tipo": "Instalação e Eleição",
+                        "NomeFantasia": "Instalação e Eleição",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "da7efa60-df91-4126-b6a7-18f8a345ecb4",
+                "IdDaUltimaPublicacaoResultado": "8c2e6433-662f-41b6-8234-eee8d270ee62",
+                "IdDaUltimaPublicacaoAta": "187054a2-272b-4f76-94fa-c5421bc3f326",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5597",
+                "TituloDaReuniao": "CRA, às 15h:30, 2ª, Outros eventos",
+                "Tipo": "Outros eventos",
+                "Data": "09/11/2016",
+                "Hora": "15:30",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 13",
+                "CodigoDoLocalDaReuniao": "999",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "1307",
+                        "NumeroReuniao": "2",
+                        "Sigla": "CRA",
+                        "Nome": "Comissão de Agricultura e Reforma Agrária",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7237",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "8",
+                        "Tipo": "Outros Eventos",
+                        "NomeFantasia": "Visita da Delegação da Ucrânia",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "a010d5fd-2980-4209-8dee-cf521b7ef51b",
+                "IdDaUltimaPublicacaoResultado": "992ac277-ac17-4a13-84f6-24666ba8f2b9",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5324",
+                "TituloDaReuniao": "CRA, às 08h, 29ª, Extraordinária",
+                "Tipo": "Extraordinária",
+                "Data": "10/11/2016",
+                "Hora": "08:00",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Nilo Coelho, Plenário nº 6",
+                "CodigoDoLocalDaReuniao": "3",
+                "ExisteItemTerminativo": "Sim",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "1307",
+                        "NumeroReuniao": "29",
+                        "Sigla": "CRA",
+                        "Nome": "Comissão de Agricultura e Reforma Agrária",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "6911",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "2",
+                        "Tipo": "Deliberativa",
+                        "NomeFantasia": "Deliberativa",
+                        "ExisteItemTerminativo": "Sim"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "3babdabf-a71c-4562-a636-20ed76b6c19a",
+                "IdDaUltimaPublicacaoResultado": "d2d0f71a-dcf1-4277-8f4f-d71c6c7fa36b",
+                "IdDaUltimaPublicacaoAta": "82737279-1ef2-4ae4-9f68-ee77da3b947b",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5477",
+                "TituloDaReuniao": "CRE, às 10h, 30ª, Ordinária",
+                "Tipo": "Ordinária",
+                "Data": "10/11/2016",
+                "Hora": "10:00",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 3",
+                "CodigoDoLocalDaReuniao": "2",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "54",
+                        "NumeroReuniao": "30",
+                        "Sigla": "CRE",
+                        "Nome": "Comissão de Relações Exteriores e Defesa Nacional",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7221",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "2",
+                        "Tipo": "Deliberativa",
+                        "NomeFantasia": "Sabatinas",
+                        "ExisteItemTerminativo": "Não",
+                        "Finalidade": "Indicação para cargos de chefe de missão diplomática"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "38387411-0a29-4f7f-8434-a955dc3e4535",
+                "IdDaUltimaPublicacaoResultado": "57ea3bcc-96a3-45c0-953e-6d9b00be5470",
+                "IdDaUltimaPublicacaoAta": "c0252e05-bf15-47f7-a480-2d815d44e3fa",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5608",
+                "TituloDaReuniao": "CTETO, às 11h, 1ª, Reunião",
+                "Tipo": "Reunião",
+                "Data": "10/11/2016",
+                "Hora": "11:00",
+                "Situacao": "Realizada",
+                "Local": "Presidencia Senado Federal",
+                "CodigoDoLocalDaReuniao": "999",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "2069",
+                        "NumeroReuniao": "1",
+                        "Sigla": "CTETO",
+                        "Nome": "Comissão Especial do Extrateto",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "24",
+                        "NomeTipoColegiado": "Comissão Temporária Interna",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7252",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "3",
+                        "Tipo": "Instalação",
+                        "NomeFantasia": "Instalação",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "59de0dbe-bc0a-47f4-a7ce-5eb35b1a0395",
+                "IdDaUltimaPublicacaoResultado": "19f7e004-108a-49e7-926b-529360fd76e5",
+                "IdDaUltimaPublicacaoAta": "49b2a38e-43f4-43e1-b27d-8196c87f5b49",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5573",
+                "TituloDaReuniao": "CDH, às 15h, 98ª, Extraordinária",
+                "Tipo": "Extraordinária",
+                "Data": "10/11/2016",
+                "Hora": "15:00",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Nilo Coelho, Plenário nº 6",
+                "CodigoDoLocalDaReuniao": "3",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "834",
+                        "NumeroReuniao": "98",
+                        "Sigla": "CDH",
+                        "Nome": "Comissão de Direitos Humanos e Legislação Participativa",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7208",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "1",
+                        "Tipo": "Audiência Pública Interativa",
+                        "NomeFantasia": "Audiência Pública Interativa",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "8e6b6fd9-afc3-473e-8bcb-36d324eef9a6",
+                "IdDaUltimaPublicacaoResultado": "7fbf216c-8781-4290-830b-78a39d6864e0",
+                "IdDaUltimaPublicacaoAta": "69e0466e-a0e0-4a1a-bbfd-4d63b0950a0a",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5570",
+                "TituloDaReuniao": "CDR, às 09h, 02ª, Outros eventos",
+                "Tipo": "Outros eventos",
+                "Data": "11/11/2016",
+                "Hora": "09:00",
+                "Situacao": "Realizada",
+                "Local": "Auditório Milton Figueiredo, Assembleia Legislativa do Estado de Mato Grosso",
+                "CodigoDoLocalDaReuniao": "999",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "1306",
+                        "NumeroReuniao": "02",
+                        "Sigla": "CDR",
+                        "Nome": "Comissão de Desenvolvimento Regional e Turismo",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7205",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "8",
+                        "Tipo": "Outros Eventos",
+                        "NomeFantasia": "Avaliação de Política Pública da Aviação Voltada para o Desenvolvimento Regional",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "adf3d4bf-4f0a-49c6-bee0-a4bce896a6c7",
+                "IdDaUltimaPublicacaoResultado": "7882f3b1-0d4d-4ba7-a2bc-0e6a06c11023",
+                "IdDaUltimaPublicacaoAta": "b33c85b1-c46f-4f4f-aa10-89199ed67123",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5607",
+                "TituloDaReuniao": "CDH, às 09h, 99ª, Extraordinária",
+                "Tipo": "Extraordinária",
+                "Data": "14/11/2016",
+                "Hora": "09:00",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Nilo Coelho, Plenário nº 6",
+                "CodigoDoLocalDaReuniao": "3",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "834",
+                        "NumeroReuniao": "99",
+                        "Sigla": "CDH",
+                        "Nome": "Comissão de Direitos Humanos e Legislação Participativa",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7251",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "1",
+                        "Tipo": "Audiência Pública Interativa",
+                        "NomeFantasia": "Audiência Pública Interativa",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "942228b1-6c52-4d2d-99dc-f04865b46c02",
+                "IdDaUltimaPublicacaoResultado": "f8fb109e-f04c-48f2-b63d-7b7895fb9a5a",
+                "IdDaUltimaPublicacaoAta": "b7478c82-4117-4cdc-890c-79b5b70894f5",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5589",
+                "TituloDaReuniao": "CI, às 09h, 34ª, Extraordinária",
+                "Tipo": "Extraordinária",
+                "Data": "16/11/2016",
+                "Hora": "09:00",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 13",
+                "CodigoDoLocalDaReuniao": "6",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "59",
+                        "NumeroReuniao": "34",
+                        "Sigla": "CI",
+                        "Nome": "Comissão de Serviços de Infraestrutura",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7229",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "2",
+                        "Tipo": "Deliberativa",
+                        "NomeFantasia": "Deliberativa",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "0506f88a-6203-4d13-acc6-8dc36be7c058",
+                "IdDaUltimaPublicacaoResultado": "e0b80da5-84a4-4089-ba97-60a4c1e0e93d",
+                "IdDaUltimaPublicacaoAta": "a0d38fb0-a10d-4186-ac3f-32840c36a81b",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5606",
+                "TituloDaReuniao": "CAS, às 09h, 32ª, Extraordinária",
+                "Tipo": "Extraordinária",
+                "Data": "16/11/2016",
+                "Hora": "09:00",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 9",
+                "CodigoDoLocalDaReuniao": "5",
+                "ExisteItemTerminativo": "Sim",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "40",
+                        "NumeroReuniao": "32",
+                        "Sigla": "CAS",
+                        "Nome": "Comissão de Assuntos Sociais",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7250",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "2",
+                        "Tipo": "Deliberativa",
+                        "NomeFantasia": "Deliberativa",
+                        "ExisteItemTerminativo": "Sim"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "1b7d3af2-2267-4d0b-9ea6-655a8908c839",
+                "IdDaUltimaPublicacaoResultado": "c65c2fee-028a-4976-a80f-7b2e4d02d3d0",
+                "IdDaUltimaPublicacaoAta": "0d11b354-3e10-43bc-af1a-cd7613cd8548",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5544",
+                "TituloDaReuniao": "CCJ, às 10h, 40ª, Ordinária",
+                "Tipo": "Ordinária",
+                "Data": "16/11/2016",
+                "Hora": "10:00",
+                "Situacao": "Cancelada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 3",
+                "CodigoDoLocalDaReuniao": "2",
+                "ExisteItemTerminativo": "Sim",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "34",
+                        "NumeroReuniao": "40",
+                        "Sigla": "CCJ",
+                        "Nome": "Comissão de Constituição, Justiça e Cidadania",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7176",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "2",
+                        "Tipo": "Deliberativa",
+                        "NomeFantasia": "Deliberativa",
+                        "ExisteItemTerminativo": "Sim"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Não",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "eb031378-58ba-483a-ab3f-4cb40a4cebd7",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5609",
+                "TituloDaReuniao": "CE, às 11h, 46ª, Extraordinária",
+                "Tipo": "Extraordinária",
+                "Data": "16/11/2016",
+                "Hora": "11:00",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 15",
+                "CodigoDoLocalDaReuniao": "7",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "47",
+                        "NumeroReuniao": "46",
+                        "Sigla": "CE",
+                        "Nome": "Comissão de Educação, Cultura e Esporte",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7254",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "1",
+                        "Tipo": "Audiência Pública Interativa",
+                        "NomeFantasia": "Audiência Pública Interativa",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "6f5786d8-79ea-4717-bbec-2953b0624703",
+                "IdDaUltimaPublicacaoResultado": "2fa05615-c8db-4fab-895e-28f1bdda0c8d",
+                "IdDaUltimaPublicacaoAta": "0c4c632d-7a4c-4718-b04c-b354ef189bb2",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5538",
+                "TituloDaReuniao": "CDH, às 11h:30, 100ª, Extraordinária",
+                "Tipo": "Extraordinária",
+                "Data": "16/11/2016",
+                "Hora": "11:30",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Nilo Coelho, Plenário nº 2",
+                "CodigoDoLocalDaReuniao": "1",
+                "ExisteItemTerminativo": "Sim",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "834",
+                        "NumeroReuniao": "100",
+                        "Sigla": "CDH",
+                        "Nome": "Comissão de Direitos Humanos e Legislação Participativa",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7169",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "2",
+                        "Tipo": "Deliberativa",
+                        "NomeFantasia": "Deliberativa",
+                        "ExisteItemTerminativo": "Sim"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "152341a2-38b2-4a5c-8e85-04a1af905271",
+                "IdDaUltimaPublicacaoResultado": "ff35a146-bc8d-4ef2-8940-4e683e3ee46b",
+                "IdDaUltimaPublicacaoAta": "087eb81e-fe48-4191-825a-89a12697ba14",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5605",
+                "TituloDaReuniao": "CCT, às 14h, 34ª, Extraordinária",
+                "Tipo": "Extraordinária",
+                "Data": "16/11/2016",
+                "Hora": "14:00",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 3",
+                "CodigoDoLocalDaReuniao": "2",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "1363",
+                        "NumeroReuniao": "34",
+                        "Sigla": "CCT",
+                        "Nome": "Comissão de Ciência, Tecnologia, Inovação, Comunicação e Informática",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": [
+                        {
+                            "Codigo": "7248",
+                            "NumOrdem": "1",
+                            "CodigoTipo": "1",
+                            "Tipo": "Audiência Pública Interativa",
+                            "NomeFantasia": "Audiência Pública Interativa",
+                            "ExisteItemTerminativo": "Não"
+                        },
+                        {
+                            "Codigo": "7249",
+                            "NumOrdem": "2",
+                            "CodigoTipo": "2",
+                            "Tipo": "Deliberativa",
+                            "NomeFantasia": "Deliberativa",
+                            "ExisteItemTerminativo": "Não"
+                        }
+                    ]
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "28a3c094-690e-4fb2-8cfd-c68d17ff2e3e",
+                "IdDaUltimaPublicacaoResultado": "da9767fd-0155-43f0-bcaa-73aca5732467",
+                "IdDaUltimaPublicacaoAta": "2ce634e9-f28b-4813-a5ba-f4d0eb95a94e",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5612",
+                "TituloDaReuniao": "CDH, às 14h, 26ª, Outros eventos",
+                "Tipo": "Outros eventos",
+                "Data": "16/11/2016",
+                "Hora": "14:00",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 13, Senado Federal",
+                "CodigoDoLocalDaReuniao": "999",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "834",
+                        "NumeroReuniao": "26",
+                        "Sigla": "CDH",
+                        "Nome": "Comissão de Direitos Humanos e Legislação Participativa",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7257",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "8",
+                        "Tipo": "Outros Eventos",
+                        "NomeFantasia": "Previdência Social",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "340c0eae-e2f2-48a0-8e14-556d5dfe285b",
+                "IdDaUltimaPublicacaoResultado": "2ac83095-4ec2-4753-98a5-12b6b78fd9a2",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5610",
+                "TituloDaReuniao": "CMMPV 746/2016, às 14h:30, 6ª, Reunião",
+                "Tipo": "Reunião",
+                "Data": "16/11/2016",
+                "Hora": "14:30",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Nilo Coelho, Plenário nº 6",
+                "CodigoDoLocalDaReuniao": "3",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "2065",
+                        "NumeroReuniao": "6",
+                        "Sigla": "CMMPV 746/2016",
+                        "Nome": "Comissão Mista da Medida Provisória nº 746, de 2016.",
+                        "Casa": "CN",
+                        "CodigoTipoColegiado": "42",
+                        "NomeTipoColegiado": "Comissão de Medida Provisória",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7255",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "1",
+                        "Tipo": "Audiência Pública Interativa",
+                        "NomeFantasia": "Audiência Pública Interativa",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "20c10742-e910-4db2-b9b6-09f8b7a1bb5d",
+                "IdDaUltimaPublicacaoResultado": "b30c95d4-8845-4621-91b0-06f95c4c4138",
+                "IdDaUltimaPublicacaoAta": "877b1a13-1d85-43ed-866c-b4e0809f94e8",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5604",
+                "TituloDaReuniao": "CAS, logo após a 32ª Reunião, 33ª, Extraordinária",
+                "Tipo": "Extraordinária",
+                "Data": "16/11/2016",
+                "Evento": "logo após a 32ª Reunião",
+                "horaPrevistaEvento": "10:00",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 9",
+                "CodigoDoLocalDaReuniao": "5",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "40",
+                        "NumeroReuniao": "33",
+                        "Sigla": "CAS",
+                        "Nome": "Comissão de Assuntos Sociais",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7247",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "1",
+                        "Tipo": "Audiência Pública Interativa",
+                        "NomeFantasia": "Audiência Pública Interativa",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "8018af86-76d7-4027-872d-25e111656a78",
+                "IdDaUltimaPublicacaoResultado": "a5151dea-03e1-47cc-b979-c735eb858f2f",
+                "IdDaUltimaPublicacaoAta": "7c302be9-53ee-4362-9a6f-beb8356a6a10",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5539",
+                "TituloDaReuniao": "CDH, às 09h, 101ª, Extraordinária",
+                "Tipo": "Extraordinária",
+                "Data": "17/11/2016",
+                "Hora": "09:00",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Nilo Coelho, Plenário nº 6",
+                "CodigoDoLocalDaReuniao": "3",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "834",
+                        "NumeroReuniao": "101",
+                        "Sigla": "CDH",
+                        "Nome": "Comissão de Direitos Humanos e Legislação Participativa",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7170",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "1",
+                        "Tipo": "Audiência Pública Interativa",
+                        "NomeFantasia": "Audiência Pública Interativa",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "510469e9-3f64-450a-9279-c980d0c6a762",
+                "IdDaUltimaPublicacaoResultado": "6969c1d4-2da5-423c-8bd9-617e4ac3399d",
+                "IdDaUltimaPublicacaoAta": "04d40e89-c19e-4460-a490-03d4ac038420",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5603",
+                "TituloDaReuniao": "CRE, às 10h, 31ª, Ordinária",
+                "Tipo": "Ordinária",
+                "Data": "17/11/2016",
+                "Hora": "10:00",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 3",
+                "CodigoDoLocalDaReuniao": "2",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "54",
+                        "NumeroReuniao": "31",
+                        "Sigla": "CRE",
+                        "Nome": "Comissão de Relações Exteriores e Defesa Nacional",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": [
+                        {
+                            "Codigo": "7245",
+                            "NumOrdem": "1",
+                            "CodigoTipo": "2",
+                            "Tipo": "Deliberativa",
+                            "NomeFantasia": "Sabatina",
+                            "ExisteItemTerminativo": "Não",
+                            "Finalidade": "Indicação de chefe de missão diplomática"
+                        },
+                        {
+                            "Codigo": "7253",
+                            "NumOrdem": "2",
+                            "CodigoTipo": "2",
+                            "Tipo": "Deliberativa",
+                            "NomeFantasia": "Leitura de Relatórios",
+                            "ExisteItemTerminativo": "Não"
+                        }
+                    ]
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "57e2e199-fef1-4fa0-a8d8-ea006531c448",
+                "IdDaUltimaPublicacaoResultado": "7b414322-5f16-4522-a52d-08f8d4a60e71",
+                "IdDaUltimaPublicacaoAta": "9d71992e-894d-4308-b291-fa2e05de46b8",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5579",
+                "TituloDaReuniao": "CDIR, às 11h, 8ª, Ordinária",
+                "Tipo": "Ordinária",
+                "Data": "17/11/2016",
+                "Hora": "11:00",
+                "Situacao": "Realizada",
+                "Local": "Sala de Audiências da Presidência do Senado Federal",
+                "CodigoDoLocalDaReuniao": "11",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "2015",
+                        "NumeroReuniao": "8",
+                        "Sigla": "CDIR",
+                        "Nome": "Comissão Diretora",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "109",
+                        "NomeTipoColegiado": "Mesa",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": [
+                        {
+                            "Codigo": "7216",
+                            "NumOrdem": "1",
+                            "CodigoTipo": "2",
+                            "Tipo": "Deliberativa",
+                            "NomeFantasia": "Requerimento de Informação",
+                            "ExisteItemTerminativo": "Não"
+                        },
+                        {
+                            "Codigo": "7217",
+                            "NumOrdem": "2",
+                            "CodigoTipo": "2",
+                            "Tipo": "Deliberativa",
+                            "NomeFantasia": "Requerimento de Tramitação Conjunta",
+                            "ExisteItemTerminativo": "Não"
+                        },
+                        {
+                            "Codigo": "7246",
+                            "NumOrdem": "3",
+                            "CodigoTipo": "4",
+                            "Tipo": "Reunião de Trabalho",
+                            "NomeFantasia": "Escritório de Apoio às Atividades Parlamentares",
+                            "ExisteItemTerminativo": "Não"
+                        }
+                    ]
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "0199519e-f7ba-4ccb-8f66-bad7e65dc5d2",
+                "IdDaUltimaPublicacaoResultado": "e6d7befa-ce0a-4de4-8f81-ca8267ae4aba",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5611",
+                "TituloDaReuniao": "CRA, às 14h, 9ª, Outros eventos",
+                "Tipo": "Outros eventos",
+                "Data": "18/11/2016",
+                "Hora": "14:00",
+                "Situacao": "Realizada",
+                "Local": "Sala de Reuniões 1/2 do Grande Hotel de Juazeiro (Lazar), Juazeiro - Bahia",
+                "CodigoDoLocalDaReuniao": "999",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "1307",
+                        "NumeroReuniao": "9",
+                        "Sigla": "CRA",
+                        "Nome": "Comissão de Agricultura e Reforma Agrária",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7256",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "8",
+                        "Tipo": "Outros Eventos",
+                        "NomeFantasia": "9º Seminiário do Ciclo de Palestras e Debates",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "e592f769-431a-4a7d-9f79-34f52f492f8b",
+                "IdDaUltimaPublicacaoResultado": "8c073b66-89e3-4999-b159-4be696250db8",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5622",
+                "TituloDaReuniao": "CDH,CAE, às 09h, 8ª, Conjunta",
+                "Tipo": "Conjunta",
+                "NumeroConjunta": "8",
+                "Data": "21/11/2016",
+                "Hora": "09:00",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Nilo Coelho, Plenário nº 6",
+                "CodigoDoLocalDaReuniao": "3",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": [
+                        {
+                            "CodigoColegiado": "834",
+                            "NumeroReuniao": "102",
+                            "Sigla": "CDH",
+                            "Nome": "Comissão de Direitos Humanos e Legislação Participativa",
+                            "Casa": "SF",
+                            "CodigoTipoColegiado": "21",
+                            "NomeTipoColegiado": "Comissão Permanente",
+                            "ComissaoSuperior": null
+                        },
+                        {
+                            "CodigoColegiado": "38",
+                            "NumeroReuniao": "37",
+                            "Sigla": "CAE",
+                            "Nome": "Comissão de Assuntos Econômicos",
+                            "Casa": "SF",
+                            "CodigoTipoColegiado": "21",
+                            "NomeTipoColegiado": "Comissão Permanente",
+                            "ComissaoSuperior": null
+                        }
+                    ]
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7268",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "1",
+                        "Tipo": "Audiência Pública Interativa",
+                        "NomeFantasia": "Audiência Pública Interativa",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "8d708947-6274-4fdb-994d-808961d516f1",
+                "IdDaUltimaPublicacaoResultado": "bb41888f-c659-4b83-acc0-257f3039aa6a",
+                "IdDaUltimaPublicacaoAta": "8ea633cd-ac83-43f5-8b9e-167764450115",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5569",
+                "TituloDaReuniao": "CJDB, às 09h:30, 12ª, Reunião",
+                "Tipo": "Reunião",
+                "Data": "21/11/2016",
+                "Hora": "09:30",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 15",
+                "CodigoDoLocalDaReuniao": "7",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "1992",
+                        "NumeroReuniao": "12",
+                        "Sigla": "CJDB",
+                        "Nome": "Comissão de Juristas responsável pela elaboração de anteprojeto de Lei Geral do Desporto Brasileiro",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "24",
+                        "NomeTipoColegiado": "Comissão Temporária Interna",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7204",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "4",
+                        "Tipo": "Reunião de Trabalho",
+                        "NomeFantasia": "Apresentação da Minuta do Anteprojeto",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "1bbb0d4e-585e-43fd-8e2c-e47c033d3623",
+                "IdDaUltimaPublicacaoResultado": "05782a53-0c7d-44a9-967f-21ad02a60303",
+                "IdDaUltimaPublicacaoAta": "673ead1f-3df7-4f44-a801-256a179fd35b",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5631",
+                "TituloDaReuniao": "CAE,CAESTN, às 19h, 9ª, Conjunta",
+                "Tipo": "Conjunta",
+                "NumeroConjunta": "9",
+                "Data": "21/11/2016",
+                "Hora": "19:00",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 19",
+                "CodigoDoLocalDaReuniao": "8",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": [
+                        {
+                            "CodigoColegiado": "38",
+                            "NumeroReuniao": "38",
+                            "Sigla": "CAE",
+                            "Nome": "Comissão de Assuntos Econômicos",
+                            "Casa": "SF",
+                            "CodigoTipoColegiado": "21",
+                            "NomeTipoColegiado": "Comissão Permanente",
+                            "ComissaoSuperior": null
+                        },
+                        {
+                            "CodigoColegiado": "1561",
+                            "NumeroReuniao": "1",
+                            "Sigla": "CAESTN",
+                            "Nome": "Subcomissão Permanente de Avaliação do Sistema Tributário Nacional",
+                            "Casa": "SF",
+                            "CodigoTipoColegiado": "66",
+                            "NomeTipoColegiado": "Subcomissão Permanente",
+                            "ComissaoSuperior": {
+                                "Sigla": "CAE",
+                                "Nome": "Comissão de Assuntos Econômicos"
+                            }
+                        }
+                    ]
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7280",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "1",
+                        "Tipo": "Audiência Pública Interativa",
+                        "NomeFantasia": "Audiência Pública Interativa",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "7a283978-f297-4acb-a002-cad3654ac555",
+                "IdDaUltimaPublicacaoResultado": "74b9e0bf-f975-4cf2-a60c-d65239d771ec",
+                "IdDaUltimaPublicacaoAta": "cccd3ed8-e914-428d-9ed1-b0a6367e77ab",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5628",
+                "TituloDaReuniao": "CCT, às 08h:45, 35ª, Extraordinária",
+                "Tipo": "Extraordinária",
+                "Data": "22/11/2016",
+                "Hora": "08:45",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 3",
+                "CodigoDoLocalDaReuniao": "2",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "1363",
+                        "NumeroReuniao": "35",
+                        "Sigla": "CCT",
+                        "Nome": "Comissão de Ciência, Tecnologia, Inovação, Comunicação e Informática",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": [
+                        {
+                            "Codigo": "7277",
+                            "NumOrdem": "1",
+                            "CodigoTipo": "1",
+                            "Tipo": "Audiência Pública Interativa",
+                            "NomeFantasia": "Audiência Pública Interativa",
+                            "ExisteItemTerminativo": "Não"
+                        },
+                        {
+                            "Codigo": "7318",
+                            "NumOrdem": "2",
+                            "CodigoTipo": "2",
+                            "Tipo": "Deliberativa",
+                            "NomeFantasia": "Deliberativa",
+                            "ExisteItemTerminativo": "Não"
+                        }
+                    ]
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "4ac86ce8-04cc-49f9-8ef9-d8e7e9361d61",
+                "IdDaUltimaPublicacaoResultado": "05adefe2-202e-4cfa-b463-99135160d85a",
+                "IdDaUltimaPublicacaoAta": "10a910d8-e8f9-4f3b-9fe6-1465dd601abe",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5642",
+                "TituloDaReuniao": "CDH, às 09h, 103ª, Extraordinária",
+                "Tipo": "Extraordinária",
+                "Data": "22/11/2016",
+                "Hora": "09:00",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 13",
+                "CodigoDoLocalDaReuniao": "6",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "834",
+                        "NumeroReuniao": "103",
+                        "Sigla": "CDH",
+                        "Nome": "Comissão de Direitos Humanos e Legislação Participativa",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7293",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "1",
+                        "Tipo": "Audiência Pública Interativa",
+                        "NomeFantasia": "Audiência Pública",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "388c890b-4aee-4277-a999-2db90b39381b",
+                "IdDaUltimaPublicacaoResultado": "fe53b362-58c8-45f5-b23b-1fcb331141c2",
+                "IdDaUltimaPublicacaoAta": "20966034-0242-4d8d-adc5-1a59050a4a12",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5616",
+                "TituloDaReuniao": "CMA, às 09h:30, 19ª, Extraordinária",
+                "Tipo": "Extraordinária",
+                "Data": "22/11/2016",
+                "Hora": "09:30",
+                "Situacao": "Cancelada",
+                "Local": "Anexo II, Ala Senador Nilo Coelho, Plenário nº 6",
+                "CodigoDoLocalDaReuniao": "3",
+                "ExisteItemTerminativo": "Sim",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "50",
+                        "NumeroReuniao": "19",
+                        "Sigla": "CMA",
+                        "Nome": "Comissão de Meio Ambiente, Defesa do Consumidor e Fiscalização e Controle",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7261",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "2",
+                        "Tipo": "Deliberativa",
+                        "NomeFantasia": "Deliberativa",
+                        "ExisteItemTerminativo": "Sim"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Não",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "b426deca-3a15-4523-bba9-a37304b10016",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5626",
+                "TituloDaReuniao": "CAE, às 10h, 39ª, Ordinária",
+                "Tipo": "Ordinária",
+                "Data": "22/11/2016",
+                "Hora": "10:00",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 19",
+                "CodigoDoLocalDaReuniao": "8",
+                "ExisteItemTerminativo": "Sim",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "38",
+                        "NumeroReuniao": "39",
+                        "Sigla": "CAE",
+                        "Nome": "Comissão de Assuntos Econômicos",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7274",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "2",
+                        "Tipo": "Deliberativa",
+                        "NomeFantasia": "Deliberativa",
+                        "ExisteItemTerminativo": "Sim"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "85376721-fab2-4ba9-8f64-9a18b7ae4267",
+                "IdDaUltimaPublicacaoResultado": "1ef628ac-e91b-44c4-8941-7378cc98ea91",
+                "IdDaUltimaPublicacaoAta": "b9ba4d42-07f9-495e-afcc-dae6295528a0",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5624",
+                "TituloDaReuniao": "CTG, às 11h, 16ª, Extraordinária",
+                "Tipo": "Extraordinária",
+                "Data": "22/11/2016",
+                "Hora": "11:00",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 9",
+                "CodigoDoLocalDaReuniao": "5",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "1956",
+                        "NumeroReuniao": "16",
+                        "Sigla": "CTG",
+                        "Nome": "Comissão de Transparência e Governança Pública",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7270",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "1",
+                        "Tipo": "Audiência Pública Interativa",
+                        "NomeFantasia": "Audiência Pública Interativa",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "e305b272-dc3d-49f5-9060-aca154a5f3ce",
+                "IdDaUltimaPublicacaoResultado": "2b16998e-83f0-493a-9e9a-2d38a77ac33b",
+                "IdDaUltimaPublicacaoAta": "ec777052-a1c5-4d11-95cd-68769771e5b9",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5621",
+                "TituloDaReuniao": "CE, às 11h:45, 47ª, Extraordinária",
+                "Tipo": "Extraordinária",
+                "Data": "22/11/2016",
+                "Hora": "11:45",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 15",
+                "CodigoDoLocalDaReuniao": "7",
+                "ExisteItemTerminativo": "Sim",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "47",
+                        "NumeroReuniao": "47",
+                        "Sigla": "CE",
+                        "Nome": "Comissão de Educação, Cultura e Esporte",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7267",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "2",
+                        "Tipo": "Deliberativa",
+                        "NomeFantasia": "Deliberativa",
+                        "ExisteItemTerminativo": "Sim"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "1126c202-a14c-4d5e-9bbc-48e44ec592c9",
+                "IdDaUltimaPublicacaoResultado": "91bf1d2f-501a-46f5-a7a0-afdac20691ac",
+                "IdDaUltimaPublicacaoAta": "e59a8f31-0823-4863-b41a-dbd417a50714",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5618",
+                "TituloDaReuniao": "CMA, às 14h, 19ª, Extraordinária",
+                "Tipo": "Extraordinária",
+                "Data": "22/11/2016",
+                "Hora": "14:00",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Nilo Coelho, Plenário nº 2",
+                "CodigoDoLocalDaReuniao": "1",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "50",
+                        "NumeroReuniao": "19",
+                        "Sigla": "CMA",
+                        "Nome": "Comissão de Meio Ambiente, Defesa do Consumidor e Fiscalização e Controle",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7264",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "1",
+                        "Tipo": "Audiência Pública Interativa",
+                        "NomeFantasia": "Audiência Pública Interativa",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "90380928-2ef8-475f-b098-045ff3a28181",
+                "IdDaUltimaPublicacaoResultado": "157b817d-7661-4989-b5da-35befc1ea85f",
+                "IdDaUltimaPublicacaoAta": "629df446-e4da-4d94-9d93-ca7fc1ceabef",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5634",
+                "TituloDaReuniao": "CMMPV 746/2016, às 14h:30, 7ª, Reunião",
+                "Tipo": "Reunião",
+                "Data": "22/11/2016",
+                "Hora": "14:30",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Nilo Coelho, Plenário nº 6",
+                "CodigoDoLocalDaReuniao": "3",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "2065",
+                        "NumeroReuniao": "7",
+                        "Sigla": "CMMPV 746/2016",
+                        "Nome": "Comissão Mista da Medida Provisória nº 746, de 2016.",
+                        "Casa": "CN",
+                        "CodigoTipoColegiado": "42",
+                        "NomeTipoColegiado": "Comissão de Medida Provisória",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7284",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "1",
+                        "Tipo": "Audiência Pública Interativa",
+                        "NomeFantasia": "Audiência Pública Interativa",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "cf4e4731-3ab8-4f73-a50c-14b87761e834",
+                "IdDaUltimaPublicacaoResultado": "9ffd1341-1956-47d1-abb4-ec1ab6d23aca",
+                "IdDaUltimaPublicacaoAta": "ba222ae0-fcd5-4ce9-8b4f-26e48544a58c",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5637",
+                "TituloDaReuniao": "CMMPV 744/2016, às 14h:30, 2ª, Reunião",
+                "Tipo": "Reunião",
+                "Data": "22/11/2016",
+                "Hora": "14:30",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 9",
+                "CodigoDoLocalDaReuniao": "5",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "2062",
+                        "NumeroReuniao": "2",
+                        "Sigla": "CMMPV 744/2016",
+                        "Nome": "Comissão Mista da Medida Provisória nº 744, de 2016",
+                        "Casa": "CN",
+                        "CodigoTipoColegiado": "42",
+                        "NomeTipoColegiado": "Comissão de Medida Provisória",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7287",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "2",
+                        "Tipo": "Deliberativa",
+                        "NomeFantasia": "Deliberativa",
+                        "ExisteItemTerminativo": "Não",
+                        "Finalidade": "Plano de Trabalho"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "c733a6e3-fec5-4d03-ab1c-140d3eaa1c52",
+                "IdDaUltimaPublicacaoResultado": "f116169e-9c51-4eaa-93e5-3f4fb1fc6791",
+                "IdDaUltimaPublicacaoAta": "e5a37c59-5bde-432c-9468-4c3fbe8ad233",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5639",
+                "TituloDaReuniao": "CMMPV 745/2016, às 14h:30, 2ª, Reunião",
+                "Tipo": "Reunião",
+                "Data": "22/11/2016",
+                "Hora": "14:30",
+                "Situacao": "Continua em 23/11/2016 às 14h30",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 15",
+                "CodigoDoLocalDaReuniao": "7",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "2064",
+                        "NumeroReuniao": "2",
+                        "Sigla": "CMMPV 745/2016",
+                        "Nome": "Comissão Mista da Medida Provisória nº 745, de 2016.",
+                        "Casa": "CN",
+                        "CodigoTipoColegiado": "42",
+                        "NomeTipoColegiado": "Comissão de Medida Provisória",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7289",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "2",
+                        "Tipo": "Deliberativa",
+                        "NomeFantasia": "Deliberativa",
+                        "ExisteItemTerminativo": "Não",
+                        "Finalidade": "Apreciação de Relatório"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Não",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "CodigoReuniaoDeContinuacao": "5666",
+                "ReuniaoDeContinuacao": {
+                    "Codigo": "5666",
+                    "Tipo": "Reunião",
+                    "Data": "23/11/2016",
+                    "Hora": "14:30",
+                    "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 13"
+                },
+                "IdDaUltimaPublicacaoPautaSimples": "bd39172e-2a09-4625-82fa-eab1e6e92391",
+                "IdDaUltimaPublicacaoResultado": "ca103a74-7e61-498a-8c51-be817849224b",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5649",
+                "TituloDaReuniao": "CDH, às 15h, 27ª, Outros eventos",
+                "Tipo": "Outros eventos",
+                "Data": "22/11/2016",
+                "Hora": "15:00",
+                "Situacao": "Realizada",
+                "Local": "Plenário nº 13, Ala Senador Alexandre Costa, Anexo II, Senado Federal",
+                "CodigoDoLocalDaReuniao": "999",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "834",
+                        "NumeroReuniao": "27",
+                        "Sigla": "CDH",
+                        "Nome": "Comissão de Direitos Humanos e Legislação Participativa",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7300",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "8",
+                        "Tipo": "Outros Eventos",
+                        "NomeFantasia": "Preparatória de audiência pública",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "3c18aae3-1c65-4dcb-849d-3c57c62f76b1",
+                "IdDaUltimaPublicacaoResultado": "9e24ab17-56bc-428f-abd5-d8cf000fcef1",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5629",
+                "TituloDaReuniao": "CTG, Após a 16ª Reunião, 17ª, Extraordinária",
+                "Tipo": "Extraordinária",
+                "Data": "22/11/2016",
+                "Evento": "Após a 16ª Reunião",
+                "horaPrevistaEvento": "11:01",
+                "Situacao": "Não realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 9",
+                "CodigoDoLocalDaReuniao": "5",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "1956",
+                        "NumeroReuniao": "17",
+                        "Sigla": "CTG",
+                        "Nome": "Comissão de Transparência e Governança Pública",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7278",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "2",
+                        "Tipo": "Deliberativa",
+                        "NomeFantasia": "Deliberativa",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Não",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "b1169cf3-36e4-4d3b-896d-1def1ff68bcd",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5651",
+                "TituloDaReuniao": "CI, às 08h:30, 35ª, Extraordinária",
+                "Tipo": "Extraordinária",
+                "Data": "23/11/2016",
+                "Hora": "08:30",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 13",
+                "CodigoDoLocalDaReuniao": "6",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "59",
+                        "NumeroReuniao": "35",
+                        "Sigla": "CI",
+                        "Nome": "Comissão de Serviços de Infraestrutura",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7302",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "2",
+                        "Tipo": "Deliberativa",
+                        "NomeFantasia": "Deliberativa",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "d9f2e39d-b845-44d6-8a90-01c8e720b02a",
+                "IdDaUltimaPublicacaoResultado": "bd4c3343-ca50-4ba4-aa9b-d715a3ec699b",
+                "IdDaUltimaPublicacaoAta": "c386a589-0489-4f80-b002-ec8e74099bfc",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5617",
+                "TituloDaReuniao": "CAS, às 09h, 34ª, Extraordinária",
+                "Tipo": "Extraordinária",
+                "Data": "23/11/2016",
+                "Hora": "09:00",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 9",
+                "CodigoDoLocalDaReuniao": "5",
+                "ExisteItemTerminativo": "Sim",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "40",
+                        "NumeroReuniao": "34",
+                        "Sigla": "CAS",
+                        "Nome": "Comissão de Assuntos Sociais",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": [
+                        {
+                            "Codigo": "7262",
+                            "NumOrdem": "1",
+                            "CodigoTipo": "2",
+                            "Tipo": "Deliberativa",
+                            "NomeFantasia": "Escolha de Autoridade (Leitura de Relatório)",
+                            "ExisteItemTerminativo": "Não"
+                        },
+                        {
+                            "Codigo": "7263",
+                            "NumOrdem": "2",
+                            "CodigoTipo": "2",
+                            "Tipo": "Deliberativa",
+                            "NomeFantasia": "Deliberativa",
+                            "ExisteItemTerminativo": "Sim"
+                        }
+                    ]
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "02eb0a56-132f-4407-9173-72314b7a9fd5",
+                "IdDaUltimaPublicacaoResultado": "2c7b0a5d-cb0e-49c8-9c44-0ca19fe8bf66",
+                "IdDaUltimaPublicacaoAta": "85ae5179-2e8d-41bb-998c-d1d99c4e1964",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5623",
+                "TituloDaReuniao": "CDR, às 09h, 20ª, Extraordinária",
+                "Tipo": "Extraordinária",
+                "Data": "23/11/2016",
+                "Hora": "09:00",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 19",
+                "CodigoDoLocalDaReuniao": "8",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "1306",
+                        "NumeroReuniao": "20",
+                        "Sigla": "CDR",
+                        "Nome": "Comissão de Desenvolvimento Regional e Turismo",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7269",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "1",
+                        "Tipo": "Audiência Pública Interativa",
+                        "NomeFantasia": "Audiência Pública Interativa",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "060fda60-9158-45c0-995f-438904e471af",
+                "IdDaUltimaPublicacaoResultado": "77490c80-97cc-4bb8-bb6c-46d19c9199ec",
+                "IdDaUltimaPublicacaoAta": "0e3ea51e-b63d-4a1e-9b64-efe937057d5c",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5648",
+                "TituloDaReuniao": "CPIDFDQ, às 09h, 25ª, Reunião",
+                "Tipo": "Reunião",
+                "Data": "23/11/2016",
+                "Hora": "09:00",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 15",
+                "CodigoDoLocalDaReuniao": "7",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "1928",
+                        "NumeroReuniao": "25",
+                        "Sigla": "CPIDFDQ",
+                        "Nome": "CPI do Futebol - 2015",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "22",
+                        "NomeTipoColegiado": "Comissão Parlamentar de Inquérito",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7299",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "4",
+                        "Tipo": "Reunião de Trabalho",
+                        "NomeFantasia": "Reunião de Trabalho",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "137a42fa-13c0-41a2-b9f1-f9652f0abcf5",
+                "IdDaUltimaPublicacaoResultado": "7265b4b5-2d5b-4fde-9679-abe8149f6cc0",
+                "IdDaUltimaPublicacaoAta": "a3067013-5001-4d8c-8607-97a6c4b574ee",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5614",
+                "TituloDaReuniao": "CCJ, às 10h, 40ª, Ordinária",
+                "Tipo": "Ordinária",
+                "Data": "23/11/2016",
+                "Hora": "10:00",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 3",
+                "CodigoDoLocalDaReuniao": "2",
+                "ExisteItemTerminativo": "Sim",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "34",
+                        "NumeroReuniao": "40",
+                        "Sigla": "CCJ",
+                        "Nome": "Comissão de Constituição, Justiça e Cidadania",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7259",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "2",
+                        "Tipo": "Deliberativa",
+                        "NomeFantasia": "Deliberativa",
+                        "ExisteItemTerminativo": "Sim"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "9966c29c-3fbd-4847-b985-573d01c02655",
+                "IdDaUltimaPublicacaoResultado": "2dd01be9-d5cc-44ae-9edc-01ae09dc024f",
+                "IdDaUltimaPublicacaoAta": "3572f1cd-4c9a-4bea-adf5-8013219049ef",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5620",
+                "TituloDaReuniao": "CDH, às 10h, 104ª, Extraordinária",
+                "Tipo": "Extraordinária",
+                "Data": "23/11/2016",
+                "Hora": "10:00",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Nilo Coelho, Plenário nº 6",
+                "CodigoDoLocalDaReuniao": "3",
+                "ExisteItemTerminativo": "Sim",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "834",
+                        "NumeroReuniao": "104",
+                        "Sigla": "CDH",
+                        "Nome": "Comissão de Direitos Humanos e Legislação Participativa",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7266",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "2",
+                        "Tipo": "Deliberativa",
+                        "NomeFantasia": "Deliberativa",
+                        "ExisteItemTerminativo": "Sim"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "234d93f8-54c3-4fe6-82f9-c34cee9dd373",
+                "IdDaUltimaPublicacaoResultado": "9da711d6-07b4-4cbb-928a-395309e6eaed",
+                "IdDaUltimaPublicacaoAta": "70c4bcef-6609-4fd6-b4d8-4aa2ed447a0b",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5625",
+                "TituloDaReuniao": "CE,CAS, às 11h, 10ª, Conjunta",
+                "Tipo": "Conjunta",
+                "NumeroConjunta": "10",
+                "Data": "23/11/2016",
+                "Hora": "11:00",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Nilo Coelho, Plenário nº 2",
+                "CodigoDoLocalDaReuniao": "1",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": [
+                        {
+                            "CodigoColegiado": "47",
+                            "NumeroReuniao": "48",
+                            "Sigla": "CE",
+                            "Nome": "Comissão de Educação, Cultura e Esporte",
+                            "Casa": "SF",
+                            "CodigoTipoColegiado": "21",
+                            "NomeTipoColegiado": "Comissão Permanente",
+                            "ComissaoSuperior": null
+                        },
+                        {
+                            "CodigoColegiado": "40",
+                            "NumeroReuniao": "35",
+                            "Sigla": "CAS",
+                            "Nome": "Comissão de Assuntos Sociais",
+                            "Casa": "SF",
+                            "CodigoTipoColegiado": "21",
+                            "NomeTipoColegiado": "Comissão Permanente",
+                            "ComissaoSuperior": null
+                        }
+                    ]
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7273",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "1",
+                        "Tipo": "Audiência Pública Interativa",
+                        "NomeFantasia": "Audiência Pública Interativa",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "d069c392-4a26-4334-8064-556168bc8b9d",
+                "IdDaUltimaPublicacaoResultado": "9b80c2b2-d4e3-412c-a5df-dccf0522ce2f",
+                "IdDaUltimaPublicacaoAta": "6c0200e6-17fc-4e21-ab26-538921824e4f",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5627",
+                "TituloDaReuniao": "CEOI, às 11h, 2ª, Reunião",
+                "Tipo": "Reunião",
+                "Data": "23/11/2016",
+                "Hora": "11:00",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 15",
+                "CodigoDoLocalDaReuniao": "7",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "2061",
+                        "NumeroReuniao": "2",
+                        "Sigla": "CEOI",
+                        "Nome": "Comissão Especial das Obras Inacabadas",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "24",
+                        "NomeTipoColegiado": "Comissão Temporária Interna",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": [
+                        {
+                            "Codigo": "7275",
+                            "NumOrdem": "1",
+                            "CodigoTipo": "5",
+                            "Tipo": "Eleição",
+                            "NomeFantasia": "Eleição",
+                            "ExisteItemTerminativo": "Não"
+                        },
+                        {
+                            "Codigo": "7276",
+                            "NumOrdem": "2",
+                            "CodigoTipo": "4",
+                            "Tipo": "Reunião de Trabalho",
+                            "NomeFantasia": "Reunião de Trabalho",
+                            "ExisteItemTerminativo": "Não"
+                        }
+                    ]
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "28b18dc6-7d78-42aa-af54-e62631a404a6",
+                "IdDaUltimaPublicacaoResultado": "68c5e94c-111f-4d39-9e95-fbacd74ebf64",
+                "IdDaUltimaPublicacaoAta": "bd5a79a8-4730-48d6-a765-21f7be1f9378",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5650",
+                "TituloDaReuniao": "CSF, às 11h, 13ª, Reunião",
+                "Tipo": "Reunião",
+                "Data": "23/11/2016",
+                "Hora": "11:00",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 13",
+                "CodigoDoLocalDaReuniao": "6",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "1716",
+                        "NumeroReuniao": "13",
+                        "Sigla": "CSF",
+                        "Nome": "Comissão Senado do Futuro",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": [
+                        {
+                            "Codigo": "7301",
+                            "NumOrdem": "1",
+                            "CodigoTipo": "4",
+                            "Tipo": "Reunião de Trabalho",
+                            "NomeFantasia": "Apreciação de relatório de avaliação de Política Pública",
+                            "ExisteItemTerminativo": "Não"
+                        },
+                        {
+                            "Codigo": "7320",
+                            "NumOrdem": "2",
+                            "CodigoTipo": "2",
+                            "Tipo": "Deliberativa",
+                            "NomeFantasia": "Deliberativa",
+                            "ExisteItemTerminativo": "Não"
+                        }
+                    ]
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "550589e9-f4f6-44f2-8c27-ece986f25c43",
+                "IdDaUltimaPublicacaoResultado": "6f653b11-7745-4cb5-813c-1f9766b6e4ad",
+                "IdDaUltimaPublicacaoAta": "afa31b58-a75f-43cf-ab45-a09df4bb2fcd",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5619",
+                "TituloDaReuniao": "CEDN, às 14h:30, 9ª, Ordinária",
+                "Tipo": "Ordinária",
+                "Data": "23/11/2016",
+                "Hora": "14:30",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 3",
+                "CodigoDoLocalDaReuniao": "2",
+                "ExisteItemTerminativo": "Sim",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "2034",
+                        "NumeroReuniao": "9",
+                        "Sigla": "CEDN",
+                        "Nome": "Comissão Especial do Desenvolvimento Nacional",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "24",
+                        "NomeTipoColegiado": "Comissão Temporária Interna",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7265",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "2",
+                        "Tipo": "Deliberativa",
+                        "NomeFantasia": "Deliberativa",
+                        "ExisteItemTerminativo": "Sim"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "0a978f11-0f4f-4471-a5a5-059536119499",
+                "IdDaUltimaPublicacaoResultado": "cd97ad53-94a0-429e-9541-6542c000a365",
+                "IdDaUltimaPublicacaoAta": "4660efe7-f0de-456c-bd8c-c45930a157e3",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5635",
+                "TituloDaReuniao": "CMMPV 746/2016, às 14h:30, 8ª, Reunião",
+                "Tipo": "Reunião",
+                "Data": "23/11/2016",
+                "Hora": "14:30",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Nilo Coelho, Plenário nº 6",
+                "CodigoDoLocalDaReuniao": "3",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "2065",
+                        "NumeroReuniao": "8",
+                        "Sigla": "CMMPV 746/2016",
+                        "Nome": "Comissão Mista da Medida Provisória nº 746, de 2016.",
+                        "Casa": "CN",
+                        "CodigoTipoColegiado": "42",
+                        "NomeTipoColegiado": "Comissão de Medida Provisória",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7285",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "1",
+                        "Tipo": "Audiência Pública Interativa",
+                        "NomeFantasia": "Audiência Pública Interativa",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "1b0499bd-ae81-430c-b9f6-9ef19d7369cf",
+                "IdDaUltimaPublicacaoResultado": "f122540c-0288-46c4-8492-ee133a0624b5",
+                "IdDaUltimaPublicacaoAta": "32e1c1d2-6eb5-40b2-9100-1c82e37cb34d",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5638",
+                "TituloDaReuniao": "CMMC, às 14h:30, 12ª, Reunião",
+                "Tipo": "Reunião",
+                "Data": "23/11/2016",
+                "Hora": "14:30",
+                "Situacao": "Cancelada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 9",
+                "CodigoDoLocalDaReuniao": "5",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "1450",
+                        "NumeroReuniao": "12",
+                        "Sigla": "CMMC",
+                        "Nome": "Comissão Mista Permanente sobre Mudanças Climáticas",
+                        "Casa": "CN",
+                        "CodigoTipoColegiado": "41",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": [
+                        {
+                            "Codigo": "7288",
+                            "NumOrdem": "1",
+                            "CodigoTipo": "1",
+                            "Tipo": "Audiência Pública Interativa",
+                            "NomeFantasia": "Audiência Pública Interativa",
+                            "ExisteItemTerminativo": "Não"
+                        },
+                        {
+                            "Codigo": "7290",
+                            "NumOrdem": "2",
+                            "CodigoTipo": "2",
+                            "Tipo": "Deliberativa",
+                            "NomeFantasia": "Deliberativa",
+                            "ExisteItemTerminativo": "Não",
+                            "Finalidade": "Apreciação de Requerimento"
+                        }
+                    ]
+                },
+                "Publicada": "Sim",
+                "Realizada": "Não",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "bebdee29-6897-41c4-90d3-436e7df62a20",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5666",
+                "TituloDaReuniao": "CMMPV 745/2016, às 14h:30, 2ª, Reunião",
+                "Tipo": "Reunião",
+                "Data": "23/11/2016",
+                "Hora": "14:30",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 13",
+                "CodigoDoLocalDaReuniao": "6",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "2064",
+                        "NumeroReuniao": "2",
+                        "Sigla": "CMMPV 745/2016",
+                        "Nome": "Comissão Mista da Medida Provisória nº 745, de 2016.",
+                        "Casa": "CN",
+                        "CodigoTipoColegiado": "42",
+                        "NomeTipoColegiado": "Comissão de Medida Provisória",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7319",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "2",
+                        "Tipo": "Deliberativa",
+                        "NomeFantasia": "Deliberativa",
+                        "ExisteItemTerminativo": "Não",
+                        "Finalidade": "Apreciação de Relatório"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "CodigoReuniaoAnteriorSuspensa": "5639",
+                "IdDaUltimaPublicacaoPautaSimples": "5de2187c-f00d-465c-b9a1-ff51aab96c6a",
+                "IdDaUltimaPublicacaoResultado": "ca103a74-7e61-498a-8c51-be817849224b",
+                "IdDaUltimaPublicacaoAta": "b174950d-f42c-49e8-8af9-e2d4226258d5",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5641",
+                "TituloDaReuniao": "CMMPV 749/2016, às 15h:30, 2ª, Reunião",
+                "Tipo": "Reunião",
+                "Data": "23/11/2016",
+                "Hora": "15:30",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Nilo Coelho, Plenário nº 2",
+                "CodigoDoLocalDaReuniao": "1",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "2068",
+                        "NumeroReuniao": "2",
+                        "Sigla": "CMMPV 749/2016",
+                        "Nome": "Comissão Mista da Medida Provisória nº 749, de 2016",
+                        "Casa": "CN",
+                        "CodigoTipoColegiado": "42",
+                        "NomeTipoColegiado": "Comissão de Medida Provisória",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7292",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "1",
+                        "Tipo": "Audiência Pública Interativa",
+                        "NomeFantasia": "Audiência Pública Interativa",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "2ed94d54-717a-4fd5-a90f-d78c8c63a72a",
+                "IdDaUltimaPublicacaoResultado": "306e63ee-e87c-4d8c-b066-63337dcecbd7",
+                "IdDaUltimaPublicacaoAta": "0ef36f7a-8d68-4d59-b058-f36f31890559",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5640",
+                "TituloDaReuniao": "CE, às 16h, 49ª, Extraordinária",
+                "Tipo": "Extraordinária",
+                "Data": "23/11/2016",
+                "Hora": "16:00",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 15",
+                "CodigoDoLocalDaReuniao": "7",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "47",
+                        "NumeroReuniao": "49",
+                        "Sigla": "CE",
+                        "Nome": "Comissão de Educação, Cultura e Esporte",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7291",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "4",
+                        "Tipo": "Reunião de Trabalho",
+                        "NomeFantasia": "Reunião de Trabalho",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "fd8d2158-20ea-4808-b519-a65667e7b8dc",
+                "IdDaUltimaPublicacaoResultado": "617a405e-c398-4491-b9dc-14508b00060c",
+                "IdDaUltimaPublicacaoAta": "c028d32e-2b13-4df5-ac4b-953776446238",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5647",
+                "TituloDaReuniao": "CRA, às 08h, 30ª, Extraordinária",
+                "Tipo": "Extraordinária",
+                "Data": "24/11/2016",
+                "Hora": "08:00",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Nilo Coelho, Plenário nº 2",
+                "CodigoDoLocalDaReuniao": "1",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "1307",
+                        "NumeroReuniao": "30",
+                        "Sigla": "CRA",
+                        "Nome": "Comissão de Agricultura e Reforma Agrária",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7298",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "1",
+                        "Tipo": "Audiência Pública Interativa",
+                        "NomeFantasia": "Audiência Pública Interativa",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "00b20749-c455-45f8-a001-e6b02e862d84",
+                "IdDaUltimaPublicacaoResultado": "d17a3307-4701-4dd2-91fe-83a6867e931c",
+                "IdDaUltimaPublicacaoAta": "70e60086-6d67-4c29-9129-4e9afde151ef",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5585",
+                "TituloDaReuniao": "CDH, às 09h, 105ª, Extraordinária",
+                "Tipo": "Extraordinária",
+                "Data": "24/11/2016",
+                "Hora": "09:00",
+                "Situacao": "Cancelada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 13",
+                "CodigoDoLocalDaReuniao": "6",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "834",
+                        "NumeroReuniao": "105",
+                        "Sigla": "CDH",
+                        "Nome": "Comissão de Direitos Humanos e Legislação Participativa",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7225",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "1",
+                        "Tipo": "Audiência Pública Interativa",
+                        "NomeFantasia": "Audiência Pública Interativa",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Não",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "628fdecf-679e-436a-a318-1ae9d6b93149",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5669",
+                "TituloDaReuniao": "CMMPV 744/2016, às 09h, 3ª, Reunião",
+                "Tipo": "Reunião",
+                "Data": "24/11/2016",
+                "Hora": "09:00",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 9",
+                "CodigoDoLocalDaReuniao": "5",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "2062",
+                        "NumeroReuniao": "3",
+                        "Sigla": "CMMPV 744/2016",
+                        "Nome": "Comissão Mista da Medida Provisória nº 744, de 2016",
+                        "Casa": "CN",
+                        "CodigoTipoColegiado": "42",
+                        "NomeTipoColegiado": "Comissão de Medida Provisória",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7324",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "1",
+                        "Tipo": "Audiência Pública Interativa",
+                        "NomeFantasia": "Audiência Pública Interativa",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "2c7232c7-72da-4f58-ad9e-de79c924df21",
+                "IdDaUltimaPublicacaoResultado": "70a57622-7d0b-4602-8582-d78da52d60f3",
+                "IdDaUltimaPublicacaoAta": "b7572246-70da-4448-84ea-31ae47282626",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5654",
+                "TituloDaReuniao": "CJDB, às 09h:30, 13ª, Reunião",
+                "Tipo": "Reunião",
+                "Data": "24/11/2016",
+                "Hora": "09:30",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 15",
+                "CodigoDoLocalDaReuniao": "7",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "1992",
+                        "NumeroReuniao": "13",
+                        "Sigla": "CJDB",
+                        "Nome": "Comissão de Juristas responsável pela elaboração de anteprojeto de Lei Geral do Desporto Brasileiro",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "24",
+                        "NomeTipoColegiado": "Comissão Temporária Interna",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7306",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "4",
+                        "Tipo": "Reunião de Trabalho",
+                        "NomeFantasia": "Apreciação do Relatório Final",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "95dd8a0b-3304-476c-8bf8-643958b67cb1",
+                "IdDaUltimaPublicacaoResultado": "0b21e5ba-60f0-4d37-8ec5-968fed949c5c",
+                "IdDaUltimaPublicacaoAta": "d807d21f-5161-4271-bbc7-65da8d76f081",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5478",
+                "TituloDaReuniao": "CRE, às 10h, 32ª, Ordinária",
+                "Tipo": "Ordinária",
+                "Data": "24/11/2016",
+                "Hora": "10:00",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 3",
+                "CodigoDoLocalDaReuniao": "2",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "54",
+                        "NumeroReuniao": "32",
+                        "Sigla": "CRE",
+                        "Nome": "Comissão de Relações Exteriores e Defesa Nacional",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": [
+                        {
+                            "Codigo": "7088",
+                            "NumOrdem": "1",
+                            "CodigoTipo": "1",
+                            "Tipo": "Audiência Pública Interativa",
+                            "NomeFantasia": "Audiência Pública Interativa",
+                            "ExisteItemTerminativo": "Não"
+                        },
+                        {
+                            "Codigo": "7282",
+                            "NumOrdem": "2",
+                            "CodigoTipo": "2",
+                            "Tipo": "Deliberativa",
+                            "NomeFantasia": "Deliberativa",
+                            "ExisteItemTerminativo": "Não"
+                        }
+                    ]
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "c12d431d-478c-4247-af96-0d3ca9c3b1af",
+                "IdDaUltimaPublicacaoResultado": "cd0e5c59-9182-45de-b198-52d225618227",
+                "IdDaUltimaPublicacaoAta": "c9b5497e-59c0-456d-b1e7-6aee9f700956",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5630",
+                "TituloDaReuniao": "CAE, às 10h, 40ª, Extraordinária",
+                "Tipo": "Extraordinária",
+                "Data": "24/11/2016",
+                "Hora": "10:00",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 19",
+                "CodigoDoLocalDaReuniao": "8",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "38",
+                        "NumeroReuniao": "40",
+                        "Sigla": "CAE",
+                        "Nome": "Comissão de Assuntos Econômicos",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7279",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "1",
+                        "Tipo": "Audiência Pública Interativa",
+                        "NomeFantasia": "Audiência Pública Interativa",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "38b1771f-1dda-43b6-b789-5e164fa8e31e",
+                "IdDaUltimaPublicacaoResultado": "cdb4719c-d246-4601-9318-bcdfa22e1d6e",
+                "IdDaUltimaPublicacaoAta": "78933f89-f397-494e-a8e9-63980ed2cc90",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5653",
+                "TituloDaReuniao": "CI, às 14h, 36ª, Extraordinária",
+                "Tipo": "Extraordinária",
+                "Data": "24/11/2016",
+                "Hora": "14:00",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 13",
+                "CodigoDoLocalDaReuniao": "6",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "59",
+                        "NumeroReuniao": "36",
+                        "Sigla": "CI",
+                        "Nome": "Comissão de Serviços de Infraestrutura",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7305",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "1",
+                        "Tipo": "Audiência Pública Interativa",
+                        "NomeFantasia": "Audiência Pública Interativa",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "81756076-5127-490d-a3af-692147b91775",
+                "IdDaUltimaPublicacaoResultado": "cfab2295-3608-4df5-977b-9ad60d9abdab",
+                "IdDaUltimaPublicacaoAta": "cbd22186-6a03-4f1c-b788-bcf47688d63c",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5636",
+                "TituloDaReuniao": "CMMPV 746/2016, às 14h:30, 9ª, Reunião",
+                "Tipo": "Reunião",
+                "Data": "24/11/2016",
+                "Hora": "14:30",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 3",
+                "CodigoDoLocalDaReuniao": "2",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "2065",
+                        "NumeroReuniao": "9",
+                        "Sigla": "CMMPV 746/2016",
+                        "Nome": "Comissão Mista da Medida Provisória nº 746, de 2016.",
+                        "Casa": "CN",
+                        "CodigoTipoColegiado": "42",
+                        "NomeTipoColegiado": "Comissão de Medida Provisória",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7286",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "1",
+                        "Tipo": "Audiência Pública Interativa",
+                        "NomeFantasia": "Audiência Pública Interativa",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "9a8c7eb2-d989-4531-9516-c561315c3f78",
+                "IdDaUltimaPublicacaoResultado": "703df444-c42d-4245-9ccd-7f6abf6c4b25",
+                "IdDaUltimaPublicacaoAta": "e1b2f493-6bb5-4337-a497-82a25dee02a0",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5633",
+                "TituloDaReuniao": "CAE, às 19h, 41ª, Extraordinária",
+                "Tipo": "Extraordinária",
+                "Data": "24/11/2016",
+                "Hora": "19:00",
+                "Situacao": "Adiada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 19",
+                "CodigoDoLocalDaReuniao": "8",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": {
+                        "CodigoColegiado": "38",
+                        "NumeroReuniao": "41",
+                        "Sigla": "CAE",
+                        "Nome": "Comissão de Assuntos Econômicos",
+                        "Casa": "SF",
+                        "CodigoTipoColegiado": "21",
+                        "NomeTipoColegiado": "Comissão Permanente",
+                        "ComissaoSuperior": null
+                    }
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7283",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "1",
+                        "Tipo": "Audiência Pública Interativa",
+                        "NomeFantasia": "Audiência Pública Interativa",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Não",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "e751b98f-6060-453b-9bbd-616347c54f2f",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            },
+            {
+                "Codigo": "5668",
+                "TituloDaReuniao": "CAE,CAESTN, às 19h, 11ª, Conjunta",
+                "Tipo": "Conjunta",
+                "NumeroConjunta": "11",
+                "Data": "24/11/2016",
+                "Hora": "19:00",
+                "Situacao": "Realizada",
+                "Local": "Anexo II, Ala Senador Alexandre Costa, Plenário nº 19",
+                "CodigoDoLocalDaReuniao": "8",
+                "ExisteItemTerminativo": "Não",
+                "Comissoes": {
+                    "Comissao": [
+                        {
+                            "CodigoColegiado": "38",
+                            "NumeroReuniao": "41",
+                            "Sigla": "CAE",
+                            "Nome": "Comissão de Assuntos Econômicos",
+                            "Casa": "SF",
+                            "CodigoTipoColegiado": "21",
+                            "NomeTipoColegiado": "Comissão Permanente",
+                            "ComissaoSuperior": null
+                        },
+                        {
+                            "CodigoColegiado": "1561",
+                            "NumeroReuniao": "2",
+                            "Sigla": "CAESTN",
+                            "Nome": "Subcomissão Permanente de Avaliação do Sistema Tributário Nacional",
+                            "Casa": "SF",
+                            "CodigoTipoColegiado": "66",
+                            "NomeTipoColegiado": "Subcomissão Permanente",
+                            "ComissaoSuperior": {
+                                "Sigla": "CAE",
+                                "Nome": "Comissão de Assuntos Econômicos"
+                            }
+                        }
+                    ]
+                },
+                "Partes": {
+                    "Parte": {
+                        "Codigo": "7323",
+                        "NumOrdem": "1",
+                        "CodigoTipo": "1",
+                        "Tipo": "Audiência Pública Interativa",
+                        "NomeFantasia": "Audiência Pública Interativa",
+                        "ExisteItemTerminativo": "Não"
+                    }
+                },
+                "Publicada": "Sim",
+                "Realizada": "Sim",
+                "EmAndamento": "false",
+                "EstaAgendada": "false",
+                "ContinuacaoAtualizadaReuniaoSuspensa": "false",
+                "IdDaUltimaPublicacaoPautaSimples": "c460a7dd-67b2-4c27-9854-12a0f041d755",
+                "IdDaUltimaPublicacaoResultado": "97d84069-e559-4591-9563-692abe2fecb4",
+                "IdDaUltimaPublicacaoAta": "6887b479-eec9-4c71-8fe9-7ee7069f3b01",
+                "isSuspensaAindaNaoAberta": "false",
+                "historico": null,
+                "ItensDePautaEmDeliberacao": null
+            }
+        ]
+    }
+}

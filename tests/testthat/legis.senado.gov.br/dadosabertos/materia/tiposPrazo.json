@@ -1,0 +1,379 @@
+{
+    "ListaTiposPrazo": {
+        "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+        "@xsi:noNamespaceSchemaLocation": "http://legis.senado.leg.br/dadosabertos/dados/ListaTiposPrazov6.xsd",
+        "Metadados": {
+            "Versao": "30/11/2018 05:53:57",
+            "VersaoServico": "6",
+            "DataVersaoServico": "2018-02-01"
+        },
+        "TiposPrazo": {
+            "TipoPrazo": [
+                {
+                    "CodigoTipoPrazo": "54232002",
+                    "DescricaoTipoPrazo": "Apreciação de Projeto"
+                },
+                {
+                    "CodigoTipoPrazo": "54232004",
+                    "DescricaoTipoPrazo": "Apreciação de Projeto de Lei de iniciativa do Presidente da República em rito ordinário (início do regime de urgência)"
+                },
+                {
+                    "CodigoTipoPrazo": "41969852",
+                    "DescricaoTipoPrazo": "Apresentação de Emendas"
+                },
+                {
+                    "CodigoTipoPrazo": "53708421",
+                    "DescricaoTipoPrazo": "Apresentação de Emendas a Medida Provisória de crédito extraordinário junto à CMO"
+                },
+                {
+                    "CodigoTipoPrazo": "41969853",
+                    "DescricaoTipoPrazo": "Apresentação de Emendas a PDS de radiodifusão"
+                },
+                {
+                    "CodigoTipoPrazo": "41969863",
+                    "DescricaoTipoPrazo": "Apresentação de Emendas a Projeto de Código"
+                },
+                {
+                    "CodigoTipoPrazo": "41969858",
+                    "DescricaoTipoPrazo": "Apresentação de Emendas a Projeto de Decreto Legislativo referente à prestação de contas do Presidente da República"
+                },
+                {
+                    "CodigoTipoPrazo": "54343322",
+                    "DescricaoTipoPrazo": "Apresentação de Emendas a Projeto de Decreto Legislativo sobre fiscalização da execução orçamentária e financeira e da gestão fiscal"
+                },
+                {
+                    "CodigoTipoPrazo": "53708424",
+                    "DescricaoTipoPrazo": "Apresentação de Emendas a Projeto de Lei de crédito"
+                },
+                {
+                    "CodigoTipoPrazo": "7349381",
+                    "DescricaoTipoPrazo": "Apresentação de Emendas a Projeto de Resolução do Congresso Nacional"
+                },
+                {
+                    "CodigoTipoPrazo": "54343321",
+                    "DescricaoTipoPrazo": "Apresentação de Emendas a Relatório e Projeto de Decreto Legislativo sobre prestação de contas"
+                },
+                {
+                    "CodigoTipoPrazo": "41969859",
+                    "DescricaoTipoPrazo": "Apresentação de Emendas a projeto apreciado por Comissão em caráter terminativo, quando há recurso"
+                },
+                {
+                    "CodigoTipoPrazo": "41969860",
+                    "DescricaoTipoPrazo": "Apresentação de Emendas a projeto de alteração ou reforma do Regimento Interno"
+                },
+                {
+                    "CodigoTipoPrazo": "41969855",
+                    "DescricaoTipoPrazo": "Apresentação de Emendas a projeto de autoria de Comissão"
+                },
+                {
+                    "CodigoTipoPrazo": "41969862",
+                    "DescricaoTipoPrazo": "Apresentação de Emendas a projeto de iniciativa do Presidente da República com tramitação urgente"
+                },
+                {
+                    "CodigoTipoPrazo": "41969856",
+                    "DescricaoTipoPrazo": "Apresentação de Emendas a projeto que obteve parecer contrário da Comissão"
+                },
+                {
+                    "CodigoTipoPrazo": "41969857",
+                    "DescricaoTipoPrazo": "Apresentação de Emendas a projeto que obteve parecer favorável da Comissão"
+                },
+                {
+                    "CodigoTipoPrazo": "41969861",
+                    "DescricaoTipoPrazo": "Apresentação de Emendas a projeto terminativo em Comissão"
+                },
+                {
+                    "CodigoTipoPrazo": "53708425",
+                    "DescricaoTipoPrazo": "Apresentação de Emendas ao pLDO"
+                },
+                {
+                    "CodigoTipoPrazo": "53708426",
+                    "DescricaoTipoPrazo": "Apresentação de Emendas ao pPPA"
+                },
+                {
+                    "CodigoTipoPrazo": "7349280",
+                    "DescricaoTipoPrazo": "Apresentação de Emendas ao relatório preliminar do PLOA"
+                },
+                {
+                    "CodigoTipoPrazo": "7349282",
+                    "DescricaoTipoPrazo": "Apresentação de Emendas ao relatório preliminar do pLDO"
+                },
+                {
+                    "CodigoTipoPrazo": "7349284",
+                    "DescricaoTipoPrazo": "Apresentação de Emendas ao relatório preliminar do pPPA"
+                },
+                {
+                    "CodigoTipoPrazo": "54575940",
+                    "DescricaoTipoPrazo": "Apresentação de Emendas perante as Comissões durante turno suplementar"
+                },
+                {
+                    "CodigoTipoPrazo": "7349295",
+                    "DescricaoTipoPrazo": "Apresentação de Emendas saneadoras da incompatibilidade ou inadequação orçamentária ou financeira"
+                },
+                {
+                    "CodigoTipoPrazo": "41969854",
+                    "DescricaoTipoPrazo": "Apresentação de Emendas à CRE para projeto de decreto legislativo referente a atos internacionais"
+                },
+                {
+                    "CodigoTipoPrazo": "53708364",
+                    "DescricaoTipoPrazo": "Apresentação de Emendas à Medida Provisória"
+                },
+                {
+                    "CodigoTipoPrazo": "53708427",
+                    "DescricaoTipoPrazo": "Apresentação de Emendas à despesa e à receita, inclusive renúncia de receita"
+                },
+                {
+                    "CodigoTipoPrazo": "41969864",
+                    "DescricaoTipoPrazo": "Apresentação de Parecer"
+                },
+                {
+                    "CodigoTipoPrazo": "41969866",
+                    "DescricaoTipoPrazo": "Apresentação de Parecer final pela comissão designada para apreciar Projeto de Código"
+                },
+                {
+                    "CodigoTipoPrazo": "41969865",
+                    "DescricaoTipoPrazo": "Apresentação de Parecer final pelo relator designado para apreciar Projeto de Código"
+                },
+                {
+                    "CodigoTipoPrazo": "53708359",
+                    "DescricaoTipoPrazo": "Apresentação de Projeto"
+                },
+                {
+                    "CodigoTipoPrazo": "53708360",
+                    "DescricaoTipoPrazo": "Apresentação de Projeto de Decreto Legislativo pela Comissão Mista ou Relator designado"
+                },
+                {
+                    "CodigoTipoPrazo": "41969867",
+                    "DescricaoTipoPrazo": "Apresentação de Relatórios parciais aos relatores parciais designados para apreciar Projeto de Código"
+                },
+                {
+                    "CodigoTipoPrazo": "41969868",
+                    "DescricaoTipoPrazo": "Apresentação de Sugestões referentes a Projeto de Lei de Consolidação"
+                },
+                {
+                    "CodigoTipoPrazo": "7349212",
+                    "DescricaoTipoPrazo": "Apresentação de relatório e eventual projeto de decreto legislativo"
+                },
+                {
+                    "CodigoTipoPrazo": "7349296",
+                    "DescricaoTipoPrazo": "Apresentação do relatório às emendas apresentadas ao projeto de planos e programas"
+                },
+                {
+                    "CodigoTipoPrazo": "7349196",
+                    "DescricaoTipoPrazo": "Apresentação do relatório às emendas apresentadas ao projeto de prestação de contas"
+                },
+                {
+                    "CodigoTipoPrazo": "54343320",
+                    "DescricaoTipoPrazo": "Deliberação de Medida Provisória"
+                },
+                {
+                    "CodigoTipoPrazo": "7349188",
+                    "DescricaoTipoPrazo": "Designação da Comissão"
+                },
+                {
+                    "CodigoTipoPrazo": "7349297",
+                    "DescricaoTipoPrazo": "Discussão e votação do relatório do projeto de lei de planos e programas"
+                },
+                {
+                    "CodigoTipoPrazo": "7349199",
+                    "DescricaoTipoPrazo": "Discussão e votação do relatório e do projeto de decreto legislativo"
+                },
+                {
+                    "CodigoTipoPrazo": "53708361",
+                    "DescricaoTipoPrazo": "Edição de Decreto Legislativo (60 dias)"
+                },
+                {
+                    "CodigoTipoPrazo": "7349236",
+                    "DescricaoTipoPrazo": "Encaminhamento do parecer da CMO quanto ao pLDO à Mesa do Congresso Nacional"
+                },
+                {
+                    "CodigoTipoPrazo": "7349262",
+                    "DescricaoTipoPrazo": "Encaminhamento do parecer da CMO quanto ao pLOA à Mesa do Congresso Nacional"
+                },
+                {
+                    "CodigoTipoPrazo": "7349318",
+                    "DescricaoTipoPrazo": "Encaminhamento do parecer da CMO quanto ao pPPA à Mesa do Congresso Nacional"
+                },
+                {
+                    "CodigoTipoPrazo": "7349298",
+                    "DescricaoTipoPrazo": "Encaminhamento do parecer da CMO quanto ao projeto de lei de planos e programas à Mesa do Congresso Nacional"
+                },
+                {
+                    "CodigoTipoPrazo": "7349202",
+                    "DescricaoTipoPrazo": "Encaminhamento do parecer da CMO quanto à prestação de contas à Mesa do Congresso Nacional"
+                },
+                {
+                    "CodigoTipoPrazo": "7349264",
+                    "DescricaoTipoPrazo": "Implantação das decisões do Plenário do Congresso Nacional e geração de autógrafos"
+                },
+                {
+                    "CodigoTipoPrazo": "7349644",
+                    "DescricaoTipoPrazo": "Indicação para o remanejamento de programação"
+                },
+                {
+                    "CodigoTipoPrazo": "41969848",
+                    "DescricaoTipoPrazo": "Interposição de Recurso"
+                },
+                {
+                    "CodigoTipoPrazo": "41969851",
+                    "DescricaoTipoPrazo": "Interposição de Recurso a arquivamento de proposição"
+                },
+                {
+                    "CodigoTipoPrazo": "41969849",
+                    "DescricaoTipoPrazo": "Interposição de Recurso a decisão do Presidente do SF por tramitação conjunta de proposição"
+                },
+                {
+                    "CodigoTipoPrazo": "41969850",
+                    "DescricaoTipoPrazo": "Interposição de Recurso a decisão terminativa de Comissão"
+                },
+                {
+                    "CodigoTipoPrazo": "53708363",
+                    "DescricaoTipoPrazo": "Interposição de Recurso a declaração de prejudicialidade de proposição"
+                },
+                {
+                    "CodigoTipoPrazo": "53708362",
+                    "DescricaoTipoPrazo": "Interposição de Recurso para apreciação pelo Plenário do Congresso Nacional de parecer da CMO sobre relatório que tratar de informações encaminhadas pelo TCU relativas à fiscalização"
+                },
+                {
+                    "CodigoTipoPrazo": "7349260",
+                    "DescricaoTipoPrazo": "Publicação do relatório Geral do pLOA"
+                },
+                {
+                    "CodigoTipoPrazo": "7349254",
+                    "DescricaoTipoPrazo": "Publicação do relatório da Receita do pLOA"
+                },
+                {
+                    "CodigoTipoPrazo": "7349294",
+                    "DescricaoTipoPrazo": "Publicação do relatório do projeto de lei de planos e programas"
+                },
+                {
+                    "CodigoTipoPrazo": "7349193",
+                    "DescricaoTipoPrazo": "Publicação do relatório e do projeto de decreto legislativo, a partir do recebimento do parecer prévio do TCU"
+                },
+                {
+                    "CodigoTipoPrazo": "7349232",
+                    "DescricaoTipoPrazo": "Publicação do relatório preliminar do pLDO"
+                },
+                {
+                    "CodigoTipoPrazo": "7349256",
+                    "DescricaoTipoPrazo": "Publicação do relatório preliminar do pLOA"
+                },
+                {
+                    "CodigoTipoPrazo": "7349258",
+                    "DescricaoTipoPrazo": "Publicação dos relatórios setoriais do pLOA"
+                },
+                {
+                    "CodigoTipoPrazo": "7349211",
+                    "DescricaoTipoPrazo": "Publicação em avulso eletrônico da matéria"
+                },
+                {
+                    "CodigoTipoPrazo": "7349234",
+                    "DescricaoTipoPrazo": "Publicação em avulso eletrônico das emendas ao pLDO"
+                },
+                {
+                    "CodigoTipoPrazo": "7349253",
+                    "DescricaoTipoPrazo": "Publicação em avulso eletrônico das emendas ao pLOA"
+                },
+                {
+                    "CodigoTipoPrazo": "7349316",
+                    "DescricaoTipoPrazo": "Publicação em avulso eletrônico das emendas ao pPPA"
+                },
+                {
+                    "CodigoTipoPrazo": "7349222",
+                    "DescricaoTipoPrazo": "Publicação em avulso eletrônico das emendas ao projeto de lei de crédito"
+                },
+                {
+                    "CodigoTipoPrazo": "7349230",
+                    "DescricaoTipoPrazo": "Publicação em avulso eletrônico do pLDO"
+                },
+                {
+                    "CodigoTipoPrazo": "7349251",
+                    "DescricaoTipoPrazo": "Publicação em avulso eletrônico do pLOA"
+                },
+                {
+                    "CodigoTipoPrazo": "7349312",
+                    "DescricaoTipoPrazo": "Publicação em avulso eletrônico do pPPA"
+                },
+                {
+                    "CodigoTipoPrazo": "7349221",
+                    "DescricaoTipoPrazo": "Publicação em avulso eletrônico do projeto de lei de crédito"
+                },
+                {
+                    "CodigoTipoPrazo": "7349314",
+                    "DescricaoTipoPrazo": "Publicação em avulso eletrônico do relatório preliminar do pPPA"
+                },
+                {
+                    "CodigoTipoPrazo": "7349231",
+                    "DescricaoTipoPrazo": "Realização de audiências públicas sobre o pLDO"
+                },
+                {
+                    "CodigoTipoPrazo": "7349252",
+                    "DescricaoTipoPrazo": "Realização de audiências públicas sobre o pLOA"
+                },
+                {
+                    "CodigoTipoPrazo": "7349313",
+                    "DescricaoTipoPrazo": "Realização de audiências públicas sobre o pPPA"
+                },
+                {
+                    "CodigoTipoPrazo": "7349299",
+                    "DescricaoTipoPrazo": "Sistematização das decisões do Plenário do Congresso Nacional quanto ao projeto e geração dos autógrafos"
+                },
+                {
+                    "CodigoTipoPrazo": "7349205",
+                    "DescricaoTipoPrazo": "Sistematização das decisões do Plenário do Congresso Nacional quanto à prestação de contas e geração dos autógrafos"
+                },
+                {
+                    "CodigoTipoPrazo": "54232003",
+                    "DescricaoTipoPrazo": "Tramitação em regime de urgência"
+                },
+                {
+                    "CodigoTipoPrazo": "41969847",
+                    "DescricaoTipoPrazo": "Veto ou Sanção de Projeto de Lei"
+                },
+                {
+                    "CodigoTipoPrazo": "7349263",
+                    "DescricaoTipoPrazo": "Votação do parecer ao pLOA no Congresso Nacional"
+                },
+                {
+                    "CodigoTipoPrazo": "7349261",
+                    "DescricaoTipoPrazo": "Votação do relatório Geral do pLOA"
+                },
+                {
+                    "CodigoTipoPrazo": "7349255",
+                    "DescricaoTipoPrazo": "Votação do relatório da Receita do pLOA e suas emendas"
+                },
+                {
+                    "CodigoTipoPrazo": "7349223",
+                    "DescricaoTipoPrazo": "Votação do relatório e encaminhamento do parecer da CMO quanto ao projeto de lei de crédito à Mesa do Congresso Nacional"
+                },
+                {
+                    "CodigoTipoPrazo": "7349214",
+                    "DescricaoTipoPrazo": "Votação do relatório e encaminhamento do parecer da CMO à Mesa do Congresso Nacional"
+                },
+                {
+                    "CodigoTipoPrazo": "7349235",
+                    "DescricaoTipoPrazo": "Votação do relatório final do pLDO"
+                },
+                {
+                    "CodigoTipoPrazo": "7349317",
+                    "DescricaoTipoPrazo": "Votação do relatório final do pPPA"
+                },
+                {
+                    "CodigoTipoPrazo": "7349257",
+                    "DescricaoTipoPrazo": "Votação do relatório preliminar do PLOA e suas emendas"
+                },
+                {
+                    "CodigoTipoPrazo": "7349233",
+                    "DescricaoTipoPrazo": "Votação do relatório preliminar do pLDO e suas emendas"
+                },
+                {
+                    "CodigoTipoPrazo": "7349315",
+                    "DescricaoTipoPrazo": "Votação do relatório preliminar do pPPA e suas emendas"
+                },
+                {
+                    "CodigoTipoPrazo": "7349259",
+                    "DescricaoTipoPrazo": "Votação dos relatórios setoriais do pLOA"
+                }
+            ]
+        }
+    }
+}

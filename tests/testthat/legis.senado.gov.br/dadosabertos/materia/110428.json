@@ -1,0 +1,136 @@
+{
+    "DetalheMateria": {
+        "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+        "@xsi:noNamespaceSchemaLocation": "http://legis.senado.leg.br/dadosabertos/dados/DetalheMateriav5.xsd",
+        "Metadados": {
+            "Versao": "02/12/2018 09:57:55",
+            "VersaoServico": "5",
+            "DataVersaoServico": "2017-02-01",
+            "DescricaoDataSet": "Dados básicos da matéria, incluindo autoria, norma gerada e outras informações"
+        },
+        "Materia": {
+            "IdentificacaoMateria": {
+                "CodigoMateria": "110428",
+                "SiglaCasaIdentificacaoMateria": "SF",
+                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                "SiglaSubtipoMateria": "PLS",
+                "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                "NumeroMateria": "00001",
+                "AnoMateria": "2013",
+                "DescricaoObjetivoProcesso": "Iniciadora",
+                "DescricaoIdentificacaoMateria": "PLS 1/2013",
+                "IndicadorTramitando": "Sim"
+            },
+            "DadosBasicosMateria": {
+                "EmentaMateria": "Altera o artigo 11 do Decreto-Lei nº 227, de 28 de fevereiro de 1967 – Código de Mineração.",
+                "ExplicacaoEmentaMateria": "Altera o Decreto-Lei nº 227/67 – que dá nova redação ao Código de Minas (Decreto-lei nº 1.985/1940) – para determinar que, no caso de terra pública estadual ou federalizada, o percentual relativo à participação do proprietário do solo nos resultados da lavra será devida ao Estado-membro em cujo território ocorre a exploração mineral.\n      ",
+                "ApelidoMateria": "AGENDA BRASIL 2015",
+                "IndicadorComplementar": "Não",
+                "DataApresentacao": "2013-02-04",
+                "DataLeitura": "2013-02-04",
+                "SiglaCasaLeitura": "SF",
+                "NomeCasaLeitura": "Senado Federal",
+                "NaturezaMateria": {
+                    "CodigoNatureza": "11",
+                    "NomeNatureza": "NORMA_GERAL",
+                    "DescricaoNatureza": "Norma Geral"
+                }
+            },
+            "Autoria": {
+                "Autor": [
+                    {
+                        "NomeAutor": "Flexa Ribeiro",
+                        "SiglaTipoAutor": "SENADOR",
+                        "DescricaoTipoAutor": "Senador",
+                        "UfAutor": "PA",
+                        "NumOrdemAutor": "1",
+                        "IndicadorOutrosAutores": "Não",
+                        "IdentificacaoParlamentar": {
+                            "CodigoParlamentar": "3634",
+                            "NomeParlamentar": "Flexa Ribeiro",
+                            "NomeCompletoParlamentar": "Fernando de Souza Flexa Ribeiro",
+                            "SexoParlamentar": "Masculino",
+                            "FormaTratamento": "Senador",
+                            "UrlFotoParlamentar": "http://www.senado.leg.br/senadores/img/fotos-oficiais/senador3634.jpg",
+                            "UrlPaginaParlamentar": "http://www25.senado.leg.br/web/senadores/senador/-/perfil/3634",
+                            "EmailParlamentar": "flexa.ribeiro@senador.leg.br",
+                            "SiglaPartidoParlamentar": "PSDB",
+                            "UfParlamentar": "PA"
+                        }
+                    }
+                ]
+            },
+            "Assunto": {
+                "AssuntoEspecifico": {
+                    "Codigo": "111",
+                    "Descricao": "Minas e energia"
+                },
+                "AssuntoGeral": {
+                    "Codigo": "82",
+                    "Descricao": "Econômico"
+                }
+            },
+            "OrigemMateria": {
+                "NomePoderOrigem": "Legislativo",
+                "SiglaCasaOrigem": "SF",
+                "NomeCasaOrigem": "Senado Federal"
+            },
+            "CasaIniciadoraNoLegislativo": {
+                "SiglaCasaIniciadora": "SF",
+                "NomeCasaIniciadora": "Senado Federal"
+            },
+            "SituacaoAtual": {
+                "Autuacoes": {
+                    "Autuacao": {
+                        "NumeroAutuacao": "1",
+                        "Situacao": {
+                            "DataSituacao": "2015-03-10",
+                            "CodigoSituacao": "87",
+                            "SiglaSituacao": "AGDREL",
+                            "DescricaoSituacao": "AGUARDANDO DESIGNAÇÃO DO RELATOR"
+                        },
+                        "Local": {
+                            "DataLocal": "2015-03-10",
+                            "CodigoLocal": "34",
+                            "TipoLocal": "C",
+                            "SiglaCasaLocal": "SF",
+                            "NomeCasaLocal": "Senado Federal",
+                            "SiglaLocal": "CCJ",
+                            "NomeLocal": "Comissão de Constituição, Justiça e Cidadania"
+                        }
+                    }
+                }
+            },
+            "OutrasInformacoes": {
+                "Servico": [
+                    {
+                        "NomeServico": "EmendaMateria",
+                        "DescricaoServico": "Emendas da matéria",
+                        "UrlServico": "http://legis.senado.leg.br/dadosabertos/materia/emendas/110428?v=5"
+                    },
+                    {
+                        "NomeServico": "MovimentacaoMateria",
+                        "DescricaoServico": "Movimentações da matéria, como tramitações, despachos e prazos",
+                        "UrlServico": "http://legis.senado.leg.br/dadosabertos/materia/movimentacoes/110428?v=6"
+                    },
+                    {
+                        "NomeServico": "RelatoriaMateria",
+                        "DescricaoServico": "Relatoria atual e relatorias encerradas (histórico) da matéria",
+                        "UrlServico": "http://legis.senado.leg.br/dadosabertos/materia/relatorias/110428?v=5"
+                    },
+                    {
+                        "NomeServico": "TextoMateria",
+                        "DescricaoServico": "Textos da matéria",
+                        "UrlServico": "http://legis.senado.leg.br/dadosabertos/materia/textos/110428?v=5"
+                    },
+                    {
+                        "NomeServico": "VotacaoMateria",
+                        "DescricaoServico": "Votações da matéria",
+                        "UrlServico": "http://legis.senado.leg.br/dadosabertos/materia/votacoes/110428?v=5"
+                    }
+                ]
+            },
+            "UrlGlossario": "http://legis.senado.leg.br/dadosabertos/glossario/lista"
+        }
+    }
+}
