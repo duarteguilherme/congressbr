@@ -1,0 +1,60 @@
+context("Check API")
+
+funs_list <- list(
+  cham_bill_info(type = "PL", number = "3962", year = "2008"),
+  cham_bill_info_id(14784),
+  cham_bills(type = "PL", year = 2011, number = 2718,
+             initial_date="2011-16-11"),
+  cham_legislator_list(),
+  cham_plenary_bills(year = 2008),
+  cham_typeauthors_bills(),
+  cham_votes(type = "PL", number = "1992", year = "2007"),
+  sen_agenda(initial_date = "20161105", end_date = "20161125"),
+  sen_bill_search(year = 2014),
+  sen_bills(type = "PLS", number = 5, year = 2010),
+  sen_bills_types(),
+  sen_bills_limits(),
+  sen_bills_topics(),
+  sen_bills_passing(year = "2001", type = "MPV"),
+  sen_bills_current(year = 2015, type = "PLS"),
+  sen_bills_status(bill_id = 80406),
+  sen_bills_locations(),
+  sen_bills_passage(bill_id = 9123),
+  sen_bills_situations(),
+  sen_bills_updates(type = "PLS", days = 10),
+  sen_bills_update_types(),
+  sen_budget(),
+  sen_coalition_info(code = 200),
+  sen_coalitions(),
+  sen_commission_positions(active = "No"),
+  sen_commissions(),
+  sen_commissions_type(type = "permanent"),
+  sen_commissions_senators(code = "CCJ"),
+  sen_plenary_result(date = "20110405"),
+  sen_plenary_sessions(),
+  sen_plenary_agenda(period = "day", date = "20160401"),
+  sen_plenary_leaderships(),
+  sen_senator(id = 3823),
+  sen_senator_details(id = 4981),
+  sen_senator_bills(id = 5164),
+  sen_senator_commissions(id = 715),
+  sen_senator_suplentes(id = 90),
+  sen_senator_votes(id = 5529),
+  sen_senator_mandates(id = 4763),
+  sen_senator_list(),
+  sen_senator_legis(start = 50),
+  sen_bill_sponsors(),
+  sen_sponsor_types(),
+  sen_parties(),
+  sen_statement_list(),
+  sen_bills_list(active = TRUE),
+  sen_votes_year("2013")
+)
+
+with_mock_api({
+  test_that("Response is a data frame", {
+    purrr::map(funs_list, expect_is, "data.frame")
+  })
+})
+
+

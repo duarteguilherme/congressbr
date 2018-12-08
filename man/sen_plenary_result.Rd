@@ -25,7 +25,7 @@ specified date.
 x <- sen_plenary_result(date = "20160303")
 # Earlier periods may not have information:
 \dontrun{
-y <- sen_plenary_result(date = "19910105")
+sen_plenary_result(date = "20110405")
 }
 }
 \author{

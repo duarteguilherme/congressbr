@@ -3,7 +3,7 @@
         "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
         "@xsi:noNamespaceSchemaLocation": "http://legis.senado.gov.br/dadosabertos/dados/Liderancasv2.xsd",
         "Metadados": {
-            "Versao": "02/12/2018 10:08:56",
+            "Versao": "08/12/2018 09:50:22",
             "VersaoServico": "2",
             "DescricaoDataSet": "Lideranças do Senado \n\nDescrição:\nContém informações sobre a composição das Lideranças do Senado, como os partidos que as compões, os parlamentares e suas respectivas funções nas lideranças (líder, vice-líder, etc.).\n\nCategoria:\nParlamentares\n\nPeriodicidade de atualização:\nDe 3 em 3 horas no horário comercial\n"
         },

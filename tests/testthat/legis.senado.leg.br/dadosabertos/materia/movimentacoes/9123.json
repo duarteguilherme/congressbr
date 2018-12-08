@@ -1,0 +1,1164 @@
+{
+    "MovimentacaoMateria": {
+        "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+        "@xsi:noNamespaceSchemaLocation": "http://legis.senado.leg.br/dadosabertos/dados/MovimentacaoMateriav6.xsd",
+        "Metadados": {
+            "Versao": "08/12/2018 09:49:50",
+            "VersaoServico": "6",
+            "DataVersaoServico": "2018-09-04",
+            "DescricaoDataSet": "Movimentações da matéria, como tramitações, despachos e prazos"
+        },
+        "Materia": {
+            "IdentificacaoMateria": {
+                "CodigoMateria": "9123",
+                "SiglaCasaIdentificacaoMateria": "CN",
+                "NomeCasaIdentificacaoMateria": "Congresso Nacional",
+                "SiglaSubtipoMateria": "MSG",
+                "DescricaoSubtipoMateria": "MENSAGEM",
+                "NumeroMateria": "00047",
+                "AnoMateria": "1984",
+                "DescricaoIdentificacaoMateria": "MSG 47/1984",
+                "IndicadorTramitando": "Não"
+            },
+            "SituacaoAtual": {
+                "Autuacoes": {
+                    "Autuacao": {
+                        "NumeroAutuacao": "1",
+                        "Situacao": {
+                            "DataSituacao": "1984-08-28",
+                            "CodigoSituacao": "25",
+                            "SiglaSituacao": "APRVD",
+                            "DescricaoSituacao": "APROVADA"
+                        },
+                        "Local": {
+                            "DataLocal": "1984-09-13",
+                            "CodigoLocal": "152",
+                            "TipoLocal": "A",
+                            "SiglaCasaLocal": "CN",
+                            "NomeCasaLocal": "Congresso Nacional",
+                            "SiglaLocal": "ATA-PLEN",
+                            "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                        }
+                    }
+                }
+            },
+            "Tramitacoes": {
+                "Tramitacao": [
+                    {
+                        "IdentificacaoTramitacao": {
+                            "CodigoTramitacao": "133518",
+                            "NumeroAutuacao": "1",
+                            "DataTramitacao": "1984-09-13",
+                            "NumeroOrdemTramitacao": "1",
+                            "TextoTramitacao": "JUNTADA MSG 328 DA PRES REP AGRADECENDO COMUNICAÇÃO SF,   \n      ENCAMINHADA PELO AV. 436 SUPAR MIN GAB CIVIL.             \n      ",
+                            "IndicadorRecebimento": "S",
+                            "OrigemTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "153",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "SF",
+                                    "NomeCasaLocal": "Senado Federal",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            },
+                            "DestinoTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "IdentificacaoTramitacao": {
+                            "CodigoTramitacao": "133517",
+                            "NumeroAutuacao": "1",
+                            "DataTramitacao": "1984-08-29",
+                            "NumeroOrdemTramitacao": "1",
+                            "TextoTramitacao": "REMESSA MSG CN 057 A PRES REP COMUNICANDO APROVAÇÃO POR   \n      DECURSO DE PRAZO.                                         \n      ",
+                            "IndicadorRecebimento": "S",
+                            "OrigemTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "206",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "SF",
+                                    "NomeCasaLocal": "Senado Federal",
+                                    "SiglaLocal": "SSEXP",
+                                    "NomeLocal": "SUBSECRETARIA DE EXPEDIENTE"
+                                }
+                            },
+                            "DestinoTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "153",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "SF",
+                                    "NomeCasaLocal": "Senado Federal",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "IdentificacaoTramitacao": {
+                            "CodigoTramitacao": "559656",
+                            "NumeroAutuacao": "1",
+                            "DataTramitacao": "1984-08-28",
+                            "NumeroOrdemTramitacao": "1",
+                            "TextoTramitacao": "1100 COMUNICAÇÃO PRESIDENCIA APROVAÇÃO POR DECURSO DE     \n      PRAZO.                                                    \n      (PROCESSO ARQUIVADO EM 10 10 1984).                       \n      ",
+                            "IndicadorRecebimento": "S",
+                            "OrigemTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            },
+                            "DestinoTramitacao": {
+                                "Local": {
+                                    "TipoLocal": "A"
+                                }
+                            },
+                            "Situacao": {
+                                "CodigoSituacao": "25",
+                                "SiglaSituacao": "APRVD",
+                                "DescricaoSituacao": "APROVADA"
+                            }
+                        }
+                    },
+                    {
+                        "IdentificacaoTramitacao": {
+                            "CodigoTramitacao": "133515",
+                            "NumeroAutuacao": "1",
+                            "DataTramitacao": "1984-08-28",
+                            "NumeroOrdemTramitacao": "1",
+                            "TextoTramitacao": "1100 COMUNICAÇÃO PRESIDENCIA APROVAÇÃO POR DECURSO DE     \n      PRAZO, FICANDO PREJUDICADO O PDN 00030 1984.              \n      ",
+                            "IndicadorRecebimento": "S",
+                            "OrigemTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            },
+                            "DestinoTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "IdentificacaoTramitacao": {
+                            "CodigoTramitacao": "133516",
+                            "NumeroAutuacao": "1",
+                            "DataTramitacao": "1984-08-28",
+                            "NumeroOrdemTramitacao": "1",
+                            "TextoTramitacao": "1100 DESPACHO A SUBSECRETARIA DE EXPEDIENTE.              \n      DCN 29 08 PAG                                             \n      ",
+                            "IndicadorRecebimento": "S",
+                            "OrigemTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            },
+                            "DestinoTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "206",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "SF",
+                                    "NomeCasaLocal": "Senado Federal",
+                                    "SiglaLocal": "SSEXP",
+                                    "NomeLocal": "SUBSECRETARIA DE EXPEDIENTE"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "IdentificacaoTramitacao": {
+                            "CodigoTramitacao": "133513",
+                            "NumeroAutuacao": "1",
+                            "DataTramitacao": "1984-08-27",
+                            "NumeroOrdemTramitacao": "1",
+                            "TextoTramitacao": "1830 CONVOCAÇÃO SESSÃO CONJUNTA PARA DISCUSSÃO TURNO      \n      UNICO DIA 27 08 AS 1855 HORAS.                            \n      ",
+                            "IndicadorRecebimento": "S",
+                            "OrigemTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            },
+                            "DestinoTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "IdentificacaoTramitacao": {
+                            "CodigoTramitacao": "133514",
+                            "NumeroAutuacao": "1",
+                            "DataTramitacao": "1984-08-27",
+                            "NumeroOrdemTramitacao": "1",
+                            "TextoTramitacao": "AURO SAMPAIO, MILTON BRANDÃO             EOSSEGUIMENTO    \n      SESSÃO.                                                   \n      ",
+                            "IndicadorRecebimento": "S",
+                            "OrigemTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            },
+                            "DestinoTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "IdentificacaoTramitacao": {
+                            "CodigoTramitacao": "133511",
+                            "NumeroAutuacao": "1",
+                            "DataTramitacao": "1984-08-24",
+                            "NumeroOrdemTramitacao": "1",
+                            "TextoTramitacao": "1830 CONVOCAÇÃO SESSÃO CONJUNTA PARA DISCUSSÃO TURNO      \n      UNICO DIA 24 08 AS 1930 HORAS.                            \n      ",
+                            "IndicadorRecebimento": "S",
+                            "OrigemTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            },
+                            "DestinoTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "IdentificacaoTramitacao": {
+                            "CodigoTramitacao": "133512",
+                            "NumeroAutuacao": "1",
+                            "DataTramitacao": "1984-08-24",
+                            "NumeroOrdemTramitacao": "1",
+                            "TextoTramitacao": "1930 DISCUSSÃO ADIADA FALTA QUORUM PARA PROSSEGUIMENTO    \n      SESSÃO.                                                   \n      ",
+                            "IndicadorRecebimento": "S",
+                            "OrigemTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            },
+                            "DestinoTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "IdentificacaoTramitacao": {
+                            "CodigoTramitacao": "133509",
+                            "NumeroAutuacao": "1",
+                            "DataTramitacao": "1984-08-23",
+                            "NumeroOrdemTramitacao": "1",
+                            "TextoTramitacao": "1830 CONVOCAÇÃO SESSÃO CONJUNTA PARA DISCUSSÃO TURNO      \n      UNICO DIA 23 08 AS 1910 HORAS.                            \n      ",
+                            "IndicadorRecebimento": "S",
+                            "OrigemTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            },
+                            "DestinoTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "IdentificacaoTramitacao": {
+                            "CodigoTramitacao": "133510",
+                            "NumeroAutuacao": "1",
+                            "DataTramitacao": "1984-08-23",
+                            "NumeroOrdemTramitacao": "1",
+                            "TextoTramitacao": "1910 DISCUSSÃO ADIADA FALTA QUORUM PARA PROSSEGUIMENTO    \n      SESSÃO.                                                   \n      ",
+                            "IndicadorRecebimento": "S",
+                            "OrigemTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            },
+                            "DestinoTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "IdentificacaoTramitacao": {
+                            "CodigoTramitacao": "133507",
+                            "NumeroAutuacao": "1",
+                            "DataTramitacao": "1984-08-22",
+                            "NumeroOrdemTramitacao": "1",
+                            "TextoTramitacao": "1030 CONVOCAÇÃO SESSÃO CONJUNTA PARA DISCUSSÃO TURNO      \n      UNICO DIA 22 08 AS 1935 HORAS.                            \n      ",
+                            "IndicadorRecebimento": "S",
+                            "OrigemTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            },
+                            "DestinoTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "IdentificacaoTramitacao": {
+                            "CodigoTramitacao": "133508",
+                            "NumeroAutuacao": "1",
+                            "DataTramitacao": "1984-08-22",
+                            "NumeroOrdemTramitacao": "1",
+                            "TextoTramitacao": "1935 DISCUSSÃO ADIADA FALTA QUORUM PARA PROSSEGUIMENTO    \n      SESSÃO.                                                   \n      ",
+                            "IndicadorRecebimento": "S",
+                            "OrigemTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            },
+                            "DestinoTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "IdentificacaoTramitacao": {
+                            "CodigoTramitacao": "133505",
+                            "NumeroAutuacao": "1",
+                            "DataTramitacao": "1984-08-20",
+                            "NumeroOrdemTramitacao": "1",
+                            "TextoTramitacao": "1100 CONVOCAÇÃO SESSÃO CONJUNTA PARA DISCUSSÃO TURNO      \n      UNICO DIA 20 08 AS 1835 HORAS.                            \n      ",
+                            "IndicadorRecebimento": "S",
+                            "OrigemTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            },
+                            "DestinoTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "IdentificacaoTramitacao": {
+                            "CodigoTramitacao": "133506",
+                            "NumeroAutuacao": "1",
+                            "DataTramitacao": "1984-08-20",
+                            "NumeroOrdemTramitacao": "1",
+                            "TextoTramitacao": "1835 DISCUSSÃO ADIADA FALTA QUORUM PARA PROSSEGUIMENTO    \n      SESSÃO.                                                   \n      ",
+                            "IndicadorRecebimento": "S",
+                            "OrigemTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            },
+                            "DestinoTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "IdentificacaoTramitacao": {
+                            "CodigoTramitacao": "133503",
+                            "NumeroAutuacao": "1",
+                            "DataTramitacao": "1984-08-17",
+                            "NumeroOrdemTramitacao": "1",
+                            "TextoTramitacao": "1100 CONVOCAÇÃO SESSÃO CONJUNTA PARA DISCUSSÃO TURNO      \n      UNICO DIA 17 08 AS 1840 HORAS.                            \n      ",
+                            "IndicadorRecebimento": "S",
+                            "OrigemTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            },
+                            "DestinoTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "IdentificacaoTramitacao": {
+                            "CodigoTramitacao": "133504",
+                            "NumeroAutuacao": "1",
+                            "DataTramitacao": "1984-08-17",
+                            "NumeroOrdemTramitacao": "1",
+                            "TextoTramitacao": "1840 DISCUSSÃO ADIADA FALTA QUORUM PARA PROSSEGUIMENTO    \n      SESSÃO.                                                   \n      ",
+                            "IndicadorRecebimento": "S",
+                            "OrigemTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            },
+                            "DestinoTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "IdentificacaoTramitacao": {
+                            "CodigoTramitacao": "133501",
+                            "NumeroAutuacao": "1",
+                            "DataTramitacao": "1984-08-16",
+                            "NumeroOrdemTramitacao": "1",
+                            "TextoTramitacao": "1100 CONVOCAÇÃO SESSÃO CONJUNTA PARA DISCUSSÃO TURNO      \n      UNICO DIA 16 08 AS 1910 HORAS.                            \n      ",
+                            "IndicadorRecebimento": "S",
+                            "OrigemTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            },
+                            "DestinoTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "IdentificacaoTramitacao": {
+                            "CodigoTramitacao": "133502",
+                            "NumeroAutuacao": "1",
+                            "DataTramitacao": "1984-08-16",
+                            "NumeroOrdemTramitacao": "1",
+                            "TextoTramitacao": "1910 DISCUSSÃO ADIADA FALTA QUORUM PARA PROSSEGUIMENTO    \n      SESSÃO.                                                   \n      ",
+                            "IndicadorRecebimento": "S",
+                            "OrigemTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            },
+                            "DestinoTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "IdentificacaoTramitacao": {
+                            "CodigoTramitacao": "133499",
+                            "NumeroAutuacao": "1",
+                            "DataTramitacao": "1984-08-15",
+                            "NumeroOrdemTramitacao": "1",
+                            "TextoTramitacao": "1900 CONVOCAÇÃO SESSÃO CONJUNTA PARA DISCUSSÃO TURNO      \n      UNICO DIA 15 08 AS 1920 HORAS.                            \n      ",
+                            "IndicadorRecebimento": "S",
+                            "OrigemTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            },
+                            "DestinoTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "IdentificacaoTramitacao": {
+                            "CodigoTramitacao": "133500",
+                            "NumeroAutuacao": "1",
+                            "DataTramitacao": "1984-08-15",
+                            "NumeroOrdemTramitacao": "1",
+                            "TextoTramitacao": "1920 DISCUSSÃO ADIADA FALTA QUORUM PARA PROSSEGUIMENTO    \n      SESSÃO.                                                   \n      ",
+                            "IndicadorRecebimento": "S",
+                            "OrigemTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            },
+                            "DestinoTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "IdentificacaoTramitacao": {
+                            "CodigoTramitacao": "133498",
+                            "NumeroAutuacao": "1",
+                            "DataTramitacao": "1984-08-14",
+                            "NumeroOrdemTramitacao": "1",
+                            "TextoTramitacao": "1905 DISCUSSÃO ADIADA FALTA QUORUM PARA PROSSEGUIMENTO    \n      SESSÃO.                                                   \n      ",
+                            "IndicadorRecebimento": "S",
+                            "OrigemTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            },
+                            "DestinoTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "IdentificacaoTramitacao": {
+                            "CodigoTramitacao": "133497",
+                            "NumeroAutuacao": "1",
+                            "DataTramitacao": "1984-08-14",
+                            "NumeroOrdemTramitacao": "1",
+                            "TextoTramitacao": "CONVOCAÇÃO SESSÃO CONJUNTA PARA DISCUSSÃO TURNO UNICO     \n      DIA 14 08 AS 1905 HORAS.                                  \n      ",
+                            "IndicadorRecebimento": "S",
+                            "OrigemTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            },
+                            "DestinoTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "IdentificacaoTramitacao": {
+                            "CodigoTramitacao": "133496",
+                            "NumeroAutuacao": "1",
+                            "DataTramitacao": "1984-08-07",
+                            "NumeroOrdemTramitacao": "1",
+                            "TextoTramitacao": "1100 DISCUSSÃO ADIADA FALTA QUORUM PARA PROSSEGUIMENTO    \n      SESSÃO.                                                   \n      ",
+                            "IndicadorRecebimento": "S",
+                            "OrigemTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            },
+                            "DestinoTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "IdentificacaoTramitacao": {
+                            "CodigoTramitacao": "133495",
+                            "NumeroAutuacao": "1",
+                            "DataTramitacao": "1984-08-06",
+                            "NumeroOrdemTramitacao": "1",
+                            "TextoTramitacao": "1900 CONVOCAÇÃO SESSÃO CONJUNTA PARA DISCUSSÃO TURNO      \n      UNICO DIA 07 08 AS 1100 HORAS.                            \n      ",
+                            "IndicadorRecebimento": "S",
+                            "OrigemTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            },
+                            "DestinoTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "IdentificacaoTramitacao": {
+                            "CodigoTramitacao": "133494",
+                            "NumeroAutuacao": "1",
+                            "DataTramitacao": "1984-06-06",
+                            "NumeroOrdemTramitacao": "1",
+                            "TextoTramitacao": "NUMERAÇÃO PARECER 040 - CN, APRESENTANDO PDN 00030 1984.  \n      DCN 07 06 PAG 1213.                                       \n      ",
+                            "IndicadorRecebimento": "S",
+                            "OrigemTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "163",
+                                    "TipoLocal": "A",
+                                    "SiglaLocal": "PLEG",
+                                    "NomeLocal": "PROTOCOLO LEGISLATIVO"
+                                }
+                            },
+                            "DestinoTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "IdentificacaoTramitacao": {
+                            "CodigoTramitacao": "133491",
+                            "NumeroAutuacao": "1",
+                            "DataTramitacao": "1984-05-30",
+                            "NumeroOrdemTramitacao": "1",
+                            "TextoTramitacao": "SUBSTITUIÇÃO DOS SEN OCTAVIO CARDOSO E JOÃO LUCIO PELOS   \n      SEN GALVÃO MODESTO E CLAUDIONOR RORIZ.                    \n      ",
+                            "IndicadorRecebimento": "S",
+                            "OrigemTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "84",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "CMIST",
+                                    "NomeLocal": "COMISSÃO MISTA"
+                                }
+                            },
+                            "DestinoTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "84",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "CMIST",
+                                    "NomeLocal": "COMISSÃO MISTA"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "IdentificacaoTramitacao": {
+                            "CodigoTramitacao": "133493",
+                            "NumeroAutuacao": "1",
+                            "DataTramitacao": "1984-05-30",
+                            "NumeroOrdemTramitacao": "1",
+                            "TextoTramitacao": "PARECER, SEN JUTAHY MAGALHÃES, FAVORAVEL NOS TERMOS PDN   \n      QUE OFERECE.                                              \n      ",
+                            "IndicadorRecebimento": "S",
+                            "OrigemTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "84",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "CMIST",
+                                    "NomeLocal": "COMISSÃO MISTA"
+                                }
+                            },
+                            "DestinoTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "163",
+                                    "TipoLocal": "A",
+                                    "SiglaLocal": "PLEG",
+                                    "NomeLocal": "PROTOCOLO LEGISLATIVO"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "IdentificacaoTramitacao": {
+                            "CodigoTramitacao": "133492",
+                            "NumeroAutuacao": "1",
+                            "DataTramitacao": "1984-05-30",
+                            "NumeroOrdemTramitacao": "1",
+                            "TextoTramitacao": "REDISTRIBUIÇÃO AO SEN JUTAHY MAGALHÃES.                   \n      ",
+                            "IndicadorRecebimento": "S",
+                            "OrigemTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "84",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "CMIST",
+                                    "NomeLocal": "COMISSÃO MISTA"
+                                }
+                            },
+                            "DestinoTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "84",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "CMIST",
+                                    "NomeLocal": "COMISSÃO MISTA"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "IdentificacaoTramitacao": {
+                            "CodigoTramitacao": "133489",
+                            "NumeroAutuacao": "1",
+                            "DataTramitacao": "1984-05-15",
+                            "NumeroOrdemTramitacao": "1",
+                            "TextoTramitacao": "REUNIÃO DE INSTALAÇÃO.  ELEIÇÃO PRES DEP DEL BOSCO        \n      AMARAL E VICE-PRES DEP ADHEMAR GHISI.                     \n      ",
+                            "IndicadorRecebimento": "S",
+                            "OrigemTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "84",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "CMIST",
+                                    "NomeLocal": "COMISSÃO MISTA"
+                                }
+                            },
+                            "DestinoTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "84",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "CMIST",
+                                    "NomeLocal": "COMISSÃO MISTA"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "IdentificacaoTramitacao": {
+                            "CodigoTramitacao": "133490",
+                            "NumeroAutuacao": "1",
+                            "DataTramitacao": "1984-05-15",
+                            "NumeroOrdemTramitacao": "1",
+                            "TextoTramitacao": "RELATOR SEN OCTAVIO CARDOSO.                              \n      ",
+                            "IndicadorRecebimento": "S",
+                            "OrigemTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "84",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "CMIST",
+                                    "NomeLocal": "COMISSÃO MISTA"
+                                }
+                            },
+                            "DestinoTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "84",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "CMIST",
+                                    "NomeLocal": "COMISSÃO MISTA"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "IdentificacaoTramitacao": {
+                            "CodigoTramitacao": "133487",
+                            "NumeroAutuacao": "1",
+                            "DataTramitacao": "1984-05-14",
+                            "NumeroOrdemTramitacao": "1",
+                            "TextoTramitacao": "1100 ESTABELECIMENTO PRAZO PARA APRESENTAÇÃO PARECER ATE  \n      14 06.                                                    \n      ",
+                            "IndicadorRecebimento": "S",
+                            "OrigemTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            },
+                            "DestinoTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "142",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "MESA",
+                                    "NomeLocal": "MESA DIRETORA"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "IdentificacaoTramitacao": {
+                            "CodigoTramitacao": "133484",
+                            "NumeroAutuacao": "1",
+                            "DataTramitacao": "1984-05-14",
+                            "NumeroOrdemTramitacao": "1",
+                            "TextoTramitacao": "1830 CONVOCAÇÃO SESSÃO CONJUNTA DESIGNAÇÃO COMISSÃO       \n      MISTA.                                                    \n      ",
+                            "IndicadorRecebimento": "S",
+                            "OrigemTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            },
+                            "DestinoTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "IdentificacaoTramitacao": {
+                            "CodigoTramitacao": "133486",
+                            "NumeroAutuacao": "1",
+                            "DataTramitacao": "1984-05-14",
+                            "NumeroOrdemTramitacao": "1",
+                            "TextoTramitacao": "1100 DESIGNAÇÃO COMISSÃO MISTA: PDS - SEN OCTAVIO         \n      CARDOSO, JUTAHY MAGALHÃES, GUILHERME PALMEIRA, JOÃO       \n      LUCIO, JORGE KALUME, JOSE LINS, VIRGILIO TAVORA E DEP     \n      ADHEMAR GHISI, HORACIO MATOS, EVALDO AMARAL, JOSE CARLOS  \n      FAGUNDES E ADROALDO CAMPOS; PMDB - SEN FERNANDO HENRIQUE  \n      CARDOSO, FABIO LUCENA, MARCELO MIRANDA, ENEAS FARIA E DEP \n      JORGE LEITE, DEL BOSCO AMARAL, JOSE ULISSES, IRAPUAN      \n      COSTA JUNIOR E PEDRO SAMPAIO; PDT - DEP BOCAYUVA CUNHA.   \n      ",
+                            "IndicadorRecebimento": "S",
+                            "OrigemTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            },
+                            "DestinoTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "IdentificacaoTramitacao": {
+                            "CodigoTramitacao": "133485",
+                            "NumeroAutuacao": "1",
+                            "DataTramitacao": "1984-05-14",
+                            "NumeroOrdemTramitacao": "1",
+                            "TextoTramitacao": "1100 LEITURA.                                             \n      ",
+                            "IndicadorRecebimento": "S",
+                            "OrigemTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            },
+                            "DestinoTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "152",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "ATA-PLEN",
+                                    "NomeLocal": "SUBSECRETARIA DE ATA - PLENÁRIO"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "IdentificacaoTramitacao": {
+                            "CodigoTramitacao": "133488",
+                            "NumeroAutuacao": "1",
+                            "DataTramitacao": "1984-05-14",
+                            "NumeroOrdemTramitacao": "1",
+                            "TextoTramitacao": "1100 DESPACHO A CMIST.                                    \n      DCN 15 05 PAG 0957.                                       \n      ",
+                            "IndicadorRecebimento": "S",
+                            "OrigemTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "142",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "MESA",
+                                    "NomeLocal": "MESA DIRETORA"
+                                }
+                            },
+                            "DestinoTramitacao": {
+                                "Local": {
+                                    "CodigoLocal": "84",
+                                    "TipoLocal": "A",
+                                    "SiglaCasaLocal": "CN",
+                                    "NomeCasaLocal": "Congresso Nacional",
+                                    "SiglaLocal": "CMIST",
+                                    "NomeLocal": "COMISSÃO MISTA"
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            "Despachos": {
+                "Despacho": {
+                    "DataDespacho": "2008-11-06",
+                    "Motivacao": {
+                        "TipoMotivacao": "Motivação não categorizada"
+                    },
+                    "EncontroLegislativo": null,
+                    "IndicadorDespachoCancelado": "Não",
+                    "Observacao1Despacho": "Despacho Inicial",
+                    "Observacao2Despacho": null,
+                    "Providencias": {
+                        "Providencia": {
+                            "SiglaTipoProcedimento": "ANALISE",
+                            "DescricaoTipoProcedimento": "Análise",
+                            "NumOrdemProvidencia": "1",
+                            "TipoAnalisePorTempo": "SUCESSIVA",
+                            "TipoConteudo": null,
+                            "IndicadorReexame": "Não",
+                            "Destinatarios": {
+                                "Destinatario": {
+                                    "NumeroOrdem": "1",
+                                    "TipoDeliberacao": null,
+                                    "ObservacaoDestinatario": "Despacho Inicial",
+                                    "Colegiado": {
+                                        "CodigoColegiado": "84",
+                                        "SiglaColegiado": "CMIST",
+                                        "SiglaCompleta": "CN-CMIST",
+                                        "SiglaCasaColegiado": "CN",
+                                        "NomeColegiado": "COMISSÃO MISTA"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "UrlGlossario": "http://legis.senado.leg.br/dadosabertos/glossario/lista"
+        }
+    }
+}

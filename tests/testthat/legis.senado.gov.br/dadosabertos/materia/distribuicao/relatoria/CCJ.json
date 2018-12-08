@@ -3,13 +3,13 @@
         "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
         "@xsi:noNamespaceSchemaLocation": "http://legis.senado.leg.br/dadosabertos/dados/DistribuicaodeRelatoriav2.xsd",
         "Metadados": {
-            "Versao": "02/12/2018 10:08:38",
+            "Versao": "08/12/2018 10:21:29",
             "VersaoServico": "2"
         },
         "Totais": {
             "Parlamentares": [
                 {
-                    "@versao": "02/12/2018 10:08:38",
+                    "@versao": "08/12/2018 10:21:29",
                     "Comissao": "Comissão de Constituição, Justiça e Cidadania",
                     "SiglaComissao": "CCJ",
                     "CodigoParlamentar": "4988",
@@ -21,7 +21,7 @@
                     "Quantidade": "36"
                 },
                 {
-                    "@versao": "02/12/2018 10:08:38",
+                    "@versao": "08/12/2018 10:21:29",
                     "Comissao": "Comissão de Constituição, Justiça e Cidadania",
                     "SiglaComissao": "CCJ",
                     "CodigoParlamentar": "5006",
@@ -33,7 +33,7 @@
                     "Quantidade": "14"
                 },
                 {
-                    "@versao": "02/12/2018 10:08:38",
+                    "@versao": "08/12/2018 10:21:29",
                     "Comissao": "Comissão de Constituição, Justiça e Cidadania",
                     "SiglaComissao": "CCJ",
                     "CodigoParlamentar": "87",
@@ -45,7 +45,7 @@
                     "Quantidade": "3"
                 },
                 {
-                    "@versao": "02/12/2018 10:08:38",
+                    "@versao": "08/12/2018 10:21:29",
                     "Comissao": "Comissão de Constituição, Justiça e Cidadania",
                     "SiglaComissao": "CCJ",
                     "CodigoParlamentar": "4994",
@@ -57,7 +57,7 @@
                     "Quantidade": "3"
                 },
                 {
-                    "@versao": "02/12/2018 10:08:38",
+                    "@versao": "08/12/2018 10:21:29",
                     "Comissao": "Comissão de Constituição, Justiça e Cidadania",
                     "SiglaComissao": "CCJ",
                     "CodigoParlamentar": "4763",
@@ -69,7 +69,7 @@
                     "Quantidade": "4"
                 },
                 {
-                    "@versao": "02/12/2018 10:08:38",
+                    "@versao": "08/12/2018 10:21:29",
                     "Comissao": "Comissão de Constituição, Justiça e Cidadania",
                     "SiglaComissao": "CCJ",
                     "CodigoParlamentar": "615",
@@ -78,10 +78,10 @@
                     "URL": "HTTP://WWW.SENADO.LEG.BR/SENADORES/DINAMICO/PAGINST/SENADOR615A.ASP",
                     "Foto": "HTTP://WWW.SENADO.LEG.BR/SENADORES/IMG/FOTOS/BEMV615.JPG",
                     "Uf": "CE",
-                    "Quantidade": "149"
+                    "Quantidade": "148"
                 },
                 {
-                    "@versao": "02/12/2018 10:08:38",
+                    "@versao": "08/12/2018 10:21:29",
                     "Comissao": "Comissão de Constituição, Justiça e Cidadania",
                     "SiglaComissao": "CCJ",
                     "CodigoParlamentar": "631",
@@ -93,19 +93,7 @@
                     "Quantidade": "18"
                 },
                 {
-                    "@versao": "02/12/2018 10:08:38",
-                    "Comissao": "Comissão de Constituição, Justiça e Cidadania",
-                    "SiglaComissao": "CCJ",
-                    "CodigoParlamentar": "5537",
-                    "Parlamentar": "Senador Dário Berger",
-                    "Partido": "MDB",
-                    "URL": "HTTP://WWW.SENADO.LEG.BR/SENADORES/DINAMICO/PAGINST/SENADOR5537A.ASP",
-                    "Foto": "HTTP://WWW.SENADO.LEG.BR/SENADORES/IMG/FOTOS/BEMV5537.JPG",
-                    "Uf": "SC",
-                    "Quantidade": "1"
-                },
-                {
-                    "@versao": "02/12/2018 10:08:38",
+                    "@versao": "08/12/2018 10:21:29",
                     "Comissao": "Comissão de Constituição, Justiça e Cidadania",
                     "SiglaComissao": "CCJ",
                     "CodigoParlamentar": "3",
@@ -117,7 +105,7 @@
                     "Quantidade": "35"
                 },
                 {
-                    "@versao": "02/12/2018 10:08:38",
+                    "@versao": "08/12/2018 10:21:29",
                     "Comissao": "Comissão de Constituição, Justiça e Cidadania",
                     "SiglaComissao": "CCJ",
                     "CodigoParlamentar": "4697",
@@ -129,7 +117,7 @@
                     "Quantidade": "14"
                 },
                 {
-                    "@versao": "02/12/2018 10:08:38",
+                    "@versao": "08/12/2018 10:21:29",
                     "Comissao": "Comissão de Constituição, Justiça e Cidadania",
                     "SiglaComissao": "CCJ",
                     "CodigoParlamentar": "5008",
@@ -141,7 +129,7 @@
                     "Quantidade": "22"
                 },
                 {
-                    "@versao": "02/12/2018 10:08:38",
+                    "@versao": "08/12/2018 10:21:29",
                     "Comissao": "Comissão de Constituição, Justiça e Cidadania",
                     "SiglaComissao": "CCJ",
                     "CodigoParlamentar": "3695",
@@ -153,7 +141,7 @@
                     "Quantidade": "9"
                 },
                 {
-                    "@versao": "02/12/2018 10:08:38",
+                    "@versao": "08/12/2018 10:21:29",
                     "Comissao": "Comissão de Constituição, Justiça e Cidadania",
                     "SiglaComissao": "CCJ",
                     "CodigoParlamentar": "825",
@@ -165,7 +153,7 @@
                     "Quantidade": "33"
                 },
                 {
-                    "@versao": "02/12/2018 10:08:38",
+                    "@versao": "08/12/2018 10:21:29",
                     "Comissao": "Comissão de Constituição, Justiça e Cidadania",
                     "SiglaComissao": "CCJ",
                     "CodigoParlamentar": "4721",
@@ -177,7 +165,7 @@
                     "Quantidade": "10"
                 },
                 {
-                    "@versao": "02/12/2018 10:08:38",
+                    "@versao": "08/12/2018 10:21:29",
                     "Comissao": "Comissão de Constituição, Justiça e Cidadania",
                     "SiglaComissao": "CCJ",
                     "CodigoParlamentar": "3361",
@@ -189,7 +177,7 @@
                     "Quantidade": "25"
                 },
                 {
-                    "@versao": "02/12/2018 10:08:38",
+                    "@versao": "08/12/2018 10:21:29",
                     "Comissao": "Comissão de Constituição, Justiça e Cidadania",
                     "SiglaComissao": "CCJ",
                     "CodigoParlamentar": "1173",
@@ -201,7 +189,7 @@
                     "Quantidade": "1"
                 },
                 {
-                    "@versao": "02/12/2018 10:08:38",
+                    "@versao": "08/12/2018 10:21:29",
                     "Comissao": "Comissão de Constituição, Justiça e Cidadania",
                     "SiglaComissao": "CCJ",
                     "CodigoParlamentar": "5529",
@@ -210,10 +198,10 @@
                     "URL": "HTTP://WWW.SENADO.LEG.BR/SENADORES/DINAMICO/PAGINST/SENADOR5529A.ASP",
                     "Foto": "HTTP://WWW.SENADO.LEG.BR/SENADORES/IMG/FOTOS/BEMV5529.JPG",
                     "Uf": "MG",
-                    "Quantidade": "143"
+                    "Quantidade": "144"
                 },
                 {
-                    "@versao": "02/12/2018 10:08:38",
+                    "@versao": "08/12/2018 10:21:29",
                     "Comissao": "Comissão de Constituição, Justiça e Cidadania",
                     "SiglaComissao": "CCJ",
                     "CodigoParlamentar": "715",
@@ -225,7 +213,7 @@
                     "Quantidade": "17"
                 },
                 {
-                    "@versao": "02/12/2018 10:08:38",
+                    "@versao": "08/12/2018 10:21:29",
                     "Comissao": "Comissão de Constituição, Justiça e Cidadania",
                     "SiglaComissao": "CCJ",
                     "CodigoParlamentar": "677",
@@ -237,7 +225,7 @@
                     "Quantidade": "23"
                 },
                 {
-                    "@versao": "02/12/2018 10:08:38",
+                    "@versao": "08/12/2018 10:21:29",
                     "Comissao": "Comissão de Constituição, Justiça e Cidadania",
                     "SiglaComissao": "CCJ",
                     "CodigoParlamentar": "3634",
@@ -246,10 +234,10 @@
                     "URL": "HTTP://WWW.SENADO.LEG.BR/SENADORES/DINAMICO/PAGINST/SENADOR3634A.ASP",
                     "Foto": "HTTP://WWW.SENADO.LEG.BR/SENADORES/IMG/FOTOS/BEMV3634.JPG",
                     "Uf": "PA",
-                    "Quantidade": "9"
+                    "Quantidade": "8"
                 },
                 {
-                    "@versao": "02/12/2018 10:08:38",
+                    "@versao": "08/12/2018 10:21:29",
                     "Comissao": "Comissão de Constituição, Justiça e Cidadania",
                     "SiglaComissao": "CCJ",
                     "CodigoParlamentar": "4575",
@@ -261,7 +249,7 @@
                     "Quantidade": "5"
                 },
                 {
-                    "@versao": "02/12/2018 10:08:38",
+                    "@versao": "08/12/2018 10:21:29",
                     "Comissao": "Comissão de Constituição, Justiça e Cidadania",
                     "SiglaComissao": "CCJ",
                     "CodigoParlamentar": "5012",
@@ -273,7 +261,7 @@
                     "Quantidade": "49"
                 },
                 {
-                    "@versao": "02/12/2018 10:08:38",
+                    "@versao": "08/12/2018 10:21:29",
                     "Comissao": "Comissão de Constituição, Justiça e Cidadania",
                     "SiglaComissao": "CCJ",
                     "CodigoParlamentar": "90",
@@ -285,7 +273,7 @@
                     "Quantidade": "5"
                 },
                 {
-                    "@versao": "02/12/2018 10:08:38",
+                    "@versao": "08/12/2018 10:21:29",
                     "Comissao": "Comissão de Constituição, Justiça e Cidadania",
                     "SiglaComissao": "CCJ",
                     "CodigoParlamentar": "3394",
@@ -297,7 +285,7 @@
                     "Quantidade": "8"
                 },
                 {
-                    "@versao": "02/12/2018 10:08:38",
+                    "@versao": "08/12/2018 10:21:29",
                     "Comissao": "Comissão de Constituição, Justiça e Cidadania",
                     "SiglaComissao": "CCJ",
                     "CodigoParlamentar": "5197",
@@ -309,7 +297,7 @@
                     "Quantidade": "2"
                 },
                 {
-                    "@versao": "02/12/2018 10:08:38",
+                    "@versao": "08/12/2018 10:21:29",
                     "Comissao": "Comissão de Constituição, Justiça e Cidadania",
                     "SiglaComissao": "CCJ",
                     "CodigoParlamentar": "5108",
@@ -321,7 +309,7 @@
                     "Quantidade": "6"
                 },
                 {
-                    "@versao": "02/12/2018 10:08:38",
+                    "@versao": "08/12/2018 10:21:29",
                     "Comissao": "Comissão de Constituição, Justiça e Cidadania",
                     "SiglaComissao": "CCJ",
                     "CodigoParlamentar": "739",
@@ -333,7 +321,7 @@
                     "Quantidade": "2"
                 },
                 {
-                    "@versao": "02/12/2018 10:08:38",
+                    "@versao": "08/12/2018 10:21:29",
                     "Comissao": "Comissão de Constituição, Justiça e Cidadania",
                     "SiglaComissao": "CCJ",
                     "CodigoParlamentar": "4990",
@@ -345,7 +333,7 @@
                     "Quantidade": "22"
                 },
                 {
-                    "@versao": "02/12/2018 10:08:38",
+                    "@versao": "08/12/2018 10:21:29",
                     "Comissao": "Comissão de Constituição, Justiça e Cidadania",
                     "SiglaComissao": "CCJ",
                     "CodigoParlamentar": "558",
@@ -357,7 +345,7 @@
                     "Quantidade": "12"
                 },
                 {
-                    "@versao": "02/12/2018 10:08:38",
+                    "@versao": "08/12/2018 10:21:29",
                     "Comissao": "Comissão de Constituição, Justiça e Cidadania",
                     "SiglaComissao": "CCJ",
                     "CodigoParlamentar": "5000",
@@ -369,7 +357,7 @@
                     "Quantidade": "11"
                 },
                 {
-                    "@versao": "02/12/2018 10:08:38",
+                    "@versao": "08/12/2018 10:21:29",
                     "Comissao": "Comissão de Constituição, Justiça e Cidadania",
                     "SiglaComissao": "CCJ",
                     "CodigoParlamentar": "456",
@@ -381,7 +369,7 @@
                     "Quantidade": "18"
                 },
                 {
-                    "@versao": "02/12/2018 10:08:38",
+                    "@versao": "08/12/2018 10:21:29",
                     "Comissao": "Comissão de Constituição, Justiça e Cidadania",
                     "SiglaComissao": "CCJ",
                     "CodigoParlamentar": "2331",
@@ -393,7 +381,7 @@
                     "Quantidade": "7"
                 },
                 {
-                    "@versao": "02/12/2018 10:08:38",
+                    "@versao": "08/12/2018 10:21:29",
                     "Comissao": "Comissão de Constituição, Justiça e Cidadania",
                     "SiglaComissao": "CCJ",
                     "CodigoParlamentar": "35",
@@ -405,7 +393,7 @@
                     "Quantidade": "6"
                 },
                 {
-                    "@versao": "02/12/2018 10:08:38",
+                    "@versao": "08/12/2018 10:21:29",
                     "Comissao": "Comissão de Constituição, Justiça e Cidadania",
                     "SiglaComissao": "CCJ",
                     "CodigoParlamentar": "4767",
@@ -414,10 +402,10 @@
                     "URL": "HTTP://WWW.SENADO.LEG.BR/SENADORES/DINAMICO/PAGINST/SENADOR4767A.ASP",
                     "Foto": "HTTP://WWW.SENADO.LEG.BR/SENADORES/IMG/FOTOS/BEMV4767.JPG",
                     "Uf": "RJ",
-                    "Quantidade": "11"
+                    "Quantidade": "9"
                 },
                 {
-                    "@versao": "02/12/2018 10:08:38",
+                    "@versao": "08/12/2018 10:21:29",
                     "Comissao": "Comissão de Constituição, Justiça e Cidadania",
                     "SiglaComissao": "CCJ",
                     "CodigoParlamentar": "1023",
@@ -429,7 +417,7 @@
                     "Quantidade": "3"
                 },
                 {
-                    "@versao": "02/12/2018 10:08:38",
+                    "@versao": "08/12/2018 10:21:29",
                     "Comissao": "Comissão de Constituição, Justiça e Cidadania",
                     "SiglaComissao": "CCJ",
                     "CodigoParlamentar": "72",
@@ -441,7 +429,7 @@
                     "Quantidade": "18"
                 },
                 {
-                    "@versao": "02/12/2018 10:08:38",
+                    "@versao": "08/12/2018 10:21:29",
                     "Comissao": "Comissão de Constituição, Justiça e Cidadania",
                     "SiglaComissao": "CCJ",
                     "CodigoParlamentar": "1176",
@@ -453,7 +441,7 @@
                     "Quantidade": "1"
                 },
                 {
-                    "@versao": "02/12/2018 10:08:38",
+                    "@versao": "08/12/2018 10:21:29",
                     "Comissao": "Comissão de Constituição, Justiça e Cidadania",
                     "SiglaComissao": "CCJ",
                     "CodigoParlamentar": "3372",
@@ -465,7 +453,7 @@
                     "Quantidade": "22"
                 },
                 {
-                    "@versao": "02/12/2018 10:08:38",
+                    "@versao": "08/12/2018 10:21:29",
                     "Comissao": "Comissão de Constituição, Justiça e Cidadania",
                     "SiglaComissao": "CCJ",
                     "CodigoParlamentar": "73",
@@ -477,7 +465,7 @@
                     "Quantidade": "32"
                 },
                 {
-                    "@versao": "02/12/2018 10:08:38",
+                    "@versao": "08/12/2018 10:21:29",
                     "Comissao": "Comissão de Constituição, Justiça e Cidadania",
                     "SiglaComissao": "CCJ",
                     "CodigoParlamentar": "5070",
@@ -486,10 +474,10 @@
                     "URL": "HTTP://WWW.SENADO.LEG.BR/SENADORES/DINAMICO/PAGINST/SENADOR5070A.ASP",
                     "Foto": "HTTP://WWW.SENADO.LEG.BR/SENADORES/IMG/FOTOS/BEMV5070.JPG",
                     "Uf": "GO",
-                    "Quantidade": "26"
+                    "Quantidade": "27"
                 },
                 {
-                    "@versao": "02/12/2018 10:08:38",
+                    "@versao": "08/12/2018 10:21:29",
                     "Comissao": "Comissão de Constituição, Justiça e Cidadania",
                     "SiglaComissao": "CCJ",
                     "CodigoParlamentar": "5182",
@@ -501,7 +489,7 @@
                     "Quantidade": "5"
                 },
                 {
-                    "@versao": "02/12/2018 10:08:38",
+                    "@versao": "08/12/2018 10:21:29",
                     "Comissao": "Comissão de Constituição, Justiça e Cidadania",
                     "SiglaComissao": "CCJ",
                     "CodigoParlamentar": "5533",
@@ -510,10 +498,10 @@
                     "URL": "HTTP://WWW.SENADO.LEG.BR/SENADORES/DINAMICO/PAGINST/SENADOR5533A.ASP",
                     "Foto": "HTTP://WWW.SENADO.LEG.BR/SENADORES/IMG/FOTOS/BEMV5533.JPG",
                     "Uf": "RS",
-                    "Quantidade": "13"
+                    "Quantidade": "14"
                 },
                 {
-                    "@versao": "02/12/2018 10:08:38",
+                    "@versao": "08/12/2018 10:21:29",
                     "Comissao": "Comissão de Constituição, Justiça e Cidadania",
                     "SiglaComissao": "CCJ",
                     "CodigoParlamentar": "5527",
@@ -525,19 +513,7 @@
                     "Quantidade": "22"
                 },
                 {
-                    "@versao": "02/12/2018 10:08:38",
-                    "Comissao": "Comissão de Constituição, Justiça e Cidadania",
-                    "SiglaComissao": "CCJ",
-                    "CodigoParlamentar": "945",
-                    "Parlamentar": "Senador Alvaro Dias",
-                    "Partido": "PODE",
-                    "URL": "HTTP://WWW.SENADO.LEG.BR/SENADORES/DINAMICO/PAGINST/SENADOR945A.ASP",
-                    "Foto": "HTTP://WWW.SENADO.LEG.BR/SENADORES/IMG/FOTOS/BEMV945.JPG",
-                    "Uf": "PR",
-                    "Quantidade": "1"
-                },
-                {
-                    "@versao": "02/12/2018 10:08:38",
+                    "@versao": "08/12/2018 10:21:29",
                     "Comissao": "Comissão de Constituição, Justiça e Cidadania",
                     "SiglaComissao": "CCJ",
                     "CodigoParlamentar": "16",
@@ -549,7 +525,7 @@
                     "Quantidade": "2"
                 },
                 {
-                    "@versao": "02/12/2018 10:08:38",
+                    "@versao": "08/12/2018 10:21:29",
                     "Comissao": "Comissão de Constituição, Justiça e Cidadania",
                     "SiglaComissao": "CCJ",
                     "CodigoParlamentar": "4981",
@@ -561,7 +537,7 @@
                     "Quantidade": "20"
                 },
                 {
-                    "@versao": "02/12/2018 10:08:38",
+                    "@versao": "08/12/2018 10:21:29",
                     "Comissao": "Comissão de Constituição, Justiça e Cidadania",
                     "SiglaComissao": "CCJ",
                     "CodigoParlamentar": "4560",
@@ -573,7 +549,7 @@
                     "Quantidade": "13"
                 },
                 {
-                    "@versao": "02/12/2018 10:08:38",
+                    "@versao": "08/12/2018 10:21:29",
                     "Comissao": "Comissão de Constituição, Justiça e Cidadania",
                     "SiglaComissao": "CCJ",
                     "CodigoParlamentar": "5100",
@@ -585,7 +561,7 @@
                     "Quantidade": "16"
                 },
                 {
-                    "@versao": "02/12/2018 10:08:38",
+                    "@versao": "08/12/2018 10:21:29",
                     "Comissao": "Comissão de Constituição, Justiça e Cidadania",
                     "SiglaComissao": "CCJ",
                     "CodigoParlamentar": "3713",
@@ -594,10 +570,10 @@
                     "URL": "HTTP://WWW.SENADO.LEG.BR/SENADORES/DINAMICO/PAGINST/SENADOR3713A.ASP",
                     "Foto": "HTTP://WWW.SENADO.LEG.BR/SENADORES/IMG/FOTOS/BEMV3713.JPG",
                     "Uf": "RN",
-                    "Quantidade": "9"
+                    "Quantidade": "8"
                 },
                 {
-                    "@versao": "02/12/2018 10:08:38",
+                    "@versao": "08/12/2018 10:21:29",
                     "Comissao": "Comissão de Constituição, Justiça e Cidadania",
                     "SiglaComissao": "CCJ",
                     "CodigoParlamentar": "5525",
@@ -609,7 +585,7 @@
                     "Quantidade": "2"
                 },
                 {
-                    "@versao": "02/12/2018 10:08:38",
+                    "@versao": "08/12/2018 10:21:29",
                     "Comissao": "Comissão de Constituição, Justiça e Cidadania",
                     "SiglaComissao": "CCJ",
                     "CodigoParlamentar": "635",

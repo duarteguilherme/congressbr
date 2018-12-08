@@ -3,7 +3,7 @@
         "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
         "@xsi:noNamespaceSchemaLocation": "http://legis.senado.leg.br/dadosabertos/dados/ListaTiposDocumentov3.xsd",
         "Metadados": {
-            "Versao": "02/12/2018 09:17:53",
+            "Versao": "08/12/2018 09:51:01",
             "VersaoServico": "3",
             "DataVersaoServico": "2017-02-01",
             "DescricaoDataSet": "Retorna os tipos de normas jurídicas, ativos ou não."

@@ -1,0 +1,81 @@
+{
+    "MandatoParlamentar": {
+        "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+        "@xsi:noNamespaceSchemaLocation": "http://legis.senado.leg.br/dadosabertos/dados/MandatoParlamentarv4.xsd",
+        "Metadados": {
+            "Versao": "08/12/2018 09:50:44",
+            "VersaoServico": "4",
+            "DescricaoDataSet": "Mandatos do parlamentar (atual e anteriores, se houver)"
+        },
+        "Parlamentar": {
+            "IdentificacaoParlamentar": {
+                "CodigoParlamentar": "4763",
+                "NomeParlamentar": "Vicentinho Alves",
+                "NomeCompletoParlamentar": "Vicente Alves de Oliveira",
+                "SexoParlamentar": "Masculino",
+                "FormaTratamento": "Senador ",
+                "UrlFotoParlamentar": "http://www.senado.leg.br/senadores/img/fotos-oficiais/senador4763.jpg",
+                "UrlPaginaParlamentar": "http://www25.senado.leg.br/web/senadores/senador/-/perfil/4763",
+                "EmailParlamentar": "vicentinho.alves@senador.leg.br",
+                "SiglaPartidoParlamentar": "PR",
+                "UfParlamentar": "TO"
+            },
+            "Mandatos": {
+                "Mandato": {
+                    "CodigoMandato": "451",
+                    "UfParlamentar": "TO",
+                    "PrimeiraLegislaturaDoMandato": {
+                        "NumeroLegislatura": "54",
+                        "DataInicio": "2011-02-01",
+                        "DataFim": "2015-01-31"
+                    },
+                    "SegundaLegislaturaDoMandato": {
+                        "NumeroLegislatura": "55",
+                        "DataInicio": "2015-02-01",
+                        "DataFim": "2019-01-31"
+                    },
+                    "DescricaoParticipacao": "Titular",
+                    "Suplentes": {
+                        "Suplente": [
+                            {
+                                "DescricaoParticipacao": "1º Suplente",
+                                "CodigoParlamentar": "5166",
+                                "NomeParlamentar": "João Costa"
+                            },
+                            {
+                                "DescricaoParticipacao": "2º Suplente",
+                                "CodigoParlamentar": "5170",
+                                "NomeParlamentar": "Agimiro Dias da Costa"
+                            }
+                        ]
+                    },
+                    "Exercicios": {
+                        "Exercicio": [
+                            {
+                                "CodigoExercicio": "2688",
+                                "DataInicio": "2013-04-23"
+                            },
+                            {
+                                "CodigoExercicio": "2681",
+                                "DataInicio": "2013-01-30",
+                                "DataFim": "2013-02-01",
+                                "SiglaCausaAfastamento": "AFO",
+                                "DescricaoCausaAfastamento": "Afastamento do exercício",
+                                "DataLeitura": "2013-01-30"
+                            },
+                            {
+                                "CodigoExercicio": "2627",
+                                "DataInicio": "2011-02-01",
+                                "DataFim": "2012-10-16",
+                                "SiglaCausaAfastamento": "AFO",
+                                "DescricaoCausaAfastamento": "Afastamento do exercício",
+                                "DataLeitura": "2012-10-17"
+                            }
+                        ]
+                    }
+                }
+            },
+            "UrlGlossario": "http://legis.senado.leg.br/dadosabertos/senador/"
+        }
+    }
+}

@@ -1,0 +1,144 @@
+{
+    "DetalheMateria": {
+        "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+        "@xsi:noNamespaceSchemaLocation": "http://legis.senado.leg.br/dadosabertos/dados/DetalheMateriav5.xsd",
+        "Metadados": {
+            "Versao": "08/12/2018 10:20:56",
+            "VersaoServico": "5",
+            "DataVersaoServico": "2017-02-01",
+            "DescricaoDataSet": "Dados básicos da matéria, incluindo autoria, norma gerada e outras informações"
+        },
+        "Materia": {
+            "IdentificacaoMateria": {
+                "CodigoMateria": "95419",
+                "SiglaCasaIdentificacaoMateria": "SF",
+                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                "SiglaSubtipoMateria": "PLS",
+                "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                "NumeroMateria": "00005",
+                "AnoMateria": "2010",
+                "DescricaoObjetivoProcesso": "Iniciadora",
+                "DescricaoIdentificacaoMateria": "PLS 5/2010",
+                "IndicadorTramitando": "Não"
+            },
+            "DadosBasicosMateria": {
+                "EmentaMateria": "Inscreve o nome de Zilda Arns Neumann no livro dos Heróis da Pátria.",
+                "ExplicacaoEmentaMateria": "Inscreve o nome de Zilda Arns Neumann no livro dos Heróis da Pátria, que se encontra no Panteão da Liberdade e da Democracia, em Brasília-DF.",
+                "IndicadorComplementar": "Não",
+                "DataApresentacao": "2010-02-02",
+                "DataLeitura": "2010-02-02",
+                "SiglaCasaLeitura": "SF",
+                "NomeCasaLeitura": "Senado Federal"
+            },
+            "Autoria": {
+                "Autor": [
+                    {
+                        "NomeAutor": "Flávio Arns",
+                        "SiglaTipoAutor": "SENADOR",
+                        "DescricaoTipoAutor": "Senador",
+                        "UfAutor": "PR",
+                        "NumOrdemAutor": "1",
+                        "IndicadorOutrosAutores": "Não",
+                        "IdentificacaoParlamentar": {
+                            "CodigoParlamentar": "345",
+                            "NomeParlamentar": "Flávio Arns",
+                            "NomeCompletoParlamentar": "Flávio José Arns",
+                            "SexoParlamentar": "Masculino",
+                            "FormaTratamento": "Senador",
+                            "UrlFotoParlamentar": "http://www.senado.leg.br/senadores/img/fotos-oficiais/senador345.jpg",
+                            "UrlPaginaParlamentar": "http://www25.senado.leg.br/web/senadores/senador/-/perfil/345",
+                            "EmailParlamentar": "flavioarns@senador.leg.br",
+                            "SiglaPartidoParlamentar": "PSDB",
+                            "UfParlamentar": "PR"
+                        }
+                    }
+                ]
+            },
+            "Assunto": {
+                "AssuntoEspecifico": {
+                    "Codigo": "122",
+                    "Descricao": "Homenagem cívica"
+                },
+                "AssuntoGeral": {
+                    "Codigo": "85",
+                    "Descricao": "Honorífico"
+                }
+            },
+            "OrigemMateria": {
+                "NomePoderOrigem": "Legislativo",
+                "SiglaCasaOrigem": "SF",
+                "NomeCasaOrigem": "Senado Federal"
+            },
+            "CasaIniciadoraNoLegislativo": {
+                "SiglaCasaIniciadora": "SF",
+                "NomeCasaIniciadora": "Senado Federal"
+            },
+            "MateriasRelacionadas": {
+                "MateriaRelacionada": {
+                    "IdentificacaoMateria": {
+                        "CodigoMateria": "97486",
+                        "SiglaCasaIdentificacaoMateria": "SF",
+                        "NomeCasaIdentificacaoMateria": "Senado Federal",
+                        "SiglaSubtipoMateria": "RQS",
+                        "DescricaoSubtipoMateria": "REQUERIMENTO",
+                        "NumeroMateria": "639",
+                        "AnoMateria": "2010",
+                        "IndicadorTramitando": "Não"
+                    }
+                }
+            },
+            "SituacaoAtual": {
+                "Autuacoes": {
+                    "Autuacao": {
+                        "NumeroAutuacao": "1",
+                        "Situacao": {
+                            "DataSituacao": "2010-06-21",
+                            "CodigoSituacao": "60",
+                            "SiglaSituacao": "RTPA",
+                            "DescricaoSituacao": "RETIRADA PELO AUTOR"
+                        },
+                        "Local": {
+                            "DataLocal": "2010-06-28",
+                            "CodigoLocal": "354",
+                            "TipoLocal": "A",
+                            "SiglaCasaLocal": "SF",
+                            "NomeCasaLocal": "Senado Federal",
+                            "SiglaLocal": "SARQ",
+                            "NomeLocal": "Secretaria de Arquivo"
+                        }
+                    }
+                }
+            },
+            "OutrasInformacoes": {
+                "Servico": [
+                    {
+                        "NomeServico": "EmendaMateria",
+                        "DescricaoServico": "Emendas da matéria",
+                        "UrlServico": "http://legis.senado.leg.br/dadosabertos/materia/emendas/95419?v=5"
+                    },
+                    {
+                        "NomeServico": "MovimentacaoMateria",
+                        "DescricaoServico": "Movimentações da matéria, como tramitações, despachos e prazos",
+                        "UrlServico": "http://legis.senado.leg.br/dadosabertos/materia/movimentacoes/95419?v=6"
+                    },
+                    {
+                        "NomeServico": "RelatoriaMateria",
+                        "DescricaoServico": "Relatoria atual e relatorias encerradas (histórico) da matéria",
+                        "UrlServico": "http://legis.senado.leg.br/dadosabertos/materia/relatorias/95419?v=5"
+                    },
+                    {
+                        "NomeServico": "TextoMateria",
+                        "DescricaoServico": "Textos da matéria",
+                        "UrlServico": "http://legis.senado.leg.br/dadosabertos/materia/textos/95419?v=5"
+                    },
+                    {
+                        "NomeServico": "VotacaoMateria",
+                        "DescricaoServico": "Votações da matéria",
+                        "UrlServico": "http://legis.senado.leg.br/dadosabertos/materia/votacoes/95419?v=5"
+                    }
+                ]
+            },
+            "UrlGlossario": "http://legis.senado.leg.br/dadosabertos/glossario/lista"
+        }
+    }
+}

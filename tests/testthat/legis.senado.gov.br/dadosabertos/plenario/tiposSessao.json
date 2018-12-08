@@ -3,7 +3,7 @@
         "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
         "@xsi:noNamespaceSchemaLocation": "http://legis.senado.leg.br/dadosabertos/dados/ListaTiposSessaov2.xsd",
         "Metadados": {
-            "Versao": "02/12/2018 10:08:54",
+            "Versao": "08/12/2018 09:50:19",
             "VersaoServico": "2",
             "DescricaoDataSet": "Lista os tipos de sessão, ativos ou não. Por default, apenas os ativos. Para listar todos, acrescente o parâmetro opcional \"indAtivos=N\"."
         },

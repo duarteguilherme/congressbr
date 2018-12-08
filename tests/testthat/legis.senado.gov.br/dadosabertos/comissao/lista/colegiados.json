@@ -3,7 +3,7 @@
         "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
         "@xsi:noNamespaceSchemaLocation": "http://legis.senado.gov.br/dadosabertos/dados/ListaColegiadosv2.xsd",
         "Metadados": {
-            "Versao": "02/12/2018 10:08:51",
+            "Versao": "08/12/2018 10:21:26",
             "VersaoServico": "2",
             "DescricaoDataSet": "Lista os colegiados da base de dados."
         },
@@ -338,18 +338,6 @@
                     "SiglaCasa": "CN"
                 },
                 {
-                    "Codigo": "2188",
-                    "Sigla": "CMMPV 838/2018",
-                    "Nome": "Comissão Mista da Medida Provisória nº 838, de 2018",
-                    "Finalidade": "Destinada a emitir parecer sobre a Medida Provisória nº 838, de 2018",
-                    "DataInicio": "2018-06-01",
-                    "Publica": "S",
-                    "CodigoTipoColegiado": "42",
-                    "SiglaTipoColegiado": "MPV",
-                    "DescricaoTipoColegiado": "Comissão de Medida Provisória",
-                    "SiglaCasa": "CN"
-                },
-                {
                     "Codigo": "2190",
                     "Sigla": "CMMPV 840/2018",
                     "Nome": "Comissão Mista da Medida Provisória nº 840, de 2018",
@@ -571,6 +559,42 @@
                     "Nome": "Comissão Mista da Medida Provisória nº 859, de 2018.",
                     "Finalidade": "Destinada a emitir parecer sobre a Medida Provisória nº 859, de 2018.",
                     "DataInicio": "2018-11-27",
+                    "Publica": "S",
+                    "CodigoTipoColegiado": "42",
+                    "SiglaTipoColegiado": "MPV",
+                    "DescricaoTipoColegiado": "Comissão de Medida Provisória",
+                    "SiglaCasa": "CN"
+                },
+                {
+                    "Codigo": "2228",
+                    "Sigla": "CMMPV 860/2018",
+                    "Nome": "Comissão Mista da Medida Provisória nº 860, de 2018.",
+                    "Finalidade": "Destinada a emitir parecer sobre a Medida Provisória nº 860, de 2018.",
+                    "DataInicio": "2018-12-04",
+                    "Publica": "S",
+                    "CodigoTipoColegiado": "42",
+                    "SiglaTipoColegiado": "MPV",
+                    "DescricaoTipoColegiado": "Comissão de Medida Provisória",
+                    "SiglaCasa": "CN"
+                },
+                {
+                    "Codigo": "2229",
+                    "Sigla": "CMMPV 861/2018",
+                    "Nome": "Comissão Mista da Medida Provisória nº 861, de 2018.",
+                    "Finalidade": "Destinada a emitir parecer sobre a Medida Provisória nº 861, de 2018.",
+                    "DataInicio": "2018-12-05",
+                    "Publica": "S",
+                    "CodigoTipoColegiado": "42",
+                    "SiglaTipoColegiado": "MPV",
+                    "DescricaoTipoColegiado": "Comissão de Medida Provisória",
+                    "SiglaCasa": "CN"
+                },
+                {
+                    "Codigo": "2230",
+                    "Sigla": "CMMPV 862/2018",
+                    "Nome": "Comissão Mista da Medida Provisória nº 862, de 2018.",
+                    "Finalidade": "Destinada a emitir parecer sobre a Medida Provisória nº 862, de 2018.",
+                    "DataInicio": "2018-12-05",
                     "Publica": "S",
                     "CodigoTipoColegiado": "42",
                     "SiglaTipoColegiado": "MPV",
@@ -1562,9 +1586,9 @@
                     "Finalidade": "A Representação Brasileira no Parlamento do Mercosul tem por finalidade ser o órgão de ligação entre o Congresso Nacional e o Parlamento do Mercosul.",
                     "DataInicio": "2015-02-02",
                     "Publica": "S",
-                    "CodigoTipoColegiado": "41",
-                    "SiglaTipoColegiado": "PERM",
-                    "DescricaoTipoColegiado": "Comissão Permanente",
+                    "CodigoTipoColegiado": "113",
+                    "SiglaTipoColegiado": "ÓRGÃO",
+                    "DescricaoTipoColegiado": "Órgão",
                     "SiglaCasa": "CN"
                 },
                 {

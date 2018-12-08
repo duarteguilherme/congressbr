@@ -1,0 +1,69 @@
+{
+    "PautaPlenario": {
+        "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+        "@xsi:noNamespaceSchemaLocation": "http://legis.senado.gov.br/dadosabertos/dados/PautaPlenariov2.xsd",
+        "Metadados": {
+            "Versao": "08/12/2018 09:50:21",
+            "VersaoServico": "2",
+            "DescricaoDataSet": "Exibe a pauta das sessões plenárias em uma determinada data."
+        },
+        "Sessoes": {
+            "Sessao": {
+                "DiaUtil": "01",
+                "Data": "2016-04-01",
+                "DiaSemana": "sexta-feira",
+                "Mes": "Abril",
+                "Horario": "9 horas ",
+                "Hora": "9:00",
+                "NumeroSessao": "42ª SESSÃO ",
+                "TipoSessao": "SESSÃO NÃO DELIBERATIVA",
+                "Comunicado": "TODAS AS DELIBERAÇÕES LEGISLATIVAS ESTÃO SOBRESTADAS.",
+                "CodigoSessao": "3745",
+                "Casa": "SF",
+                "SessaoLegislativa": "2",
+                "Legislatura": "55",
+                "CodigoSituacaoSessao": "8",
+                "SituacaoSessao": "Encerrada",
+                "Realizada": {
+                    "Status": "Sim"
+                },
+                "Oradores": {
+                    "TipoOrador": [
+                        {
+                            "DescricaoTipoOrador": "Oradores Inscritos",
+                            "OradorSessao": {
+                                "Orador": [
+                                    {
+                                        "Ordem": "1",
+                                        "Parlamentar": "Senador Cristovam Buarque",
+                                        "CodigoTipoOrador": "13"
+                                    },
+                                    {
+                                        "Ordem": "3",
+                                        "Parlamentar": "Senador Hélio José",
+                                        "CodigoTipoOrador": "13"
+                                    },
+                                    {
+                                        "Ordem": "4",
+                                        "Parlamentar": "Senador José Medeiros",
+                                        "CodigoTipoOrador": "13"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "DescricaoTipoOrador": "(Art. 17, § 1º)",
+                            "OradorSessao": {
+                                "Orador": {
+                                    "Ordem": "1",
+                                    "Parlamentar": "Senador Paulo Paim",
+                                    "CodigoTipoOrador": "17"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,75 +1,58 @@
 # capturing responses for tests
-
+library(httptest)
 # parameters taken from examples
 
-# chamber:
-camara <- c(
-  rep("http://www.camara.leg.br/SitCamaraWS/Proposicoes.asmx/", 6),
-  "http://www.camara.leg.br/SitCamaraWS/Deputados.asmx/"
-  )
-
-camara_params <- c(
-  "ObterProposicao?tipo=PL&numero=3962&ano=2008",                     # cham_bill_info
-  "ObterProposicaoPorID?IdProp=14784",                                # cham_bill_info_id
-  "ListarProposicoes?sigla=PL&ano=2011",                              # cham_bills
-  "ListarProposicoesVotadasEmPlenario?tipo=PL&ano=2008&numero=1247",  # cham_plenary_bills
-  "ListarTiposAutores",                                               # cham_typeauthors_bills
-  "ObterVotacaoProposicao?tipo=PL&numero=1992&ano=2007",              # cham_votes
-  "ObterDeputados"                                                    # cham_deputy_list
-)
-
-
 # capture response
-#start_capturing()
-purrr::map2(camara, camara_params, paste0) %>% purrr::map(httr::GET)
+start_capturing()
+.mockPaths("tests/testthat")
 
+cham_bill_info(type = "PL", number = "3962", year = "2008")
+cham_bill_info_id(14784)
+cham_bills(type = "PL", year = 2011, number = 2718,
+           initial_date="2011-16-11")
+cham_legislator_list()
+cham_plenary_bills(year = 2008)
+cham_typeauthors_bills()
+cham_votes(type = "PL", number = "1992", year = "2007")
+sen_agenda(initial_date = "20161105", end_date = "20161125")
+sen_bill_search(year = 2014)
+sen_bills(type = "PLS", number = 5, year = 2010)
+sen_bills_types()
+sen_bills_limits()
+sen_bills_topics()
+sen_bills_passing(year = "2001", type = "MPV")
+sen_bills_current(year = 2015, type = "PLS")
+sen_bills_status(bill_id = 80406)
+sen_bills_locations()
+sen_bills_passage(bill_id = 9123)
+sen_bills_situations()
+sen_bills_updates(type = "PLS", days = 10)
+sen_bills_update_types()
+sen_budget()
+sen_coalition_info(code = 200)
+sen_coalitions()
+sen_commission_positions(active = "No")
+sen_commissions()
+sen_commissions_type(type = "permanent")
+sen_commissions_senators(code = "CCJ")
+sen_plenary_result(date = "20110405")
+sen_plenary_sessions()
+sen_plenary_agenda(period = "day", date = "20160401")
+sen_plenary_leaderships()
+sen_senator(id = 3823)
+sen_senator_details(id = 4981)
+sen_senator_bills(id = 5164)
+sen_senator_commissions(id = 715)
+sen_senator_suplentes(id = 90)
+sen_senator_votes(id = 5529)
+sen_senator_mandates(id = 4763)
+sen_senator_list()
+sen_senator_legis(start = 50)
+sen_bill_sponsors()
+sen_sponsor_types()
+sen_parties()
+sen_statement_list()
+sen_bills_list(active = TRUE)
+sen_votes_year("2013")
 
-# senate:
-senate <- c("http://legis.senado.gov.br/dadosabertos/")
-
-senate_params <- c(
-  "agenda/20161105/20161125",            # sen_agenda
-  "materia/pesquisa/lista?ano=2017",     # sen_bill_search
-  "materia/110428",                      # sen_bills
-
-)
-# sen_agenda
-GET("http://legis.senado.gov.br/dadosabertos/agenda/20161105/20161125")
-# sen_bill_search
-GET("http://legis.senado.gov.br/dadosabertos/materia/pesquisa/lista?ano=2017")
-# sen_bills
-GET("http://legis.senado.gov.br/dadosabertos/materia/110428")
-# sen_bills_various
-GET("http://legis.senado.gov.br/dadosabertos/materia/subtipos")
-GET("http://legis.senado.gov.br/dadosabertos/materia/tiposPrazo")
-GET("http://legis.senado.gov.br/dadosabertos/materia/assuntos")
-GET("http://legis.senado.gov.br/dadosabertos/materia/tramitando?")
-GET("http://legis.senado.gov.br/dadosabertos/materia/legislaturaatual?")
-GET("http://legis.senado.gov.br/dadosabertos/materia/situacaoatual/80406")
-GET("http://legis.senado.gov.br/dadosabertos/materia/locais")
-GET("http://legis.senado.leg.br/dadosabertos/materia/movimentacoes/9123")
-GET("http://legis.senado.leg.br/dadosabertos/materia/tiposatualizacoes")
-# sen_budget
-GET("http://legis.senado.gov.br/dadosabertos/orcamento/lista")
-# sen_coalition_info
-GET("http://legis.senado.gov.br/dadosabertos/blocoParlamentar/200")
-# sen_coalitions
-GET("http://legis.senado.gov.br/dadosabertos/blocoParlamentar/lista")
-# sen_commission_list
-GET("http://legis.senado.gov.br/dadosabertos/comissao/lista/tiposCargo")
-GET("http://legis.senado.gov.br/dadosabertos/comissao/lista/colegiados")
-GET("http://legis.senado.gov.br/dadosabertos/comissao/lista/cpi")
-GET("http://legis.senado.gov.br/dadosabertos/materia/distribuicao/relatoria/CCJ")
-# sen_plenary
-GET("http://legis.senado.gov.br/dadosabertos/plenario/resultado/20160303")
-GET("http://legis.senado.gov.br/dadosabertos/plenario/tiposSessao")
-GET("http://legis.senado.gov.br/dadosabertos/plenario/agenda/mes/20140315")
-GET("http://legis.senado.gov.br/dadosabertos/plenario/lista/liderancas")
-# sen_senator
-GET("http://legis.senado.gov.br/dadosabertos/parlamentar/3823")
-# sen_senator_details
-GET("http://legis.senado.leg.br/dadosabertos/senador/4763/mandatos")
-
-
-
-#stop_capturing()
+stop_capturing()

@@ -1,0 +1,2439 @@
+{
+    "DetalheParlamentar": {
+        "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+        "@xsi:noNamespaceSchemaLocation": "http://legis.senado.leg.br/dadosabertos/dados/DetalheParlamentarv5.xsd",
+        "Metadados": {
+            "Versao": "08/12/2018 09:50:26",
+            "VersaoServico": "5",
+            "DataVersaoServico": "2017-02-01",
+            "DescricaoDataSet": "Informações atuais sobre o parlamentar"
+        },
+        "Parlamentar": {
+            "IdentificacaoParlamentar": {
+                "CodigoParlamentar": "4981",
+                "NomeParlamentar": "Acir Gurgacz",
+                "NomeCompletoParlamentar": "Acir Marcos Gurgacz",
+                "SexoParlamentar": "Masculino",
+                "FormaTratamento": "Senador ",
+                "UrlFotoParlamentar": "http://www.senado.leg.br/senadores/img/fotos-oficiais/senador4981.jpg",
+                "UrlPaginaParlamentar": "http://www25.senado.leg.br/web/senadores/senador/-/perfil/4981",
+                "EmailParlamentar": "acir@senador.leg.br",
+                "SiglaPartidoParlamentar": "PDT",
+                "UfParlamentar": "RO"
+            },
+            "DadosBasicosParlamentar": {
+                "DataNascimento": "1962-02-25",
+                "UfNaturalidade": "PR",
+                "EnderecoParlamentar": "Ala Tancredo Neves, Gabinete 56",
+                "TelefoneParlamentar": "(061) 3303-3131/3132",
+                "FaxParlamentar": "(61) 3303-1343"
+            },
+            "MandatoAtual": {
+                "CodigoMandato": "515",
+                "UfParlamentar": "RO",
+                "PrimeiraLegislaturaDoMandato": {
+                    "NumeroLegislatura": "55",
+                    "DataInicio": "2015-02-01",
+                    "DataFim": "2019-01-31"
+                },
+                "SegundaLegislaturaDoMandato": {
+                    "NumeroLegislatura": "56",
+                    "DataInicio": "2019-02-01",
+                    "DataFim": "2023-01-31"
+                },
+                "DescricaoParticipacao": "Titular",
+                "Suplentes": {
+                    "Suplente": [
+                        {
+                            "DescricaoParticipacao": "1º Suplente",
+                            "CodigoParlamentar": "5615",
+                            "NomeParlamentar": "Gilberto Piselo"
+                        },
+                        {
+                            "DescricaoParticipacao": "2º Suplente",
+                            "CodigoParlamentar": "5617",
+                            "NomeParlamentar": "Pastor Valadares"
+                        }
+                    ]
+                },
+                "Exercicios": {
+                    "Exercicio": [
+                        {
+                            "CodigoExercicio": "2810",
+                            "DataInicio": "2017-01-14"
+                        },
+                        {
+                            "CodigoExercicio": "2754",
+                            "DataInicio": "2015-02-01",
+                            "DataFim": "2016-09-08",
+                            "SiglaCausaAfastamento": "LSP",
+                            "DescricaoCausaAfastamento": "Licença Saúde-Particular"
+                        }
+                    ]
+                }
+            },
+            "FiliacaoAtual": {
+                "Partido": {
+                    "CodigoPartido": "20",
+                    "SiglaPartido": "PDT",
+                    "NomePartido": "Partido Democrático Trabalhista"
+                },
+                "DataFiliacao": "2009-11-05"
+            },
+            "MembroAtualComissoes": {
+                "Comissao": [
+                    {
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "38",
+                            "SiglaComissao": "CAE",
+                            "NomeComissao": "Comissão de Assuntos Econômicos",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoParticipacao": "Titular",
+                        "DataInicio": "2018-10-31"
+                    },
+                    {
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "2189",
+                            "SiglaComissao": "GPCOREIADONORTE",
+                            "NomeComissao": "Grupo Parlamentar Brasil - República Popular Democrática da Coreia",
+                            "SiglaCasaComissao": "CN",
+                            "NomeCasaComissao": "Congresso Nacional"
+                        },
+                        "DescricaoParticipacao": "Titular",
+                        "DataInicio": "2018-06-21"
+                    },
+                    {
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "2043",
+                            "SiglaComissao": "GPCAZAQUISTÃO",
+                            "NomeComissao": "Grupo Parlamentar Brasil - Cazaquistão",
+                            "SiglaCasaComissao": "CN",
+                            "NomeCasaComissao": "Congresso Nacional"
+                        },
+                        "DescricaoParticipacao": "Titular",
+                        "DataInicio": "2018-05-22",
+                        "DataFim": "2024-05-22"
+                    },
+                    {
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "2162",
+                            "SiglaComissao": "CTPAR",
+                            "NomeComissao": "Comissão Externa para investigar empresas brasileiras no Paraguai",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoParticipacao": "Titular",
+                        "DataInicio": "2018-05-08"
+                    },
+                    {
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "2151",
+                            "SiglaComissao": "CRESTFMA",
+                            "NomeComissao": "Subcomissão Temporária Fórum Mundial da Água",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoParticipacao": "Titular",
+                        "DataInicio": "2018-02-08"
+                    },
+                    {
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "2147",
+                            "SiglaComissao": "CCC",
+                            "NomeComissao": "Comissão Temporária para Reforma do Código Comercial (Art. 374-RISF)",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoParticipacao": "Titular",
+                        "DataInicio": "2017-11-28"
+                    },
+                    {
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "2050",
+                            "SiglaComissao": "GPMARROCOS",
+                            "NomeComissao": "Grupo Parlamentar Brasil - Marrocos",
+                            "SiglaCasaComissao": "CN",
+                            "NomeCasaComissao": "Congresso Nacional"
+                        },
+                        "DescricaoParticipacao": "Titular",
+                        "DataInicio": "2017-08-09"
+                    },
+                    {
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "34",
+                            "SiglaComissao": "CCJ",
+                            "NomeComissao": "Comissão de Constituição, Justiça e Cidadania",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoParticipacao": "Titular",
+                        "DataInicio": "2017-08-08"
+                    },
+                    {
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "445",
+                            "SiglaComissao": "CEDP",
+                            "NomeComissao": "Conselho de Ética e Decoro Parlamentar",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoParticipacao": "Titular",
+                        "DataInicio": "2017-05-30"
+                    },
+                    {
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "59",
+                            "SiglaComissao": "CI",
+                            "NomeComissao": "Comissão de Serviços de Infraestrutura",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoParticipacao": "Titular",
+                        "DataInicio": "2017-03-09"
+                    },
+                    {
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "50",
+                            "SiglaComissao": "CMA",
+                            "NomeComissao": "Comissão de Meio Ambiente",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoParticipacao": "Titular",
+                        "DataInicio": "2017-03-09"
+                    },
+                    {
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "1363",
+                            "SiglaComissao": "CCT",
+                            "NomeComissao": "Comissão de Ciência, Tecnologia, Inovação, Comunicação e Informática",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoParticipacao": "Titular",
+                        "DataInicio": "2017-03-09"
+                    },
+                    {
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "1306",
+                            "SiglaComissao": "CDR",
+                            "NomeComissao": "Comissão de Desenvolvimento Regional e Turismo",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoParticipacao": "Suplente",
+                        "DataInicio": "2017-03-09"
+                    },
+                    {
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "1307",
+                            "SiglaComissao": "CRA",
+                            "NomeComissao": "Comissão de Agricultura e Reforma Agrária",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoParticipacao": "Titular",
+                        "DataInicio": "2017-03-09"
+                    },
+                    {
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "1956",
+                            "SiglaComissao": "CTFC",
+                            "NomeComissao": "Comissão de Transparência, Governança, Fiscalização e Controle e Defesa do Consumidor",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoParticipacao": "Titular",
+                        "DataInicio": "2017-03-09"
+                    },
+                    {
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "2031",
+                            "SiglaComissao": "CEAERO",
+                            "NomeComissao": "COMISSÃO ESPECIAL DESTINADA A EXAMINAR O PLS 258, DE 2016",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoParticipacao": "Titular",
+                        "DataInicio": "2016-06-22"
+                    },
+                    {
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "1916",
+                            "SiglaComissao": "CPCMS",
+                            "NomeComissao": "Representação Brasileira no Parlamento do Mercosul",
+                            "SiglaCasaComissao": "CN",
+                            "NomeCasaComissao": "Congresso Nacional"
+                        },
+                        "DescricaoParticipacao": "Suplente",
+                        "DataInicio": "2015-04-09"
+                    },
+                    {
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "2044",
+                            "SiglaComissao": "GPCHINA",
+                            "NomeComissao": "Grupo Parlamentar Brasil - China",
+                            "SiglaCasaComissao": "CN",
+                            "NomeCasaComissao": "Congresso Nacional"
+                        },
+                        "DescricaoParticipacao": "Titular",
+                        "DataInicio": "2015-03-31"
+                    },
+                    {
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "2049",
+                            "SiglaComissao": "GPIRLANDA",
+                            "NomeComissao": "Grupo Parlamentar Brasil - Irlanda",
+                            "SiglaCasaComissao": "CN",
+                            "NomeCasaComissao": "Congresso Nacional"
+                        },
+                        "DescricaoParticipacao": "Titular",
+                        "DataInicio": "2015-03-31"
+                    },
+                    {
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "2052",
+                            "SiglaComissao": "GPSÉRVIA",
+                            "NomeComissao": "Grupo Parlamentar Brasil - Sérvia",
+                            "SiglaCasaComissao": "CN",
+                            "NomeCasaComissao": "Congresso Nacional"
+                        },
+                        "DescricaoParticipacao": "Titular",
+                        "DataInicio": "2015-03-04"
+                    },
+                    {
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "2042",
+                            "SiglaComissao": "GPAZERBAIJÃO",
+                            "NomeComissao": "Grupo Parlamentar Brasil - Azerbaijão",
+                            "SiglaCasaComissao": "CN",
+                            "NomeCasaComissao": "Congresso Nacional"
+                        },
+                        "DescricaoParticipacao": "Titular",
+                        "DataInicio": "2014-08-06"
+                    },
+                    {
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "2051",
+                            "SiglaComissao": "GPNORUEGA",
+                            "NomeComissao": "Grupo Parlamentar Brasil - Noruega",
+                            "SiglaCasaComissao": "CN",
+                            "NomeCasaComissao": "Congresso Nacional"
+                        },
+                        "DescricaoParticipacao": "Titular",
+                        "DataInicio": "2013-12-12"
+                    },
+                    {
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "2045",
+                            "SiglaComissao": "GPDINAMARCA",
+                            "NomeComissao": "Grupo Parlamentar Brasil - Dinamarca",
+                            "SiglaCasaComissao": "CN",
+                            "NomeCasaComissao": "Congresso Nacional"
+                        },
+                        "DescricaoParticipacao": "Titular",
+                        "DataInicio": "2013-07-09"
+                    },
+                    {
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "2046",
+                            "SiglaComissao": "GPESPANHA",
+                            "NomeComissao": "Grupo Parlamentar Brasil - Espanha",
+                            "SiglaCasaComissao": "CN",
+                            "NomeCasaComissao": "Congresso Nacional"
+                        },
+                        "DescricaoParticipacao": "Titular",
+                        "DataInicio": "2011-07-07"
+                    }
+                ]
+            },
+            "CargosAtuais": {
+                "CargoAtual": [
+                    {
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "2147",
+                            "SiglaComissao": "CCC",
+                            "NomeComissao": "Comissão Temporária para Reforma do Código Comercial (Art. 374-RISF)",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "CodigoCargo": "2",
+                        "DescricaoCargo": "VICE-PRESIDENTE",
+                        "DataInicio": "2017-12-06"
+                    },
+                    {
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "59",
+                            "SiglaComissao": "CI",
+                            "NomeComissao": "Comissão de Serviços de Infraestrutura",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "CodigoCargo": "2",
+                        "DescricaoCargo": "VICE-PRESIDENTE",
+                        "DataInicio": "2017-03-15"
+                    }
+                ]
+            },
+            "LiderancasAtuais": {
+                "Lideranca": [
+                    {
+                        "Partido": {
+                            "CodigoPartido": "20",
+                            "SiglaPartido": "PDT",
+                            "NomePartido": "Partido Democrático Trabalhista"
+                        },
+                        "SiglaCasaLideranca": "SF",
+                        "NomeCasaLideranca": "Senado Federal",
+                        "DescricaoTipoLideranca": "Líder",
+                        "DataDesignacao": "2017-02-09"
+                    },
+                    {
+                        "Bloco": {
+                            "CodigoBloco": "208",
+                            "SiglaBloco": "Bloco",
+                            "NomeBloco": "Bloco Parlamentar da Resistência Democrática",
+                            "ApelidoBloco": "Bloco PT/PDT"
+                        },
+                        "SiglaCasaLideranca": "SF",
+                        "NomeCasaLideranca": "Senado Federal",
+                        "DescricaoTipoLideranca": "Vice-líder",
+                        "DataDesignacao": "2015-03-03"
+                    }
+                ]
+            },
+            "MateriasDeAutoriaTramitando": {
+                "Materia": [
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "95562",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00024",
+                            "AnoMateria": "2010",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 24/2010"
+                        },
+                        "EmentaMateria": "Transfere ao domínio dos Estados de Rondônia, de Roraima e do Amapá terras pertencentes à União."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "95652",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00035",
+                            "AnoMateria": "2010",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 35/2010"
+                        },
+                        "EmentaMateria": "Concede isenção do Imposto sobre Produtos Industrializados (IPI) na aquisição de máquinas, equipamentos, aparelhos e instrumentos novos destinados exclusivamente ao uso na agricultura nacional, quando adquiridos por agricultores familiares ou por cooperativas agrícolas."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "95899",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PEC",
+                            "DescricaoSubtipoMateria": "PROPOSTA DE EMENDA À CONSTITUIÇÃO",
+                            "NumeroMateria": "00003",
+                            "AnoMateria": "2010",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PEC 3/2010"
+                        },
+                        "EmentaMateria": "Acrescenta o art. 178-A à Constituição Federal, para prever um percentual mínimo de aplicação de recursos federais em programas de infraestrutura de transportes."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "97502",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00195",
+                            "AnoMateria": "2010",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 195/2010"
+                        },
+                        "EmentaMateria": "Altera os arts. 18-A, §§ 1º e 2º, 26, § 1º e 68 da Lei Complementar nº 123, de 14 de dezembro de 2006, com o objetivo de reajustar os valores expressos em moeda."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "97670",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00210",
+                            "AnoMateria": "2010",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 210/2010"
+                        },
+                        "EmentaMateria": "Dá nova redação ao art. 6º do Decreto-Lei nº 1.435, de 16 de dezembro de 1975, para isentar do Imposto sobre Produtos Industrializados os produtos elaborados na Amazônia Ocidental com matérias-primas de origem regional."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "97868",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00221",
+                            "AnoMateria": "2010",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 221/2010"
+                        },
+                        "EmentaMateria": "Altera a Lei no 9.503, de 23 de setembro de 1997, que instituiu o Código de Trânsito Brasileiro, para dispor sobre o transporte público coletivo de passageiros."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "98019",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00230",
+                            "AnoMateria": "2010",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 230/2010"
+                        },
+                        "EmentaMateria": "Institui os Juizados Especiais de Família."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "98609",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PEC",
+                            "DescricaoSubtipoMateria": "PROPOSTA DE EMENDA À CONSTITUIÇÃO",
+                            "NumeroMateria": "00031",
+                            "AnoMateria": "2010",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PEC 31/2010"
+                        },
+                        "EmentaMateria": "Faculta ao Senado Federal fixar as alíquotas do Imposto sobre Operações Relativas à Circulação de Mercadorias e sobre Prestações de Serviços de Transporte Interestadual e Intermunicipal e de Comunicação, relativamente à gasolina e ao óleo diesel."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "98633",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PEC",
+                            "DescricaoSubtipoMateria": "PROPOSTA DE EMENDA À CONSTITUIÇÃO",
+                            "NumeroMateria": "00033",
+                            "AnoMateria": "2010",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PEC 33/2010"
+                        },
+                        "EmentaMateria": "Altera o inciso V do § 2º do art. 155 da Constituição, para facultar ao Senado Federal estabelecer alíquotas mínimas e máximas nas operações internas relativamente ao Imposto sobre Operações Relativas à Circulação de Mercadorias e sobre Prestações de Serviços de Transporte Interestadual e Intermunicipal e de Comunicação."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "99482",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00099",
+                            "AnoMateria": "2011",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 99/2011"
+                        },
+                        "EmentaMateria": "Altera a Lei nº 9.294, de 15 de julho de 1996, que dispõe sobre as restrições ao uso e à propaganda de produtos fumígenos, bebidas alcoólicas, medicamentos, terapias e defensivos agrícolas nos termos do § 4º do art. 220 da Constituição Federal, para proibir a venda de produtos de tabaco e bebidas alcoólicas nas proximidades de estabelecimentos de ensino e tornar obrigatória a aposição de advertências na publicidade de bebidas alcoólicas feita em pontos de venda."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "99916",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00164",
+                            "AnoMateria": "2011",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 164/2011"
+                        },
+                        "EmentaMateria": "Altera as Leis nº 8.989, de 24 de fevereiro de 1995, que dispõe sobre a Isenção do Imposto sobre Produtos Industrializados - IPI, na aquisição de automóveis para utilização no transporte autônomo de passageiros, bem como por pessoas portadoras de deficiência física, e dá outras providências, e nº 9.503, de 23 de setembro de 1997 (Código de Trânsito Brasileiro), para instituir contrapartidas para a isenção de Imposto sobre Produtos Industrializados na aquisição de táxis e determinar sua padronização visual."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "99957",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00177",
+                            "AnoMateria": "2011",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 177/2011"
+                        },
+                        "EmentaMateria": "Altera a Lei nº 9.294, de 15 de julho de 1996, que dispõe sobre as restrições ao uso e à propaganda de produtos fumígeros, bebidas alcoólicas, medicamentos, terapias e defensivos agrícolas, nos termos do § 4º do art. 220 da Constituição Federal, para regular a publicidade, a promoção e a exposição de produtos de tabaco e bebidas alcoólicas em pontos de venda."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "100204",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00253",
+                            "AnoMateria": "2011",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 253/2011"
+                        },
+                        "EmentaMateria": "Autoriza o Poder Executivo a criar o Colégio Militar de Porto Velho, no Município de Porto Velho, em Rondônia."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "100217",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00251",
+                            "AnoMateria": "2011",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 251/2011"
+                        },
+                        "EmentaMateria": "Autoriza o Poder Executivo a criar a Universidade Federal de Ji-Paraná, com sede no Município de Ji-Paraná, no Estado de Rondônia."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "101484",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PEC",
+                            "DescricaoSubtipoMateria": "PROPOSTA DE EMENDA À CONSTITUIÇÃO",
+                            "NumeroMateria": "00074",
+                            "AnoMateria": "2011",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PEC 74/2011"
+                        },
+                        "EmentaMateria": "Acrescenta parágrafo único ao art. 228 da Constituição Federal para estabelecer que, nos casos de crimes de homicídio doloso e roubo seguido de morte, tentados ou consumados, são penalmente inimputáveis os menores de quinze anos."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "103740",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00730",
+                            "AnoMateria": "2011",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 730/2011"
+                        },
+                        "EmentaMateria": "Altera o art. 1.439 do Código Civil que dispõe sobre o prazo do penhor rural."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "103742",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00732",
+                            "AnoMateria": "2011",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 732/2011"
+                        },
+                        "EmentaMateria": "Altera o § 2º do art. 4º da Lei nº 10.522, de 19 de julho de 2002, que dispõe sobre o cadastro informativo dos créditos não quitados de órgãos e entidades federais e dá outras providências, para estender a todos os produtores rurais a dispensa de apresentação de certidões comprobatórias de quaisquer tributos e contribuições federais como requisito à obtenção de crédito junto a instituições financeiras que operam programas oficiais de incentivo ao crédito."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "103787",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00737",
+                            "AnoMateria": "2011",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 737/2011"
+                        },
+                        "EmentaMateria": "Concede benefícios fiscais referentes ao Imposto sobre Produtos Industrializados, à Contribuição para o PIS/PASEP e à Contribuição para o Financiamento da Seguridade Social incidentes sobre operações com defensivos agrícolas e pesticidas de uso veterinário classificados no menor grau de toxicidade vigente."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "103853",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PEC",
+                            "DescricaoSubtipoMateria": "PROPOSTA DE EMENDA À CONSTITUIÇÃO",
+                            "NumeroMateria": "00124",
+                            "AnoMateria": "2011",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PEC 124/2011"
+                        },
+                        "EmentaMateria": "Dá nova redação à alínea b do inciso X do § 2º do art. 155 da Constituição Federal para excluir da imunidade relativa ao ICMS as operações interestaduais com energia elétrica."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "103855",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PEC",
+                            "DescricaoSubtipoMateria": "PROPOSTA DE EMENDA À CONSTITUIÇÃO",
+                            "NumeroMateria": "00125",
+                            "AnoMateria": "2011",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PEC 125/2011"
+                        },
+                        "EmentaMateria": "Altera a Constituição Federal para destinar dez por cento do produto da arrecadação das contribuições sociais e de intervenção do domínio econômico, divididos igualmente, aos Fundos de Participação dos Estados e do Distrito Federal - FPE e dos Municípios - FPM."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "104409",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00030",
+                            "AnoMateria": "2012",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 30/2012"
+                        },
+                        "EmentaMateria": "Estabelece normas para a realização de concursos públicos no âmbito da administração direta e indireta da União e dá outras providências."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "104839",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00079",
+                            "AnoMateria": "2012",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 79/2012"
+                        },
+                        "EmentaMateria": "Dispõe sobre a isenção do Imposto sobre Produtos Industrializados incidente sobre forro de PVC."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "109682",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00447",
+                            "AnoMateria": "2012",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 447/2012"
+                        },
+                        "EmentaMateria": "Acrescenta dispositivo ao art. 8º da Lei de nº 8.666, de 21 de  junho de 1993, para vedar a suspensão ou o cancelamento da execução de obra pública nas condições que especifica."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "109736",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PEC",
+                            "DescricaoSubtipoMateria": "PROPOSTA DE EMENDA À CONSTITUIÇÃO",
+                            "NumeroMateria": "00065",
+                            "AnoMateria": "2012",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PEC 65/2012"
+                        },
+                        "EmentaMateria": "Acrescenta o § 7º ao art. 225 da Constituição, para assegurar a continuidade de obra pública após a concessão da licença ambiental."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "111865",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00099",
+                            "AnoMateria": "2013",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 99/2013"
+                        },
+                        "EmentaMateria": "Acrescenta dispositivo ao art. 8º da Lei nº 8.666, de 21 de junho de 1993, para vedar a suspensão ou o cancelamento da execução de obra pública nas condições que especifica."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "112426",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00146",
+                            "AnoMateria": "2013",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 146/2013"
+                        },
+                        "EmentaMateria": "Altera o art. 8º da Lei nº 9.250, de 26 de dezembro de 1995, para incluir os encargos trabalhistas pagos a empregado doméstico entre as hipóteses de dedução da base de cálculo do Imposto de Renda da Pessoa Física."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "112822",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00198",
+                            "AnoMateria": "2013",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 198/2013"
+                        },
+                        "EmentaMateria": "Acrescenta os §§ 6º e 7º ao art. 5º e o art. 21-A à Lei nº 7.347, de 24 de julho de 1985, para fixar em cinco anos o prazo prescricional para o cumprimento do compromisso de ajuste de conduta e o prazo para a propositura da ação civil pública, bem como em um ano o prazo para a vigência do termo de ajustamento de conduta."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "114514",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00390",
+                            "AnoMateria": "2013",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 390/2013"
+                        },
+                        "EmentaMateria": "Altera a Lei nº 12.651, de 25 de maio de 2012, para dispor sobre o percentual de Reserva Legal para imóveis rurais situados no Estado de Rondônia."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "114595",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00402",
+                            "AnoMateria": "2013",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 402/2013"
+                        },
+                        "EmentaMateria": "Altera o Código de Trânsito Brasileiro para aumentar as penas máximas dos crimes nele previstos."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "114640",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PRS",
+                            "DescricaoSubtipoMateria": "PROJETO DE RESOLUÇÃO DO SENADO",
+                            "NumeroMateria": "00074",
+                            "AnoMateria": "2013",
+                            "DescricaoIdentificacaoMateria": "PRS 74/2013"
+                        },
+                        "EmentaMateria": "Altera a Resolução nº 93, de 1970, que aprova o Regimento Interno do Senado Federal, para modificar o horário das reuniões da Comissão de Agricultura e Reforma Agrária."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "114975",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00440",
+                            "AnoMateria": "2013",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 440/2013"
+                        },
+                        "EmentaMateria": "Altera a Lei nº 12.860, de 11 de setembro de 2013, para estender a redução a zero das alíquotas da contribuição social para o PIS/Pasep e da Cofins às receitas decorrentes da prestação de serviços regulares de transporte no território das regiões metropolitanas regularmente constituídas e dos serviços definidos nos incisos XI a XIII do artigo 4º da Lei nº 12.587 de 03 de janeiro de 2012."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "117883",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00194",
+                            "AnoMateria": "2014",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 194/2014"
+                        },
+                        "EmentaMateria": "Institui a Política Nacional dos Corpos de Bombeiros Militares na Segurança Pública."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "119358",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00387",
+                            "AnoMateria": "2014",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 387/2014"
+                        },
+                        "EmentaMateria": "Altera a Lei nº 11.889, de 24 de dezembro de 2008, para estabelecer o piso salarial dos Técnicos em Saúde Bucal – TSB e Auxiliares em Saúde Bucal – ASB, e modifica a competência dos TSB."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "120094",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00115",
+                            "AnoMateria": "2015",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 115/2015"
+                        },
+                        "EmentaMateria": "Altera a Lei nº 12.651, de 25 de maio de 2012, para dispor sobre a concessão de incentivos fiscais e creditícios a pessoas físicas e jurídicas que promovam a exploração de florestas plantadas localizadas fora das Áreas de Preservação Permanente e de Reserva Legal."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "120625",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00204",
+                            "AnoMateria": "2015",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 204/2015"
+                        },
+                        "EmentaMateria": "Altera o art. 54 da Lei nº 9.605, de 12 de fevereiro de 1998, para majorar a pena do crime de poluição de manancial de água."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "120647",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00212",
+                            "AnoMateria": "2015",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 212/2015"
+                        },
+                        "EmentaMateria": "Disciplina a profissão de Cientista."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "120820",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00239",
+                            "AnoMateria": "2015",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 239/2015"
+                        },
+                        "EmentaMateria": "Institui o art. 37-A e altera os arts. 29, 36 e 37 da Lei nº 7.210, de 11 de julho de 1984 – Lei de Execução Penal, para determinar que o Poder Público incentive a criação de polos industriais próximos aos complexos penitenciários, para fomentar o estabelecimento de empresas que contribuam para a formação profissional e o exercício de atividade laboral pelo condenado."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "121418",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00314",
+                            "AnoMateria": "2015",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 314/2015"
+                        },
+                        "EmentaMateria": "Altera o artigo 71 da Consolidação das Leis do Trabalho – CLT, aprovada pelo Decreto Lei nº 5.452, de 1Ù¥ de Maio de 1943 e a Lei nº 12.587, de 03 de janeiro de 2012, para dispor sobre a redução e/ou fracionamento de intervalo intrajornada e dá outras providências."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "122555",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00509",
+                            "AnoMateria": "2015",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 509/2015"
+                        },
+                        "EmentaMateria": "Altera a Lei nº 11.952, de 25 de junho de 2009, para ampliar o alcance das ações de regularização fundiária das ocupações incidentes em terras situadas em áreas da União, no âmbito da Amazônia Legal."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "124333",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00763",
+                            "AnoMateria": "2015",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 763/2015"
+                        },
+                        "EmentaMateria": "Dispõe sobre a adoção de medidas administrativas para coibir a prática de trotes dirigidos a órgãos públicos, e altera as Leis nºs 9.472, de 16 de julho de 1997, 5.070, de 7 de julho de 1966, e 10.703, de 18 de julho de 2003."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "126589",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "RQJ",
+                            "DescricaoSubtipoMateria": "REQUERIMENTO  DA COMISSÃO DE CONSTITUIÇÃO, JUSTIÇA E CIDADANIA",
+                            "NumeroMateria": "00039",
+                            "AnoMateria": "2016",
+                            "DescricaoIdentificacaoMateria": "RQJ 39/2016"
+                        },
+                        "EmentaMateria": "Requeiro, nos termos do art. 58, §2°, II da CF c/c art. 93, II do Regimento Interno do Senado Federal, a realização de Audiência Pública no âmbito da Comissão de Constituição e Justiça do Senado Federal - CCJ, para debater sobre a PEC 65/2012 que “Acrescenta o § 7º ao art. 225 da Constituição, para assegurar a continuidade de obra pública após a concessão da licença ambiental” e tramita em conjunto com a PEC 153/2015 que “Altera o art. 225 da Constituição Federal para incluir, entre as incumbências do poder público, a promoção de práticas e a adoção de critérios de sustentabilidade em seus planos, programas, projetos e processos de trabalho”."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "126837",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00328",
+                            "AnoMateria": "2016",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 328/2016"
+                        },
+                        "EmentaMateria": "Altera ao artigo 39 da Lei nº 10.741, de 01 de outubro de 2003, que dispõe sobre Estatuto do Idoso e dá outras providências."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "126838",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00329",
+                            "AnoMateria": "2016",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 329/2016"
+                        },
+                        "EmentaMateria": "Altera a Lei nº 8.072, de 25 de julho de 1990, para inserir no rol dos crimes hediondos o homicídio praticado contra jornalista, em razão de sua profissão."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "126842",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00330",
+                            "AnoMateria": "2016",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 330/2016"
+                        },
+                        "EmentaMateria": "Altera a redação do art. 12 da Lei nº 12.651, de 25 de maio de 2012, que dispõe sobre a proteção da vegetação nativa, para isentar imóveis rurais de novos assentamentos do Programa de Reforma Agrária, com até um módulo fiscal, da obrigatoriedade de constituição de reserva legal."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "126852",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00332",
+                            "AnoMateria": "2016",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 332/2016"
+                        },
+                        "EmentaMateria": "Altera o Decreto-Lei nº 5.452, de 1º de maio de 1943, de 1º de maio de 1943, que aprova a Consolidação das Leis do Trabalho, e a Lei nº 7.418, de 16 de dezembro de 1985, que institui o vale-transporte, e dá outras providências."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "128318",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "RQI",
+                            "DescricaoSubtipoMateria": "REQUERIMENTO DA COMISSÃO DE SERVIÇOS DE INFRAESTRUTURA",
+                            "NumeroMateria": "00001",
+                            "AnoMateria": "2017",
+                            "DescricaoIdentificacaoMateria": "RQI 1/2017"
+                        },
+                        "EmentaMateria": "Realização de ciclo de palestras e debates sobre a expansão da infraestrutura como alavanca para a retomada do crescimento econômico e o desenvolvimento sustentável do país."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "129309",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "RQI",
+                            "DescricaoSubtipoMateria": "REQUERIMENTO DA COMISSÃO DE SERVIÇOS DE INFRAESTRUTURA",
+                            "NumeroMateria": "00027",
+                            "AnoMateria": "2017",
+                            "DescricaoIdentificacaoMateria": "RQI 27/2017"
+                        },
+                        "EmentaMateria": "Requer a realização de audiência pública para debater a duplicação e restauração da BR-364/Rondônia e da BR-163, com a presença dos seguintes convidados: Ministro de Estado dos Transportes, Portos e Aviação Civil, Diretor Geral do Departamento Nacional de Infraestrutura de Transportes (DNIT), Diretor Geral da Agência Nacional de Transportes Terrestres (ANTT), Tribunal de Contas da União (TCU), Banco Nacional do Desenvolvimento (BNDES)  e Associação Brasileira de Concessionárias de Rodovias (ABCR)."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "129744",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "RRE",
+                            "DescricaoSubtipoMateria": "REQUERIMENTO DA COMISSÃO DE RELAÇÕES EXTERIORES E DEFESA NACIONAL",
+                            "NumeroMateria": "00020",
+                            "AnoMateria": "2017",
+                            "DescricaoIdentificacaoMateria": "RRE 20/2017"
+                        },
+                        "EmentaMateria": "Requeiro, nos termos do art. 58, § 2º, II, da Constituição Federal e do art. 93, II, do Regimento Interno do Senado Federal, a realização de audiência pública, com o objetivo de exposição pelo Embaixador do Qatar acerca da crise diplomática que o país atravessa. Proponho para a audiência a presença dos seguintes convidados: 1.\tEmbaixador do Catar, o Sr. Mohammed Al-Hayki; 2.\t Embaixadora Lígia Maria Scherer, Diretora do Deptº do Oriente Médio, do Ministério das Relações Exteriores - MRE."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "129786",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "RTG",
+                            "DescricaoSubtipoMateria": "REQUERIMENTO DA COMISSÃO DE TRANSPARÊNCIA, GOVERNANÇA, FISCALIZAÇÃO E CONTROLE E DEFESA DO CONSUMIDOR",
+                            "NumeroMateria": "00026",
+                            "AnoMateria": "2017",
+                            "DescricaoIdentificacaoMateria": "RTG 26/2017"
+                        },
+                        "EmentaMateria": "Requer, nos termos regimentais, a inclusão do nome abaixo relacionado entre os convidados para participar da audiência pública sobre a qual trata o Requerimento nº 23, de 2017 - CTFC: - Sr. Idésio Silva Coelho Júnior - Presidente do Instituto dos Auditores Independentes do Brasil - IBRACON."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "130952",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00351",
+                            "AnoMateria": "2017",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 351/2017"
+                        },
+                        "EmentaMateria": "Cria Áreas de Livre Comércio nos Municípios de Pimenteiras do Oeste, Costa Marques e Cabixi, no Estado de Rondônia."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "131097",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00376",
+                            "AnoMateria": "2017",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 376/2017"
+                        },
+                        "EmentaMateria": "Dispõe sobre incentivos fiscais e econômicos aos produtores rurais da Amazônia Legal para a preservação, conservação e recuperação de cobertura florestal."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "131098",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00375",
+                            "AnoMateria": "2017",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 375/2017"
+                        },
+                        "EmentaMateria": "Altera a Lei Complementar nº 62, de 28 de dezembro de 1989, que estabelece normas sobre o cálculo, a entrega e o controle das liberações dos recursos dos Fundos de Participação e dá outras providências, para instituir reserva do Fundo de Participação dos Estados e do Distrito Federal – FPE destinada aos Estados da Amazônia Legal que abriguem, em seus territórios, unidades de conservação da natureza ou terras indígenas demarcadas."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "131332",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00403",
+                            "AnoMateria": "2017",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 403/2017"
+                        },
+                        "EmentaMateria": "Institui o Programa de Restauração de Áreas Degradadas na Amazônia – Restaura Amazônia."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "131919",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00498",
+                            "AnoMateria": "2017",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 498/2017"
+                        },
+                        "EmentaMateria": "Altera o artigo 235-A do Decreto-Lei nº 5.452, de 1º de maio de 1943, de 1º de maio de 1943, que aprova a Consolidação das Leis do Trabalho, e dá outras providências."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "132583",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "RQI",
+                            "DescricaoSubtipoMateria": "REQUERIMENTO DA COMISSÃO DE SERVIÇOS DE INFRAESTRUTURA",
+                            "NumeroMateria": "00016",
+                            "AnoMateria": "2018",
+                            "DescricaoIdentificacaoMateria": "RQI 16/2018"
+                        },
+                        "EmentaMateria": "Requer, a realização de Audiência Pública para debater a Resolução nº 729 do Conselho Nacional de Trânsito, que estabelece sistema de placas de identificação de veículos no padrão Mercosul, conforme resolução Mercosul nº 33/2014."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "132640",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PDS",
+                            "DescricaoSubtipoMateria": "PROJETO DE DECRETO LEGISLATIVO (SF)",
+                            "NumeroMateria": "00022",
+                            "AnoMateria": "2018",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PDS 22/2018"
+                        },
+                        "EmentaMateria": "Susta a Resolução do Conselho Nacional de Trânsito nº 729, de 6 de março de 2018, que estabelece sistema de Placas de Identificação de veículos no padrão disposto na Resolução Mercosul do Grupo Mercado Comum nº 33, de 2014."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "132865",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00168",
+                            "AnoMateria": "2018",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 168/2018"
+                        },
+                        "EmentaMateria": "Regulamenta o licenciamento ambiental previsto no inciso IV do § 1º do art. 225 da Constituição Federal e dispõe sobre a avaliação ambiental estratégica."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "134126",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "RQI",
+                            "DescricaoSubtipoMateria": "REQUERIMENTO DA COMISSÃO DE SERVIÇOS DE INFRAESTRUTURA",
+                            "NumeroMateria": "00035",
+                            "AnoMateria": "2018",
+                            "DescricaoIdentificacaoMateria": "RQI 35/2018"
+                        },
+                        "EmentaMateria": "Requer, nos termos Art. 58, §2°, inciso II da Constituição Federal, combinado com o Art. 90, inciso II e V do Regimento Interno do Senado Federal, a realização de Audiência Pública para debater os \"Desafios da Infraestrutura Nacional\"."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "134784",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "RQS",
+                            "DescricaoSubtipoMateria": "REQUERIMENTO",
+                            "NumeroMateria": "00587",
+                            "AnoMateria": "2018",
+                            "DescricaoIdentificacaoMateria": "RQS 587/2018"
+                        },
+                        "EmentaMateria": "Urgência para o Projeto de Lei da Câmara nº 74/2018."
+                    }
+                ]
+            },
+            "RelatoriasAtuais": {
+                "Relatoria": [
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "64262",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PLS",
+                                "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                                "NumeroMateria": "00487",
+                                "AnoMateria": "2003"
+                            },
+                            "EmentaMateria": "Dispõe sobre vedações à contratação com órgãos e entidade da Administração Pública, à concessão de incentivos fiscais e à participação em licitações por eles promovidas às empresas que, direta ou indiretamente, utilizem trabalho escravo na produção de bens e serviços."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "1956",
+                            "SiglaComissao": "CTFC",
+                            "NomeComissao": "Comissão de Transparência, Governança, Fiscalização e Controle e Defesa do Consumidor",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2017-04-27"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "80464",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PLS",
+                                "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                                "NumeroMateria": "00181",
+                                "AnoMateria": "2007"
+                            },
+                            "EmentaMateria": "Altera o Decreto-Lei nº 986, de 21 de outubro de 1969, que institui normas básicas sobre alimentos, e dá outras providências."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "1307",
+                            "SiglaComissao": "CRA",
+                            "NomeComissao": "Comissão de Agricultura e Reforma Agrária",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2017-03-23"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "93021",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PLS",
+                                "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                                "NumeroMateria": "00388",
+                                "AnoMateria": "2009"
+                            },
+                            "EmentaMateria": "Estabelece critérios socioambientais para a produção dos biocombustíveis."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "50",
+                            "SiglaComissao": "CMA",
+                            "NomeComissao": "Comissão de Meio Ambiente",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2017-04-27"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "99944",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PLS",
+                                "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                                "NumeroMateria": "00173",
+                                "AnoMateria": "2011"
+                            },
+                            "EmentaMateria": "Autoriza o Poder Executivo a criar a Secretaria Nacional dos Povos Indígenas."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "34",
+                            "SiglaComissao": "CCJ",
+                            "NomeComissao": "Comissão de Constituição, Justiça e Cidadania",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2017-08-08"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "100746",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PLS",
+                                "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                                "NumeroMateria": "00336",
+                                "AnoMateria": "2011"
+                            },
+                            "EmentaMateria": "Acrescenta o inciso VI ao artigo 15 da Medida Provisória nº. 2.158 - 35, de 24 de agosto de 2001, para permitir a exclusão da base de cálculo da Contribuição para o Financiamento da Seguridade Social (Cofins) e da Contribuição para o Programa de Integração Social e para o Programa de Formação do Patrimônio do Servidor Público (PIS/Pasep) os valores repassados aos associados decorrentes da prestação de serviço de transporte de passageiros intermediado por cooperativa."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "59",
+                            "SiglaComissao": "CI",
+                            "NomeComissao": "Comissão de Serviços de Infraestrutura",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2017-10-04"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "101479",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PLS",
+                                "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                                "NumeroMateria": "00463",
+                                "AnoMateria": "2011"
+                            },
+                            "EmentaMateria": "Acrescenta arts. 46-A e 74-A à Lei nº 8.078, de 11 de setembro de 1990, para responsabilizar pessoalmente, no âmbito civil e penal, os administradores de empresas fornecedoras de bens ou serviços que causem danos ao consumidor em razão de contratos que contenham cláusulas abusivas ou violadoras da boa-fé objetiva, ou ainda que contenham linguagem obscura em razão do uso de expressão técnica ou pertencente a língua estrangeira."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "34",
+                            "SiglaComissao": "CCJ",
+                            "NomeComissao": "Comissão de Constituição, Justiça e Cidadania",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2017-08-08"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "101691",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PLS",
+                                "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                                "NumeroMateria": "00498",
+                                "AnoMateria": "2011"
+                            },
+                            "EmentaMateria": "Altera a Lei nº 9.249, de 26 de dezembro de 1995, para permitir a dedução, em dobro, das despesas incorridas com a contratação de empregados com mais de cinquenta anos de idade, para fins de cálculo do Imposto de Renda da Pessoa Jurídica e da Contribuição Social sobre o Lucro Líquido."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "59",
+                            "SiglaComissao": "CI",
+                            "NomeComissao": "Comissão de Serviços de Infraestrutura",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2017-10-04"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "101947",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PLS",
+                                "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                                "NumeroMateria": "00537",
+                                "AnoMateria": "2011"
+                            },
+                            "EmentaMateria": "Estabelece a forma de recolhimento e destinação final de baterias automotivas e industriais, compostas por Chumbo e Ácido Sulfúrico."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "50",
+                            "SiglaComissao": "CMA",
+                            "NomeComissao": "Comissão de Meio Ambiente",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2017-04-27"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "102449",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PLC",
+                                "DescricaoSubtipoMateria": "PROJETO DE LEI DA CÂMARA",
+                                "NumeroMateria": "00084",
+                                "AnoMateria": "2011"
+                            },
+                            "EmentaMateria": "Proíbe, pelo prazo de 5 (cinco) anos, a exportação de madeira não beneficiada oriunda de florestas nativas."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "34",
+                            "SiglaComissao": "CCJ",
+                            "NomeComissao": "Comissão de Constituição, Justiça e Cidadania",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2017-08-08"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "102573",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PEC",
+                                "DescricaoSubtipoMateria": "PROPOSTA DE EMENDA À CONSTITUIÇÃO",
+                                "NumeroMateria": "00098",
+                                "AnoMateria": "2011"
+                            },
+                            "EmentaMateria": "Acresce o art. 98 ao Ato das Disposições Constitucionais Transitórias, para realizar revisão constitucional por meio de uma Câmara Revisional exclusiva e dá outras providências."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "34",
+                            "SiglaComissao": "CCJ",
+                            "NomeComissao": "Comissão de Constituição, Justiça e Cidadania",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2017-08-08"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "102992",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PLS",
+                                "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                                "NumeroMateria": "00654",
+                                "AnoMateria": "2011"
+                            },
+                            "EmentaMateria": "Altera a Lei nº 8.666 de 21 de junho de 1993 para determinar a notificação ao Ministério Público e demais órgãos de controle quando houver dispensa ou inexigibilidade de licitação, ou o retardamento previsto no final do parágrafo único do art. 8º desta Lei."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "34",
+                            "SiglaComissao": "CCJ",
+                            "NomeComissao": "Comissão de Constituição, Justiça e Cidadania",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2017-08-08"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "106564",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PLS",
+                                "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                                "NumeroMateria": "00263",
+                                "AnoMateria": "2012"
+                            },
+                            "EmentaMateria": "Altera a Lei nº 12.232, de 29 de abril de 2010, para permitir, nos processos licitatórios destinados a propaganda e publicidade, a participação de licitantes por meio de consórcios."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "34",
+                            "SiglaComissao": "CCJ",
+                            "NomeComissao": "Comissão de Constituição, Justiça e Cidadania",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2018-08-01"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "106822",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PLS",
+                                "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                                "NumeroMateria": "00295",
+                                "AnoMateria": "2012"
+                            },
+                            "EmentaMateria": "Revoga o art. 18 da Lei nº 12.232, de 29 de abril de 2010, para retirar a vedação do ressarcimento ao contratante das bonificações e incentivos recebidos pelas agências de publicidade contratadas pela Administração Pública em razão da execução do respectivo contrato."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "34",
+                            "SiglaComissao": "CCJ",
+                            "NomeComissao": "Comissão de Constituição, Justiça e Cidadania",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2018-08-01"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "112451",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PEC",
+                                "DescricaoSubtipoMateria": "PROPOSTA DE EMENDA À CONSTITUIÇÃO",
+                                "NumeroMateria": "00022",
+                                "AnoMateria": "2013"
+                            },
+                            "EmentaMateria": "Acrescenta artigo ao Ato das Disposições Constitucionais Transitórias para autorizar os Estados a promover a criação, fusão, incorporação ou o desmembramento de Municípios que tenha sido aprovado por plebiscito ocorridos até 31 de dezembro de 2012."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "34",
+                            "SiglaComissao": "CCJ",
+                            "NomeComissao": "Comissão de Constituição, Justiça e Cidadania",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2017-08-08"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "113301",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PLS",
+                                "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                                "NumeroMateria": "00244",
+                                "AnoMateria": "2013"
+                            },
+                            "EmentaMateria": "Acrescenta o § 7º ao art. 116 da Lei nº 8.666, de 21 de junho de 1993, para determinar a obrigatoriedade da divulgação, nos convênios celebrados pela União, da origem dos recursos empregados na aquisição de bens imóveis, equipamentos e veículos."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "34",
+                            "SiglaComissao": "CCJ",
+                            "NomeComissao": "Comissão de Constituição, Justiça e Cidadania",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2017-08-08"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "113364",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PEC",
+                                "DescricaoSubtipoMateria": "PROPOSTA DE EMENDA À CONSTITUIÇÃO",
+                                "NumeroMateria": "00032",
+                                "AnoMateria": "2013"
+                            },
+                            "EmentaMateria": "Altera o art. 211 da Constituição Federal para responsabilizar a União pelo financiamento da educação básica pública."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "34",
+                            "SiglaComissao": "CCJ",
+                            "NomeComissao": "Comissão de Constituição, Justiça e Cidadania",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2017-08-08"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "113566",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PLS",
+                                "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                                "NumeroMateria": "00276",
+                                "AnoMateria": "2013"
+                            },
+                            "EmentaMateria": "Institui a Política Nacional de Pagamento por Serviços Ambientais (PNPSA)."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "38",
+                            "SiglaComissao": "CAE",
+                            "NomeComissao": "Comissão de Assuntos Econômicos",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2018-05-22"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "114859",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PLC",
+                                "DescricaoSubtipoMateria": "PROJETO DE LEI DA CÂMARA",
+                                "NumeroMateria": "00091",
+                                "AnoMateria": "2013"
+                            },
+                            "EmentaMateria": "Altera a Lei nº 8.955, de 15 de dezembro de 1994, que dispõe sobre o contrato de franquia empresarial, franchising, e dá outras providências."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "38",
+                            "SiglaComissao": "CAE",
+                            "NomeComissao": "Comissão de Assuntos Econômicos",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2017-03-22"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "115776",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PFS",
+                                "DescricaoSubtipoMateria": "PROPOSTA DE FISCALIZAÇÃO E CONTROLE",
+                                "NumeroMateria": "00003",
+                                "AnoMateria": "2013"
+                            },
+                            "EmentaMateria": "Propõe acompanhar os processos investigaivos e administrativos em curso perante a Polícia Federal - PF e o Ministério da Previdência Social - MPS, relacionados à apuração de desvios e prejuízos nos Regimes Próprios de Previdência Social - RPPS, revelados recentemente pela \"Operação Miquéias\" da Polícia Federal."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "1956",
+                            "SiglaComissao": "CTFC",
+                            "NomeComissao": "Comissão de Transparência, Governança, Fiscalização e Controle e Defesa do Consumidor",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2017-06-26"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "116454",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PLS",
+                                "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                                "NumeroMateria": "00086",
+                                "AnoMateria": "2014"
+                            },
+                            "EmentaMateria": "Dispõe sobre a obrigação da Administração Pública Federal de divulgar despesas com publicidade."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "34",
+                            "SiglaComissao": "CCJ",
+                            "NomeComissao": "Comissão de Constituição, Justiça e Cidadania",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2017-08-08"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "116878",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PLS",
+                                "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                                "NumeroMateria": "00121",
+                                "AnoMateria": "2014"
+                            },
+                            "EmentaMateria": "Institui normas gerais sobre segurança contra incêndio e pânico."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "34",
+                            "SiglaComissao": "CCJ",
+                            "NomeComissao": "Comissão de Constituição, Justiça e Cidadania",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2015-06-19"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "118216",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "ECD",
+                                "DescricaoSubtipoMateria": "EMENDA(S) DA CÂMARA DOS DEPUTADOS A PROJETO DE LEI DO SENADO",
+                                "NumeroMateria": "00003",
+                                "AnoMateria": "2014"
+                            },
+                            "EmentaMateria": "Altera a Lei nº 9.427, de 26 de dezembro de 1996, para dispor sobre alteração do limite de potência que caracteriza as pequenas centrais hidrelétricas e ampliar incentivos e investimentos em geração de energia elétrica de outras fontes alternativas."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "59",
+                            "SiglaComissao": "CI",
+                            "NomeComissao": "Comissão de Serviços de Infraestrutura",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2017-10-04"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "119012",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PLC",
+                                "DescricaoSubtipoMateria": "PROJETO DE LEI DA CÂMARA",
+                                "NumeroMateria": "00107",
+                                "AnoMateria": "2014"
+                            },
+                            "EmentaMateria": "Altera a Lei nº 9.503, de 23 de setembro de 1997, que institui o Código de Trânsito Brasileiro, para tornar obrigatório o uso de temporizador em equipamentos de sinalização semafórica com aparelhos detectores de avanço de sinal."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "1306",
+                            "SiglaComissao": "CDR",
+                            "NomeComissao": "Comissão de Desenvolvimento Regional e Turismo",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2017-05-05"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "119491",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PLS",
+                                "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                                "NumeroMateria": "00412",
+                                "AnoMateria": "2014"
+                            },
+                            "EmentaMateria": "Cria o Fundo Nacional da Agricultura Familiar."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "1307",
+                            "SiglaComissao": "CRA",
+                            "NomeComissao": "Comissão de Agricultura e Reforma Agrária",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2017-03-23"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "120638",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PLS",
+                                "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                                "NumeroMateria": "00207",
+                                "AnoMateria": "2015"
+                            },
+                            "EmentaMateria": "Altera o art. 10 da Lei nº 9.986, de 18 de julho de 2000, para dispor sobre a indicação de dirigentes de Agências Reguladoras."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "59",
+                            "SiglaComissao": "CI",
+                            "NomeComissao": "Comissão de Serviços de Infraestrutura",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2018-03-26"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "120655",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PLS",
+                                "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                                "NumeroMateria": "00214",
+                                "AnoMateria": "2015"
+                            },
+                            "EmentaMateria": "Modifica o Código 20 do Anexo VIII da Lei nº 6.938, de 31 de agosto de 1981, acrescido pela Lei nº 10.165, de 27 de dezembro de 2000, para excluir a silvicultura do rol de atividades potencialmente poluidoras e utilizadoras de recursos ambientais."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "50",
+                            "SiglaComissao": "CMA",
+                            "NomeComissao": "Comissão de Meio Ambiente",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2018-12-06"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "120812",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PLS",
+                                "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                                "NumeroMateria": "00234",
+                                "AnoMateria": "2015"
+                            },
+                            "EmentaMateria": "Acrescenta o artigo 4º-A na Lei 12.232, de 29 de abril de 2010."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "34",
+                            "SiglaComissao": "CCJ",
+                            "NomeComissao": "Comissão de Constituição, Justiça e Cidadania",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2017-08-08"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "120893",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PLS",
+                                "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                                "NumeroMateria": "00244",
+                                "AnoMateria": "2015"
+                            },
+                            "EmentaMateria": "Acrescenta os §§ 4º e 5º ao art. 7º da Lei nº 12.651, de 25 de maio de 2012 (Código Florestal), para dispor sobre termo de responsabilidade e prazo para a recomposição da vegetação em área de preservação permanente suprimida após 22 de julho de 2008."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "50",
+                            "SiglaComissao": "CMA",
+                            "NomeComissao": "Comissão de Meio Ambiente",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2017-05-11"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "122156",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PDS",
+                                "DescricaoSubtipoMateria": "PROJETO DE DECRETO LEGISLATIVO (SF)",
+                                "NumeroMateria": "00285",
+                                "AnoMateria": "2015"
+                            },
+                            "EmentaMateria": "Aprova o ato que outorga autorização à ASSOCIAÇÃO DE RADIODIFUSÃO COMUNITÁRIA DE SÃO JOSÉ DO INHACORÁ para executar serviço de radiodifusão comunitária na cidade de São José do Inhacorá, Estado do Rio Grande do Sul."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "1363",
+                            "SiglaComissao": "CCT",
+                            "NomeComissao": "Comissão de Ciência, Tecnologia, Inovação, Comunicação e Informática",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2017-03-30"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "123053",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PLS",
+                                "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                                "NumeroMateria": "00590",
+                                "AnoMateria": "2015"
+                            },
+                            "EmentaMateria": "Altera a Lei nº 5.709, de 07 de outubro de 1971, que Regula a Aquisição de Imóvel Rural por Estrangeiro Residente no País ou Pessoa Jurídica Estrangeira Autorizada a Funcionar no Brasil, e dá outras providências."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "34",
+                            "SiglaComissao": "CCJ",
+                            "NomeComissao": "Comissão de Constituição, Justiça e Cidadania",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2017-08-08"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "123181",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PLS",
+                                "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                                "NumeroMateria": "00617",
+                                "AnoMateria": "2015"
+                            },
+                            "EmentaMateria": "Altera a Lei nº 12.111, de 9 de dezembro de 2009, para modificar o critério que configura a integração de agentes dos Sistemas Isolados ao Sistema Interligado Nacional – SIN."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "59",
+                            "SiglaComissao": "CI",
+                            "NomeComissao": "Comissão de Serviços de Infraestrutura",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2018-07-03"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "123527",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PLC",
+                                "DescricaoSubtipoMateria": "PROJETO DE LEI DA CÂMARA",
+                                "NumeroMateria": "00153",
+                                "AnoMateria": "2015"
+                            },
+                            "EmentaMateria": "Acrescenta parágrafo ao art. 1º da Lei nº 11.975, de 7 de julho de 2009, para possibilitar a emissão de segunda via do bilhete de passagem no transporte coletivo rodoviário interestadual e internacional."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "59",
+                            "SiglaComissao": "CI",
+                            "NomeComissao": "Comissão de Serviços de Infraestrutura",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2017-04-18"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "123622",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PLS",
+                                "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                                "NumeroMateria": "00683",
+                                "AnoMateria": "2015"
+                            },
+                            "EmentaMateria": "Acrescenta a alínea “m”ao inciso II do art. 61 do Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para agravar a pena do agente que pratica crime com a utilização de máscara, capacete ou qualquer outro artifício que impeça a identificação visual."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "34",
+                            "SiglaComissao": "CCJ",
+                            "NomeComissao": "Comissão de Constituição, Justiça e Cidadania",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2017-08-08"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "123788",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PLS",
+                                "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                                "NumeroMateria": "00701",
+                                "AnoMateria": "2015"
+                            },
+                            "EmentaMateria": "Altera a Lei nº 9.503, de 23 de setembro de 1997, para tornar mais gravosa a multa aplicada a quem conduzir motocicleta, motoneta ou ciclomotor transportando criança menor de sete anos."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "34",
+                            "SiglaComissao": "CCJ",
+                            "NomeComissao": "Comissão de Constituição, Justiça e Cidadania",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2017-08-08"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "123979",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PLS",
+                                "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                                "NumeroMateria": "00731",
+                                "AnoMateria": "2015"
+                            },
+                            "EmentaMateria": "Altera a Lei nº 8.078, de 11 de setembro de 1990, para garantir ao consumidor o direito ao atendimento presencial no caso que especifica."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "1956",
+                            "SiglaComissao": "CTFC",
+                            "NomeComissao": "Comissão de Transparência, Governança, Fiscalização e Controle e Defesa do Consumidor",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2017-04-27"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "124484",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PLS",
+                                "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                                "NumeroMateria": "00788",
+                                "AnoMateria": "2015"
+                            },
+                            "EmentaMateria": "Altera o Código Civil, Lei nº 10.406, de 10 de janeiro de 2002, para instituir a sociedade de interesse comunitário."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "34",
+                            "SiglaComissao": "CCJ",
+                            "NomeComissao": "Comissão de Constituição, Justiça e Cidadania",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2017-11-30"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "124768",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PLS",
+                                "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                                "NumeroMateria": "00027",
+                                "AnoMateria": "2016"
+                            },
+                            "EmentaMateria": "Altera o § 5º do Art. 32 da Lei 12.485, de 12 de setembro de 2011, que “Dispõe sobre a comunicação audiovisual de acesso condicionado.”"
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "1363",
+                            "SiglaComissao": "CCT",
+                            "NomeComissao": "Comissão de Ciência, Tecnologia, Inovação, Comunicação e Informática",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2016-03-23"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "125574",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PEC",
+                                "DescricaoSubtipoMateria": "PROPOSTA DE EMENDA À CONSTITUIÇÃO",
+                                "NumeroMateria": "00020",
+                                "AnoMateria": "2016"
+                            },
+                            "EmentaMateria": "Insere artigo no Ato das Disposições Constitucionais Transitórias, para prever a realização de eleições presidenciais simultaneamente às eleições municipais de 2016."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "34",
+                            "SiglaComissao": "CCJ",
+                            "NomeComissao": "Comissão de Constituição, Justiça e Cidadania",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2017-08-08"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "125967",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PEC",
+                                "DescricaoSubtipoMateria": "PROPOSTA DE EMENDA À CONSTITUIÇÃO",
+                                "NumeroMateria": "00028",
+                                "AnoMateria": "2016"
+                            },
+                            "EmentaMateria": "Convoca plebiscito sobre o mandato presidencial, e dá outras providências."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "34",
+                            "SiglaComissao": "CCJ",
+                            "NomeComissao": "Comissão de Constituição, Justiça e Cidadania",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2017-08-08"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "126944",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PDS",
+                                "DescricaoSubtipoMateria": "PROJETO DE DECRETO LEGISLATIVO (SF)",
+                                "NumeroMateria": "00031",
+                                "AnoMateria": "2016"
+                            },
+                            "EmentaMateria": "Aprova o ato que outorga autorização à ORGANIZAÇÃO ECOLÓGICA CULTURAL CORIMBATAÍ para executar serviço de radiodifusão comunitária na cidade de Piracicaba, Estado de São Paulo."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "1363",
+                            "SiglaComissao": "CCT",
+                            "NomeComissao": "Comissão de Ciência, Tecnologia, Inovação, Comunicação e Informática",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2017-03-30"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "127439",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PEC",
+                                "DescricaoSubtipoMateria": "PROPOSTA DE EMENDA À CONSTITUIÇÃO",
+                                "NumeroMateria": "00058",
+                                "AnoMateria": "2016"
+                            },
+                            "EmentaMateria": "Altera o § 9º do art. 37 da Constituição Federal, para submeter a remuneração paga por empresas públicas, sociedades de economia mista e suas subsidiárias aos limites constitucionais impostos à Administração Pública direta."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "34",
+                            "SiglaComissao": "CCJ",
+                            "NomeComissao": "Comissão de Constituição, Justiça e Cidadania",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2017-08-08"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "127547",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PDS",
+                                "DescricaoSubtipoMateria": "PROJETO DE DECRETO LEGISLATIVO (SF)",
+                                "NumeroMateria": "00052",
+                                "AnoMateria": "2016"
+                            },
+                            "EmentaMateria": "Aprova o ato que renova a concessão outorgada à RÁDIO SANTA MARIA LTDA. para explorar serviço de radiodifusão sonora em onda média na cidade de Monteiro, Estado da Paraíba."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "1363",
+                            "SiglaComissao": "CCT",
+                            "NomeComissao": "Comissão de Ciência, Tecnologia, Inovação, Comunicação e Informática",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2017-03-30"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "127994",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "OFS",
+                                "DescricaoSubtipoMateria": "OFICIO \"S\"",
+                                "NumeroMateria": "00005",
+                                "AnoMateria": "2017"
+                            },
+                            "EmentaMateria": "Comunica, nos termos do art. 3º da Lei nº 10.610, de 2002, a composição do controle societário da Empresa Jornalística MultiTV Produções Ltda - ME."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "1363",
+                            "SiglaComissao": "CCT",
+                            "NomeComissao": "Comissão de Ciência, Tecnologia, Inovação, Comunicação e Informática",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2017-03-30"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "128002",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "OFS",
+                                "DescricaoSubtipoMateria": "OFICIO \"S\"",
+                                "NumeroMateria": "00006",
+                                "AnoMateria": "2017"
+                            },
+                            "EmentaMateria": "Comunica, nos termos do art. 3º da Lei nº 10.610, de 2002, a composição do controle societário da Empresa Jornalística Editora e Grafica Paraná Press S.A."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "1363",
+                            "SiglaComissao": "CCT",
+                            "NomeComissao": "Comissão de Ciência, Tecnologia, Inovação, Comunicação e Informática",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2017-03-30"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "130157",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "AFC",
+                                "DescricaoSubtipoMateria": "AVISO DA COMISSÃO DE TRANSPARÊNCIA, GOVERNANÇA, FISCALIZAÇÃO E CONTROLE E DEFESA DO CONSUMIDOR",
+                                "NumeroMateria": "00003",
+                                "AnoMateria": "2017"
+                            },
+                            "EmentaMateria": "Aviso TCU nº 401/2017-Seses-TCU-Plenário. Acórdão nº 1235/2017. TC 017.311/2016-0. Cuida de consolidação dos resultados das fiscalizações realizadas pelas Secretarias de Controle Externo localizadas nos estados do Maranhão, Mato Grosso do Sul, Pará, Paraíba, Rondônia e Santa Catarina, em atendimento à determinação contida no acórdão 44/2016-Plenário."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "1956",
+                            "SiglaComissao": "CTFC",
+                            "NomeComissao": "Comissão de Transparência, Governança, Fiscalização e Controle e Defesa do Consumidor",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2017-08-31"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "131136",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PLS",
+                                "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                                "NumeroMateria": "00381",
+                                "AnoMateria": "2017"
+                            },
+                            "EmentaMateria": "Dispõe sobre a regularização ambiental de imóveis com área de até 1 (um) módulo fiscal e para lotes de assentamentos da reforma agrária."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "50",
+                            "SiglaComissao": "CMA",
+                            "NomeComissao": "Comissão de Meio Ambiente",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2017-10-23"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "131349",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PLS",
+                                "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                                "NumeroMateria": "00404",
+                                "AnoMateria": "2017"
+                            },
+                            "EmentaMateria": "Altera a Lei nº 6.088, de 16 de julho de 1974, para incluir o vale do rio Madeira na área de atuação da Companhia de Desenvolvimento dos Vales do São Francisco e do Parnaíba."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "1306",
+                            "SiglaComissao": "CDR",
+                            "NomeComissao": "Comissão de Desenvolvimento Regional e Turismo",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2018-04-12"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "131714",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PLS",
+                                "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                                "NumeroMateria": "00463",
+                                "AnoMateria": "2017"
+                            },
+                            "EmentaMateria": "Altera a redação do Decreto-Lei nº 79, de 19 de dezembro de 1966, que institui normas para fixação de preços mínimos e execução das operações de financiamento e aquisição de produtos agropecuários e adota outras providências."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "1307",
+                            "SiglaComissao": "CRA",
+                            "NomeComissao": "Comissão de Agricultura e Reforma Agrária",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2018-11-20"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "134594",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "AVS",
+                                "DescricaoSubtipoMateria": "AVISO",
+                                "NumeroMateria": "00038",
+                                "AnoMateria": "2018"
+                            },
+                            "EmentaMateria": "Encaminha cópia do Acórdão nº 2212/2018 - TCU, que trata de fiscalização da execução do Programa Nacional de Crédito Fundiário (TC 019.286/2017-1)."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "1307",
+                            "SiglaComissao": "CRA",
+                            "NomeComissao": "Comissão de Agricultura e Reforma Agrária",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2018-11-20"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "134595",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "AVS",
+                                "DescricaoSubtipoMateria": "AVISO",
+                                "NumeroMateria": "00039",
+                                "AnoMateria": "2018"
+                            },
+                            "EmentaMateria": "Encaminha cópia do Acórdão nº 1197/2018, que trata de auditoria sobre o procedimento de emissão da Declaração de Aptidão ao Pronaf (DAP) pela Secretaria Especial de Agricultura Familiar e Desenvolvimento Agrário (Sead) como instrumento de identificação e de qualificação de agricultores familiares, com as suas formas associativas, para o acesso aos respectivos programas e às correspondentes políticas públicas (TC 012.700/2017-7)."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "1307",
+                            "SiglaComissao": "CRA",
+                            "NomeComissao": "Comissão de Agricultura e Reforma Agrária",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2018-11-20"
+                    }
+                ]
+            },
+            "OutrasInformacoes": {
+                "Servico": [
+                    {
+                        "NomeServico": "ApartesParlamentar",
+                        "DescricaoServico": "Apartes do parlamentar",
+                        "UrlServico": "http://legis.senado.leg.br/dadosabertos/senador/4981/apartes?v=4"
+                    },
+                    {
+                        "NomeServico": "CargoParlamentar",
+                        "DescricaoServico": "Cargos do parlamentar ao longo do(s) mandato(s)",
+                        "UrlServico": "http://legis.senado.leg.br/dadosabertos/senador/4981/cargos?v=4"
+                    },
+                    {
+                        "NomeServico": "DiscursosParlamentar",
+                        "DescricaoServico": "Discursos do parlamentar",
+                        "UrlServico": "http://legis.senado.leg.br/dadosabertos/senador/4981/discursos?v=4"
+                    },
+                    {
+                        "NomeServico": "FiliacaoParlamentar",
+                        "DescricaoServico": "Filiações partidárias do parlamentar ao longo do(s) mandato(s)",
+                        "UrlServico": "http://legis.senado.leg.br/dadosabertos/senador/4981/filiacoes?v=4"
+                    },
+                    {
+                        "NomeServico": "LiderancaParlamentar",
+                        "DescricaoServico": "Cargos de liderança do parlamentar ao longo do(s) mandato(s)",
+                        "UrlServico": "http://legis.senado.leg.br/dadosabertos/senador/4981/liderancas?v=4"
+                    },
+                    {
+                        "NomeServico": "MandatoParlamentar",
+                        "DescricaoServico": "Mandatos do parlamentar (atual e anteriores, se houver)",
+                        "UrlServico": "http://legis.senado.leg.br/dadosabertos/senador/4981/mandatos?v=4"
+                    },
+                    {
+                        "NomeServico": "MateriasAutoriaParlamentar",
+                        "DescricaoServico": "Matérias de autoria ou coautoria do parlamentar\n      \n      ATENÇÃO: a tag \"Descontinuacao\", dentro de \"Metadados\" traz informações sobre a descontinuação deste serviço, indicando o serviço e/ou versão substitut",
+                        "UrlServico": "http://legis.senado.leg.br/dadosabertos/senador/4981/autorias?v=4"
+                    },
+                    {
+                        "NomeServico": "MateriasRelatoriaParlamentar",
+                        "DescricaoServico": "Matérias relatadas pelo parlamentar\n      \n      ATENÇÃO: a tag \"Descontinuacao\", dentro de \"Metadados\" traz informações sobre a descontinuação deste serviço, indicando o serviço e/ou versão substitutos.",
+                        "UrlServico": "http://legis.senado.leg.br/dadosabertos/senador/4981/relatorias?v=4"
+                    },
+                    {
+                        "NomeServico": "MembroComissaoParlamentar",
+                        "DescricaoServico": "Comissões em que o parlamentar é (ou foi) membro",
+                        "UrlServico": "http://legis.senado.leg.br/dadosabertos/senador/4981/comissoes?v=4"
+                    },
+                    {
+                        "NomeServico": "VotacaoParlamentar",
+                        "DescricaoServico": "Votos do parlamentar ao longo do(s) mandato(s)",
+                        "UrlServico": "http://legis.senado.leg.br/dadosabertos/senador/4981/votacoes?v=4"
+                    }
+                ]
+            },
+            "UrlGlossario": "http://legis.senado.leg.br/dadosabertos/senador/"
+        }
+    }
+}

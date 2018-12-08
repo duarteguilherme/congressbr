@@ -3,7 +3,7 @@
         "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
         "@xsi:noNamespaceSchemaLocation": "http://legis.senado.leg.br/dadosabertos/dados/ListaBlocoParlamentarv4.xsd",
         "Metadados": {
-            "Versao": "02/12/2018 10:08:50",
+            "Versao": "08/12/2018 10:21:25",
             "VersaoServico": "4"
         },
         "Blocos": {

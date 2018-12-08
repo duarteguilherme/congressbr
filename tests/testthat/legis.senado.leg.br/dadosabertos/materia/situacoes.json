@@ -1,0 +1,483 @@
+{
+    "ListaSituacoes": {
+        "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+        "@xsi:noNamespaceSchemaLocation": "http://legis.senado.leg.br/dadosabertos/dados/ListaSituacoesv2.xsd",
+        "Metadados": {
+            "Versao": "08/12/2018 09:49:52",
+            "VersaoServico": "2",
+            "DescricaoDataSet": "Lista os tipos de situacao da tramitação da matéria, ativos ou não. Por default, apenas os ativos. Para listar todos, acrescente o parâmetro opcional \"indAtivos=N\"."
+        },
+        "Situacoes": {
+            "Situacao": [
+                {
+                    "Codigo": "87",
+                    "Sigla": "AGDREL",
+                    "Descricao": "AGUARDANDO DESIGNAÇÃO DO RELATOR",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "11",
+                    "Sigla": "AGINF",
+                    "Descricao": "AGUARDANDO INFORMAÇÕES",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "12",
+                    "Sigla": "AGINR",
+                    "Descricao": "AGUARDANDO INTERPOSIÇÃO DE RECURSO",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "14",
+                    "Sigla": "AGLPAR",
+                    "Descricao": "AGUARDANDO LEITURA PARECER (ES)",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "167",
+                    "Sigla": "AGPPDL",
+                    "Descricao": "AGUARDANDO PRAZO PARA ELABORAÇÃO DO PDL NA COMISSÃO MISTA",
+                    "DataCriacao": "2013-01-01"
+                },
+                {
+                    "Codigo": "168",
+                    "Sigla": "AGPPDLP",
+                    "Descricao": "AGUARDANDO PRAZO PARA ELABORAÇÃO DO PDL POR PARLAMENTAR",
+                    "DataCriacao": "2013-01-01"
+                },
+                {
+                    "Codigo": "20",
+                    "Sigla": "AGREMD",
+                    "Descricao": "AGUARDANDO RECEBIMENTO DE EMENDAS",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "166",
+                    "Sigla": "AMPVPREF",
+                    "Descricao": "APROVADA A MEDIDA PROVISÓRIA - PREFERÊNCIA SOBRE PLV",
+                    "DataCriacao": "2013-01-01"
+                },
+                {
+                    "Codigo": "156",
+                    "Sigla": "AORFI",
+                    "Descricao": "ATENDIMENDO DA ADEQUAÇÃO ORÇAMENTÁRIA E FINANCEIRA",
+                    "DataCriacao": "2013-01-01"
+                },
+                {
+                    "Codigo": "158",
+                    "Sigla": "APAM",
+                    "Descricao": "APROVADO O PARECER NA COMISSÃO - PELA APROVAÇÃO DA MEDIDA",
+                    "DataCriacao": "2013-01-01"
+                },
+                {
+                    "Codigo": "159",
+                    "Sigla": "APAPM",
+                    "Descricao": "APROVADO O PARECER NA COMISSÃO - APROVAÇÃO PARCIAL DA MEDIDA",
+                    "DataCriacao": "2013-01-01"
+                },
+                {
+                    "Codigo": "154",
+                    "Sigla": "APCONST",
+                    "Descricao": "ATENDIMENTO DOS PRESUPOSTOS CONSTITUCIONAIS",
+                    "DataCriacao": "2013-01-01"
+                },
+                {
+                    "Codigo": "165",
+                    "Sigla": "APLVPREF",
+                    "Descricao": "APROVADO PROJETO DE LEI DE CONVERSÃO PREFERÊNCIA SOBRE MEDID",
+                    "DataCriacao": "2013-01-01"
+                },
+                {
+                    "Codigo": "163",
+                    "Sigla": "APPDL",
+                    "Descricao": "APROVADO O PARECER NA COMISSÃO - PELA APRESENTAÇÃO DE PDL",
+                    "DataCriacao": "2013-01-01"
+                },
+                {
+                    "Codigo": "164",
+                    "Sigla": "APPLVA",
+                    "Descricao": "APROVADO PROJETO DE LEI DE CONVERSÃO COM ALTERAÇÕES",
+                    "DataCriacao": "2013-01-01"
+                },
+                {
+                    "Codigo": "162",
+                    "Sigla": "APPREJM",
+                    "Descricao": "APROVADO PARECER NA COMISSÃO - PREJUDICIONALIDADE DA MEDID",
+                    "DataCriacao": "2013-01-01"
+                },
+                {
+                    "Codigo": "146",
+                    "Sigla": "APRCD(DT)",
+                    "Descricao": "APRECIADA EM DECISÃO TERMINATIVA PELAS COMISSÕES",
+                    "DataCriacao": "2008-10-10"
+                },
+                {
+                    "Codigo": "160",
+                    "Sigla": "APRMED",
+                    "Descricao": "APROVADO O PARECER NA COMISSÃO - PELA REJEIÇÃO DA MEDIDA",
+                    "DataCriacao": "2013-01-01"
+                },
+                {
+                    "Codigo": "173",
+                    "Sigla": "APRPARAD",
+                    "Descricao": "APROVADO PARECER DE ADMISSIBILIDADE",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "174",
+                    "Sigla": "APRPARPR",
+                    "Descricao": "APROVADO PARECER DE PRONÚNCIA",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "25",
+                    "Sigla": "APRVD",
+                    "Descricao": "APROVADA",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "96",
+                    "Sigla": "APRVD(DT)",
+                    "Descricao": "APROVADA A MATÉRIA (DECISÃO TERMINATIVA)",
+                    "DataCriacao": "1988-10-05"
+                },
+                {
+                    "Codigo": "89",
+                    "Sigla": "APRVPAR",
+                    "Descricao": "APROVADO PARECER NA COMISSÃO",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "161",
+                    "Sigla": "APTPLV",
+                    "Descricao": "APROVADO O PARECER NA COMISSÃO - NOS TERMOS DO PLV",
+                    "DataCriacao": "2013-01-01"
+                },
+                {
+                    "Codigo": "28",
+                    "Sigla": "ARQVD",
+                    "Descricao": "ARQUIVADA AO FINAL DA LEGISLATURA",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "32",
+                    "Sigla": "COMEXT",
+                    "Descricao": "COMISSÃO TEMPORÁRIA EXTINTA",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "107",
+                    "Sigla": "CONHECIDA",
+                    "Descricao": "CONHECIDA.",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "109",
+                    "Sigla": "DEFERD",
+                    "Descricao": "DEFERIDA",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "149",
+                    "Sigla": "DESARQLEG",
+                    "Descricao": "DESARQUIVADA - RISF ART 332 § 1º",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "179",
+                    "Sigla": "DEVOLVDJ",
+                    "Descricao": "DEVOLVIDO EM ATENDIMENTO A DECISAO JUDICIAL",
+                    "DataCriacao": "2016-12-01"
+                },
+                {
+                    "Codigo": "169",
+                    "Sigla": "EPPDL",
+                    "Descricao": "ENCERRADO O PRAZO PARA ELABORAÇÃO DO PDL NA COMISSÃO MISTA",
+                    "DataCriacao": "2013-01-01"
+                },
+                {
+                    "Codigo": "170",
+                    "Sigla": "EPPDLP",
+                    "Descricao": "ENCERRADO O PRAZO PARA ELABORAÇÃO DO PDL POR PARLAMENTAR",
+                    "DataCriacao": "2013-01-01"
+                },
+                {
+                    "Codigo": "153",
+                    "Sigla": "EPREM",
+                    "Descricao": "ENCERRADO O PRAZO PARA RECEBIMENTO DE EMENDAS",
+                    "DataCriacao": "2013-01-01"
+                },
+                {
+                    "Codigo": "151",
+                    "Sigla": "FIXA",
+                    "Descricao": "FIXAÇÃO DE CALENDÁRIO",
+                    "DataCriacao": "2013-01-01"
+                },
+                {
+                    "Codigo": "136",
+                    "Sigla": "INADMITIDA",
+                    "Descricao": "NÃO ADMISSÃO DOS PRESSUPOSTOS CONSTITUCIONAIS",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "78",
+                    "Sigla": "INCLOD",
+                    "Descricao": "INCLUÍDA EM ORDEM DO DIA",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "127",
+                    "Sigla": "INCLOD(PAR",
+                    "Descricao": "INCLUÍDO PARECER EM ORDEM DO DIA",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "114",
+                    "Sigla": "INCLOD(RQ)",
+                    "Descricao": "INCLUÍDO REQUERIMENTO EM ORDEM DO DIA DA SESSÃO DELIBERATIVA",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "108",
+                    "Sigla": "INDEFD",
+                    "Descricao": "INDEFERIDA",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "105",
+                    "Sigla": "INFNEG",
+                    "Descricao": "INFORMAÇÕES NEGADAS",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "79",
+                    "Sigla": "INFREC",
+                    "Descricao": "INFORMAÇÕES RECEBIDAS",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "138",
+                    "Sigla": "INPAUTA",
+                    "Descricao": "INCLUÍDA NA PAUTA DA REUNIÃO",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "178",
+                    "Sigla": "INSTALADA",
+                    "Descricao": "COMISSÃO INSTALADA",
+                    "DataCriacao": "2015-01-01"
+                },
+                {
+                    "Codigo": "147",
+                    "Sigla": "LEITURA",
+                    "Descricao": "MATÉRIA LIDA EM PLENÁRIO.",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "157",
+                    "Sigla": "NAORFI",
+                    "Descricao": "NÃO ATENDIMENDO DA ADEQUAÇÃO ORÇAMENTÁRIA E FINANCEIRA",
+                    "DataCriacao": "2013-01-01"
+                },
+                {
+                    "Codigo": "155",
+                    "Sigla": "NPCONST",
+                    "Descricao": "NÃO ATENDIMENTO DOS PRESUPOSTOS CONSTITUCIONAIS",
+                    "DataCriacao": "2013-01-01"
+                },
+                {
+                    "Codigo": "90",
+                    "Sigla": "PEDVISTA",
+                    "Descricao": "PEDIDO DE VISTA CONCEDIDO",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "152",
+                    "Sigla": "PRFP",
+                    "Descricao": "PRAZO FINAL PRORROGADO",
+                    "DataCriacao": "2013-01-01"
+                },
+                {
+                    "Codigo": "43",
+                    "Sigla": "PRJDA",
+                    "Descricao": "PREJUDICADA",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "8",
+                    "Sigla": "PRONDEPLEN",
+                    "Descricao": "PRONTO PARA DELIBERAÇÃO DO PLENÁRIO",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "42",
+                    "Sigla": "PRONTPAUT",
+                    "Descricao": "PRONTA PARA A PAUTA NA COMISSÃO",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "91",
+                    "Sigla": "RELATOR",
+                    "Descricao": "MATÉRIA COM A RELATORIA",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "49",
+                    "Sigla": "RJTDA",
+                    "Descricao": "REJEITADA",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "97",
+                    "Sigla": "RJTDA(DT)",
+                    "Descricao": "REJEITADA A MATÉRIA (DECISÃO TERMINATIVA)",
+                    "DataCriacao": "1988-10-05"
+                },
+                {
+                    "Codigo": "52",
+                    "Sigla": "RMCD",
+                    "Descricao": "REMETIDA À CÂMARA DOS DEPUTADOS",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "55",
+                    "Sigla": "RMPRO",
+                    "Descricao": "REMETIDA À PROMULGAÇÃO",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "57",
+                    "Sigla": "RMSAN",
+                    "Descricao": "REMETIDA À SANÇÃO",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "59",
+                    "Sigla": "RTCU",
+                    "Descricao": "REMETIDA AO TRIBUNAL DE CONTAS DA UNIÃO",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "60",
+                    "Sigla": "RTPA",
+                    "Descricao": "RETIRADA PELO AUTOR",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "48",
+                    "Sigla": "RVGA",
+                    "Descricao": "REVOGADA",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "62",
+                    "Sigla": "SBRTA",
+                    "Descricao": "SOBRESTADA",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "63",
+                    "Sigla": "SEFICA",
+                    "Descricao": "SEM EFICÁCIA",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "172",
+                    "Sigla": "SOBPAUTCN",
+                    "Descricao": "SOBRESTANDO A PAUTA DO CONGRESSO NACIONAL",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "64",
+                    "Sigla": "TNJR",
+                    "Descricao": "TRANSFORMADA EM NORMA JURÍDICA",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "92",
+                    "Sigla": "TNJRVETO",
+                    "Descricao": "TRANSFORMADA EM NORMA JURÍDICA COM VETO PARCIAL",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "101",
+                    "Sigla": "TPDN",
+                    "Descricao": "TRANSFORMADA EM PROJ. DE DEC. LEGISLATIVO DO CONGRESSO",
+                    "DataCriacao": "2000-02-23"
+                },
+                {
+                    "Codigo": "66",
+                    "Sigla": "TPDS",
+                    "Descricao": "TRANSFORMADA EM PROJETO DECRETO LEGISLATIVO",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "150",
+                    "Sigla": "TPEC",
+                    "Descricao": "TRANSFORMADA EM PROPOSTA DE EMENDA CONSTITUCIONAL",
+                    "DataCriacao": "2000-01-01"
+                },
+                {
+                    "Codigo": "171",
+                    "Sigla": "TPLCONV",
+                    "Descricao": "TRANSFORMADA EM PROJETO DE LEI DE CONVERSÃO",
+                    "DataCriacao": "2013-01-01"
+                },
+                {
+                    "Codigo": "99",
+                    "Sigla": "TPLN",
+                    "Descricao": "TRANSFORMADA EM PROJETO DE LEI DO CONGRESSO",
+                    "DataCriacao": "2000-02-23"
+                },
+                {
+                    "Codigo": "67",
+                    "Sigla": "TPLS",
+                    "Descricao": "TRANSFORMADA EM PROJETO DE LEI DO SENADO",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "68",
+                    "Sigla": "TPLV",
+                    "Descricao": "TRANSFORMADA EM PROJETO DE LEI DE CONVERSÃO",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "69",
+                    "Sigla": "TPRCN",
+                    "Descricao": "TRANSFORMADA EM PROJETO DE RESOLUÇÃO - CN",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "70",
+                    "Sigla": "TPRS",
+                    "Descricao": "TRANSFORMADA EM PROJETO DE RESOLUÇÃO DO SENADO",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "141",
+                    "Sigla": "TRINTER",
+                    "Descricao": "TRAMITAÇÃO INTERROMPIDA",
+                    "DataCriacao": "2006-12-06"
+                },
+                {
+                    "Codigo": "103",
+                    "Sigla": "VETODERR",
+                    "Descricao": "VETO DERRUBADO",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "102",
+                    "Sigla": "VETOMANT",
+                    "Descricao": "VETO MANTIDO",
+                    "DataCriacao": "1900-01-01"
+                },
+                {
+                    "Codigo": "77",
+                    "Sigla": "VTDA",
+                    "Descricao": "VETADA",
+                    "DataCriacao": "1900-01-01"
+                }
+            ]
+        }
+    }
+}

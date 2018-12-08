@@ -1,0 +1,251 @@
+{
+    "ListaBasicaComissoes": {
+        "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+        "@xsi:noNamespaceSchemaLocation": "http://legis.senado.gov.br/dadosabertos/dados/ListaBasicaComissoesv1.xsd",
+        "Metadados": {
+            "Versao": "08/12/2018 10:21:28",
+            "VersaoServico": "1",
+            "DescricaoDataSet": "Lista das Comissões Permanentes do Senado Federal\n\nParâmetros : COD_COLEGIADO, [SGL_COLEGIADO], [COD_TIPO_COLEGIADO]\n"
+        },
+        "colegiado": {
+            "colegiados": {
+                "colegiado": [
+                    {
+                        "@id": "38",
+                        "@ordem": "1",
+                        "CodigoColegiado": "38",
+                        "NomeColegiado": "Comissão de Assuntos Econômicos",
+                        "SiglaColegiado": "CAE",
+                        "IndicadorDistrPartidaria": "S",
+                        "DataInicio": "1900-01-01",
+                        "CodigoTipoColegiado": "21",
+                        "tipocolegiado": {
+                            "CodigoTipoColegiado": "21",
+                            "DescricaoTipoColegiado": "Comissão Permanente",
+                            "SiglaTipoColegiado": "PERMANENTE",
+                            "SiglaCasa": "SF",
+                            "IndicadorAtivo": "S",
+                            "CodigoNaturezaColegiado": "1"
+                        }
+                    },
+                    {
+                        "@id": "40",
+                        "@ordem": "2",
+                        "CodigoColegiado": "40",
+                        "NomeColegiado": "Comissão de Assuntos Sociais",
+                        "SiglaColegiado": "CAS",
+                        "IndicadorDistrPartidaria": "S",
+                        "DataInicio": "1900-01-01",
+                        "CodigoTipoColegiado": "21",
+                        "tipocolegiado": {
+                            "CodigoTipoColegiado": "21",
+                            "DescricaoTipoColegiado": "Comissão Permanente",
+                            "SiglaTipoColegiado": "PERMANENTE",
+                            "SiglaCasa": "SF",
+                            "IndicadorAtivo": "S",
+                            "CodigoNaturezaColegiado": "1"
+                        }
+                    },
+                    {
+                        "@id": "34",
+                        "@ordem": "3",
+                        "CodigoColegiado": "34",
+                        "NomeColegiado": "Comissão de Constituição, Justiça e Cidadania",
+                        "SiglaColegiado": "CCJ",
+                        "IndicadorDistrPartidaria": "S",
+                        "DataInicio": "1900-01-01",
+                        "CodigoTipoColegiado": "21",
+                        "tipocolegiado": {
+                            "CodigoTipoColegiado": "21",
+                            "DescricaoTipoColegiado": "Comissão Permanente",
+                            "SiglaTipoColegiado": "PERMANENTE",
+                            "SiglaCasa": "SF",
+                            "IndicadorAtivo": "S",
+                            "CodigoNaturezaColegiado": "1"
+                        }
+                    },
+                    {
+                        "@id": "47",
+                        "@ordem": "4",
+                        "CodigoColegiado": "47",
+                        "NomeColegiado": "Comissão de Educação, Cultura e Esporte",
+                        "SiglaColegiado": "CE",
+                        "IndicadorDistrPartidaria": "S",
+                        "DataInicio": "1900-01-01",
+                        "CodigoTipoColegiado": "21",
+                        "tipocolegiado": {
+                            "CodigoTipoColegiado": "21",
+                            "DescricaoTipoColegiado": "Comissão Permanente",
+                            "SiglaTipoColegiado": "PERMANENTE",
+                            "SiglaCasa": "SF",
+                            "IndicadorAtivo": "S",
+                            "CodigoNaturezaColegiado": "1"
+                        }
+                    },
+                    {
+                        "@id": "50",
+                        "@ordem": "5",
+                        "CodigoColegiado": "50",
+                        "NomeColegiado": "Comissão de Meio Ambiente",
+                        "SiglaColegiado": "CMA",
+                        "IndicadorDistrPartidaria": "S",
+                        "DataInicio": "1900-01-01",
+                        "CodigoTipoColegiado": "21",
+                        "tipocolegiado": {
+                            "CodigoTipoColegiado": "21",
+                            "DescricaoTipoColegiado": "Comissão Permanente",
+                            "SiglaTipoColegiado": "PERMANENTE",
+                            "SiglaCasa": "SF",
+                            "IndicadorAtivo": "S",
+                            "CodigoNaturezaColegiado": "1"
+                        }
+                    },
+                    {
+                        "@id": "834",
+                        "@ordem": "6",
+                        "CodigoColegiado": "834",
+                        "NomeColegiado": "Comissão de Direitos Humanos e Legislação Participativa",
+                        "SiglaColegiado": "CDH",
+                        "IndicadorDistrPartidaria": "S",
+                        "DataInicio": "2002-12-13",
+                        "CodigoTipoColegiado": "21",
+                        "tipocolegiado": {
+                            "CodigoTipoColegiado": "21",
+                            "DescricaoTipoColegiado": "Comissão Permanente",
+                            "SiglaTipoColegiado": "PERMANENTE",
+                            "SiglaCasa": "SF",
+                            "IndicadorAtivo": "S",
+                            "CodigoNaturezaColegiado": "1"
+                        }
+                    },
+                    {
+                        "@id": "54",
+                        "@ordem": "7",
+                        "CodigoColegiado": "54",
+                        "NomeColegiado": "Comissão de Relações Exteriores e Defesa Nacional",
+                        "SiglaColegiado": "CRE",
+                        "IndicadorDistrPartidaria": "S",
+                        "DataInicio": "1900-01-01",
+                        "CodigoTipoColegiado": "21",
+                        "tipocolegiado": {
+                            "CodigoTipoColegiado": "21",
+                            "DescricaoTipoColegiado": "Comissão Permanente",
+                            "SiglaTipoColegiado": "PERMANENTE",
+                            "SiglaCasa": "SF",
+                            "IndicadorAtivo": "S",
+                            "CodigoNaturezaColegiado": "1"
+                        }
+                    },
+                    {
+                        "@id": "59",
+                        "@ordem": "8",
+                        "CodigoColegiado": "59",
+                        "NomeColegiado": "Comissão de Serviços de Infraestrutura",
+                        "SiglaColegiado": "CI",
+                        "IndicadorDistrPartidaria": "S",
+                        "DataInicio": "1900-01-01",
+                        "CodigoTipoColegiado": "21",
+                        "tipocolegiado": {
+                            "CodigoTipoColegiado": "21",
+                            "DescricaoTipoColegiado": "Comissão Permanente",
+                            "SiglaTipoColegiado": "PERMANENTE",
+                            "SiglaCasa": "SF",
+                            "IndicadorAtivo": "S",
+                            "CodigoNaturezaColegiado": "1"
+                        }
+                    },
+                    {
+                        "@id": "1306",
+                        "@ordem": "9",
+                        "CodigoColegiado": "1306",
+                        "NomeColegiado": "Comissão de Desenvolvimento Regional e Turismo",
+                        "SiglaColegiado": "CDR",
+                        "IndicadorDistrPartidaria": "S",
+                        "DataInicio": "2005-02-18",
+                        "CodigoTipoColegiado": "21",
+                        "tipocolegiado": {
+                            "CodigoTipoColegiado": "21",
+                            "DescricaoTipoColegiado": "Comissão Permanente",
+                            "SiglaTipoColegiado": "PERMANENTE",
+                            "SiglaCasa": "SF",
+                            "IndicadorAtivo": "S",
+                            "CodigoNaturezaColegiado": "1"
+                        }
+                    },
+                    {
+                        "@id": "1307",
+                        "@ordem": "10",
+                        "CodigoColegiado": "1307",
+                        "NomeColegiado": "Comissão de Agricultura e Reforma Agrária",
+                        "SiglaColegiado": "CRA",
+                        "IndicadorDistrPartidaria": "S",
+                        "DataInicio": "2005-02-22",
+                        "CodigoTipoColegiado": "21",
+                        "tipocolegiado": {
+                            "CodigoTipoColegiado": "21",
+                            "DescricaoTipoColegiado": "Comissão Permanente",
+                            "SiglaTipoColegiado": "PERMANENTE",
+                            "SiglaCasa": "SF",
+                            "IndicadorAtivo": "S",
+                            "CodigoNaturezaColegiado": "1"
+                        }
+                    },
+                    {
+                        "@id": "1363",
+                        "@ordem": "11",
+                        "CodigoColegiado": "1363",
+                        "NomeColegiado": "Comissão de Ciência, Tecnologia, Inovação, Comunicação e Informática",
+                        "SiglaColegiado": "CCT",
+                        "IndicadorDistrPartidaria": "S",
+                        "DataInicio": "2007-02-07",
+                        "CodigoTipoColegiado": "21",
+                        "tipocolegiado": {
+                            "CodigoTipoColegiado": "21",
+                            "DescricaoTipoColegiado": "Comissão Permanente",
+                            "SiglaTipoColegiado": "PERMANENTE",
+                            "SiglaCasa": "SF",
+                            "IndicadorAtivo": "S",
+                            "CodigoNaturezaColegiado": "1"
+                        }
+                    },
+                    {
+                        "@id": "1716",
+                        "@ordem": "12",
+                        "CodigoColegiado": "1716",
+                        "NomeColegiado": "Comissão Senado do Futuro",
+                        "SiglaColegiado": "CSF",
+                        "DescricaoSubtitulo": "criada pela Resolução nº 14, de 2013.",
+                        "IndicadorDistrPartidaria": "S",
+                        "DataInicio": "2013-08-27",
+                        "CodigoTipoColegiado": "21",
+                        "tipocolegiado": {
+                            "CodigoTipoColegiado": "21",
+                            "DescricaoTipoColegiado": "Comissão Permanente",
+                            "SiglaTipoColegiado": "PERMANENTE",
+                            "SiglaCasa": "SF",
+                            "IndicadorAtivo": "S",
+                            "CodigoNaturezaColegiado": "1"
+                        }
+                    },
+                    {
+                        "@id": "1956",
+                        "CodigoColegiado": "1956",
+                        "NomeColegiado": "Comissão de Transparência, Governança, Fiscalização e Controle e Defesa do Consumidor",
+                        "SiglaColegiado": "CTFC",
+                        "IndicadorDistrPartidaria": "S",
+                        "DataInicio": "2015-09-02",
+                        "CodigoTipoColegiado": "21",
+                        "tipocolegiado": {
+                            "CodigoTipoColegiado": "21",
+                            "DescricaoTipoColegiado": "Comissão Permanente",
+                            "SiglaTipoColegiado": "PERMANENTE",
+                            "SiglaCasa": "SF",
+                            "IndicadorAtivo": "S",
+                            "CodigoNaturezaColegiado": "1"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

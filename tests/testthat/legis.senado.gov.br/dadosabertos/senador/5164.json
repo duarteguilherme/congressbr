@@ -1,0 +1,1391 @@
+{
+    "DetalheParlamentar": {
+        "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+        "@xsi:noNamespaceSchemaLocation": "http://legis.senado.leg.br/dadosabertos/dados/DetalheParlamentarv5.xsd",
+        "Metadados": {
+            "Versao": "08/12/2018 09:50:29",
+            "VersaoServico": "5",
+            "DataVersaoServico": "2017-02-01",
+            "DescricaoDataSet": "Informações atuais sobre o parlamentar"
+        },
+        "Parlamentar": {
+            "IdentificacaoParlamentar": {
+                "CodigoParlamentar": "5164",
+                "NomeParlamentar": "Ataídes Oliveira",
+                "NomeCompletoParlamentar": "Ataídes de Oliveira",
+                "SexoParlamentar": "Masculino",
+                "FormaTratamento": "Senador ",
+                "UrlFotoParlamentar": "http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5164.jpg",
+                "UrlPaginaParlamentar": "http://www25.senado.leg.br/web/senadores/senador/-/perfil/5164",
+                "EmailParlamentar": "ataides.oliveira@senador.leg.br",
+                "SiglaPartidoParlamentar": "PSDB",
+                "UfParlamentar": "TO"
+            },
+            "DadosBasicosParlamentar": {
+                "DataNascimento": "1959-12-18",
+                "UfNaturalidade": "GO",
+                "EnderecoParlamentar": "Ala Senador Teotônio Vilela, Gab. 05",
+                "TelefoneParlamentar": "(61) 3303-2163/2164",
+                "FaxParlamentar": "(61) 3303-1848"
+            },
+            "MandatoAtual": {
+                "CodigoMandato": "468",
+                "UfParlamentar": "TO",
+                "PrimeiraLegislaturaDoMandato": {
+                    "NumeroLegislatura": "54",
+                    "DataInicio": "2011-02-01",
+                    "DataFim": "2015-01-31"
+                },
+                "SegundaLegislaturaDoMandato": {
+                    "NumeroLegislatura": "55",
+                    "DataInicio": "2015-02-01",
+                    "DataFim": "2019-01-31"
+                },
+                "DescricaoParticipacao": "1º Suplente",
+                "Titular": {
+                    "DescricaoParticipacao": "Titular",
+                    "CodigoParlamentar": "916",
+                    "NomeParlamentar": "João Ribeiro"
+                },
+                "Suplentes": {
+                    "Suplente": {
+                        "DescricaoParticipacao": "2º Suplente",
+                        "CodigoParlamentar": "918",
+                        "NomeParlamentar": "Pastor Amarildo"
+                    }
+                },
+                "Exercicios": {
+                    "Exercicio": [
+                        {
+                            "CodigoExercicio": "2691",
+                            "DataInicio": "2013-12-23",
+                            "DataLeitura": "2013-12-23"
+                        },
+                        {
+                            "CodigoExercicio": "2686",
+                            "DataInicio": "2013-02-08",
+                            "DataFim": "2013-08-07",
+                            "SiglaCausaAfastamento": "RET",
+                            "DescricaoCausaAfastamento": "Retorno do titular",
+                            "DataLeitura": "2013-02-08"
+                        },
+                        {
+                            "CodigoExercicio": "2637",
+                            "DataInicio": "2011-05-03",
+                            "DataFim": "2011-08-31",
+                            "SiglaCausaAfastamento": "RET",
+                            "DescricaoCausaAfastamento": "Retorno do titular"
+                        }
+                    ]
+                }
+            },
+            "FiliacaoAtual": {
+                "Partido": {
+                    "CodigoPartido": "66",
+                    "SiglaPartido": "PSDB",
+                    "NomePartido": "Partido da Social Democracia Brasileira"
+                },
+                "DataFiliacao": "2014-12-13"
+            },
+            "MembroAtualComissoes": {
+                "Comissao": [
+                    {
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "47",
+                            "SiglaComissao": "CE",
+                            "NomeComissao": "Comissão de Educação, Cultura e Esporte",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoParticipacao": "Suplente",
+                        "DataInicio": "2018-12-04"
+                    },
+                    {
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "445",
+                            "SiglaComissao": "CEDP",
+                            "NomeComissao": "Conselho de Ética e Decoro Parlamentar",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoParticipacao": "Suplente",
+                        "DataInicio": "2017-05-30"
+                    },
+                    {
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "38",
+                            "SiglaComissao": "CAE",
+                            "NomeComissao": "Comissão de Assuntos Econômicos",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoParticipacao": "Suplente",
+                        "DataInicio": "2017-03-09"
+                    },
+                    {
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "59",
+                            "SiglaComissao": "CI",
+                            "NomeComissao": "Comissão de Serviços de Infraestrutura",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoParticipacao": "Titular",
+                        "DataInicio": "2017-03-09"
+                    },
+                    {
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "50",
+                            "SiglaComissao": "CMA",
+                            "NomeComissao": "Comissão de Meio Ambiente",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoParticipacao": "Titular",
+                        "DataInicio": "2017-03-09"
+                    },
+                    {
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "1306",
+                            "SiglaComissao": "CDR",
+                            "NomeComissao": "Comissão de Desenvolvimento Regional e Turismo",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoParticipacao": "Titular",
+                        "DataInicio": "2017-03-09"
+                    },
+                    {
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "1956",
+                            "SiglaComissao": "CTFC",
+                            "NomeComissao": "Comissão de Transparência, Governança, Fiscalização e Controle e Defesa do Consumidor",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoParticipacao": "Titular",
+                        "DataInicio": "2017-03-09"
+                    }
+                ]
+            },
+            "CargosAtuais": {
+                "CargoAtual": {
+                    "IdentificacaoComissao": {
+                        "CodigoComissao": "1956",
+                        "SiglaComissao": "CTFC",
+                        "NomeComissao": "Comissão de Transparência, Governança, Fiscalização e Controle e Defesa do Consumidor",
+                        "SiglaCasaComissao": "SF",
+                        "NomeCasaComissao": "Senado Federal"
+                    },
+                    "CodigoCargo": "1",
+                    "DescricaoCargo": "PRESIDENTE",
+                    "DataInicio": "2017-04-05"
+                }
+            },
+            "LiderancasAtuais": {
+                "Lideranca": {
+                    "Bloco": {
+                        "CodigoBloco": "203",
+                        "SiglaBloco": "Bloco",
+                        "NomeBloco": "Bloco Social Democrata",
+                        "ApelidoBloco": "Social Democracia"
+                    },
+                    "SiglaCasaLideranca": "SF",
+                    "NomeCasaLideranca": "Senado Federal",
+                    "DescricaoTipoLideranca": "Vice-líder",
+                    "DataDesignacao": "2016-05-05"
+                }
+            },
+            "MateriasDeAutoriaTramitando": {
+                "Materia": [
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "100717",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00328",
+                            "AnoMateria": "2011",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 328/2011"
+                        },
+                        "EmentaMateria": "Altera a Lei nº 9.496, de 1997, que \"Estabelece critérios para a consolidação, a assunção e o refinanciamento, pela União, da dívida pública mobiliária e outras que especifica, de responsabilidade dos Estados e do Distrito Federal."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "101512",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00467",
+                            "AnoMateria": "2011",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 467/2011"
+                        },
+                        "EmentaMateria": "Extingue a Contribuição para o Instituto Nacional de Colonização e Reforma Agrária, de que trata o art. 3º do Decreto-Lei nº 1.146, de 31 de dezembro de 1970."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "101648",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00490",
+                            "AnoMateria": "2011",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 490/2011"
+                        },
+                        "EmentaMateria": "Reduz as alíquotas da contribuição previdenciária patronal de que tratam os incisos I e III do caput do art. 22 da Lei nº 8.212, de 24 de julho de 1991."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "101965",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00538",
+                            "AnoMateria": "2011",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 538/2011"
+                        },
+                        "EmentaMateria": "Altera os arts. 2º e 4º da Lei Complementar nº 101, de 4 de maio de 2000, que estabelece normas de finanças públicas voltadas para a responsabilidade na gestão fiscal e dá outras providências, para criar a Carteira de Projetos da Administração Pública, estabelecer medidas de controle das obras públicas e adotar outras providências."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "111028",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "RQS",
+                            "DescricaoSubtipoMateria": "REQUERIMENTO",
+                            "NumeroMateria": "00091",
+                            "AnoMateria": "2013",
+                            "DescricaoIdentificacaoMateria": "RQS 91/2013"
+                        },
+                        "EmentaMateria": "Requer, nos termos do art. 71, incisos IV e VII da Constituição Federal e dos arts. 215 e 216, I, do Regimento Interno do Senado Federal, que sejam solicitadas informações ao Tribunal de Contas da União referentes à Confederação Nacional da Indústria (CNI), Confederação Nacional do Comércio (CNC), Confederação Nacional da Agricultura (CNA), Confederação Nacional do Transporte (CNT) e Organização das Cooperativas Brasileiras."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "111029",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "RQS",
+                            "DescricaoSubtipoMateria": "REQUERIMENTO",
+                            "NumeroMateria": "00090",
+                            "AnoMateria": "2013",
+                            "DescricaoIdentificacaoMateria": "RQS 90/2013"
+                        },
+                        "EmentaMateria": "Requer, nos termos do disposto no art. 50, § 2º, da Constituição Federal, e atendendo aos arts. 215, inciso I, e 216 do Regimento Interno do Senado Federal, sejam solicitados ao Senhor Presidente do Banco Central do Brasil esclarecimentos acerca dos depósitos das contribuições parafiscais que suportam as atividades das entidades que fazem parte do Sistema S."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "111374",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00072",
+                            "AnoMateria": "2013",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 72/2013"
+                        },
+                        "EmentaMateria": "Dispõe sobre normas gerais aplicáveis aos serviços sociais autônomos instituídos pela União e dá outras providências."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "111726",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "RQS",
+                            "DescricaoSubtipoMateria": "REQUERIMENTO",
+                            "NumeroMateria": "00168",
+                            "AnoMateria": "2013",
+                            "DescricaoIdentificacaoMateria": "RQS 168/2013"
+                        },
+                        "EmentaMateria": "Requer, com base no art. 71, VII, da Constituição Federal, combinado com o artigo 215, I, a, do Regimento Interno do Senado Federal, que sejam solicitadas informações ao Ministro Presidente do Tribunal de Contas da União a respeito da remuneração, nos períodos que menciona, dos presidentes e diretores da Confederação Nacional da Indústria; da Confederação Nacional do Comércio; da Confederação Nacional do Transporte; da Confederação Nacional da Agricultura e da Organização das Cooperativas Brasileiras."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "111859",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "RQS",
+                            "DescricaoSubtipoMateria": "REQUERIMENTO",
+                            "NumeroMateria": "00201",
+                            "AnoMateria": "2013",
+                            "DescricaoIdentificacaoMateria": "RQS 201/2013"
+                        },
+                        "EmentaMateria": "Requer, com fulcro no art. 71, inciso IV da Constituição Federal, e nos termos do art. 215 do Regimento Interno do Senado Federal, que seja encaminhado ao Tribunal de Contas da União pedido de realização de auditoria de natureza contábil e financeira nas seguintes entidades:\n      a)Confederação Nacional da Indústria (CNI);\n      b)Confederação Nacional do Comércio (CNC);\n      c)Confederação Nacional da Agricultura(CNA);\n      d)Confederação Nacional do Transporte(CNT); e\n      e)Organização das Cooperativas Brasileiras (OCB).\n      "
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "112487",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00153",
+                            "AnoMateria": "2013",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 153/2013"
+                        },
+                        "EmentaMateria": "Dispõe sobre a fiscalização e a prestação de contas do uso de recursos públicos repassados às Confederações Representativas de Categorias Econômicas e sobre as condições para os candidatos a seus cargos de direção e a contratação de pessoal."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "112657",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "RQS",
+                            "DescricaoSubtipoMateria": "REQUERIMENTO",
+                            "NumeroMateria": "00423",
+                            "AnoMateria": "2013",
+                            "DescricaoIdentificacaoMateria": "RQS 423/2013"
+                        },
+                        "EmentaMateria": "Requer, na forma do disposto nos arts. 74 e 76 do Regimento Interno do Senado Federal, a criação de uma Comissão Temporária para, no prazo de cem dias, analisar o arcabouço jurídico de criação, financiamento, fiscalização e o funcionamento dos serviços sociais autônomos no Brasil."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "113004",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00214",
+                            "AnoMateria": "2013",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 214/2013"
+                        },
+                        "EmentaMateria": "Dispõe sobre a fiscalização e a prestação de contas do uso de recursos públicos repassados às Federações Representativas de Categorias Econômicas e sobre as condições para os candidatos a seus cargos de direção e à contratação de pessoal efetivo."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "113194",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00231",
+                            "AnoMateria": "2013",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 231/2013"
+                        },
+                        "EmentaMateria": "Altera o art. 20 da Lei nº 7.210, de 11 de julho de 1984 – Lei de Execução Penal, e o art. 24 da Lei nº 11.343, de 23 de agosto de 2006, para determinar que os serviços sociais autônomos ofereçam cursos profissionalizantes gratuitos aos condenados em regime semiaberto e aos usuários ou dependentes de drogas em fase de reabilitação."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "121032",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00265",
+                            "AnoMateria": "2015",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 265/2015"
+                        },
+                        "EmentaMateria": "Altera a Lei nº 9.504, de 30 de setembro de 1997, para vedar a contratação de pessoas cuja função seja a de cabo eleitoral."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "121033",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00266",
+                            "AnoMateria": "2015",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 266/2015"
+                        },
+                        "EmentaMateria": "Regula o regime de isenção através do qual podem as empresas manter projetos de educação e aperfeiçoamento profissional."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "121035",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00267",
+                            "AnoMateria": "2015",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 267/2015"
+                        },
+                        "EmentaMateria": "Regula o regime de isenção através do qual podem as empresas manter projetos de educação e aperfeiçoamento profissional."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "121036",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00268",
+                            "AnoMateria": "2015",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 268/2015"
+                        },
+                        "EmentaMateria": "Regula o regime de isenção através do qual podem as empresas manter projetos de educação e aperfeiçoamento profissional."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "121037",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00269",
+                            "AnoMateria": "2015",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 269/2015"
+                        },
+                        "EmentaMateria": "Regula o regime de isenção através do qual podem as empresas manter projetos de educação e aperfeiçoamento profissional."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "121063",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00272",
+                            "AnoMateria": "2015",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 272/2015"
+                        },
+                        "EmentaMateria": "Altera a Lei nº 9.504, de 30 de setembro de 1997, para estabelecer novos limites para o financiamento de campanhas eleitorais."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "122738",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PEC",
+                            "DescricaoSubtipoMateria": "PROPOSTA DE EMENDA À CONSTITUIÇÃO",
+                            "NumeroMateria": "00112",
+                            "AnoMateria": "2015",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PEC 112/2015"
+                        },
+                        "EmentaMateria": "Determina a edição de Lei Complementar para regular o contencioso administrativo fiscal."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "124754",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00023",
+                            "AnoMateria": "2016",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 23/2016"
+                        },
+                        "EmentaMateria": "Dispõe sobre as Comissões Parlamentares de Inquérito."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "125356",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00147",
+                            "AnoMateria": "2016",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 147/2016"
+                        },
+                        "EmentaMateria": "Estabelece medidas contra a corrupção e demais crimes contra o patrimônio público e combate o enriquecimento ilícito de agentes públicos."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "125499",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00162",
+                            "AnoMateria": "2016",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 162/2016"
+                        },
+                        "EmentaMateria": "Altera a Consolidação das Leis do Trabalho (CLT), aprovada pelo Decreto-lei nº 5.452, de 1º de maio de 1943, para dispor sobre a redução da jornada de trabalho da trabalhadora lactante."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "125695",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00202",
+                            "AnoMateria": "2016",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 202/2016"
+                        },
+                        "EmentaMateria": "Altera a Lei nº 10.522, de 19 de julho de 2002."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "127256",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00386",
+                            "AnoMateria": "2016",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 386/2016"
+                        },
+                        "EmentaMateria": "Estabelece que parte dos recursos destinados ao Sistema “S” serão alocados para financiar a seguridade social."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "127686",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PEC",
+                            "DescricaoSubtipoMateria": "PROPOSTA DE EMENDA À CONSTITUIÇÃO",
+                            "NumeroMateria": "00066",
+                            "AnoMateria": "2016",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PEC 66/2016"
+                        },
+                        "EmentaMateria": "Modifica o inciso II do art. 119 da Constituição Federal, para dispor sobre a aprovação pelo Senado Federal dos advogados escolhidos pelo Supremo Tribunal Federal para compor o Tribunal Superior Eleitoral."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "128698",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "RTG",
+                            "DescricaoSubtipoMateria": "REQUERIMENTO DA COMISSÃO DE TRANSPARÊNCIA, GOVERNANÇA, FISCALIZAÇÃO E CONTROLE E DEFESA DO CONSUMIDOR",
+                            "NumeroMateria": "00006",
+                            "AnoMateria": "2017",
+                            "DescricaoIdentificacaoMateria": "RTG 6/2017"
+                        },
+                        "EmentaMateria": "Requer, nos termos do art. 58, § 2º, II da Constituição Federal e dos arts. 93, II e 102-A ambos do Regimento Interno do Senado Federal, a realização de audiência pública no âmbito desta Comissão de Transparência, Governança, Fiscalização e controle e Defesa do Consumidor, com o objetivo de debater a transparência e demais assuntos relacionados ao Sistema “S”.\n      Com a participação dos seguintes convidados:\n      - Robson Braga de Andrade, presidente da Confederação Nacional da Indústria - CNI;\n      - Clésio Andrade, presidente da Confederação Nacional do Transporte – CNT;\n      - Antonio José Domingues de Oliveira Santos, Presidente da Confederação Nacional do Comércio de Bens, Serviços e Turismo - CNC;\n      - João Martins da Silva Junior, presidente da Confederação da Agricultura e Pecuária do Brasil - CNA;\n      - Roberto Jaguaribe Gomes de Mattos, presidente da Agência Brasileira de Promoção de Exportações e Investimentos - Apex-Brasil;\n      - Luiz Augusto de Souza Ferreira; Agência Brasileira de Desenvolvimento Industrial - ABDI;\n      - Marcio Lopes de Freitas, Organização das Cooperativas Brasileiras - OCB;"
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "128705",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "RTG",
+                            "DescricaoSubtipoMateria": "REQUERIMENTO DA COMISSÃO DE TRANSPARÊNCIA, GOVERNANÇA, FISCALIZAÇÃO E CONTROLE E DEFESA DO CONSUMIDOR",
+                            "NumeroMateria": "00010",
+                            "AnoMateria": "2017",
+                            "DescricaoIdentificacaoMateria": "RTG 10/2017"
+                        },
+                        "EmentaMateria": "Requer, nos termos do art. 58, § 2º, II da Constituição Federal e dos arts. 93, II e 102-A ambos do Regimento Interno do Senado Federal, a realização de audiência pública no âmbito desta Comissão de Transparência, Governança, Fiscalização e controle e Defesa do Consumidor, com o objetivo de discutir a situação das obras Transnordestina, Ferrovia Norte-Sul e Transposição do Rio São Francisco.\n      Com a participação dos seguintes convidados:\n      - Bernardo Figueiredo, Agência Nacional de Transportes Terrestres - ANTT;\n      - Responsável pela Transposição do Rio São Francisco, do Ministério da Integração Nacional;\n      - Responsável pela Área de Ferrovias, do Ministério da Integração Nacional;\n      - Gustavo Bambini, Presidente da Associação Nacional dos Transportes Ferroviários;\n      - Mario Mondolfo, Presidente da VALEC;\n      -Responsável pela Área de Ferrovias, do Ministério dos Transportes;\n      - Presidente Executivo, Mendes Júnior Engenharia, responsável pelas obras da transposição do Rio São Francisco;\n      - Sérgio Leite, Transnordestina Logística LTDA;\n      - Uriel de Almeida Papa, Secretário de Fiscalização do TCU."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "128816",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "RTG",
+                            "DescricaoSubtipoMateria": "REQUERIMENTO DA COMISSÃO DE TRANSPARÊNCIA, GOVERNANÇA, FISCALIZAÇÃO E CONTROLE E DEFESA DO CONSUMIDOR",
+                            "NumeroMateria": "00012",
+                            "AnoMateria": "2017",
+                            "DescricaoIdentificacaoMateria": "RTG 12/2017"
+                        },
+                        "EmentaMateria": "Requer, nos termos do art. 71, inciso IV, da Constituição Federal e do art. 102-A, inciso I, alínea “e”, do Regimento Interno do Senado Federal, a realização pelo Tribunal de Contas da União de auditoria operacional que avalie a situação econômica dos entes que administram Regimes Próprios de Previdência Social, no âmbito da União."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "128867",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "RTG",
+                            "DescricaoSubtipoMateria": "REQUERIMENTO DA COMISSÃO DE TRANSPARÊNCIA, GOVERNANÇA, FISCALIZAÇÃO E CONTROLE E DEFESA DO CONSUMIDOR",
+                            "NumeroMateria": "00013",
+                            "AnoMateria": "2017",
+                            "DescricaoIdentificacaoMateria": "RTG 13/2017"
+                        },
+                        "EmentaMateria": "Requer, nos termos do art. 50, § 2º da Constituição Federal e do art. 216 do Regimento Interno do Senado Federal, informações ao sr. ILAN GOLDFAJN, presidente do BANCO CENTRAL DO BRASIL, acerca da última posição disponível de todas as aplicações financeiras dos serviços sociais autônomos chamados globalmente de “Sistema S” - SESC, SENAC, SESI, SENAI, SEST, SENAT, SENAR, SEBRAE, SESCOOP, APEX (Agência de Promoção de Exportações do Brasil) e ABDI (Agência Brasileira de Desenvolvimento Industrial)."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "129043",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "RTG",
+                            "DescricaoSubtipoMateria": "REQUERIMENTO DA COMISSÃO DE TRANSPARÊNCIA, GOVERNANÇA, FISCALIZAÇÃO E CONTROLE E DEFESA DO CONSUMIDOR",
+                            "NumeroMateria": "00018",
+                            "AnoMateria": "2017",
+                            "DescricaoIdentificacaoMateria": "RTG 18/2017"
+                        },
+                        "EmentaMateria": "Requer, nos termos do art. 58, § 2º, II da Constituição Federal e dos arts. 93, II e 102-A ambos do Regimento Interno do Senado Federal, a realização de audiência pública no âmbito desta Comissão de Transparência, Governança, Fiscalização e Controle e Defesa do Consumidor, com o\n      objetivo de debater o papel dos bancos e das empresas transportadoras de valores do país nos casos de corrupção apurados na operação Lava Jato. Com a participação dos seguintes convidados:\n      - Ilan Goldajn, Presidente do Banco Central do Brasil;\n      - Pedro Moreira Salles, do Itaú Unibanco S.A., Presidente do Conselho Diretor da FEBRABAN (Federação Brasileira dos\n      Bancos);\n      - Marcos Emanuel Torres de Paiva, Diretor Presidente da ABTV (Associação Brasileira de Transportadores de Valores);\n      - Antonio Gustavo Rodrigues, Presidente do COAF Conselho de Controle de Atividades Financeiras."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "129044",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "RTG",
+                            "DescricaoSubtipoMateria": "REQUERIMENTO DA COMISSÃO DE TRANSPARÊNCIA, GOVERNANÇA, FISCALIZAÇÃO E CONTROLE E DEFESA DO CONSUMIDOR",
+                            "NumeroMateria": "00019",
+                            "AnoMateria": "2017",
+                            "DescricaoIdentificacaoMateria": "RTG 19/2017"
+                        },
+                        "EmentaMateria": "Requer, nos termos do art. 58, § 2º, II da Constituição Federal e dos arts. 93, II e 102-A ambos do Regimento Interno do Senado Federal, a realização de audiência pública no âmbito desta Comissão de Transparência, Governança, Fiscalização e controle e Defesa do Consumidor, com o\n      objetivo de debater a operação \"Conclave” realizada pela Polícia Federal para apurar se houve fraude na aquisição de ações do banco Panamericano pela Caixa.\n      Com a participação dos seguintes convidados:\n      - Osvaldo Garcia, presidente da Caixa PAR;\n      - Carlos Alberto Rosa, diretor executivo da Caixa PAR de novas aquisições;\n      - Arno Meyer, vice-presidente finanças e controladoria da Caixa Econômica Federal;\n      - Ronaldo Nogueira de Oliveira, Presidente do Conselho Curador do FGTS;\n      - Virgílio Nelson da Silva Carvalho, Presidente do Conselho Deliberativo do Fundo de Amparo ao Trabalhador – CODEFAT;\n      - Osvaldo Bruno Brasil Cavalcante, Diretoria de Organização e Estratégia e do Fundo de Investimentos do Fundo de Garantia por Tempo de Serviço – FI-FGTS;\n      - Henrique Abravanel, ex-conselheiro do banco Panamericano."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "129112",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "RTG",
+                            "DescricaoSubtipoMateria": "REQUERIMENTO DA COMISSÃO DE TRANSPARÊNCIA, GOVERNANÇA, FISCALIZAÇÃO E CONTROLE E DEFESA DO CONSUMIDOR",
+                            "NumeroMateria": "00022",
+                            "AnoMateria": "2017",
+                            "DescricaoIdentificacaoMateria": "RTG 22/2017"
+                        },
+                        "EmentaMateria": "Requer, com base no art. 215, inciso II, alínea b, c/c os arts. 71, 72, 74 e 90, todos do Regimento Interno do Senado Federal (RISF); no art. 5º, incisos XIV e XXXIII, c/c o art. 37, caput e inciso II do § 3º, todos da Constituição Federal (CF); e na Lei nº 12.527, de 18 de novembro de 2011 (Lei de Acesso à Informação), a disponibilização, na página de cada Comissão – permanente ou temporária –, do total de seus gastos anuais, de qualquer natureza, a partir do presente exercício."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "129154",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "RTG",
+                            "DescricaoSubtipoMateria": "REQUERIMENTO DA COMISSÃO DE TRANSPARÊNCIA, GOVERNANÇA, FISCALIZAÇÃO E CONTROLE E DEFESA DO CONSUMIDOR",
+                            "NumeroMateria": "00023",
+                            "AnoMateria": "2017",
+                            "DescricaoIdentificacaoMateria": "RTG 23/2017"
+                        },
+                        "EmentaMateria": "Nos termos do art. 58, § 2º, II e V, da Constituição Federal, e dos arts. 90, II, e 93, II, do Regimento Interno do Senado Federal, requer a realização de audiência pública na Comissão de Transparência, Governança, Fiscalização e Controle e Defesa do Consumidor (CTFC), para discutir o envolvimento ou até cumplicidade das empresas de auditoria externa e consultoria em possíveis crimes de adulteração de balanços e relatórios contábeis de empresas privadas e públicas, com vistas a encobrir desvios, mal feitos e pagamentos de propinas a agentes públicos, com os seguintes convidados:\n      - Leonardo Porciúncula Gomes Pereira; Presidente da Comissão de Valores Mobiliários – CVM;\n      - Fernando Alves; Diretor Presidente da Price Waterhouse Coopers – PWC;\n      - José Martonio Alves Coelho, Presidente do Conselho Federal de Contabilidade - CFC;\n      - Charles Krieck, Sócio-líder de Auditoria - Brasil e América do Sul da KPMG."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "129183",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "RQS",
+                            "DescricaoSubtipoMateria": "REQUERIMENTO",
+                            "NumeroMateria": "00341",
+                            "AnoMateria": "2017",
+                            "DescricaoIdentificacaoMateria": "RQS 341/2017"
+                        },
+                        "EmentaMateria": "Requer, nos termos do art. 258 do Regimento Interno do Senado Federal, a tramitação em conjunto do Projeto de Lei do Senado nº 375, de 2016, com o PLS nº 148, de 2011, por versarem sobre a mesma matéria."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "129370",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PEC",
+                            "DescricaoSubtipoMateria": "PROPOSTA DE EMENDA À CONSTITUIÇÃO",
+                            "NumeroMateria": "00021",
+                            "AnoMateria": "2017",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PEC 21/2017"
+                        },
+                        "EmentaMateria": "Altera a Constituição Federal para determinar que as nomeações para cargo em comissão, de direção e função pública na administração pública direta e indireta deverão observar as qualificações técnico-profissionais exigidas para o seu exercício, em conformidade com os critérios estabelecidos em lei, e incluir no texto constitucional a vedação a nomeações e exonerações baseadas no interesse político-partidário."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "129545",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "RTG",
+                            "DescricaoSubtipoMateria": "REQUERIMENTO DA COMISSÃO DE TRANSPARÊNCIA, GOVERNANÇA, FISCALIZAÇÃO E CONTROLE E DEFESA DO CONSUMIDOR",
+                            "NumeroMateria": "00025",
+                            "AnoMateria": "2017",
+                            "DescricaoIdentificacaoMateria": "RTG 25/2017"
+                        },
+                        "EmentaMateria": "Requer, nos termos do art. 93, inciso I, do Regimento Interno do Senado Federal, o aditamento do Requerimento nº 23 de 2017, desta Comissão, de forma a alterar o convite para participar da audiência pública, para discutir o envolvimento ou até cumplicidade das empresas de auditoria externa e consultoria em possíveis crimes de adulteração de balanços e relatórios contábeis de empresas privadas e públicas, com vistas a encobrir desvios, mal feitos e pagamentos de propinas a agentes públicos, para incluir o seguinte convidado: Idésio da Silva Coelho Junior, Presidente do Instituto de Auditores Independentes do Brasil - IBRACON."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "130208",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "RTG",
+                            "DescricaoSubtipoMateria": "REQUERIMENTO DA COMISSÃO DE TRANSPARÊNCIA, GOVERNANÇA, FISCALIZAÇÃO E CONTROLE E DEFESA DO CONSUMIDOR",
+                            "NumeroMateria": "00027",
+                            "AnoMateria": "2017",
+                            "DescricaoIdentificacaoMateria": "RTG 27/2017"
+                        },
+                        "EmentaMateria": "Requer, nos termos regimentais, a inclusão do nome abaixo\n      relacionado entre os convidados para participar da Audiência Pública com o objetivo de debater a transparência e demais assuntos relacionados ao\n      Sistema “S” sobre a qual trata o Requerimento nº6/2017 – CTFC:  Weder de Oliveira, Ministro-Substituto do Tribunal de Contas da União;"
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "131503",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "RTG",
+                            "DescricaoSubtipoMateria": "REQUERIMENTO DA COMISSÃO DE TRANSPARÊNCIA, GOVERNANÇA, FISCALIZAÇÃO E CONTROLE E DEFESA DO CONSUMIDOR",
+                            "NumeroMateria": "00033",
+                            "AnoMateria": "2017",
+                            "DescricaoIdentificacaoMateria": "RTG 33/2017"
+                        },
+                        "EmentaMateria": "Nos termos do § 2º do art. 50 da Constituição Federal, combinado com o art. 216 do Regimento Interno do Senado Federal, requer sejam solicitadas ao Senhor Ministro dos Transportes, Portos e Aviação Civil a prestação de informações sobre: a) qual foi, na avaliação do Ministério, o impacto causado na variação dos preços das passagens aéreas pela Resolução ANAC nº 400, de 13 de dezembro de 2016, que estabeleceu a cobrança de bagagem despachada como uma tarifa adicional ao preço regular da passagem aérea; b) quais foram os dados sobre preços de passagens aéreas utilizados para fazer a referida avaliação; e c) qual foi a metodologia utilizada na avaliação."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "131504",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "RTG",
+                            "DescricaoSubtipoMateria": "REQUERIMENTO DA COMISSÃO DE TRANSPARÊNCIA, GOVERNANÇA, FISCALIZAÇÃO E CONTROLE E DEFESA DO CONSUMIDOR",
+                            "NumeroMateria": "00034",
+                            "AnoMateria": "2017",
+                            "DescricaoIdentificacaoMateria": "RTG 34/2017"
+                        },
+                        "EmentaMateria": "Requer, com base no § 2º do art. 50 da Constituição Federal, e no art. 216, I, do Regimento Interno do Senado Federal, o encaminhamento ao Senhor Ministro de Estado da Justiça e Segurança Pública, de pedido de informações sobre os dados coletados na averiguação preliminar instaurada pela Secretaria Nacional do Consumidor (Senacon) sobre o estudo da Associação Brasileira das Empresas Aéreas (Abear) que apontou tendência de queda no preço das passagens aéreas nos últimos meses.\n      Considerando que números da Fundação Getúlio Vargas (FGV) e do Instituto Brasileiro de Geografia e Estatística (IBGE) mostram que os preços das passagens aéreas sofreram aumentos no período mencionado, pedimos que se informe qual a metodologia adotada pela Abear para divergir dos dados que apontam para a existência de incremento nos preços das passagens aéreas nos últimos meses."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "132241",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "RTG",
+                            "DescricaoSubtipoMateria": "REQUERIMENTO DA COMISSÃO DE TRANSPARÊNCIA, GOVERNANÇA, FISCALIZAÇÃO E CONTROLE E DEFESA DO CONSUMIDOR",
+                            "NumeroMateria": "00001",
+                            "AnoMateria": "2018",
+                            "DescricaoIdentificacaoMateria": "RTG 1/2018"
+                        },
+                        "EmentaMateria": "Nos termos do art. 58, § 2º, II e V, da Constituição Federal, e dos arts. 90, II, e 93, II, do Regimento Interno do Senado Federal, requeiro a realização de audiência pública na Comissão de Transparência, Governança, Fiscalização e Controle e Defesa do Consumidor (CTFC), para discutir a formação de cartel e infração à ordem econômica por postos de combustíveis em todo o território nacional, com os seguintes convidados: Representante da Petrobras; Alexandre Barreto de Souza; Presidente do Conselho Administrativo de Defesa Econômica - CADE;  Arthur Luis Mendonça Rollo, Secretário Nacional do Consumidor do Ministério da Justiça; Marilena Lazzarini, Presidente do Instituto de Defesa do Consumidor - IDEC; Paulo Miranda Soares, Presidente da Federação Nacional do Comércio de Combustíveis e de Lubrificantes – FECOMBUSTÍVEIS."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "132553",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "RTG",
+                            "DescricaoSubtipoMateria": "REQUERIMENTO DA COMISSÃO DE TRANSPARÊNCIA, GOVERNANÇA, FISCALIZAÇÃO E CONTROLE E DEFESA DO CONSUMIDOR",
+                            "NumeroMateria": "00005",
+                            "AnoMateria": "2018",
+                            "DescricaoIdentificacaoMateria": "RTG 5/2018"
+                        },
+                        "EmentaMateria": "Requer, nos termos regimentais, a inclusão do nome abaixo relacionado entre os convidados para participar da Audiência Pública com o objetivo de debater a transparência e demais assuntos relacionados ao Sistema “S” sobre a qual trata o Requerimento nº 6/2017 – CTFC: • Elaine Ferreira da Rocha, Auditora Federal de Finanças e Controle da Controladoria-Geral da União;"
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "132627",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "RTG",
+                            "DescricaoSubtipoMateria": "REQUERIMENTO DA COMISSÃO DE TRANSPARÊNCIA, GOVERNANÇA, FISCALIZAÇÃO E CONTROLE E DEFESA DO CONSUMIDOR",
+                            "NumeroMateria": "00006",
+                            "AnoMateria": "2018",
+                            "DescricaoIdentificacaoMateria": "RTG 6/2018"
+                        },
+                        "EmentaMateria": "Com fundamento no art. 50, § 2º, da Constituição Federal, e nos termos do disposto no parágrafo único do art. 102-B e no art. 215 do Regimento Interno do Senado Federal, a Comissão de Transparência,\n      Governança, Fiscalização e Controle e Defesa do Consumidor – CTFC requer ao Ministério da Transparência e Controladoria-Geral da União - CGU a prestação das seguintes informações: \n      (i) Os valores referentes à arrecadação, direta e indireta, de todas as entidades do “Sistema S”, no ano de 2017."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "132629",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "RTG",
+                            "DescricaoSubtipoMateria": "REQUERIMENTO DA COMISSÃO DE TRANSPARÊNCIA, GOVERNANÇA, FISCALIZAÇÃO E CONTROLE E DEFESA DO CONSUMIDOR",
+                            "NumeroMateria": "00007",
+                            "AnoMateria": "2018",
+                            "DescricaoIdentificacaoMateria": "RTG 7/2018"
+                        },
+                        "EmentaMateria": "Com fundamento no art. 71, VII, da Constituição Federal, e nos termos do disposto no parágrafo único do art. 102-B e no art. 215 do Regimento Interno do Senado Federal, a Comissão de Transparência,\n      Governança, Fiscalização e Controle e Defesa do Consumidor – CTFC requer ao Tribunal de Contas da União a prestação das seguintes informações:\n      (i) Os valores referentes à arrecadação, direta e indireta, de todas as entidades do “Sistema S”, no ano de 2017."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "132631",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "RTG",
+                            "DescricaoSubtipoMateria": "REQUERIMENTO DA COMISSÃO DE TRANSPARÊNCIA, GOVERNANÇA, FISCALIZAÇÃO E CONTROLE E DEFESA DO CONSUMIDOR",
+                            "NumeroMateria": "00009",
+                            "AnoMateria": "2018",
+                            "DescricaoIdentificacaoMateria": "RTG 9/2018"
+                        },
+                        "EmentaMateria": "Requer, nos termos regimentais, o aditamento ao RTG nº 06, de 2017, para a inclusão dos seguintes convidados: - Júlio Marcelo de Oliveira, Procurador do Tribunal de Contas da União – TCU; - Jorge Antônio Deher Rachid, Secretário da Receita Federal do Brasil."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "133075",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "RQS",
+                            "DescricaoSubtipoMateria": "REQUERIMENTO",
+                            "NumeroMateria": "00250",
+                            "AnoMateria": "2018",
+                            "DescricaoIdentificacaoMateria": "RQS 250/2018"
+                        },
+                        "EmentaMateria": "Requer, nos termos do art. 258 do Regimento Interno, a tramitação conjunta do PLS 147/2016 e do PLC 27/2017, por versarem sobre a mesma matéria."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "133248",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00230",
+                            "AnoMateria": "2018",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 230/2018"
+                        },
+                        "EmentaMateria": "Modifica a redação do art. 394-A da Consolidação das Leis do Trabalho (CLT), aprovada pelo Decreto-Lei nº 5.452, de 1º de maio de 1943, para dispor sobre a proteção da empregada gestante."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "133313",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "RTG",
+                            "DescricaoSubtipoMateria": "REQUERIMENTO DA COMISSÃO DE TRANSPARÊNCIA, GOVERNANÇA, FISCALIZAÇÃO E CONTROLE E DEFESA DO CONSUMIDOR",
+                            "NumeroMateria": "00016",
+                            "AnoMateria": "2018",
+                            "DescricaoIdentificacaoMateria": "RTG 16/2018"
+                        },
+                        "EmentaMateria": "Requer, nos termos do art. 93, I, do Regimento Interno do Senado Federal, a realização de audiência pública, no âmbito desta Comissão de Transparência, Governança, Fiscalização e Controle e Defesa do Consumidor, para instruir o PLS 481/2017, que altera a Lei nº 8.078, de 11 de setembro de 1990 (Código de Defesa do Consumidor), para obrigar os provedores de aplicações de internet a manterem serviço de atendimento ao usuário, com a presença dos seguintes convidados:\n      \n      - Ailton Benedito de Souza, Procurador da República,\n      especializado em questões de redes sociais do MPF/GO;\n      - Carlos Augusto Afonso, Consultor de tecnologia, autor do blog Ceticismo Político, auditor em sistemas de informação certificado em CISA e CISM;\n      - Cristina Tardáguila, Diretora da Agência Lupa;\n      - Emerson Tadeu Kuhn Grigollette Júnior, Especialista em Direito da Tecnologia da Informação;\n      - Cristian Dias, Diretor de estratégia criativa do Facebook para o Brasil."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "133369",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "RTG",
+                            "DescricaoSubtipoMateria": "REQUERIMENTO DA COMISSÃO DE TRANSPARÊNCIA, GOVERNANÇA, FISCALIZAÇÃO E CONTROLE E DEFESA DO CONSUMIDOR",
+                            "NumeroMateria": "00021",
+                            "AnoMateria": "2018",
+                            "DescricaoIdentificacaoMateria": "RTG 21/2018"
+                        },
+                        "EmentaMateria": "Requer, nos termos regimentais, o aditamento ao RTG nº 01, de 2018, para a inclusão do seguinte convidado: - Décio Oddone, presidente da Agência Nacional do Petróleo, Gás Natural e Biocombustíveis – ANP."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "133371",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "RTG",
+                            "DescricaoSubtipoMateria": "REQUERIMENTO DA COMISSÃO DE TRANSPARÊNCIA, GOVERNANÇA, FISCALIZAÇÃO E CONTROLE E DEFESA DO CONSUMIDOR",
+                            "NumeroMateria": "00022",
+                            "AnoMateria": "2018",
+                            "DescricaoIdentificacaoMateria": "RTG 22/2018"
+                        },
+                        "EmentaMateria": "Requer, nos termos regimentais, o aditamento ao RTG nº 01, de 2018, para a inclusão do seguinte convidado: Alexandre Andrade Lima, presidente da Federação dos Plantadores de Cana do Brasil - FEPLANA;"
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "133480",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00272",
+                            "AnoMateria": "2018",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 272/2018"
+                        },
+                        "EmentaMateria": "Veda que a instituição emissora ou credenciadora do cartão de crédito exija exclusividade quanto à antecipação de recebíveis e imponha trava bancária além do volume de recebíveis necessários para garantir a operação de crédito."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "133963",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "PLS",
+                            "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                            "NumeroMateria": "00344",
+                            "AnoMateria": "2018",
+                            "DescricaoObjetivoProcesso": "Iniciadora",
+                            "DescricaoIdentificacaoMateria": "PLS 344/2018"
+                        },
+                        "EmentaMateria": "Altera a Lei nº 12.865, de 9 de outubro de 2013, para limitar em dois dias úteis o prazo para que o estabelecimento comercial ou prestador de serviço receba os valores da venda com cartão de crédito."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "134520",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "RTG",
+                            "DescricaoSubtipoMateria": "REQUERIMENTO DA COMISSÃO DE TRANSPARÊNCIA, GOVERNANÇA, FISCALIZAÇÃO E CONTROLE E DEFESA DO CONSUMIDOR",
+                            "NumeroMateria": "00031",
+                            "AnoMateria": "2018",
+                            "DescricaoIdentificacaoMateria": "RTG 31/2018"
+                        },
+                        "EmentaMateria": "Requer, nos termos do art. 50, § 2º, da Constituição Federal e do art. 216 do Regimento Interno do Senado Federal, que sejam prestadas, pelo Exmo. Sr. Ministro de Estado da Fazenda, Eduardo Guardia, contas bancárias no exterior e saques em dinheiro, por parte das entidades que integram os Serviços Sociais Autônomos (Sistema \"S\"). Requer ao Ministro de Estado da Fazenda que seja solicitada ao Conselho de Controle de Atividades Financeiras (COAF) e ao Banco Central do Brasil (BCB), as seguintes informações: 1. Existem contas no exterior, declaradas ou não declaradas, de dirigentes das seguintes entidades: a) Confederação Nacional da Indústria (CNI), b) Confederação Nacional do Comércio (CNC), c) Confederação Nacional dos Transportes (CNT) e Confederação Nacional da Agricultura (CNA)? 2. Houve saques em dinheiro das contas das entidades Serviço Social da Indústria (SESI), Serviço Nacional da Indústria (SENAI), Serviço Social do Comércio (SESC), Serviço Nacional de Aprendizagem do Cooperativismo (SESCOOP), Agência Brasileira de Promoção de Exportações e Investimentos (APEX BRASIL), Agência Brasileira de Desenvolvimento Industrial (ABDI) e Federação das Indústrias do Estado de Tocantis (FIETO) em valores superiores a R$ 50.000,00 (cinquenta mil reais) nos anos de 2014 a 2018?"
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "134635",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "RQS",
+                            "DescricaoSubtipoMateria": "REQUERIMENTO",
+                            "NumeroMateria": "00537",
+                            "AnoMateria": "2018",
+                            "DescricaoIdentificacaoMateria": "RQS 537/2018"
+                        },
+                        "EmentaMateria": "Retirada de urgência para apreciação do PLS 396/2017-Complementar."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "134639",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "RTG",
+                            "DescricaoSubtipoMateria": "REQUERIMENTO DA COMISSÃO DE TRANSPARÊNCIA, GOVERNANÇA, FISCALIZAÇÃO E CONTROLE E DEFESA DO CONSUMIDOR",
+                            "NumeroMateria": "00032",
+                            "AnoMateria": "2018",
+                            "DescricaoIdentificacaoMateria": "RTG 32/2018"
+                        },
+                        "EmentaMateria": "Requeiro, nos termos do art. 50, § 2º, da Constituição Federal e do art.216 do Regimento Interno do Senado Federal, que sejam prestadas, pelo Exmo. Sr. Ministro de Estado da Saúde, informações acerca do descarte irregular de lixo hospitalar no Estado do Tocantins e da suspensão do contrato com a empresa responsável pela coleta."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "134640",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "RTG",
+                            "DescricaoSubtipoMateria": "REQUERIMENTO DA COMISSÃO DE TRANSPARÊNCIA, GOVERNANÇA, FISCALIZAÇÃO E CONTROLE E DEFESA DO CONSUMIDOR",
+                            "NumeroMateria": "00033",
+                            "AnoMateria": "2018",
+                            "DescricaoIdentificacaoMateria": "RTG 33/2018"
+                        },
+                        "EmentaMateria": "Requeiro, nos termos do art. 50, § 2º, da Constituição Federal e do art. 216 do Regimento Interno do Senado Federal, que sejam prestadas, pelo Exmo. Sr. Presidente da Confederação Nacional da Indústria, informações sobre o recolhimento das contribuições diretamente ao \"Sistema S\". Nesses termos, requisita-se: 1. que a Confederação Nacional da Indústria (CNI) informe os nomes e o Cadastro Nacional da Pessoa Jurídica (CNPJ) de todas as empresas que fazem o recolhimento das contribuições diretamente ao \"Sistema S\"."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "134641",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "RTG",
+                            "DescricaoSubtipoMateria": "REQUERIMENTO DA COMISSÃO DE TRANSPARÊNCIA, GOVERNANÇA, FISCALIZAÇÃO E CONTROLE E DEFESA DO CONSUMIDOR",
+                            "NumeroMateria": "00034",
+                            "AnoMateria": "2018",
+                            "DescricaoIdentificacaoMateria": "RTG 34/2018"
+                        },
+                        "EmentaMateria": "Requeiro, nos termos do art. 50, § 2º, da Constituição Federal e do art. 216 do Regimento Interno do Senado Federal, que sejam prestadas, pelo Exmo. Sr. Presidente da Federação das Indústrias do Estado do Tocantins (FIETO), informações sobre o recolhimento direto de contribuições. Nesses termos, requisita-se: 1. Que a Federação das Indústrias do Estado do Tocantins (FIETO) informe o nome e o Cadastro Nacional da Pessoa Jurídica (CNPJ) de todas as empresas filiadas à Federação que fazem o recolhimento das contribuições diretamente."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "134710",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "RTG",
+                            "DescricaoSubtipoMateria": "REQUERIMENTO DA COMISSÃO DE TRANSPARÊNCIA, GOVERNANÇA, FISCALIZAÇÃO E CONTROLE E DEFESA DO CONSUMIDOR",
+                            "NumeroMateria": "00036",
+                            "AnoMateria": "2018",
+                            "DescricaoIdentificacaoMateria": "RTG 36/2018"
+                        },
+                        "EmentaMateria": "Com fundamento no art. 50, § 2º, da Constituição Federal, e nos termos do disposto no parágrafo único do art. 102-B e no art. 215 do Regimento Interno do Senado Federal, a Comissão de Transparência, Governança, Fiscalização e Controle e Defesa do Consumidor – CTFC requer ao Ministério da Transparência e Controladoria-Geral da União - CGU a prestação das seguintes informações: (i) que a Confederação Nacional da Indústria (CNI) informe os nomes e o Cadastro Nacional da Pessoa Jurídica (CNPJ) de todas as empresas que fazem o recolhimento das contribuições diretamente ao \"Sistema S\"."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "134711",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "RTG",
+                            "DescricaoSubtipoMateria": "REQUERIMENTO DA COMISSÃO DE TRANSPARÊNCIA, GOVERNANÇA, FISCALIZAÇÃO E CONTROLE E DEFESA DO CONSUMIDOR",
+                            "NumeroMateria": "00037",
+                            "AnoMateria": "2018",
+                            "DescricaoIdentificacaoMateria": "RTG 37/2018"
+                        },
+                        "EmentaMateria": "Com fundamento no art. 50, § 2º, da Constituição Federal, e nos termos do disposto no parágrafo único do art. 102-B e no art. 215 do Regimento Interno do Senado Federal, a Comissão de Transparência, Governança, Fiscalização e Controle e Defesa do Consumidor – CTFC requer ao Ministério da Transparência e Controladoria-Geral da União - CGU a prestação das seguintes informações: (i) Que a Federação das Indústrias do Estado do Tocantins (FIETO) informe o nome e o Cadastro Nacional da Pessoa Jurídica (CNPJ) de todas as empresas filiadas à Federação que fazem o recolhimento das contribuições diretamente."
+                    },
+                    {
+                        "IdentificacaoMateria": {
+                            "CodigoMateria": "134769",
+                            "SiglaCasaIdentificacaoMateria": "SF",
+                            "NomeCasaIdentificacaoMateria": "Senado Federal",
+                            "SiglaSubtipoMateria": "RTG",
+                            "DescricaoSubtipoMateria": "REQUERIMENTO DA COMISSÃO DE TRANSPARÊNCIA, GOVERNANÇA, FISCALIZAÇÃO E CONTROLE E DEFESA DO CONSUMIDOR",
+                            "NumeroMateria": "00039",
+                            "AnoMateria": "2018",
+                            "DescricaoIdentificacaoMateria": "RTG 39/2018"
+                        },
+                        "EmentaMateria": "Requer, nos termos do art. 50, § 2º, da Constituição Federal e do art. 216 do Regimento Interno do Senado Federal, que sejam prestadas, pelo Exmo. Sr. Ministro de Estado da Fazenda, Eduardo Guardia, informações sobre depósitos no Brasil e no exterior de entidades integrantes do Sistema S. Nesses termos, requisita-se: 1. Relacionar os depósitos realizados no Brasil e no exterior pelas seguintes entidades: Serviço Social da Indústria (SESI), Serviço Nacional da Indústria (SENAI), Serviço Social do Comércio (SESC), Serviço Nacional de Aprendizagem do Cooperativismo (SESCOOP), Serviço Brasileiro de Apoio às Micro e Pequenas Empresas (SEBRAE), Serviço Nacional de Aprendizagem Comercial (SENAC),Serviço Nacional de Aprendizagem Rural (SENAR), Serviço Social do Transporte (SEST), Serviço Nacional de Aprendizagem do Transporte (SENAT), Agência Brasileira de Promoção de Exportações e Investimentos (APEX BRASIL), Agência Brasileira de Desenvolvimento Industrial (ABDI), Confederação Nacional da Indústria (CNI), Confederação Nacional do Comércio (CNC), Confederação Nacional dos Transportes (CNT) e Confederação Nacional da Agricultura (CNA); 2. Declaração do imposto de renda dos presidentes das entidades mencionadas no item 1 deste Requerimento.."
+                    }
+                ]
+            },
+            "RelatoriasAtuais": {
+                "Relatoria": [
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "49535",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "AVS",
+                                "DescricaoSubtipoMateria": "AVISO",
+                                "NumeroMateria": "00017",
+                                "AnoMateria": "2002"
+                            },
+                            "EmentaMateria": "Encaminha ao Senado Federal cópia da Decisão número 1.106/2001, adotada pelo Tribunal de Contas da União na Sessão Extraordinária-Reservada do Plenário de 12/12/2001, bem como dos respectivos Relatório e Voto que a fundamentam (TC nº 575.288/1993-0)."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "1956",
+                            "SiglaComissao": "CTFC",
+                            "NomeComissao": "Comissão de Transparência, Governança, Fiscalização e Controle e Defesa do Consumidor",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2017-06-26"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "89254",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PLS",
+                                "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                                "NumeroMateria": "00007",
+                                "AnoMateria": "2009"
+                            },
+                            "EmentaMateria": "Dispõe sobre os depósitos bancários das entidades beneficiárias das contribuições sociais de interesse de categorias profissionais ou econômicas."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "38",
+                            "SiglaComissao": "CAE",
+                            "NomeComissao": "Comissão de Assuntos Econômicos",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2017-09-12"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "97588",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PLS",
+                                "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                                "NumeroMateria": "00201",
+                                "AnoMateria": "2010"
+                            },
+                            "EmentaMateria": "Estende para 31 de julho de 2020 o prazo de isenção do Imposto sobre Produtos Industrializados na aquisição de automóveis para utilização no transporte autônomo de passageiros, bem como por pessoas portadoras de deficiência."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "38",
+                            "SiglaComissao": "CAE",
+                            "NomeComissao": "Comissão de Assuntos Econômicos",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2015-04-15"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "116033",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PLS",
+                                "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                                "NumeroMateria": "00019",
+                                "AnoMateria": "2014"
+                            },
+                            "EmentaMateria": "Acrescenta o art. 39-A à Lei nº 9.514, de 20 de novembro de 1997, que \"dispõe sobre o Sistema de Financiamento Imobiliário, institui a alienação fiduciária de coisa imóvel e dá outras providências\", e o art. 62-A à Lei nº 4.380, de 21 de agosto de 1964, que “institui a correção monetária nos contratos imobiliários de interesse social, o sistema financeiro para aquisição da casa própria, cria o Banco Nacional da Habitação (BNH), e Sociedades de Crédito Imobiliário, as Letras Imobiliárias, o Serviço Federal de Habitação e Urbanismo e dá outras providências” a fim de regular a validade das certidões exigidas para a concessão de financiamento imobiliário."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "1956",
+                            "SiglaComissao": "CTFC",
+                            "NomeComissao": "Comissão de Transparência, Governança, Fiscalização e Controle e Defesa do Consumidor",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2017-04-24"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "118404",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PLS",
+                                "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                                "NumeroMateria": "00248",
+                                "AnoMateria": "2014"
+                            },
+                            "EmentaMateria": "Estabelece regras para preservar a calha principal e o curso natural do rio Araguaia."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "50",
+                            "SiglaComissao": "CMA",
+                            "NomeComissao": "Comissão de Meio Ambiente",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2017-04-19"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "118706",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "AMA",
+                                "DescricaoSubtipoMateria": "AVISO DA COMISSÃO DE MEIO AMBIENTE, DEFESA DO CONS. E FISC. E CONTROLE",
+                                "NumeroMateria": "00005",
+                                "AnoMateria": "2014"
+                            },
+                            "EmentaMateria": "Encaminha cópia do Acórdão nº 2316/2014 - TCU - Plenário, acompanhado do Relatório e do Voto que o fundamentam, referente a auditoria operacial realizada no Sistema Elétrico Brasileiro, envolvendo a Agência Nacional de Energia Elétrica, as Centrais Elétricas Brasileiras S.A, a Empresa de Pesquisa Energética e o Ministério de Minas e Energia (TC 029.387/2013-2). \n      "
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "1956",
+                            "SiglaComissao": "CTFC",
+                            "NomeComissao": "Comissão de Transparência, Governança, Fiscalização e Controle e Defesa do Consumidor",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2017-04-27"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "119400",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PLS",
+                                "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                                "NumeroMateria": "00397",
+                                "AnoMateria": "2014"
+                            },
+                            "EmentaMateria": "Altera a Lei nº 9.433, de 8 de janeiro de 1997, para facultar a aplicação em investimentos privados dos valores arrecadados com a cobrança pelo uso de recursos hídricos."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "50",
+                            "SiglaComissao": "CMA",
+                            "NomeComissao": "Comissão de Meio Ambiente",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2017-04-19"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "119418",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PLS",
+                                "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                                "NumeroMateria": "00403",
+                                "AnoMateria": "2014"
+                            },
+                            "EmentaMateria": "Altera as Leis nos 12.546, de 14 de dezembro de 2011, 12.375, de 30 de dezembro de 2010, e 9.249, de 26 de dezembro de 1995, para instituir medidas de desoneração tributária de atividades relacionadas à logística reversa de que trata a Lei nº 12.305, de 2 de agosto de 2010 (Política Nacional de Resíduos Sólidos)."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "50",
+                            "SiglaComissao": "CMA",
+                            "NomeComissao": "Comissão de Meio Ambiente",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2017-04-27"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "120447",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PLS",
+                                "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                                "NumeroMateria": "00175",
+                                "AnoMateria": "2015"
+                            },
+                            "EmentaMateria": "Altera a Lei nº 8.078, de 11 de setembro de 1990, que dispõe sobre a proteção do consumidor e dá outras providências, estabelecendo prazos, garantias e condições relativas à comercialização dos produtos que especifica."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "1956",
+                            "SiglaComissao": "CTFC",
+                            "NomeComissao": "Comissão de Transparência, Governança, Fiscalização e Controle e Defesa do Consumidor",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2017-04-27"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "122536",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PLS",
+                                "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                                "NumeroMateria": "00506",
+                                "AnoMateria": "2015"
+                            },
+                            "EmentaMateria": "Destina percentual da arrecadação das loterias administradas pela Caixa Econômica Federal para as Associações de Pais e Amigos dos Excepcionais – APAEs e para as Associações Pestalozzi."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "38",
+                            "SiglaComissao": "CAE",
+                            "NomeComissao": "Comissão de Assuntos Econômicos",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2016-02-05"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "124508",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PLS",
+                                "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                                "NumeroMateria": "00794",
+                                "AnoMateria": "2015"
+                            },
+                            "EmentaMateria": "Altera as Leis nº 6.938, de 31 de agosto de 1981, que dispõe sobre a Política Nacional do Meio Ambiente, seus fins e mecanismos de formulação e aplicação, e dá outras providências, e nº 7.347, de 24 de julho de 1985, que disciplina a ação civil pública de responsabilidade por danos causados ao meio ambiente, ao consumidor, a bens e direitos de valor artístico, estético, histórico turístico e paisagístico, e dá outras providências, para definir dano ambiental e estabelecer a necessidade de indenização quanto aos impactos econômicos dele decorrentes."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "50",
+                            "SiglaComissao": "CMA",
+                            "NomeComissao": "Comissão de Meio Ambiente",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2018-03-15"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "125157",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "OFS",
+                                "DescricaoSubtipoMateria": "OFICIO \"S\"",
+                                "NumeroMateria": "00003",
+                                "AnoMateria": "2016"
+                            },
+                            "EmentaMateria": "Encaminha, em cumprimento à Lei 7.827/89, art. 20, §4º, Relatório das atividades desenvolvidas e dos resultados obtidos pelo FCO, referente ao 1º semestre de 2015."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "1306",
+                            "SiglaComissao": "CDR",
+                            "NomeComissao": "Comissão de Desenvolvimento Regional e Turismo",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2017-05-05"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "129884",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "AFC",
+                                "DescricaoSubtipoMateria": "AVISO DA COMISSÃO DE TRANSPARÊNCIA, GOVERNANÇA, FISCALIZAÇÃO E CONTROLE E DEFESA DO CONSUMIDOR",
+                                "NumeroMateria": "00002",
+                                "AnoMateria": "2017"
+                            },
+                            "EmentaMateria": "Aviso TCU nº 347/2017. TC 010.803/2016-5. Acórdão 1067//2017-TCU-Plenário. Cuida de acompanhamento do Acordo de Gratuidade com os Serviços Nacionais de Aprendizagem."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "1956",
+                            "SiglaComissao": "CTFC",
+                            "NomeComissao": "Comissão de Transparência, Governança, Fiscalização e Controle e Defesa do Consumidor",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2017-06-29"
+                    },
+                    {
+                        "Materia": {
+                            "IdentificacaoMateria": {
+                                "CodigoMateria": "132701",
+                                "SiglaCasaIdentificacaoMateria": "SF",
+                                "NomeCasaIdentificacaoMateria": "Senado Federal",
+                                "SiglaSubtipoMateria": "PLS",
+                                "DescricaoSubtipoMateria": "PROJETO DE LEI DO SENADO",
+                                "NumeroMateria": "00134",
+                                "AnoMateria": "2018"
+                            },
+                            "EmentaMateria": "Institui o Estatuto da Diversidade Sexual e de Gênero."
+                        },
+                        "IdentificacaoComissao": {
+                            "CodigoComissao": "1956",
+                            "SiglaComissao": "CTFC",
+                            "NomeComissao": "Comissão de Transparência, Governança, Fiscalização e Controle e Defesa do Consumidor",
+                            "SiglaCasaComissao": "SF",
+                            "NomeCasaComissao": "Senado Federal"
+                        },
+                        "DescricaoTipoRelator": "Relator",
+                        "DataDesignacao": "2018-04-25"
+                    }
+                ]
+            },
+            "OutrasInformacoes": {
+                "Servico": [
+                    {
+                        "NomeServico": "ApartesParlamentar",
+                        "DescricaoServico": "Apartes do parlamentar",
+                        "UrlServico": "http://legis.senado.leg.br/dadosabertos/senador/5164/apartes?v=4"
+                    },
+                    {
+                        "NomeServico": "CargoParlamentar",
+                        "DescricaoServico": "Cargos do parlamentar ao longo do(s) mandato(s)",
+                        "UrlServico": "http://legis.senado.leg.br/dadosabertos/senador/5164/cargos?v=4"
+                    },
+                    {
+                        "NomeServico": "DiscursosParlamentar",
+                        "DescricaoServico": "Discursos do parlamentar",
+                        "UrlServico": "http://legis.senado.leg.br/dadosabertos/senador/5164/discursos?v=4"
+                    },
+                    {
+                        "NomeServico": "FiliacaoParlamentar",
+                        "DescricaoServico": "Filiações partidárias do parlamentar ao longo do(s) mandato(s)",
+                        "UrlServico": "http://legis.senado.leg.br/dadosabertos/senador/5164/filiacoes?v=4"
+                    },
+                    {
+                        "NomeServico": "LiderancaParlamentar",
+                        "DescricaoServico": "Cargos de liderança do parlamentar ao longo do(s) mandato(s)",
+                        "UrlServico": "http://legis.senado.leg.br/dadosabertos/senador/5164/liderancas?v=4"
+                    },
+                    {
+                        "NomeServico": "MandatoParlamentar",
+                        "DescricaoServico": "Mandatos do parlamentar (atual e anteriores, se houver)",
+                        "UrlServico": "http://legis.senado.leg.br/dadosabertos/senador/5164/mandatos?v=4"
+                    },
+                    {
+                        "NomeServico": "MateriasAutoriaParlamentar",
+                        "DescricaoServico": "Matérias de autoria ou coautoria do parlamentar\n      \n      ATENÇÃO: a tag \"Descontinuacao\", dentro de \"Metadados\" traz informações sobre a descontinuação deste serviço, indicando o serviço e/ou versão substitut",
+                        "UrlServico": "http://legis.senado.leg.br/dadosabertos/senador/5164/autorias?v=4"
+                    },
+                    {
+                        "NomeServico": "MateriasRelatoriaParlamentar",
+                        "DescricaoServico": "Matérias relatadas pelo parlamentar\n      \n      ATENÇÃO: a tag \"Descontinuacao\", dentro de \"Metadados\" traz informações sobre a descontinuação deste serviço, indicando o serviço e/ou versão substitutos.",
+                        "UrlServico": "http://legis.senado.leg.br/dadosabertos/senador/5164/relatorias?v=4"
+                    },
+                    {
+                        "NomeServico": "MembroComissaoParlamentar",
+                        "DescricaoServico": "Comissões em que o parlamentar é (ou foi) membro",
+                        "UrlServico": "http://legis.senado.leg.br/dadosabertos/senador/5164/comissoes?v=4"
+                    },
+                    {
+                        "NomeServico": "VotacaoParlamentar",
+                        "DescricaoServico": "Votos do parlamentar ao longo do(s) mandato(s)",
+                        "UrlServico": "http://legis.senado.leg.br/dadosabertos/senador/5164/votacoes?v=4"
+                    }
+                ]
+            },
+            "UrlGlossario": "http://legis.senado.leg.br/dadosabertos/senador/"
+        }
+    }
+}

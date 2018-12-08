@@ -26,7 +26,7 @@ requested.
 }
 \examples{
 \dontrun{
-sen_votes_year(date = "2013")
+sen_votes_year("2013")
 }
 
 }

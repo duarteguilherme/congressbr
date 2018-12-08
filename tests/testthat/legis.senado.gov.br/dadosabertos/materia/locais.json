@@ -3,7 +3,7 @@
         "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
         "@xsi:noNamespaceSchemaLocation": "http://legis.senado.leg.br/dadosabertos/dados/ListaLocaisv5.xsd",
         "Metadados": {
-            "Versao": "02/12/2018 08:59:07",
+            "Versao": "08/12/2018 09:01:49",
             "VersaoServico": "5",
             "DataVersaoServico": "2017-03-08",
             "DescricaoDataSet": "Lista os locais aonde uma matéria pode estar"
@@ -371,16 +371,6 @@
                     "DataCriacaoLocal": "2018-06-01"
                 },
                 {
-                    "CodigoLocal": "2188",
-                    "SiglaLocal": "CMMPV 838/2018",
-                    "NomeLocal": "Comissão Mista da Medida Provisória nº 838, de 2018",
-                    "TipoLocal": "C",
-                    "DescricaoTipoLocal": "Colegiado",
-                    "SiglaCasaLocal": "CN",
-                    "NomeCasaLocal": "Congresso Nacional",
-                    "DataCriacaoLocal": "2018-06-01"
-                },
-                {
                     "CodigoLocal": "2190",
                     "SiglaLocal": "CMMPV 840/2018",
                     "NomeLocal": "Comissão Mista da Medida Provisória nº 840, de 2018",
@@ -569,6 +559,26 @@
                     "SiglaCasaLocal": "CN",
                     "NomeCasaLocal": "Congresso Nacional",
                     "DataCriacaoLocal": "2018-11-27"
+                },
+                {
+                    "CodigoLocal": "2229",
+                    "SiglaLocal": "CMMPV 861/2018",
+                    "NomeLocal": "Comissão Mista da Medida Provisória nº 861, de 2018.",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "CN",
+                    "NomeCasaLocal": "Congresso Nacional",
+                    "DataCriacaoLocal": "2018-12-05"
+                },
+                {
+                    "CodigoLocal": "2230",
+                    "SiglaLocal": "CMMPV 862/2018",
+                    "NomeLocal": "Comissão Mista da Medida Provisória nº 862, de 2018.",
+                    "TipoLocal": "C",
+                    "DescricaoTipoLocal": "Colegiado",
+                    "SiglaCasaLocal": "CN",
+                    "NomeCasaLocal": "Congresso Nacional",
+                    "DataCriacaoLocal": "2018-12-05"
                 },
                 {
                     "CodigoLocal": "1664",

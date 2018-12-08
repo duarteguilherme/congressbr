@@ -1,0 +1,440 @@
+{
+    "ListaTiposCargo": {
+        "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+        "@xsi:noNamespaceSchemaLocation": "http://legis.senado.gov.br/dadosabertos/dados/ListaTiposCargov2.xsd",
+        "Metadados": {
+            "Versao": "08/12/2018 10:21:26",
+            "VersaoServico": "2",
+            "DescricaoDataSet": "Lista os tipos de cargo"
+        },
+        "Cargos": {
+            "Cargo": [
+                {
+                    "Codigo": "123",
+                    "Descrição": "10º SUPLENTE",
+                    "Ativo": "N"
+                },
+                {
+                    "Codigo": "125",
+                    "Descrição": "11º SUPLENTE",
+                    "Ativo": "N"
+                },
+                {
+                    "Codigo": "126",
+                    "Descrição": "12º SUPLENTE",
+                    "Ativo": "N"
+                },
+                {
+                    "Codigo": "127",
+                    "Descrição": "13º SUPLENTE",
+                    "Ativo": "N"
+                },
+                {
+                    "Codigo": "143",
+                    "Descrição": "1ª VICE-PRESIDENTE",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "43",
+                    "Descrição": "1º CORREGEDOR SUBSTITUTO",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "6",
+                    "Descrição": "1º SECRETÁRIO",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "101",
+                    "Descrição": "1º SUPLENTE",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "4",
+                    "Descrição": "1º VICE-PRESIDENTE",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "156",
+                    "Descrição": "2ª SECRETÁRIA",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "5",
+                    "Descrição": "2ª VICE-PRESIDENTE",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "81",
+                    "Descrição": "2º CORREGEDOR SUBSTITUTO",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "7",
+                    "Descrição": "2º SECRETÁRIO",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "102",
+                    "Descrição": "2º SUPLENTE",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "145",
+                    "Descrição": "2º VICE-PRESIDENTE",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "184",
+                    "Descrição": "3ª SECRETÁRIA",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "147",
+                    "Descrição": "3ª SUPLENTE",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "82",
+                    "Descrição": "3º CORREGEDOR SUBSTITUTO",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "8",
+                    "Descrição": "3º SECRETÁRIO",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "103",
+                    "Descrição": "3º SUPLENTE",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "111",
+                    "Descrição": "3º VICE-PRESIDENTE",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "9",
+                    "Descrição": "4ª SECRETÁRIA",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "148",
+                    "Descrição": "4ª SUPLENTE",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "144",
+                    "Descrição": "4º SECRETÁRIO",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "104",
+                    "Descrição": "4º SUPLENTE",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "118",
+                    "Descrição": "5º SUPLENTE",
+                    "Ativo": "N"
+                },
+                {
+                    "Codigo": "119",
+                    "Descrição": "6º SUPLENTE",
+                    "Ativo": "N"
+                },
+                {
+                    "Codigo": "120",
+                    "Descrição": "7º SUPLENTE",
+                    "Ativo": "N"
+                },
+                {
+                    "Codigo": "121",
+                    "Descrição": "8º SUPLENTE",
+                    "Ativo": "N"
+                },
+                {
+                    "Codigo": "122",
+                    "Descrição": "9º SUPLENTE",
+                    "Ativo": "N"
+                },
+                {
+                    "Codigo": "116",
+                    "Descrição": "CHANCELER",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "114",
+                    "Descrição": "COORDENADOR",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "42",
+                    "Descrição": "CORREGEDOR",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "150",
+                    "Descrição": "CORREGEDOR SUBSTITUTO",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "149",
+                    "Descrição": "CORREGEDOR SUBSTITUTO",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "151",
+                    "Descrição": "CORREGEDOR SUBSTITUTO",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "117",
+                    "Descrição": "Coordenação",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "115",
+                    "Descrição": "GRÃO-MESTRE",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "146",
+                    "Descrição": "OUVIDOR-GERAL",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "158",
+                    "Descrição": "OUVIDORA-GERAL",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "1",
+                    "Descrição": "PRESIDENTE",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "154",
+                    "Descrição": "PRESIDENTE (art. 88, § 3º do RISF)",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "189",
+                    "Descrição": "PRESIDENTE DA COMISSÃO EXECUTIVA",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "187",
+                    "Descrição": "PRESIDENTE DO CONSELHO CONSULTIVO",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "108",
+                    "Descrição": "PRESIDENTE NATO",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "179",
+                    "Descrição": "PROCURADOR",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "182",
+                    "Descrição": "PROCURADOR",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "181",
+                    "Descrição": "PROCURADOR",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "180",
+                    "Descrição": "PROCURADOR",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "157",
+                    "Descrição": "PROCURADORA",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "44",
+                    "Descrição": "PROCURADORES",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "21",
+                    "Descrição": "RELATOR",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "112",
+                    "Descrição": "RELATOR DA LDO",
+                    "Ativo": "N"
+                },
+                {
+                    "Codigo": "142",
+                    "Descrição": "RELATOR PARCIAL - CUMPR. SENTENÇAS E EXECUÇÃO",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "193",
+                    "Descrição": "RELATOR PARCIAL DE ASSUNTOS FISCAIS, PREV E AGRO",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "191",
+                    "Descrição": "RELATOR PARCIAL DE CONTRATOS",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "199",
+                    "Descrição": "RELATOR PARCIAL DE INVESTIGAÇÃO DOS VAZAMENTOS",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "107",
+                    "Descrição": "RELATOR REVISOR",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "183",
+                    "Descrição": "RELATOR SETORIAL",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "129",
+                    "Descrição": "RELATOR-GERAL",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "113",
+                    "Descrição": "RELATOR-GERAL DO ORÇAMENTO PARA O ANO DE 2005",
+                    "Ativo": "N"
+                },
+                {
+                    "Codigo": "132",
+                    "Descrição": "RELATOR-PARCIAL - INQUÉRITO POLICIAL",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "133",
+                    "Descrição": "RELATOR-PARCIAL - MEDIDAS CAUTELARES",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "137",
+                    "Descrição": "RELATOR-PARCIAL - PARTE GERAL",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "131",
+                    "Descrição": "RELATOR-PARCIAL - PROCEDIMENTOS",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "139",
+                    "Descrição": "RELATOR-PARCIAL - PROCEDIMENTOS ESPECIAIS",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "138",
+                    "Descrição": "RELATOR-PARCIAL - PROCESSO DE CONHECIMENTO",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "136",
+                    "Descrição": "RELATOR-PARCIAL - PROCESSO ELETRÔNICO",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "134",
+                    "Descrição": "RELATOR-PARCIAL - PROVAS",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "135",
+                    "Descrição": "RELATOR-PARCIAL - RECURSOS",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "152",
+                    "Descrição": "RELATORA",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "159",
+                    "Descrição": "Rel. do Proj. de Lei de Diretrizes Orçamentárias",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "161",
+                    "Descrição": "Relator da Receita",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "160",
+                    "Descrição": "Relator do Projeto de Lei Orçamentária Anual",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "186",
+                    "Descrição": "Relator do Projeto de Plano Plurianual",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "153",
+                    "Descrição": "Relatora",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "109",
+                    "Descrição": "SECRETÁRIO-GERAL",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "110",
+                    "Descrição": "SECRETÁRIO-GERAL ADJUNTO",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "124",
+                    "Descrição": "SUB-RELATOR",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "41",
+                    "Descrição": "SUPLENTE",
+                    "Ativo": "N"
+                },
+                {
+                    "Codigo": "128",
+                    "Descrição": "TITULAR",
+                    "Ativo": "N"
+                },
+                {
+                    "Codigo": "2",
+                    "Descrição": "VICE-PRESIDENTE",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "155",
+                    "Descrição": "VICE-PRESIDENTE",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "190",
+                    "Descrição": "VICE-PRESIDENTE DA COMISSÃO EXECUTIVA",
+                    "Ativo": "S"
+                },
+                {
+                    "Codigo": "188",
+                    "Descrição": "VICE-PRESIDENTE DO CONSELHO CONSULTIVO",
+                    "Ativo": "S"
+                }
+            ]
+        }
+    }
+}

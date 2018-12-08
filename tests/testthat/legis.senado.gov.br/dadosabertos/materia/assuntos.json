@@ -3,7 +3,7 @@
         "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
         "@xsi:noNamespaceSchemaLocation": "http://legis.senado.leg.br/dadosabertos/dados/ListaAssuntosv2.xsd",
         "Metadados": {
-            "Versao": "02/12/2018 08:55:50",
+            "Versao": "08/12/2018 09:01:22",
             "VersaoServico": "2",
             "DescricaoDataSet": "Lista os assuntos (geral e específico). Por default, apenas os ativos. Para listar todos, acrescente o parâmetro opcional \"indAtivos=N\"."
         },

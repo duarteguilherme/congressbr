@@ -3,7 +3,7 @@
         "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
         "@xsi:noNamespaceSchemaLocation": "http://legis.senado.leg.br/dadosabertos/dados/SituacaoAtualMateriav2.xsd",
         "Metadados": {
-            "Versao": "02/12/2018 09:58:13",
+            "Versao": "08/12/2018 10:21:02",
             "VersaoServico": "2",
             "DescricaoDataSet": "Traz a situação e a localização atuais de uma ou mais matérias"
         },

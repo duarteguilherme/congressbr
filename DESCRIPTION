@@ -38,5 +38,6 @@ Suggests:
     ggplot2,
     httptest,
     knitr,
-    rmarkdown
+    rmarkdown,
+    covr
 VignetteBuilder: knitr

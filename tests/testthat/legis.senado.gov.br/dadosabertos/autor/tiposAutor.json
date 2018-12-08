@@ -3,7 +3,7 @@
         "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
         "@xsi:noNamespaceSchemaLocation": "http://legis.senado.leg.br/dadosabertos/dados/ListaTiposAutorv6.xsd",
         "Metadados": {
-            "Versao": "02/12/2018 10:09:00",
+            "Versao": "08/12/2018 09:50:59",
             "VersaoServico": "6",
             "DataVersaoServico": "2018-06-19"
         },

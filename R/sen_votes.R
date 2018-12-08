@@ -211,7 +211,7 @@ sen_votes <- function(date = NULL, end_date = NULL,
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
 #' \dontrun{
-#' sen_votes_year(date = "2013")
+#' sen_votes_year("2013")
 #' }
 #'
 #' @export
