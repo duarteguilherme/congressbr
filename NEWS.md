@@ -1,5 +1,9 @@
 # congressbr 0.1.5
 
+- testing introduced to resolve API errors that led to package being removed from CRAN.
+
+# congressbr 0.1.5
+
 - Fixed conflict between cham_votes and sen_votes functions.
 - Fixed error in sen_bills.
 
