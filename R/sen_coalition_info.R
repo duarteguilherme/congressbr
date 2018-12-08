@@ -8,7 +8,7 @@
 #' @importFrom dplyr mutate
 #' @importFrom purrr map
 #' @importFrom purrr map_chr
-#' @importFrom purrr at_depth
+#' @importFrom purrr modify_depth
 #' @title Downloads and tidies data on specific coalitions in the Federal Senate
 #' @description Downloads and tidies data on specific coalitions in the Federal Senate.
 #' @param code \code{integer}. Code of the coalition. If not known (the most likely
@@ -64,7 +64,7 @@ sen_coalition_info <- function(code = NULL, ascii = TRUE){
       purrr::map_chr(compo, "dataAdesao"), orders = "dmY")
   )
 
-  parties <- purrr::at_depth(compo, 1, "partido")
+  parties <- purrr::modify_depth(compo, 1, "partido")
 
   party <- tibble::tibble(
     member_code = purrr::map_chr(parties, "idPartido"),

@@ -9,7 +9,7 @@
 #' @importFrom purrr map_if
 #' @importFrom purrr flatten
 #' @importFrom purrr map_chr
-#' @importFrom purrr at_depth
+#' @importFrom purrr modify_depth
 #' @importFrom purrr compact
 #' @title Downloads and tidies data on the coalitions in the Federal Senate
 #' @description Downloads and tidies data on the coalitions in the Federal Senate.
@@ -66,11 +66,11 @@ sen_coalitions <- function(members = FALSE, ascii = TRUE){
 
   if(isTRUE(members)){
 
-    members <- purrr::at_depth(request, 1, "Membros")
+    members <- purrr::modify_depth(request, 1, "Membros")
     names(members) <- bloc$bloc_code
     members <- purrr::compact(members)
     part <- purrr::at_depth(members, 1, "Membro") %>%
-      purrr::at_depth(2, "Partido")
+      purrr::modify_depth(2, "Partido")
     # variable to join with:
     for(i in 1:length(part)){
       for(j in 1:length(part[[i]])){
@@ -83,7 +83,7 @@ sen_coalitions <- function(members = FALSE, ascii = TRUE){
       bloc_member_abbr = purrr::map_chr(part, "SiglaPartido"),
       bloc_member_name = purrr::map_chr(part, "NomePartido")
     )
-    date_j <- purrr::at_depth(members, 3, "DataAdesao") %>%
+    date_j <- purrr::modify_depth(members, 3, "DataAdesao") %>%
       purrr::flatten() %>% purrr::flatten() %>%
       purrr::map_if(is.null, ~NA)
     parties$bloc_member_date_joined <- suppressWarnings(
