@@ -237,6 +237,7 @@ sen_senator_legis <- function(start = NULL, end = NULL,
     party_abbr = purrr::map_chr(par, "SiglaPartidoParlamentar",
                                 .null = null)
   )
+
   mand <- purrr::map(request, "Mandatos")
   mand <- purrr::map(mand, "Mandato")
   prim <- purrr::map(mand, "PrimeiraLegislaturaDoMandato")
@@ -245,7 +246,7 @@ sen_senator_legis <- function(start = NULL, end = NULL,
   mandate <- tibble::tibble(
     id_mandate = purrr::map_chr(mand, "CodigoMandato", .null = null),
     state = purrr::map_chr(mand, "UfParlamentar", .null = null),
-    status = purrr::map_chr(mand, "DescricaoParticipacao"),
+    status = purrr::map_chr(mand, "DescricaoParticipacao", .null = null),
     num_legislature_first_term = purrr::map_chr(prim, "NumeroLegislatura",
                                             .null = null),
     first_term_start = suppressWarnings(
@@ -265,7 +266,8 @@ sen_senator_legis <- function(start = NULL, end = NULL,
     second_term_end = suppressWarnings(
       lubridate::parse_date_time(
         purrr::map_chr(seg, "DataFim", .null = null),
-        orders = "Ymd")))
+        orders = "Ymd"))
+    )
 
   result <- dplyr::bind_cols(parl, mandate)
 
