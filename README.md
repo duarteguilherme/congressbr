@@ -1,7 +1,11 @@
+
+[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/congressbr)](https://cran.r-project.org/package=congressbr)
+[![Travis-CI Build
+Status](https://travis-ci.org/RobertMyles/congressbr.svg?branch=master)](https://travis-ci.org/RobertMyles/congressbr)
 [![AppVeyor Build
 Status](https://ci.appveyor.com/api/projects/status/github/RobertMyles/congressbr?branch=master&svg=true)](https://ci.appveyor.com/project/RobertMyles/congressbr)
-<!--[![CRAN\_Download\_Badge](http://cranlogs.r-pkg.org/badges/congressbr)](https://CRAN.R-project.org/package=congressbr)
-[![CRAN\_Download\_Badge](http://cranlogs.r-pkg.org/badges/grand-total/congressbr)](https://CRAN.R-project.org/package=congressbr)-->
+[![CRAN\_Download\_Badge](http://cranlogs.r-pkg.org/badges/congressbr)](https://CRAN.R-project.org/package=congressbr)
+[![CRAN\_Download\_Badge](http://cranlogs.r-pkg.org/badges/grand-total/congressbr)](https://CRAN.R-project.org/package=congressbr)
 
 ## 🇧🇷 congressbr
 
@@ -11,7 +15,12 @@ like to include lower-level houses in future, if possible.
 
 ### Installation
 
-congressbr is not currently on CRAN, as the Chamber of Deputies API is under development and constantly changing.
+~~congressbr is on CRAN, and so can be installed with the following:~~
+(currently under redevelopment ahead of a resubmit)
+
+``` r
+install.packages("congressbr")
+```
 
 Development versions can be installed with the devtools package:
 
