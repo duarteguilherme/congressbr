@@ -10,7 +10,7 @@
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
-#' \dontrun{all <- cham_legislator_list()}
+#' \donttest{all <- cham_legislator_list()}
 #'
 #' @export
 #'

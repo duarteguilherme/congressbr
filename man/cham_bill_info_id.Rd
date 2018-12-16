@@ -24,7 +24,7 @@ return a large object in terms of memory. It will also be rather unwieldy, with
 many columns.
 }
 \examples{
-\dontrun{
+\donttest{
 cham_bill_info_id(14784)
 }
 }

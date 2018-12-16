@@ -20,10 +20,10 @@
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
-#' \dontrun{all <- sen_senator_list()}
+#' \donttest{all <- sen_senator_list()}
 #'
 #' # Who represents Rio de Janeiro?
-#' \dontrun{
+#' \donttest{
 #' rj <- sen_senator_list(state = "RJ")
 #' }
 #' @export
@@ -157,7 +157,7 @@ sen_senator_list <- function(present = TRUE, state = NULL,
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' all <- sen_senator_legis(start = 50)
 #' }
 #' @export

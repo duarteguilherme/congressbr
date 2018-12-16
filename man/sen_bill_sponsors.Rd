@@ -26,7 +26,7 @@ with variables:
 Downloads and tidies data on the bill sponsors in the Federal Senate.
 }
 \examples{
-\dontrun{
+\donttest{
 bills <- sen_bill_sponsors()
 }
 }

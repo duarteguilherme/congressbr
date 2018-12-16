@@ -152,7 +152,7 @@ sen_bills_topics <- function(active = NULL, ascii = TRUE){
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' sen_bills_passing()
 #' # All MPVs (provisional presidential decrees) in 2001:
 #' mpvs <- sen_bills_passing(year = "2001", type = "MPV")
@@ -235,7 +235,7 @@ sen_bills_passing <- function(year = NULL,  number = NULL,
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' all <- sen_bills_current()
 #' plc_2015 <- sen_bills_current(year = 2015, type = "PLS")
 #' }
@@ -374,7 +374,7 @@ sen_bills_status <- function(bill_id = NULL, ascii = TRUE){
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' sen_bills_locations()
 #' }
 #' @export
@@ -606,7 +606,7 @@ sen_bills_situations <- function(ascii = TRUE){
 #' @examples
 #' # Bills from 2014 that have had a "despacho" update in the last 15 days, if
 #' # they exist:
-#' \dontrun{
+#' \donttest{
 #' desp_2014 <- sen_bills_updates(update = "Despacho", year = 2014, days = 15)
 #'
 #' # PLS bills that have been updated in the last 10 days, if they exist:

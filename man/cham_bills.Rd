@@ -49,7 +49,7 @@ A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 Downloads and tidies data for lists of bills in Brazilian Chamber of Deputies
 }
 \examples{
-\dontrun{
+\donttest{
 cham_bills(type = "PL", year = 2011, number = 2718, initial_date="2011-16-11")
 }
 }

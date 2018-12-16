@@ -17,7 +17,7 @@ A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 Downloads and tidies budget information from the Federal Senate.
 }
 \examples{
-\dontrun{
+\donttest{
 bud <- sen_budget()
 }
 }

@@ -48,7 +48,7 @@ return a large object in terms of memory. It will also be rather unwieldy, with
 many columns.
 }
 \examples{
-\dontrun{
+\donttest{
 sen_agenda(initial_date = "20161105", end_date = "20161125")
 sen_agenda(initial_date = "20161105", end_date = "20161125",
 legislator = 4988)

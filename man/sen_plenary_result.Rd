@@ -24,7 +24,7 @@ specified date.
 # get info for the 3rd of March 2016:
 x <- sen_plenary_result(date = "20160303")
 # Earlier periods may not have information:
-\dontrun{
+\donttest{
 sen_plenary_result(date = "20110405")
 }
 }

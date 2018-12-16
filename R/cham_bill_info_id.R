@@ -15,7 +15,7 @@
 #' many columns.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' cham_bill_info_id(14784)
 #' }
 #' @export

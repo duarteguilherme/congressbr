@@ -24,7 +24,7 @@ Downloads and tidies information on senators' votes in the Federal
 Senate.
 }
 \examples{
-\dontrun{
+\donttest{
 ant <- sen_senator_votes(id = 5529)
 
 # some have never voted, as they are suplentes:

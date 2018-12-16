@@ -13,7 +13,7 @@ A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 Downloads and tidies information on the legislators in the Federal Senate.
 }
 \examples{
-\dontrun{all <- cham_legislator_list()}
+\donttest{all <- cham_legislator_list()}
 
 }
 \author{

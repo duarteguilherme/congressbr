@@ -68,7 +68,7 @@ Search for data on legislation in the Brazilian Federal Senate.
 }
 \examples{
 # search for legislation from 2014:
-\dontrun{
+\donttest{
 two14 <- sen_bill_search(year = 2014)
 }
 }

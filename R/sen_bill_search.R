@@ -42,7 +42,7 @@
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
 #' # search for legislation from 2014:
-#' \dontrun{
+#' \donttest{
 #' two14 <- sen_bill_search(year = 2014)
 #' }
 #' @export

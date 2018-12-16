@@ -418,7 +418,7 @@ sen_senator_suplentes <- function(id = 0, ascii = TRUE){
 #' @seealso \code{sen_senator_list()}
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' ant <- sen_senator_votes(id = 5529)
 #'
 #' # some have never voted, as they are suplentes:

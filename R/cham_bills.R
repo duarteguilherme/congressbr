@@ -26,7 +26,7 @@
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' cham_bills(type = "PL", year = 2011, number = 2718, initial_date="2011-16-11")
 #' }
 #' @export

@@ -28,10 +28,10 @@ A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 Downloads and tidies information on the senators in the Federal Senate.
 }
 \examples{
-\dontrun{all <- sen_senator_list()}
+\donttest{all <- sen_senator_list()}
 
 # Who represents Rio de Janeiro?
-\dontrun{
+\donttest{
 rj <- sen_senator_list(state = "RJ")
 }
 }

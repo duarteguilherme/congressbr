@@ -210,7 +210,7 @@ sen_votes <- function(date = NULL, end_date = NULL,
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' sen_votes_year("2013")
 #' }
 #'

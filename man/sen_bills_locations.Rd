@@ -23,7 +23,7 @@ Downloads and tidies information on the possible locations a piece
 of legislation can currently be passing through the Federal Senate.
 }
 \examples{
-\dontrun{
+\donttest{
 sen_bills_locations()
 }
 }

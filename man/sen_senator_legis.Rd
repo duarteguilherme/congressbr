@@ -30,7 +30,7 @@ A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 Downloads and tidies information on the senators in the Federal Senate.
 }
 \examples{
-\dontrun{
+\donttest{
 all <- sen_senator_legis(start = 50)
 }
 }

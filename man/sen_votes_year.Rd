@@ -25,7 +25,7 @@ Returns voting information from the Senate floor for the year
 requested.
 }
 \examples{
-\dontrun{
+\donttest{
 sen_votes_year("2013")
 }
 
