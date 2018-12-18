@@ -8,7 +8,7 @@ cham_votes(type, number, year, ascii = TRUE)
 }
 \arguments{
 \item{type}{\code{character}. The type of the bill. For example, "PL" for law proposal ("projeto de lei"),
-"PEC" for constitutional ammendments ("projeto de emenda constitucional"), "PDC" for legislative decree ("decreto legislativo"),
+"PEC" for constitutional amendments ("projeto de emenda constitucional"), "PDC" for legislative decree ("decreto legislativo"),
 and "PLP" for supplementary laws ("projeto de lei complementar).}
 
 \item{number}{\code{integer}. The number of the bill.}

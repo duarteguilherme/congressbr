@@ -37,7 +37,7 @@ The voting behaviour of legislators is an area of great interest both inside and
 sen_votes(date = "20160908")
 ```
 
-For convenience, we have included a dataset of all nominal votes in the Federal Senate from 1991 to early 2017, which can be accessed with `data("sen_nominal_votes")`. The dataset is only 38kB and can be loaded quickly on any computer.
+For convenience, we have included a dataset of all nominal votes in the Federal Senate from 1991 to early 2017, which can be accessed with `data("sen_nominal_votes")`. The dataset is only 38KB and can be loaded quickly on any computer.
 
 If you want to know more about the results from the plenary in the Federal Senate for a specified date, you may also use the `sen_plenary()` function. As an example, you can retrieve information from the session of the 3rd of March 2016 with:
 

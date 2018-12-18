@@ -28,7 +28,7 @@ format.}
 A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 }
 \description{
-Downloads and tidies persnonal information on senators from the
+Downloads and tidies personal information on senators from the
 Federal Senate.
 }
 \note{

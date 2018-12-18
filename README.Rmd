@@ -51,7 +51,7 @@ You can learn more about the package with the vignettes. Run `vignette("Explorin
 ### Datasets
 `congressbr` comes with some pre-prepared datasets.   
 
-- `data("commissions")` returns a dataframe of commissions, with two columns, the full name of the commission, and the abbreviations used in some of the other functions in `congressbr` and in much of the literature on the insitution. 
+- `data("commissions")` returns a dataframe of commissions, with two columns, the full name of the commission, and the abbreviations used in some of the other functions in `congressbr` and in much of the literature on the institution. 
 
 - `data("sen_nominal_votes")` is a dataframe of all the nominal votes in the Senate between 1991 and early 2017 (the Senate API only allows requests for a maximum period of 60 days).
 

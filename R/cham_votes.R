@@ -16,7 +16,7 @@
 #' @description Downloads votes of a specific bill by providing type, number and year. A bill can have more than one roll call,
 #' and the API does not provide an id to identify them So we provide one (rollcall_id).
 #' @param type \code{character}. The type of the bill. For example, "PL" for law proposal ("projeto de lei"),
-#'  "PEC" for constitutional ammendments ("projeto de emenda constitucional"), "PDC" for legislative decree ("decreto legislativo"),
+#'  "PEC" for constitutional amendments ("projeto de emenda constitucional"), "PDC" for legislative decree ("decreto legislativo"),
 #'  and "PLP" for supplementary laws ("projeto de lei complementar).
 #' @param number \code{integer}. The number of the bill.
 #' @param year \code{integer}. The year of the bill.
