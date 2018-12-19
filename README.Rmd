@@ -20,8 +20,7 @@ congressbr is a package for extracting data from the APIs of the Brazilian Feder
 
 ### Installation
 
-~~congressbr is on CRAN, and so can be installed with the following:~~
-(currently under redevelopment ahead of a resubmit)
+congressbr is on CRAN, and so can be installed with the following:
 
 ```{r, eval = F}
 install.packages("congressbr")

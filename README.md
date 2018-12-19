@@ -15,8 +15,7 @@ like to include lower-level houses in future, if possible.
 
 ### Installation
 
-~~congressbr is on CRAN, and so can be installed with the following:~~
-(currently under redevelopment ahead of a resubmit)
+congressbr is on CRAN, and so can be installed with the following:
 
 ``` r
 install.packages("congressbr")
