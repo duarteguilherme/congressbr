@@ -2,7 +2,7 @@
 % Please edit documentation in R/sen_senator.R
 \name{sen_senator}
 \alias{sen_senator}
-\title{Downloads and tidies persnonal information on senators from the
+\title{Downloads and tidies personal information on senators from the
 Federal Senate}
 \usage{
 sen_senator(id = NULL, affiliations = TRUE, mandates = TRUE,
