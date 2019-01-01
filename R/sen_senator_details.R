@@ -5,6 +5,7 @@
 #' @importFrom stringi stri_trans_general
 #' @importFrom lubridate parse_date_time
 #' @importFrom dplyr distinct
+#' @importFrom janitor remove_empty
 #' @title Downloads and tidies personal information on the senators in the
 #' Federal Senate
 #' @description Downloads and tidies personal information on the senators in the
@@ -596,7 +597,8 @@ sen_senator_mandates <- function(id = 0, ascii = TRUE){
           legislature_second_end_date, "Ymd"
         )
         )) %>%
-      dplyr::select_if(colSums(!is.na(.)) > 0)
+      janitor::remove_empty("cols")
+      # dplyr::select_if(colSums(!is.na(.)) > 0) causes error with dplyr 0.8
 
 
     return(terms)

@@ -2,7 +2,7 @@ Package: congressbr
 Type: Package
 Title: Downloads, Unpacks and Tidies Legislative Data from the Brazilian Federal
     Senate and Chamber of Deputies
-Version: 0.1.5
+Version: 0.1.7
 Authors@R: c(
     person(given = "Robert", family = "McDonnell", email = "mcdonnell.robert5@gmail.com", role = c("aut", "cre")),
     person(given = "Guilherme", family = "Jardim Duarte", email = "gjardimduarte@gmail.com", role = "aut"),
@@ -19,7 +19,7 @@ LazyData: true
 Depends: 
     R (>= 3.0)
 Imports: 
-    dplyr (>= 0.5.0),
+    dplyr (>= 0.7.0),
     purrr (>= 0.2.2),
     xml2 (>= 1.0.0),
     httr(>= 1.2.1),
@@ -31,7 +31,8 @@ Imports:
     tibble (>= 1.2),
     pscl (>= 1.4.9),
     glue (>= 0.0.1),
-    progress (>= 0.0.1)
+    progress (>= 0.0.1),
+    janitor (>= 1.1.1)
 RoxygenNote: 6.1.1
 Suggests: 
     devtools,

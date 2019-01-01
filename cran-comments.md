@@ -1,3 +1,6 @@
+## Version 0.1.7
+- Updated to deal with breaking changes in dplyr 0.8.
+
 ## Version 0.1.6
 
 - test suite implemented with the httptest package.

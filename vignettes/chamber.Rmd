@@ -9,6 +9,7 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
+
 `congressbr` makes it easy to explore the API of the Brazilian Chamber of Deputies, or the _Câmara dos Deputados_. The package contains many functions that help researchers to download, standardise and tidy data from the _Câmara_ website. This vignette shows some examples.
 
 First, we need to install `congressbr`. You can install the package by running: 
@@ -87,6 +88,19 @@ ggplot2::ggplot(party_orientation, aes(x = orientation)) +
   labs(x = "Orientation", y = "Count") + 
   theme(legend.position = "none")
 ```
+
+Similarly, we could also have used the `dplyr` package to see how many parties suggested their members to vote "yay" (*sim*), "nay" (*não*), or allowed deputies to decide their votes (*liberado*).
+
+```{r, message = F, warning = F}
+if(!require(dplyr)){install.packages("dplyr", repos = "http://cran.us.r-project.org")}
+library(dplyr)
+
+party_orientation %>%
+  group_by(orientation) %>%
+  tally()
+```
+
+
 
 Similarly, we could also have used the `dplyr` package to see how many parties suggested their members to vote "yay" (*sim*), "nay" (*não*), or allowed deputies to decide their votes (*liberado*).
 

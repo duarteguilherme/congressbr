@@ -1,4 +1,8 @@
-# congressbr 0.1.5
+# congressbr 0.1.7
+
+- new dplyr 0.8 was producing error; now fixed.
+
+# congressbr 0.1.6
 
 - testing introduced to resolve API errors that led to package being removed from CRAN.
 
