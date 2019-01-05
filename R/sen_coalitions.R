@@ -6,15 +6,8 @@
 #' @importFrom tibble tibble
 #' @importFrom dplyr full_join
 #' @importFrom dplyr mutate
-#' @importFrom purrr map_if
-#' @importFrom purrr flatten
-#' @importFrom purrr map_chr
-#' @importFrom purrr modify_depth
-#' @importFrom purrr compact
 #' @title Downloads and tidies data on the coalitions in the Federal Senate
 #' @description Downloads and tidies data on the coalitions in the Federal Senate.
-#' @param members \code{logical}. If FALSE, returns only the first four columns
-#' of the data frame.
 #' @param ascii \code{logical}. If TRUE, names are converted to ascii format.
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame},
 #' with variables:
@@ -23,17 +16,12 @@
 #'  \item{\code{bloc_name: }}{name of the coalition.}
 #'  \item{\code{bloc_label: }}{additional label for the coalition.}
 #'  \item{\code{date_created: }}{\code{POSIXct}, date the coalition was created.}
-#'  \item{\code{bloc_member_abbr: }}{party acronym.}
-#'  \item{\code{bloc_member_name: }}{party name.}
-#'  \item{\code{bloc_member_date_joined: }}{\code{POSIXct}, date when the party first joined the coalition.}
-#'  \item{\code{member_date_left: }}{\code{POSIXct}, date when the party left the coalition.}
-#' }
+#'  }
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
 #' coalitions <- sen_coalitions()
-#' coalitions_detail <- sen_coalitions(members = TRUE)
 #' @export
-sen_coalitions <- function(members = FALSE, ascii = TRUE){
+sen_coalitions <- function(ascii = TRUE){
 
   base_url <- "http://legis.senado.gov.br/dadosabertos/blocoParlamentar/lista"
 
@@ -62,43 +50,5 @@ sen_coalitions <- function(members = FALSE, ascii = TRUE){
       )
   }
 
-  # Get members:
-
-  if(isTRUE(members)){
-
-    members <- purrr::modify_depth(request, 1, "Membros")
-    names(members) <- bloc$bloc_code
-    members <- purrr::compact(members)
-    part <- purrr::at_depth(members, 1, "Membro") %>%
-      purrr::modify_depth(2, "Partido")
-    # variable to join with:
-    for(i in 1:length(part)){
-      for(j in 1:length(part[[i]])){
-        part[[i]][[j]]$bloc_code <- names(part)[[i]]
-      }
-    }
-    part <- purrr::flatten(part)
-    parties <- tibble::tibble(
-      bloc_code = purrr::map_chr(part, "bloc_code"),
-      bloc_member_abbr = purrr::map_chr(part, "SiglaPartido"),
-      bloc_member_name = purrr::map_chr(part, "NomePartido")
-    )
-    date_j <- purrr::modify_depth(members, 3, "DataAdesao") %>%
-      purrr::flatten() %>% purrr::flatten() %>%
-      purrr::map_if(is.null, ~NA)
-    parties$bloc_member_date_joined <- suppressWarnings(
-      lubridate::parse_date_time(date_j, orders = "Ymd")
-    )
-    if(isTRUE(ascii)){
-      parties <- parties %>%
-        dplyr::mutate(
-          bloc_member_name = stringi::stri_trans_general(
-            bloc_member_name, "Latin-ASCII"
-          )
-        )
-    }
-
-    bloc <- suppressMessages(dplyr::full_join(bloc, parties))
-  }
   return(bloc)
 }
