@@ -63,7 +63,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">congressbr</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.7</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.8</span>
       </span>
     </div>
 
@@ -123,16 +123,11 @@
     
     </div>
 
-    <pre class="usage"><span class='fu'>sen_coalitions</span>(<span class='kw'>members</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>ascii</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)</pre>
+    <pre class="usage"><span class='fu'>sen_coalitions</span>(<span class='kw'>ascii</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
-    <tr>
-      <th>members</th>
-      <td><p><code>logical</code>. If FALSE, returns only the first four columns
-of the data frame.</p></td>
-    </tr>
     <tr>
       <th>ascii</th>
       <td><p><code>logical</code>. If TRUE, names are converted to ascii format.</p></td>
@@ -147,17 +142,12 @@ with variables:</p><ul>
 <li><p><code>bloc_name: </code>name of the coalition.</p></li>
 <li><p><code>bloc_label: </code>additional label for the coalition.</p></li>
 <li><p><code>date_created: </code><code>POSIXct</code>, date the coalition was created.</p></li>
-<li><p><code>bloc_member_abbr: </code>party acronym.</p></li>
-<li><p><code>bloc_member_name: </code>party name.</p></li>
-<li><p><code>bloc_member_date_joined: </code><code>POSIXct</code>, date when the party first joined the coalition.</p></li>
-<li><p><code>member_date_left: </code><code>POSIXct</code>, date when the party left the coalition.</p></li>
 </ul>
 
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='no'>coalitions</span> <span class='kw'>&lt;-</span> <span class='fu'>sen_coalitions</span>()
-<span class='no'>coalitions_detail</span> <span class='kw'>&lt;-</span> <span class='fu'>sen_coalitions</span>(<span class='kw'>members</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)</div><div class='output co'>#&gt; <span class='warning'>Warning: at_depth() is deprecated, please use `modify_depth()` instead</span></div></pre>
+    <pre class="examples"><div class='input'><span class='no'>coalitions</span> <span class='kw'>&lt;-</span> <span class='fu'>sen_coalitions</span>()</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>

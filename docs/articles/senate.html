@@ -30,7 +30,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">congressbr</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.7</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.8</span>
       </span>
     </div>
 
@@ -79,7 +79,7 @@
       <h1>Exploring the Brazilian Federal Senate</h1>
                         <h4 class="author">Robert McDonnell, Guilherme Duarte and Danilo Freire</h4>
             
-            <h4 class="date">2019-01-01</h4>
+            <h4 class="date">2019-01-29</h4>
       
       
       <div class="hidden name"><code>senate.Rmd</code></div>
@@ -111,7 +111,7 @@
 ##  8 2016-09-08 00:00:00 14:00              1 126544  00076       MSF      
 ##  9 2016-09-08 00:00:00 14:00              1 126544  00076       MSF      
 ## 10 2016-09-08 00:00:00 14:00              1 126544  00076       MSF      
-## # ... with 476 more rows, and 11 more variables: bill_year &lt;chr&gt;,
+## # … with 476 more rows, and 11 more variables: bill_year &lt;chr&gt;,
 ## #   bill_description &lt;chr&gt;, rollcall_id &lt;chr&gt;, vote_result &lt;chr&gt;,
 ## #   vote_secret &lt;chr&gt;, senator_id &lt;chr&gt;, senator_name &lt;chr&gt;,
 ## #   senator_vote &lt;chr&gt;, senator_gender &lt;chr&gt;, senator_party &lt;chr&gt;,
@@ -131,7 +131,7 @@
 ## 7 124453  "PRO… PRS       00061       2015      3719       21            
 ## 8 122690  "PRO… PEC       00110       2015      3719       21            
 ## 9 124879  "PRO… PDS       00006       2016      3719       21            
-## # ... with 10 more variables: session_date &lt;dttm&gt;, session_time &lt;chr&gt;,
+## # … with 10 more variables: session_date &lt;dttm&gt;, session_time &lt;chr&gt;,
 ## #   session_type &lt;chr&gt;, session_type_abbr &lt;chr&gt;, session_house &lt;chr&gt;,
 ## #   bill_house &lt;chr&gt;, bill_report &lt;chr&gt;, bill_details &lt;chr&gt;,
 ## #   bill_result &lt;chr&gt;, bill_sponsor &lt;chr&gt;</code></pre>
@@ -145,7 +145,7 @@
 ##    id    name_full name_senator gender foto_url page_url office_email
 ##    &lt;chr&gt; &lt;chr&gt;     &lt;chr&gt;        &lt;chr&gt;  &lt;chr&gt;    &lt;chr&gt;    &lt;chr&gt;       
 ##  1 4981  Acir Mar… Acir Gurgacz Mascu… http://… http://… acir@senado…
-##  2 5140  Airton S… Airton Sand… Mascu… http://… http://… sen.airtons…
+##  2 846   Aloysio … Aloysio Nun… Mascu… http://… http://… aloysionune…
 ##  3 945   Alvaro F… Alvaro Dias  Mascu… http://… http://… alvarodias@…
 ##  4 4988  Ana Amel… Ana Amelia   Femin… http://… http://… ana.amelia@…
 ##  5 5529  Antonio … Antonio Ana… Mascu… http://… http://… antonio.ana…
@@ -154,7 +154,7 @@
 ##  8 5164  Ataides … Ataides Oli… Mascu… http://… http://… ataides.oli…
 ##  9 391   Aecio Ne… Aecio Neves  Mascu… http://… http://… aecio.neves…
 ## 10 3823  Benedito… Benedito de… Mascu… http://… http://… benedito.li…
-## # ... with 71 more rows, and 10 more variables: party_abbr &lt;chr&gt;,
+## # … with 71 more rows, and 10 more variables: party_abbr &lt;chr&gt;,
 ## #   id_mandate &lt;chr&gt;, state &lt;chr&gt;, status &lt;chr&gt;,
 ## #   num_legislature_first_term &lt;chr&gt;, first_term_start &lt;dttm&gt;,
 ## #   first_term_end &lt;dttm&gt;, num_legislature_second_term &lt;chr&gt;,
@@ -164,14 +164,14 @@
 ##   senator_id senator_name senator_party_n… senator_party_a…
 ##   &lt;chr&gt;      &lt;chr&gt;        &lt;chr&gt;            &lt;chr&gt;           
 ## 1 3398       Cristovam B… Partido Popular… PPS             
-## # ... with 12 more variables: senator_party_date_joined &lt;dttm&gt;,
+## # … with 12 more variables: senator_party_date_joined &lt;dttm&gt;,
 ## #   senator_state &lt;chr&gt;, senator_status &lt;chr&gt;, senator_gender &lt;chr&gt;,
 ## #   senator_date_of_birth &lt;dttm&gt;, senator_state_of_birth &lt;chr&gt;,
 ## #   senator_title &lt;chr&gt;, senator_mandates_first_legis &lt;chr&gt;,
 ## #   senator_mandates_second_legis &lt;chr&gt;, senator_url &lt;chr&gt;,
 ## #   senator_email &lt;chr&gt;, senator_office_address &lt;chr&gt;</code></pre>
 <div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb11-1" data-line-number="1"><span class="kw"><a href="../reference/sen_senator_bills.html">sen_senator_bills</a></span>(<span class="dt">id =</span> <span class="st">"3398"</span>)</a></code></pre></div>
-<pre><code>## # A tibble: 38 x 9
+<pre><code>## # A tibble: 25 x 9
 ##    senator_id senator_name senator_party_n… senator_party_a… senator_state
 ##    &lt;chr&gt;      &lt;chr&gt;        &lt;chr&gt;            &lt;chr&gt;            &lt;chr&gt;        
 ##  1 3398       Cristovam B… Partido Popular… PPS              DF           
@@ -184,7 +184,7 @@
 ##  8 3398       Cristovam B… Partido Popular… PPS              DF           
 ##  9 3398       Cristovam B… Partido Popular… PPS              DF           
 ## 10 3398       Cristovam B… Partido Popular… PPS              DF           
-## # ... with 28 more rows, and 4 more variables: senator_bills_number &lt;chr&gt;,
+## # … with 15 more rows, and 4 more variables: senator_bills_number &lt;chr&gt;,
 ## #   senator_bills_type &lt;chr&gt;, senator_bills_year &lt;chr&gt;,
 ## #   senator_bills_details &lt;chr&gt;</code></pre>
 </div>
@@ -201,26 +201,18 @@
 ## 3 200       Bloco Bloco Mo… Bloco PTB… 2015-02-01 00:00:00 390         
 ## 4 200       Bloco Bloco Mo… Bloco PTB… 2015-02-01 00:00:00 391         
 ## 5 200       Bloco Bloco Mo… Bloco PTB… 2015-02-01 00:00:00 392         
-## # ... with 5 more variables: member_code &lt;chr&gt;, member_data_joined &lt;dttm&gt;,
+## # … with 5 more variables: member_code &lt;chr&gt;, member_data_joined &lt;dttm&gt;,
 ## #   member_abbr &lt;chr&gt;, member_name &lt;chr&gt;, member_date_created &lt;dttm&gt;</code></pre>
 <p>A data frame of commissions (full name and abbreviation) can be obtained with <code><a href="https://www.rdocumentation.org/packages/utils/topics/data">data("commissions")</a></code>. The <code><a href="../reference/sen_commissions.html">sen_commissions()</a></code> function returns a detailed dataframe of commissions, their ids, type, house and purpose. Commissions can be explored by <code>type</code> variable returned from this function. For example, the “cpi” type (<em>Comissão de Inquérito Parlamentar</em>, Parliamentary Inquiry Commission) can be used in the <code><a href="../reference/sen_commissions_type.html">sen_commissions_type()</a></code> function, which will return a data frame of commissions of the type specified.</p>
 <p>Using the commission abbreviations, we can see which senators serve on the commission. One well-known commission is the Commission for the Constitution, Justice and Citizenship (<em>Constituicao, Justica e Cidadania</em>). Its abbreviation is “CCJ”:</p>
 <div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb15-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/utils/topics/data">data</a></span>(<span class="st">"commissions"</span>)</a>
 <a class="sourceLine" id="cb15-2" data-line-number="2"><span class="kw"><a href="../reference/sen_commissions_senators.html">sen_commissions_senators</a></span>(<span class="dt">code =</span> <span class="st">"CCJ"</span>)</a></code></pre></div>
-<pre><code>## # A tibble: 30 x 6
-##    commission commission_abbr senator_id senator_name senator_party
-##    &lt;chr&gt;      &lt;chr&gt;           &lt;chr&gt;      &lt;chr&gt;        &lt;chr&gt;        
-##  1 Comissao … CCJ             5006       Gleisi Hoff… PT           
-##  2 Comissao … CCJ             87         Garibaldi A… MDB          
-##  3 Comissao … CCJ             615        Jose Piment… PT           
-##  4 Comissao … CCJ             631        Magno Malta  PR           
-##  5 Comissao … CCJ             3          Antonio Car… PSB          
-##  6 Comissao … CCJ             4697       Angela Port… PDT          
-##  7 Comissao … CCJ             5008       Humberto Co… PT           
-##  8 Comissao … CCJ             825        Paulo Paim   PT           
-##  9 Comissao … CCJ             4721       Eduardo Amo… PSDB         
-## 10 Comissao … CCJ             3361       Jose Maranh… MDB          
-## # ... with 20 more rows, and 1 more variable: senator_state &lt;chr&gt;</code></pre>
+<pre><code>## # A tibble: 2 x 6
+##   commission commission_abbr senator_id senator_name senator_party
+##   &lt;chr&gt;      &lt;chr&gt;           &lt;chr&gt;      &lt;chr&gt;        &lt;chr&gt;        
+## 1 Comissao … CCJ             5529       Antonio Ana… PSDB         
+## 2 Comissao … CCJ             5527       Simone Tebet MDB          
+## # … with 1 more variable: senator_state &lt;chr&gt;</code></pre>
 </div>
 <div id="general-information" class="section level2">
 <h2 class="hasAnchor">
@@ -243,7 +235,7 @@
 ##  8 94       PCB        Partido Comunista Brasileiro     1922-03-25  
 ##  9 144      PCN        Partido Comunitario  Nacional    1985-07-01  
 ## 10 145      PCO        Partido da Causa Operaria        1997-09-30  
-## # ... with 39 more rows</code></pre>
+## # … with 39 more rows</code></pre>
 </div>
 <div id="states" class="section level3">
 <h3 class="hasAnchor">
@@ -272,7 +264,7 @@
 ##  8 48032   02161       2001      MPV      
 ##  9 48034   02165       2001      MPV      
 ## 10 48036   02190       2001      MPV      
-## # ... with 39 more rows</code></pre>
+## # … with 39 more rows</code></pre>
 <p>This function can also be used to get information for a single date.</p>
 <p><code>congressbr</code> also has functions for accessing budget information (<code><a href="../reference/sen_budget.html">sen_budget()</a></code>), and the agenda in the Senate for a particular date, or range of dates:</p>
 <div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb23-1" data-line-number="1"><span class="kw"><a href="../reference/sen_agenda.html">sen_agenda</a></span>(<span class="dt">initial_date =</span> <span class="st">"20161105"</span>, <span class="dt">end_date =</span> <span class="st">"20161125"</span>)</a></code></pre></div>
@@ -289,7 +281,7 @@
 ##  8 5578      CMA, as 09h… Deliberati… Extraordin… 2016-11-08 00:00:00
 ##  9 5598      CCJ,CAE, as… Audiencia … Conjunta    2016-11-08 00:00:00
 ## 10 5581      CTG, as 11h… &lt;NA&gt;        Extraordin… 2016-11-08 00:00:00
-## # ... with 77 more rows, and 7 more variables: agenda_time &lt;chr&gt;,
+## # … with 77 more rows, and 7 more variables: agenda_time &lt;chr&gt;,
 ## #   agenda_status &lt;chr&gt;, agenda_place &lt;chr&gt;,
 ## #   agenda_commission_house &lt;chr&gt;, agenda_commission_abbr &lt;chr&gt;,
 ## #   agenda_commission_id &lt;chr&gt;, agenda_commission_meeting_number &lt;chr&gt;</code></pre>
@@ -316,22 +308,23 @@
 <div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb27-1" data-line-number="1"><span class="cf">if</span>(<span class="op">!</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">require</a></span>(dplyr)){<span class="kw"><a href="https://www.rdocumentation.org/packages/utils/topics/install.packages">install.packages</a></span>(<span class="st">"dplyr"</span>, <span class="dt">repos =</span> <span class="st">"http://cran.us.r-project.org"</span>)}</a>
 <a class="sourceLine" id="cb27-2" data-line-number="2"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(dplyr)</a>
 <a class="sourceLine" id="cb27-3" data-line-number="3"></a>
-<a class="sourceLine" id="cb27-4" data-line-number="4">all_sens <span class="op">%&gt;%</span><span class="st"> </span><span class="kw"><a href="http://dplyr.tidyverse.org/reference/filter.html">filter</a></span>(status <span class="op">!=</span><span class="st"> "Titular"</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw"><a href="http://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span>(state) <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb27-5" data-line-number="5"><span class="st">  </span><span class="kw"><a href="http://dplyr.tidyverse.org/reference/summarise.html">summarise</a></span>(<span class="dt">totals =</span> <span class="kw"><a href="http://dplyr.tidyverse.org/reference/n.html">n</a></span>()) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw"><a href="http://dplyr.tidyverse.org/reference/arrange.html">arrange</a></span>(<span class="kw"><a href="http://dplyr.tidyverse.org/reference/desc.html">desc</a></span>(totals))</a></code></pre></div>
-<pre><code>## # A tibble: 11 x 2
+<a class="sourceLine" id="cb27-4" data-line-number="4">all_sens <span class="op">%&gt;%</span><span class="st"> </span><span class="kw"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span>(status <span class="op">!=</span><span class="st"> "Titular"</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw"><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span>(state) <span class="op">%&gt;%</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb27-5" data-line-number="5"><span class="st">  </span><span class="kw"><a href="https://dplyr.tidyverse.org/reference/summarise.html">summarise</a></span>(<span class="dt">totals =</span> <span class="kw"><a href="https://dplyr.tidyverse.org/reference/n.html">n</a></span>()) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw"><a href="https://dplyr.tidyverse.org/reference/arrange.html">arrange</a></span>(<span class="kw"><a href="https://dplyr.tidyverse.org/reference/desc.html">desc</a></span>(totals))</a></code></pre></div>
+<pre><code>## # A tibble: 12 x 2
 ##    state totals
 ##    &lt;chr&gt;  &lt;int&gt;
-##  1 MT         2
+##  1 GO         2
 ##  2 TO         2
-##  3 DF         1
-##  4 GO         1
+##  3 AC         1
+##  4 DF         1
 ##  5 MG         1
 ##  6 MS         1
-##  7 PB         1
-##  8 PI         1
-##  9 RJ         1
-## 10 SC         1
-## 11 SP         1</code></pre>
+##  7 MT         1
+##  8 PB         1
+##  9 PI         1
+## 10 RJ         1
+## 11 RN         1
+## 12 SC         1</code></pre>
 <p>Mato Grosso, it seems, with two-thirds of their senators being stand-in <em>suplentes</em>.</p>
 </div>
 </div>

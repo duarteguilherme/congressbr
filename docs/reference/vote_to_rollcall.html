@@ -65,7 +65,7 @@ with other modelling languages such as JAGS." />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">congressbr</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.7</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.8</span>
       </span>
     </div>
 
@@ -162,7 +162,7 @@ the JAGS modelling language.</p></td>
     <pre class="examples"><div class='input'><span class='co'># get votes:</span>
 <span class='fu'><a href='https://www.rdocumentation.org/packages/utils/topics/data'>data</a></span>(<span class='no'>sen_nominal_votes</span>)
 <span class='no'>votes</span> <span class='kw'>&lt;-</span> <span class='no'>sen_nominal_votes</span> <span class='kw'>%&gt;%</span>
-    <span class='kw pkg'>dplyr</span><span class='kw ns'>::</span><span class='fu'><a href='http://dplyr.tidyverse.org/reference/filter.html'>filter</a></span>(<span class='no'>vote_date</span> <span class='kw'>&gt;=</span> <span class='st'>"2005-03-01"</span>, <span class='no'>vote_date</span> <span class='kw'>&lt;=</span> <span class='st'>"2007-12-15"</span>)
+    <span class='kw pkg'>dplyr</span><span class='kw ns'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span>(<span class='no'>vote_date</span> <span class='kw'>&gt;=</span> <span class='st'>"2005-03-01"</span>, <span class='no'>vote_date</span> <span class='kw'>&lt;=</span> <span class='st'>"2007-12-15"</span>)
 <span class='no'>rc</span> <span class='kw'>&lt;-</span> <span class='fu'>vote_to_rollcall</span>(<span class='no'>votes</span>$<span class='no'>senator_vote</span>,
                        <span class='kw'>legislators</span> <span class='kw'>=</span> <span class='no'>votes</span>$<span class='no'>senator_name</span>,
                        <span class='kw'>bills</span> <span class='kw'>=</span> <span class='no'>votes</span>$<span class='no'>bill_id</span>)</div></pre>

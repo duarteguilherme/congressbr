@@ -63,7 +63,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">congressbr</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.7</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.8</span>
       </span>
     </div>
 
@@ -185,41 +185,41 @@ many columns.</p>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'>sen_agenda</span>(<span class='kw'>initial_date</span> <span class='kw'>=</span> <span class='st'>"20161105"</span>, <span class='kw'>end_date</span> <span class='kw'>=</span> <span class='st'>"20161125"</span>)</div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 87 x 12</span><span>
+    <pre class="examples"><div class='input'><span class='fu'>sen_agenda</span>(<span class='kw'>initial_date</span> <span class='kw'>=</span> <span class='st'>"20161105"</span>, <span class='kw'>end_date</span> <span class='kw'>=</span> <span class='st'>"20161125"</span>)</div><div class='output co'>#&gt; # A tibble: 87 x 12
 #&gt;    agenda_id agenda_title agenda_name agenda_type agenda_date        
-#&gt;    </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>     </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>        </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>       </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>       </span><span style='color: #555555;font-style: italic;'>&lt;dttm&gt;</span><span>             
-#&gt; </span><span style='color: #555555;'> 1</span><span> 5551      CCS, as 09h… Reuniao de… Reuniao     2016-11-07 </span><span style='color: #555555;'>00:00:00</span><span>
-#&gt; </span><span style='color: #555555;'> 2</span><span> 5537      CDH, as 10h… Audiencia … Extraordin… 2016-11-07 </span><span style='color: #555555;'>00:00:00</span><span>
-#&gt; </span><span style='color: #555555;'> 3</span><span> 5553      CCS, as 14h… Reuniao de… Reuniao     2016-11-07 </span><span style='color: #555555;'>00:00:00</span><span>
-#&gt; </span><span style='color: #555555;'> 4</span><span> 5576      CJD, as 14h… Audiencia … Reuniao     2016-11-07 </span><span style='color: #555555;'>00:00:00</span><span>
-#&gt; </span><span style='color: #555555;'> 5</span><span> 5591      CDH, as 15h… Audiencia … Extraordin… 2016-11-07 </span><span style='color: #555555;'>00:00:00</span><span>
-#&gt; </span><span style='color: #555555;'> 6</span><span> 5563      CCT, as 08h… Audiencia … Extraordin… 2016-11-08 </span><span style='color: #555555;'>00:00:00</span><span>
-#&gt; </span><span style='color: #555555;'> 7</span><span> 5535      CDH, as 09h… Audiencia … Extraordin… 2016-11-08 </span><span style='color: #555555;'>00:00:00</span><span>
-#&gt; </span><span style='color: #555555;'> 8</span><span> 5578      CMA, as 09h… Deliberati… Extraordin… 2016-11-08 </span><span style='color: #555555;'>00:00:00</span><span>
-#&gt; </span><span style='color: #555555;'> 9</span><span> 5598      CCJ,CAE, as… Audiencia … Conjunta    2016-11-08 </span><span style='color: #555555;'>00:00:00</span><span>
-#&gt; </span><span style='color: #555555;'>10</span><span> 5581      CTG, as 11h… </span><span style='color: #BB0000;'>NA</span><span>          Extraordin… 2016-11-08 </span><span style='color: #555555;'>00:00:00</span><span>
-#&gt; </span><span style='color: #555555;'># ... with 77 more rows, and 7 more variables: agenda_time </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>,
-#&gt; #   agenda_status </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>, agenda_place </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>, agenda_commission_house </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>,
-#&gt; #   agenda_commission_abbr </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>, agenda_commission_id </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>,
-#&gt; #   agenda_commission_meeting_number </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span></div><div class='input'><span class='fu'>sen_agenda</span>(<span class='kw'>initial_date</span> <span class='kw'>=</span> <span class='st'>"20161105"</span>, <span class='kw'>end_date</span> <span class='kw'>=</span> <span class='st'>"20161125"</span>,
-<span class='kw'>legislator</span> <span class='kw'>=</span> <span class='fl'>4988</span>)</div><div class='output co'>#&gt; </span><span style='color: #555555;'># A tibble: 87 x 15</span><span>
+#&gt;    &lt;chr&gt;     &lt;chr&gt;        &lt;chr&gt;       &lt;chr&gt;       &lt;dttm&gt;             
+#&gt;  1 5551      CCS, as 09h… Reuniao de… Reuniao     2016-11-07 00:00:00
+#&gt;  2 5537      CDH, as 10h… Audiencia … Extraordin… 2016-11-07 00:00:00
+#&gt;  3 5553      CCS, as 14h… Reuniao de… Reuniao     2016-11-07 00:00:00
+#&gt;  4 5576      CJD, as 14h… Audiencia … Reuniao     2016-11-07 00:00:00
+#&gt;  5 5591      CDH, as 15h… Audiencia … Extraordin… 2016-11-07 00:00:00
+#&gt;  6 5563      CCT, as 08h… Audiencia … Extraordin… 2016-11-08 00:00:00
+#&gt;  7 5535      CDH, as 09h… Audiencia … Extraordin… 2016-11-08 00:00:00
+#&gt;  8 5578      CMA, as 09h… Deliberati… Extraordin… 2016-11-08 00:00:00
+#&gt;  9 5598      CCJ,CAE, as… Audiencia … Conjunta    2016-11-08 00:00:00
+#&gt; 10 5581      CTG, as 11h… &lt;NA&gt;        Extraordin… 2016-11-08 00:00:00
+#&gt; # … with 77 more rows, and 7 more variables: agenda_time &lt;chr&gt;,
+#&gt; #   agenda_status &lt;chr&gt;, agenda_place &lt;chr&gt;, agenda_commission_house &lt;chr&gt;,
+#&gt; #   agenda_commission_abbr &lt;chr&gt;, agenda_commission_id &lt;chr&gt;,
+#&gt; #   agenda_commission_meeting_number &lt;chr&gt;</div><div class='input'><span class='fu'>sen_agenda</span>(<span class='kw'>initial_date</span> <span class='kw'>=</span> <span class='st'>"20161105"</span>, <span class='kw'>end_date</span> <span class='kw'>=</span> <span class='st'>"20161125"</span>,
+<span class='kw'>legislator</span> <span class='kw'>=</span> <span class='fl'>4988</span>)</div><div class='output co'>#&gt; # A tibble: 87 x 15
 #&gt;    agenda_id agenda_title agenda_name agenda_type agenda_date        
-#&gt;    </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>     </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>        </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>       </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>       </span><span style='color: #555555;font-style: italic;'>&lt;dttm&gt;</span><span>             
-#&gt; </span><span style='color: #555555;'> 1</span><span> 5551      CCS, as 09h… Reuniao de… Reuniao     2016-11-07 </span><span style='color: #555555;'>00:00:00</span><span>
-#&gt; </span><span style='color: #555555;'> 2</span><span> 5537      CDH, as 10h… Audiencia … Extraordin… 2016-11-07 </span><span style='color: #555555;'>00:00:00</span><span>
-#&gt; </span><span style='color: #555555;'> 3</span><span> 5553      CCS, as 14h… Reuniao de… Reuniao     2016-11-07 </span><span style='color: #555555;'>00:00:00</span><span>
-#&gt; </span><span style='color: #555555;'> 4</span><span> 5576      CJD, as 14h… Audiencia … Reuniao     2016-11-07 </span><span style='color: #555555;'>00:00:00</span><span>
-#&gt; </span><span style='color: #555555;'> 5</span><span> 5591      CDH, as 15h… Audiencia … Extraordin… 2016-11-07 </span><span style='color: #555555;'>00:00:00</span><span>
-#&gt; </span><span style='color: #555555;'> 6</span><span> 5563      CCT, as 08h… Audiencia … Extraordin… 2016-11-08 </span><span style='color: #555555;'>00:00:00</span><span>
-#&gt; </span><span style='color: #555555;'> 7</span><span> 5535      CDH, as 09h… Audiencia … Extraordin… 2016-11-08 </span><span style='color: #555555;'>00:00:00</span><span>
-#&gt; </span><span style='color: #555555;'> 8</span><span> 5578      CMA, as 09h… Deliberati… Extraordin… 2016-11-08 </span><span style='color: #555555;'>00:00:00</span><span>
-#&gt; </span><span style='color: #555555;'> 9</span><span> 5598      CCJ,CAE, as… Audiencia … Conjunta    2016-11-08 </span><span style='color: #555555;'>00:00:00</span><span>
-#&gt; </span><span style='color: #555555;'>10</span><span> 5581      CTG, as 11h… </span><span style='color: #BB0000;'>NA</span><span>          Extraordin… 2016-11-08 </span><span style='color: #555555;'>00:00:00</span><span>
-#&gt; </span><span style='color: #555555;'># ... with 77 more rows, and 10 more variables: agenda_time </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>,
-#&gt; #   agenda_status </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>, agenda_place </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>, agenda_commission_house </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>,
-#&gt; #   agenda_commission_abbr </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>, agenda_commission_id </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>,
-#&gt; #   agenda_commission_meeting_number </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>, legislator_name </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>,
-#&gt; #   agenda_commission_member </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>, agenda_commission_relator </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span></div></span></pre>
+#&gt;    &lt;chr&gt;     &lt;chr&gt;        &lt;chr&gt;       &lt;chr&gt;       &lt;dttm&gt;             
+#&gt;  1 5551      CCS, as 09h… Reuniao de… Reuniao     2016-11-07 00:00:00
+#&gt;  2 5537      CDH, as 10h… Audiencia … Extraordin… 2016-11-07 00:00:00
+#&gt;  3 5553      CCS, as 14h… Reuniao de… Reuniao     2016-11-07 00:00:00
+#&gt;  4 5576      CJD, as 14h… Audiencia … Reuniao     2016-11-07 00:00:00
+#&gt;  5 5591      CDH, as 15h… Audiencia … Extraordin… 2016-11-07 00:00:00
+#&gt;  6 5563      CCT, as 08h… Audiencia … Extraordin… 2016-11-08 00:00:00
+#&gt;  7 5535      CDH, as 09h… Audiencia … Extraordin… 2016-11-08 00:00:00
+#&gt;  8 5578      CMA, as 09h… Deliberati… Extraordin… 2016-11-08 00:00:00
+#&gt;  9 5598      CCJ,CAE, as… Audiencia … Conjunta    2016-11-08 00:00:00
+#&gt; 10 5581      CTG, as 11h… &lt;NA&gt;        Extraordin… 2016-11-08 00:00:00
+#&gt; # … with 77 more rows, and 10 more variables: agenda_time &lt;chr&gt;,
+#&gt; #   agenda_status &lt;chr&gt;, agenda_place &lt;chr&gt;, agenda_commission_house &lt;chr&gt;,
+#&gt; #   agenda_commission_abbr &lt;chr&gt;, agenda_commission_id &lt;chr&gt;,
+#&gt; #   agenda_commission_meeting_number &lt;chr&gt;, legislator_name &lt;chr&gt;,
+#&gt; #   agenda_commission_member &lt;chr&gt;, agenda_commission_relator &lt;chr&gt;</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>

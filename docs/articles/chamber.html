@@ -30,7 +30,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">congressbr</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.7</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.8</span>
       </span>
     </div>
 
@@ -79,7 +79,7 @@
       <h1>Exploring the Brazilian Chamber of Deputies</h1>
                         <h4 class="author">Robert McDonnell, Guilherme Duarte and Danilo Freire</h4>
             
-            <h4 class="date">2019-01-01</h4>
+            <h4 class="date">2019-01-29</h4>
       
       
       <div class="hidden name"><code>chamber.Rmd</code></div>
@@ -112,7 +112,7 @@
 ##  8 PL-1992-20… Aprovada a Sube… 28/2/2012     20:26        
 ##  9 PL-1992-20… Aprovada a Sube… 28/2/2012     20:26        
 ## 10 PL-1992-20… Aprovada a Sube… 28/2/2012     20:26        
-## # ... with 2,042 more rows, and 27 more variables: rollcall_subject &lt;chr&gt;,
+## # … with 2,042 more rows, and 27 more variables: rollcall_subject &lt;chr&gt;,
 ## #   session_id &lt;chr&gt;, DEM_orientation &lt;chr&gt;, GOV_orientation &lt;chr&gt;,
 ## #   Minoria_orientation &lt;chr&gt;, PDT_orientation &lt;chr&gt;,
 ## #   PMDB_orientation &lt;chr&gt;, PMN_orientation &lt;chr&gt;, PP_orientation &lt;chr&gt;,
@@ -135,7 +135,7 @@
 ##   bill_type bill_number bill_year bill_id bill_name type_name bill_subject
 ##   &lt;chr&gt;     &lt;chr&gt;       &lt;chr&gt;     &lt;chr&gt;   &lt;chr&gt;     &lt;chr&gt;     &lt;chr&gt;       
 ## 1 "PEC    … 472         1997      14784   PEC 472/… Proposta… "\n  "      
-## # ... with 12 more variables: ementa_txt &lt;chr&gt;, ementa_explanation &lt;chr&gt;,
+## # … with 12 more variables: ementa_txt &lt;chr&gt;, ementa_explanation &lt;chr&gt;,
 ## #   author_name &lt;chr&gt;, author_id &lt;chr&gt;, author_state &lt;chr&gt;,
 ## #   author_party &lt;chr&gt;, bill_index &lt;chr&gt;, presentation_date &lt;chr&gt;,
 ## #   complete_link &lt;chr&gt;, situation_desc &lt;chr&gt;, last_action_desc &lt;chr&gt;,
@@ -146,7 +146,7 @@
 ##   bill_type bill_number bill_year bill_id bill_name type_name bill_subject
 ##   &lt;chr&gt;     &lt;chr&gt;       &lt;chr&gt;     &lt;chr&gt;   &lt;chr&gt;     &lt;chr&gt;     &lt;chr&gt;       
 ## 1 "PL     … 3962        2008      408406  PL 3962/… Projeto … Administrac…
-## # ... with 12 more variables: ementa_txt &lt;chr&gt;, ementa_explanation &lt;chr&gt;,
+## # … with 12 more variables: ementa_txt &lt;chr&gt;, ementa_explanation &lt;chr&gt;,
 ## #   author_name &lt;chr&gt;, author_id &lt;chr&gt;, author_state &lt;chr&gt;,
 ## #   author_party &lt;chr&gt;, bill_index &lt;chr&gt;, presentation_date &lt;chr&gt;,
 ## #   complete_link &lt;chr&gt;, situation_desc &lt;chr&gt;, last_action_desc &lt;chr&gt;,
@@ -158,7 +158,7 @@
 ##   bill_type bill_number bill_year bill_id bill_name type_name bill_subject
 ##   &lt;chr&gt;     &lt;chr&gt;       &lt;chr&gt;     &lt;chr&gt;   &lt;chr&gt;     &lt;chr&gt;     &lt;chr&gt;       
 ## 1 "PEC    … 472         1997      14784   PEC 472/… Proposta… "\n  "      
-## # ... with 12 more variables: ementa_txt &lt;chr&gt;, ementa_explanation &lt;chr&gt;,
+## # … with 12 more variables: ementa_txt &lt;chr&gt;, ementa_explanation &lt;chr&gt;,
 ## #   author_name &lt;chr&gt;, author_id &lt;chr&gt;, author_state &lt;chr&gt;,
 ## #   author_party &lt;chr&gt;, bill_index &lt;chr&gt;, presentation_date &lt;chr&gt;,
 ## #   complete_link &lt;chr&gt;, situation_desc &lt;chr&gt;, last_action_desc &lt;chr&gt;,
@@ -178,7 +178,7 @@
 ##  8 255794  PLP 182/2004 13/08/2008
 ##  9 257126  PLP 184/2004 10/12/2008
 ## 10 269852  PEC 333/2004 27/05/2008
-## # ... with 148 more rows</code></pre>
+## # … with 148 more rows</code></pre>
 <p>Finally, <code>congressbr</code> also features <code><a href="../reference/cham_typeauthors_bills.html">cham_typeauthors_bills()</a></code>, a convenience function that downloads the types of authors for bills.</p>
 <div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb13-1" data-line-number="1"><span class="kw"><a href="../reference/cham_typeauthors_bills.html">cham_typeauthors_bills</a></span>()</a></code></pre></div>
 <pre><code>## # A tibble: 43 x 2
@@ -194,7 +194,7 @@
 ##  8 12000   Orgao da Camara dos Deputados      
 ##  9 13      Corregedoria                       
 ## 10 13000   Comissao Temporaria da CD          
-## # ... with 33 more rows</code></pre>
+## # … with 33 more rows</code></pre>
 </div>
 <div id="examples" class="section level2">
 <h2 class="hasAnchor">
@@ -217,8 +217,8 @@
 <a class="sourceLine" id="cb16-2" data-line-number="2"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(dplyr)</a>
 <a class="sourceLine" id="cb16-3" data-line-number="3"></a>
 <a class="sourceLine" id="cb16-4" data-line-number="4">party_orientation <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb16-5" data-line-number="5"><span class="st">  </span><span class="kw"><a href="http://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span>(orientation) <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb16-6" data-line-number="6"><span class="st">  </span><span class="kw"><a href="http://dplyr.tidyverse.org/reference/tally.html">tally</a></span>()</a></code></pre></div>
+<a class="sourceLine" id="cb16-5" data-line-number="5"><span class="st">  </span><span class="kw"><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span>(orientation) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb16-6" data-line-number="6"><span class="st">  </span><span class="kw"><a href="https://dplyr.tidyverse.org/reference/tally.html">tally</a></span>()</a></code></pre></div>
 <pre><code>## # A tibble: 3 x 2
 ##   orientation     n
 ##   &lt;fct&gt;       &lt;int&gt;
@@ -230,8 +230,8 @@
 <a class="sourceLine" id="cb18-2" data-line-number="2"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(dplyr)</a>
 <a class="sourceLine" id="cb18-3" data-line-number="3"></a>
 <a class="sourceLine" id="cb18-4" data-line-number="4">party_orientation <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb18-5" data-line-number="5"><span class="st">  </span><span class="kw"><a href="http://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span>(orientation) <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb18-6" data-line-number="6"><span class="st">  </span><span class="kw"><a href="http://dplyr.tidyverse.org/reference/tally.html">tally</a></span>()</a></code></pre></div>
+<a class="sourceLine" id="cb18-5" data-line-number="5"><span class="st">  </span><span class="kw"><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span>(orientation) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb18-6" data-line-number="6"><span class="st">  </span><span class="kw"><a href="https://dplyr.tidyverse.org/reference/tally.html">tally</a></span>()</a></code></pre></div>
 <pre><code>## # A tibble: 3 x 2
 ##   orientation     n
 ##   &lt;fct&gt;       &lt;int&gt;
