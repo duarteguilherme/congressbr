@@ -1,3 +1,10 @@
+## Version 0.1.8
+- Updated to deal with breaking changes in purrr 0.3.
+── R CMD check results ──────────────────────────────── congressbr 0.1.8 ────
+Duration: 2m 32.3s
+
+0 errors ✔ | 0 warnings ✔ | 0 notes ✔
+
 ## Version 0.1.7
 - Updated to deal with breaking changes in dplyr 0.8.
 

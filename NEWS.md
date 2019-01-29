@@ -1,3 +1,7 @@
+# congressbr 0.1.8
+
+- new purrr 0.3 was producing error; now fixed.
+
 # congressbr 0.1.7
 
 - new dplyr 0.8 was producing error; now fixed.
