@@ -1,3 +1,7 @@
+## Version 0.2.0
+
+- Removed function which had been taken out of the API without notice.
+
 ## Version 0.1.8
 - Updated to deal with breaking changes in purrr 0.3.
 ── R CMD check results ──────────────────────────────── congressbr 0.1.8 ────

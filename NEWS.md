@@ -1,3 +1,7 @@
+# congressbr 0.2.0
+
+- The function `sen_coalition_info()` has been removed from the API and hence the package.
+
 # congressbr 0.1.8
 
 - new purrr 0.3 was producing error; now fixed.

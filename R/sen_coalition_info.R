@@ -83,9 +83,9 @@ sen_coalition_info <- function(code = NULL, ascii = TRUE){
   } else{
     result <- result %>%
       dplyr::mutate(bloc_name = stringi::stri_trans_general(bloc_name,
-                                                     "Latin-ASCII"),
-             member_name = stringi::stri_trans_general(member_name,
-                                                       "Latin-ASCII"))
+                                                            "Latin-ASCII"),
+                    member_name = stringi::stri_trans_general(member_name,
+                                                              "Latin-ASCII"))
     return(result)
   }
 }

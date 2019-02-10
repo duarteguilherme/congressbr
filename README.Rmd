@@ -119,7 +119,7 @@ For convenience, we list here the functions of the package. More details are ava
 - `sen_bill_sponsors`: Bill sponsors in the Senate.
 - `sen_budget`: Downloads and tidies budget information from the Federal Senate.
 - `sen_coalitions`: Downloads and tidies data on the coalitions in the Federal Senate
-- `sen_coalition_info`: Downloads and tidies data on *specific* coalitions in the Federal Senate.
+- `sen_coalition_info`: Downloads and tidies data on *specific* coalitions in the Federal Senate. **Note**: This function was taken out of the API without notice and so stopped working, and was taken out of congressbr.
 - `sen_commissions`: Information on commissions in the Senate.
 - `sen_commissions_senators`: Information on the senators who serve on a certain commission in the Federal Senate.
 - `sen_commissions_type`: Information on commissions in the Federal Senate, by commission type.

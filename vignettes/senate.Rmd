@@ -55,10 +55,10 @@ sen_senator_bills(id = "3398")
 ```
 
 ## Commissions and coalitions 
-There are certain legislative coalitions in the Senate, all of whom have unique id numbers in the API database. These numbers can be accessed with `sen_coalitions()`. Further information on the coalition of interest can be had with `sen_coalition_info()`. For example, the *Bloco Moderador* (moderate bloc) has the id 200. We can obtain more detailed information on the coalition by using this id with the `code` option:  
+There are certain legislative coalitions in the Senate, all of whom have unique id numbers in the API database. These numbers can be accessed with `sen_coalitions()`.
 
 ```{r message = FALSE, warning=FALSE}
-sen_coalition_info(code = 200)
+sen_coalitions()
 ```
 
 A data frame of commissions (full name and abbreviation) can be obtained with `data("commissions")`. The `sen_commissions()` function returns a detailed dataframe of commissions, their ids, type, house and purpose. Commissions can be explored by `type` variable returned from this function. For example, the "cpi" type (*Comissão de Inquérito Parlamentar*, Parliamentary Inquiry Commission) can be used in the `sen_commissions_type()` function, which will return a data frame of commissions of the type specified. 
