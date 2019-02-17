@@ -1,6 +1,6 @@
 # congressbr 0.2.0
 
-- The function `sen_coalition_info()` has been removed from the API and hence the package.
+- Some functions have been removed from the package as they are presently unable from the API.
 
 # congressbr 0.1.8
 
