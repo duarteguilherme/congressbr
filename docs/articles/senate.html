@@ -79,7 +79,7 @@
       <h1>Exploring the Brazilian Federal Senate</h1>
                         <h4 class="author">Robert McDonnell, Guilherme Duarte and Danilo Freire</h4>
             
-            <h4 class="date">2019-01-29</h4>
+            <h4 class="date">2019-02-17</h4>
       
       
       <div class="hidden name"><code>senate.Rmd</code></div>
@@ -145,73 +145,59 @@
 ##    id    name_full name_senator gender foto_url page_url office_email
 ##    &lt;chr&gt; &lt;chr&gt;     &lt;chr&gt;        &lt;chr&gt;  &lt;chr&gt;    &lt;chr&gt;    &lt;chr&gt;       
 ##  1 4981  Acir Mar… Acir Gurgacz Mascu… http://… http://… acir@senado…
-##  2 846   Aloysio … Aloysio Nun… Mascu… http://… http://… aloysionune…
+##  2 5982  Alessand… Alessandro … Mascu… http://… http://… sen.alessan…
 ##  3 945   Alvaro F… Alvaro Dias  Mascu… http://… http://… alvarodias@…
-##  4 4988  Ana Amel… Ana Amelia   Femin… http://… http://… ana.amelia@…
+##  4 5967  Angelo M… Angelo Coro… Mascu… http://… http://… sen.angeloc…
 ##  5 5529  Antonio … Antonio Ana… Mascu… http://… http://… antonio.ana…
-##  6 3     Antonio … Antonio Car… Mascu… http://… http://… antoniocarl…
-##  7 715   Armando … Armando Mon… Mascu… http://… http://… armando.mon…
-##  8 5164  Ataides … Ataides Oli… Mascu… http://… http://… ataides.oli…
-##  9 391   Aecio Ne… Aecio Neves  Mascu… http://… http://… aecio.neves…
-## 10 3823  Benedito… Benedito de… Mascu… http://… http://… benedito.li…
+##  6 751   Arolde d… Arolde de O… Mascu… http://… http://… sen.arolded…
+##  7 5990  Carlos A… Carlos Viana Mascu… http://… http://… sen.carlosv…
+##  8 470   Francisc… Chico Rodri… Mascu… http://… http://… sen.chicoro…
+##  9 5973  Cid Ferr… Cid Gomes    Mascu… http://… http://… sen.cidgome…
+## 10 739   Ciro Nog… Ciro Noguei… Mascu… http://… http://… ciro.noguei…
 ## # … with 71 more rows, and 10 more variables: party_abbr &lt;chr&gt;,
 ## #   id_mandate &lt;chr&gt;, state &lt;chr&gt;, status &lt;chr&gt;,
 ## #   num_legislature_first_term &lt;chr&gt;, first_term_start &lt;dttm&gt;,
 ## #   first_term_end &lt;dttm&gt;, num_legislature_second_term &lt;chr&gt;,
 ## #   second_term_start &lt;dttm&gt;, second_term_end &lt;dttm&gt;</code></pre>
-<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb9-1" data-line-number="1"><span class="kw"><a href="../reference/sen_senator_details.html">sen_senator_details</a></span>(<span class="dt">id =</span> <span class="st">"3398"</span>) <span class="co"># Cristovam Buarque</span></a></code></pre></div>
-<pre><code>## # A tibble: 1 x 16
-##   senator_id senator_name senator_party_n… senator_party_a…
-##   &lt;chr&gt;      &lt;chr&gt;        &lt;chr&gt;            &lt;chr&gt;           
-## 1 3398       Cristovam B… Partido Popular… PPS             
-## # … with 12 more variables: senator_party_date_joined &lt;dttm&gt;,
-## #   senator_state &lt;chr&gt;, senator_status &lt;chr&gt;, senator_gender &lt;chr&gt;,
-## #   senator_date_of_birth &lt;dttm&gt;, senator_state_of_birth &lt;chr&gt;,
-## #   senator_title &lt;chr&gt;, senator_mandates_first_legis &lt;chr&gt;,
-## #   senator_mandates_second_legis &lt;chr&gt;, senator_url &lt;chr&gt;,
-## #   senator_email &lt;chr&gt;, senator_office_address &lt;chr&gt;</code></pre>
-<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb11-1" data-line-number="1"><span class="kw"><a href="../reference/sen_senator_bills.html">sen_senator_bills</a></span>(<span class="dt">id =</span> <span class="st">"3398"</span>)</a></code></pre></div>
-<pre><code>## # A tibble: 25 x 9
-##    senator_id senator_name senator_party_n… senator_party_a… senator_state
-##    &lt;chr&gt;      &lt;chr&gt;        &lt;chr&gt;            &lt;chr&gt;            &lt;chr&gt;        
-##  1 3398       Cristovam B… Partido Popular… PPS              DF           
-##  2 3398       Cristovam B… Partido Popular… PPS              DF           
-##  3 3398       Cristovam B… Partido Popular… PPS              DF           
-##  4 3398       Cristovam B… Partido Popular… PPS              DF           
-##  5 3398       Cristovam B… Partido Popular… PPS              DF           
-##  6 3398       Cristovam B… Partido Popular… PPS              DF           
-##  7 3398       Cristovam B… Partido Popular… PPS              DF           
-##  8 3398       Cristovam B… Partido Popular… PPS              DF           
-##  9 3398       Cristovam B… Partido Popular… PPS              DF           
-## 10 3398       Cristovam B… Partido Popular… PPS              DF           
-## # … with 15 more rows, and 4 more variables: senator_bills_number &lt;chr&gt;,
-## #   senator_bills_type &lt;chr&gt;, senator_bills_year &lt;chr&gt;,
-## #   senator_bills_details &lt;chr&gt;</code></pre>
 </div>
 <div id="commissions-and-coalitions" class="section level2">
 <h2 class="hasAnchor">
 <a href="#commissions-and-coalitions" class="anchor"></a>Commissions and coalitions</h2>
-<p>There are certain legislative coalitions in the Senate, all of whom have unique id numbers in the API database. These numbers can be accessed with <code><a href="../reference/sen_coalitions.html">sen_coalitions()</a></code>. Further information on the coalition of interest can be had with <code><a href="../reference/sen_coalition_info.html">sen_coalition_info()</a></code>. For example, the <em>Bloco Moderador</em> (moderate bloc) has the id 200. We can obtain more detailed information on the coalition by using this id with the <code>code</code> option:</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb13-1" data-line-number="1"><span class="kw"><a href="../reference/sen_coalition_info.html">sen_coalition_info</a></span>(<span class="dt">code =</span> <span class="dv">200</span>)</a></code></pre></div>
-<pre><code>## # A tibble: 5 x 11
-##   bloc_code house bloc_name bloc_label date_created        coalition_id
-##   &lt;chr&gt;     &lt;chr&gt; &lt;chr&gt;     &lt;chr&gt;      &lt;dttm&gt;              &lt;chr&gt;       
-## 1 200       Bloco Bloco Mo… Bloco PTB… 2015-02-01 00:00:00 497         
-## 2 200       Bloco Bloco Mo… Bloco PTB… 2015-02-01 00:00:00 389         
-## 3 200       Bloco Bloco Mo… Bloco PTB… 2015-02-01 00:00:00 390         
-## 4 200       Bloco Bloco Mo… Bloco PTB… 2015-02-01 00:00:00 391         
-## 5 200       Bloco Bloco Mo… Bloco PTB… 2015-02-01 00:00:00 392         
-## # … with 5 more variables: member_code &lt;chr&gt;, member_data_joined &lt;dttm&gt;,
-## #   member_abbr &lt;chr&gt;, member_name &lt;chr&gt;, member_date_created &lt;dttm&gt;</code></pre>
+<p>There are certain legislative coalitions in the Senate, all of whom have unique id numbers in the API database. These numbers can be accessed with <code><a href="../reference/sen_coalitions.html">sen_coalitions()</a></code>.</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb9-1" data-line-number="1"><span class="kw"><a href="../reference/sen_coalitions.html">sen_coalitions</a></span>()</a></code></pre></div>
+<pre><code>## # A tibble: 6 x 4
+##   bloc_code bloc_name                  bloc_label       date_created       
+##   &lt;chr&gt;     &lt;chr&gt;                      &lt;chr&gt;            &lt;dttm&gt;             
+## 1 278       Bloco Parlamentar PSDB/PO… Bloco PSDB/PODE… 2019-02-12 00:00:00
+## 2 272       Bloco Parlamentar Senado … Bloco REDE/PDT/… 2019-02-06 00:00:00
+## 3 277       Bloco Parlamentar Unidos … Bloco MDB/PRB    2019-02-11 00:00:00
+## 4 274       Bloco Parlamentar Vanguar… Bloco DEM/PR/PSC 2019-02-06 00:00:00
+## 5 273       Bloco Parlamentar da Resi… Bloco PT/PROS    2019-02-06 00:00:00
+## 6 281       Minoria                    Minoria          2019-02-13 00:00:00</code></pre>
 <p>A data frame of commissions (full name and abbreviation) can be obtained with <code><a href="https://www.rdocumentation.org/packages/utils/topics/data">data("commissions")</a></code>. The <code><a href="../reference/sen_commissions.html">sen_commissions()</a></code> function returns a detailed dataframe of commissions, their ids, type, house and purpose. Commissions can be explored by <code>type</code> variable returned from this function. For example, the “cpi” type (<em>Comissão de Inquérito Parlamentar</em>, Parliamentary Inquiry Commission) can be used in the <code><a href="../reference/sen_commissions_type.html">sen_commissions_type()</a></code> function, which will return a data frame of commissions of the type specified.</p>
 <p>Using the commission abbreviations, we can see which senators serve on the commission. One well-known commission is the Commission for the Constitution, Justice and Citizenship (<em>Constituicao, Justica e Cidadania</em>). Its abbreviation is “CCJ”:</p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb15-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/utils/topics/data">data</a></span>(<span class="st">"commissions"</span>)</a>
-<a class="sourceLine" id="cb15-2" data-line-number="2"><span class="kw"><a href="../reference/sen_commissions_senators.html">sen_commissions_senators</a></span>(<span class="dt">code =</span> <span class="st">"CCJ"</span>)</a></code></pre></div>
-<pre><code>## # A tibble: 2 x 6
-##   commission commission_abbr senator_id senator_name senator_party
-##   &lt;chr&gt;      &lt;chr&gt;           &lt;chr&gt;      &lt;chr&gt;        &lt;chr&gt;        
-## 1 Comissao … CCJ             5529       Antonio Ana… PSDB         
-## 2 Comissao … CCJ             5527       Simone Tebet MDB          
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb11-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/utils/topics/data">data</a></span>(<span class="st">"commissions"</span>)</a>
+<a class="sourceLine" id="cb11-2" data-line-number="2"><span class="kw"><a href="../reference/sen_commissions_senators.html">sen_commissions_senators</a></span>(<span class="dt">code =</span> <span class="st">"CCJ"</span>)</a></code></pre></div>
+<pre><code>## # A tibble: 17 x 6
+##    commission commission_abbr senator_id senator_name senator_party
+##    &lt;chr&gt;      &lt;chr&gt;           &lt;chr&gt;      &lt;chr&gt;        &lt;chr&gt;        
+##  1 Comissao … CCJ             4994       Eduardo Bra… MDB          
+##  2 Comissao … CCJ             3361       Jose Maranh… MDB          
+##  3 Comissao … CCJ             1173       Wellington … PR           
+##  4 Comissao … CCJ             5529       Antonio Ana… PSDB         
+##  5 Comissao … CCJ             677        Roberto Roc… PSDB         
+##  6 Comissao … CCJ             5008       Humberto Co… PT           
+##  7 Comissao … CCJ             90         Jose Serra   PSDB         
+##  8 Comissao … CCJ             5012       Randolfe Ro… REDE         
+##  9 Comissao … CCJ             5929       Selma Arruda PSL          
+## 10 Comissao … CCJ             5533       Lasier Mart… PODE         
+## 11 Comissao … CCJ             2331       Rose de Fre… PODE         
+## 12 Comissao … CCJ             1023       Maria do Ca… DEM          
+## 13 Comissao … CCJ             739        Ciro Noguei… PP           
+## 14 Comissao … CCJ             742        Marcelo Cas… MDB          
+## 15 Comissao … CCJ             5527       Simone Tebet MDB          
+## 16 Comissao … CCJ             581        Jaques Wagn… PT           
+## 17 Comissao … CCJ             4560       Sergio Pete… PSD          
 ## # … with 1 more variable: senator_state &lt;chr&gt;</code></pre>
 </div>
 <div id="general-information" class="section level2">
@@ -221,7 +207,7 @@
 <h3 class="hasAnchor">
 <a href="#parties" class="anchor"></a>Parties</h3>
 <p>A list of the parties who have held seats in the Senate can be had with <code><a href="../reference/sen_parties.html">sen_parties()</a></code>:</p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb17-1" data-line-number="1"><span class="kw"><a href="../reference/sen_parties.html">sen_parties</a></span>()</a></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb13-1" data-line-number="1"><span class="kw"><a href="../reference/sen_parties.html">sen_parties</a></span>()</a></code></pre></div>
 <pre><code>## # A tibble: 49 x 4
 ##    party_id party_abbr party_name                       date_created
 ##    &lt;chr&gt;    &lt;chr&gt;      &lt;chr&gt;                            &lt;chr&gt;       
@@ -241,7 +227,7 @@
 <h3 class="hasAnchor">
 <a href="#states" class="anchor"></a>States</h3>
 <p>For some functions, there are options to narrow the search by focusing on certain states. If you are not familiar with all of the Brazilian states or with their commonly-used abbreviations, use the <code><a href="../reference/UF.html">UF()</a></code> function to print out a list of these abbreviations. For the full names of the states and their abbreviations, use <code><a href="https://www.rdocumentation.org/packages/utils/topics/data">data("statesBR")</a></code>.</p>
-<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb19-1" data-line-number="1"><span class="kw"><a href="../reference/UF.html">UF</a></span>()</a></code></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb15-1" data-line-number="1"><span class="kw"><a href="../reference/UF.html">UF</a></span>()</a></code></pre></div>
 <pre><code>##  [1] "AC" "AL" "AP" "AM" "BA" "CE" "DF" "ES" "GO" "MA" "MT" "MS" "MG" "PA"
 ## [15] "PB" "PR" "PE" "PI" "RJ" "RN" "RS" "RO" "RR" "SC" "SP" "SE" "TO"</code></pre>
 </div>
@@ -250,7 +236,7 @@
 <a href="#bill-types" class="anchor"></a>Bill types</h3>
 <p>The Senate API can be queried by the type of bill. If you are not familiar with the types of bills that come to the Senate floor, use <code><a href="../reference/sen_bills_types.html">sen_bills_types()</a></code>. Other similar functions, useful for getting to know the Senate, are <code><a href="../reference/sen_plenary_sessions.html">sen_plenary_sessions()</a></code>, which returns data on the types of sessions held in the Senate, <code><a href="../reference/sen_bills_topics.html">sen_bills_topics()</a></code>, which returns a data frame with the topic labels for different subject categories.</p>
 <p>The bill types can be used for other queries, such as for seeing what bills of a certain type are currently passing through the house. For example, we can see which MPVs (<em>medida provisória</em>; executive decree) were under consideration in the Senate in 2001:</p>
-<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb21-1" data-line-number="1"><span class="kw"><a href="../reference/sen_bills_passing.html">sen_bills_passing</a></span>(<span class="dt">year =</span> <span class="st">"2001"</span>, <span class="dt">type =</span> <span class="st">"MPV"</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb17-1" data-line-number="1"><span class="kw"><a href="../reference/sen_bills_passing.html">sen_bills_passing</a></span>(<span class="dt">year =</span> <span class="st">"2001"</span>, <span class="dt">type =</span> <span class="st">"MPV"</span>)</a></code></pre></div>
 <pre><code>## # A tibble: 49 x 4
 ##    bill_id bill_number bill_year bill_type
 ##    &lt;chr&gt;   &lt;chr&gt;       &lt;chr&gt;     &lt;chr&gt;    
@@ -267,7 +253,7 @@
 ## # … with 39 more rows</code></pre>
 <p>This function can also be used to get information for a single date.</p>
 <p><code>congressbr</code> also has functions for accessing budget information (<code><a href="../reference/sen_budget.html">sen_budget()</a></code>), and the agenda in the Senate for a particular date, or range of dates:</p>
-<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb23-1" data-line-number="1"><span class="kw"><a href="../reference/sen_agenda.html">sen_agenda</a></span>(<span class="dt">initial_date =</span> <span class="st">"20161105"</span>, <span class="dt">end_date =</span> <span class="st">"20161125"</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb19-1" data-line-number="1"><span class="kw"><a href="../reference/sen_agenda.html">sen_agenda</a></span>(<span class="dt">initial_date =</span> <span class="st">"20161105"</span>, <span class="dt">end_date =</span> <span class="st">"20161125"</span>)</a></code></pre></div>
 <pre><code>## # A tibble: 87 x 12
 ##    agenda_id agenda_title agenda_name agenda_type agenda_date        
 ##    &lt;chr&gt;     &lt;chr&gt;        &lt;chr&gt;       &lt;chr&gt;       &lt;dttm&gt;             
@@ -290,41 +276,32 @@
 <h3 class="hasAnchor">
 <a href="#examples" class="anchor"></a>Examples</h3>
 <p><code>congressbr</code> can be used for various types of analyses. As a quick example, let’s explore the distribution of men and women currently sitting in the house. (This example makes use of the ggplot2 package.)</p>
-<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb25-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(ggplot2)</a>
-<a class="sourceLine" id="cb25-2" data-line-number="2">all_sens &lt;-<span class="st"> </span><span class="kw"><a href="../reference/sen_senator_list.html">sen_senator_list</a></span>()</a>
-<a class="sourceLine" id="cb25-3" data-line-number="3"></a>
-<a class="sourceLine" id="cb25-4" data-line-number="4"><span class="kw"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(all_sens, <span class="kw"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(<span class="dt">x =</span> gender)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb25-5" data-line-number="5"><span class="st">  </span><span class="kw"><a href="https://ggplot2.tidyverse.org/reference/geom_bar.html">geom_bar</a></span>(<span class="kw"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(<span class="dt">fill =</span> gender), <span class="dt">colour =</span> <span class="st">"white"</span>) <span class="op">+</span></a>
-<a class="sourceLine" id="cb25-6" data-line-number="6"><span class="st">  </span><span class="kw"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme_classic</a></span>() <span class="op">+</span></a>
-<a class="sourceLine" id="cb25-7" data-line-number="7"><span class="st">  </span><span class="kw"><a href="https://ggplot2.tidyverse.org/reference/scale_manual.html">scale_fill_manual</a></span>(<span class="dt">values =</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/c">c</a></span>(<span class="st">"#45C74A"</span>, <span class="st">"#FFFF00"</span>))</a></code></pre></div>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb21-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(ggplot2)</a>
+<a class="sourceLine" id="cb21-2" data-line-number="2">all_sens &lt;-<span class="st"> </span><span class="kw"><a href="../reference/sen_senator_list.html">sen_senator_list</a></span>()</a>
+<a class="sourceLine" id="cb21-3" data-line-number="3"></a>
+<a class="sourceLine" id="cb21-4" data-line-number="4"><span class="kw"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(all_sens, <span class="kw"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(<span class="dt">x =</span> gender)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb21-5" data-line-number="5"><span class="st">  </span><span class="kw"><a href="https://ggplot2.tidyverse.org/reference/geom_bar.html">geom_bar</a></span>(<span class="kw"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(<span class="dt">fill =</span> gender), <span class="dt">colour =</span> <span class="st">"white"</span>) <span class="op">+</span></a>
+<a class="sourceLine" id="cb21-6" data-line-number="6"><span class="st">  </span><span class="kw"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme_classic</a></span>() <span class="op">+</span></a>
+<a class="sourceLine" id="cb21-7" data-line-number="7"><span class="st">  </span><span class="kw"><a href="https://ggplot2.tidyverse.org/reference/scale_manual.html">scale_fill_manual</a></span>(<span class="dt">values =</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/c">c</a></span>(<span class="st">"#45C74A"</span>, <span class="st">"#FFFF00"</span>))</a></code></pre></div>
 <p><img src="http://i.imgur.com/wlFuQQD.png"></p>
 <p>Looking at the distribution of Titular senators and deputies (<em>suplentes</em>) is also straightforward:</p>
-<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb26-1" data-line-number="1">  <span class="kw"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme_classic</a></span>() <span class="op">+</span></a>
-<a class="sourceLine" id="cb26-2" data-line-number="2"><span class="st">  </span><span class="kw"><a href="https://ggplot2.tidyverse.org/reference/scale_manual.html">scale_fill_manual</a></span>(<span class="dt">values =</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/c">c</a></span>(<span class="st">"#45C74A"</span>, <span class="st">"navy"</span>)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb26-3" data-line-number="3"><span class="st">  </span><span class="kw"><a href="https://ggplot2.tidyverse.org/reference/theme.html">theme</a></span>(<span class="dt">legend.position =</span> <span class="st">"none"</span>) <span class="op">+</span></a>
-<a class="sourceLine" id="cb26-4" data-line-number="4"><span class="st">  </span><span class="kw"><a href="https://ggplot2.tidyverse.org/reference/coord_flip.html">coord_flip</a></span>() </a></code></pre></div>
+<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb22-1" data-line-number="1">  <span class="kw"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme_classic</a></span>() <span class="op">+</span></a>
+<a class="sourceLine" id="cb22-2" data-line-number="2"><span class="st">  </span><span class="kw"><a href="https://ggplot2.tidyverse.org/reference/scale_manual.html">scale_fill_manual</a></span>(<span class="dt">values =</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/c">c</a></span>(<span class="st">"#45C74A"</span>, <span class="st">"navy"</span>)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb22-3" data-line-number="3"><span class="st">  </span><span class="kw"><a href="https://ggplot2.tidyverse.org/reference/theme.html">theme</a></span>(<span class="dt">legend.position =</span> <span class="st">"none"</span>) <span class="op">+</span></a>
+<a class="sourceLine" id="cb22-4" data-line-number="4"><span class="st">  </span><span class="kw"><a href="https://ggplot2.tidyverse.org/reference/coord_flip.html">coord_flip</a></span>() </a></code></pre></div>
 <p><img src="http://i.imgur.com/62kCGCz.png"></p>
 <p>Which states have the most <em>suplentes</em>?</p>
-<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb27-1" data-line-number="1"><span class="cf">if</span>(<span class="op">!</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">require</a></span>(dplyr)){<span class="kw"><a href="https://www.rdocumentation.org/packages/utils/topics/install.packages">install.packages</a></span>(<span class="st">"dplyr"</span>, <span class="dt">repos =</span> <span class="st">"http://cran.us.r-project.org"</span>)}</a>
-<a class="sourceLine" id="cb27-2" data-line-number="2"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(dplyr)</a>
-<a class="sourceLine" id="cb27-3" data-line-number="3"></a>
-<a class="sourceLine" id="cb27-4" data-line-number="4">all_sens <span class="op">%&gt;%</span><span class="st"> </span><span class="kw"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span>(status <span class="op">!=</span><span class="st"> "Titular"</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw"><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span>(state) <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb27-5" data-line-number="5"><span class="st">  </span><span class="kw"><a href="https://dplyr.tidyverse.org/reference/summarise.html">summarise</a></span>(<span class="dt">totals =</span> <span class="kw"><a href="https://dplyr.tidyverse.org/reference/n.html">n</a></span>()) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw"><a href="https://dplyr.tidyverse.org/reference/arrange.html">arrange</a></span>(<span class="kw"><a href="https://dplyr.tidyverse.org/reference/desc.html">desc</a></span>(totals))</a></code></pre></div>
-<pre><code>## # A tibble: 12 x 2
-##    state totals
-##    &lt;chr&gt;  &lt;int&gt;
-##  1 GO         2
-##  2 TO         2
-##  3 AC         1
-##  4 DF         1
-##  5 MG         1
-##  6 MS         1
-##  7 MT         1
-##  8 PB         1
-##  9 PI         1
-## 10 RJ         1
-## 11 RN         1
-## 12 SC         1</code></pre>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb23-1" data-line-number="1"><span class="cf">if</span>(<span class="op">!</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">require</a></span>(dplyr)){<span class="kw"><a href="https://www.rdocumentation.org/packages/utils/topics/install.packages">install.packages</a></span>(<span class="st">"dplyr"</span>, <span class="dt">repos =</span> <span class="st">"http://cran.us.r-project.org"</span>)}</a>
+<a class="sourceLine" id="cb23-2" data-line-number="2"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(dplyr)</a>
+<a class="sourceLine" id="cb23-3" data-line-number="3"></a>
+<a class="sourceLine" id="cb23-4" data-line-number="4">all_sens <span class="op">%&gt;%</span><span class="st"> </span><span class="kw"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span>(status <span class="op">!=</span><span class="st"> "Titular"</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw"><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span>(state) <span class="op">%&gt;%</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb23-5" data-line-number="5"><span class="st">  </span><span class="kw"><a href="https://dplyr.tidyverse.org/reference/summarise.html">summarise</a></span>(<span class="dt">totals =</span> <span class="kw"><a href="https://dplyr.tidyverse.org/reference/n.html">n</a></span>()) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw"><a href="https://dplyr.tidyverse.org/reference/arrange.html">arrange</a></span>(<span class="kw"><a href="https://dplyr.tidyverse.org/reference/desc.html">desc</a></span>(totals))</a></code></pre></div>
+<pre><code>## # A tibble: 3 x 2
+##   state totals
+##   &lt;chr&gt;  &lt;int&gt;
+## 1 AC         1
+## 2 GO         1
+## 3 RN         1</code></pre>
 <p>Mato Grosso, it seems, with two-thirds of their senators being stand-in <em>suplentes</em>.</p>
 </div>
 </div>

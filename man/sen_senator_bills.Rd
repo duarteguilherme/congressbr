@@ -23,13 +23,10 @@ A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 Downloads and tidies information on bills that certain senators
 have sponsored/authored in the Federal Senate.
 }
-\examples{
-Ataides <- sen_senator_bills(id = 5164)
-
-}
 \seealso{
 \code{sen_senator_list()}
 }
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
+Ataides <- sen_senator_bills(id = 5164)
 }

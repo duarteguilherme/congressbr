@@ -23,13 +23,10 @@ A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 Downloads and tidies information on the commissions on which
 senators have served or are serving in the Federal Senate.
 }
-\examples{
-Armando <- sen_senator_commissions(id = 715)
-
-}
 \seealso{
 \code{sen_senator_list()}
 }
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
+Armando <- sen_senator_commissions(id = 715)
 }

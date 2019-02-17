@@ -31,9 +31,6 @@ with variables:
 \description{
 Downloads and tidies data on specific coalitions in the Federal Senate.
 }
-\examples{
-moderador <- sen_coalition_info(code = 200)
-}
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 }

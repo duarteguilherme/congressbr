@@ -111,6 +111,10 @@ which will give you:
 
 For convenience, we list here the functions of the package. More details
 are available [here](https://CRAN.R-project.org/package=congressbr).
+**Note**: The information returned by some of the functions below is no
+longer available from the API. Hopefully in a future release, we’ll be
+able to re-include these functions. (Functions are marked by
+strikethrough text.)
 
   - `cham_bills`: Downloads and tidies data for lists of bills in
     Brazilian Chamber of Deputies.
@@ -155,8 +159,8 @@ are available [here](https://CRAN.R-project.org/package=congressbr).
     Federal Senate.
   - `sen_coalitions`: Downloads and tidies data on the coalitions in the
     Federal Senate
-  - `sen_coalition_info`: Downloads and tidies data on *specific*
-    coalitions in the Federal Senate.
+  - ~~`sen_coalition_info`: Downloads and tidies data on *specific*
+    coalitions in the Federal Senate.~~
   - `sen_commissions`: Information on commissions in the Senate.
   - `sen_commissions_senators`: Information on the senators who serve on
     a certain commission in the Federal Senate.
@@ -176,11 +180,11 @@ are available [here](https://CRAN.R-project.org/package=congressbr).
     Senate.
   - `sen_senator`: Downloads and tidies personal information on
     senators. Includes absences and mandates.
-  - `sen_senator_bills`: Downloads and tidies information on bills that
-    certain senators have sponsored/authored in the Senate.
-  - `sen_senator_commissions`: Downloads and tidies information on the
+  - ~~`sen_senator_bills`: Downloads and tidies information on bills
+    that certain senators have sponsored/authored in the Senate.~~
+  - ~~`sen_senator_commissions`: Downloads and tidies information on the
     commissions on which senators have served or are serving in the
-    Federal Senate.
+    Federal Senate.~~
   - `sen_senator_details`: Downloads and tidies personal information on
     the senators.
   - `sen_senator_legis`: Downloads and tidies information on the
