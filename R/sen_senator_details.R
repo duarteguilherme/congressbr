@@ -19,7 +19,7 @@
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 #' @seealso \code{sen_senator_list()}
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
-#' @examples
+# @examples
 #' Acir_G <- sen_senator_details(id = 4981)
 #'
 # @export

@@ -46,7 +46,7 @@ sen_plenary_result(date = "20160303")
 ```
 
 ## Senator info  
-Information on individual senators can be had with `sen_senator_details()`. This function returns the senator's id, name, party and state, as well as information on his/her date of birth, place of birth, their mandates, and office information such as email and correspondence address. If the senator is a titular senator, information on his/her deputies (*suplentes*) is available with `sen_senator_suplentes()`. The senator's votes can be had with `sen_senator_votes()`, and their mandates with `sen_senator_mandates()`. Information on the commissions that the senator has served on is available with `sen_senator_commissions()`, and the bills that they sponsored or authored with `sen_senator_bills()`. For information on absences and party affiliations, use `sen_senator()`. All of these functions use the senator's id (with the `id` option). A data frame of all of these is available from the function `sen_senator_list()`: 
+Information on individual senators can be had with `sen_senator_details()`. This function returns the senator's id, name, party and state, as well as information on his/her date of birth, place of birth, their mandates, and office information such as email and correspondence address. If the senator is a titular senator, information on his/her deputies (*suplentes*) is available with `sen_senator_suplentes()`. The senator's votes can be had with `sen_senator_votes()`, and their mandates with `sen_senator_mandates()`. For information on absences and party affiliations, use `sen_senator()`. All of these functions use the senator's id (with the `id` option). A data frame of all of these is available from the function `sen_senator_list()`: 
 
 ```{r}
 sen_senator_list()
@@ -54,10 +54,6 @@ sen_senator_list()
 
 ## Commissions and coalitions 
 There are certain legislative coalitions in the Senate, all of whom have unique id numbers in the API database. These numbers can be accessed with `sen_coalitions()`.
-
-```{r message = FALSE, warning=FALSE}
-sen_coalitions()
-```
 
 A data frame of commissions (full name and abbreviation) can be obtained with `data("commissions")`. The `sen_commissions()` function returns a detailed dataframe of commissions, their ids, type, house and purpose. Commissions can be explored by `type` variable returned from this function. For example, the "cpi" type (*Comissão de Inquérito Parlamentar*, Parliamentary Inquiry Commission) can be used in the `sen_commissions_type()` function, which will return a data frame of commissions of the type specified. 
 

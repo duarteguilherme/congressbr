@@ -23,7 +23,7 @@ install.packages("congressbr")
 Development versions can be installed with the devtools package:
 
 ``` r
-devtools::install_github("BrazilianPublicData/congressbr")
+devtools::install_github("RobertMyles/congressbr")
 ```
 
 ### Function naming

@@ -23,13 +23,10 @@ A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 Downloads and tidies personal information on the senators in the
 Federal Senate.
 }
-\examples{
-Acir_G <- sen_senator_details(id = 4981)
-
-}
 \seealso{
 \code{sen_senator_list()}
 }
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
+Acir_G <- sen_senator_details(id = 4981)
 }

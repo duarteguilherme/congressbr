@@ -50,8 +50,6 @@ many columns.
 \examples{
 \donttest{
 sen_agenda(initial_date = "20161105", end_date = "20161125")
-sen_agenda(initial_date = "20161105", end_date = "20161125",
-legislator = 4988)
 }
 }
 \author{
