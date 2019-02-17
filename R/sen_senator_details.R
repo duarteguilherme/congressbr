@@ -22,7 +22,7 @@
 #' @examples
 #' Acir_G <- sen_senator_details(id = 4981)
 #'
-#' @export
+# @export
 sen_senator_details <- function(id = 0, ascii = TRUE){
 
   base_url <- "http://legis.senado.gov.br/dadosabertos/senador/" %p% id
@@ -118,10 +118,10 @@ sen_senator_details <- function(id = 0, ascii = TRUE){
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 #' @seealso \code{sen_senator_list()}
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
-#' @examples
+# @examples
 #' Ataides <- sen_senator_bills(id = 5164)
 #'
-#' @export
+# @export
 sen_senator_bills <- function(id = 0, ascii = TRUE){
 
   base_url <- "http://legis.senado.gov.br/dadosabertos/senador/" %p% id
@@ -199,10 +199,10 @@ sen_senator_bills <- function(id = 0, ascii = TRUE){
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 #' @seealso \code{sen_senator_list()}
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
-#' @examples
+# @examples
 #' Armando <- sen_senator_commissions(id = 715)
 #'
-#' @export
+# @export
 sen_senator_commissions <- function(id = 0, ascii = TRUE){
 
   base_url <- "http://legis.senado.gov.br/dadosabertos/senador/" %p% id

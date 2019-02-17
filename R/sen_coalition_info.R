@@ -29,9 +29,9 @@
 #'  \item{\code{member_date_created:: }}{\code{POSIXct}, date when the coalition was created.}
 #' }
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
-#' @examples
-#' moderador <- sen_coalition_info(code = 200)
-#' @export
+# @examples
+# moderador <- sen_coalition_info(code = 200)
+# @export
 sen_coalition_info <- function(code = NULL, ascii = TRUE){
 
   if(is.null(code)){

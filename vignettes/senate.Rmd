@@ -50,8 +50,6 @@ Information on individual senators can be had with `sen_senator_details()`. This
 
 ```{r}
 sen_senator_list()
-sen_senator_details(id = "3398") # Cristovam Buarque
-sen_senator_bills(id = "3398")
 ```
 
 ## Commissions and coalitions 
