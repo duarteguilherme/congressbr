@@ -15,7 +15,7 @@ NULL
 # response status check
 status <- function(x){
   if(x$status_code != 200){
-    stop("GET request failed. Please check the validity of the information you requested.")
+    stop("Request failed. Please check the validity of the information you requested.")
   } else{
     xx <- httr::content(x, as = "parsed")
 
@@ -99,5 +99,5 @@ if(getRversion() >= "2.15.1")  utils::globalVariables(
     "absence_description", "sen_bills_list", 'type', 'number', 'year',
     'initial_date', 'end_date', 'part_name_author', 'id_type_author',
     'abbreviation_party_author', 'abbreviation_st_author', 'legislator_vote',
-    "bill_details", "legislator_party"))
+    "bill_details", "legislator_party", "commission_position_description"))
 

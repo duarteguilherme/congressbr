@@ -5,7 +5,7 @@
 \title{Information on positions (jobs) that legislators may occupy
 in commissions in the Federal Senate}
 \usage{
-sen_commission_positions(active = c("Yes", "No"), ascii = TRUE)
+sen_commission_positions(active = c("Both", "Yes", "No"), ascii = TRUE)
 }
 \arguments{
 \item{active}{\code{character}. If "No", returns all positions, otherwise

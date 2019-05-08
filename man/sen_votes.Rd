@@ -36,7 +36,7 @@ set of votes for each legislature, see \code{data("senate_nominal_votes")}.
 }
 \examples{
 \dontrun{
-en_votes(date = "20130516")
+sen_votes(date = "20130516")
 
 # Some votes are secret:
 ssshhh <- sen_votes("20160301", binary = FALSE)

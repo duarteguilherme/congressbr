@@ -1,3 +1,7 @@
+## Version 0.2.1
+
+- Small fixes to sen_commission_positions()
+
 ## Version 0.2.0
 
 - Removed functions which had been taken out of the API without notice.

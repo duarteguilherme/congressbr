@@ -1,3 +1,7 @@
+# congressbr 0.2.1
+
+- Small fixes to sen_commission_positions().
+
 # congressbr 0.2.0
 
 - Some functions have been removed from the package as they are presently unable from the API.

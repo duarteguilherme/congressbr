@@ -3,6 +3,7 @@
 #' @importFrom magrittr '%>%'
 #' @importFrom stringi stri_trans_general
 #' @importFrom dplyr mutate
+#' @importFrom dplyr filter
 #' @importFrom purrr map
 #' @importFrom purrr map_chr
 #' @importFrom purrr flatten
@@ -27,16 +28,11 @@
 #' @examples
 #' jobs <- sen_commission_positions(active = "No")
 #' @export
-sen_commission_positions <- function(active = c("Yes", "No"),
+sen_commission_positions <- function(active = c("Both", "Yes", "No"),
                                      ascii = TRUE){
 
-
   act <- match.arg(active)
-  if(act == "No") {
-    url <- "http://legis.senado.gov.br/dadosabertos/comissao/lista/tiposCargo?indAtivos=N"
-  } else{
-    url <- "http://legis.senado.gov.br/dadosabertos/comissao/lista/tiposCargo"
-  }
+  url <- "http://legis.senado.gov.br/dadosabertos/comissao/lista/tiposCargo"
 
   req <- httr::GET(url)
   req <- status(req)
@@ -44,24 +40,24 @@ sen_commission_positions <- function(active = c("Yes", "No"),
   N <- NA_character_
 
   jobs <- purrr::map_df(req, tibble::as_tibble) %>%
-    stats::setNames(c('comm_position_id', 'comm_position', 'comm_position_active'))
+    stats::setNames(c('commission_id', 'commission_position_description', 'active'))
+
 
   if(isTRUE(ascii)){
     jobs <- jobs %>%
-      dplyr::mutate(comm_position_active = ifelse(
-        comm_position_active == "S", "Yes", "No"
-      ),
-      comm_position = stringi::stri_trans_general(
-        comm_position, "Latin-ASCII"
+      dplyr::mutate(active = ifelse(active == "S", "Yes", "No"),
+      commission_position_description = stringi::stri_trans_general(
+        commission_position_description, "Latin-ASCII"
       ))
-    return(jobs)
   } else{
     jobs <- jobs %>%
-      dplyr::mutate(comm_position_active = ifelse(
-        comm_position_active == "S", "Yes", "No"
-      ))
-    return(jobs)
+      dplyr::mutate(active = ifelse(active == "S", "Yes", "No"))
   }
+
+  if(act == "No") jobs <- dplyr::filter(jobs, active == "No")
+  if(act == "Yes") jobs <- dplyr::filter(jobs, active == "Yes")
+
+  return(jobs)
 }
 
 
