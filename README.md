@@ -28,8 +28,7 @@ devtools::install_github("RobertMyles/congressbr")
 
 ### Function naming
 
-We follow [googlesheets](https://github.com/jennybc/googlesheets) in
-using a naming convention for functions that facilitates tab completion.
+We use a naming convention for functions that facilitates tab completion.
 All Senate-related functions start with `sen_` and all Chamber-related
 ones start with `cham_`.
 
