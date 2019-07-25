@@ -87,7 +87,7 @@ sen_votes <- function(date = NULL, end_date = NULL,
   bill_id = purrr::map_chr(request, .null = N, "CodigoMateria")
   vote_round = purrr::map_chr(request, .null = N, "SequencialSessao")
 
-  for(k in 1:length(request)){
+  for(k in 1:length(votes)){
     for(j in 1:length(votes[[k]])){
       votes[[k]][[j]]$bill_id = bill_id[[k]]
       votes[[k]][[j]]$vote_round = vote_round[[k]]
