@@ -66,7 +66,6 @@ sen_votes <- function(date = NULL, end_date = NULL,
       date
   }
 
-
   request <- httr::GET(base_url)
   request <- status(request)
   if(purrr::is_empty(request$ListaVotacoes$Votacoes)){
@@ -84,13 +83,16 @@ sen_votes <- function(date = NULL, end_date = NULL,
     votes <- votes %>%  purrr::flatten()
   }
 
-  bill_id = purrr::map_chr(request, .null = N, "CodigoMateria")
-  vote_round = purrr::map_chr(request, .null = N, "SequencialSessao")
+  bill_id <- purrr::map_chr(request, .null = N, "CodigoMateria")
+  vote_round <- purrr::map_chr(request, .null = N, "SequencialSessao")
+  rollcall_id <- purrr::map_chr(request, .null = N, "CodigoSessaoVotacao")
 
   for(k in 1:length(votes)){
     for(j in 1:length(votes[[k]])){
       votes[[k]][[j]]$bill_id = bill_id[[k]]
       votes[[k]][[j]]$vote_round = vote_round[[k]]
+      votes[[k]][[j]]$rollcall_id = rollcall_id[[k]]
+
     }
   }
 
@@ -113,6 +115,7 @@ sen_votes <- function(date = NULL, end_date = NULL,
   vote <- tibble::tibble(
     bill_id = purrr::map_chr(votes, .null = N, "bill_id"),
     vote_round = purrr::map_chr(votes, .null = N, "vote_round"),
+    rollcall_id = purrr::map_chr(votes, .null = N, "rollcall_id"),
     senator_id = purrr::map_chr(votes, .null = N, "CodigoParlamentar"),
     senator_name = purrr::map_chr(votes, .null = N, "NomeParlamentar"),
     senator_vote = purrr::map_chr(votes, .null = N, "Voto"),
@@ -175,10 +178,6 @@ sen_votes <- function(date = NULL, end_date = NULL,
 
   return(Votes)
 }
-
-
-
-
 
 #' @importFrom httr GET
 #' @importFrom httr content
