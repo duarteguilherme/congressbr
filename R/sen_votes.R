@@ -197,7 +197,7 @@ sen_votes <- function(date = NULL, end_date = NULL,
 #' @importFrom stringi stri_trans_general
 #' @importFrom lubridate parse_date_time
 #' @title Returns voting information from the Senate floor for the year
-#' requested
+#' requested using  standard method
 #' @description Returns voting information from the Senate floor for the year
 #' requested.
 #' @param year \code{character} or \code{integer}. Format YYYY
@@ -214,7 +214,59 @@ sen_votes <- function(date = NULL, end_date = NULL,
 #' }
 #'
 #' @export
-sen_votes_year <- function(year = NULL,
+sen_votes_year <- function(year, ascii = T, binary = T) {
+  data1 <- safe_sen_votes(date = glue("{year}0101"), end_date = glue("{year}0225"), ascii = T, binary = T)
+  data2 <- safe_sen_votes(date = glue("{year}0225"), end_date = glue("{year}0315"), ascii = T, binary = T)
+  data3 <- safe_sen_votes(date = glue("{year}0316"), end_date = glue("{year}0425"), ascii = T, binary = T)
+  data4 <- safe_sen_votes(date = glue("{year}0426"), end_date = glue("{year}0621"), ascii = T, binary = T)
+  data5 <- safe_sen_votes(date = glue("{year}0622"), end_date = glue("{year}0814"), ascii = T, binary = T)
+  data6 <- safe_sen_votes(date = glue("{year}0815"), end_date = glue("{year}1010"), ascii = T, binary = T)
+  data7 <- safe_sen_votes(date = glue("{year}1010"), end_date = glue("{year}1204"), ascii = T, binary = T) 
+  data8 <- safe_sen_votes(date = glue("{year}1204"), end_date = glue("{year}1231"), ascii = T, binary = T)
+  data <- list(data1, data2, data3, data4 , data5, data6, data7) %>%
+      discard(is.null)  %>%
+      map(~ mutate(.x, senator_vote = as.character(senator_vote))) %>% 
+      bind_rows()
+  data
+}       
+
+
+#' @importFrom httr GET
+#' @importFrom httr content
+#' @importFrom xml2 read_xml
+#' @importFrom xml2 xml_find_all
+#' @importFrom xml2 xml_attr
+#' @importFrom dplyr full_join
+#' @importFrom dplyr mutate
+#' @importFrom dplyr bind_rows
+#' @importFrom progress progress_bar
+#' @importFrom tibble tibble
+#' @importFrom glue glue
+#' @importFrom purrr map
+#' @importFrom purrr flatten
+#' @importFrom purrr map_chr
+#' @importFrom purrr is_empty
+#' @importFrom stringi stri_trans_general
+#' @importFrom lubridate parse_date_time
+#' @title Returns voting information from the Senate floor for the year
+#' requested using xml file method
+#' @description Returns voting information from the Senate floor for the year
+#' requested (Only available from 1991 through 2017).
+#' @param year \code{character} or \code{integer}. Format YYYY
+#' @param binary \code{logical}. If \code{TRUE}, the default, transforms
+#' votes into \code{1} for "yes", \code{0}, for "no" and \code{NA} for everything
+#' else. If \code{FALSE}, returns a character vector of vote decisions.
+#' @param ascii \code{logical}. If \code{TRUE}, the default, strips Latin
+#' characters from the results.
+#' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
+#' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
+#' @examples
+#' \donttest{
+#' sen_votes_year_file("2013")
+#' }
+#'
+#' @export
+sen_votes_year_file <- function(year = NULL,
                       binary = TRUE, ascii = TRUE){
 
   if(is.null(year) || nchar(year) < 4 ){
@@ -327,3 +379,16 @@ extract_votes <- function(x) {
   )
   vote
 }
+
+
+safe_sen_votes <- function(date, end_date, ascii = T, binary = T) {                                                                                                                                                 
+    tryCatch(sen_votes(date, end_date, ascii, binary),                                                                                                                                                              
+             error = function(e) {                                                                                                                                                                                  
+                 if(grepl("No data match your request", e)) {                                                                                                                                                       
+                     NULL                                                                                                          
+                 } else {                                                                                                                                                                                           
+                     stop(e)                                                                                                                                                                                        
+                 }                                                                                                                                                                                                  
+             })                                                                                                                                                                                                     
+}                                                                                                                                                                                                                   
+                                                                                                                                                                                                                    
