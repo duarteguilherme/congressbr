@@ -69,6 +69,114 @@ cham_votes <- function(type, number, year, ascii = TRUE) {
   return(data)
 }
 
+#' @importFrom glue glue
+#' @importFrom purrr map_df
+#' @importFrom dplyr distinct
+#' @importFrom dplyr mutate
+#' @importFrom dplyr filter
+#' @importFrom dplyr bind_rows
+#' @importFrom dplyr select
+#' @importFrom stringr str_trim
+#' @importFrom lubridate dmy
+#' @importFrom lubridate year
+#' @title Returns voting information from the Chamber floor for the year
+#' requested 
+#' @description Returns voting information from the Chamber floor for the year
+#' requested.
+#' @param year \code{character} or \code{integer}. Format YYYY
+#' @param binary \code{logical}. If \code{TRUE}, the default, transforms
+#' votes into \code{1} for "yes", \code{0}, for "no" and \code{NA} for everything
+#' else. If \code{FALSE}, returns a character vector of vote decisions and
+#' bloc orientations
+#' @param ascii \code{logical}. If \code{TRUE}, the default, strips Latin
+#' characters from the results.
+#' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
+#' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
+#' @examples
+#' \donttest{
+#' cham_votes_year("2013")
+#' }
+#'
+#' @export
+cham_votes_year <- function(year) {
+  print(glue("Downloading data for {year}. This operation might take a few minutes..."))
+  
+  # Call cham_plenary_bills to download a list of issues voted in a certain year
+  dados <- cham_plenary_bills(year)
+  
+  # Obtaining common description for each bill_id
+  # Through cham_bill_info_id(bill_id)
+  bills <- dados %>%
+      distinct(bill_id)
+  bills <- bills$bill_id
+    
+  print("Checking bills...")
+  data_tny <- map_df(bills,
+                     cham_bill_info_id) %>%
+    distinct(bill_type, bill_number, bill_year)
+ 
+  print("Downloading votes...") 
+  
+  # Now we will iterate for each bill and
+  # get data from votes
+  # We'll be using for loops in order to
+  # handle errors better
+  data_year <- NULL
+  for (i in 1:nrow(data_tny)) {
+    bill_type <- str_trim(data_tny$bill_type[i])
+    bill_number <- data_tny$bill_number[i]
+    bill_year <- data_tny$bill_year[i]
+    extrato <- year_extract_votes(bill_type,bill_number ,bill_year)
+    data_year <- bind_rows(data_year, extrato)
+  }
+  
+  # Filtering only those decision taken that year
+  # extract_votes return all the decisions regarding 
+  # one project
+  # It's pretty common that one bill returns more than
+  # one calls taken in different dates and years
+  data_year <- data_year %>%
+    mutate(ano=lubridate::year(lubridate::dmy(decision_date))) %>%
+    filter(ano==year)
+  
+  data_year
+}
+
+
+year_extract_votes <- function(type, number, year) {
+  #' This function extracts votes for a certain bill
+  #' it takes bill s type, number and year
+  print(glue::glue("Downloading votes from {type}-{number}/{year}"))
+  
+  #  votes <- cham_votes(type, number, year)
+  # This handling error structure is necessary
+  # since there are some issues with the API
+  votes <- tryCatch(cham_votes(type, number, year), 
+                    error= function(e) { 
+                        mes <- e$message
+                            if ( str_detect(mes, "This is not a main bill. Download is not possible")) {
+                              print(mes)
+                              return(NULL)
+                            }
+                            else if ( mes == "HTTP error 500") {
+                              print(glue(
+                                "Download is not possible. This problem usually happens with not included 'requerimentos'")
+                                )
+                              return(NULL)
+                            }
+                            else {
+                              stop("nao funcionou")
+                            }
+                    }
+  )
+
+  if ( is.null(votes) ) return(NULL)
+  #   Removing other types of orientation
+  orientation_removed <- colnames(votes)[grep("orient_", colnames(votes))]
+  orientation_removed <- orientation_removed[(orientation_removed!="orient_GOV")]
+  votes <- votes %>% dplyr::select(-dplyr::one_of(orientation_removed))
+  return(votes)
+}
 
 # create an id for each rollcall
 
@@ -129,4 +237,3 @@ cham_extract_votes <- function(votes) {
       dplyr::mutate(legislator_vote = ifelse(legislator_vote == "-", NA, legislator_vote))
     return(DF)
 }
-
