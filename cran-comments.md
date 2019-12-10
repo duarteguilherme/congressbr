@@ -1,3 +1,13 @@
+## Version 0.2.2
+
+- Bugfix to sen_statement_list()
+- Bugfix to sen_agenda()
+- Missing global vars added 
+── R CMD check results ──────────────────────────────────────────────── congressbr 0.2.2 ────
+Duration: 2m 21s
+
+0 errors ✔ | 0 warnings ✔ | 0 notes ✔
+
 ## Version 0.2.1
 
 - Small fixes to sen_commission_positions()

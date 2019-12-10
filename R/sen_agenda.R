@@ -49,7 +49,7 @@ sen_agenda <- function(initial_date = NULL, end_date = NULL,
   }
 
 
-  base_url <- "http://legis.senado.gov.br/dadosabertos/agenda/" %p%
+  base_url <- "http://legis.senado.gov.br/dadosabertos/agendareuniao/" %p%
     initial_date
 
   if(is.null(end_date)){
@@ -74,7 +74,7 @@ sen_agenda <- function(initial_date = NULL, end_date = NULL,
       }
     }
   }else{
-    base_url <- "http://legis.senado.gov.br/dadosabertos/agenda/" %p%
+    base_url <- "http://legis.senado.gov.br/dadosabertos/agendareuniao/" %p%
       initial_date %p% "/" %p% end_date
 
     if(!isTRUE(details)){
@@ -101,7 +101,7 @@ sen_agenda <- function(initial_date = NULL, end_date = NULL,
 
   request <- httr::GET(base_url)
   request <- status(request)
-  request <- request$Reunioes$Reuniao
+  request <- request$AgendaReuniaoDetalhe$Reunioes$Reuniao
   N <- NA_character_
 
   if(!is.null(legislator)){

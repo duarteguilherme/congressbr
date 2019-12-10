@@ -27,45 +27,49 @@
 #' many columns.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
-#' \donttest{cham_votes(type = "PL", number = "1992", year = "2007")}
+#' \donttest{
+#' cham_votes(type = "PL", number = "1992", year = "2007")
+#' }
 #' @export
 cham_votes <- function(type, number, year, ascii = TRUE) {
-  if ( is.null(type) | is.null(number) | is.null(year) ) {
+  if (is.null(type) | is.null(number) | is.null(year)) {
     stop("Lacking arguments. type, number, and year are mandatory")
   }
   link <- "http://www.camara.leg.br/SitCamaraWS/Proposicoes.asmx/ObterVotacaoProposicao?tipo=" %p%
     type %p% "&numero=" %p% number %p% "&ano=" %p% year
 
-  data <- tryCatch({read_xml(link)},
-                   error=function(x) {
-                     y <- httr::GET(link)
-                     # Handling a specific error related to the API
-                     msg_erro <- "Esta proposicao eh acessoria e nao foi possivel baixar seu conteudo"
-                    if ( stringr::str_detect(rawToChar(y$content), msg_erro) ) {
-                      stop("This is not a main bill. Download is not possible")
-                    }
-                     else {
-                       stop("HTTP error 500")
-                     }
-                  }
+  data <- tryCatch(
+    {
+      read_xml(link)
+    },
+    error = function(x) {
+      y <- httr::GET(link)
+      # Handling a specific error related to the API
+      msg_erro <- "Esta proposicao eh acessoria e nao foi possivel baixar seu conteudo"
+      if (stringr::str_detect(rawToChar(y$content), msg_erro)) {
+        stop("This is not a main bill. Download is not possible")
+      }
+      else {
+        stop("HTTP error 500")
+      }
+    }
   )
   data <- data %>%
-        xml_find_all('.//Votacao') %>%
+    xml_find_all(".//Votacao") %>%
     map_df(cham_extract_bill_votes, .id = "rollcall_id") %>%
-    mutate(type_bill = type, number_bill = number, year_bill=year)
+    mutate(type_bill = type, number_bill = number, year_bill = year)
 
   data$rollcall_id <- data$type %p% "-" %p% data$number %p% "-" %p% data$year %p% "-" %p% data$rollcall_id
 
 
   data <- as_tibble(data)
 
-  if ( ascii==T ) {
+  if (ascii == T) {
     data <- data %>%
-      dplyr::mutate_if(is.character, function(x) stringi::stri_trans_general(x, "Latin-ASCII")
-      )
+      dplyr::mutate_if(is.character, function(x) stringi::stri_trans_general(x, "Latin-ASCII"))
   }
 
-  data <- mutate(data, legislator_party = str_trim(legislator_party) )
+  data <- mutate(data, legislator_party = str_trim(legislator_party))
   return(data)
 }
 
@@ -80,16 +84,10 @@ cham_votes <- function(type, number, year, ascii = TRUE) {
 #' @importFrom lubridate dmy
 #' @importFrom lubridate year
 #' @title Returns voting information from the Chamber floor for the year
-#' requested 
+#' requested
 #' @description Returns voting information from the Chamber floor for the year
 #' requested.
 #' @param year \code{character} or \code{integer}. Format YYYY
-#' @param binary \code{logical}. If \code{TRUE}, the default, transforms
-#' votes into \code{1} for "yes", \code{0}, for "no" and \code{NA} for everything
-#' else. If \code{FALSE}, returns a character vector of vote decisions and
-#' bloc orientations
-#' @param ascii \code{logical}. If \code{TRUE}, the default, strips Latin
-#' characters from the results.
 #' @return A tibble, of classes \code{tbl_df}, \code{tbl} and \code{data.frame}.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
@@ -100,23 +98,25 @@ cham_votes <- function(type, number, year, ascii = TRUE) {
 #' @export
 cham_votes_year <- function(year) {
   print(glue("Downloading data for {year}. This operation might take a few minutes..."))
-  
+
   # Call cham_plenary_bills to download a list of issues voted in a certain year
   dados <- cham_plenary_bills(year)
-  
+
   # Obtaining common description for each bill_id
   # Through cham_bill_info_id(bill_id)
   bills <- dados %>%
-      distinct(bill_id)
+    distinct(bill_id)
   bills <- bills$bill_id
-    
+
   print("Checking bills...")
-  data_tny <- map_df(bills,
-                     cham_bill_info_id) %>%
+  data_tny <- map_df(
+    bills,
+    cham_bill_info_id
+  ) %>%
     distinct(bill_type, bill_number, bill_year)
- 
-  print("Downloading votes...") 
-  
+
+  print("Downloading votes...")
+
   # Now we will iterate for each bill and
   # get data from votes
   # We'll be using for loops in order to
@@ -126,93 +126,56 @@ cham_votes_year <- function(year) {
     bill_type <- str_trim(data_tny$bill_type[i])
     bill_number <- data_tny$bill_number[i]
     bill_year <- data_tny$bill_year[i]
-    extrato <- year_extract_votes(bill_type,bill_number ,bill_year)
+    extrato <- year_extract_votes(bill_type, bill_number, bill_year)
     data_year <- bind_rows(data_year, extrato)
   }
-  
+
   # Filtering only those decision taken that year
-  # extract_votes return all the decisions regarding 
+  # extract_votes return all the decisions regarding
   # one project
   # It's pretty common that one bill returns more than
   # one calls taken in different dates and years
   data_year <- data_year %>%
-    mutate(ano=lubridate::year(lubridate::dmy(decision_date))) %>%
-    filter(ano==year)
-  
+    mutate(ano = lubridate::year(lubridate::dmy(decision_date))) %>%
+    filter(ano == year)
+
   data_year
 }
 
 
-year_extract_votes <- function(type, number, year) {
-  #' This function extracts votes for a certain bill
-  #' it takes bill s type, number and year
-  print(glue::glue("Downloading votes from {type}-{number}/{year}"))
-  
-  #  votes <- cham_votes(type, number, year)
-  # This handling error structure is necessary
-  # since there are some issues with the API
-  votes <- tryCatch(cham_votes(type, number, year), 
-                    error= function(e) { 
-                        mes <- e$message
-                            if ( str_detect(mes, "This is not a main bill. Download is not possible")) {
-                              print(mes)
-                              return(NULL)
-                            }
-                            else if ( mes == "HTTP error 500") {
-                              print(glue(
-                                "Download is not possible. This problem usually happens with not included 'requerimentos'")
-                                )
-                              return(NULL)
-                            }
-                            else {
-                              stop("nao funcionou")
-                            }
-                    }
-  )
-
-  if ( is.null(votes) ) return(NULL)
-  #   Removing other types of orientation
-  orientation_removed <- colnames(votes)[grep("orient_", colnames(votes))]
-  orientation_removed <- orientation_removed[(orientation_removed!="orient_GOV")]
-  votes <- votes %>% dplyr::select(-dplyr::one_of(orientation_removed))
-  return(votes)
-}
-
 # create an id for each rollcall
-
 cham_extract_bill_votes <- function(bill) {
-  info_bill <-  dplyr::tibble(
+  info_bill <- dplyr::tibble(
     decision_summary = xml_attr(bill, "Resumo"),
     decision_date = xml_attr(bill, "Data"),
     decision_time = xml_attr(bill, "Hora"),
     rollcall_subject = xml_attr(bill, "ObjVotacao"),
     session_id = xml_attr(bill, "codSessao")
-    )
+  )
 
   # Checking Orientation
-  orientation <-  bill %>%
-    xml_find_all('.//bancada')
-  if(length(orientation) == 0) {
+  orientation <- bill %>%
+    xml_find_all(".//bancada")
+  if (length(orientation) == 0) {
     orientation_bill <- NULL
-    } else { # Filling orientation
-  orientation_bill <- orientation %>%
-    map_df(extract_orientation) %>%
-    spread(sigla, orientacao )
-    }
+  } else { # Filling orientation
+    orientation_bill <- orientation %>%
+      map_df(extract_orientation) %>%
+      spread(sigla, orientacao)
+  }
 
   votes_bill <- bill %>%
-    xml_find_all('.//Deputado') %>%
+    xml_find_all(".//Deputado") %>%
     map_df(cham_extract_votes)
 
   data_bill <- bind_cols(info_bill, orientation_bill)
 
-  if ( nrow(votes_bill) > 0 ) {
+  if (nrow(votes_bill) > 0) {
     data_bill <- data_bill %>%
       cbind(votes_bill)
   }
 
   return(data_bill)
-
 }
 
 
@@ -227,13 +190,51 @@ extract_orientation <- function(votacao) {
 
 
 cham_extract_votes <- function(votes) {
-    DF <- dplyr::tibble(
-      legislator_id =  xml_attr(votes, "ideCadastro"),
-      legislator_name =  xml_attr(votes, "Nome"),
-      legislator_state = xml_attr(votes, "UF"),
-      legislator_party = str_trim(xml_attr(votes, "Partido")),
-      legislator_vote =  str_trim(xml_attr(votes, "Voto"))
-    ) %>%
-      dplyr::mutate(legislator_vote = ifelse(legislator_vote == "-", NA, legislator_vote))
-    return(DF)
+  DF <- dplyr::tibble(
+    legislator_id = xml_attr(votes, "ideCadastro"),
+    legislator_name = xml_attr(votes, "Nome"),
+    legislator_state = xml_attr(votes, "UF"),
+    legislator_party = str_trim(xml_attr(votes, "Partido")),
+    legislator_vote = str_trim(xml_attr(votes, "Voto"))
+  ) %>%
+    dplyr::mutate(legislator_vote = ifelse(legislator_vote == "-", NA, legislator_vote))
+  return(DF)
+}
+
+
+year_extract_votes <- function(type, number, year) {
+  # This function extracts votes for a certain bill
+  # it takes bill s type, number and year
+  print(glue::glue("Downloading votes from {type}-{number}/{year}"))
+
+  #  votes <- cham_votes(type, number, year)
+  # This handling error structure is necessary
+  # since there are some issues with the API
+  votes <- tryCatch(cham_votes(type, number, year),
+                    error = function(e) {
+                      mes <- e$message
+                      if (str_detect(mes, "This is not a main bill. Download is not possible")) {
+                        print(mes)
+                        return(NULL)
+                      }
+                      else if (mes == "HTTP error 500") {
+                        print(glue(
+                          "Download is not possible. This problem usually happens with not included 'requerimentos'"
+                        ))
+                        return(NULL)
+                      }
+                      else {
+                        stop("nao funcionou")
+                      }
+                    }
+  )
+
+  if (is.null(votes)) {
+    return(NULL)
+  }
+  #   Removing other types of orientation
+  orientation_removed <- colnames(votes)[grep("orient_", colnames(votes))]
+  orientation_removed <- orientation_removed[(orientation_removed != "orient_GOV")]
+  votes <- votes %>% dplyr::select(-dplyr::one_of(orientation_removed))
+  return(votes)
 }

@@ -30,7 +30,9 @@ return a large object in terms of memory. It will also be rather unwieldy, with
 many columns.
 }
 \examples{
-\donttest{cham_votes(type = "PL", number = "1992", year = "2007")}
+\donttest{
+cham_votes(type = "PL", number = "1992", year = "2007")
+}
 }
 \author{
 Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.

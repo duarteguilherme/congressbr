@@ -1,3 +1,7 @@
+# congressbr 0.2.2
+
+- Small fixes to accommodate API changes.
+
 # congressbr 0.2.1
 
 - Small fixes to sen_commission_positions().
