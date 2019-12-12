@@ -4,8 +4,13 @@
 \alias{sen_bills}
 \title{Downloads and tidies information on the legislation in the Federal Senate}
 \usage{
-sen_bills(bill_id = NULL, type = NULL, number = NULL, year = NULL,
-  ascii = TRUE)
+sen_bills(
+  bill_id = NULL,
+  type = NULL,
+  number = NULL,
+  year = NULL,
+  ascii = TRUE
+)
 }
 \arguments{
 \item{bill_id}{\code{integer}. This number is the id given to each bill in the

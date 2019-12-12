@@ -4,9 +4,15 @@
 \alias{sen_agenda}
 \title{Downloads and tidies data on the agenda in the Federal Senate}
 \usage{
-sen_agenda(initial_date = NULL, end_date = NULL, house = NULL,
-  supervisory = NULL, legislator = NULL, details = FALSE,
-  ascii = TRUE)
+sen_agenda(
+  initial_date = NULL,
+  end_date = NULL,
+  house = NULL,
+  supervisory = NULL,
+  legislator = NULL,
+  details = FALSE,
+  ascii = TRUE
+)
 }
 \arguments{
 \item{initial_date}{(\code{character}) start date of the period requested.

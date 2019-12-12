@@ -4,13 +4,27 @@
 \alias{sen_bill_search}
 \title{Search for data on legislation in the Brazilian Federal Senate}
 \usage{
-sen_bill_search(year = "", year_law = "", topic_id = "",
-  situation_id = "", date_presented_init = "",
-  date_presented_end = "", date_situation_init = "",
-  date_situation_end = "", complementary = "", present = "",
-  rapporteur = "", author = "", number = "", type = "",
-  law_number = "", party_abbr_author = "", author_state = "",
-  in_passage = "", ascii = TRUE)
+sen_bill_search(
+  year = "",
+  year_law = "",
+  topic_id = "",
+  situation_id = "",
+  date_presented_init = "",
+  date_presented_end = "",
+  date_situation_init = "",
+  date_situation_end = "",
+  complementary = "",
+  present = "",
+  rapporteur = "",
+  author = "",
+  number = "",
+  type = "",
+  law_number = "",
+  party_abbr_author = "",
+  author_state = "",
+  in_passage = "",
+  ascii = TRUE
+)
 }
 \arguments{
 \item{year}{\code{integer}. Four-digit year, such as \code{2013}.}

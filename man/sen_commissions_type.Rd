@@ -4,8 +4,7 @@
 \alias{sen_commissions_type}
 \title{Information on commissions in the Federal Senate, by commission type}
 \usage{
-sen_commissions_type(type = c("permanent", "cpi", "temporary"),
-  ascii = TRUE)
+sen_commissions_type(type = c("permanent", "cpi", "temporary"), ascii = TRUE)
 }
 \arguments{
 \item{type}{\code{character}. Options are permanent, cpi and temporary.See details.}

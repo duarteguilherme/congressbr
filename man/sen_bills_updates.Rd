@@ -5,8 +5,14 @@
 \title{Downloads and tidies information on bills that have been recently
  updated in the Federal Senate}
 \usage{
-sen_bills_updates(update = NULL, year = NULL, number = NULL,
-  type = NULL, days = 5, ascii = TRUE)
+sen_bills_updates(
+  update = NULL,
+  year = NULL,
+  number = NULL,
+  type = NULL,
+  days = 5,
+  ascii = TRUE
+)
 }
 \arguments{
 \item{update}{\code{character}. This is the type of update that can be applied

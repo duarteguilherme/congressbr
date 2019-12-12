@@ -5,8 +5,7 @@
 \title{Returns results from the plenary in the Federal Senate for a
 specified date}
 \usage{
-sen_plenary_agenda(period = c("month", "day"), date = NULL,
-  ascii = TRUE)
+sen_plenary_agenda(period = c("month", "day"), date = NULL, ascii = TRUE)
 }
 \arguments{
 \item{period}{\code{character}. If "month" is selected, all information

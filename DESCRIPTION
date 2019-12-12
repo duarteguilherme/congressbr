@@ -11,7 +11,7 @@ Authors@R: c(
     )
 Description: Downloads and tidies data from the Brazilian Federal Senate and
     Chamber of Deputies Application Programming Interfaces available at <http://
-    legis.senado.gov.br/dadosabertos/> and <http://www.camara.leg.br/SitCamaraWS/>
+    legis.senado.gov.br/dadosabertos/> and <https://dadosabertos.camara.leg.br/>
     respectively.
 License: MIT + file LICENSE
 Encoding: UTF-8
@@ -33,7 +33,7 @@ Imports:
     glue (>= 0.0.1),
     progress (>= 0.0.1),
     janitor (>= 1.1.1)
-RoxygenNote: 6.1.1
+RoxygenNote: 6.1.99.9001
 Suggests: 
     devtools,
     ggplot2,

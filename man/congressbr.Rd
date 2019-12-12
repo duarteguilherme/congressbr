@@ -3,7 +3,6 @@
 \docType{package}
 \name{congressbr}
 \alias{congressbr}
-\alias{congressbr-package}
 \title{congressbr.}
 \description{
 A package for obtaining data from the APIs of the Brazilian

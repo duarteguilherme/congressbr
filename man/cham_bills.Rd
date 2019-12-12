@@ -4,11 +4,22 @@
 \alias{cham_bills}
 \title{Downloads and tidies data for lists of bills in Brazilian Chamber of Deputies}
 \usage{
-cham_bills(type = "", number = "", year = "", initial_date = "",
-  end_date = "", part_name_author = "", id_type_author = "",
-  abbreviation_party_author = "", abbreviation_st_author = "",
-  gender_author = "", cod_state = "", cod_branch_state = "",
-  still = "", ascii = T)
+cham_bills(
+  type = "",
+  number = "",
+  year = "",
+  initial_date = "",
+  end_date = "",
+  part_name_author = "",
+  id_type_author = "",
+  abbreviation_party_author = "",
+  abbreviation_st_author = "",
+  gender_author = "",
+  cod_state = "",
+  cod_branch_state = "",
+  still = "",
+  ascii = T
+)
 }
 \arguments{
 \item{type}{\code{character}. The type of the bill. For example, "PL".}

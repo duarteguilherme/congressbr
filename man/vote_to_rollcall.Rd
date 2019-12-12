@@ -4,8 +4,7 @@
 \alias{vote_to_rollcall}
 \title{Create rollcall or matrix format data structures from voting records}
 \usage{
-vote_to_rollcall(votes = NULL, legislators = NULL, bills = NULL,
-  ideal = TRUE)
+vote_to_rollcall(votes = NULL, legislators = NULL, bills = NULL, ideal = TRUE)
 }
 \arguments{
 \item{votes}{\code{integer}. The recorded nominal votes. Must be in the format

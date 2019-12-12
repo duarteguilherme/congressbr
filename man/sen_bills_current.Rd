@@ -5,8 +5,14 @@
 \title{Downloads and tidies information on legislation from the current
 legislature of the Federal Senate}
 \usage{
-sen_bills_current(year = NULL, date = NULL, time = NULL,
-  number = NULL, type = NULL, passing = NULL)
+sen_bills_current(
+  year = NULL,
+  date = NULL,
+  time = NULL,
+  number = NULL,
+  type = NULL,
+  passing = NULL
+)
 }
 \arguments{
 \item{year}{Format YYYY. Returns legislation from this year.}

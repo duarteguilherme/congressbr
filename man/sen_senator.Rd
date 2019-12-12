@@ -5,8 +5,13 @@
 \title{Downloads and tidies persnonal information on senators from the
 Federal Senate}
 \usage{
-sen_senator(id = NULL, affiliations = TRUE, mandates = TRUE,
-  absences = FALSE, ascii = TRUE)
+sen_senator(
+  id = NULL,
+  affiliations = TRUE,
+  mandates = TRUE,
+  absences = FALSE,
+  ascii = TRUE
+)
 }
 \arguments{
 \item{id}{\code{integer}. Unique id for a senator. A dataframe of these

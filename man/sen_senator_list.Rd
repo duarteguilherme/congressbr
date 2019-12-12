@@ -4,8 +4,7 @@
 \alias{sen_senator_list}
 \title{Downloads and tidies information on the senators in the Federal Senate}
 \usage{
-sen_senator_list(present = TRUE, state = NULL, status = NULL,
-  ascii = TRUE)
+sen_senator_list(present = TRUE, state = NULL, status = NULL, ascii = TRUE)
 }
 \arguments{
 \item{present}{\code{logical}. If \code{TRUE}, downloads data on the legislature
