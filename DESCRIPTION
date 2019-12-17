@@ -4,8 +4,8 @@ Title: Downloads, Unpacks and Tidies Legislative Data from the Brazilian Federal
     Senate and Chamber of Deputies
 Version: 0.2.2
 Authors@R: c(
-    person(given = "Robert", family = "McDonnell", email = "mcdonnell.robert5@gmail.com", role = c("aut", "cre")),
-    person(given = "Guilherme", family = "Jardim Duarte", email = "gjardimduarte@gmail.com", role = "aut"),
+    person(given = "Guilherme", family = "Jardim Duarte", email = "gjardimduarte@gmail.com", role = c("aut","cre")),
+    person(given = "Robert", family = "McDonnell", email = "mcdonnell.robert5@gmail.com", role = c("aut")),
     person(given = "Danilo", family = "Freire", email = "danilofreire@gmail.com", role = "aut"),
     person(given = "Julio", family = "Trecenti", role = "aut")
     )
@@ -33,7 +33,7 @@ Imports:
     glue (>= 0.0.1),
     progress (>= 0.0.1),
     janitor (>= 1.1.1)
-RoxygenNote: 6.1.99.9001
+RoxygenNote: 7.0.2
 Suggests: 
     devtools,
     ggplot2,
