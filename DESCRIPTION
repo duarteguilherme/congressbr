@@ -32,7 +32,9 @@ Imports:
     pscl (>= 1.4.9),
     glue (>= 0.0.1),
     progress (>= 0.0.1),
-    janitor (>= 1.1.1)
+    janitor (>= 1.1.1),
+    jsonlite,
+    rlang
 RoxygenNote: 7.0.2
 Suggests: 
     devtools,
