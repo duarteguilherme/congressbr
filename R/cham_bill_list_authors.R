@@ -14,7 +14,7 @@
 #' @export
 cham_bill_list_authors <- function(bill_id) {
   paste0("https://dadosabertos.camara.leg.br/api/v2/proposicoes/", bill_id, "/autores") %>%
-    fromJSON() %>%
+    jsonlite::fromJSON() %>%
     `[[`('dados') %>%
     dplyr::select(legislator_id = .data$uri,
                   legislator_name = .data$nome,
@@ -22,5 +22,6 @@ cham_bill_list_authors <- function(bill_id) {
                   signature_order = .data$ordemAssinatura,
                   main_author = .data$proponente) %>%
     dplyr::mutate(legislator_id = sub("https://dadosabertos.camara.leg.br/api/v2/deputados/",
-                                 "", .data$legislator_id))
+                                 "", .data$legislator_id),
+                  bill_id = bill_id)
 }
