@@ -10,14 +10,14 @@ cham_bill_list_authors(bill_id)
 \item{bill_id}{\code{integer}. The id number of the bill.}
 }
 \value{
-A vector of classes \code{character}.
+A data-frame.
 }
 \description{
 Downloads list of authors of a specific bill by providing id of a bill
 }
 \examples{
 \donttest{
-cham_bill_list_authors(14784)
+cham_bill_list_authors(321182)
 }
 }
 \author{

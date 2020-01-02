@@ -1,20 +1,26 @@
-#' @importFrom xml2 read_xml
-#' @importFrom xml2 xml_find_all
-#' @importFrom xml2 xml_text
-#' @importFrom purrr map_chr
+#' @importFrom jsonlite fromJSON
+#' @importFrom dplyr select
+#' @importFrom dplyr mutate
+#' @importFrom rlang .data
 #' @title Downloads list of authors of a specific bill by providing id of a bill
 #' @description Downloads list of authors of a specific bill by providing id of a bill
 #' @param bill_id \code{integer}. The id number of the bill.
-#' @return A vector of classes \code{character}.
+#' @return A data-frame.
 #' @author Robert Myles McDonnell, Guilherme Jardim Duarte & Danilo Freire.
 #' @examples
 #' \donttest{
-#' cham_bill_list_authors(14784)
+#' cham_bill_list_authors(321182)
 #' }
 #' @export
 cham_bill_list_authors <- function(bill_id) {
-  paste0("http://www.camara.leg.br/SitCamaraWS/Proposicoes.asmx/ListarAutoresProposicao?codProposicao=", bill_id) %>%
-    xml2::read_xml() %>%
-    xml2::xml_find_all('autor') %>%
-    purrr::map_chr(xml2::xml_text)
+  paste0("https://dadosabertos.camara.leg.br/api/v2/proposicoes/", bill_id, "/autores") %>%
+    fromJSON() %>%
+    `[[`('dados') %>%
+    dplyr::select(legislator_id = .data$uri,
+                  legislator_name = .data$nome,
+                  legislator_type = .data$tipo,
+                  signature_order = .data$ordemAssinatura,
+                  main_author = .data$proponente) %>%
+    dplyr::mutate(legislator_id = sub("https://dadosabertos.camara.leg.br/api/v2/deputados/",
+                                 "", .data$legislator_id))
 }
