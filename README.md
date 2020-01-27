@@ -10,7 +10,7 @@ Status](https://ci.appveyor.com/api/projects/status/github/RobertMyles/congressb
 ## 🇧🇷 congressbr
 
 congressbr is a package for extracting data from the APIs of the
-Brazilian Federal Senate and Chamber of Deputies, respectively.
+Brazilian Federal Senate and Chamber of Deputies, respectively. You can read a paper about it in the Latin American Research Review [here](https://larrlasa.org/articles/10.25222/larr.447/). 
 
 ### Installation
 
