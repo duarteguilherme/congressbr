@@ -35,7 +35,7 @@ Imports:
     janitor (>= 1.1.1),
     jsonlite,
     rlang
-RoxygenNote: 7.0.2
+RoxygenNote: 7.1.1
 Suggests: 
     devtools,
     ggplot2,

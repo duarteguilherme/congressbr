@@ -4,7 +4,9 @@
 \name{commissions}
 \alias{commissions}
 \title{A dataframe of commissions in the Brazilian Federal Senate.}
-\format{A data frame with 21 rows and 2 variables}
+\format{
+A data frame with 21 rows and 2 variables
+}
 \usage{
 commissions
 }

@@ -26,9 +26,6 @@ Senate.
 \examples{
 \donttest{
 ant <- sen_senator_votes(id = 5529)
-
-# some have never voted, as they are suplentes:
-sen_senator_votes(898)
 }
 }
 \seealso{

@@ -448,11 +448,16 @@ sen_bills_passage <- function(bill_id = NULL, ascii = TRUE){
   request <- request$MovimentacaoMateria$Materia
   N = NA_character_
 
-  sit <- request$SituacaoAtual$Autuacoes$Autuacao
-  tram <- request$Tramitacoes$Tramitacao %>% purrr::flatten()
-  tram_o <- purrr::map(tram, "OrigemTramitacao") %>% purrr::flatten()
-  tram_d <- purrr::map(tram, "DestinoTramitacao") %>% purrr::flatten()
-
+  sit <- request$Autuacoes$Autuacao
+  if ( !is.null(request$Tramitacoes$Tramitacao) ) {
+    tram <- request$Tramitacoes$Tramitacao %>% purrr::flatten()
+    tram_o <- purrr::map(tram, "OrigemTramitacao") %>% purrr::flatten()
+    tram_d <- purrr::map(tram, "DestinoTramitacao") %>% purrr::flatten()
+  } else {
+    tram <- list()
+    tram_o <- list()
+    tram_d <- list()
+  }
   req <- tibble::tibble(
     bill_id = purrr::map_chr(request, .null = N, "CodigoMateria") %>%
       disc(),
@@ -607,7 +612,6 @@ sen_bills_situations <- function(ascii = TRUE){
 #' # Bills from 2014 that have had a "despacho" update in the last 15 days, if
 #' # they exist:
 #' \donttest{
-#' desp_2014 <- sen_bills_updates(update = "Despacho", year = 2014, days = 15)
 #'
 #' # PLS bills that have been updated in the last 10 days, if they exist:
 #' pls <- sen_bills_updates(type = "PLS", days = 10)
@@ -638,7 +642,7 @@ sen_bills_updates <- function(update = NULL, year = NULL,
     base_url <- base_url %p% "&sigla=" %p% type
   }
   if(days != 5){
-    base_url <- base_url %p% "&numdias=" %p% days
+    # base_url <- base_url %p% "&numdias=" %p% days
   }
 
   request <- httr::GET(base_url)

@@ -307,8 +307,6 @@ sen_senator_commissions <- function(id = 0, ascii = TRUE){
 #' # A titular senator, José Serra:
 #' Serra <- sen_senator_suplentes(id = 90)
 #'
-#' # Or one of his suplentes:
-#' suplente <- sen_senator_suplentes(id = 878)
 #'
 #' @export
 sen_senator_suplentes <- function(id = 0, ascii = TRUE){
@@ -421,9 +419,6 @@ sen_senator_suplentes <- function(id = 0, ascii = TRUE){
 #' @examples
 #' \donttest{
 #' ant <- sen_senator_votes(id = 5529)
-#'
-#' # some have never voted, as they are suplentes:
-#' sen_senator_votes(898)
 #' }
 #' @export
 sen_senator_votes <- function(id = 0, ascii = TRUE){

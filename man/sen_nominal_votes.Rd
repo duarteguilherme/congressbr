@@ -4,7 +4,9 @@
 \name{sen_nominal_votes}
 \alias{sen_nominal_votes}
 \title{Nominal votes in the Brazilian Federal Senate}
-\format{A data frame with 60691 rows and 8 variables}
+\format{
+A data frame with 60691 rows and 8 variables
+}
 \usage{
 sen_nominal_votes
 }
